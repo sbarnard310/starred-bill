@@ -8,8 +8,6 @@
   "change": "new",
   "changeNote": "Gained its first star",
   "changeDate": "2026-02",
-  "rating": 4.7,
-  "reviews": 2294,
   "dinner": 110,
   "dinnerType": "menu",
   "dinnerNote": "Feast menu",
@@ -33,5 +31,14 @@
   ],
   "chef": "Shantibhushan Lal",
   "chefSource": "press",
-  "dietsManual": true
+  "dietsManual": true,
+  "rankings": [
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 251,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

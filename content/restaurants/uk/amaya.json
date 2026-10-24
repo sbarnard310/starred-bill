@@ -5,8 +5,6 @@
   "address": "Halkin Arcade, 19 Motcomb Street, Belgravia, London, SW1X 8JT",
   "stars": 1,
   "cuisine": "Indian",
-  "rating": 4.3,
-  "reviews": 1876,
   "dinner": 75,
   "dinnerType": "menu",
   "dinnerNote": "Tasting menu",
@@ -37,5 +35,14 @@
     "via": "website",
     "source": "https://www.amaya.biz/",
     "checked": "2026-10-10"
-  }
+  },
+  "rankings": [
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 291,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

@@ -6,8 +6,6 @@
   "address": "9 rue François-Rocca, 13008 Marseille",
   "stars": 3,
   "cuisine": "Creative",
-  "rating": 4.7,
-  "reviews": 932,
   "dinner": 435,
   "dinnerType": "menu",
   "dinnerNote": "Grand Voyage menu, 5 sequences (dinner from €295)",
@@ -26,5 +24,20 @@
   "placeId": "ChIJ2VJHkVrHyRIRilr7mWdCXFk",
   "michelinId": "444625",
   "chef": "Alexandre Mazzia",
-  "chefSource": "press"
+  "chefSource": "press",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 96,
+      "url": "https://www.laliste.com/places/am-par-alexandre-mazzia-marseille-fr"
+    },
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 74,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

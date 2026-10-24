@@ -5,8 +5,6 @@
   "address": "Staapli 4, Port Noblessner, 10415, Tallinn",
   "stars": 2,
   "cuisine": "Creative",
-  "rating": 4.7,
-  "reviews": 403,
   "dinnerType": "menu",
   "dinner": 325,
   "dinnerNote": "Tasting menu (other menus from €185)",
@@ -28,5 +26,14 @@
   "lunchNoteEt": "Ainult õhtusöök",
   "chef": "Matthias Diether",
   "chefSource": "press",
-  "dietsManual": true
+  "dietsManual": true,
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 87,
+      "url": "https://www.laliste.com/places/180-degrees-tallinn-ee"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

@@ -10,8 +10,6 @@
   "changeNoteZh": "首度摘星",
   "changeNoteEs": "Consiguió su primera estrella",
   "changeDate": "2024-11",
-  "rating": 4.8,
-  "reviews": 313,
   "dinner": 170,
   "dinnerType": "menu",
   "dinnerNote": "Savoury menu: 6 dishes, 2 desserts (sweet menu €139)",
@@ -86,5 +84,14 @@
     "url": "https://hotelesperitroca.com/en/rooms/",
     "note": "The hotel sits on the same hilltop as the Roca brothers’ castle project that houses the starred restaurant.",
     "checked": "2026-10-23"
-  }
+  },
+  "rankings": [
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 236,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

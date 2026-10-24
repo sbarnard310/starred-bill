@@ -6,8 +6,6 @@
   "address": "De Copons 7, Barcelona, 08002",
   "stars": 1,
   "cuisine": "Japanese",
-  "rating": 4.7,
-  "reviews": 1113,
   "dinner": 218,
   "dinnerType": "menu",
   "dinnerNote": "Experience Menú Koy (shorter Menú Koy €178)",
@@ -50,5 +48,14 @@
   "bookingPhone": "+34 934 12 79 39",
   "children": "Not recommended for children under 8, because of the length of the menu. No prams or high chairs.",
   "infoSource": "http://www.koyshunka.com/KoyShunka/reservas_Koyshunka_ENG.html",
-  "infoChecked": "2026-10-13"
+  "infoChecked": "2026-10-13",
+  "rankings": [
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 633,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

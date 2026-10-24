@@ -4,8 +4,6 @@
   "address": "1015 Yuyuan Road, Changning, Shanghai",
   "stars": 1,
   "cuisine": "Shanghainese",
-  "rating": 4.2,
-  "reviews": 5,
   "dinnerType": "spend",
   "dinner": 1395,
   "dinnerNote": "Typical spend",
@@ -20,5 +18,14 @@
   "lunchNoteZhs": "供应午餐",
   "nameZhs": "福一零一五",
   "chef": "Tony Lu",
-  "chefSource": "press"
+  "chefSource": "press",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 75,
+      "url": "https://www.laliste.com/places/1015-fu1015-shanghai-cn"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

@@ -6,8 +6,6 @@
   "address": "#01-02, 7 Dempsey Road, Singapore 249671",
   "stars": 1,
   "cuisine": "Barbecue",
-  "rating": 4.5,
-  "reviews": 2606,
   "dinnerType": "spend",
   "dinnerNote": "À la carte barbecue; typical spend about S$200 per person",
   "dinnerNoteZh": "單點燒烤；人均消費約新幣200元",
@@ -22,5 +20,32 @@
   "chef": "Dave Pynt",
   "chefSource": "site",
   "dinner": 200,
-  "source": "https://www.burpple.com/burnt-ends"
+  "source": "https://www.burpple.com/burnt-ends",
+  "rankings": [
+    {
+      "list": "worlds-50-best",
+      "year": 2025,
+      "rank": 93,
+      "url": "https://www.the50.com/restaurants/best-in-the-world/list/51-100"
+    },
+    {
+      "list": "asias-50-best",
+      "year": 2026,
+      "rank": 59,
+      "url": "https://www.the50.com/restaurants/best-in-asia/list/51-100"
+    },
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 92.5,
+      "url": "https://www.laliste.com/places/burnt-ends-singapore-sg"
+    },
+    {
+      "list": "oad-asia",
+      "year": 2026,
+      "rank": 38,
+      "url": "https://www.oadguides.com/lists/asia/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

@@ -4,8 +4,6 @@
   "address": "6555 Burnet Rd., Ste. 400, Austin, 78757",
   "stars": 1,
   "cuisine": "Modern American",
-  "rating": 4.7,
-  "reviews": 1460,
   "dinnerType": "menu",
   "dinner": 125,
   "dinnerNote": "Chef's tasting menu (traditional pairing $75–85)",
@@ -51,5 +49,14 @@
   "byob": "No outside alcohol (Texas law).",
   "infoSource": "https://barleyswine.com/faqs",
   "infoChecked": "2026-10-13",
-  "dietsManual": true
+  "dietsManual": true,
+  "rankings": [
+    {
+      "list": "oad-north-america",
+      "year": 2026,
+      "rank": 117,
+      "url": "https://www.oadguides.com/lists/north-america/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

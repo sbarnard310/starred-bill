@@ -7,8 +7,6 @@
   "address": "36F, Josun Palace Hotel, 231 Teheran-ro, Gangnam-gu, Seoul",
   "stars": 1,
   "cuisine": "Korean",
-  "rating": 4.6,
-  "reviews": 107,
   "dinner": 370000,
   "dinnerType": "menu",
   "dinnerNote": "Dinner course",
@@ -81,5 +79,5 @@
       "url": "https://www.oadguides.com/lists/asia/top-restaurants/2026"
     }
   ],
-  "rankingsChecked": "2026-10-13"
+  "rankingsChecked": "2026-10-24"
 }

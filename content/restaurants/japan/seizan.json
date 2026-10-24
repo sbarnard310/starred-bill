@@ -10,8 +10,6 @@
   "addressJa": "〒108-0073 東京都港区三田 2-17-29 B1F",
   "stars": 2,
   "cuisine": "Japanese",
-  "rating": 4.7,
-  "reviews": 367,
   "dinner": 38400,
   "dinnerType": "menu",
   "dinnerNote": "Kaiseki course from ¥38,400, tax and service included",
@@ -31,5 +29,20 @@
   "placeId": "ChIJq6pmg6-LGGARhJ-wWOu2HYo",
   "michelinId": "1194018",
   "chef": "Haruhiko Yamamoto",
-  "chefSource": "site"
+  "chefSource": "site",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 94.5,
+      "url": "https://www.laliste.com/places/seizan-minato-ku-jp"
+    },
+    {
+      "list": "oad-japan",
+      "year": 2026,
+      "rank": 85,
+      "url": "https://www.oadguides.com/lists/japan/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

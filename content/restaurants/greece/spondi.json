@@ -4,8 +4,6 @@
   "address": "5 Pyrronos Street, 116 36, Athens",
   "stars": 1,
   "cuisine": "French",
-  "rating": 4.5,
-  "reviews": 1442,
   "dinnerType": "menu",
   "dinnerNote": "Discovery menu (€120 without two of its courses)",
   "sourceType": "site",
@@ -21,5 +19,14 @@
   "lunchNote": "Dinner only",
   "lunchNoteEl": "Μόνο δείπνο",
   "dinner": 150,
-  "source": "https://www.spondi.gr/en/#menus"
+  "source": "https://www.spondi.gr/en/#menus",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 84,
+      "url": "https://www.laliste.com/places/spondh-spondi-athina-gr"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

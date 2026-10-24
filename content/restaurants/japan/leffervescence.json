@@ -9,8 +9,6 @@
   "addressJa": "〒106-0031 東京都港区西麻布 2-26-4",
   "stars": 3,
   "cuisine": "French",
-  "rating": 4.6,
-  "reviews": 980,
   "dinner": 49500,
   "dinnerType": "menu",
   "dinnerNote": "Omakase course",
@@ -31,5 +29,20 @@
   "placeId": "ChIJV7oGAWWLGGARslO9OGTuG-A",
   "michelinId": "1194251",
   "chef": "Shinobu Namae",
-  "chefSource": "site"
+  "chefSource": "site",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 93.5,
+      "url": "https://www.laliste.com/places/leffervescence-minato-ku-jp"
+    },
+    {
+      "list": "oad-japan",
+      "year": 2026,
+      "rank": 103,
+      "url": "https://www.oadguides.com/lists/japan/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

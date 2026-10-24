@@ -7,8 +7,6 @@
   "addressZh": "香港中環雲咸街34號世界商業大廈地下",
   "stars": 1,
   "cuisine": "Indian",
-  "rating": 4.5,
-  "reviews": 550,
   "dinner": 800,
   "dinnerType": "spend",
   "dinnerNote": "À la carte Punjabi, shared; minimum spend HK$800 per person at dinner",
@@ -68,5 +66,5 @@
       "url": "https://www.oadguides.com/lists/asia/top-restaurants/2026"
     }
   ],
-  "rankingsChecked": "2026-10-13"
+  "rankingsChecked": "2026-10-24"
 }

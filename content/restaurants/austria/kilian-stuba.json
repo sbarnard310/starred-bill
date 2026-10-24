@@ -5,8 +5,6 @@
   "address": "Oberseitestraße 6, 6992, Hirschegg",
   "stars": 1,
   "cuisine": "Creative",
-  "rating": 4.8,
-  "reviews": 45,
   "dinnerType": "menu",
   "dinner": 180,
   "dinnerNote": "Tasting menu (other menus from €150)",
@@ -22,5 +20,14 @@
   "chefSource": "michelin",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 150 €)",
   "noLunch": true,
-  "lunchNoteDe": "Nur abends"
+  "lunchNoteDe": "Nur abends",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 78,
+      "url": "https://www.laliste.com/places/kilian-stuba-im-travel-charme-ifen-hotel-kleinwalsertal-hirschegg-at"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

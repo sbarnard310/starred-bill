@@ -6,8 +6,6 @@
   "address": "65 E. 55th St., New York, NY, 10022",
   "stars": 2,
   "cuisine": "Nordic",
-  "rating": 4.6,
-  "reviews": 1331,
   "dinner": 305,
   "dinnerType": "menu",
   "dinnerNote": "Chef's tasting menu",
@@ -35,5 +33,20 @@
   "photoSourceType": "commons",
   "photoWidth": 1000,
   "photoHeight": 750,
-  "photoChecked": "2026-10-13"
+  "photoChecked": "2026-10-13",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 91,
+      "url": "https://www.laliste.com/places/aquavit-new-york-us"
+    },
+    {
+      "list": "oad-north-america",
+      "year": 2026,
+      "rank": 125,
+      "url": "https://www.oadguides.com/lists/north-america/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

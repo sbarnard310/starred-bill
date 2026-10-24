@@ -6,8 +6,6 @@
   "address": "Chemin de Martorez, 71100 Saint-Rémy",
   "stars": 2,
   "cuisine": "Creative",
-  "rating": 4.9,
-  "reviews": 1454,
   "dinner": 240,
   "dinnerType": "menu",
   "dinnerNote": "Longest tasting menu (other menus from €190)",
@@ -26,5 +24,14 @@
   "placeId": "ChIJL_7__w_98kcR8kouggOnc4Q",
   "michelinId": "1896",
   "chef": "Cédric Burtin",
-  "chefSource": "site"
+  "chefSource": "site",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 78.5,
+      "url": "https://www.laliste.com/places/cedric-burtin-saint-remy-fr"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

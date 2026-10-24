@@ -5,8 +5,6 @@
   "address": "Lenton Lane, Nottingham, NG7 2SA",
   "stars": 2,
   "cuisine": "Creative",
-  "rating": 4.7,
-  "reviews": 700,
   "dinner": 289,
   "dinnerType": "menu",
   "dinnerNote": "Overture menu (Prelude £229, Interlude £149)",
@@ -67,5 +65,20 @@
     ],
     "note": "Only seven rooms, so book early.",
     "checked": "2026-10-23"
-  }
+  },
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 91,
+      "url": "https://www.laliste.com/places/sat-bains-nottingham-gb"
+    },
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 117,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

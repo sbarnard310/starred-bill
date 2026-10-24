@@ -5,8 +5,6 @@
   "address": "Klosterplatz 4, 4801, Traunkirchen",
   "stars": 1,
   "cuisine": "Creative",
-  "rating": 4.7,
-  "reviews": 450,
   "dinnerType": "menu",
   "dinner": 219,
   "dinnerNote": "Tasting menu (other menus from €110)",
@@ -30,5 +28,20 @@
   "lunchNoteDe": "Gleiches Menü am Mittag · Sa–So",
   "lunchWine": 90,
   "lunchSourceType": "site",
-  "lunchSource": "https://www.dastraunsee.at/restaurant-bootshaus"
+  "lunchSource": "https://www.dastraunsee.at/restaurant-bootshaus",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 94,
+      "url": "https://www.laliste.com/places/bootshaus-traunkirchen-at"
+    },
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 728,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

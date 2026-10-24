@@ -4,8 +4,6 @@
   "address": "7 rue du Don-de-Dieu, Québec, G1K 3Z6",
   "stars": 2,
   "cuisine": "Creative",
-  "rating": 4.9,
-  "reviews": 863,
   "dinnerType": "menu",
   "dinner": 300,
   "dinnerNote": "Tasting menu, $300–$320 (wine pairings from $120)",
@@ -26,5 +24,20 @@
   ],
   "chef": "François-Emmanuel Nicol",
   "chefSource": "site",
-  "dietsManual": true
+  "dietsManual": true,
+  "rankings": [
+    {
+      "list": "north-americas-50-best",
+      "year": 2026,
+      "rank": 9,
+      "url": "https://www.the50.com/restaurants/best-in-north-america/list/1-50"
+    },
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 81.5,
+      "url": "https://www.laliste.com/places/taniere3-quebec-ca"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

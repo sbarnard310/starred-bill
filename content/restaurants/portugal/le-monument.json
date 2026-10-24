@@ -4,8 +4,6 @@
   "address": "Avenida dos Aliados 151, 4000-067, Porto",
   "stars": 1,
   "cuisine": "Modern European",
-  "rating": 4.7,
-  "reviews": 348,
   "dinnerType": "menu",
   "dinner": 180,
   "dinnerNote": "Tasting menu (other menus from €110)",
@@ -21,5 +19,14 @@
   "dinnerNotePt": "Menu de degustação (outros menus desde 110 €)",
   "noLunch": true,
   "lunchNote": "Dinner only",
-  "lunchNotePt": "Só jantar"
+  "lunchNotePt": "Só jantar",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 78,
+      "url": "https://www.laliste.com/places/le-monument-porto-pt"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

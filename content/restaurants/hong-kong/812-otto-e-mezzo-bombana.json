@@ -7,8 +7,6 @@
   "addressZh": "香港中環遮打道18號歷山大廈2樓202號舖",
   "stars": 3,
   "cuisine": "Italian",
-  "rating": 4.5,
-  "reviews": 635,
   "dinnerType": "spend",
   "dinnerNote": "Typical dinner spend per person (SCMP 100 Top Tables 2026); seasonal tasting menu and à la carte, prices not published",
   "dinnerNoteZh": "晚餐每人一般消費（SCMP 100 Top Tables 2026）；季節品嚐菜單及單點，未公布價格",
@@ -27,5 +25,20 @@
   "chef": "Umberto Bombana",
   "chefSource": "site",
   "dinner": 1680,
-  "source": "https://100toptables.scmp.com/restaurants-profile-2026/81-2-otto-e-mezzo-bombana"
+  "source": "https://100toptables.scmp.com/restaurants-profile-2026/81-2-otto-e-mezzo-bombana",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 95,
+      "url": "https://www.laliste.com/places/8-12-otto-e-mezzo-bombana-hongkong-cn"
+    },
+    {
+      "list": "oad-asia",
+      "year": 2026,
+      "rank": 102,
+      "url": "https://www.oadguides.com/lists/asia/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

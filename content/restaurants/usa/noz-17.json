@@ -6,8 +6,6 @@
   "address": "458 W. 17th St., New York, NY, 10011",
   "stars": 1,
   "cuisine": "Japanese",
-  "rating": 4.3,
-  "reviews": 134,
   "dinner": 195,
   "dinnerType": "menu",
   "dinnerNote": "Omakase, 15 courses",
@@ -43,5 +41,14 @@
   "duration": "About 1 hour 45 minutes.",
   "byob": "Corkage is $120 a bottle or $250 a magnum, up to two bottles or one magnum per party, and not for anything on the restaurant's list; ask before bringing one.",
   "infoSource": "https://www.noz.global/faq",
-  "infoChecked": "2026-10-13"
+  "infoChecked": "2026-10-13",
+  "rankings": [
+    {
+      "list": "oad-north-america",
+      "year": 2026,
+      "rank": 45,
+      "url": "https://www.oadguides.com/lists/north-america/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

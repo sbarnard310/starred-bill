@@ -5,8 +5,6 @@
   "address": "Rue du Grand Chêne 7, 1002, Lausanne",
   "stars": 2,
   "cuisine": "French",
-  "rating": 4.8,
-  "reviews": 254,
   "dinnerType": "menu",
   "dinner": 268,
   "dinnerNote": "Tasting menu, 6 courses (4 courses from CHF 228)",
@@ -31,5 +29,14 @@
   "lunchSourceType": "site",
   "lunchSource": "https://www.lausanne-palace.ch/fileadmin/documents/lausanne-palace.ch/pdf/Restaurants/Cartes/MENU_AFFAIRES.pdf",
   "areaIt": "Losanna",
-  "wine": 138
+  "wine": 138,
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 85.5,
+      "url": "https://www.laliste.com/places/la-table-du-lausanne-palace-lausanne-ch"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

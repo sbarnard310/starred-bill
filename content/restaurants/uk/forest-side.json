@@ -5,8 +5,6 @@
   "address": "Keswick Road, Grasmere, LA22 9RN",
   "stars": 1,
   "cuisine": "British",
-  "rating": 4.7,
-  "reviews": 400,
   "dinner": 140,
   "dinnerType": "menu",
   "dinnerNote": "Tasting menu, 8 courses",
@@ -69,5 +67,20 @@
       }
     ],
     "checked": "2026-10-23"
-  }
+  },
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 84,
+      "url": "https://www.laliste.com/places/the-forest-side-ambleside-gb"
+    },
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 289,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

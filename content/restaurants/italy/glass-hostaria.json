@@ -6,8 +6,6 @@
   "address": "Vicolo del Cinque 58, Rome, 00153",
   "stars": 1,
   "cuisine": "Creative",
-  "rating": 4.4,
-  "reviews": 736,
   "dinner": 135,
   "dinnerType": "menu",
   "dinnerNote": "Glass menu, 6 courses",
@@ -30,5 +28,14 @@
   ],
   "chef": "Cristina Bowerman",
   "chefSource": "site",
-  "dietsManual": true
+  "dietsManual": true,
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 82.5,
+      "url": "https://www.laliste.com/places/glass-hostaria-roma-it"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

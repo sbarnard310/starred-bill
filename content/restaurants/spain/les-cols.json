@@ -5,8 +5,6 @@
   "address": "Carretera de la Canya, Olot, 17800",
   "stars": 2,
   "cuisine": "Creative",
-  "rating": 4.5,
-  "reviews": 1447,
   "dinner": 180,
   "dinnerType": "menu",
   "dinnerNote": "Tasting menu",
@@ -36,5 +34,20 @@
     "url": "https://lescolspavellons.com/eng/",
     "note": "Sleep in the estate’s Pavellons (pavilion rooms) at Mas Les Cols; the minimum stay is one night, with a pavilion for two and breakfasts.",
     "checked": "2026-10-23"
-  }
+  },
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 94.5,
+      "url": "https://www.laliste.com/places/les-cols-olot-es"
+    },
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 604,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

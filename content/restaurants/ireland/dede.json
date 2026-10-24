@@ -5,8 +5,6 @@
   "address": "Customs House, Baltimore, P81 K291",
   "stars": 2,
   "cuisine": "Turkish",
-  "rating": 4.9,
-  "reviews": 283,
   "dinner": 210,
   "dinnerType": "menu",
   "dinnerNote": "Tasting menu",
@@ -31,5 +29,14 @@
   ],
   "chef": "Ahmet Dede",
   "chefSource": "site",
-  "dietsManual": true
+  "dietsManual": true,
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 76.5,
+      "url": "https://www.laliste.com/places/dede-at-the-customs-house-baltimore-baltimore-ie"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

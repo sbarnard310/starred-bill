@@ -10,8 +10,6 @@
   "changeNote": "Gained its first star",
   "changeNoteEs": "Consiguió su primera estrella",
   "changeDate": "2026-05",
-  "rating": 4.6,
-  "reviews": 1755,
   "dinner": 3150,
   "dinnerType": "menu",
   "dinnerNote": "Tasting menu, 10 courses (also à la carte)",
@@ -30,5 +28,32 @@
   "placeId": "ChIJSxhI0W6uKIQRLbizqZhTQuQ",
   "michelinId": "1243800",
   "chef": "Paco Ruano",
-  "chefSource": "site"
+  "chefSource": "site",
+  "rankings": [
+    {
+      "list": "worlds-50-best",
+      "year": 2025,
+      "rank": 51,
+      "url": "https://www.the50.com/restaurants/best-in-the-world/list/51-100"
+    },
+    {
+      "list": "latin-americas-50-best",
+      "year": 2025,
+      "rank": 15,
+      "url": "https://www.the50.com/restaurants/best-in-latin-america/list/1-50"
+    },
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 84,
+      "url": "https://www.laliste.com/places/alcalde-guadalajara-mx"
+    },
+    {
+      "list": "oad-north-america",
+      "year": 2026,
+      "rank": 191,
+      "url": "https://www.oadguides.com/lists/north-america/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

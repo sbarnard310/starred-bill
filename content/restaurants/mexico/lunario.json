@@ -6,8 +6,6 @@
   "address": "San Marcos, El Porvenir, Valle de Guadalupe",
   "stars": 1,
   "cuisine": "Mexican",
-  "rating": 4.7,
-  "reviews": 190,
   "dinner": 2550,
   "dinnerType": "menu",
   "dinnerNote": "Tasting menu; Thu–Sun from 3:30pm",
@@ -39,5 +37,14 @@
   "photoSourceType": "commons",
   "photoWidth": 1000,
   "photoHeight": 551,
-  "photoChecked": "2026-10-13"
+  "photoChecked": "2026-10-13",
+  "rankings": [
+    {
+      "list": "latin-americas-50-best",
+      "year": 2025,
+      "rank": 90,
+      "url": "https://www.the50.com/restaurants/best-in-latin-america/list/51-100"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

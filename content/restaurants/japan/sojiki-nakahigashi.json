@@ -6,8 +6,6 @@
   "address": "32-3 Jodoji Ishibashicho, Sakyo-ku, 606-8406, Kyoto",
   "stars": 2,
   "cuisine": "Japanese",
-  "rating": 4.5,
-  "reviews": 334,
   "dinnerType": "menu",
   "dinnerNote": "Kaiseki course, from; including tax and service",
   "sourceType": "site",
@@ -47,5 +45,20 @@
   "photoSourceType": "commons",
   "photoWidth": 1000,
   "photoHeight": 667,
-  "photoChecked": "2026-10-13"
+  "photoChecked": "2026-10-13",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 87.5,
+      "url": "https://www.laliste.com/places/sojiki-nakahigashi-kyoto-shi-jp"
+    },
+    {
+      "list": "oad-japan",
+      "year": 2026,
+      "rank": 186,
+      "url": "https://www.oadguides.com/lists/japan/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

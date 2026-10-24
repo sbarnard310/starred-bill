@@ -4,8 +4,6 @@
   "address": "Leopoldstraat 26, 2000, Antwerpen",
   "stars": 2,
   "cuisine": "Creative",
-  "rating": 4.7,
-  "reviews": 441,
   "dinnerType": "menu",
   "dinner": 285,
   "dinnerNote": "Tasting menu",
@@ -28,5 +26,20 @@
   "dinnerNoteNl": "Proeverijmenu",
   "dinnerNoteFr": "Menu dégustation",
   "lunchNoteNl": "Lunchmenu",
-  "lunchNoteFr": "Menu déjeuner"
+  "lunchNoteFr": "Menu déjeuner",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 82,
+      "url": "https://www.laliste.com/places/hertog-jan-at-botanic-antwerp-antwerpen-be"
+    },
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 17,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

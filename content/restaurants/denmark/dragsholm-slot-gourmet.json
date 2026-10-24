@@ -5,8 +5,6 @@
   "address": "Dragsholm Allé, 4534, Hørve",
   "stars": 1,
   "cuisine": "Creative",
-  "rating": 4.6,
-  "reviews": 51,
   "dinnerType": "menu",
   "dinner": 1800,
   "dinnerNote": "Tasting menu “Time & Place”, about 12 courses",
@@ -28,5 +26,14 @@
   "chef": "Rasmus Storm",
   "chefSource": "michelin",
   "wine": 1850,
-  "dinnerNoteDa": "Menuen “Tid & Sted”, cirka 12 retter"
+  "dinnerNoteDa": "Menuen “Tid & Sted”, cirka 12 retter",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 85,
+      "url": "https://www.laliste.com/places/dragsholm-slot-gourmet-horve-dk"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

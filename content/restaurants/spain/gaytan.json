@@ -6,8 +6,6 @@
   "address": "Príncipe de Vergara 205, Madrid, 28002",
   "stars": 1,
   "cuisine": "Modern European",
-  "rating": 4.6,
-  "reviews": 787,
   "dinner": 190,
   "dinnerType": "menu",
   "dinnerNote": "Javier Aranda menu (Inaurem €140; Gran menu €250)",
@@ -30,5 +28,14 @@
   "placeId": "ChIJd6M8r94oQg0RwUOiAobTPIo",
   "michelinId": "504209",
   "chef": "Javier Aranda",
-  "chefSource": "site"
+  "chefSource": "site",
+  "rankings": [
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 768,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

@@ -7,8 +7,6 @@
   "address": "19 rue Saint-Sauveur, 75002, Paris",
   "stars": 1,
   "cuisine": "Creative",
-  "rating": 4.7,
-  "reviews": 903,
   "dinner": 152,
   "dinnerType": "menu",
   "dinnerNote": "Le Voyage Shabour menu (Petit Voyage €81)",
@@ -24,5 +22,14 @@
   "placeId": "ChIJzean6Hlv5kcR9jkXW9USvyg",
   "michelinId": "1186515",
   "chef": "Dan Yosha",
-  "chefSource": "press"
+  "chefSource": "press",
+  "rankings": [
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 442,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

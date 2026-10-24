@@ -7,8 +7,6 @@
   "address": "27 rue Pierre-Leroux, 75007, Paris",
   "stars": 1,
   "cuisine": "Modern European",
-  "rating": 4.6,
-  "reviews": 245,
   "dinner": 215,
   "dinnerType": "menu",
   "dinnerNote": "Dinner tasting menu (shorter €175)",
@@ -27,5 +25,14 @@
   "placeId": "ChIJu5YsFy1w5kcRXZLyDsRiskI",
   "michelinId": "450779",
   "chef": "Shinsuke Nakatani",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "rankings": [
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 377,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

@@ -5,8 +5,6 @@
   "address": "1738 Pearl St., Boulder, 80302",
   "stars": 1,
   "cuisine": "Italian",
-  "rating": 4.6,
-  "reviews": 824,
   "dinner": 230,
   "dinnerType": "menu",
   "dinnerNote": "Friulano tasting menu (four-course Quattro Piatti $150)",
@@ -86,5 +84,14 @@
     "source": "https://www.frascafoodandwine.com/faq/",
     "checked": "2026-10-15"
   },
-  "dietsManual": true
+  "dietsManual": true,
+  "rankings": [
+    {
+      "list": "oad-north-america",
+      "year": 2026,
+      "rank": 266,
+      "url": "https://www.oadguides.com/lists/north-america/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

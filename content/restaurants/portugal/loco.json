@@ -4,8 +4,6 @@
   "address": "Rua dos Navegantes 53 B, 1200-731, Lisbon",
   "stars": 1,
   "cuisine": "Modern European",
-  "rating": 4.7,
-  "reviews": 536,
   "dinnerType": "menu",
   "dinner": 160,
   "dinnerNote": "Tasting menu",
@@ -25,5 +23,14 @@
   "dinnerNotePt": "Menu de degustação",
   "noLunch": true,
   "lunchNote": "Dinner only",
-  "lunchNotePt": "Só jantar"
+  "lunchNotePt": "Só jantar",
+  "rankings": [
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 432,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

@@ -5,8 +5,6 @@
   "address": "La Bien Aparecida 11, 39849, Ampuero",
   "stars": 1,
   "cuisine": "Modern European",
-  "rating": 4.5,
-  "reviews": 2321,
   "dinnerType": "menu",
   "dinner": 120,
   "dinnerNote": "Tasting menu (other menus from €90)",
@@ -25,5 +23,14 @@
   "placeId": "ChIJAe7gvk_CTg0RZWlUBgDvqRo",
   "michelinId": "226699",
   "chef": "Nacho Solana",
-  "chefSource": "site"
+  "chefSource": "site",
+  "rankings": [
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 593,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

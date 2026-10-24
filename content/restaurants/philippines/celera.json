@@ -4,8 +4,6 @@
   "address": "3F, Comuna, 238 Pablo Ocampo Senior Extension, 1203, Makati - Metro Manila",
   "stars": 1,
   "cuisine": "Asian",
-  "rating": 4.7,
-  "reviews": 119,
   "dinnerType": "menu",
   "dinner": 5460,
   "dinnerNote": "Tasting menu",
@@ -24,5 +22,14 @@
   "lunchNote": "Dinner only",
   "lunchNoteFil": "Hapunan lang",
   "chef": "Nicco Santos",
-  "chefSource": "site"
+  "chefSource": "site",
+  "rankings": [
+    {
+      "list": "asias-50-best",
+      "year": 2026,
+      "rank": 100,
+      "url": "https://www.the50.com/restaurants/best-in-asia/list/51-100"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

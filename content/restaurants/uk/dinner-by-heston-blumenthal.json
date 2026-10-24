@@ -5,8 +5,6 @@
   "address": "Mandarin Oriental Hyde Park, 66 Knightsbridge, London, SW1X 7LA",
   "stars": 2,
   "cuisine": "British",
-  "rating": 4.6,
-  "reviews": 2560,
   "dinner": 195,
   "dinnerType": "menu",
   "dinnerNote": "The Legacy menu, 6 courses (4-course Discovery menu £155); closing for good at the end of January 2027",
@@ -109,5 +107,20 @@
     "name": "Mandarin Oriental Hyde Park",
     "url": "https://www.mandarinoriental.com/en/london/hyde-park",
     "checked": "2026-10-23"
-  }
+  },
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 80.5,
+      "url": "https://www.laliste.com/places/dinner-by-heston-blumenthal-london-gb"
+    },
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 144,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

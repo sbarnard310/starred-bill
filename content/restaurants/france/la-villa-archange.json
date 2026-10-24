@@ -6,8 +6,6 @@
   "address": "Rue de l'Ouest, 06110 Le Cannet",
   "stars": 2,
   "cuisine": "Modern European",
-  "rating": 4.5,
-  "reviews": 788,
   "dinner": 370,
   "dinnerType": "menu",
   "dinnerNote": "Longest tasting menu (other menus from €250)",
@@ -28,5 +26,14 @@
   "placeId": "ChIJS4x5TPyBzhIRyQ_ceZRqxqE",
   "michelinId": "263836",
   "chef": "Bruno Oger",
-  "chefSource": "site"
+  "chefSource": "site",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 86,
+      "url": "https://www.laliste.com/places/la-villa-archange-le-cannet-fr"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

@@ -5,8 +5,6 @@
   "address": "Via Zona Industriale Brodolini, 2, 60025, Loreto",
   "stars": 1,
   "cuisine": "Modern European",
-  "rating": 4.5,
-  "reviews": 852,
   "dinnerType": "menu",
   "dinner": 155,
   "dinnerNote": "Tasting menu (other menus from €135)",
@@ -27,5 +25,20 @@
   "placeId": "ChIJXR3I5-V5MhMRErYcGck5B-c",
   "michelinId": "138521",
   "chef": "Errico Recanati",
-  "chefSource": "site"
+  "chefSource": "site",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 87.5,
+      "url": "https://www.laliste.com/places/andreina-loreto-it"
+    },
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 227,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

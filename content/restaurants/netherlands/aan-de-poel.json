@@ -5,8 +5,6 @@
   "address": "Handweg 1, 1185 TS, Amstelveen",
   "stars": 2,
   "cuisine": "Creative",
-  "rating": 4.7,
-  "reviews": 717,
   "dinnerType": "menu",
   "dinner": 179,
   "dinnerNote": "Tasting menu (other menus from €149)",
@@ -65,5 +63,14 @@
   "groups": "The wine room can be booked privately for lunch or dinner for up to 16 guests.",
   "groupsUrl": "https://aandepoel.nl/private-dining/",
   "infoSource": "https://aandepoel.nl/contact/",
-  "infoChecked": "2026-10-13"
+  "infoChecked": "2026-10-13",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 90,
+      "url": "https://www.laliste.com/places/aan-de-poel-amstelveen-nl"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

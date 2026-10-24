@@ -4,8 +4,6 @@
   "address": "1 Petrou Kokkali Street, 11521, Athens",
   "stars": 1,
   "cuisine": "Modern European",
-  "rating": 4.4,
-  "reviews": 2187,
   "dinnerType": "menu",
   "dinner": 120,
   "dinnerNote": "Tasting menu (other menus from €90)",
@@ -24,5 +22,14 @@
   "noLunch": true,
   "lunchNote": "Dinner only",
   "lunchNoteEl": "Μόνο δείπνο",
-  "dietsManual": true
+  "dietsManual": true,
+  "rankings": [
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 325,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

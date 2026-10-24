@@ -5,8 +5,6 @@
   "address": "Bramboden 6, 6167, Romoos",
   "stars": 1,
   "cuisine": "Creative",
-  "rating": 4.8,
-  "reviews": 324,
   "dinnerType": "menu",
   "dinner": 255,
   "dinnerNote": "Lunch only: 9-course gourmet menu, Wed–Sat",
@@ -37,5 +35,14 @@
   "lunchNoteIt": "Menu gourmet di 9 portate (solo a pranzo) · mer–sab",
   "lunchWine": 120,
   "lunchSourceType": "site",
-  "lunchSource": "https://www.wiesner-mysterion.ch/essen/wiesner-zauber/"
+  "lunchSource": "https://www.wiesner-mysterion.ch/essen/wiesner-zauber/",
+  "rankings": [
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 324,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

@@ -10,8 +10,6 @@
   "addressJa": "〒106-0031 東京都港区西麻布 2-11-5",
   "stars": 1,
   "cuisine": "Sushi",
-  "rating": 4.7,
-  "reviews": 314,
   "dinner": 35200,
   "dinnerType": "menu",
   "dinnerNote": "Sushi omakase",
@@ -50,5 +48,14 @@
   "children": "Guests aged 12 and over only.",
   "byob": "Wine only, with corkage of ¥3,300 a bottle.",
   "infoSource": "https://nishiazabu-taku.com/en",
-  "infoChecked": "2026-10-13"
+  "infoChecked": "2026-10-13",
+  "rankings": [
+    {
+      "list": "oad-japan",
+      "year": 2026,
+      "rank": 335,
+      "url": "https://www.oadguides.com/lists/japan/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

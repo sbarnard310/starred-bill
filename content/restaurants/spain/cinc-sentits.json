@@ -6,8 +6,6 @@
   "address": "Entença 60, Barcelona, 08015",
   "stars": 2,
   "cuisine": "Modern European",
-  "rating": 4.7,
-  "reviews": 923,
   "dinner": 219,
   "dinnerType": "menu",
   "dinnerNote": "Tasting menu (lighter menu €189)",
@@ -38,5 +36,20 @@
   "photoSourceType": "commons",
   "photoWidth": 1000,
   "photoHeight": 960,
-  "photoChecked": "2026-10-13"
+  "photoChecked": "2026-10-13",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 77.5,
+      "url": "https://www.laliste.com/places/cinc-sentits-barcelona-es"
+    },
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 457,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

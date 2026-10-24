@@ -11,8 +11,6 @@
   "changeNote": "Gained its second star",
   "changeNoteZh": "晉升二星",
   "changeDate": "2026-07",
-  "rating": 4.5,
-  "reviews": 318,
   "dinner": 4280,
   "dinnerType": "menu",
   "dinnerNote": "Chef's seasonal menu, 10 courses",
@@ -32,5 +30,14 @@
   "placeId": "ChIJHXEjL_SpQjQRtPqWK5a_D1w",
   "michelinId": "1213317",
   "chef": "Nobuo Lee",
-  "chefSource": "press"
+  "chefSource": "press",
+  "rankings": [
+    {
+      "list": "oad-asia",
+      "year": 2026,
+      "rank": 253,
+      "url": "https://www.oadguides.com/lists/asia/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

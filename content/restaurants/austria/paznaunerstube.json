@@ -5,8 +5,6 @@
   "address": "Dorfstr. 95, 6561, Ischgl",
   "stars": 1,
   "cuisine": "Modern European",
-  "rating": 5,
-  "reviews": 23,
   "dinnerType": "menu",
   "dinner": 295,
   "dinnerNote": "Tasting menu (other menus from €180)",
@@ -27,5 +25,14 @@
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 180 €)",
   "noLunch": true,
   "lunchNote": "Dinner only",
-  "lunchNoteDe": "Nur abends"
+  "lunchNoteDe": "Nur abends",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 94,
+      "url": "https://www.laliste.com/places/paznaunerstube-ischgl-at"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

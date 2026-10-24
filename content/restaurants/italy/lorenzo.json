@@ -6,8 +6,6 @@
   "address": "Via Carducci 61, Forte dei Marmi, 55042",
   "stars": 1,
   "cuisine": "Seafood",
-  "rating": 4.7,
-  "reviews": 741,
   "dinner": 60,
   "dinnerType": "main",
   "dinnerNote": "À la carte; mains about €45–€75",
@@ -30,5 +28,14 @@
   ],
   "chef": "Gioacchino Pontrelli",
   "chefSource": "press",
-  "dietsManual": true
+  "dietsManual": true,
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 84.5,
+      "url": "https://www.laliste.com/places/lorenzo-forte-dei-marmi-it"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

@@ -4,8 +4,6 @@
   "address": "Route de Bourguillon 15, 1722, Fribourg",
   "stars": 1,
   "cuisine": "French",
-  "rating": 4.8,
-  "reviews": 495,
   "dinnerType": "menu",
   "dinner": 220,
   "dinnerNote": "Tasting menu (other menus from CHF 180)",
@@ -42,5 +40,14 @@
   "photoSourceType": "commons",
   "photoWidth": 1000,
   "photoHeight": 750,
-  "photoChecked": "2026-10-13"
+  "photoChecked": "2026-10-13",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 90,
+      "url": "https://www.laliste.com/places/des-trois-tours-bourguillon-ch"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

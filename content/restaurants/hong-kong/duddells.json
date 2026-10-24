@@ -8,8 +8,6 @@
   "addressZh": "香港中環都爹利街1號3樓",
   "stars": 1,
   "cuisine": "Cantonese",
-  "rating": 4.1,
-  "reviews": 883,
   "dinner": 1588,
   "dinnerType": "menu",
   "dinnerNote": "Tasting menu",
@@ -29,5 +27,14 @@
   "placeId": "ChIJtQv132QABDQRl5glPL25W38",
   "michelinId": "416835",
   "chef": "Chan Yau Leung",
-  "chefSource": "site"
+  "chefSource": "site",
+  "rankings": [
+    {
+      "list": "oad-asia",
+      "year": 2026,
+      "rank": 138,
+      "url": "https://www.oadguides.com/lists/asia/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

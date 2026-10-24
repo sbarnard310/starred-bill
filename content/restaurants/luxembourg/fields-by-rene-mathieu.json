@@ -5,8 +5,6 @@
   "address": "6 Rue de Trèves, 2632, Findel",
   "stars": 1,
   "cuisine": "Farm to table",
-  "rating": 4.9,
-  "reviews": 86,
   "dinnerType": "menu",
   "dinner": 185,
   "sourceType": "site",
@@ -35,5 +33,14 @@
   "dinnerNoteDe": "Menü Expérience Végétale",
   "lunchNote": "Immersion Végétale lunch menu · Wed–Fri",
   "lunchNoteFr": "Menu Immersion Végétale · mer.–ven. midi",
-  "lunchNoteDe": "Mittagsmenü Immersion Végétale · Mi–Fr"
+  "lunchNoteDe": "Mittagsmenü Immersion Végétale · Mi–Fr",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 82.5,
+      "url": "https://www.laliste.com/places/fields-sandweiler-lu"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

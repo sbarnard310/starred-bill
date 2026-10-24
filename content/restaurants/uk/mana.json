@@ -5,8 +5,6 @@
   "address": "42 Blossom Street, Ancoats, Manchester, M4 6BF",
   "stars": 1,
   "cuisine": "British",
-  "rating": 4.7,
-  "reviews": 528,
   "dinner": 175,
   "dinnerType": "menu",
   "dinnerNote": "Complete menu, 12 courses (Extracts £110)",
@@ -27,5 +25,14 @@
     "vegetarian"
   ],
   "chef": "Simon Martin",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "rankings": [
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 348,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

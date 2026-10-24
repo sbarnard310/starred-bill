@@ -5,8 +5,6 @@
   "address": "chemin de Bertrandfontaine 7, 4570, Marchin",
   "stars": 1,
   "cuisine": "Farm to table",
-  "rating": 4.8,
-  "reviews": 548,
   "dinnerType": "menu",
   "dinner": 160,
   "dinnerNote": "Tasting menu (other menus from €130)",
@@ -34,5 +32,14 @@
   "lunchNoteFr": "Même menu le midi · jeu.–ven., dim.",
   "lunchWine": 60,
   "lunchSourceType": "site",
-  "lunchSource": "https://www.arabelle.be/cuisine-intuitive/"
+  "lunchSource": "https://www.arabelle.be/cuisine-intuitive/",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 77,
+      "url": "https://www.laliste.com/places/arabelle-meirlaen-marchin-be"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

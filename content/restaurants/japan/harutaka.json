@@ -10,8 +10,6 @@
   "addressJa": "〒104-0061 東京都中央区銀座 8-3-1 6F",
   "stars": 3,
   "cuisine": "Sushi",
-  "rating": 4.4,
-  "reviews": 279,
   "dinner": 66000,
   "dinnerType": "menu",
   "dinnerNote": "Sushi omakase",
@@ -26,5 +24,20 @@
   "placeId": "ChIJ04DI3-iLGGARdv1aRxgdFO0",
   "michelinId": "1194135",
   "chef": "Harutaka Takahashi",
-  "chefSource": "site"
+  "chefSource": "site",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 89.5,
+      "url": "https://www.laliste.com/places/harutaka-chuo-ku-jp"
+    },
+    {
+      "list": "oad-japan",
+      "year": 2026,
+      "rank": 128,
+      "url": "https://www.oadguides.com/lists/japan/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

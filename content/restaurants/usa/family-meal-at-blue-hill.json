@@ -6,8 +6,6 @@
   "address": "75 Washington Pl., New York, NY, 10011",
   "stars": 1,
   "cuisine": "American",
-  "rating": 4.6,
-  "reviews": 1367,
   "dinner": 145,
   "dinnerType": "menu",
   "dinnerNote": "Dinner menu",
@@ -25,5 +23,14 @@
   "placeId": "ChIJi9BURJFZwokRDcqvIgxdXds",
   "michelinId": "69616",
   "chef": "Dan Barber",
-  "chefSource": "press"
+  "chefSource": "press",
+  "rankings": [
+    {
+      "list": "oad-north-america",
+      "year": 2026,
+      "rank": 365,
+      "url": "https://www.oadguides.com/lists/north-america/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

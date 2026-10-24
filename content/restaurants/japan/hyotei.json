@@ -6,8 +6,6 @@
   "address": "35 Nanzenji Kusagawacho, Sakyo-ku, 606-8437, Kyoto",
   "stars": 3,
   "cuisine": "Japanese",
-  "rating": 4.3,
-  "reviews": 858,
   "dinnerType": "menu",
   "dinner": 37950,
   "dinnerNote": "Tasting menu (other menus from €31,625)",
@@ -25,5 +23,14 @@
   "placeId": "ChIJw5-sbOAIAWAR3IVM2hFyg5A",
   "michelinId": "1193036",
   "chef": "Yoshihiro Takahashi and Eiichi Takahashi",
-  "chefSource": "press"
+  "chefSource": "press",
+  "rankings": [
+    {
+      "list": "oad-japan",
+      "year": 2026,
+      "rank": 165,
+      "url": "https://www.oadguides.com/lists/japan/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

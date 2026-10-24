@@ -4,8 +4,6 @@
   "address": "Business Park 1, Dubai Hills Estate, Dubai Hills, Dubai",
   "stars": 1,
   "cuisine": "Indian",
-  "rating": 4.8,
-  "reviews": 629,
   "dinnerType": "menu",
   "dinner": 750,
   "dinnerNote": "Tasting menu (other menus from AED 540)",
@@ -33,5 +31,14 @@
   "lunchNoteAr": "القائمة نفسها على الغداء · سبت–أحد",
   "lunchWine": 750,
   "lunchSourceType": "site",
-  "lunchSource": "https://avatara.ae/wp-content/uploads/2025/11/Avatara.pdf"
+  "lunchSource": "https://avatara.ae/wp-content/uploads/2025/11/Avatara.pdf",
+  "rankings": [
+    {
+      "list": "oad-asia",
+      "year": 2026,
+      "rank": 218,
+      "url": "https://www.oadguides.com/lists/asia/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

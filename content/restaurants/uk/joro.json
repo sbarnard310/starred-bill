@@ -9,8 +9,6 @@
   "changeNote": "Gained a star",
   "changeNoteZh": "獲得一星",
   "changeDate": "2026-02",
-  "rating": 4.7,
-  "reviews": 795,
   "dinner": 140,
   "dinnerType": "menu",
   "dinnerNote": "TWÖ signature tasting menu (ÖNE £75)",
@@ -58,5 +56,14 @@
     "note": "Apartments above the restaurant at Oughtibridge Mill.",
     "checked": "2026-10-23"
   },
-  "dietsManual": true
+  "dietsManual": true,
+  "rankings": [
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 328,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

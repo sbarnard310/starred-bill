@@ -4,8 +4,6 @@
   "address": "Rådhusgate 11, 0151, Oslo",
   "stars": 1,
   "cuisine": "Classic",
-  "rating": 4.8,
-  "reviews": 574,
   "dinnerType": "menu",
   "dinner": 2075,
   "dinnerNote": "Tasting menu (other menus from NOK 1,975)",
@@ -35,5 +33,14 @@
   "photoSourceType": "commons",
   "photoWidth": 1000,
   "photoHeight": 750,
-  "photoChecked": "2026-10-13"
+  "photoChecked": "2026-10-13",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 81.5,
+      "url": "https://www.laliste.com/places/statholdergaarden-oslo-no"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

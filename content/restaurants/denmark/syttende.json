@@ -5,8 +5,6 @@
   "address": "Nørre Havnegade 23, 6400, Sønderborg",
   "stars": 1,
   "cuisine": "Modern European",
-  "rating": 4.9,
-  "reviews": 68,
   "dinnerType": "menu",
   "dinner": 2495,
   "dinnerNote": "Tasting menu",
@@ -27,5 +25,14 @@
   ],
   "chef": "Peter Rødsgaard",
   "chefSource": "press",
-  "dinnerNoteDa": "Smagsmenu"
+  "dinnerNoteDa": "Smagsmenu",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 81,
+      "url": "https://www.laliste.com/places/syttende-sonderborg-dk"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

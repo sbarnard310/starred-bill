@@ -9,8 +9,6 @@
   "changeDate": "2026-05",
   "changeNoteNl": "Terug in de gids met twee sterren",
   "changeNoteFr": "De retour dans le guide avec deux étoiles",
-  "rating": 4.6,
-  "reviews": 1572,
   "dinnerType": "menu",
   "dinner": 325,
   "dinnerNote": "Tasting menu",
@@ -50,5 +48,20 @@
   "photoSourceType": "commons",
   "photoWidth": 1000,
   "photoHeight": 563,
-  "photoChecked": "2026-10-13"
+  "photoChecked": "2026-10-13",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 90.5,
+      "url": "https://www.laliste.com/places/the-jane-antwerpen-be"
+    },
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 46,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

@@ -5,8 +5,6 @@
   "address": "Pablo Ruiz Picasso 8, 14014, Córdoba",
   "stars": 3,
   "cuisine": "Creative",
-  "rating": 4.7,
-  "reviews": 997,
   "dinnerType": "menu",
   "dinner": 305,
   "dinnerNote": "Tasting menu (other menus from €195)",
@@ -31,5 +29,20 @@
   ],
   "chef": "Paco Morales",
   "chefSource": "site",
-  "dietsManual": true
+  "dietsManual": true,
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 87.5,
+      "url": "https://www.laliste.com/places/noor-cordoba-es"
+    },
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 72,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

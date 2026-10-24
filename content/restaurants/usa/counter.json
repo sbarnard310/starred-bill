@@ -8,8 +8,6 @@
   "change": "new",
   "changeNote": "Gained its first star in the first American South guide",
   "changeDate": "2025-11",
-  "rating": 4.8,
-  "reviews": 269,
   "dinnerType": "menu",
   "dinner": 330,
   "dinnerNote": "Tasting menu, prepaid",
@@ -30,5 +28,14 @@
     "kosher"
   ],
   "chef": "Sam Hart",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "rankings": [
+    {
+      "list": "oad-north-america",
+      "year": 2026,
+      "rank": 340,
+      "url": "https://www.oadguides.com/lists/north-america/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

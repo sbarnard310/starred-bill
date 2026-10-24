@@ -10,8 +10,6 @@
   "addressJa": "〒105-0003 東京都港区西新橋 2-13-6",
   "stars": 1,
   "cuisine": "Chinese",
-  "rating": 4.6,
-  "reviews": 58,
   "dinner": 22000,
   "dinnerType": "menu",
   "dinnerNote": "Set course, from",
@@ -28,5 +26,14 @@
   "placeId": "ChIJ4WfgFW-LGGAR9UCN92NJzAA",
   "michelinId": "1205576",
   "chef": "Cham Chi Kuong",
-  "chefSource": "press"
+  "chefSource": "press",
+  "rankings": [
+    {
+      "list": "oad-japan",
+      "year": 2026,
+      "rank": 692,
+      "url": "https://www.oadguides.com/lists/japan/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

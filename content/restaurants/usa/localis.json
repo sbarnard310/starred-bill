@@ -4,8 +4,6 @@
   "address": "2031 S. St., Sacramento, 95811",
   "stars": 1,
   "cuisine": "American",
-  "rating": 4.7,
-  "reviews": 607,
   "dinnerType": "menu",
   "dinner": 207,
   "dinnerNote": "Tasting menu, plus 23% service",
@@ -22,5 +20,14 @@
     "vegetarian"
   ],
   "chef": "Christopher Barnum-Dann",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "rankings": [
+    {
+      "list": "oad-north-america",
+      "year": 2026,
+      "rank": 367,
+      "url": "https://www.oadguides.com/lists/north-america/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

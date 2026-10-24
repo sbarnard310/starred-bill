@@ -10,8 +10,6 @@
   "addressJa": "〒162-0825 東京都新宿区神楽坂 3-1 3F",
   "stars": 1,
   "cuisine": "Japanese",
-  "rating": 4.6,
-  "reviews": 118,
   "dinner": 30000,
   "dinnerType": "menu",
   "dinnerNote": "Chef's tasting course",
@@ -28,5 +26,14 @@
   "placeId": "ChIJScElk_KMGGARgaxmq-wDEIs",
   "michelinId": "1194043",
   "chef": "Seiji Tanimoto",
-  "chefSource": "press"
+  "chefSource": "press",
+  "rankings": [
+    {
+      "list": "oad-japan",
+      "year": 2026,
+      "rank": 687,
+      "url": "https://www.oadguides.com/lists/japan/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

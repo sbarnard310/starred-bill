@@ -7,8 +7,6 @@
   "address": "10-5 Dosan-daero 45-gil, Gangnam-gu, Seoul",
   "stars": 2,
   "cuisine": "Creative",
-  "rating": 4.6,
-  "reviews": 306,
   "dinner": 330000,
   "dinnerType": "menu",
   "dinnerNote": "Dinner tasting course, 12 courses",
@@ -29,5 +27,20 @@
   "placeId": "ChIJTaVjWi6hfDURVegqLOB9oSs",
   "michelinId": "570663",
   "chef": "Joseph Lidgerwood",
-  "chefSource": "site"
+  "chefSource": "site",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 77.5,
+      "url": "https://www.laliste.com/places/evett-kr"
+    },
+    {
+      "list": "oad-asia",
+      "year": 2026,
+      "rank": 367,
+      "url": "https://www.oadguides.com/lists/asia/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

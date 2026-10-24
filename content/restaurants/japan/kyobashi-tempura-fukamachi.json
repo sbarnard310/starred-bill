@@ -9,8 +9,6 @@
   "addressJa": "〒104-0031 東京都中央区京橋 2-5-2",
   "stars": 1,
   "cuisine": "Tempura",
-  "rating": 4.5,
-  "reviews": 511,
   "dinner": 33194,
   "dinnerType": "menu",
   "dinnerNote": "Omakase course",
@@ -33,5 +31,14 @@
     "vegetarian"
   ],
   "chef": "Masao Fukamachi",
-  "chefSource": "press"
+  "chefSource": "press",
+  "rankings": [
+    {
+      "list": "oad-japan",
+      "year": 2026,
+      "rank": 212,
+      "url": "https://www.oadguides.com/lists/japan/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

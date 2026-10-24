@@ -4,8 +4,6 @@
   "address": "Wallensteinstraße 59, 1200, Vienna",
   "stars": 2,
   "cuisine": "Creative",
-  "rating": 4.7,
-  "reviews": 812,
   "dinnerType": "menu",
   "dinner": 188,
   "dinnerNote": "Tasting menu",
@@ -26,5 +24,20 @@
   "noLunch": true,
   "lunchNote": "Dinner only",
   "lunchNoteDe": "Nur abends",
-  "dietsManual": true
+  "dietsManual": true,
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 91.5,
+      "url": "https://www.laliste.com/places/mraz-and-sohn-wien-at"
+    },
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 60,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

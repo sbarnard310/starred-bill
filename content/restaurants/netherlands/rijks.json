@@ -4,8 +4,6 @@
   "address": "Museumstraat 2, 1071 XX, Amsterdam",
   "stars": 1,
   "cuisine": "Creative",
-  "rating": 4.4,
-  "reviews": 1830,
   "dinnerType": "menu",
   "dinner": 140,
   "dinnerNote": "Tasting menu",
@@ -36,5 +34,14 @@
   "photoWidth": 1000,
   "photoHeight": 750,
   "photoChecked": "2026-10-13",
-  "dietsManual": true
+  "dietsManual": true,
+  "rankings": [
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 152,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

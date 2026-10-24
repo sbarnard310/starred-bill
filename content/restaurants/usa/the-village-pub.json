@@ -5,8 +5,6 @@
   "address": "2967 Woodside Rd., Woodside, 94062",
   "stars": 1,
   "cuisine": "Modern American",
-  "rating": 4.6,
-  "reviews": 1355,
   "dinner": 130,
   "dinnerType": "menu",
   "dinnerNote": "Prix-fixe dinner, plus 6% county fee",
@@ -77,6 +75,6 @@
       "url": "https://www.oadguides.com/lists/north-america/top-restaurants/2026"
     }
   ],
-  "rankingsChecked": "2026-10-13",
+  "rankingsChecked": "2026-10-24",
   "dietsManual": true
 }

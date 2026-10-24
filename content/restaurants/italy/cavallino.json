@@ -5,8 +5,6 @@
   "address": "Via Abetone Inferiore 1, 41053, Maranello",
   "stars": 1,
   "cuisine": "Italian",
-  "rating": 4.6,
-  "reviews": 1933,
   "dinnerType": "menu",
   "dinner": 65,
   "dinnerNote": "Tasting menu",
@@ -25,5 +23,14 @@
   ],
   "chef": "Massimo Bottura",
   "chefSource": "site",
-  "dietsManual": true
+  "dietsManual": true,
+  "rankings": [
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 316,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

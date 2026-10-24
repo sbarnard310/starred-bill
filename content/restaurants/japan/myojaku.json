@@ -15,8 +15,6 @@
   "changeNoteZh": "晉升三星",
   "changeNoteJa": "三つ星に昇格",
   "changeDate": "2025-09",
-  "rating": 4.7,
-  "reviews": 139,
   "dinner": 49500,
   "dinnerType": "menu",
   "dinnerNote": "Chef's tasting course",
@@ -33,5 +31,20 @@
   "placeId": "ChIJxxsn3a-LGGARYqb5FTmUL98",
   "michelinId": "1202541",
   "chef": "Hidetoshi Nakamura",
-  "chefSource": "site"
+  "chefSource": "site",
+  "rankings": [
+    {
+      "list": "asias-50-best",
+      "year": 2026,
+      "rank": 33,
+      "url": "https://www.the50.com/restaurants/best-in-asia/list/1-50"
+    },
+    {
+      "list": "oad-japan",
+      "year": 2026,
+      "rank": 35,
+      "url": "https://www.oadguides.com/lists/japan/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

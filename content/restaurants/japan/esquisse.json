@@ -9,8 +9,6 @@
   "addressJa": "〒104-0061 東京都中央区銀座 5-4-6 9F",
   "stars": 2,
   "cuisine": "French",
-  "rating": 4.5,
-  "reviews": 562,
   "dinner": 42560,
   "dinnerType": "menu",
   "dinnerNote": "Tasting menu",
@@ -41,5 +39,20 @@
     "via": "website",
     "source": "https://www.esquissetokyo.com/en/reserve",
     "checked": "2026-10-10"
-  }
+  },
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 93.5,
+      "url": "https://www.laliste.com/places/esquisse-chuo-ku-jp"
+    },
+    {
+      "list": "oad-japan",
+      "year": 2026,
+      "rank": 153,
+      "url": "https://www.oadguides.com/lists/japan/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

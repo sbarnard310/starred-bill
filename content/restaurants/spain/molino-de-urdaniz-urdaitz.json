@@ -5,8 +5,6 @@
   "address": "Carretera N 135, 31698, Urdaitz",
   "stars": 2,
   "cuisine": "Creative",
-  "rating": 4.7,
-  "reviews": 944,
   "dinnerType": "menu",
   "dinner": 143,
   "dinnerNote": "Tasting menu (other menus from €132)",
@@ -21,5 +19,14 @@
   "placeId": "ChIJo254LwvqUA0RdtQtu5lDeis",
   "michelinId": "224056",
   "chef": "David Yárnoz",
-  "chefSource": "site"
+  "chefSource": "site",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 77,
+      "url": "https://www.laliste.com/places/el-molino-de-urdaniz-urdaniz-es"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

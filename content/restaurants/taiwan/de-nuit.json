@@ -7,8 +7,6 @@
   "addressZh": "大安區信義路四段175號",
   "stars": 1,
   "cuisine": "Modern",
-  "rating": 4.7,
-  "reviews": 576,
   "dinner": 5480,
   "dinnerType": "menu",
   "dinnerNote": "Dinner menu",
@@ -31,5 +29,14 @@
     "vegetarian"
   ],
   "chef": "Kei Koo",
-  "chefSource": "press"
+  "chefSource": "press",
+  "rankings": [
+    {
+      "list": "oad-asia",
+      "year": 2026,
+      "rank": 400,
+      "url": "https://www.oadguides.com/lists/asia/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

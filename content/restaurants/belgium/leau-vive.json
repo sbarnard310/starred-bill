@@ -5,8 +5,6 @@
   "address": "route de Floreffe 37, 5170, Arbre",
   "stars": 2,
   "cuisine": "French",
-  "rating": 4.8,
-  "reviews": 665,
   "dinnerType": "menu",
   "dinner": 200,
   "dinnerNote": "Six-course menu (four courses €150)",
@@ -77,5 +75,5 @@
       "url": "https://www.laliste.com/places/leau-vive-profondeville-be"
     }
   ],
-  "rankingsChecked": "2026-10-13"
+  "rankingsChecked": "2026-10-24"
 }

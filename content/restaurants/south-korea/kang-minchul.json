@@ -7,8 +7,6 @@
   "address": "5F, 18 Dosan-daero 63-gil, Gangnam-gu, Seoul",
   "stars": 1,
   "cuisine": "French",
-  "rating": 4.1,
-  "reviews": 38,
   "dinner": 360000,
   "dinnerType": "menu",
   "dinnerNote": "Dinner course",
@@ -30,5 +28,14 @@
     "vegetarian"
   ],
   "chef": "Kang Min-chul",
-  "chefSource": "press"
+  "chefSource": "press",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 80,
+      "url": "https://www.laliste.com/places/kang-minchul-kr"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

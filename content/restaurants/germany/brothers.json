@@ -4,8 +4,6 @@
   "address": "Kurfürstenstraße 31, 80801, Munich",
   "stars": 1,
   "cuisine": "Modern European",
-  "rating": 4.9,
-  "reviews": 193,
   "dinnerType": "menu",
   "dinner": 220,
   "wine": 115,
@@ -29,5 +27,20 @@
   "lunchSourceType": "site",
   "lunchSource": "https://www.brothers-munich.com/menue-weine/",
   "dinnerNote": "Tasting menu (also à la carte)",
-  "dinnerNoteDe": "Degustationsmenü (auch à la carte)"
+  "dinnerNoteDe": "Degustationsmenü (auch à la carte)",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 79,
+      "url": "https://www.laliste.com/places/brothers-munchen-de"
+    },
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 206,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

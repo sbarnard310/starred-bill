@@ -9,8 +9,6 @@
   "changeNote": "Gained its first star",
   "changeDate": "2026-03",
   "changeNotePt": "Conquistou a primeira estrela",
-  "rating": 4,
-  "reviews": 368,
   "dinnerType": "menu",
   "dinner": 175,
   "dinnerNote": "Tasting menu (other menus from €145)",
@@ -35,5 +33,14 @@
   "lunchNotePt": "O mesmo menu ao almoço · sex.–dom.",
   "lunchWine": 115,
   "lunchSourceType": "site",
-  "lunchSource": "https://www.l-and.com/s/MAPA-EN-2026.pdf"
+  "lunchSource": "https://www.l-and.com/s/MAPA-EN-2026.pdf",
+  "rankings": [
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 707,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

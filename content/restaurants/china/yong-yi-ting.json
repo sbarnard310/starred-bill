@@ -24,6 +24,13 @@
   "chef": "Fu Yueliang",
   "chefSource": "press",
   "placeId": "ChIJF-KFEeJwsjURj_1S6oqpO3M",
-  "rating": 4.8,
-  "reviews": 5
+  "rankings": [
+    {
+      "list": "oad-asia",
+      "year": 2026,
+      "rank": 307,
+      "url": "https://www.oadguides.com/lists/asia/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

@@ -8,8 +8,6 @@
   "change": "up",
   "changeNote": "Gained its second star",
   "changeDate": "2026-02",
-  "rating": 4.9,
-  "reviews": 233,
   "dinner": 250,
   "dinnerType": "menu",
   "dinnerNote": "15-course tasting menu",
@@ -82,6 +80,6 @@
       "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
     }
   ],
-  "rankingsChecked": "2026-10-13",
+  "rankingsChecked": "2026-10-24",
   "dietsManual": true
 }

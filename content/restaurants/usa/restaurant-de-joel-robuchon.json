@@ -7,8 +7,6 @@
   "change": "new",
   "changeNote": "Two stars in the first Las Vegas guide since 2009",
   "changeDate": "2026-08",
-  "rating": 4.6,
-  "reviews": 448,
   "dinnerType": "menu",
   "dinner": 525,
   "dinnerNote": "Degustation menu",
@@ -22,5 +20,20 @@
   "placeId": "ChIJJULcuqLFyIARupiJy1b4gWQ",
   "michelinId": "1245958",
   "chef": "Eleazar Villanueva",
-  "chefSource": "press"
+  "chefSource": "press",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 79.5,
+      "url": "https://www.laliste.com/places/joel-robuchon-usa-las-vegas-us"
+    },
+    {
+      "list": "oad-north-america",
+      "year": 2026,
+      "rank": 16,
+      "url": "https://www.oadguides.com/lists/north-america/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

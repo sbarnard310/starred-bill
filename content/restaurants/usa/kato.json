@@ -9,8 +9,6 @@
   "changeNote": "Gained a second star",
   "changeNoteZh": "晉升二星",
   "changeDate": "2026-06",
-  "rating": 4.5,
-  "reviews": 426,
   "dinner": 325,
   "dinnerType": "menu",
   "dinnerNote": "Tasting menu",
@@ -26,5 +24,20 @@
   "placeId": "ChIJnd0gSmi7woARCdXsW5usqKU",
   "michelinId": "560068",
   "chef": "Jon Yao",
-  "chefSource": "press"
+  "chefSource": "press",
+  "rankings": [
+    {
+      "list": "north-americas-50-best",
+      "year": 2026,
+      "rank": 49,
+      "url": "https://www.the50.com/restaurants/best-in-north-america/list/1-50"
+    },
+    {
+      "list": "oad-north-america",
+      "year": 2026,
+      "rank": 30,
+      "url": "https://www.oadguides.com/lists/north-america/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

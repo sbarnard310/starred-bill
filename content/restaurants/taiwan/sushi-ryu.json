@@ -8,8 +8,6 @@
   "addressZh": "中山區新生北路二段60之5號",
   "stars": 1,
   "cuisine": "Sushi",
-  "rating": 4.2,
-  "reviews": 691,
   "dinner": 7000,
   "dinnerType": "menu",
   "dinnerNote": "Omakase dinner, from",
@@ -28,5 +26,14 @@
   "placeId": "ChIJE5O0jWepQjQRhxnXfxL7TeE",
   "michelinId": "551800",
   "chef": "Yang Yung-lung",
-  "chefSource": "press"
+  "chefSource": "press",
+  "rankings": [
+    {
+      "list": "oad-asia",
+      "year": 2026,
+      "rank": 452,
+      "url": "https://www.oadguides.com/lists/asia/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

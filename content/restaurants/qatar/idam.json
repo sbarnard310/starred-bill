@@ -6,8 +6,6 @@
   "address": "5th Floor, Museum of Islamic Art, Corniche Promenade, Doha",
   "stars": 1,
   "cuisine": "French",
-  "rating": 4.6,
-  "reviews": 269,
   "dinner": 690,
   "dinnerType": "menu",
   "dinnerNote": "Experience menu (Miniature menu QAR 450); drinks pairing, no alcohol; closed Fri–Sat",
@@ -36,5 +34,26 @@
   "dinnerNoteAr": "قائمة Experience (قائمة Miniature بسعر QAR 450)؛ مرافقة مشروبات بلا كحول؛ مغلق الجمعة والسبت",
   "lunchNoteAr": "قائمة الغداء؛ مرافقة مشروبات؛ من الأحد إلى الخميس",
   "chef": "Fabrice Rosso",
-  "chefSource": "press"
+  "chefSource": "press",
+  "rankings": [
+    {
+      "list": "mena-50-best",
+      "year": 2026,
+      "rank": 44,
+      "url": "https://www.the50.com/restaurants/best-in-middle-east-and-north-africa/list/1-50"
+    },
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 89,
+      "url": "https://www.laliste.com/places/idam-an-alain-ducasse-restaurant-doha-qa"
+    },
+    {
+      "list": "oad-asia",
+      "year": 2026,
+      "rank": 428,
+      "url": "https://www.oadguides.com/lists/asia/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

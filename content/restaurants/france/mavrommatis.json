@@ -7,8 +7,6 @@
   "address": "42 rue Daubenton, 75005, Paris",
   "stars": 1,
   "cuisine": "Greek",
-  "rating": 4.5,
-  "reviews": 871,
   "dinner": 150,
   "dinnerType": "menu",
   "dinnerNote": "Tasting menu for the whole table",

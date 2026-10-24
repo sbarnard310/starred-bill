@@ -5,8 +5,6 @@
   "address": "Mejlgade 35B, 8000, Aarhus",
   "stars": 1,
   "cuisine": "Modern European",
-  "rating": 4.8,
-  "reviews": 328,
   "dinnerType": "menu",
   "dinner": 2000,
   "dinnerNote": "Tasting menu (other menus from DKK 850)",
@@ -43,5 +41,14 @@
   "photoSourceType": "commons",
   "photoWidth": 750,
   "photoHeight": 1000,
-  "photoChecked": "2026-10-13"
+  "photoChecked": "2026-10-13",
+  "rankings": [
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 391,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

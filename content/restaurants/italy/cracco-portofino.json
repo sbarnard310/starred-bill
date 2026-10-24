@@ -5,8 +5,6 @@
   "address": "Molo Umberto I 9, 16034, Portofino",
   "stars": 1,
   "cuisine": "Seafood",
-  "rating": 3.9,
-  "reviews": 222,
   "dinnerType": "menu",
   "dinner": 210,
   "dinnerNote": "Tasting menu (other menus from €160)",
@@ -54,5 +52,14 @@
   "infoSource": "https://www.sevenrooms.com/reservations/ristorantecraccoportofino",
   "infoChecked": "2026-10-13",
   "notice": "Closed for the winter from 1 November 2026 (no tables on its booking page until spring 2027)",
-  "dietsManual": true
+  "dietsManual": true,
+  "rankings": [
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 211,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

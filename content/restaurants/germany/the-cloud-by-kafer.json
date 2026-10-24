@@ -8,8 +8,6 @@
   "changeNote": "New straight in with two stars",
   "changeDate": "2026-06",
   "changeNoteDe": "Neu und gleich mit zwei Sternen",
-  "rating": 4.8,
-  "reviews": 381,
   "dinnerType": "menu",
   "dinner": 290,
   "dinnerNote": "Whispers of the Rainforest tasting menu",
@@ -52,5 +50,14 @@
   "dressCode": "Smart casual: elegant but relaxed.",
   "infoSource": "https://thecloud.restaurant/",
   "infoChecked": "2026-10-13",
-  "dietsManual": true
+  "dietsManual": true,
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 77,
+      "url": "https://www.laliste.com/places/the-cloud-by-kafer-munchen-de"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

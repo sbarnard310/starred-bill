@@ -11,8 +11,6 @@
   "changeNote": "Gained its first star",
   "changeNoteKo": "첫 번째 별 획득",
   "changeDate": "2026-03",
-  "rating": 4.5,
-  "reviews": 13,
   "dinner": 360000,
   "dinnerType": "menu",
   "dinnerNote": "Dinner course",
@@ -46,5 +44,14 @@
     "via": "website",
     "source": "https://www.giwakang.com/",
     "checked": "2026-10-10"
-  }
+  },
+  "rankings": [
+    {
+      "list": "oad-asia",
+      "year": 2026,
+      "rank": 323,
+      "url": "https://www.oadguides.com/lists/asia/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

@@ -10,8 +10,6 @@
   "changeNote": "Gained its first star",
   "changeNoteTh": "ได้ดาวดวงแรก",
   "changeDate": "2025-11",
-  "rating": 4.5,
-  "reviews": 768,
   "dinner": 5990,
   "dinnerType": "menu",
   "dinnerNote": "Tasting menu, plus service and VAT (++)",
@@ -32,5 +30,32 @@
   ],
   "chef": "Thitid Tassanakajohn",
   "chefSource": "site",
-  "dietsManual": true
+  "dietsManual": true,
+  "rankings": [
+    {
+      "list": "worlds-50-best",
+      "year": 2025,
+      "rank": 35,
+      "url": "https://www.the50.com/restaurants/best-in-the-world/list/1-50"
+    },
+    {
+      "list": "asias-50-best",
+      "year": 2026,
+      "rank": 5,
+      "url": "https://www.the50.com/restaurants/best-in-asia/list/1-50"
+    },
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 85.5,
+      "url": "https://www.laliste.com/places/nusara-th"
+    },
+    {
+      "list": "oad-asia",
+      "year": 2026,
+      "rank": 42,
+      "url": "https://www.oadguides.com/lists/asia/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

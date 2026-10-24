@@ -4,8 +4,6 @@
   "address": "Rua Rodrigo da Fonseca 88, 1099-039, Lisbon",
   "stars": 1,
   "cuisine": "Modern European",
-  "rating": 4.8,
-  "reviews": 312,
   "dinnerType": "menu",
   "dinner": 195,
   "dinnerNote": "Tasting menu (other menus from €175)",
@@ -25,5 +23,20 @@
   "dinnerNotePt": "Menu de degustação (outros menus desde 175 €)",
   "noLunch": true,
   "lunchNote": "Dinner only",
-  "lunchNotePt": "Só jantar"
+  "lunchNotePt": "Só jantar",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 81.5,
+      "url": "https://www.laliste.com/places/cura-lisboa-pt"
+    },
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 239,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

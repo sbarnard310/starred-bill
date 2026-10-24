@@ -5,8 +5,6 @@
   "address": "Strandallee 73, 23669, Timmendorfer Strand",
   "stars": 1,
   "cuisine": "French",
-  "rating": 4.8,
-  "reviews": 92,
   "dinnerType": "menu",
   "dinner": 190,
   "dinnerNote": "Tasting menu (other menus from €145)",
@@ -27,5 +25,14 @@
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 145 €)",
   "noLunch": true,
   "lunchNote": "Dinner only",
-  "lunchNoteDe": "Nur abends"
+  "lunchNoteDe": "Nur abends",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 80,
+      "url": "https://www.laliste.com/places/orangerie-timmendorfer-strand-de"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

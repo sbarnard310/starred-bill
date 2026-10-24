@@ -10,8 +10,6 @@
   "changeDate": "2026-05",
   "changeNoteNl": "Kreeg een tweede ster",
   "changeNoteFr": "Obtient sa deuxième étoile",
-  "rating": 4.8,
-  "reviews": 330,
   "dinnerType": "menu",
   "dinner": 225,
   "dinnerNote": "Tasting menu",
@@ -34,5 +32,14 @@
   "lunchNoteFr": "Même menu le midi · lun.–mar., ven.–sam.",
   "lunchWine": 115,
   "lunchSourceType": "site",
-  "lunchSource": "https://cuines33.be/onsmenu/"
+  "lunchSource": "https://cuines33.be/onsmenu/",
+  "rankings": [
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 684,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

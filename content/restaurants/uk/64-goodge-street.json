@@ -8,8 +8,6 @@
   "change": "new",
   "changeNote": "Gained its first star",
   "changeDate": "2025-02",
-  "rating": 4.8,
-  "reviews": 304,
   "dinner": 98,
   "dinnerType": "menu",
   "dinnerNote": "3-course dinner menu (early evening menu £49, 5.30–6pm)",
@@ -84,6 +82,6 @@
       "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
     }
   ],
-  "rankingsChecked": "2026-10-13",
+  "rankingsChecked": "2026-10-24",
   "dietsManual": true
 }

@@ -10,8 +10,6 @@
   "changeNote": "Gained its first star",
   "changeNoteIt": "Ha ottenuto la prima stella",
   "changeDate": "2024-11",
-  "rating": 5,
-  "reviews": 46,
   "dinner": 125,
   "dinnerType": "menu",
   "dinnerNote": "Radici tasting menu",
@@ -36,5 +34,14 @@
     "gluten-free"
   ],
   "chef": "Riccardo Merli",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "rankings": [
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 314,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

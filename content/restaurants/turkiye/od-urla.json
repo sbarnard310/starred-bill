@@ -5,8 +5,6 @@
   "address": "Rüstem Mahallesi, Süt Pınarı Mevkii, 2018/9 Sokak No:28, Urla, 35430, Izmir",
   "stars": 1,
   "cuisine": "Modern European",
-  "rating": 4.5,
-  "reviews": 3529,
   "dinnerType": "menu",
   "dinner": 6250,
   "dinnerNote": "Tasting menu (other menus from TRY 5,350)",
@@ -76,6 +74,6 @@
       "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
     }
   ],
-  "rankingsChecked": "2026-10-13",
+  "rankingsChecked": "2026-10-24",
   "dietsManual": true
 }

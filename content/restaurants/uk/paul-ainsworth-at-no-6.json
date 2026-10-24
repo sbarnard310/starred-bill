@@ -5,8 +5,6 @@
   "address": "6 Middle Street, Padstow, PL28 8AP",
   "stars": 1,
   "cuisine": "Modern European",
-  "rating": 4.8,
-  "reviews": 856,
   "dinner": 195,
   "dinnerType": "menu",
   "dinnerNote": "Tasting menu",
@@ -24,5 +22,14 @@
   "placeId": "ChIJATtogiR1a0gRm4MKH886HJI",
   "michelinId": "188670",
   "chef": "Paul Ainsworth",
-  "chefSource": "site"
+  "chefSource": "site",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 86.5,
+      "url": "https://www.laliste.com/places/paul-ainsworth-at-number-6-padstow-gb"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

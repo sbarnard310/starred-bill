@@ -25,6 +25,13 @@
   "areaZhs": "厦门",
   "chef": "Wu Rong",
   "chefSource": "press",
-  "rating": 4.6,
-  "reviews": 19
+  "rankings": [
+    {
+      "list": "oad-asia",
+      "year": 2026,
+      "rank": 186,
+      "url": "https://www.oadguides.com/lists/asia/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

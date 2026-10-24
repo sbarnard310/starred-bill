@@ -6,8 +6,6 @@
   "address": "San Jerónimo 34, Madrid, 28014",
   "stars": 1,
   "cuisine": "Creative",
-  "rating": 4.7,
-  "reviews": 1079,
   "dinner": 245,
   "dinnerType": "menu",
   "dinnerNote": "Long tasting menu (shorter menu €190)",
@@ -35,5 +33,14 @@
     "rooms": 96,
     "url": "https://www.derbyhotels.com/en/hotel-urban/",
     "checked": "2026-10-23"
-  }
+  },
+  "rankings": [
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 158,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

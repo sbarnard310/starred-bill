@@ -8,8 +8,6 @@
   "addressZh": "中山區民權東路二段41號B1 (亞都麗緻大飯店)",
   "stars": 1,
   "cuisine": "Zhejiang",
-  "rating": 4.5,
-  "reviews": 1784,
   "dinner": 2800,
   "dinnerType": "menu",
   "dinnerNote": "Set menus from (up to NT$12,800)",
@@ -34,5 +32,14 @@
   ],
   "chef": "Lu Kai-yuan",
   "chefSource": "press",
-  "dietsManual": true
+  "dietsManual": true,
+  "rankings": [
+    {
+      "list": "oad-asia",
+      "year": 2026,
+      "rank": 464,
+      "url": "https://www.oadguides.com/lists/asia/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

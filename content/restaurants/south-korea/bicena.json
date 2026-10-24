@@ -7,8 +7,6 @@
   "address": "81F, Lotte World Tower, 300 Olympic-ro, Songpa-gu, Seoul",
   "stars": 1,
   "cuisine": "Korean",
-  "rating": 4.4,
-  "reviews": 522,
   "dinner": 250000,
   "dinnerType": "menu",
   "dinnerNote": "Dinner course",
@@ -27,5 +25,14 @@
   "placeId": "ChIJIQaZkQqlfDUR5qNX-DM-Blw",
   "michelinId": "511844",
   "chef": "Jeon Kwang-sik",
-  "chefSource": "press"
+  "chefSource": "press",
+  "rankings": [
+    {
+      "list": "oad-asia",
+      "year": 2026,
+      "rank": 543,
+      "url": "https://www.oadguides.com/lists/asia/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

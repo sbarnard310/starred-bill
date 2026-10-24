@@ -9,8 +9,6 @@
   "addressJa": "〒105-0002 東京都港区愛宕 1-1-1 虎ノ門ヒルズレジデンシャルタワー 1F",
   "stars": 3,
   "cuisine": "Japanese",
-  "rating": 4.5,
-  "reviews": 204,
   "dinner": 72600,
   "dinnerType": "menu",
   "dinnerNote": "Minimum charge per guest",
@@ -25,5 +23,20 @@
   "placeId": "ChIJP-dHJnSLGGAR6lRM5169Uj0",
   "michelinId": "1193906",
   "chef": "Hiroyuki Kanda",
-  "chefSource": "site"
+  "chefSource": "site",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 97,
+      "url": "https://www.laliste.com/places/kanda-minato-city-jp"
+    },
+    {
+      "list": "oad-japan",
+      "year": 2026,
+      "rank": 181,
+      "url": "https://www.oadguides.com/lists/japan/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

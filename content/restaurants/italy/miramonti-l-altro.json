@@ -10,8 +10,6 @@
   "changeNote": "Dropped from two stars to one",
   "changeNoteIt": "È passato da due stelle a una",
   "changeDate": "2025-11",
-  "rating": 4.8,
-  "reviews": 1017,
   "dinner": 190,
   "dinnerType": "menu",
   "dinnerNote": "Chez Philippe, 10 courses (other menus from €130)",
@@ -73,5 +71,14 @@
   "waitlist": "When a day is full, the online booking page offers a place on the waiting list; the restaurant gets in touch only if a cancellation frees a table.",
   "infoSource": "https://rsv.miramontilaltro.it/frontend/",
   "infoChecked": "2026-10-13",
-  "dietsManual": true
+  "dietsManual": true,
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 90,
+      "url": "https://www.laliste.com/places/miramonti-laltro-concesio-it"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

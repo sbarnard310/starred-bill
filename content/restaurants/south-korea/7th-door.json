@@ -7,8 +7,6 @@
   "address": "4F, 41 Hakdong-ro 97-gil, Gangnam-gu, Seoul",
   "stars": 1,
   "cuisine": "Korean",
-  "rating": 4.6,
-  "reviews": 124,
   "dinner": 320000,
   "dinnerType": "menu",
   "dinnerNote": "Dinner course",
@@ -32,5 +30,26 @@
     "vegan"
   ],
   "chef": "Kim Dae-chun",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "rankings": [
+    {
+      "list": "asias-50-best",
+      "year": 2026,
+      "rank": 49,
+      "url": "https://www.the50.com/restaurants/best-in-asia/list/1-50"
+    },
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 82,
+      "url": "https://www.laliste.com/places/7th-door-kr"
+    },
+    {
+      "list": "oad-asia",
+      "year": 2026,
+      "rank": 84,
+      "url": "https://www.oadguides.com/lists/asia/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

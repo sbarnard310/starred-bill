@@ -5,8 +5,6 @@
   "address": "Hauptstraße 69, 79295, Sulzburg",
   "stars": 2,
   "cuisine": "Creative",
-  "rating": 4.7,
-  "reviews": 267,
   "dinnerType": "menu",
   "dinner": 225,
   "dinnerNote": "Tasting menu",
@@ -22,5 +20,14 @@
   "lunchNote": "Dinner only",
   "lunchNoteDe": "Nur abends",
   "chef": "Douce Steiner",
-  "chefSource": "press"
+  "chefSource": "press",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 86.5,
+      "url": "https://www.laliste.com/places/hirschen-sulzburg-de"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

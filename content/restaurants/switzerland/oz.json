@@ -5,8 +5,6 @@
   "address": "Obergass 2, 7414, Fürstenau",
   "stars": 1,
   "cuisine": "Vegetarian",
-  "rating": 4.8,
-  "reviews": 37,
   "dinnerType": "menu",
   "dinner": 178,
   "dinnerNote": "Tasting menu",
@@ -31,5 +29,14 @@
   "lunchNote": "Open for lunch · Sat–Sun",
   "lunchNoteDe": "Mittags geöffnet · Sa–So",
   "lunchNoteFr": "Ouvert le midi · sam.–dim.",
-  "lunchNoteIt": "Aperto a pranzo · sab–dom"
+  "lunchNoteIt": "Aperto a pranzo · sab–dom",
+  "rankings": [
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 269,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

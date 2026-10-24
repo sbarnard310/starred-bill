@@ -5,8 +5,6 @@
   "address": "Via Poseidonia 41, 84047, Paestum",
   "stars": 1,
   "cuisine": "Creative",
-  "rating": 4.6,
-  "reviews": 194,
   "dinnerType": "menu",
   "dinner": 160,
   "dinnerNote": "Tasting menu (other menus from €125)",
@@ -40,5 +38,20 @@
       }
     ],
     "checked": "2026-10-23"
-  }
+  },
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 80,
+      "url": "https://www.laliste.com/places/tre-olivi-laura-it"
+    },
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 754,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

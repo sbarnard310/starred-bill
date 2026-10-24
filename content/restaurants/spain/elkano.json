@@ -5,8 +5,6 @@
   "address": "Herrerieta 2, Getaria, 20808",
   "stars": 1,
   "cuisine": "Seafood",
-  "rating": 4.7,
-  "reviews": 1784,
   "dinner": 195,
   "dinnerType": "menu",
   "dinnerNote": "Tasting menu, with whole grilled turbot · dinner Fri–Sat only",
@@ -27,5 +25,20 @@
   "placeId": "ChIJH9GgGaLIUQ0RhEde7VfKpQI",
   "michelinId": "220227",
   "chef": "Aitor Arregi",
-  "chefSource": "press"
+  "chefSource": "press",
+  "rankings": [
+    {
+      "list": "worlds-50-best",
+      "year": 2025,
+      "rank": 24,
+      "url": "https://www.the50.com/restaurants/best-in-the-world/list/1-50"
+    },
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 92,
+      "url": "https://www.laliste.com/places/elkano-getaria-es"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

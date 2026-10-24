@@ -8,8 +8,6 @@
   "change": "new",
   "changeNote": "Gained its first star",
   "changeDate": "2025-02",
-  "rating": 4.7,
-  "reviews": 402,
   "dinner": 125,
   "dinnerType": "menu",
   "dinnerNote": "Tasting menu",
@@ -31,5 +29,14 @@
     "vegan"
   ],
   "chef": "John Chantarasak",
-  "chefSource": "press"
+  "chefSource": "press",
+  "rankings": [
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 510,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

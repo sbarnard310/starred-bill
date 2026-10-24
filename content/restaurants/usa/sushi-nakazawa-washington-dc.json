@@ -5,8 +5,6 @@
   "address": "Waldorf Astoria,1100 Pennsylvania Ave. NW, Washington, DC 20004",
   "stars": 1,
   "cuisine": "Japanese",
-  "rating": 4.8,
-  "reviews": 464,
   "dinner": 160,
   "dinnerType": "menu",
   "dinnerNote": "Omakase, from",
@@ -23,5 +21,14 @@
     "gluten-free"
   ],
   "chef": "Daisuke Nakazawa",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "rankings": [
+    {
+      "list": "oad-north-america",
+      "year": 2026,
+      "rank": 216,
+      "url": "https://www.oadguides.com/lists/north-america/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

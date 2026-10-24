@@ -6,8 +6,6 @@
   "address": "1 Vanderbilt Ave., New York, NY, 10017",
   "stars": 1,
   "cuisine": "French",
-  "rating": 4.5,
-  "reviews": 1211,
   "dinner": 145,
   "dinnerType": "menu",
   "dinnerNote": "Three-course dinner menu (six-course tasting menus $165 and $205)",
@@ -112,6 +110,6 @@
       "url": "https://www.oadguides.com/lists/north-america/top-restaurants/2026"
     }
   ],
-  "rankingsChecked": "2026-10-13",
+  "rankingsChecked": "2026-10-24",
   "dietsManual": true
 }

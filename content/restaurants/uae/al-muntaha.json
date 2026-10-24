@@ -4,8 +4,6 @@
   "address": "Burj Al Arab Jumeirah, Dubai",
   "stars": 1,
   "cuisine": "French",
-  "rating": 4.5,
-  "reviews": 497,
   "dinnerType": "menu",
   "dinnerNote": "Tasting menu, 9 courses",
   "sourceType": "press",
@@ -28,5 +26,14 @@
   "lunch": 450,
   "lunchType": "menu",
   "lunchSourceType": "press",
-  "lunchSource": "https://restaurantsforkings.com/city/dubai/al-muntaha.html"
+  "lunchSource": "https://restaurantsforkings.com/city/dubai/al-muntaha.html",
+  "rankings": [
+    {
+      "list": "oad-asia",
+      "year": 2026,
+      "rank": 312,
+      "url": "https://www.oadguides.com/lists/asia/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

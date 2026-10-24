@@ -6,8 +6,6 @@
   "address": "Colima 166, Roma Norte, Mexico City",
   "stars": 1,
   "cuisine": "Creative",
-  "rating": 4.2,
-  "reviews": 4885,
   "dinner": 585,
   "dinnerType": "main",
   "dinnerNote": "À la carte; mains MX$315–585",
@@ -41,5 +39,26 @@
   "photoWidth": 563,
   "photoHeight": 1000,
   "photoChecked": "2026-10-13",
-  "dietsManual": true
+  "dietsManual": true,
+  "rankings": [
+    {
+      "list": "worlds-50-best",
+      "year": 2025,
+      "rank": 46,
+      "url": "https://www.the50.com/restaurants/best-in-the-world/list/1-50"
+    },
+    {
+      "list": "latin-americas-50-best",
+      "year": 2025,
+      "rank": 39,
+      "url": "https://www.the50.com/restaurants/best-in-latin-america/list/1-50"
+    },
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 94,
+      "url": "https://www.laliste.com/places/rosetta-ciudad-de-mexico-mx"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

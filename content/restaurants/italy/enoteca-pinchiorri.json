@@ -6,8 +6,6 @@
   "address": "Via Ghibellina 87, Florence, 50122",
   "stars": 3,
   "cuisine": "Italian",
-  "rating": 4.3,
-  "reviews": 989,
   "dinner": 390,
   "dinnerType": "menu",
   "dinnerNote": "Espressione tasting menu, for the whole table, wines extra (vegetarian Madre Terra also €390)",
@@ -64,7 +62,7 @@
       "url": "https://www.laliste.com/places/enoteca-pinchiorri-firenze-it"
     }
   ],
-  "rankingsChecked": "2026-10-13",
+  "rankingsChecked": "2026-10-24",
   "photo": "enoteca-pinchiorri.jpg",
   "photoAlt": "The Enoteca Pinchiorri Ristorante sign on Palazzo Jacometti-Ciofi, Via Ghibellina, Florence",
   "photoCredit": "I, Sailko",

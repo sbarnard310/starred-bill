@@ -4,8 +4,6 @@
   "address": "Coburgbastei 4, 1010, Vienna",
   "stars": 2,
   "cuisine": "Modern European",
-  "rating": 4.8,
-  "reviews": 214,
   "dinnerType": "menu",
   "dinner": 330,
   "dinnerNote": "Tasting menu",
@@ -22,5 +20,14 @@
   "dinnerNoteDe": "Degustationsmenü",
   "noLunch": true,
   "lunchNote": "Dinner only",
-  "lunchNoteDe": "Nur abends"
+  "lunchNoteDe": "Nur abends",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 96,
+      "url": "https://www.laliste.com/places/silvio-nickol-im-palais-coburg-wien-at"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

@@ -6,8 +6,6 @@
   "address": "Vivero 3, Madrid, 28040",
   "stars": 1,
   "cuisine": "Seafood",
-  "rating": 4.8,
-  "reviews": 638,
   "dinner": 190,
   "dinnerType": "menu",
   "dinnerNote": "3+1 menu, from (longer menus €210 and €235)",
@@ -35,5 +33,20 @@
     "kosher"
   ],
   "chef": "Diego Murciego",
-  "chefSource": "press"
+  "chefSource": "press",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 75.5,
+      "url": "https://www.laliste.com/places/desde-1911-madrid-es"
+    },
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 31,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

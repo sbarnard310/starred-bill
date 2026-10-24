@@ -12,8 +12,6 @@
   "changeNoteFr": "Première étoile",
   "changeNoteZh": "首度摘星",
   "changeDate": "2026-03",
-  "rating": 4.6,
-  "reviews": 134,
   "dinner": 185,
   "dinnerType": "menu",
   "dinnerNote": "Menu in 9 courses (7 courses €135)",
@@ -36,5 +34,14 @@
     "vegetarian"
   ],
   "chef": "Julien Dumas",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "rankings": [
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 426,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

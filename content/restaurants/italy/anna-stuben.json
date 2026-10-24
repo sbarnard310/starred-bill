@@ -5,8 +5,6 @@
   "address": "Via Vidalong 3, 39046, Ortisei",
   "stars": 1,
   "cuisine": "Creative",
-  "rating": 4.6,
-  "reviews": 178,
   "dinnerType": "menu",
   "dinner": 190,
   "dinnerNote": "Tasting menu",
@@ -32,5 +30,14 @@
     "url": "https://www.gardena.it/it/camere-e-suite.asp",
     "note": "A Relais & Châteaux hotel in Ortisei with rooms and suites from comfort to chalet suites.",
     "checked": "2026-10-23"
-  }
+  },
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 85,
+      "url": "https://www.laliste.com/places/anna-stuben-ortisei-it"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

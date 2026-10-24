@@ -5,8 +5,6 @@
   "address": "Turnovatoren 18 (GPS: P.J. Brepolsplein), 2300, Turnhout",
   "stars": 1,
   "cuisine": "French",
-  "rating": 4.7,
-  "reviews": 374,
   "dinnerType": "menu",
   "dinner": 140,
   "dinnerNote": "5-course dinner menu",
@@ -32,5 +30,14 @@
   "lunchSourceType": "site",
   "lunchSource": "https://hert.be/menu/lunch/",
   "chef": "Alex Verhoeven",
-  "chefSource": "press"
+  "chefSource": "press",
+  "rankings": [
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 680,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

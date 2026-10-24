@@ -5,8 +5,6 @@
   "address": "La Huerta 3, 11693, Alcalá del Valle",
   "stars": 1,
   "cuisine": "Modern European",
-  "rating": 4.8,
-  "reviews": 1176,
   "dinnerType": "menu",
   "dinner": 104,
   "dinnerNote": "Tasting menu (other menus from €86)",
@@ -25,5 +23,14 @@
   "placeId": "ChIJTSGL-BNJDQ0RqyakkgaOoAA",
   "michelinId": "533865",
   "chef": "Pedro Aguilera",
-  "chefSource": "press"
+  "chefSource": "press",
+  "rankings": [
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 200,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

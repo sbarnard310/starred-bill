@@ -4,8 +4,6 @@
   "address": "boulevard d'Ypres 33, 1000, Brussels",
   "stars": 1,
   "cuisine": "Farm to table",
-  "rating": 4.8,
-  "reviews": 516,
   "dinnerType": "menu",
   "dinner": 135,
   "dinnerNote": "Tasting menu (other menus from €110)",
@@ -31,5 +29,14 @@
   "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 110)",
   "dinnerNoteFr": "Menu dégustation (autres menus dès 110 €)",
   "lunchNoteNl": "Lunchmenu",
-  "lunchNoteFr": "Menu déjeuner"
+  "lunchNoteFr": "Menu déjeuner",
+  "rankings": [
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 678,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

@@ -5,8 +5,6 @@
   "address": "Škopaljska Ulica 220, 53291, Novalja",
   "stars": 1,
   "cuisine": "Creative",
-  "rating": 4.6,
-  "reviews": 668,
   "dinnerType": "menu",
   "dinner": 172,
   "dinnerNote": "Tasting menu",
@@ -22,5 +20,14 @@
   "lunchNote": "Open for lunch",
   "lunchNoteHr": "Otvoreno za ručak",
   "chef": "Matija Bregeš",
-  "chefSource": "press"
+  "chefSource": "press",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 83,
+      "url": "https://www.laliste.com/places/boskinac-novalja-hr"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

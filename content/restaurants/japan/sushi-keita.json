@@ -10,8 +10,6 @@
   "addressJa": "〒104-0045 東京都中央区築地 6-6-4",
   "stars": 1,
   "cuisine": "Sushi",
-  "rating": 4.4,
-  "reviews": 188,
   "dinner": 28000,
   "dinnerType": "menu",
   "dinnerNote": "Chef's tasting course",
@@ -31,5 +29,14 @@
   "placeId": "ChIJV-ltEGKJGGARYqHQSKTGchM",
   "michelinId": "1194000",
   "chef": "Keita Aoyama",
-  "chefSource": "press"
+  "chefSource": "press",
+  "rankings": [
+    {
+      "list": "oad-japan",
+      "year": 2026,
+      "rank": 343,
+      "url": "https://www.oadguides.com/lists/japan/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

@@ -7,8 +7,6 @@
   "addressZh": "香港中環伊利近街1-5號1樓",
   "stars": 1,
   "cuisine": "French",
-  "rating": 4.5,
-  "reviews": 402,
   "dinner": 1688,
   "dinnerType": "menu",
   "dinnerNote": "Sélection du Chef tasting menu",
@@ -27,5 +25,14 @@
   "placeId": "ChIJSxgLr3sABDQRKGr7Fnsagkc",
   "michelinId": "1197395",
   "chef": "Mina Güçlüer",
-  "chefSource": "site"
+  "chefSource": "site",
+  "rankings": [
+    {
+      "list": "oad-asia",
+      "year": 2026,
+      "rank": 77,
+      "url": "https://www.oadguides.com/lists/asia/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

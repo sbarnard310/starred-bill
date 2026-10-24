@@ -15,8 +15,6 @@
   "changeNoteZh": "首度摘星",
   "changeNoteJa": "初の一つ星を獲得",
   "changeDate": "2024-10",
-  "rating": 4.7,
-  "reviews": 74,
   "dinner": 34800,
   "dinnerType": "menu",
   "dinnerNote": "Seasonal dessert course",
@@ -35,5 +33,14 @@
     "vegan"
   ],
   "chef": "Koichi Katsumata",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "rankings": [
+    {
+      "list": "oad-japan",
+      "year": 2026,
+      "rank": 106,
+      "url": "https://www.oadguides.com/lists/japan/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

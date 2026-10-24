@@ -8,8 +8,6 @@
   "addressZh": "香港金鐘法院道太古廣場港島香格里拉酒店5樓",
   "stars": 1,
   "cuisine": "Cantonese",
-  "rating": 4.1,
-  "reviews": 259,
   "dinner": 920,
   "dinnerType": "menu",
   "dinnerNote": "Set menu, HK$3,680 for four",
@@ -40,5 +38,14 @@
   "photoSourceType": "commons",
   "photoWidth": 1000,
   "photoHeight": 747,
-  "photoChecked": "2026-10-13"
+  "photoChecked": "2026-10-13",
+  "rankings": [
+    {
+      "list": "oad-asia",
+      "year": 2026,
+      "rank": 259,
+      "url": "https://www.oadguides.com/lists/asia/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

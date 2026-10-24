@@ -4,8 +4,6 @@
   "address": "Augustinerhof 1, 90403, Nuremberg",
   "stars": 1,
   "cuisine": "Modern European",
-  "rating": 4.9,
-  "reviews": 126,
   "dinnerType": "menu",
   "dinner": 210,
   "dinnerNote": "Tasting menu (other menus from €190)",
@@ -26,5 +24,14 @@
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 190 €)",
   "noLunch": true,
   "lunchNote": "Dinner only",
-  "lunchNoteDe": "Nur abends"
+  "lunchNoteDe": "Nur abends",
+  "rankings": [
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 275,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

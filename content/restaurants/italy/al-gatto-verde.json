@@ -5,8 +5,6 @@
   "address": "Stradello Bonaghino 56, 41126, Modena",
   "stars": 1,
   "cuisine": "Modern European",
-  "rating": 4.8,
-  "reviews": 115,
   "dinnerType": "menu",
   "dinner": 70,
   "dinnerNote": "Tasting menu (other menus from €50)",
@@ -36,5 +34,20 @@
     "url": "https://casamarialuigia.com/rooms/",
     "note": "Massimo Bottura’s guesthouse in the Modena countryside, with a handful of individually designed rooms, suites and a cottage; rooms are not booked on Sunday and Monday nights.",
     "checked": "2026-10-23"
-  }
+  },
+  "rankings": [
+    {
+      "list": "worlds-50-best",
+      "year": 2025,
+      "rank": 92,
+      "url": "https://www.the50.com/restaurants/best-in-the-world/list/51-100"
+    },
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 132,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

@@ -18,5 +18,14 @@
   "lunchNoteZhs": "仅供应晚餐",
   "nameZhs": "拂鸣",
   "chef": "Reina Chen",
-  "chefSource": "press"
+  "chefSource": "press",
+  "rankings": [
+    {
+      "list": "asias-50-best",
+      "year": 2026,
+      "rank": 65,
+      "url": "https://www.the50.com/restaurants/best-in-asia/list/51-100"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

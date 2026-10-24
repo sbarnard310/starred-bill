@@ -7,8 +7,6 @@
   "address": "20 rue d'Artois, 75008, Paris",
   "stars": 1,
   "cuisine": "Modern European",
-  "rating": 4.4,
-  "reviews": 1035,
   "dinner": 280,
   "dinnerType": "menu",
   "dinnerNote": "Menu Dégustation (Découverte €180)",
@@ -31,5 +29,14 @@
   ],
   "chef": "Mathieu Pacaud",
   "chefSource": "site",
-  "dietsManual": true
+  "dietsManual": true,
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 85,
+      "url": "https://www.laliste.com/places/apicius-paris-fr"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

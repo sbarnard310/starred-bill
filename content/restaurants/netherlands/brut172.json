@@ -5,8 +5,6 @@
   "address": "Reijmerstokkerdorpsstraat 143, 6274 NK, Reijmerstok",
   "stars": 2,
   "cuisine": "Creative",
-  "rating": 4.8,
-  "reviews": 460,
   "dinnerType": "menu",
   "dinner": 260,
   "dinnerNote": "Tasting menu",
@@ -33,5 +31,14 @@
     "url": "https://www.brut172.com/stay",
     "note": "11 lodges and a six-person mansion (rented as a whole) stand 300 m from the restaurant; midweek and holiday packages are offered on request via lodges@brut172.com.",
     "checked": "2026-10-23"
-  }
+  },
+  "rankings": [
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 547,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

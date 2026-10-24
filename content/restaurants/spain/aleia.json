@@ -11,8 +11,6 @@
   "changeNoteZh": "晉升二星",
   "changeNoteEs": "Consiguió su segunda estrella",
   "changeDate": "2025-11",
-  "rating": 4.6,
-  "reviews": 272,
   "dinner": 210,
   "dinnerType": "menu",
   "dinnerNote": "Seasonal tasting menu",
@@ -42,5 +40,14 @@
     "rooms": 105,
     "url": "https://www.hotelcasafuster.com/en",
     "checked": "2026-10-23"
-  }
+  },
+  "rankings": [
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 311,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

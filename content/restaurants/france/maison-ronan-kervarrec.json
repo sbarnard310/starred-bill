@@ -6,8 +6,6 @@
   "address": "1 impasse du Vieux-Bourg, 35760 Saint-Grégoire",
   "stars": 2,
   "cuisine": "Modern European",
-  "rating": 4.7,
-  "reviews": 546,
   "dinner": 280,
   "dinnerType": "menu",
   "dinnerNote": "Longest tasting menu (other menus from €148)",
@@ -45,5 +43,14 @@
     ],
     "note": "Five guest rooms, each with its own patio.",
     "checked": "2026-10-23"
-  }
+  },
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 80,
+      "url": "https://www.laliste.com/places/ronan-kervarrec-le-saison-saint-gregoire-fr"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

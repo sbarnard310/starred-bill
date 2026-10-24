@@ -4,8 +4,6 @@
   "address": "Avenida General San Martin 889, 22441-015, Rio de Janeiro",
   "stars": 2,
   "cuisine": "Creative",
-  "rating": 4.7,
-  "reviews": 1590,
   "dinnerType": "menu",
   "dinner": 790,
   "dinnerNote": "Tasting menu (other menus from R$690)",
@@ -21,5 +19,20 @@
   "chefSource": "site",
   "dinnerNotePt": "Menu de degustação (outros menus desde R$690)",
   "lunchNote": "Open for lunch · Saturdays",
-  "lunchNotePt": "Aberto ao almoço · sábado"
+  "lunchNotePt": "Aberto ao almoço · sábado",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 75,
+      "url": "https://www.laliste.com/places/oro-rio-de-janeiro-br"
+    },
+    {
+      "list": "oad-south-america",
+      "year": 2026,
+      "rank": 63,
+      "url": "https://www.oadguides.com/lists/south-america/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

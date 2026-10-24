@@ -5,8 +5,6 @@
   "address": "445 N. Clark St., Chicago, IL 60654",
   "stars": 1,
   "cuisine": "Mexican",
-  "rating": 4.5,
-  "reviews": 784,
   "dinner": 165,
   "dinnerType": "menu",
   "dinnerNote": "Tasting menu, from",
@@ -21,5 +19,14 @@
   "placeId": "ChIJ25jYKrIsDogRhv_ykBvwfOQ",
   "michelinId": "269297",
   "chef": "Meagan O'Connor",
-  "chefSource": "site"
+  "chefSource": "site",
+  "rankings": [
+    {
+      "list": "oad-north-america",
+      "year": 2026,
+      "rank": 197,
+      "url": "https://www.oadguides.com/lists/north-america/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

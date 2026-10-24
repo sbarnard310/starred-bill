@@ -8,8 +8,6 @@
   "addressZh": "澳門路氹望德聖母灣大馬路四季酒店地下",
   "stars": 1,
   "cuisine": "Cantonese",
-  "rating": 4.6,
-  "reviews": 143,
   "dinner": 2280,
   "dinnerType": "menu",
   "dinnerNote": "Michelin tasting menu",
@@ -29,5 +27,14 @@
   "placeId": "ChIJzfigMwRwATQRmXHOAYwJXh0",
   "michelinId": "256630",
   "chef": "Anthony Ho",
-  "chefSource": "press"
+  "chefSource": "press",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 82,
+      "url": "https://www.laliste.com/places/zi-yat-heen-mo"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

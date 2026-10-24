@@ -6,8 +6,6 @@
   "address": "Del Pinar 15, Madrid, 28006",
   "stars": 1,
   "cuisine": "International",
-  "rating": 4.5,
-  "reviews": 1265,
   "dinner": 165,
   "dinnerType": "menu",
   "dinnerNote": "Tasting menu, 20 courses",
@@ -34,5 +32,14 @@
   ],
   "chef": "Sergio Manzano",
   "chefSource": "site",
-  "dietsManual": true
+  "dietsManual": true,
+  "rankings": [
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 653,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

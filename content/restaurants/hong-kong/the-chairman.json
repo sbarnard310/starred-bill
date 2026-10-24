@@ -8,8 +8,6 @@
   "addressZh": "香港中環威靈頓街198號The Wellington 3樓",
   "stars": 1,
   "cuisine": "Cantonese",
-  "rating": 4.4,
-  "reviews": 769,
   "dinner": 1380,
   "dinnerType": "menu",
   "dinnerNote": "Pre-set menu, from (choose dishes when booking)",
@@ -43,16 +41,16 @@
   "infoChecked": "2026-10-12",
   "rankings": [
     {
-      "list": "asias-50-best",
-      "year": 2026,
-      "rank": 1,
-      "url": "https://www.the50.com/restaurants/best-in-asia/list/1-50"
-    },
-    {
       "list": "worlds-50-best",
       "year": 2025,
       "rank": 19,
       "url": "https://www.the50.com/restaurants/best-in-the-world/list/1-50"
+    },
+    {
+      "list": "asias-50-best",
+      "year": 2026,
+      "rank": 1,
+      "url": "https://www.the50.com/restaurants/best-in-asia/list/1-50"
     },
     {
       "list": "la-liste",
@@ -67,5 +65,5 @@
       "url": "https://www.oadguides.com/lists/asia/top-restaurants/2026"
     }
   ],
-  "rankingsChecked": "2026-10-13"
+  "rankingsChecked": "2026-10-24"
 }

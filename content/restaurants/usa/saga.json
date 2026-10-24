@@ -6,8 +6,6 @@
   "address": "70 Pine St., New York, NY, 10005",
   "stars": 2,
   "cuisine": "Modern American",
-  "rating": 4.4,
-  "reviews": 540,
   "dinner": 315,
   "dinnerType": "menu",
   "dinnerNote": "Tasting menu, 10 courses (6 courses $215)",
@@ -21,5 +19,20 @@
   "placeId": "ChIJZZlClEZbwokRZj-0-fE25tk",
   "michelinId": "1184201",
   "chef": "Charlie Mitchell",
-  "chefSource": "press"
+  "chefSource": "press",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 80.5,
+      "url": "https://www.laliste.com/places/saga-new-york-us"
+    },
+    {
+      "list": "oad-north-america",
+      "year": 2026,
+      "rank": 57,
+      "url": "https://www.oadguides.com/lists/north-america/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

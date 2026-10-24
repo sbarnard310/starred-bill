@@ -6,8 +6,6 @@
   "address": "Ribera 13, Bilbao, 48005",
   "stars": 1,
   "cuisine": "Modern European",
-  "rating": 4.5,
-  "reviews": 904,
   "dinner": 170,
   "dinnerType": "menu",
   "dinnerNote": "‘The best of Martín Berasategui’ menu (Ola menu €140)",
@@ -43,5 +41,14 @@
       }
     ],
     "checked": "2026-10-23"
-  }
+  },
+  "rankings": [
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 514,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

@@ -29,5 +29,14 @@
   "lunchNote": "Same menu at lunch · Fri–Sun",
   "lunchNoteSl": "Enak meni za kosilo · pet.–ned.",
   "lunchSourceType": "site",
-  "lunchSource": "https://www.zemono.si/en/tasting-menu.php"
+  "lunchSource": "https://www.zemono.si/en/tasting-menu.php",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 89,
+      "url": "https://www.laliste.com/places/gostilna-pri-lojzetu-dvorec-zemono-vipava-si"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

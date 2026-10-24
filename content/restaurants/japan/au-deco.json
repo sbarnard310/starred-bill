@@ -9,8 +9,6 @@
   "addressJa": "〒150-0013 東京都渋谷区恵比寿 2-23-3",
   "stars": 1,
   "cuisine": "French",
-  "rating": 4.6,
-  "reviews": 59,
   "dinner": 18030,
   "dinnerType": "menu",
   "dinnerNote": "Omakase course",
@@ -25,5 +23,14 @@
   "placeId": "ChIJS3hdF6-LGGARGR_d5IukAJQ",
   "michelinId": "1193884",
   "chef": "Koji Matsukura",
-  "chefSource": "press"
+  "chefSource": "press",
+  "rankings": [
+    {
+      "list": "oad-japan",
+      "year": 2026,
+      "rank": 782,
+      "url": "https://www.oadguides.com/lists/japan/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

@@ -5,8 +5,6 @@
   "address": "Plaza San Mateo 1, 10003, Cáceres",
   "stars": 3,
   "cuisine": "Creative",
-  "rating": 4.7,
-  "reviews": 2140,
   "dinnerType": "menu",
   "dinner": 295,
   "dinnerNote": "Tasting menu",
@@ -33,5 +31,14 @@
     "url": "https://atriocaceres.com/en/the-hotel/",
     "note": "Five-star hotel of 14 rooms and suites in the same building as the three-star restaurant, with more suites in Palacio Paredes Saavedra nearby.",
     "checked": "2026-10-23"
-  }
+  },
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 96.5,
+      "url": "https://www.laliste.com/places/atrio-caceres-es"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

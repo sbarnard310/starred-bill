@@ -7,8 +7,6 @@
   "address": "5 rue du Nil, 75002, Paris",
   "stars": 1,
   "cuisine": "Modern European",
-  "rating": 4.6,
-  "reviews": 2155,
   "dinner": 150,
   "dinnerType": "menu",
   "dinnerNote": "Tasting menu, 7 courses",
@@ -25,5 +23,14 @@
   "placeId": "ChIJX8C6phdu5kcRA59bbRIGM5M",
   "michelinId": "262795",
   "chef": "Grégory Marchand",
-  "chefSource": "site"
+  "chefSource": "site",
+  "rankings": [
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 165,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

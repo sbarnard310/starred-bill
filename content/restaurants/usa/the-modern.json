@@ -6,8 +6,6 @@
   "address": "9 W. 53rd St., New York, NY, 10019",
   "stars": 2,
   "cuisine": "Modern American",
-  "rating": 4.6,
-  "reviews": 2814,
   "dinner": 285,
   "dinnerType": "menu",
   "dinnerNote": "Abstractions tasting menu (shorter Impressions menu $185)",
@@ -83,5 +81,5 @@
       "url": "https://www.oadguides.com/lists/north-america/top-restaurants/2026"
     }
   ],
-  "rankingsChecked": "2026-10-13"
+  "rankingsChecked": "2026-10-24"
 }

@@ -9,8 +9,6 @@
   "addressJa": "〒104-0061 東京都中央区銀座 1-14-6 7F",
   "stars": 1,
   "cuisine": "Japanese",
-  "rating": 4.6,
-  "reviews": 390,
   "dinner": 34100,
   "dinnerType": "menu",
   "dinnerNote": "Chef's tasting course, from",
@@ -46,5 +44,14 @@
   "byob": "Corkage is ¥11,000 a bottle, tax included.",
   "servicePct": 10,
   "infoSource": "https://www.karyu-tokyo.com/english/english.html",
-  "infoChecked": "2026-10-13"
+  "infoChecked": "2026-10-13",
+  "rankings": [
+    {
+      "list": "oad-japan",
+      "year": 2026,
+      "rank": 402,
+      "url": "https://www.oadguides.com/lists/japan/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

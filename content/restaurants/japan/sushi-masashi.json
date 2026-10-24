@@ -10,8 +10,6 @@
   "addressJa": "〒107-0061 東京都港区北青山 2-9-9 7F",
   "stars": 1,
   "cuisine": "Sushi",
-  "rating": 4.7,
-  "reviews": 254,
   "dinner": 39600,
   "dinnerType": "menu",
   "dinnerNote": "Sushi omakase",
@@ -61,10 +59,10 @@
   "rankings": [
     {
       "list": "oad-japan",
-      "year": 2025,
-      "rank": 503,
-      "url": "https://www.oadguides.com/lists/japan/top-restaurants/2025"
+      "year": 2026,
+      "rank": 396,
+      "url": "https://www.oadguides.com/lists/japan/top-restaurants/2026"
     }
   ],
-  "rankingsChecked": "2026-10-13"
+  "rankingsChecked": "2026-10-24"
 }

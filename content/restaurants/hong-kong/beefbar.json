@@ -7,8 +7,6 @@
   "addressZh": "香港中環雪廠街16號西洋會所2樓",
   "stars": 1,
   "cuisine": "Steak and grill",
-  "rating": 4.4,
-  "reviews": 511,
   "dinner": 1180,
   "dinnerType": "menu",
   "dinnerNote": "Tasting menu",
@@ -26,5 +24,14 @@
   "placeId": "ChIJU1tqH2UABDQRyMAnpk05EQ8",
   "michelinId": "511280",
   "chef": "Ivan Chan",
-  "chefSource": "press"
+  "chefSource": "press",
+  "rankings": [
+    {
+      "list": "oad-asia",
+      "year": 2026,
+      "rank": 247,
+      "url": "https://www.oadguides.com/lists/asia/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

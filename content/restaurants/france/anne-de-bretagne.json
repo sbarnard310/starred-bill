@@ -6,8 +6,6 @@
   "address": "Port de Gravette, 163 boulevard de la Tara, 44770 La Plaine-sur-Mer",
   "stars": 2,
   "cuisine": "Modern European",
-  "rating": 4.8,
-  "reviews": 844,
   "dinner": 225,
   "dinnerType": "menu",
   "dinnerNote": "Quintessence menu, 7 courses (Alchimie menu from €120)",
@@ -89,7 +87,7 @@
       "url": "https://www.laliste.com/places/anne-de-bretagne-la-plaine-sur-mer-fr"
     }
   ],
-  "rankingsChecked": "2026-10-13",
+  "rankingsChecked": "2026-10-24",
   "dietsManual": true,
   "stay": {
     "kind": "hotel",

@@ -8,8 +8,6 @@
   "addressZh": "大安區忠孝東路四段181巷48號",
   "stars": 1,
   "cuisine": "Sushi",
-  "rating": 4.3,
-  "reviews": 689,
   "dinner": 6000,
   "dinnerType": "menu",
   "dinnerNote": "Omakase dinner (NT$6,000 or NT$7,500)",
@@ -28,5 +26,14 @@
   "placeId": "ChIJsbZtjcSrQjQR1kcL4c-g_7g",
   "michelinId": "550738",
   "chef": "Hsu Wen-chieh",
-  "chefSource": "press"
+  "chefSource": "press",
+  "rankings": [
+    {
+      "list": "oad-asia",
+      "year": 2026,
+      "rank": 485,
+      "url": "https://www.oadguides.com/lists/asia/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

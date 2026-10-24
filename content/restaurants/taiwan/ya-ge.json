@@ -8,8 +8,6 @@
   "addressZh": "松山區敦化北路158號3樓 (文華東方酒店)",
   "stars": 1,
   "cuisine": "Cantonese",
-  "rating": 4.3,
-  "reviews": 1386,
   "dinner": 5380,
   "dinnerType": "menu",
   "dinnerNote": "Ya Ge Classic Set Menu (seasonal set menu NT$4,580; Michelin Signature Menu NT$12,800)",
@@ -104,5 +102,14 @@
   "photoWidth": 1000,
   "photoHeight": 828,
   "photoChecked": "2026-10-13",
-  "dietsManual": true
+  "dietsManual": true,
+  "rankings": [
+    {
+      "list": "oad-asia",
+      "year": 2026,
+      "rank": 556,
+      "url": "https://www.oadguides.com/lists/asia/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

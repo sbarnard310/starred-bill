@@ -6,8 +6,6 @@
   "address": "41 Bukit Pasoh Road, Singapore 089855",
   "stars": 3,
   "cuisine": "European",
-  "rating": 4.5,
-  "reviews": 401,
   "dinner": 620,
   "dinnerType": "menu",
   "dinnerNote": "Set menu",
@@ -36,5 +34,20 @@
     "via": "website",
     "source": "https://www.restaurantzen.com/reservation/",
     "checked": "2026-10-10"
-  }
+  },
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 97.5,
+      "url": "https://www.laliste.com/places/zen-singapore-sg"
+    },
+    {
+      "list": "oad-asia",
+      "year": 2026,
+      "rank": 4,
+      "url": "https://www.oadguides.com/lists/asia/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

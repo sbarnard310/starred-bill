@@ -5,8 +5,6 @@
   "address": "Emilia Pardo Bazán 5, 26009, Logrono",
   "stars": 1,
   "cuisine": "Japanese",
-  "rating": 4.8,
-  "reviews": 534,
   "dinnerType": "menu",
   "dinner": 160,
   "sourceType": "site",
@@ -53,5 +51,14 @@
     "note": "The calendar for the next month opens on the 1st at 10am (in mid-October, November was open and December not yet).",
     "source": "https://kirosushi.es/",
     "checked": "2026-10-15"
-  }
+  },
+  "rankings": [
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 355,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

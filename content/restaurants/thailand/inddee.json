@@ -10,8 +10,6 @@
   "changeNote": "Gained a second star",
   "changeNoteTh": "ได้ดาวดวงที่สอง",
   "changeDate": "2025-11",
-  "rating": 4.8,
-  "reviews": 395,
   "dinner": 4200,
   "dinnerType": "menu",
   "dinnerNote": "Tasting menu, plus service and VAT (++)",
@@ -27,5 +25,14 @@
   "placeId": "ChIJkeHE36Gf4jARwYY0UIcD6-g",
   "michelinId": "1210057",
   "chef": "Sachin Poojary",
-  "chefSource": "press"
+  "chefSource": "press",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 83,
+      "url": "https://www.laliste.com/places/inddee-th"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

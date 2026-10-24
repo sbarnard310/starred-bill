@@ -7,8 +7,6 @@
   "address": "12 rue de l'Amiral-Roussin, 75015, Paris",
   "stars": 1,
   "cuisine": "Creative",
-  "rating": 4.6,
-  "reviews": 555,
   "dinner": 155,
   "dinnerType": "menu",
   "dinnerNote": "Dinner tasting menu (longer menu €255)",
@@ -28,5 +26,14 @@
   "placeId": "ChIJj5cSZD1w5kcRxG5lX68BY50",
   "michelinId": "448600",
   "chef": "Hideki Nishi",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "rankings": [
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 113,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

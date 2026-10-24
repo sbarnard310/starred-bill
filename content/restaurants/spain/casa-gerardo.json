@@ -28,8 +28,6 @@
   ],
   "chef": "Marcos Morán and Pedro Morán",
   "chefSource": "site",
-  "rating": 4.6,
-  "reviews": 1478,
   "menus": [
     {
       "name": "Menú Geles grand tasting menu",
@@ -67,5 +65,14 @@
   "children": "Children's menu available (minimum €40).",
   "infoSource": "https://restaurantecasagerardo.es/reservar-en-casa-gerardo/",
   "infoChecked": "2026-10-13",
-  "dietsManual": true
+  "dietsManual": true,
+  "rankings": [
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 400,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

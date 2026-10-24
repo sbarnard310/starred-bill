@@ -5,8 +5,6 @@
   "address": "Largo del Teatro 3, 63822, Porto San Giorgio",
   "stars": 1,
   "cuisine": "Creative",
-  "rating": 4.8,
-  "reviews": 451,
   "dinner": 95,
   "dinnerType": "menu",
   "wine": 40,
@@ -32,5 +30,14 @@
   "lunchSourceType": "site",
   "lunchSource": "https://retroscena-ristorante.com/menu/",
   "dinnerNote": "Qui ed ora tasting menu, 5 courses (Inconfondibile, 8 courses, €130; Labor Limae, 10 courses, €160)",
-  "dinnerNoteIt": "Qui ed ora, 5 portate (Inconfondibile, 8 portate, €130; Labor Limae, 10 portate, €160)"
+  "dinnerNoteIt": "Qui ed ora, 5 portate (Inconfondibile, 8 portate, €130; Labor Limae, 10 portate, €160)",
+  "rankings": [
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 366,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

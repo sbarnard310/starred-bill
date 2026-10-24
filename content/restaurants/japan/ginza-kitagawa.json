@@ -9,8 +9,6 @@
   "addressJa": "〒104-0061 東京都中央区銀座 2-10-11 3F",
   "stars": 1,
   "cuisine": "Japanese",
-  "rating": 4.7,
-  "reviews": 116,
   "dinner": 31900,
   "dinnerType": "menu",
   "dinnerNote": "Omakase course",
@@ -30,5 +28,14 @@
   "placeId": "ChIJv1ZzHuWLGGAR80F7_9EUMCU",
   "michelinId": "1207597",
   "chef": "Kazuyuki Kitagawa",
-  "chefSource": "press"
+  "chefSource": "press",
+  "rankings": [
+    {
+      "list": "oad-japan",
+      "year": 2026,
+      "rank": 239,
+      "url": "https://www.oadguides.com/lists/japan/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

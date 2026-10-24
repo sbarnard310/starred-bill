@@ -5,8 +5,6 @@
   "address": "Cigarral del Ángel, 45004, Toledo",
   "stars": 2,
   "cuisine": "Modern European",
-  "rating": 4.8,
-  "reviews": 1148,
   "dinnerType": "menu",
   "dinner": 235,
   "dinnerNote": "Tasting menu (other menus from €165)",
@@ -26,5 +24,20 @@
   "placeId": "ChIJ2QCWTcx0ag0RIQdHJzBBz0M",
   "michelinId": "1154987",
   "chef": "Iván Cerdeño",
-  "chefSource": "site"
+  "chefSource": "site",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 95.5,
+      "url": "https://www.laliste.com/places/ivan-cerdeno-toledo-es"
+    },
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 54,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

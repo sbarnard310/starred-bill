@@ -5,8 +5,6 @@
   "address": "Prälat-Subtil-Ring 22, 66740, Saarlouis",
   "stars": 2,
   "cuisine": "Asian",
-  "rating": 4.7,
-  "reviews": 46,
   "dinnerType": "menu",
   "dinner": 240,
   "dinnerNote": "Seven-course LOUIS menu (five courses €200; four courses €180 Wednesday and Thursday)",
@@ -87,6 +85,6 @@
       "url": "https://www.laliste.com/places/louis-la-maison-saarlouis-de"
     }
   ],
-  "rankingsChecked": "2026-10-13",
+  "rankingsChecked": "2026-10-24",
   "dietsManual": true
 }

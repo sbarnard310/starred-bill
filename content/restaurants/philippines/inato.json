@@ -4,8 +4,6 @@
   "address": "The Alley at Karrivin, Karrivin Plaza, 2316 Chino Roces Avenue Extension, 1231, Makati - Metro Manila",
   "stars": 1,
   "cuisine": "Filipino",
-  "rating": 4.6,
-  "reviews": 54,
   "dinnerType": "menu",
   "dinner": 5900,
   "dinnerNote": "Tasting menu",
@@ -25,5 +23,14 @@
   "dinnerNoteFil": "Tasting menu",
   "noLunch": true,
   "lunchNote": "Dinner only",
-  "lunchNoteFil": "Hapunan lang"
+  "lunchNoteFil": "Hapunan lang",
+  "rankings": [
+    {
+      "list": "oad-asia",
+      "year": 2026,
+      "rank": 180,
+      "url": "https://www.oadguides.com/lists/asia/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

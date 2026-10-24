@@ -5,8 +5,6 @@
   "address": "The Warehouse@Hin Bus Depot, 125 Jalan Timah, 10150, George Town",
   "stars": 1,
   "cuisine": "European",
-  "rating": 4.8,
-  "reviews": 745,
   "dinnerType": "menu",
   "dinner": 630,
   "dinnerNote": "Tasting menu (other menus from RM 520)",
@@ -34,5 +32,26 @@
     "source": "https://www.restaurant-aujardin.com",
     "checked": "2026-10-10"
   },
-  "dietsManual": true
+  "dietsManual": true,
+  "rankings": [
+    {
+      "list": "asias-50-best",
+      "year": 2026,
+      "rank": 39,
+      "url": "https://www.the50.com/restaurants/best-in-asia/list/1-50"
+    },
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 89.5,
+      "url": "https://www.laliste.com/places/restaurant-au-jardin-george-town-my"
+    },
+    {
+      "list": "oad-asia",
+      "year": 2026,
+      "rank": 118,
+      "url": "https://www.oadguides.com/lists/asia/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

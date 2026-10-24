@@ -6,8 +6,6 @@
   "address": "38 Craig Road, Singapore 089676",
   "stars": 1,
   "cuisine": "French",
-  "rating": 4.5,
-  "reviews": 372,
   "noLunch": true,
   "lunchNote": "Dinner only",
   "lunchNoteZh": "只供應晚餐",
@@ -24,5 +22,14 @@
   "sourceType": "site",
   "source": "https://macuisinesg.com/french-fine-dining-singapore/",
   "chef": "Mathieu Escoffier",
-  "chefSource": "press"
+  "chefSource": "press",
+  "rankings": [
+    {
+      "list": "oad-asia",
+      "year": 2026,
+      "rank": 372,
+      "url": "https://www.oadguides.com/lists/asia/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

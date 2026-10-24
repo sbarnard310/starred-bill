@@ -6,8 +6,6 @@
   "address": "Félix Boix 6, Madrid, 28036",
   "stars": 1,
   "cuisine": "Fusion",
-  "rating": 4.5,
-  "reviews": 869,
   "dinner": 180,
   "dinnerType": "menu",
   "dinnerNote": "Omakase; also à la carte",
@@ -53,5 +51,5 @@
       "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
     }
   ],
-  "rankingsChecked": "2026-10-13"
+  "rankingsChecked": "2026-10-24"
 }

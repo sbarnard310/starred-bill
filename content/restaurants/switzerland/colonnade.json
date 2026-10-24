@@ -4,8 +4,6 @@
   "address": "Haldenstrasse 10, 6002, Lucerne",
   "stars": 2,
   "cuisine": "French",
-  "rating": 4.9,
-  "reviews": 51,
   "dinnerType": "menu",
   "dinner": 255,
   "dinnerNote": "Tasting menu (other menus from CHF 195)",
@@ -31,5 +29,14 @@
   "lunchNoteDe": "Nur abends",
   "lunchNoteFr": "Uniquement le soir",
   "lunchNoteIt": "Solo a cena",
-  "dietsManual": true
+  "dietsManual": true,
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 88,
+      "url": "https://www.laliste.com/places/colonnade-luzern-ch"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

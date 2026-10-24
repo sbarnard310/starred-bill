@@ -4,8 +4,6 @@
   "address": "Rua Lisboa 55, 05413-000, São Paulo",
   "stars": 1,
   "cuisine": "Japanese",
-  "rating": 4.5,
-  "reviews": 611,
   "dinnerType": "menu",
   "dinner": 850,
   "dinnerNote": "Omakase with Jun Sakamoto (omakase at a table R$650)",
@@ -57,7 +55,7 @@
       "url": "https://www.oadguides.com/lists/south-america/top-restaurants/2026"
     }
   ],
-  "rankingsChecked": "2026-10-13",
+  "rankingsChecked": "2026-10-24",
   "photo": "jun-sakamoto.jpg",
   "photoAlt": "Chefs behind the wooden sushi counter at Jun Sakamoto in São Paulo",
   "photoCredit": "Oleg Yunakov",

@@ -9,8 +9,6 @@
   "addressJa": "〒153-0062 東京都目黒区三田 1-13-1 恵比寿ガーデンプレイス",
   "stars": 1,
   "cuisine": "French",
-  "rating": 4.6,
-  "reviews": 767,
   "dinner": 25000,
   "dinnerType": "menu",
   "dinnerNote": "Tasting menu",
@@ -35,5 +33,14 @@
   ],
   "chef": "Yoshimasa Ikeda",
   "chefSource": "press",
-  "dietsManual": true
+  "dietsManual": true,
+  "rankings": [
+    {
+      "list": "oad-japan",
+      "year": 2026,
+      "rank": 485,
+      "url": "https://www.oadguides.com/lists/japan/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

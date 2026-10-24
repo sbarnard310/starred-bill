@@ -7,8 +7,6 @@
   "addressZh": "香港上環永樂街154-158號",
   "stars": 1,
   "cuisine": "Yakitori",
-  "rating": 4.5,
-  "reviews": 1918,
   "dinner": 600,
   "dinnerType": "spend",
   "dinnerNote": "Yakitori à la carte; typical spend HK$400–800 (12% service)",
@@ -34,5 +32,14 @@
   "photoSourceType": "commons",
   "photoWidth": 1000,
   "photoHeight": 750,
-  "photoChecked": "2026-10-13"
+  "photoChecked": "2026-10-13",
+  "rankings": [
+    {
+      "list": "oad-asia",
+      "year": 2026,
+      "rank": 190,
+      "url": "https://www.oadguides.com/lists/asia/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

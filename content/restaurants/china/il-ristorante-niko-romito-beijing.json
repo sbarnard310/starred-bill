@@ -4,8 +4,6 @@
   "address": "1F, Bvlgari Hotel, Building 2, Courtyard 8, Xinyuan South Road, Chaoyang, Beijing",
   "stars": 1,
   "cuisine": "Italian",
-  "rating": 4.4,
-  "reviews": 111,
   "dinnerType": "menu",
   "dinner": 1598,
   "dinnerNote": "Menu Degustazione, six courses (CN¥2,798 with wine pairing); tax and service included",
@@ -54,5 +52,14 @@
   "infoSource": "https://www.bulgarihotels.com/en_US/beijing/dining/il-ristorante-niko-romito",
   "infoChecked": "2026-10-13",
   "serviceIncluded": true,
-  "dietsManual": true
+  "dietsManual": true,
+  "rankings": [
+    {
+      "list": "oad-asia",
+      "year": 2026,
+      "rank": 425,
+      "url": "https://www.oadguides.com/lists/asia/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

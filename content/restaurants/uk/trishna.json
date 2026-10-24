@@ -5,8 +5,6 @@
   "address": "15-17 Blandford Street, Marylebone, London, W1U 3DG",
   "stars": 1,
   "cuisine": "Indian",
-  "rating": 4.6,
-  "reviews": 2352,
   "dinner": 90,
   "dinnerType": "menu",
   "dinnerNote": "Trishna tasting menu, 5 courses",
@@ -30,5 +28,14 @@
   ],
   "chef": "Sajeev Nair",
   "chefSource": "press",
-  "dietsManual": true
+  "dietsManual": true,
+  "rankings": [
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 714,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

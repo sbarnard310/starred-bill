@@ -6,8 +6,6 @@
   "address": "Via Mazzini 120, Viareggio, 55049",
   "stars": 1,
   "cuisine": "Seafood",
-  "rating": 4.6,
-  "reviews": 474,
   "dinner": 145,
   "dinnerType": "menu",
   "dinnerNote": "Tasting menu",
@@ -30,5 +28,14 @@
     "gluten-free"
   ],
   "chef": "Nicola Gronchi",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 82.5,
+      "url": "https://www.laliste.com/places/romano-viareggio-it"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

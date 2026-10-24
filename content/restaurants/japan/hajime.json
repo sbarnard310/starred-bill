@@ -6,8 +6,6 @@
   "address": "1-9-11 Edobori, Nishi-ku, 550-0002, Osaka",
   "stars": 3,
   "cuisine": "Creative",
-  "rating": 4.5,
-  "reviews": 316,
   "dinnerType": "menu",
   "dinner": 76500,
   "dinnerNote": "Cheapest dinner course (others up to ¥138,000); usually including tax and service",
@@ -23,5 +21,20 @@
   "placeId": "ChIJDQRP2frmAGARBw_HFaCnauI",
   "michelinId": "1193237",
   "chef": "Hajime Yoneda",
-  "chefSource": "site"
+  "chefSource": "site",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 94,
+      "url": "https://www.laliste.com/places/hajime-osaka-shi-jp"
+    },
+    {
+      "list": "oad-japan",
+      "year": 2026,
+      "rank": 98,
+      "url": "https://www.oadguides.com/lists/japan/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

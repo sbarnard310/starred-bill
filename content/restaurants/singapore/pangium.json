@@ -6,8 +6,6 @@
   "address": "Gallop Entrance, Singapore Botanic Gardens, 11 Gallop Road, Singapore 259015",
   "stars": 1,
   "cuisine": "Peranakan",
-  "rating": 4.8,
-  "reviews": 151,
   "dinner": 188,
   "dinnerType": "menu",
   "dinnerNote": "Tok Panjang menu",
@@ -26,5 +24,14 @@
   "placeId": "ChIJZ8bHbNAb2jEROKgwVHYF89A",
   "michelinId": "1209995",
   "chef": "Malcolm Lee",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "rankings": [
+    {
+      "list": "oad-asia",
+      "year": 2026,
+      "rank": 199,
+      "url": "https://www.oadguides.com/lists/asia/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

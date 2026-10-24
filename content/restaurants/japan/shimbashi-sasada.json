@@ -9,8 +9,6 @@
   "addressJa": "〒105-0003 東京都港区西新橋 1-23-7",
   "stars": 1,
   "cuisine": "Japanese",
-  "rating": 4.7,
-  "reviews": 78,
   "dinnerType": "spend",
   "noLunch": true,
   "lunchNote": "Dinner only",
@@ -23,5 +21,14 @@
   "dinnerNote": "Tabelog range ¥30,000–39,999",
   "dinnerNoteJa": "食べログの価格帯 30,000～39,999円",
   "sourceType": "press",
-  "source": "https://tabelog.com/en/tokyo/A1301/A130103/13020781/"
+  "source": "https://tabelog.com/en/tokyo/A1301/A130103/13020781/",
+  "rankings": [
+    {
+      "list": "oad-japan",
+      "year": 2026,
+      "rank": 693,
+      "url": "https://www.oadguides.com/lists/japan/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

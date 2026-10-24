@@ -7,8 +7,6 @@
   "change": "new",
   "changeNote": "New straight in with two stars",
   "changeDate": "2025-04",
-  "rating": 4.8,
-  "reviews": 87,
   "dinner": 345,
   "dinnerType": "menu",
   "dinnerNote": "Tasting menu at the chef's counter, by request",
@@ -23,5 +21,14 @@
   "placeId": "ChIJDe1xketl54gRUziBLAd5JPA",
   "michelinId": "1206493",
   "chef": "William Shen",
-  "chefSource": "site"
+  "chefSource": "site",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 76,
+      "url": "https://www.laliste.com/places/sorekara-orlando-us"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

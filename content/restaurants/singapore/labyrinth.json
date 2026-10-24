@@ -6,8 +6,6 @@
   "address": "Esplanade Mall, #02-23, Marina Bay Promenade, 8 Raffles Avenue, Singapore 039802",
   "stars": 1,
   "cuisine": "Creative",
-  "rating": 4.5,
-  "reviews": 595,
   "dinner": 288,
   "dinnerType": "menu",
   "dinnerNote": "Chef's tasting menu",
@@ -26,5 +24,26 @@
   "placeId": "ChIJj99Fo3IZ2jERFIUg_m-VhO8",
   "michelinId": "501506",
   "chef": "LG Han",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "rankings": [
+    {
+      "list": "worlds-50-best",
+      "year": 2025,
+      "rank": 97,
+      "url": "https://www.the50.com/restaurants/best-in-the-world/list/51-100"
+    },
+    {
+      "list": "asias-50-best",
+      "year": 2026,
+      "rank": 40,
+      "url": "https://www.the50.com/restaurants/best-in-asia/list/1-50"
+    },
+    {
+      "list": "oad-asia",
+      "year": 2026,
+      "rank": 60,
+      "url": "https://www.oadguides.com/lists/asia/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

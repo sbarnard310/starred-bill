@@ -4,8 +4,6 @@
   "address": "Bulgari Resort Dubai Hotel, 4th Floor, Jumeirah Bay Island, Jumeirah 2, Dubai",
   "stars": 1,
   "cuisine": "Japanese",
-  "rating": 4.8,
-  "reviews": 146,
   "dinnerType": "menu",
   "dinner": 2500,
   "dinnerNote": "Tasting menu (other menus from AED 2,000)",
@@ -24,5 +22,20 @@
   "chef": "Masahiro Sugiyama",
   "chefSource": "michelin",
   "dinnerNoteAr": "قائمة تذوق (قوائم أخرى من AED 2,000)",
-  "lunchNoteAr": "قائمة الغداء"
+  "lunchNoteAr": "قائمة الغداء",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 76.5,
+      "url": "https://www.laliste.com/places/hoseki-dubai-ae"
+    },
+    {
+      "list": "oad-asia",
+      "year": 2026,
+      "rank": 115,
+      "url": "https://www.oadguides.com/lists/asia/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

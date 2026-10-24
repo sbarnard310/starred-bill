@@ -5,8 +5,6 @@
   "address": "Steinweg 30, 56626, Andernach",
   "stars": 1,
   "cuisine": "Fusion",
-  "rating": 4.9,
-  "reviews": 31,
   "dinnerType": "menu",
   "dinner": 220,
   "dinnerNote": "Tasting menu (other menus from €190)",
@@ -25,5 +23,14 @@
   "lunchNote": "Dinner only",
   "lunchNoteDe": "Nur abends",
   "chef": "Christian Eckhardt",
-  "chefSource": "press"
+  "chefSource": "press",
+  "rankings": [
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 433,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

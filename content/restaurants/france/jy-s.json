@@ -6,8 +6,6 @@
   "address": "3 allée du Champ-de-Mars, 68000 Colmar",
   "stars": 2,
   "cuisine": "Creative",
-  "rating": 4.5,
-  "reviews": 898,
   "dinner": 275,
   "dinnerType": "menu",
   "dinnerNote": "Tasting menu, 10 dishes (6 courses €198)",
@@ -32,5 +30,14 @@
   ],
   "chef": "Jean-Yves Schillinger",
   "chefSource": "press",
-  "dietsManual": true
+  "dietsManual": true,
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 83.5,
+      "url": "https://www.laliste.com/places/jys-colmar-fr"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

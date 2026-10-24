@@ -6,8 +6,6 @@
   "address": "República Argentina 4, Donostia / San Sebastián, 20004",
   "stars": 2,
   "cuisine": "Creative",
-  "rating": 4.3,
-  "reviews": 489,
   "dinner": 383,
   "dinnerType": "menu",
   "dinnerNote": "Seasonal tasting menu",
@@ -36,5 +34,20 @@
     "name": "Hotel María Cristina, San Sebastián",
     "url": "https://www.ameliarestaurant.com/faq",
     "checked": "2026-10-23"
-  }
+  },
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 82.5,
+      "url": "https://www.laliste.com/places/amelia-by-paulo-airaudo-donostia-es"
+    },
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 104,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

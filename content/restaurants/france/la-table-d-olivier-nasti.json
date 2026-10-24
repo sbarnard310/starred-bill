@@ -6,8 +6,6 @@
   "address": "9-13 rue du Général-de-Gaulle, 68240 Kaysersberg",
   "stars": 2,
   "cuisine": "Creative",
-  "rating": 4.7,
-  "reviews": 385,
   "dinner": 315,
   "dinnerType": "menu",
   "dinnerNote": "Longest tasting menu (other menus from €255)",
@@ -45,5 +43,14 @@
     ],
     "note": "A 5-star hotel of 33 rooms, junior suites and suites in Kaysersberg, with a spa.",
     "checked": "2026-10-23"
-  }
+  },
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 96.5,
+      "url": "https://www.laliste.com/places/la-table-dolivier-nasti-le-chambard-kaysersberg-fr"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

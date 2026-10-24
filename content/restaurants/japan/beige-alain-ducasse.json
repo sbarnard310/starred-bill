@@ -9,8 +9,6 @@
   "addressJa": "〒104-0061 東京都中央区銀座 3-5-3 10F",
   "stars": 1,
   "cuisine": "French",
-  "rating": 4.2,
-  "reviews": 686,
   "dinner": 20168,
   "dinnerType": "menu",
   "dinnerNote": "Tasting menu, from",
@@ -31,5 +29,20 @@
   "placeId": "ChIJDxzYF-SLGGARQYB8-Z27qAI",
   "michelinId": "1194164",
   "chef": "Takahiro Noguchi",
-  "chefSource": "site"
+  "chefSource": "site",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 83.5,
+      "url": "https://www.laliste.com/places/beige-alain-ducasse-chuo-ku-jp"
+    },
+    {
+      "list": "oad-japan",
+      "year": 2026,
+      "rank": 497,
+      "url": "https://www.oadguides.com/lists/japan/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

@@ -4,8 +4,6 @@
   "address": "6 place Godinot, 51100 Reims",
   "stars": 2,
   "cuisine": "Creative",
-  "rating": 4.8,
-  "reviews": 587,
   "dinner": 200,
   "dinnerType": "menu",
   "sourceType": "site",
@@ -24,5 +22,20 @@
   "dinnerNote": "Daisuki menu, 6 courses (Marine €265, Kazuyuki €310)",
   "dinnerNoteFr": "Menu Daisuki en 6 pousses (Marine 265 €, Kazuyuki 310 €)",
   "lunchNote": "Suki menu, 4 courses, lunch only",
-  "lunchNoteFr": "Menu Suki en 4 pousses, uniquement le midi"
+  "lunchNoteFr": "Menu Suki en 4 pousses, uniquement le midi",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 77.5,
+      "url": "https://www.laliste.com/places/racine-reims-fr"
+    },
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 249,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

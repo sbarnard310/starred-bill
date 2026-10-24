@@ -5,8 +5,6 @@
   "address": "Ul. Svetog Dominika 2, 20000, Dubrovnik",
   "stars": 1,
   "cuisine": "Modern European",
-  "rating": 4.7,
-  "reviews": 1245,
   "dinnerType": "menu",
   "dinner": 186,
   "dinnerNote": "Tasting menu (other menus from €108)",
@@ -22,5 +20,20 @@
   "chefSource": "site",
   "dinnerNoteHr": "Degustacijski meni (ostali meniji od 108 €)",
   "noLunch": true,
-  "lunchNoteHr": "Samo večera"
+  "lunchNoteHr": "Samo večera",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 87,
+      "url": "https://www.laliste.com/places/360-dubrovnik-hr"
+    },
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 624,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

@@ -4,8 +4,6 @@
   "address": "Neuer Jungfernstieg 9, 20354, Hamburg",
   "stars": 3,
   "cuisine": "French",
-  "rating": 4.8,
-  "reviews": 305,
   "dinnerType": "menu",
   "dinner": 350,
   "dinnerNote": "Tasting menu",
@@ -22,5 +20,14 @@
   "dinnerNoteDe": "Degustationsmenü",
   "noLunch": true,
   "lunchNote": "Dinner only",
-  "lunchNoteDe": "Nur abends"
+  "lunchNoteDe": "Nur abends",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 95,
+      "url": "https://www.laliste.com/places/haerlin-hamburg-de"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

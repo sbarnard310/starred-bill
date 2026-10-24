@@ -9,8 +9,6 @@
   "addressJa": "〒100-0005 東京都千代田区丸の内 1-1-1 パレスホテル東京 6F",
   "stars": 1,
   "cuisine": "French",
-  "rating": 4.4,
-  "reviews": 174,
   "dinner": 24000,
   "dinnerType": "menu",
   "dinnerNote": "Tasting menu, from",
@@ -31,5 +29,14 @@
   "placeId": "ChIJvdCFOViNGGARX8UQQd7MBmg",
   "michelinId": "1193871",
   "chef": "Kei Kojima",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 78,
+      "url": "https://www.laliste.com/places/esterre-chiyoda-city-jp"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

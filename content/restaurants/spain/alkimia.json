@@ -6,8 +6,6 @@
   "address": "Ronda San Antoni 41 - Principal, Barcelona, 08011",
   "stars": 1,
   "cuisine": "Modern European",
-  "rating": 4.5,
-  "reviews": 696,
   "dinner": 188,
   "dinnerType": "menu",
   "sourceType": "site",
@@ -37,5 +35,20 @@
   "photoSourceType": "commons",
   "photoWidth": 1000,
   "photoHeight": 750,
-  "photoChecked": "2026-10-13"
+  "photoChecked": "2026-10-13",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 90.5,
+      "url": "https://www.laliste.com/places/alkimia-barcelona-es"
+    },
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 63,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

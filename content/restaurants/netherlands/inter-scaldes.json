@@ -5,8 +5,6 @@
   "address": "Zandweg 2, 4416 NA, Kruiningen",
   "stars": 2,
   "cuisine": "Modern European",
-  "rating": 4.7,
-  "reviews": 379,
   "dinnerType": "menu",
   "dinner": 265,
   "dinnerNote": "Hoogtij menu, 12 servings (Springtij menu €385)",
@@ -71,7 +69,7 @@
       "url": "https://www.laliste.com/places/inter-scaldes-kruiningen-nl"
     }
   ],
-  "rankingsChecked": "2026-10-13",
+  "rankingsChecked": "2026-10-24",
   "stay": {
     "kind": "hotel",
     "name": "Pillows Luxury Boutique Hotel Inter Scaldes",

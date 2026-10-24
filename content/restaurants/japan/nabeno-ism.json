@@ -9,8 +9,6 @@
   "addressJa": "〒111-0043 東京都台東区駒形 2-1-17",
   "stars": 1,
   "cuisine": "French",
-  "rating": 4.6,
-  "reviews": 454,
   "dinner": 30000,
   "dinnerType": "menu",
   "dinnerNote": "Tasting menu",
@@ -31,5 +29,14 @@
   "placeId": "ChIJ1UWreciOGGARNmJc4Z8sYN4",
   "michelinId": "1194111",
   "chef": "Yuichiro Watanabe",
-  "chefSource": "press"
+  "chefSource": "press",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 76.5,
+      "url": "https://www.laliste.com/places/nabeno-ism-taito-ku-jp"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

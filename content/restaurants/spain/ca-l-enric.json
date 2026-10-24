@@ -5,8 +5,6 @@
   "address": "Carretera Camprodón N 260, La Vall de Bianya, 17813",
   "stars": 1,
   "cuisine": "Creative",
-  "rating": 4.7,
-  "reviews": 1123,
   "dinner": 165,
   "dinnerType": "menu",
   "dinnerNote": "Descobrint la Vall menu (Records en evolució €142) · dinner Saturdays only",
@@ -29,5 +27,14 @@
   "placeId": "ChIJeQpU25dKpRIRmh9TXCafT2w",
   "michelinId": "224159",
   "chef": "Jordi Juncà",
-  "chefSource": "press"
+  "chefSource": "press",
+  "rankings": [
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 37,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

@@ -6,8 +6,6 @@
   "address": "7 rue d'Eschbach, 67580 Laubach",
   "stars": 2,
   "cuisine": "Modern European",
-  "rating": 4.7,
-  "reviews": 613,
   "dinner": 225,
   "dinnerType": "menu",
   "dinnerNote": "Longest tasting menu (other menus from €175)",
@@ -53,5 +51,14 @@
     ],
     "note": "Guest rooms are offered only through the Evasion Merise package; Hôtel Le Moulin in Gundershoffen, 11 km away, is its suggested alternative.",
     "checked": "2026-10-23"
-  }
+  },
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 85.5,
+      "url": "https://www.laliste.com/places/la-merise-laubach-fr"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

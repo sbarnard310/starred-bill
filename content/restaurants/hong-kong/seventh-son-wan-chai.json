@@ -8,8 +8,6 @@
   "addressZh": "香港灣仔駱克道57-73號粵海華美灣際酒店3樓",
   "stars": 1,
   "cuisine": "Cantonese",
-  "rating": 4.2,
-  "reviews": 452,
   "dinnerType": "spend",
   "dinnerNote": "À la carte Cantonese; typical spend HK$1,000–1,200 per person",
   "dinnerNoteZh": "單點粵菜；人均消費約港幣1,000至1,200元",
@@ -29,5 +27,14 @@
   "chef": "Chui Wai-kwan",
   "chefSource": "press",
   "dinner": 1100,
-  "source": "https://100toptables.scmp.com/restaurants-profile-2026/seventh-son-restaurant"
+  "source": "https://100toptables.scmp.com/restaurants-profile-2026/seventh-son-restaurant",
+  "rankings": [
+    {
+      "list": "oad-asia",
+      "year": 2026,
+      "rank": 24,
+      "url": "https://www.oadguides.com/lists/asia/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

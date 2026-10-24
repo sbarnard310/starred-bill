@@ -4,8 +4,6 @@
   "address": "Ferdinand Bolstraat 333, 1072 LH, Amsterdam",
   "stars": 1,
   "cuisine": "Japanese",
-  "rating": 4.5,
-  "reviews": 761,
   "dinnerType": "menu",
   "dinner": 250,
   "dinnerNote": "Tasting menu (other menus from €175)",
@@ -38,5 +36,14 @@
       }
     ],
     "checked": "2026-10-23"
-  }
+  },
+  "rankings": [
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 621,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

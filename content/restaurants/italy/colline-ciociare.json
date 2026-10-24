@@ -6,8 +6,6 @@
   "address": "Via Prenestina 27, Acuto, 03010",
   "stars": 1,
   "cuisine": "Creative",
-  "rating": 4.6,
-  "reviews": 202,
   "dinner": 125,
   "dinnerType": "menu",
   "dinnerNote": "Tasting menu, 7 courses (5 courses €100)",
@@ -29,5 +27,14 @@
     "vegetarian"
   ],
   "chef": "Salvatore Tassa",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 78,
+      "url": "https://www.laliste.com/places/colline-ciociare-acuto-it"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

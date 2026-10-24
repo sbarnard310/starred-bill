@@ -5,8 +5,6 @@
   "address": "Shoreditch Town Hall, 380 Old Street, Shoreditch, London, EC1V 9LT",
   "stars": 2,
   "cuisine": "Creative",
-  "rating": 4.6,
-  "reviews": 1135,
   "dinner": 285,
   "dinnerType": "menu",
   "dinnerNote": "Tasting menu, Mon & Thu–Sat (same menu £185 on Tue & Wed; short menu £225 Mon & Thu)",
@@ -96,5 +94,26 @@
   "photoWidth": 750,
   "photoHeight": 1000,
   "photoChecked": "2026-10-13",
-  "dietsManual": true
+  "dietsManual": true,
+  "rankings": [
+    {
+      "list": "worlds-50-best",
+      "year": 2025,
+      "rank": 86,
+      "url": "https://www.the50.com/restaurants/best-in-the-world/list/51-100"
+    },
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 90.5,
+      "url": "https://www.laliste.com/places/the-clove-club-london-gb"
+    },
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 86,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

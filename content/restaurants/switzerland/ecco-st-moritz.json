@@ -5,8 +5,6 @@
   "address": "Via Maistra 3, 7512, Saint Moritz",
   "stars": 2,
   "cuisine": "Creative",
-  "rating": 4.2,
-  "reviews": 28,
   "dinnerType": "menu",
   "dinner": 290,
   "dinnerNote": "Tasting menu (other menus from CHF 270)",
@@ -34,5 +32,14 @@
   "areaIt": "Sankt Moritz",
   "chef": "Reto Brändli",
   "chefSource": "press",
-  "dietsManual": true
+  "dietsManual": true,
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 89.5,
+      "url": "https://www.laliste.com/places/ecco-st-moritz-silvaplana-ch"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

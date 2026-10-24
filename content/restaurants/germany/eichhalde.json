@@ -4,8 +4,6 @@
   "address": "Stadtstraße 91, 79104, Freiburg im Breisgau",
   "stars": 1,
   "cuisine": "Italian",
-  "rating": 4.8,
-  "reviews": 207,
   "dinnerType": "menu",
   "dinner": 215,
   "dinnerNote": "Tasting menu (other menus from €89)",
@@ -24,5 +22,14 @@
   "lunchNote": "Open for lunch · Saturdays",
   "lunchNoteDe": "Mittags geöffnet · Samstag",
   "chef": "Federico Campolattano",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "rankings": [
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 322,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

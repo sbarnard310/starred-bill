@@ -4,8 +4,6 @@
   "address": "Shanghaiallee 15, 20457, Hamburg",
   "stars": 3,
   "cuisine": "Creative",
-  "rating": 4.8,
-  "reviews": 468,
   "dinnerType": "menu",
   "dinner": 315,
   "dinnerNote": "Tasting menu",
@@ -30,5 +28,20 @@
     "via": "website",
     "source": "https://the-table-hamburg.de/reservierungen/",
     "checked": "2026-10-10"
-  }
+  },
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 96,
+      "url": "https://www.laliste.com/places/the-table-hamburg-de"
+    },
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 323,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

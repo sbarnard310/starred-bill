@@ -7,8 +7,6 @@
   "address": "11-8 Seobinggo-ro 59-gil, Yongsan-gu, Seoul",
   "stars": 1,
   "cuisine": "Creative",
-  "rating": 4.4,
-  "reviews": 283,
   "dinner": 280000,
   "dinnerType": "menu",
   "dinnerNote": "Dinner course",
@@ -28,5 +26,20 @@
   "placeId": "ChIJ3xNCtMWjfDURi88O7OCijdM",
   "michelinId": "512045",
   "chef": "Lee Chung-hu",
-  "chefSource": "press"
+  "chefSource": "press",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 77,
+      "url": "https://www.laliste.com/places/zero-complex-seoul-kr"
+    },
+    {
+      "list": "oad-asia",
+      "year": 2026,
+      "rank": 235,
+      "url": "https://www.oadguides.com/lists/asia/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

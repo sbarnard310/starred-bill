@@ -5,8 +5,6 @@
   "address": "Jelgavas iela 42, 1004, Riga",
   "stars": 1,
   "cuisine": "Creative",
-  "rating": 4.8,
-  "reviews": 491,
   "dinnerType": "menu",
   "dinner": 220,
   "dinnerNote": "Tasting menu",
@@ -52,5 +50,14 @@
   "children": "Children are welcome if they are used to restaurant etiquette and have the tasting menu.",
   "duration": "About three hours.",
   "infoSource": "https://maxcekot.com/en/book_a_table?new",
-  "infoChecked": "2026-10-13"
+  "infoChecked": "2026-10-13",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 75,
+      "url": "https://www.laliste.com/places/max-cekot-kitchen-riga-lv"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

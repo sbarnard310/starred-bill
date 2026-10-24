@@ -6,8 +6,6 @@
   "address": "72 Amoy Street, Singapore 069891",
   "stars": 1,
   "cuisine": "Creative",
-  "rating": 4.6,
-  "reviews": 469,
   "dinner": 328,
   "dinnerType": "menu",
   "dinnerNote": "Tasting menu ‘Crossroads’",
@@ -30,5 +28,14 @@
     "vegetarian-menu"
   ],
   "chef": "Ivan Brehm",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "rankings": [
+    {
+      "list": "oad-asia",
+      "year": 2026,
+      "rank": 78,
+      "url": "https://www.oadguides.com/lists/asia/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

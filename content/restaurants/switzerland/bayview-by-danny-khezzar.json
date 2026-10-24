@@ -4,8 +4,6 @@
   "address": "Quai Wilson 47, 1201, Geneva",
   "stars": 1,
   "cuisine": "Creative",
-  "rating": 4.8,
-  "reviews": 470,
   "dinnerType": "menu",
   "dinner": 195,
   "sourceType": "site",
@@ -32,5 +30,14 @@
   "dinnerNote": "Tasting menu",
   "dinnerNoteDe": "Degustationsmenü",
   "dinnerNoteFr": "Menu dégustation",
-  "dinnerNoteIt": "Menu degustazione"
+  "dinnerNoteIt": "Menu degustazione",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 83.5,
+      "url": "https://www.laliste.com/places/bayview-geneve-ch"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

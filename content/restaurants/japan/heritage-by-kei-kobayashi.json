@@ -14,8 +14,6 @@
   "changeNoteZh": "首度摘星",
   "changeNoteJa": "初の一つ星を獲得",
   "changeDate": "2024-10",
-  "rating": 4.6,
-  "reviews": 373,
   "dinner": 24800,
   "dinnerType": "menu",
   "dinnerNote": "Tasting menu, from",
@@ -36,5 +34,20 @@
   "placeId": "ChIJGUC_l3iLGGARJ0V_A5BfZJs",
   "michelinId": "1193835",
   "chef": "Kei Kobayashi",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 81.5,
+      "url": "https://www.laliste.com/places/heritage-by-kei-kobayashi-minato-city-jp"
+    },
+    {
+      "list": "oad-japan",
+      "year": 2026,
+      "rank": 729,
+      "url": "https://www.oadguides.com/lists/japan/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

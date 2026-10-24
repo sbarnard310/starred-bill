@@ -22,5 +22,14 @@
   "dinnerNoteZhs": "人均消费",
   "lunchNote": "Open for lunch",
   "lunchNoteZhs": "供应午餐",
-  "nameZhs": "黑天鹅"
+  "nameZhs": "黑天鹅",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 76.5,
+      "url": "https://www.laliste.com/places/blackswan-by-viannay-massot-luo-hong-art-museum-cn"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

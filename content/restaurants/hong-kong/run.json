@@ -8,8 +8,6 @@
   "addressZh": "香港灣仔港灣徑1號瑞吉酒店2樓",
   "stars": 2,
   "cuisine": "Cantonese",
-  "rating": 4.4,
-  "reviews": 278,
   "dinner": 1688,
   "dinnerType": "menu",
   "dinnerNote": "Chef Hung's specialities set menu",
@@ -36,5 +34,20 @@
   ],
   "chef": "Hung Chi-Kwong",
   "chefSource": "site",
-  "dietsManual": true
+  "dietsManual": true,
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 84.5,
+      "url": "https://www.laliste.com/places/run-hk"
+    },
+    {
+      "list": "oad-asia",
+      "year": 2026,
+      "rank": 222,
+      "url": "https://www.oadguides.com/lists/asia/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

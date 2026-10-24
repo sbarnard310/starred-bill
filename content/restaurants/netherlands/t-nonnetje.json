@@ -5,8 +5,6 @@
   "address": "Vischmarkt 38, 3841 BG, Harderwijk",
   "stars": 2,
   "cuisine": "Creative",
-  "rating": 4.7,
-  "reviews": 453,
   "dinnerType": "menu",
   "dinner": 189.5,
   "dinnerNote": "Tasting menu (other menus from €149.50)",
@@ -30,5 +28,14 @@
   "chefSource": "site",
   "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 149,50)",
   "lunchNoteNl": "Lunchmenu",
-  "dietsManual": true
+  "dietsManual": true,
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 91,
+      "url": "https://www.laliste.com/places/t-nonnetje-harderwijk-nl"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

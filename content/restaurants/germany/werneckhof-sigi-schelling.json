@@ -4,8 +4,6 @@
   "address": "Werneckstraße 11, 80802, Munich",
   "stars": 1,
   "cuisine": "French",
-  "rating": 4.8,
-  "reviews": 197,
   "dinnerType": "menu",
   "dinner": 155,
   "dinnerNote": "Tasting menu (other menus from €135)",
@@ -28,5 +26,14 @@
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 135 €)",
   "lunchNoteDe": "Mittagsmenü",
   "chef": "Sigi Schelling",
-  "chefSource": "press"
+  "chefSource": "press",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 77,
+      "url": "https://www.laliste.com/places/werneckhof-sigi-schelling-munchen-de"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

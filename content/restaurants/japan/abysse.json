@@ -9,8 +9,6 @@
   "addressJa": "〒150-0021 東京都渋谷区恵比寿西 1-30-12",
   "stars": 1,
   "cuisine": "French",
-  "rating": 4.6,
-  "reviews": 314,
   "dinner": 30891,
   "dinnerType": "menu",
   "dinnerNote": "Seasonal course",
@@ -36,5 +34,14 @@
     "gluten-free"
   ],
   "chef": "Kotaro Meguro",
-  "chefSource": "press"
+  "chefSource": "press",
+  "rankings": [
+    {
+      "list": "oad-japan",
+      "year": 2026,
+      "rank": 133,
+      "url": "https://www.oadguides.com/lists/japan/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

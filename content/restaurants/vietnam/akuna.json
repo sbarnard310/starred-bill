@@ -4,8 +4,6 @@
   "address": "9F, Le Méridien Hotel, 3C Ton Duc Thang Street, Saigon Ward, 700000, Ho Chi Minh City",
   "stars": 1,
   "cuisine": "Creative",
-  "rating": 4.3,
-  "reviews": 200,
   "dinnerType": "menu",
   "dinner": 3900000,
   "dinnerNote": "Tasting menu",
@@ -33,5 +31,20 @@
     "via": "website",
     "source": "https://akunarestaurant.com/reservations-terms/",
     "checked": "2026-10-10"
-  }
+  },
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 75.5,
+      "url": "https://www.laliste.com/places/akuna-vn"
+    },
+    {
+      "list": "oad-asia",
+      "year": 2026,
+      "rank": 301,
+      "url": "https://www.oadguides.com/lists/asia/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

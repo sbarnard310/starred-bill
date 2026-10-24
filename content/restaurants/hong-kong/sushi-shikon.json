@@ -8,8 +8,6 @@
   "addressZh": "香港中環皇后大道中15號置地文華東方酒店7樓",
   "stars": 3,
   "cuisine": "Sushi",
-  "rating": 4,
-  "reviews": 178,
   "dinner": 4000,
   "dinnerType": "menu",
   "dinnerNote": "Dinner omakase, 5–6 appetisers and 10 pieces of sushi",
@@ -28,5 +26,20 @@
   "placeId": "ChIJf4R5aHwABDQR2OIi4wZ1g58",
   "michelinId": "380306",
   "chef": "Satoshi Tada",
-  "chefSource": "site"
+  "chefSource": "site",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 90,
+      "url": "https://www.laliste.com/places/sushi-shikon-hong-kong-hk"
+    },
+    {
+      "list": "oad-asia",
+      "year": 2026,
+      "rank": 35,
+      "url": "https://www.oadguides.com/lists/asia/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

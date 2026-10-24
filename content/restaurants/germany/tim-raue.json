@@ -4,8 +4,6 @@
   "address": "Rudi-Dutschke-Straße 26, 10969, Berlin",
   "stars": 2,
   "cuisine": "Asian",
-  "rating": 4.6,
-  "reviews": 1527,
   "dinnerType": "menu",
   "dinner": 292,
   "dinnerNote": "Tasting menu (other menus from €212)",
@@ -28,5 +26,26 @@
   "noLunch": true,
   "lunchNote": "Dinner only",
   "lunchNoteDe": "Nur abends",
-  "dietsManual": true
+  "dietsManual": true,
+  "rankings": [
+    {
+      "list": "worlds-50-best",
+      "year": 2025,
+      "rank": 58,
+      "url": "https://www.the50.com/restaurants/best-in-the-world/list/51-100"
+    },
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 93.5,
+      "url": "https://www.laliste.com/places/tim-raue-berlin-de"
+    },
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 91,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

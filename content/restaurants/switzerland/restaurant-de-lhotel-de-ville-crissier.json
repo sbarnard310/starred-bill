@@ -5,8 +5,6 @@
   "address": "Rue d'Yverdon 1, 1023, Crissier",
   "stars": 3,
   "cuisine": "French",
-  "rating": 4.9,
-  "reviews": 1106,
   "dinnerType": "menu",
   "dinner": 440,
   "dinnerNote": "Tasting menu (other menus from CHF 360)",
@@ -39,5 +37,14 @@
   "photoSourceType": "commons",
   "photoWidth": 1000,
   "photoHeight": 667,
-  "photoChecked": "2026-10-13"
+  "photoChecked": "2026-10-13",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 97.5,
+      "url": "https://www.laliste.com/places/restaurant-de-lhotel-de-ville-crissier-ch"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

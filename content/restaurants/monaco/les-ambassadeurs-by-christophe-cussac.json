@@ -6,8 +6,6 @@
   "address": "Hôtel Métropole Monte-Carlo, 4 avenue de la Madone, Monaco, 98000",
   "stars": 2,
   "cuisine": "Mediterranean",
-  "rating": 4.9,
-  "reviews": 155,
   "dinner": 295,
   "dinnerType": "menu",
   "dinnerNote": "Tasting menu; also à la carte",
@@ -25,5 +23,14 @@
   "placeId": "ChIJzZxY1ubDzRIREvykG2qnyk4",
   "michelinId": "1206520",
   "chef": "Christophe Cussac",
-  "chefSource": "site"
+  "chefSource": "site",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 83.5,
+      "url": "https://www.laliste.com/places/les-ambassadeurs-by-christophe-cussac-monaco-mc"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

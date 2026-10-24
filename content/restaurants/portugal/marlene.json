@@ -4,8 +4,6 @@
   "address": "Avenida Infante D. Henrique. Doca do Jardim do Tabaco, 1100-651, Lisbon",
   "stars": 1,
   "cuisine": "Modern European",
-  "rating": 4.7,
-  "reviews": 180,
   "dinnerType": "menu",
   "dinner": 180,
   "dinnerNote": "Tasting menu (other menus from €150)",
@@ -25,5 +23,14 @@
   "dinnerNotePt": "Menu de degustação (outros menus desde 150 €)",
   "noLunch": true,
   "lunchNote": "Dinner only",
-  "lunchNotePt": "Só jantar"
+  "lunchNotePt": "Só jantar",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 75.5,
+      "url": "https://www.laliste.com/places/marlene-lisboa-pt"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

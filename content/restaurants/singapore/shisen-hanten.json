@@ -7,8 +7,6 @@
   "address": "Hilton Orchard, Level 35, 333 Orchard Road, Singapore 238867",
   "stars": 1,
   "cuisine": "Sichuan",
-  "rating": 4.8,
-  "reviews": 2864,
   "lunchNote": "Executive set lunch, Mon–Fri (minimum 2 guests; S$88 version; weekend brunch S$98)",
   "lunchNoteZh": "商務午市套餐，週一至週五（最少2位；另有S$88套餐；週末早午餐S$98）",
   "lunchType": "menu",
@@ -92,5 +90,20 @@
   "dressCode": "Smart casual: men in long trousers and closed shoes. No shorts, flip-flops or singlets.",
   "infoSource": "https://shisenhanten.com.sg/",
   "infoChecked": "2026-10-13",
-  "dietsManual": true
+  "dietsManual": true,
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 76.5,
+      "url": "https://www.laliste.com/places/shisen-hanten-singapore-sg"
+    },
+    {
+      "list": "oad-asia",
+      "year": 2026,
+      "rank": 398,
+      "url": "https://www.oadguides.com/lists/asia/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

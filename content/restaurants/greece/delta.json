@@ -4,8 +4,6 @@
   "address": "364 Syggrou Avenue, 17674, Athens",
   "stars": 2,
   "cuisine": "Creative",
-  "rating": 4.4,
-  "reviews": 711,
   "dinnerType": "menu",
   "dinner": 240,
   "dinnerNote": "Tasting menu",
@@ -27,5 +25,20 @@
   "noLunch": true,
   "lunchNote": "Dinner only",
   "lunchNoteEl": "Μόνο δείπνο",
-  "dietsManual": true
+  "dietsManual": true,
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 86,
+      "url": "https://www.laliste.com/places/delta-athina-gr"
+    },
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 187,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

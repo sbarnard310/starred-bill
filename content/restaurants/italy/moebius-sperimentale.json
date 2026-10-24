@@ -10,8 +10,6 @@
   "changeNote": "Gained its first star",
   "changeNoteIt": "Ha ottenuto la prima stella",
   "changeDate": "2024-11",
-  "rating": 4.5,
-  "reviews": 1754,
   "dinner": 190,
   "dinnerType": "menu",
   "dinnerNote": "Menu a mano libera (Mare or Terra €150)",
@@ -28,5 +26,14 @@
   "placeId": "ChIJSVm3PfbHhkcRPeDWzSh9BS8",
   "michelinId": "1186044",
   "chef": "Enrico Croatti",
-  "chefSource": "site"
+  "chefSource": "site",
+  "rankings": [
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 584,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

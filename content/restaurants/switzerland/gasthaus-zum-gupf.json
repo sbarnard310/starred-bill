@@ -5,8 +5,6 @@
   "address": "Gupf 21, 9038, Rehetobel",
   "stars": 1,
   "cuisine": "Classic",
-  "rating": 4.9,
-  "reviews": 616,
   "dinnerType": "menu",
   "dinner": 164,
   "dinnerNote": "Tasting menu (other menus from CHF 135)",
@@ -29,5 +27,14 @@
   "lunchNote": "Open for lunch · Wed–Sun",
   "lunchNoteDe": "Mittags geöffnet · Mi–So",
   "lunchNoteFr": "Ouvert le midi · mer.–dim.",
-  "lunchNoteIt": "Aperto a pranzo · mer–dom"
+  "lunchNoteIt": "Aperto a pranzo · mer–dom",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 78.5,
+      "url": "https://www.laliste.com/places/gasthaus-zum-gupf-rehetobel-ch"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

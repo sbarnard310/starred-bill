@@ -5,8 +5,6 @@
   "address": "Rua Anneliese Pohl - Alporchinhos, 8400-450, Porches",
   "stars": 2,
   "cuisine": "Creative",
-  "rating": 4.7,
-  "reviews": 330,
   "dinnerType": "menu",
   "dinner": 395,
   "dinnerNote": "Tasting menu (other menus from €225)",
@@ -27,5 +25,14 @@
   "noLunch": true,
   "lunchNote": "Dinner only",
   "lunchNotePt": "Só jantar",
-  "dietsManual": true
+  "dietsManual": true,
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 96.5,
+      "url": "https://www.laliste.com/places/ocean-vila-vita-parc-porches-pt"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

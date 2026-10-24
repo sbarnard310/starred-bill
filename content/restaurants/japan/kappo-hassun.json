@@ -6,8 +6,6 @@
   "address": "95 Sueyoshicho, Higashiyama-ku, 605-0085, Kyoto",
   "stars": 1,
   "cuisine": "Japanese",
-  "rating": 4.4,
-  "reviews": 143,
   "dinnerType": "spend",
   "dinnerNote": "Tabelog range ¥20,000–29,999",
   "sourceType": "press",
@@ -24,5 +22,14 @@
   "lunchSourceType": "press",
   "lunchSource": "https://tabelog.com/en/kyoto/A2601/A260301/26002259/",
   "lunchNote": "Tabelog range ¥10,000–14,999",
-  "lunchNoteJa": "食べログの価格帯 10,000～14,999円"
+  "lunchNoteJa": "食べログの価格帯 10,000～14,999円",
+  "rankings": [
+    {
+      "list": "oad-japan",
+      "year": 2026,
+      "rank": 391,
+      "url": "https://www.oadguides.com/lists/japan/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

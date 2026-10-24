@@ -6,8 +6,6 @@
   "address": "17A Dempsey Road, Singapore 249676",
   "stars": 1,
   "cuisine": "Peranakan",
-  "rating": 4.4,
-  "reviews": 2073,
   "dinner": 138,
   "dinnerType": "menu",
   "dinnerNote": "Ah-ma-kase menu",
@@ -26,5 +24,14 @@
   "placeId": "ChIJ5ySHC3IZ2jERu-xiMMTjAVE",
   "michelinId": "501368",
   "chef": "Malcolm Lee",
-  "chefSource": "press"
+  "chefSource": "press",
+  "rankings": [
+    {
+      "list": "oad-asia",
+      "year": 2026,
+      "rank": 75,
+      "url": "https://www.oadguides.com/lists/asia/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

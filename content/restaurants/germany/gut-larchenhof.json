@@ -5,8 +5,6 @@
   "address": "Hahnenstraße, 50259, Pulheim",
   "stars": 1,
   "cuisine": "French",
-  "rating": 4.7,
-  "reviews": 258,
   "dinnerType": "menu",
   "dinner": 199,
   "dinnerNote": "Tasting menu",
@@ -25,5 +23,14 @@
   "chefSource": "michelin",
   "dinnerNoteDe": "Degustationsmenü",
   "lunchNote": "Open for lunch",
-  "lunchNoteDe": "Mittags geöffnet"
+  "lunchNoteDe": "Mittags geöffnet",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 81,
+      "url": "https://www.laliste.com/places/gut-larchenhof-pulheim-de"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

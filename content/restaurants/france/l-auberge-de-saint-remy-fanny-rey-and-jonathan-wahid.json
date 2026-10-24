@@ -6,8 +6,6 @@
   "address": "12 boulevard Mirabeau, 13210 Saint-Rémy-de-Provence",
   "stars": 2,
   "cuisine": "Modern European",
-  "rating": 4.6,
-  "reviews": 355,
   "dinner": 330,
   "dinnerType": "menu",
   "dinnerNote": "Longest tasting menu (other menus from €200)",
@@ -51,5 +49,14 @@
     ],
     "note": "The hotel has rooms in the village centre and a villa-style Mas Garance.",
     "checked": "2026-10-23"
-  }
+  },
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 77,
+      "url": "https://www.laliste.com/places/l-auberge-de-saint-remy-saint-remy-de-provence-fr"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

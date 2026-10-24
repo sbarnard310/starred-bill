@@ -4,8 +4,6 @@
   "address": "Kurhausstrasse 65, 8032, Zurich",
   "stars": 2,
   "cuisine": "Creative",
-  "rating": 4.6,
-  "reviews": 132,
   "dinnerType": "menu",
   "dinner": 340,
   "dinnerNote": "Seven-course menu (vegetarian menu CHF 300)",
@@ -82,6 +80,6 @@
       "url": "https://www.laliste.com/places/the-restaurant-zurich-ch"
     }
   ],
-  "rankingsChecked": "2026-10-13",
+  "rankingsChecked": "2026-10-24",
   "dietsManual": true
 }

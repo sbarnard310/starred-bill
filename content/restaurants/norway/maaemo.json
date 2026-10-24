@@ -4,8 +4,6 @@
   "address": "Dronning Eufemias gate 23, 0194, Oslo",
   "stars": 3,
   "cuisine": "Creative",
-  "rating": 4.7,
-  "reviews": 891,
   "dinnerType": "menu",
   "dinner": 5900,
   "dinnerNote": "Tasting menu",
@@ -32,5 +30,20 @@
   "photoSourceType": "commons",
   "photoWidth": 1000,
   "photoHeight": 750,
-  "photoChecked": "2026-10-13"
+  "photoChecked": "2026-10-13",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 95,
+      "url": "https://www.laliste.com/places/maaemo-oslo-no"
+    },
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 33,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

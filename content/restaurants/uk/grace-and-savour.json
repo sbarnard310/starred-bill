@@ -5,8 +5,6 @@
   "address": "Hampton Manor, Shadowbrook Lane, Hampton in Arden, B92 0EN",
   "stars": 1,
   "cuisine": "Modern European",
-  "rating": 4.8,
-  "reviews": 269,
   "dinner": 195,
   "dinnerType": "menu",
   "dinnerNote": "Seasonal tasting menu, Wed–Sat",
@@ -52,5 +50,14 @@
       }
     ],
     "checked": "2026-10-23"
-  }
+  },
+  "rankings": [
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 696,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

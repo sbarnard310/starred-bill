@@ -6,8 +6,6 @@
   "address": "3-30 Uenomiyacho, Tennoji-ku, 543-0037, Osaka",
   "stars": 2,
   "cuisine": "Sushi",
-  "rating": 4.4,
-  "reviews": 158,
   "dinnerType": "menu",
   "dinnerNote": "Sushi omakase; including tax",
   "sourceType": "site",
@@ -26,5 +24,20 @@
   "lunchSourceType": "site",
   "lunchSource": "https://sushi-harasho.jp/",
   "lunchNote": "Sushi omakase; including tax",
-  "lunchNoteJa": "鮨おまかせ・税込"
+  "lunchNoteJa": "鮨おまかせ・税込",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 86.5,
+      "url": "https://www.laliste.com/places/sushi-harasho-osaka-jp"
+    },
+    {
+      "list": "oad-japan",
+      "year": 2026,
+      "rank": 765,
+      "url": "https://www.oadguides.com/lists/japan/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

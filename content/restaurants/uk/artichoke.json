@@ -5,8 +5,6 @@
   "address": "9 Market Square, Amersham, HP7 0DF",
   "stars": 1,
   "cuisine": "British",
-  "rating": 4.6,
-  "reviews": 383,
   "dinner": 120,
   "dinnerType": "menu",
   "dinnerNote": "Tasting menu (£130 Fri–Sat evenings)",
@@ -30,5 +28,14 @@
     "vegan"
   ],
   "chef": "Laurie Gear",
-  "chefSource": "site"
+  "chefSource": "site",
+  "rankings": [
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 500,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

@@ -7,8 +7,6 @@
   "address": "2F, 30 Dosan-daero 67-gil, Gangnam-gu, Seoul",
   "stars": 1,
   "cuisine": "French",
-  "rating": 4.5,
-  "reviews": 236,
   "dinner": 290000,
   "dinnerType": "menu",
   "dinnerNote": "Dinner course",
@@ -27,5 +25,14 @@
   "placeId": "ChIJH2jZ86GlfDURAVZBp3imf64",
   "michelinId": "511975",
   "chef": "Jang Myoung-sik",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 77.5,
+      "url": "https://www.laliste.com/places/lamitie-kr"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

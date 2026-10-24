@@ -10,8 +10,6 @@
   "addressJa": "〒150-0012 東京都渋谷区広尾 5-19-1",
   "stars": 1,
   "cuisine": "Chinese",
-  "rating": 4.7,
-  "reviews": 38,
   "dinner": 26620,
   "dinnerType": "menu",
   "dinnerNote": "Omakase course",
@@ -27,5 +25,14 @@
   "placeId": "ChIJw8sY3t6LGGARrQbArsw9N60",
   "michelinId": "1209722",
   "chef": "Yoshiki Igeta",
-  "chefSource": "site"
+  "chefSource": "site",
+  "rankings": [
+    {
+      "list": "oad-japan",
+      "year": 2026,
+      "rank": 651,
+      "url": "https://www.oadguides.com/lists/japan/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

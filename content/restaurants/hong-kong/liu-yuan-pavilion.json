@@ -8,8 +8,6 @@
   "addressZh": "香港灣仔駱克道54-62號博匯大廈3樓",
   "stars": 1,
   "cuisine": "Shanghainese",
-  "rating": 4,
-  "reviews": 377,
   "dinner": 500,
   "dinnerType": "spend",
   "dinnerNote": "À la carte Shanghainese; typical spend",
@@ -25,5 +23,14 @@
   "lat": 22.2781199,
   "lng": 114.1707918,
   "placeId": "ChIJ28F3_1wABDQR_F8mgB1Qbso",
-  "michelinId": "258467"
+  "michelinId": "258467",
+  "rankings": [
+    {
+      "list": "oad-asia",
+      "year": 2026,
+      "rank": 346,
+      "url": "https://www.oadguides.com/lists/asia/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

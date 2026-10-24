@@ -5,8 +5,6 @@
   "address": "43 Elystan Street, Chelsea, London, SW3 3NT",
   "stars": 1,
   "cuisine": "British",
-  "rating": 4.6,
-  "reviews": 686,
   "dinner": 150,
   "dinnerType": "menu",
   "dinnerNote": "Six of the Best tasting menu, 6 courses (à la carte also served)",
@@ -75,5 +73,14 @@
   "photoWidth": 1000,
   "photoHeight": 750,
   "photoChecked": "2026-10-13",
-  "dietsManual": true
+  "dietsManual": true,
+  "rankings": [
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 607,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

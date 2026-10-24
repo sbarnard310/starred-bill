@@ -10,8 +10,6 @@
   "addressJa": "〒150-0001 東京都渋谷区神宮前 2-3-18",
   "stars": 2,
   "cuisine": "Japanese",
-  "rating": 4.4,
-  "reviews": 334,
   "dinnerType": "spend",
   "website": "https://www.jimbochoden.com/",
   "lat": 35.67321,
@@ -38,5 +36,26 @@
     "via": "phone",
     "source": "https://www.jimbochoden.com/",
     "checked": "2026-10-10"
-  }
+  },
+  "rankings": [
+    {
+      "list": "worlds-50-best",
+      "year": 2025,
+      "rank": 53,
+      "url": "https://www.the50.com/restaurants/best-in-the-world/list/51-100"
+    },
+    {
+      "list": "asias-50-best",
+      "year": 2026,
+      "rank": 51,
+      "url": "https://www.the50.com/restaurants/best-in-asia/list/51-100"
+    },
+    {
+      "list": "oad-japan",
+      "year": 2026,
+      "rank": 34,
+      "url": "https://www.oadguides.com/lists/japan/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

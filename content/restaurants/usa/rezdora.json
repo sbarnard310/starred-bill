@@ -6,8 +6,6 @@
   "address": "27 E. 20th St., New York, NY, 10003",
   "stars": 1,
   "cuisine": "Italian",
-  "rating": 4.3,
-  "reviews": 1953,
   "dinner": 110,
   "dinnerType": "menu",
   "dinnerNote": "Regional pasta tasting",
@@ -42,5 +40,14 @@
   "photoWidth": 1000,
   "photoHeight": 750,
   "photoChecked": "2026-10-13",
-  "dietsManual": true
+  "dietsManual": true,
+  "rankings": [
+    {
+      "list": "oad-north-america",
+      "year": 2026,
+      "rank": 91,
+      "url": "https://www.oadguides.com/lists/north-america/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

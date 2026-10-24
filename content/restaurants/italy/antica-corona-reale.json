@@ -5,8 +5,6 @@
   "address": "Via Fossano 13, 12040, Cervere",
   "stars": 2,
   "cuisine": "Italian",
-  "rating": 4.6,
-  "reviews": 653,
   "dinnerType": "spend",
   "dinner": 150,
   "dinnerNote": "Typical spend without drinks (Gambero Rosso average)",
@@ -21,5 +19,14 @@
   "placeId": "ChIJ_5grF9mp0hIR4_bR0aA0vhQ",
   "michelinId": "130682",
   "chef": "Gian Piero Vivalda",
-  "chefSource": "site"
+  "chefSource": "site",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 94,
+      "url": "https://www.laliste.com/places/antica-corona-reale-cervere-it"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

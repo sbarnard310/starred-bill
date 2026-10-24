@@ -6,8 +6,6 @@
   "address": "104 E. 30th St., New York, NY, 10016",
   "stars": 2,
   "cuisine": "Korean",
-  "rating": 4.6,
-  "reviews": 534,
   "dinner": 375,
   "dinnerType": "menu",
   "dinnerNote": "Tasting menu, 10 courses (bar tasting from $285)",
@@ -32,5 +30,32 @@
   "photoSourceType": "commons",
   "photoWidth": 1000,
   "photoHeight": 750,
-  "photoChecked": "2026-10-13"
+  "photoChecked": "2026-10-13",
+  "rankings": [
+    {
+      "list": "worlds-50-best",
+      "year": 2025,
+      "rank": 12,
+      "url": "https://www.the50.com/restaurants/best-in-the-world/list/1-50"
+    },
+    {
+      "list": "north-americas-50-best",
+      "year": 2026,
+      "rank": 7,
+      "url": "https://www.the50.com/restaurants/best-in-north-america/list/1-50"
+    },
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 94,
+      "url": "https://www.laliste.com/places/atomix-new-york-us"
+    },
+    {
+      "list": "oad-north-america",
+      "year": 2026,
+      "rank": 6,
+      "url": "https://www.oadguides.com/lists/north-america/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

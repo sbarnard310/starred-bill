@@ -6,8 +6,6 @@
   "address": "Via Don Santo Carminati 9, Sorisole, 24010",
   "stars": 1,
   "cuisine": "Italian",
-  "rating": 4.5,
-  "reviews": 841,
   "dinner": 100,
   "dinnerType": "menu",
   "dinnerNote": "À la carte, 3 courses (2 courses €80)",
@@ -31,5 +29,14 @@
   ],
   "chef": "Alex Manzoni and Vittorio Manzoni",
   "chefSource": "press",
-  "dietsManual": true
+  "dietsManual": true,
+  "rankings": [
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 428,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

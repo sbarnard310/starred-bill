@@ -12,8 +12,6 @@
   "changeNoteFr": "Passé de trois à deux étoiles",
   "changeNoteZh": "由三星降為二星",
   "changeDate": "2026-03",
-  "rating": 4.5,
-  "reviews": 871,
   "dinner": 300,
   "dinnerType": "spend",
   "dinnerNote": "À la carte only; about €210–360 a head",
@@ -42,5 +40,14 @@
   "photoSourceType": "commons",
   "photoWidth": 1000,
   "photoHeight": 750,
-  "photoChecked": "2026-10-13"
+  "photoChecked": "2026-10-13",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 98,
+      "url": "https://www.laliste.com/places/lambroisie-paris-fr"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

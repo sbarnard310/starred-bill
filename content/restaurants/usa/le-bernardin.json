@@ -6,8 +6,6 @@
   "address": "155 W. 51st St., New York, NY, 10019",
   "stars": 3,
   "cuisine": "Seafood",
-  "rating": 4.6,
-  "reviews": 4657,
   "dinner": 350,
   "dinnerType": "menu",
   "dinnerNote": "Chef's Tasting Menu, 8 courses (4-course prix fixe $225)",
@@ -169,7 +167,7 @@
       "url": "https://www.oadguides.com/lists/north-america/top-restaurants/2026"
     }
   ],
-  "rankingsChecked": "2026-10-13",
+  "rankingsChecked": "2026-10-24",
   "photo": "le-bernardin.jpg",
   "photoAlt": "The dining room of Le Bernardin, New York",
   "photoCredit": "Arnold Gatilao",

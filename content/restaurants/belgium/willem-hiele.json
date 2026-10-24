@@ -5,8 +5,6 @@
   "address": "Kapittelstraat 71, 8460, Oudenburg",
   "stars": 1,
   "cuisine": "Creative",
-  "rating": 4.8,
-  "reviews": 370,
   "dinnerType": "menu",
   "dinner": 235,
   "dinnerNote": "Chef's Experience menu, lunch or dinner (De Spoelakker lunch menu €150)",
@@ -52,5 +50,20 @@
   "groups": "A private room seats up to 14 for lunch, dinner or a seminar; Thursday and Friday lunch is for events and private groups only. Call or email info@willemhiele.be.",
   "groupsUrl": "https://restaurant.willemhiele.be/en/events-private-dining",
   "infoSource": "https://restaurant.willemhiele.be/reserveren",
-  "infoChecked": "2026-10-13"
+  "infoChecked": "2026-10-13",
+  "rankings": [
+    {
+      "list": "worlds-50-best",
+      "year": 2025,
+      "rank": 62,
+      "url": "https://www.the50.com/restaurants/best-in-the-world/list/51-100"
+    },
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 28,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

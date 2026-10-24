@@ -5,8 +5,6 @@
   "address": "Unternberg 6, 4120, Neufelden",
   "stars": 2,
   "cuisine": "Modern European",
-  "rating": 4.8,
-  "reviews": 497,
   "dinnerType": "menu",
   "dinner": 210,
   "dinnerNote": "Tasting menu (other menus from €98)",
@@ -25,5 +23,14 @@
   "chef": "Philip Rachinger",
   "chefSource": "site",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 98 €)",
-  "lunchNoteDe": "Mittagsmenü"
+  "lunchNoteDe": "Mittagsmenü",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 90.5,
+      "url": "https://www.laliste.com/places/ois-im-muhltalhof-unternberg-at"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

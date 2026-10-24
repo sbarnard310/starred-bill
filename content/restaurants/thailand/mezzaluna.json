@@ -6,8 +6,6 @@
   "address": "65F, Tower Club at Lebua, 1055 Silom Road, Si Lom, Bang Rak, Bangkok",
   "stars": 2,
   "cuisine": "French",
-  "rating": 4.5,
-  "reviews": 369,
   "dinner": 8000,
   "dinnerType": "menu",
   "dinnerNote": "Tasting menu, plus service and VAT (++)",
@@ -38,5 +36,20 @@
   "photoWidth": 1000,
   "photoHeight": 679,
   "photoChecked": "2026-10-13",
-  "dietsManual": true
+  "dietsManual": true,
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 88,
+      "url": "https://www.laliste.com/places/mezzaluna-bangkok-th"
+    },
+    {
+      "list": "oad-asia",
+      "year": 2026,
+      "rank": 167,
+      "url": "https://www.oadguides.com/lists/asia/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

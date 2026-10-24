@@ -5,8 +5,6 @@
   "address": "A22 Hotel, Ausekļa iela 22, 1010, Riga",
   "stars": 1,
   "cuisine": "Modern European",
-  "rating": 4.9,
-  "reviews": 75,
   "dinnerType": "menu",
   "dinner": 210,
   "dinnerNote": "Tasting menu (other menus from €55)",
@@ -27,5 +25,14 @@
   "noLunch": true,
   "lunchNote": "Dinner only",
   "lunchNoteLv": "Tikai vakariņas",
-  "areaLv": "Rīga"
+  "areaLv": "Rīga",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 75,
+      "url": "https://www.laliste.com/places/john-chefs-hall-riga-lv"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

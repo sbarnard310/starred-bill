@@ -4,8 +4,6 @@
   "address": "2843 Larimer St., Denver, 80205",
   "stars": 1,
   "cuisine": "Modern American",
-  "rating": 4.7,
-  "reviews": 539,
   "dinnerType": "menu",
   "dinner": 215,
   "dinnerNote": "Tasting menu, prepaid",
@@ -27,5 +25,14 @@
     "kosher"
   ],
   "chef": "Duncan Holmes",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "rankings": [
+    {
+      "list": "oad-north-america",
+      "year": 2026,
+      "rank": 218,
+      "url": "https://www.oadguides.com/lists/north-america/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

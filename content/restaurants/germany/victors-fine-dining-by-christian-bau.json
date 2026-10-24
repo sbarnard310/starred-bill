@@ -5,8 +5,6 @@
   "address": "Schlossstraße 27, 66706, Perl",
   "stars": 3,
   "cuisine": "Creative",
-  "rating": 4.7,
-  "reviews": 358,
   "dinnerType": "menu",
   "dinner": 525,
   "dinnerNote": "Tasting menu (other menus from €425)",
@@ -25,5 +23,14 @@
   "lunchNote": "Same menu at lunch · Sat–Sun",
   "lunchNoteDe": "Gleiches Menü am Mittag · Sa–So",
   "lunchSourceType": "site",
-  "lunchSource": "https://www.victors-fine-dining.de/menues-arrangements"
+  "lunchSource": "https://www.victors-fine-dining.de/menues-arrangements",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 98.5,
+      "url": "https://www.laliste.com/places/victors-fine-dining-by-christian-bau-perl-de"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

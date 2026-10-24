@@ -5,8 +5,6 @@
   "address": "Carretera Medrano 6, 26373, Daroca de Rioja",
   "stars": 2,
   "cuisine": "Modern European",
-  "rating": 4.8,
-  "reviews": 731,
   "dinnerType": "menu",
   "dinner": 195,
   "dinnerNote": "Tasting menu (other menus from €175)",
@@ -30,5 +28,20 @@
   ],
   "chef": "Ignacio Echapresto",
   "chefSource": "site",
-  "dietsManual": true
+  "dietsManual": true,
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 82.5,
+      "url": "https://www.laliste.com/places/venta-moncalvillo-daroca-de-rioja-es"
+    },
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 137,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

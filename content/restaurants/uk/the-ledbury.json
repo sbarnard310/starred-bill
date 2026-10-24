@@ -5,8 +5,6 @@
   "address": "127 Ledbury Road, Notting Hill, London, W11 2AQ",
   "stars": 3,
   "cuisine": "Modern European",
-  "rating": 4.7,
-  "reviews": 1711,
   "dinner": 295,
   "dinnerType": "menu",
   "dinnerNote": "Tasting menu",
@@ -76,7 +74,7 @@
       "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
     }
   ],
-  "rankingsChecked": "2026-10-13",
+  "rankingsChecked": "2026-10-24",
   "photo": "the-ledbury.jpg",
   "photoAlt": "The corner building housing The Ledbury on Ledbury Road, Notting Hill, London",
   "photoCredit": "Ewan Munro from London, UK",

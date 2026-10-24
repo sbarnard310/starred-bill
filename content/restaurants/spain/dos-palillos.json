@@ -6,8 +6,6 @@
   "address": "Elisabets 9, Barcelona, 08001",
   "stars": 1,
   "cuisine": "Fusion",
-  "rating": 4.3,
-  "reviews": 1551,
   "dinner": 140,
   "dinnerType": "menu",
   "dinnerNote": "Festival menu (Tokusen menu €175)",
@@ -30,5 +28,14 @@
   "placeId": "ChIJyaJCM_SipBIRxsdH2ToFYe0",
   "michelinId": "274782",
   "chef": "Albert Raurich",
-  "chefSource": "press"
+  "chefSource": "press",
+  "rankings": [
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 283,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

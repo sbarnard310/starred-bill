@@ -7,8 +7,6 @@
   "address": "23F, Shilla Hotel, 249 Dongho-ro, Jung-gu, Seoul",
   "stars": 2,
   "cuisine": "Korean",
-  "rating": 4.5,
-  "reviews": 809,
   "dinner": 380000,
   "dinnerType": "menu",
   "dinnerNote": "Shilla course",
@@ -27,5 +25,20 @@
   "placeId": "ChIJf8Lq1wSjfDURbuyVUM14Svc",
   "michelinId": "511973",
   "chef": "Doyoung Cha",
-  "chefSource": "site"
+  "chefSource": "site",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 94.5,
+      "url": "https://www.laliste.com/places/la-yeon-the-shilla-kr"
+    },
+    {
+      "list": "oad-asia",
+      "year": 2026,
+      "rank": 93,
+      "url": "https://www.oadguides.com/lists/asia/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

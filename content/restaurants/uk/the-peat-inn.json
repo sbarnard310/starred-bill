@@ -5,8 +5,6 @@
   "address": "Peat Inn, KY15 5LH",
   "stars": 1,
   "cuisine": "Modern European",
-  "rating": 4.8,
-  "reviews": 615,
   "dinner": 140,
   "dinnerType": "menu",
   "dinnerNote": "Six-course tasting menu (three-course dinner menu £100)",
@@ -104,5 +102,14 @@
     "rooms": 8,
     "url": "https://www.thepeatinn.co.uk/rooms",
     "checked": "2026-10-23"
-  }
+  },
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 79.5,
+      "url": "https://www.laliste.com/places/the-peat-inn-cupar-gb"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

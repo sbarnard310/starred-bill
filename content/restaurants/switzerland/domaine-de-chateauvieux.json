@@ -5,8 +5,6 @@
   "address": "Chemin de Châteauvieux 16, 1242, Satigny",
   "stars": 1,
   "cuisine": "French",
-  "rating": 4.8,
-  "reviews": 893,
   "dinnerType": "menu",
   "dinner": 340,
   "dinnerNote": "Tasting menu (other menus from CHF 210)",
@@ -30,5 +28,14 @@
   "dinnerNoteIt": "Menu degustazione (altri menu da CHF 210)",
   "lunchNoteDe": "Mittagsmenü",
   "lunchNoteFr": "Menu déjeuner",
-  "lunchNoteIt": "Menu pranzo"
+  "lunchNoteIt": "Menu pranzo",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 91,
+      "url": "https://www.laliste.com/places/domaine-de-chateauvieux-satigny-ch"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

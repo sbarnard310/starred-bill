@@ -4,8 +4,6 @@
   "address": "Pohjoisesplanadi 5, 00170, Helsinki",
   "stars": 1,
   "cuisine": "Modern European",
-  "rating": 4.7,
-  "reviews": 693,
   "dinnerType": "menu",
   "dinner": 109,
   "dinnerNote": "Menu Olo Selected (Menu Olo €189)",
@@ -32,5 +30,14 @@
   "photoSourceType": "commons",
   "photoWidth": 1000,
   "photoHeight": 750,
-  "photoChecked": "2026-10-13"
+  "photoChecked": "2026-10-13",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 78,
+      "url": "https://www.laliste.com/places/olo-helsinki-fi"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

@@ -6,8 +6,6 @@
   "address": "30 avenue Aristide-Briand, 06500 Menton",
   "stars": 3,
   "cuisine": "Creative",
-  "rating": 4.4,
-  "reviews": 1734,
   "dinner": 450,
   "dinnerType": "menu",
   "dinnerNote": "Univers Mirazur tasting menu, 9 courses, lunch and dinner",
@@ -26,5 +24,20 @@
   "placeId": "ChIJm8DZegnszRIRmG_rHu0gA5c",
   "michelinId": "16132",
   "chef": "Mauro Colagreco",
-  "chefSource": "site"
+  "chefSource": "site",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 98,
+      "url": "https://www.laliste.com/places/mirazur-menton-fr"
+    },
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 42,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

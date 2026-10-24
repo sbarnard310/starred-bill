@@ -6,8 +6,6 @@
   "address": "Murillo 725, Villa Crespo, Buenos Aires",
   "stars": 1,
   "cuisine": "Modern American",
-  "rating": 4.5,
-  "reviews": 299,
   "dinner": 320000,
   "dinnerType": "menu",
   "dinnerNote": "Tasting menu, 16 courses (9 courses about ARS 230,000); dinner only",
@@ -25,5 +23,14 @@
     "vegetarian"
   ],
   "chef": "Tomás Treschanski",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "rankings": [
+    {
+      "list": "latin-americas-50-best",
+      "year": 2025,
+      "rank": 36,
+      "url": "https://www.the50.com/restaurants/best-in-latin-america/list/1-50"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

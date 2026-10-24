@@ -8,8 +8,6 @@
   "addressZh": "香港尖沙咀北京道8號朗廷酒店1-2樓",
   "stars": 3,
   "cuisine": "Cantonese",
-  "rating": 4.2,
-  "reviews": 623,
   "dinnerType": "menu",
   "dinnerNote": "Legendary Set Menu (à la carte also served)",
   "dinnerNoteZh": "星級套餐（另設單點）",
@@ -68,5 +66,20 @@
   "dressCode": "Smart casual. Men are asked not to wear plastic footwear, flip-flops, sandals or sleeveless shirts, and shorts are not allowed at dinner.",
   "infoSource": "https://www.langhamhotels.com/en/the-langham/hong-kong/dine/tang-court/",
   "infoChecked": "2026-10-13",
-  "dietsManual": true
+  "dietsManual": true,
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 93,
+      "url": "https://www.laliste.com/places/tang-court-hong-kong-hk"
+    },
+    {
+      "list": "oad-asia",
+      "year": 2026,
+      "rank": 133,
+      "url": "https://www.oadguides.com/lists/asia/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

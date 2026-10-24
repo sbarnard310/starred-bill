@@ -4,8 +4,6 @@
   "address": "Petőfi tér 3, 1051, Budapest",
   "stars": 1,
   "cuisine": "Creative",
-  "rating": 4.7,
-  "reviews": 756,
   "dinnerType": "menu",
   "dinner": 72900,
   "dinnerNote": "Tasting menu (other menus from HUF 47,900)",
@@ -25,5 +23,14 @@
   "noLunch": true,
   "lunchNote": "Dinner only",
   "lunchNoteHu": "Csak vacsora",
-  "dietsManual": true
+  "dietsManual": true,
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 76.5,
+      "url": "https://www.laliste.com/places/rumour-by-racz-jeno-budapest-hu"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

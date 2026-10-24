@@ -6,8 +6,6 @@
   "address": "557 Oecho, Shimogyo-ku, 600-8402, Kyoto",
   "stars": 1,
   "cuisine": "Japanese",
-  "rating": 4.6,
-  "reviews": 255,
   "dinnerType": "menu",
   "dinnerNote": "Kaiseki course; service extra",
   "sourceType": "site",
@@ -33,5 +31,14 @@
   "lunchSourceType": "site",
   "lunchSource": "https://jiki-miyazawa.com/godan",
   "lunchNote": "Lunch kaiseki, from; service extra",
-  "lunchNoteJa": "昼懐石（最安値）・サービス料別"
+  "lunchNoteJa": "昼懐石（最安値）・サービス料別",
+  "rankings": [
+    {
+      "list": "oad-japan",
+      "year": 2026,
+      "rank": 457,
+      "url": "https://www.oadguides.com/lists/japan/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

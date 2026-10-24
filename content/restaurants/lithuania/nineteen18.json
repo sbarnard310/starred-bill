@@ -5,8 +5,6 @@
   "address": "Dominikonų gatvė 11, 01131, Vilnius",
   "stars": 1,
   "cuisine": "Modern European",
-  "rating": 4.7,
-  "reviews": 480,
   "dinnerType": "menu",
   "dinner": 115,
   "dinnerNote": "Tasting menu",
@@ -37,5 +35,14 @@
     "via": "website",
     "source": "https://nineteen18.lt",
     "checked": "2026-10-10"
-  }
+  },
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 76,
+      "url": "https://www.laliste.com/places/nineteen18-vilnius-lt"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

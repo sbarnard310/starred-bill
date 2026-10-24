@@ -7,8 +7,6 @@
   "address": "59 rue Letellier, 75015, Paris",
   "stars": 1,
   "cuisine": "Japanese",
-  "rating": 4.8,
-  "reviews": 1232,
   "dinner": 300,
   "dinnerType": "menu",
   "dinnerNote": "Omakase at a table (tea ceremony counter €310, chef's counter €320)",
@@ -49,5 +47,14 @@
   "cancellation": "A card is held to guarantee the booking and charged only for a no-show or a cancellation less than 48 hours ahead. A table may be given away after 30 minutes' delay.",
   "groups": "Up to ten people can book online; the shared table suits groups of more than two.",
   "infoSource": "https://chakaiseki-akiyoshi.fr/en/reserve/",
-  "infoChecked": "2026-10-13"
+  "infoChecked": "2026-10-13",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 77.5,
+      "url": "https://www.laliste.com/places/chakaiseki-akiyoshi-paris-fr"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

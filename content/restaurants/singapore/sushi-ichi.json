@@ -6,8 +6,6 @@
   "address": "Marriott Tang Plaza Hotel, #01-04, 320 Orchard Road, Singapore 238865",
   "stars": 1,
   "cuisine": "Sushi",
-  "rating": 4.6,
-  "reviews": 181,
   "dinner": 500,
   "dinnerType": "menu",
   "dinnerNote": "Chef's signature omakase",
@@ -26,5 +24,14 @@
   "placeId": "ChIJhw9kfo0Z2jERQvBMA2bcwP8",
   "michelinId": "501660",
   "chef": "Takeshi Kawakami",
-  "chefSource": "press"
+  "chefSource": "press",
+  "rankings": [
+    {
+      "list": "oad-asia",
+      "year": 2026,
+      "rank": 336,
+      "url": "https://www.oadguides.com/lists/asia/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

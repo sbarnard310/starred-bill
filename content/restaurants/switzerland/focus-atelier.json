@@ -5,8 +5,6 @@
   "address": "Seestrasse 18, 6354, Vitznau",
   "stars": 2,
   "cuisine": "French",
-  "rating": 4.9,
-  "reviews": 140,
   "dinnerType": "menu",
   "dinner": 335,
   "dinnerNote": "Tasting menu (other menus from CHF 295)",
@@ -26,5 +24,20 @@
   "lunchNote": "Dinner only",
   "lunchNoteDe": "Nur abends",
   "lunchNoteFr": "Uniquement le soir",
-  "lunchNoteIt": "Solo a cena"
+  "lunchNoteIt": "Solo a cena",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 91.5,
+      "url": "https://www.laliste.com/places/focus-atelier-vitznau-ch"
+    },
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 172,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

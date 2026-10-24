@@ -6,8 +6,6 @@
   "address": "The Shoppes at Marina Bay Sands, Level 2 Dining, L2-03, 10 Bayfront Avenue, Singapore 018956",
   "stars": 1,
   "cuisine": "Japanese",
-  "rating": 4.3,
-  "reviews": 383,
   "dinner": 550,
   "dinnerType": "menu",
   "dinnerNote": "Chef's Table degustation menu (Five at Five menu S$250)",
@@ -71,5 +69,5 @@
       "url": "https://www.oadguides.com/lists/asia/top-restaurants/2026"
     }
   ],
-  "rankingsChecked": "2026-10-13"
+  "rankingsChecked": "2026-10-24"
 }

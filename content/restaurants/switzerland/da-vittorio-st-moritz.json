@@ -27,5 +27,14 @@
   "lunchNoteFr": "Uniquement le soir",
   "lunchNoteIt": "Solo a cena",
   "areaIt": "Sankt Moritz",
-  "notice": "Open in winter only; reopens on 12 December 2026 (its hotel’s website, October 2026)"
+  "notice": "Open in winter only; reopens on 12 December 2026 (its hotel’s website, October 2026)",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 91,
+      "url": "https://www.laliste.com/places/da-vittorio-hotel-carlton-sankt-moritz-ch"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

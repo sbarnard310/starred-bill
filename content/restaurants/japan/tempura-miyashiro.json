@@ -9,8 +9,6 @@
   "addressJa": "〒153-0051 東京都目黒区上目黒 2-18-11",
   "stars": 1,
   "cuisine": "Tempura",
-  "rating": 4.6,
-  "reviews": 305,
   "dinner": 30800,
   "dinnerType": "menu",
   "dinnerNote": "Tempura course",
@@ -31,5 +29,14 @@
   "placeId": "ChIJMXHndD-LGGARTzWxXrBV_kA",
   "michelinId": "1194078",
   "chef": "Naoki Miyashiro",
-  "chefSource": "press"
+  "chefSource": "press",
+  "rankings": [
+    {
+      "list": "oad-japan",
+      "year": 2026,
+      "rank": 694,
+      "url": "https://www.oadguides.com/lists/japan/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

@@ -5,8 +5,6 @@
   "address": "La Salgar, 33549, Arriondas",
   "stars": 3,
   "cuisine": "Creative",
-  "rating": 4.7,
-  "reviews": 990,
   "dinnerType": "menu",
   "dinner": 270,
   "wine": 130,
@@ -73,5 +71,5 @@
       "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
     }
   ],
-  "rankingsChecked": "2026-10-13"
+  "rankingsChecked": "2026-10-24"
 }

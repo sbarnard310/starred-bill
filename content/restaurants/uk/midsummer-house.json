@@ -5,8 +5,6 @@
   "address": "Midsummer Common, Cambridge, CB4 1HA",
   "stars": 2,
   "cuisine": "Creative",
-  "rating": 4.7,
-  "reviews": 755,
   "dinner": 245,
   "dinnerType": "menu",
   "dinnerNote": "Solstice menu (Corpus £175, Trinity £135; Grand Siècle Solstice with Champagne £285)",
@@ -76,5 +74,14 @@
   "byob": "Guests can't bring their own wine.",
   "infoSource": "https://midsummerhouse.co.uk/faq/",
   "infoChecked": "2026-10-13",
-  "dietsManual": true
+  "dietsManual": true,
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 92,
+      "url": "https://www.laliste.com/places/midsummer-house-cambridge-gb"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

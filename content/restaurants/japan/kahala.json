@@ -6,8 +6,6 @@
   "address": "2F, 1-9-2 Sonezakishinchi, Kita-ku, 530-0002, Osaka",
   "stars": 2,
   "cuisine": "Creative",
-  "rating": 4.7,
-  "reviews": 50,
   "dinnerType": "menu",
   "dinnerNote": "Tasting menu",
   "sourceType": "press",
@@ -22,5 +20,14 @@
   "source": "https://www.travelsforstars.com/blog/2026/06/15/kahala-osaka",
   "noLunch": true,
   "lunchNote": "Dinner only",
-  "lunchNoteJa": "ディナーのみ"
+  "lunchNoteJa": "ディナーのみ",
+  "rankings": [
+    {
+      "list": "oad-japan",
+      "year": 2026,
+      "rank": 137,
+      "url": "https://www.oadguides.com/lists/japan/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

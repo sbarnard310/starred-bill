@@ -4,8 +4,6 @@
   "address": "Hannah-Arendt-Platz 1, 30159, Hanover",
   "stars": 2,
   "cuisine": "Creative",
-  "rating": 4.6,
-  "reviews": 118,
   "dinnerType": "menu",
   "dinner": 220,
   "dinnerNote": "Tasting menu (other menus from €99)",
@@ -21,5 +19,14 @@
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 99 €)",
   "noLunch": true,
   "lunchNote": "Dinner only",
-  "lunchNoteDe": "Nur abends"
+  "lunchNoteDe": "Nur abends",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 82.5,
+      "url": "https://www.laliste.com/places/votum-hannover-de"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

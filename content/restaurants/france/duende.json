@@ -6,8 +6,6 @@
   "address": "Quai de la Fontaine, 30900 Nîmes",
   "stars": 2,
   "cuisine": "Modern European",
-  "rating": 4.8,
-  "reviews": 204,
   "dinner": 230,
   "dinnerType": "menu",
   "dinnerNote": "Longest tasting menu (other menus from €185)",
@@ -42,5 +40,14 @@
       }
     ],
     "checked": "2026-10-23"
-  }
+  },
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 77.5,
+      "url": "https://www.laliste.com/places/duende-nimes-fr"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

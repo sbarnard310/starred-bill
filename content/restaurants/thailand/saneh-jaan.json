@@ -6,8 +6,6 @@
   "address": "Sindhorn Tower, 130-132 Wireless Road, Lumphini, Pathum Wan, Bangkok",
   "stars": 1,
   "cuisine": "Thai",
-  "rating": 4.3,
-  "reviews": 967,
   "dinnerType": "menu",
   "dinnerNote": "The Four Elements Journey tasting menu, plus service and VAT (++) (Samrub Thai dinner set THB 3,200)",
   "dinnerNoteTh": "เมนูชิม The Four Elements Journey ยังไม่รวมค่าบริการและภาษี (++) (เซ็ตมื้อค่ำ Samrub Thai THB 3,200)",
@@ -60,5 +58,14 @@
   "children": "Children aged 6 and over only, except in a separate private area. There is no children's menu.",
   "byob": "Corkage is THB 1,500 plus service and VAT a bottle of wine, THB 3,000 a bottle of spirits.",
   "infoSource": "https://www.tablecheck.com/en/saneh-jaan-bangkok/reserve/message",
-  "infoChecked": "2026-10-13"
+  "infoChecked": "2026-10-13",
+  "rankings": [
+    {
+      "list": "oad-asia",
+      "year": 2026,
+      "rank": 566,
+      "url": "https://www.oadguides.com/lists/asia/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

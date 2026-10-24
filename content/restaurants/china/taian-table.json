@@ -4,8 +4,6 @@
   "address": "101-102, Building No. 1, Garden Office, No.161, Lane 465, Zhenning Road, Changning, Shanghai",
   "stars": 3,
   "cuisine": "Creative",
-  "rating": 4.3,
-  "reviews": 30,
   "dinnerType": "menu",
   "dinner": 2888,
   "dinnerNote": "Tasting menu",
@@ -26,5 +24,14 @@
   "noLunch": true,
   "lunchNote": "Dinner only",
   "lunchNoteZhs": "仅供应晚餐",
-  "nameZhs": "泰安门"
+  "nameZhs": "泰安门",
+  "rankings": [
+    {
+      "list": "oad-asia",
+      "year": 2026,
+      "rank": 62,
+      "url": "https://www.oadguides.com/lists/asia/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

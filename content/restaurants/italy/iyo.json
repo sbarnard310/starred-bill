@@ -6,8 +6,6 @@
   "address": "Via Piero della Francesca 74, Milan, 20154",
   "stars": 1,
   "cuisine": "Japanese",
-  "rating": 4.7,
-  "reviews": 2943,
   "dinner": 158,
   "dinnerType": "menu",
   "dinnerNote": "Faccio IYO 2026 tasting menu (Classico €148)",
@@ -26,5 +24,14 @@
   "lat": 45.486623,
   "lng": 9.159527,
   "placeId": "ChIJh6lB_BDBhkcRGHrLD_MI-j4",
-  "michelinId": "254942"
+  "michelinId": "254942",
+  "rankings": [
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 679,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

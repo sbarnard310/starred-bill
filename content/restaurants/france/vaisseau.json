@@ -12,8 +12,6 @@
   "changeNoteFr": "Première étoile",
   "changeNoteZh": "首度摘星",
   "changeDate": "2025-03",
-  "rating": 4.9,
-  "reviews": 420,
   "dinner": 120,
   "dinnerType": "menu",
   "dinnerNote": "Menu « N'importe quoi »",
@@ -37,5 +35,14 @@
     "vegetarian"
   ],
   "chef": "Adrien Cachot",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "rankings": [
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 189,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

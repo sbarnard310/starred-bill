@@ -15,8 +15,6 @@
   "changeNoteZh": "晉升二星",
   "changeNoteJa": "二つ星に昇格",
   "changeDate": "2025-09",
-  "rating": 4.6,
-  "reviews": 95,
   "dinner": 45000,
   "dinnerType": "menu",
   "dinnerNote": "Seasonal course",
@@ -33,5 +31,14 @@
   "placeId": "ChIJW0Sto0SLGGAR4q18Q_Fh4bk",
   "michelinId": "1195369",
   "chef": "Shingo Sakamoto",
-  "chefSource": "press"
+  "chefSource": "press",
+  "rankings": [
+    {
+      "list": "oad-japan",
+      "year": 2026,
+      "rank": 272,
+      "url": "https://www.oadguides.com/lists/japan/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

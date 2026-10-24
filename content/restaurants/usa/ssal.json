@@ -5,8 +5,6 @@
   "address": "2226 Polk St., San Francisco, CA 94109",
   "stars": 1,
   "cuisine": "Korean",
-  "rating": 4.7,
-  "reviews": 233,
   "dinner": 270,
   "dinnerType": "menu",
   "dinnerNote": "Tasting menu, from",
@@ -21,5 +19,14 @@
   "placeId": "ChIJz9axs6SBhYARWHXy6JCAk_0",
   "michelinId": "1183662",
   "chef": "Junsoo Bae and Hyunyoung Bae",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "rankings": [
+    {
+      "list": "oad-north-america",
+      "year": 2026,
+      "rank": 249,
+      "url": "https://www.oadguides.com/lists/north-america/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

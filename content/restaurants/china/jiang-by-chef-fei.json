@@ -4,8 +4,6 @@
   "address": "3F, Mandarin Oriental Hotel, 389 Tianhe Road, Tianhe, Guangzhou",
   "stars": 2,
   "cuisine": "Cantonese",
-  "rating": 4,
-  "reviews": 34,
   "dinnerType": "spend",
   "dinner": 671,
   "dinnerNote": "Typical spend",
@@ -25,5 +23,20 @@
   "nameZhs": "江",
   "chef": "Huang Jinghui",
   "chefSource": "press",
-  "dietsManual": true
+  "dietsManual": true,
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 75.5,
+      "url": "https://www.laliste.com/places/jiang-by-chef-fei-guangzhou-shi-cn"
+    },
+    {
+      "list": "oad-asia",
+      "year": 2026,
+      "rank": 399,
+      "url": "https://www.oadguides.com/lists/asia/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

@@ -5,8 +5,6 @@
   "address": "High Street, Bray, SL6 2AQ",
   "stars": 3,
   "cuisine": "Creative",
-  "rating": 4.7,
-  "reviews": 1732,
   "dinner": 285,
   "dinnerType": "menu",
   "dinnerNote": "Tasting menu from (£285–£365 by menu and day), paid in full when booking",
@@ -108,7 +106,7 @@
       "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
     }
   ],
-  "rankingsChecked": "2026-10-13",
+  "rankingsChecked": "2026-10-24",
   "photo": "the-fat-duck.jpg",
   "photoAlt": "The Fat Duck, a pale two-storey house on the High Street in Bray, Berkshire",
   "photoCredit": "Oast House Archive",

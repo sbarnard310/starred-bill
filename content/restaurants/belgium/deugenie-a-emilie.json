@@ -5,8 +5,6 @@
   "address": "place de la Résistance 1, 7331, Baudour",
   "stars": 2,
   "cuisine": "French",
-  "rating": 4.8,
-  "reviews": 361,
   "dinnerType": "menu",
   "dinner": 235,
   "dinnerNote": "Tasting menu (other menus from €125)",
@@ -27,5 +25,14 @@
   "lunchNoteNl": "Zelfde menu bij de lunch · do–vr, zo",
   "lunchNoteFr": "Même menu le midi · jeu.–ven., dim.",
   "lunchSourceType": "site",
-  "lunchSource": "https://eugenie-emilie.be/nos-menus"
+  "lunchSource": "https://eugenie-emilie.be/nos-menus",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 79.5,
+      "url": "https://www.laliste.com/places/deugenie-a-emilie-eric-fernez-saint-ghislain-be"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

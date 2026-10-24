@@ -7,8 +7,6 @@
   "address": "Kronprinsessegade 8, 1306 Copenhagen",
   "stars": 1,
   "cuisine": "Modern European",
-  "rating": 4.7,
-  "reviews": 480,
   "dinner": 2195,
   "dinnerType": "menu",
   "dinnerNote": "Tasting menu, 12–15 servings",
@@ -31,5 +29,14 @@
     "vegan"
   ],
   "chef": "Nick Curtin",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "rankings": [
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 103,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

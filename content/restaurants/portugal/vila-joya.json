@@ -5,8 +5,6 @@
   "address": "Estrada da Galé, 8200-416, Albufeira",
   "stars": 2,
   "cuisine": "Modern European",
-  "rating": 4.8,
-  "reviews": 842,
   "dinnerType": "menu",
   "dinner": 290,
   "dinnerNote": "Chef Dieter Koschina's Favorites menu",
@@ -50,5 +48,14 @@
   "cancellation": "Free to cancel until 9am on the day. Later cancellations cost €150 a person; no-shows, and each guest fewer than booked, are charged €290 a person.",
   "groups": "The largest table seats six.",
   "infoSource": "https://www.vilajoya.com/book-michelin/",
-  "infoChecked": "2026-10-13"
+  "infoChecked": "2026-10-13",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 92,
+      "url": "https://www.laliste.com/places/vila-joya-albufeira-pt"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

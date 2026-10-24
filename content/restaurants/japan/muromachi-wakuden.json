@@ -6,8 +6,6 @@
   "address": "679 Marukizaimokucho, Nakagyo-ku, 604-8106, Kyoto",
   "stars": 1,
   "cuisine": "Japanese",
-  "rating": 4.6,
-  "reviews": 320,
   "dinnerType": "menu",
   "dinnerNote": "Kaiseki course, from; including tax and service",
   "sourceType": "site",
@@ -34,5 +32,14 @@
   "lunchSource": "https://www.wakuden.jp/ryotei/muromachi/",
   "lunchWine": 10000,
   "lunchNote": "Lunch kaiseki, from; including tax and service",
-  "lunchNoteJa": "昼懐石（最安値）・税サ込"
+  "lunchNoteJa": "昼懐石（最安値）・税サ込",
+  "rankings": [
+    {
+      "list": "oad-japan",
+      "year": 2026,
+      "rank": 211,
+      "url": "https://www.oadguides.com/lists/japan/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

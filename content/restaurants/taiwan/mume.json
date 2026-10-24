@@ -11,8 +11,6 @@
   "changeNote": "Gained its first star",
   "changeNoteZh": "首獲一星",
   "changeDate": "2026-07",
-  "rating": 4.2,
-  "reviews": 1792,
   "dinner": 3980,
   "dinnerType": "menu",
   "dinnerNote": "Seasonal set menu",
@@ -28,5 +26,26 @@
   "placeId": "ChIJp6GC5NGrQjQRDuHabyIYADA",
   "michelinId": "550774",
   "chef": "Richie Lin",
-  "chefSource": "press"
+  "chefSource": "press",
+  "rankings": [
+    {
+      "list": "asias-50-best",
+      "year": 2026,
+      "rank": 61,
+      "url": "https://www.the50.com/restaurants/best-in-asia/list/51-100"
+    },
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 85,
+      "url": "https://www.laliste.com/places/mume-daan-district-cn"
+    },
+    {
+      "list": "oad-asia",
+      "year": 2026,
+      "rank": 104,
+      "url": "https://www.oadguides.com/lists/asia/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

@@ -5,8 +5,6 @@
   "address": "132 The Embarcadero, San Francisco, CA 94105",
   "stars": 1,
   "cuisine": "Modern American",
-  "rating": 4.4,
-  "reviews": 1197,
   "dinner": 56,
   "dinnerType": "main",
   "dinnerNote": "Typical main course",
@@ -71,6 +69,6 @@
       "url": "https://www.oadguides.com/lists/north-america/top-restaurants/2026"
     }
   ],
-  "rankingsChecked": "2026-10-13",
+  "rankingsChecked": "2026-10-24",
   "dietsManual": true
 }

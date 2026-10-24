@@ -4,8 +4,6 @@
   "address": "Biskopsvägen 9, 115 21, Stockholm",
   "stars": 2,
   "cuisine": "Modern European",
-  "rating": 4.8,
-  "reviews": 393,
   "dinnerType": "menu",
   "dinner": 2950,
   "dinnerNote": "Tasting menu (other menus from SEK 1,495)",
@@ -31,5 +29,20 @@
   "photoSourceType": "commons",
   "photoWidth": 1000,
   "photoHeight": 744,
-  "photoChecked": "2026-10-13"
+  "photoChecked": "2026-10-13",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 93,
+      "url": "https://www.laliste.com/places/aira-stockholm-se"
+    },
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 101,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

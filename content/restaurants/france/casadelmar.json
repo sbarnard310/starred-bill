@@ -6,8 +6,6 @@
   "address": "Route de Palombaggia, 20137 Porto-Vecchio",
   "stars": 2,
   "cuisine": "Modern European",
-  "rating": 4.5,
-  "reviews": 338,
   "dinner": 290,
   "dinnerType": "menu",
   "dinnerNote": "Longest tasting menu (other menus from €230)",
@@ -32,5 +30,14 @@
     "url": "https://www.casadelmar.fr",
     "note": "A 34-room hotel at Porto-Vecchio; its website says it is closed for the season until about mid-April 2027.",
     "checked": "2026-10-23"
-  }
+  },
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 90.5,
+      "url": "https://www.laliste.com/places/casadelmar-porto-vecchio-fr"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

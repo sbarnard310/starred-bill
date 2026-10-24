@@ -9,8 +9,6 @@
   "changeNote": "Gained a second star",
   "changeNoteZh": "晉升二星",
   "changeDate": "2025-11",
-  "rating": 4.5,
-  "reviews": 2282,
   "dinner": 325,
   "dinnerType": "menu",
   "dinnerNote": "Tasting menu",
@@ -30,5 +28,14 @@
   "placeId": "ChIJccHhHs3TD4gRxVcCWUh7-xQ",
   "michelinId": "1190971",
   "chef": "Tim Flores and Genie Kwon",
-  "chefSource": "press"
+  "chefSource": "press",
+  "rankings": [
+    {
+      "list": "oad-north-america",
+      "year": 2026,
+      "rank": 90,
+      "url": "https://www.oadguides.com/lists/north-america/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

@@ -5,8 +5,6 @@
   "address": "Route de Glion 111, 1823, Montreux",
   "stars": 1,
   "cuisine": "French",
-  "rating": 4.7,
-  "reviews": 303,
   "dinnerType": "menu",
   "dinner": 310,
   "dinnerNote": "Tasting menu (other menus from CHF 240)",
@@ -34,5 +32,14 @@
   "dinnerNoteIt": "Menu degustazione (altri menu da CHF 240)",
   "lunchNoteDe": "Mittagsmenü",
   "lunchNoteFr": "Menu déjeuner",
-  "lunchNoteIt": "Menu pranzo"
+  "lunchNoteIt": "Menu pranzo",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 87,
+      "url": "https://www.laliste.com/places/stephane-decotterd-montreux-ch"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

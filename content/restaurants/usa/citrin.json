@@ -5,8 +5,6 @@
   "address": "1104 Wilshire Blvd., Santa Monica, CA 90401",
   "stars": 1,
   "cuisine": "American",
-  "rating": 4.1,
-  "reviews": 198,
   "dinner": 165,
   "dinnerType": "menu",
   "dinnerNote": "Tasting menu",
@@ -21,5 +19,14 @@
   "placeId": "ChIJB1gJrcelwoARTqn5Yh3E57s",
   "michelinId": "1196539",
   "chef": "Ken Takayama",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "rankings": [
+    {
+      "list": "oad-north-america",
+      "year": 2026,
+      "rank": 230,
+      "url": "https://www.oadguides.com/lists/north-america/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

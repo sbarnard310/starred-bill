@@ -6,8 +6,6 @@
   "address": "The Retreat at Blue Lagoon, Norðurljósavegur 11, Grindavík",
   "stars": 1,
   "cuisine": "Modern European",
-  "rating": 4.7,
-  "reviews": 195,
   "dinner": 39900,
   "dinnerType": "menu",
   "dinnerNote": "Tasting menu; dinner only, Wed–Sun (kitchen table ISK 180,000 with wines)",
@@ -26,5 +24,14 @@
     "vegan"
   ],
   "chef": "Agnar Sverrisson",
-  "chefSource": "press"
+  "chefSource": "press",
+  "rankings": [
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 518,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

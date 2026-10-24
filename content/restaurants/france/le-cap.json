@@ -6,8 +6,6 @@
   "address": "Grand Hôtel du Cap-Ferrat, 71 boulevard du Général-de-Gaulle, 06230 Saint-Jean-Cap-Ferrat",
   "stars": 1,
   "cuisine": "Modern European",
-  "rating": 4.7,
-  "reviews": 1400,
   "dinner": 188,
   "dinnerType": "menu",
   "dinnerNote": "Longest tasting menu (other menus from €158)",
@@ -30,5 +28,14 @@
     "name": "Grand-Hôtel du Cap-Ferrat, A Four Seasons Hotel",
     "url": "https://www.fourseasons.com/fr/capferrat/",
     "checked": "2026-10-23"
-  }
+  },
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 88.5,
+      "url": "https://www.laliste.com/places/le-cap-au-grand-hotel-du-cap-ferrat-saint-jean-cap-ferrat-fr"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

@@ -11,8 +11,6 @@
   "changeNoteZh": "首度上榜即獲二星",
   "changeNoteFr": "Entrée directe avec deux étoiles",
   "changeDate": "2025-03",
-  "rating": 4.5,
-  "reviews": 67,
   "dinner": 360,
   "dinnerType": "menu",
   "dinnerNote": "Omakase, about 14 courses (Empreinte menu €240)",
@@ -30,5 +28,14 @@
   "placeId": "ChIJ7bXwexPDzRIRL7H479f89sY",
   "michelinId": "1214416",
   "chef": "Yannick Alléno",
-  "chefSource": "site"
+  "chefSource": "site",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 85.5,
+      "url": "https://www.laliste.com/places/labysse-monte-carlo-monaco-mc"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

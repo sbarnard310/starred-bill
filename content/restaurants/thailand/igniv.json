@@ -6,8 +6,6 @@
   "address": "GF, The St. Regis, 159 Ratchadamri Road, Lumphini, Pathum Wan, Bangkok",
   "stars": 1,
   "cuisine": "European",
-  "rating": 4.6,
-  "reviews": 281,
   "dinner": 5500,
   "dinnerType": "menu",
   "dinnerNote": "Sharing tasting menu, plus service and VAT (++)",
@@ -28,5 +26,14 @@
     "vegan"
   ],
   "chef": "David Hartwig",
-  "chefSource": "press"
+  "chefSource": "press",
+  "rankings": [
+    {
+      "list": "oad-asia",
+      "year": 2026,
+      "rank": 473,
+      "url": "https://www.oadguides.com/lists/asia/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

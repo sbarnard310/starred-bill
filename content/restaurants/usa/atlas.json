@@ -4,8 +4,6 @@
   "address": "The St. Regis Atlanta, 88 W. Paces Ferry Rd. NW, Atlanta, 30305",
   "stars": 1,
   "cuisine": "American",
-  "rating": 4.5,
-  "reviews": 648,
   "dinnerType": "menu",
   "dinner": 250,
   "dinnerNote": "Tasting menu",
@@ -24,5 +22,14 @@
   ],
   "chef": "Freddy Money",
   "chefSource": "site",
-  "dietsManual": true
+  "dietsManual": true,
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 82.5,
+      "url": "https://www.laliste.com/places/atlas-atlanta-us"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

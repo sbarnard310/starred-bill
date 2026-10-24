@@ -5,8 +5,6 @@
   "address": "O5, 9-12, 68161, Mannheim",
   "stars": 2,
   "cuisine": "Modern European",
-  "rating": 4.8,
-  "reviews": 414,
   "dinnerType": "menu",
   "dinner": 249,
   "dinnerNote": "Tasting menu (other menus from €99)",
@@ -71,5 +69,14 @@
   "children": "The kitchen prepares dishes suited to children.",
   "infoSource": "https://info.engelhorn.com/gastronomie/opus-v/",
   "infoChecked": "2026-10-13",
-  "dietsManual": true
+  "dietsManual": true,
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 86.5,
+      "url": "https://www.laliste.com/places/opus-v-mannheim-de"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

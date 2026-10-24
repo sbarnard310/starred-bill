@@ -7,8 +7,6 @@
   "address": "4F, 49 Hyoja-ro, Jongno-gu, Seoul",
   "stars": 1,
   "cuisine": "Korean",
-  "rating": 4.7,
-  "reviews": 165,
   "dinner": 300000,
   "dinnerType": "menu",
   "dinnerNote": "Dinner course; Tue–Fri",
@@ -29,5 +27,32 @@
   "placeId": "ChIJk5DRDD2jfDURUA4aAk0Frx0",
   "michelinId": "570665",
   "chef": "Cho Eun-hee and Park Sung-bae",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "rankings": [
+    {
+      "list": "worlds-50-best",
+      "year": 2025,
+      "rank": 57,
+      "url": "https://www.the50.com/restaurants/best-in-the-world/list/51-100"
+    },
+    {
+      "list": "asias-50-best",
+      "year": 2026,
+      "rank": 14,
+      "url": "https://www.the50.com/restaurants/best-in-asia/list/1-50"
+    },
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 89.5,
+      "url": "https://www.laliste.com/places/onjieum-kr"
+    },
+    {
+      "list": "oad-asia",
+      "year": 2026,
+      "rank": 85,
+      "url": "https://www.oadguides.com/lists/asia/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

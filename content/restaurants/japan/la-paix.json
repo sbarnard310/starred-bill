@@ -9,8 +9,6 @@
   "addressJa": "〒103-0022 東京都中央区日本橋室町 1-9-4 B1F",
   "stars": 1,
   "cuisine": "French",
-  "rating": 4.6,
-  "reviews": 347,
   "dinner": 21780,
   "dinnerType": "menu",
   "dinnerNote": "Tasting menu, from",
@@ -31,5 +29,14 @@
   "placeId": "ChIJ6dVNgFaJGGARe4Y9eEX_EdQ",
   "michelinId": "1194221",
   "chef": "Ippei Matsumoto",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "rankings": [
+    {
+      "list": "oad-japan",
+      "year": 2026,
+      "rank": 437,
+      "url": "https://www.oadguides.com/lists/japan/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

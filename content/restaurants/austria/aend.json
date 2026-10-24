@@ -4,8 +4,6 @@
   "address": "Mollardgasse 76, 1060, Vienna",
   "stars": 1,
   "cuisine": "Modern European",
-  "rating": 4.7,
-  "reviews": 379,
   "dinnerType": "menu",
   "dinner": 240,
   "dinnerNote": "Tasting menu (other menus from €210)",
@@ -29,5 +27,20 @@
   "chef": "Fabian Günzel",
   "chefSource": "michelin",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 210 €)",
-  "lunchNoteDe": "Mittagsmenü"
+  "lunchNoteDe": "Mittagsmenü",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 89,
+      "url": "https://www.laliste.com/places/aend-wien-at"
+    },
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 571,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

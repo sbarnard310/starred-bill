@@ -5,8 +5,6 @@
   "address": "Vowels Lane, East Grinstead, RH19 4LJ",
   "stars": 1,
   "cuisine": "British",
-  "rating": 4.8,
-  "reviews": 943,
   "dinner": 130,
   "dinnerType": "menu",
   "dinnerNote": "Dinner, 3 courses",
@@ -81,7 +79,7 @@
       "url": "https://www.laliste.com/places/gravetye-manor-east-grinstead-gb"
     }
   ],
-  "rankingsChecked": "2026-10-13",
+  "rankingsChecked": "2026-10-24",
   "photo": "gravetye-manor.jpg",
   "photoAlt": "The ivy-covered front of Gravetye Manor near East Grinstead, West Sussex",
   "photoCredit": "Nigel Freeman",

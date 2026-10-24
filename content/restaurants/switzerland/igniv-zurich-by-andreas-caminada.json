@@ -4,8 +4,6 @@
   "address": "Marktgasse 17, 8001, Zurich",
   "stars": 2,
   "cuisine": "Creative",
-  "rating": 4.8,
-  "reviews": 455,
   "dinnerType": "menu",
   "dinner": 186,
   "dinnerNote": "Tasting menu",
@@ -28,5 +26,20 @@
   "dinnerNoteIt": "Menu degustazione",
   "lunchNoteDe": "Mittagsmenü",
   "lunchNoteFr": "Menu déjeuner",
-  "lunchNoteIt": "Menu pranzo"
+  "lunchNoteIt": "Menu pranzo",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 87.5,
+      "url": "https://www.laliste.com/places/igniv-zurich-ch"
+    },
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 161,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

@@ -5,8 +5,6 @@
   "address": "Markt 9, 1750, Sint-Kwintens-Lennik",
   "stars": 2,
   "cuisine": "Modern European",
-  "rating": 4.7,
-  "reviews": 713,
   "dinnerType": "menu",
   "dinner": 175,
   "dinnerNote": "Tasting menu",
@@ -38,5 +36,14 @@
   "photoSourceType": "commons",
   "photoWidth": 1000,
   "photoHeight": 667,
-  "photoChecked": "2026-10-13"
+  "photoChecked": "2026-10-13",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 76,
+      "url": "https://www.laliste.com/places/sir-kwinten-lennik-be"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

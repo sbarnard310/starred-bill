@@ -5,8 +5,6 @@
   "address": "9 Seymour Street, Marylebone, London, W1H 7BA",
   "stars": 1,
   "cuisine": "Mexican",
-  "rating": 4.5,
-  "reviews": 1025,
   "dinner": 145,
   "dinnerType": "menu",
   "dinnerNote": "Tasting menu, 7 courses",
@@ -30,5 +28,26 @@
   ],
   "chef": "Santiago Lastra",
   "chefSource": "press",
-  "dietsManual": true
+  "dietsManual": true,
+  "rankings": [
+    {
+      "list": "worlds-50-best",
+      "year": 2025,
+      "rank": 49,
+      "url": "https://www.the50.com/restaurants/best-in-the-world/list/1-50"
+    },
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 86.5,
+      "url": "https://www.laliste.com/places/kol-london-gb"
+    },
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 95,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

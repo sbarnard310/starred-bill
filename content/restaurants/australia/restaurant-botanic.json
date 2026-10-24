@@ -22,5 +22,14 @@
   "lat": -34.91779,
   "lng": 138.609935,
   "chef": "Jamie Musgrave",
-  "chefSource": "site"
+  "chefSource": "site",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 93,
+      "url": "https://www.laliste.com/places/botanic-adelaide-au"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

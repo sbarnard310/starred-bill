@@ -4,8 +4,6 @@
   "address": "Piazza Emile Chanoux 9, 11100, Aosta",
   "stars": 1,
   "cuisine": "Creative",
-  "rating": 4.4,
-  "reviews": 1045,
   "dinnerType": "menu",
   "dinner": 180,
   "dinnerNote": "Tasting menu (other menus from €120)",
@@ -29,5 +27,14 @@
   ],
   "chef": "Paolo Griffa",
   "chefSource": "site",
-  "dietsManual": true
+  "dietsManual": true,
+  "rankings": [
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 487,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

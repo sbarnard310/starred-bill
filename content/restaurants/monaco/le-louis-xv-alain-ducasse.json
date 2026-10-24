@@ -6,8 +6,6 @@
   "address": "Place du Casino, Monaco, 98000",
   "stars": 3,
   "cuisine": "Mediterranean",
-  "rating": 4.6,
-  "reviews": 546,
   "dinner": 420,
   "dinnerType": "menu",
   "dinnerNote": "Agape menu (Jardin menu €290); dinner Tue–Sat",
@@ -28,5 +26,14 @@
   "placeId": "ChIJF-Ovdo3CzRIR73yXhC1KpF4",
   "michelinId": "9785",
   "chef": "Emmanuel Pilon",
-  "chefSource": "site"
+  "chefSource": "site",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 99,
+      "url": "https://www.laliste.com/places/le-louis-xv-alain-ducasse-monaco-mc"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

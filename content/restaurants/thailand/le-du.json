@@ -6,8 +6,6 @@
   "address": "399/3 Soi Si Lom 7, Si Lom, Bang Rak, Bangkok",
   "stars": 1,
   "cuisine": "Thai",
-  "rating": 4.1,
-  "reviews": 1276,
   "dinner": 4500,
   "dinnerType": "menu",
   "dinnerNote": "Tasting menu, plus service and VAT (++)",
@@ -23,5 +21,32 @@
   "placeId": "ChIJL7-My9KY4jARzlw1ffk9vo8",
   "michelinId": "546990",
   "chef": "Thitid Tassanakajohn",
-  "chefSource": "press"
+  "chefSource": "press",
+  "rankings": [
+    {
+      "list": "worlds-50-best",
+      "year": 2025,
+      "rank": 30,
+      "url": "https://www.the50.com/restaurants/best-in-the-world/list/1-50"
+    },
+    {
+      "list": "asias-50-best",
+      "year": 2026,
+      "rank": 36,
+      "url": "https://www.the50.com/restaurants/best-in-asia/list/1-50"
+    },
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 89.5,
+      "url": "https://www.laliste.com/places/le-du-bangkok-th"
+    },
+    {
+      "list": "oad-asia",
+      "year": 2026,
+      "rank": 111,
+      "url": "https://www.oadguides.com/lists/asia/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

@@ -8,8 +8,6 @@
   "addressZh": "中正區忠孝東路一段12號17樓 (喜來登大飯店)",
   "stars": 1,
   "cuisine": "Sichuan",
-  "rating": 4.4,
-  "reviews": 2304,
   "dinner": 3880,
   "dinnerType": "menu",
   "dinnerNote": "Set menus (typical NT$3,880–5,880)",
@@ -31,5 +29,14 @@
     "vegetarian-menu",
     "vegetarian"
   ],
-  "dietsManual": true
+  "dietsManual": true,
+  "rankings": [
+    {
+      "list": "oad-asia",
+      "year": 2026,
+      "rank": 552,
+      "url": "https://www.oadguides.com/lists/asia/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

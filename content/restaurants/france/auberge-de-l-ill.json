@@ -6,8 +6,6 @@
   "address": "2 rue de Collonges-au-Mont-d'Or, 68970 Illhaeusern",
   "stars": 2,
   "cuisine": "Classic",
-  "rating": 4.8,
-  "reviews": 2516,
   "dinner": 290,
   "dinnerType": "menu",
   "dinnerNote": "Longest tasting menu (other menus from €200)",
@@ -123,7 +121,7 @@
       "url": "https://www.laliste.com/places/auberge-de-lill-illhaeusern-fr"
     }
   ],
-  "rankingsChecked": "2026-10-13",
+  "rankingsChecked": "2026-10-24",
   "photo": "auberge-de-l-ill.jpg",
   "photoAlt": "Auberge de l'Ill beside the river Ill in Illhaeusern, Alsace, with willows in the garden",
   "photoCredit": "Gzen92",

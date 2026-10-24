@@ -5,8 +5,6 @@
   "address": "De Trannoyplein 17, 2260, Tongerlo",
   "stars": 2,
   "cuisine": "French",
-  "rating": 4.6,
-  "reviews": 65,
   "dinnerType": "menu",
   "dinner": 230,
   "sourceType": "site",
@@ -64,5 +62,14 @@
     "note": "Each month opens three months ahead, the whole month at once; the restaurant doesn't say on which day.",
     "source": "https://maison-colette.be/en/reservations",
     "checked": "2026-10-15"
-  }
+  },
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 79.5,
+      "url": "https://www.laliste.com/places/maison-colette-westerlo-be"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

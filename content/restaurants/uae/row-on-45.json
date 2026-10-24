@@ -4,8 +4,6 @@
   "address": "45th Floor, Tower 2, Grosvenor House Hotel, Al Emreef Street, Dubai Marina, Dubai",
   "stars": 2,
   "cuisine": "Creative",
-  "rating": 4.8,
-  "reviews": 152,
   "dinnerType": "menu",
   "dinner": 1245,
   "dinnerNote": "Tasting menu",
@@ -27,5 +25,26 @@
   "noLunch": true,
   "lunchNote": "Dinner only",
   "lunchNoteAr": "العشاء فقط",
-  "dietsManual": true
+  "dietsManual": true,
+  "rankings": [
+    {
+      "list": "mena-50-best",
+      "year": 2026,
+      "rank": 36,
+      "url": "https://www.the50.com/restaurants/best-in-middle-east-and-north-africa/list/1-50"
+    },
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 92.5,
+      "url": "https://www.laliste.com/places/row-on-45-dubai-ae"
+    },
+    {
+      "list": "oad-asia",
+      "year": 2026,
+      "rank": 225,
+      "url": "https://www.oadguides.com/lists/asia/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

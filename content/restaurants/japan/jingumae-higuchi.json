@@ -10,8 +10,6 @@
   "addressJa": "〒150-0001 東京都渋谷区神宮前 2-19-12",
   "stars": 2,
   "cuisine": "Japanese",
-  "rating": 4.8,
-  "reviews": 61,
   "dinner": 38500,
   "dinnerType": "menu",
   "dinnerNote": "Chef's tasting course",
@@ -27,5 +25,14 @@
   "placeId": "ChIJV2-ROL2MGGARk60gr5o9tGo",
   "michelinId": "1194143",
   "chef": "Kazuhito Higuchi",
-  "chefSource": "press"
+  "chefSource": "press",
+  "rankings": [
+    {
+      "list": "oad-japan",
+      "year": 2026,
+      "rank": 178,
+      "url": "https://www.oadguides.com/lists/japan/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

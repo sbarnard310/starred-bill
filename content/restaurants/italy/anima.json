@@ -6,8 +6,6 @@
   "address": "Via Gaspare Rosales 4, Milan, 20124",
   "stars": 1,
   "cuisine": "Modern European",
-  "rating": 4.8,
-  "reviews": 146,
   "dinner": 155,
   "dinnerType": "menu",
   "dinnerNote": "Tasting menu",
@@ -34,5 +32,14 @@
     "halal"
   ],
   "chef": "Michele Cobuzzi",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "rankings": [
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 389,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

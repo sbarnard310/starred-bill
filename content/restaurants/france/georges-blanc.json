@@ -6,8 +6,6 @@
   "address": "Place du Marché, 01540 Vonnas",
   "stars": 2,
   "cuisine": "Classic",
-  "rating": 4.5,
-  "reviews": 2515,
   "dinner": 350,
   "dinnerType": "menu",
   "dinnerNote": "Saveurs au Village menu, 6 courses (5 courses €290)",
@@ -78,7 +76,7 @@
       "url": "https://www.laliste.com/places/georges-blanc-vonnas-fr"
     }
   ],
-  "rankingsChecked": "2026-10-13",
+  "rankingsChecked": "2026-10-24",
   "photo": "georges-blanc.jpg",
   "photoAlt": "The half-timbered Georges Blanc building in Vonnas, with its name on the facade",
   "photoCredit": "Chabe01",

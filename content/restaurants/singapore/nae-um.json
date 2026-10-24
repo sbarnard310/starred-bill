@@ -6,8 +6,6 @@
   "address": "161 Telok Ayer Street, Singapore 068615",
   "stars": 1,
   "cuisine": "Korean",
-  "rating": 4.6,
-  "reviews": 315,
   "dinner": 288,
   "dinnerType": "menu",
   "dinnerNote": "Tasting menu, 8 courses",
@@ -34,5 +32,20 @@
     "via": "website",
     "source": "https://www.naeum.sg/reservations/",
     "checked": "2026-10-10"
-  }
+  },
+  "rankings": [
+    {
+      "list": "asias-50-best",
+      "year": 2026,
+      "rank": 45,
+      "url": "https://www.the50.com/restaurants/best-in-asia/list/1-50"
+    },
+    {
+      "list": "oad-asia",
+      "year": 2026,
+      "rank": 267,
+      "url": "https://www.oadguides.com/lists/asia/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

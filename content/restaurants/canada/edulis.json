@@ -4,8 +4,6 @@
   "address": "169 Niagara St., Toronto, M5V 1C9",
   "stars": 1,
   "cuisine": "Mediterranean",
-  "rating": 4.6,
-  "reviews": 570,
   "dinnerType": "menu",
   "dinner": 240,
   "dinnerNote": "Tasting menu, prepaid",
@@ -18,5 +16,26 @@
   "placeId": "ChIJFeOAJx41K4gROrzCzqa777M",
   "michelinId": "549421",
   "chef": "Michael Caballo and Tobey Nemeth",
-  "chefSource": "press"
+  "chefSource": "press",
+  "rankings": [
+    {
+      "list": "north-americas-50-best",
+      "year": 2026,
+      "rank": 25,
+      "url": "https://www.the50.com/restaurants/best-in-north-america/list/1-50"
+    },
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 94,
+      "url": "https://www.laliste.com/places/edulis-toronto-ca"
+    },
+    {
+      "list": "oad-north-america",
+      "year": 2026,
+      "rank": 89,
+      "url": "https://www.oadguides.com/lists/north-america/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

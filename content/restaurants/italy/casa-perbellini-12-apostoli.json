@@ -5,8 +5,6 @@
   "address": "Vicolo Corticella San Marco 3, 37121, Verona",
   "stars": 3,
   "cuisine": "Creative",
-  "rating": 4.7,
-  "reviews": 1013,
   "dinnerType": "menu",
   "dinner": 260,
   "sourceType": "site",
@@ -89,6 +87,6 @@
       "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
     }
   ],
-  "rankingsChecked": "2026-10-13",
+  "rankingsChecked": "2026-10-24",
   "dietsManual": true
 }

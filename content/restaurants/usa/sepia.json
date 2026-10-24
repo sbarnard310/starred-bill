@@ -5,8 +5,6 @@
   "address": "123 N. Jefferson St., Chicago, IL 60661",
   "stars": 1,
   "cuisine": "American",
-  "rating": 4.6,
-  "reviews": 1582,
   "dinner": 195,
   "dinnerType": "menu",
   "dinnerNote": "Tasting menu",
@@ -22,5 +20,14 @@
   "placeId": "ChIJ_0NFbsYsDogRHqnXKkBCgs8",
   "michelinId": "273488",
   "chef": "Kyle Cottle",
-  "chefSource": "site"
+  "chefSource": "site",
+  "rankings": [
+    {
+      "list": "oad-north-america",
+      "year": 2026,
+      "rank": 452,
+      "url": "https://www.oadguides.com/lists/north-america/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

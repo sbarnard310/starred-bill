@@ -4,8 +4,6 @@
   "address": "Upplandsgatan 45, 113 28, Stockholm",
   "stars": 1,
   "cuisine": "Japanese",
-  "rating": 4.6,
-  "reviews": 1202,
   "dinnerType": "menu",
   "dinner": 1295,
   "sourceType": "site",
@@ -34,5 +32,14 @@
   "photoSourceType": "commons",
   "photoWidth": 667,
   "photoHeight": 1000,
-  "photoChecked": "2026-10-13"
+  "photoChecked": "2026-10-13",
+  "rankings": [
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 242,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

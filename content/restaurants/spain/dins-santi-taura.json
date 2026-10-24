@@ -5,8 +5,6 @@
   "address": "Plaza de Llorenç Villalonga 4, 07001, Palma",
   "stars": 1,
   "cuisine": "Modern European",
-  "rating": 4.7,
-  "reviews": 1130,
   "dinnerType": "menu",
   "dinner": 120,
   "sourceType": "site",
@@ -67,5 +65,14 @@
     "url": "https://www.elllorenc.com/en/hotel/rooms-list/",
     "note": "Inside a 33-room adults-only (16+) design hotel in Palma’s old town; no children under 16 at the restaurant either.",
     "checked": "2026-10-23"
-  }
+  },
+  "rankings": [
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 287,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

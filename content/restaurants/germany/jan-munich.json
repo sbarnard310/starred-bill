@@ -4,8 +4,6 @@
   "address": "Luisenstraße 27, 80333, Munich",
   "stars": 3,
   "cuisine": "Creative",
-  "rating": 4.8,
-  "reviews": 367,
   "dinnerType": "menu",
   "dinner": 380,
   "dinnerNote": "Tasting menu (other menus from €335)",
@@ -28,5 +26,26 @@
   "lunchNoteDe": "Gleiches Menü am Mittag · Freitag",
   "lunchSourceType": "site",
   "lunchSource": "https://jan-hartwig.com/menue/",
-  "dietsManual": true
+  "dietsManual": true,
+  "rankings": [
+    {
+      "list": "worlds-50-best",
+      "year": 2025,
+      "rank": 50,
+      "url": "https://www.the50.com/restaurants/best-in-the-world/list/1-50"
+    },
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 97.5,
+      "url": "https://www.laliste.com/places/jan-jan-hartwig-munchen-de"
+    },
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 6,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

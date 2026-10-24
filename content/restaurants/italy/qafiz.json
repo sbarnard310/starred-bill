@@ -5,8 +5,6 @@
   "address": "Località Calabretto, 89056, Santa Cristina d'Aspromonte",
   "stars": 1,
   "cuisine": "Creative",
-  "rating": 4.8,
-  "reviews": 266,
   "dinnerType": "menu",
   "dinner": 160,
   "dinnerNote": "Tasting menu",
@@ -72,5 +70,14 @@
     ],
     "note": "Casa Qafiz is a restored 1700s estate house with double rooms; guests must book rooms together with a table at Qafiz or Ilici, and children under 12 are not accepted.",
     "checked": "2026-10-23"
-  }
+  },
+  "rankings": [
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 288,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

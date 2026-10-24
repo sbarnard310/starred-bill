@@ -6,8 +6,6 @@
   "address": "Paseo de la Castellana 57, Madrid, 28046",
   "stars": 2,
   "cuisine": "Modern European",
-  "rating": 4.7,
-  "reviews": 362,
   "dinner": 280,
   "dinnerType": "menu",
   "dinnerNote": "Matsuri menu (Kōsei no Hi menu €210)",
@@ -89,7 +87,7 @@
       "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
     }
   ],
-  "rankingsChecked": "2026-10-13",
+  "rankingsChecked": "2026-10-24",
   "stay": {
     "kind": "hotel",
     "name": "Hyatt Regency Hesperia Madrid",

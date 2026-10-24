@@ -6,8 +6,6 @@
   "address": "Swissôtel The Stamford, Equinox Complex, Level 70, 2 Stamford Road, Singapore 178882",
   "stars": 2,
   "cuisine": "British",
-  "rating": 4.6,
-  "reviews": 753,
   "dinner": 388,
   "dinnerType": "menu",
   "dinnerNote": "Tasting menu",
@@ -32,5 +30,20 @@
   ],
   "chef": "Kirk Westaway",
   "chefSource": "site",
-  "dietsManual": true
+  "dietsManual": true,
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 92.5,
+      "url": "https://www.laliste.com/places/jaan-by-kirk-westaway-singapore-sg"
+    },
+    {
+      "list": "oad-asia",
+      "year": 2026,
+      "rank": 52,
+      "url": "https://www.oadguides.com/lists/asia/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

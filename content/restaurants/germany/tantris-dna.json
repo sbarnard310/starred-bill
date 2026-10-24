@@ -4,8 +4,6 @@
   "address": "Johann-Fichte-Straße 7, 80805, Munich",
   "stars": 1,
   "cuisine": "French",
-  "rating": 4.7,
-  "reviews": 155,
   "dinnerType": "menu",
   "dinner": 250,
   "dinnerNote": "Tasting menu",
@@ -23,5 +21,14 @@
   "chefSource": "michelin",
   "dinnerNoteDe": "Degustationsmenü",
   "lunchNote": "Open for lunch · Wed–Sat",
-  "lunchNoteDe": "Mittags geöffnet · Mi–Sa"
+  "lunchNoteDe": "Mittags geöffnet · Mi–Sa",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 79.5,
+      "url": "https://www.laliste.com/places/tantris-dna-munchen-de"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

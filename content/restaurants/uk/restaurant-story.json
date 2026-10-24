@@ -5,8 +5,6 @@
   "address": "199 Tooley Street, Southwark, London, SE1 2JX",
   "stars": 2,
   "cuisine": "Modern European",
-  "rating": 4.7,
-  "reviews": 934,
   "dinner": 275,
   "dinnerType": "menu",
   "dinnerNote": "Tasting menu, 7 courses with snacks and treats",
@@ -72,5 +70,20 @@
   "photoWidth": 1000,
   "photoHeight": 750,
   "photoChecked": "2026-10-13",
-  "dietsManual": true
+  "dietsManual": true,
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 90,
+      "url": "https://www.laliste.com/places/story-london-gb"
+    },
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 421,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

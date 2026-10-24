@@ -5,8 +5,6 @@
   "address": "Corso Sant'Agata 11, 80061, Sant'Agata sui Due Golfi",
   "stars": 1,
   "cuisine": "Creative",
-  "rating": 4.8,
-  "reviews": 642,
   "dinnerType": "spend",
   "dinner": 190,
   "dinnerNote": "Typical spend without drinks (Gambero Rosso average)",
@@ -43,7 +41,7 @@
       "url": "https://www.laliste.com/places/don-alfonso-1890-massa-lubrense-it"
     }
   ],
-  "rankingsChecked": "2026-10-13",
+  "rankingsChecked": "2026-10-24",
   "dietsManual": true,
   "stay": {
     "kind": "hotel",

@@ -5,8 +5,6 @@
   "address": "Rekkemsestraat 226, 8510, Marke",
   "stars": 1,
   "cuisine": "Modern European",
-  "rating": 4.8,
-  "reviews": 520,
   "dinnerType": "menu",
   "dinner": 175,
   "dinnerNote": "Tasting menu (other menus from €135)",
@@ -30,5 +28,14 @@
   "lunchNoteNl": "Lunchmenu",
   "lunchNoteFr": "Menu déjeuner",
   "chef": "Martijn Defauw",
-  "chefSource": "press"
+  "chefSource": "press",
+  "rankings": [
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 401,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

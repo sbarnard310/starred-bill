@@ -8,8 +8,6 @@
   "addressZh": "澳門路氹連貫公路倫敦人2樓2206a及2208號",
   "stars": 2,
   "cuisine": "Huaiyang",
-  "rating": 5,
-  "reviews": 113,
   "dinner": 1988,
   "dinnerType": "menu",
   "dinnerNote": "Tasting menu, 10 courses (12 courses MOP$2,588)",
@@ -31,5 +29,20 @@
   ],
   "chef": "Zhou Xiaoyan and Jack Xiao",
   "chefSource": "press",
-  "dietsManual": true
+  "dietsManual": true,
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 94.5,
+      "url": "https://www.laliste.com/places/the-huaiyang-garden-mo"
+    },
+    {
+      "list": "oad-asia",
+      "year": 2026,
+      "rank": 424,
+      "url": "https://www.oadguides.com/lists/asia/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

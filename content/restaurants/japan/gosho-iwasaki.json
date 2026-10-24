@@ -6,8 +6,6 @@
   "address": "660 Otsucho, Nakagyo-ku, 604-0885, Kyoto",
   "stars": 1,
   "cuisine": "Japanese",
-  "rating": 4.5,
-  "reviews": 59,
   "dinnerType": "menu",
   "dinnerNote": "Cheapest dinner course (others up to ¥28,880); usually including tax and service",
   "sourceType": "press",
@@ -21,5 +19,14 @@
   "lunchNoteJa": "ランチ営業あり・木〜火",
   "michelinId": "1192884",
   "chef": "Yoshinori Iwasaki",
-  "chefSource": "press"
+  "chefSource": "press",
+  "rankings": [
+    {
+      "list": "oad-japan",
+      "year": 2026,
+      "rank": 629,
+      "url": "https://www.oadguides.com/lists/japan/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

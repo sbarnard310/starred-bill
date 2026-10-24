@@ -5,8 +5,6 @@
   "address": "Via Marghera 24, 30010, Lughetto",
   "stars": 2,
   "cuisine": "Seafood",
-  "rating": 4.8,
-  "reviews": 775,
   "dinnerType": "menu",
   "dinner": 260,
   "dinnerNote": "Tasting menu (other menus from €180)",
@@ -24,5 +22,14 @@
   "placeId": "ChIJb8FQgHS4fkcRMWrbSmuqSyE",
   "michelinId": "128500",
   "chef": "Lionello Cera",
-  "chefSource": "press"
+  "chefSource": "press",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 90,
+      "url": "https://www.laliste.com/places/antica-osteria-da-cera-lughetto-it"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

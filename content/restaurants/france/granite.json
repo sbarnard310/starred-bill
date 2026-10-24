@@ -7,8 +7,6 @@
   "address": "6 rue Bailleul, 75001, Paris",
   "stars": 1,
   "cuisine": "Modern European",
-  "rating": 4.7,
-  "reviews": 770,
   "dinner": 188,
   "dinnerType": "menu",
   "dinnerNote": "Menu in 8 courses",
@@ -28,5 +26,14 @@
   "placeId": "ChIJ63m1Hxpv5kcRtffG6PtiUyY",
   "michelinId": "1198315",
   "chef": "Clément Vergeat",
-  "chefSource": "press"
+  "chefSource": "press",
+  "rankings": [
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 393,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

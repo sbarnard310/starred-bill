@@ -5,8 +5,6 @@
   "address": "Landskroner Straße 110, 53474, Bad Neuenahr-Ahrweiler",
   "stars": 2,
   "cuisine": "French",
-  "rating": 5,
-  "reviews": 5,
   "dinnerType": "menu",
   "dinner": 290,
   "dinnerNote": "Tasting menu (other menus from €215)",
@@ -25,5 +23,14 @@
   "lunchNote": "Same menu at lunch · Sundays",
   "lunchNoteDe": "Gleiches Menü am Mittag · Sonntag",
   "lunchSourceType": "site",
-  "lunchSource": "https://www.steinheuers.de/wp-content/uploads/Menue-Wurzeln-August-26.pdf"
+  "lunchSource": "https://www.steinheuers.de/wp-content/uploads/Menue-Wurzeln-August-26.pdf",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 90.5,
+      "url": "https://www.laliste.com/places/steinheuers-restaurant-zur-alten-post-bad-neuenahr-ahrweiler-de"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

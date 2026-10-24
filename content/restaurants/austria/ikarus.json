@@ -4,8 +4,6 @@
   "address": "Wilhelm-Spazier-Straße 7a, 5020, Salzburg",
   "stars": 2,
   "cuisine": "Creative",
-  "rating": 4.7,
-  "reviews": 580,
   "dinnerType": "menu",
   "dinner": 245,
   "dinnerNote": "Tasting menu (other menus from €205)",
@@ -31,5 +29,20 @@
   "lunchWine": 225,
   "lunchSourceType": "site",
   "lunchSource": "https://www.hangar-7.com/de/kulinarik/restaurant-ikarus",
-  "dietsManual": true
+  "dietsManual": true,
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 96,
+      "url": "https://www.laliste.com/places/ikarus-salzburg-at"
+    },
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 380,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

@@ -7,8 +7,6 @@
   "address": "32 rue de Longchamp, 75016, Paris",
   "stars": 1,
   "cuisine": "Creative",
-  "rating": 4.5,
-  "reviews": 466,
   "dinner": 285,
   "dinnerType": "menu",
   "dinnerNote": "Menu Astrance (Saison €175)",
@@ -32,5 +30,14 @@
     "kosher"
   ],
   "chef": "Pascal Barbot",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 77,
+      "url": "https://www.laliste.com/places/lastrance-paris-fr"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

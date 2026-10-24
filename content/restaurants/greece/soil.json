@@ -4,8 +4,6 @@
   "address": "5 Ferekidou Street, 116 35, Athens",
   "stars": 1,
   "cuisine": "Modern European",
-  "rating": 4.8,
-  "reviews": 1488,
   "dinnerType": "menu",
   "dinner": 120,
   "dinnerNote": "Tasting menu",
@@ -22,5 +20,14 @@
   "dinnerNoteEl": "Μενού γευσιγνωσίας",
   "noLunch": true,
   "lunchNote": "Dinner only",
-  "lunchNoteEl": "Μόνο δείπνο"
+  "lunchNoteEl": "Μόνο δείπνο",
+  "rankings": [
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 498,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

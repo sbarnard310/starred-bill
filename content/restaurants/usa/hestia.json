@@ -4,8 +4,6 @@
   "address": "607 W. 3rd St., Austin, 78701",
   "stars": 1,
   "cuisine": "American",
-  "rating": 4.5,
-  "reviews": 1049,
   "dinner": 215,
   "dinnerType": "menu",
   "dinnerNote": "Tasting menu",
@@ -19,5 +17,14 @@
   "placeId": "ChIJlWBjs7-1RIYRsJt0C41E558",
   "michelinId": "1209783",
   "chef": "Kevin Fink",
-  "chefSource": "press"
+  "chefSource": "press",
+  "rankings": [
+    {
+      "list": "oad-north-america",
+      "year": 2026,
+      "rank": 336,
+      "url": "https://www.oadguides.com/lists/north-america/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

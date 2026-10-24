@@ -4,8 +4,6 @@
   "address": "255 rue Saint-Paul, Québec, G1K 3W5",
   "stars": 1,
   "cuisine": "Creative",
-  "rating": 4.8,
-  "reviews": 1560,
   "dinnerType": "menu",
   "dinner": 150,
   "dinnerNote": "Tasting menu, 6 courses (chef's table $225); also à la carte",
@@ -21,5 +19,14 @@
   "placeId": "ChIJ82-3c-CVuEwROS-6hFk_0CA",
   "michelinId": "1215958",
   "chef": "Elliot Beaudoin",
-  "chefSource": "site"
+  "chefSource": "site",
+  "rankings": [
+    {
+      "list": "oad-north-america",
+      "year": 2026,
+      "rank": 109,
+      "url": "https://www.oadguides.com/lists/north-america/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

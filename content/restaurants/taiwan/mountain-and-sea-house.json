@@ -8,8 +8,6 @@
   "addressZh": "中正區仁愛路二段94號",
   "stars": 1,
   "cuisine": "Taiwanese",
-  "rating": 4.1,
-  "reviews": 2483,
   "dinner": 2980,
   "dinnerType": "menu",
   "dinnerNote": "Lan set menu",
@@ -35,5 +33,14 @@
   ],
   "chef": "Sheng-Chang Hsiao (Jacky Xiao)",
   "chefSource": "site",
-  "dietsManual": true
+  "dietsManual": true,
+  "rankings": [
+    {
+      "list": "oad-asia",
+      "year": 2026,
+      "rank": 193,
+      "url": "https://www.oadguides.com/lists/asia/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

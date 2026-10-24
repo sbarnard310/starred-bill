@@ -5,8 +5,6 @@
   "address": "Carlos Place, Mayfair, London, W1K 2AL",
   "stars": 3,
   "cuisine": "Modern European",
-  "rating": 4.5,
-  "reviews": 937,
   "dinner": 259,
   "dinnerType": "menu",
   "dinnerNote": "Taste of the Season, 7 courses",
@@ -39,5 +37,14 @@
       }
     ],
     "checked": "2026-10-23"
-  }
+  },
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 95,
+      "url": "https://www.laliste.com/places/helene-darroze-at-the-connaught-london-gb"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

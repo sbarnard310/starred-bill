@@ -7,8 +7,6 @@
   "address": "15 rue Lamennais, 75008, Paris",
   "stars": 2,
   "cuisine": "Classic",
-  "rating": 4.7,
-  "reviews": 798,
   "dinner": 345,
   "dinnerType": "menu",
   "dinnerNote": "L'Instant partagé, 6 courses",
@@ -37,5 +35,14 @@
   "photoSourceType": "commons",
   "photoWidth": 800,
   "photoHeight": 600,
-  "photoChecked": "2026-10-13"
+  "photoChecked": "2026-10-13",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 94,
+      "url": "https://www.laliste.com/places/taillevent-paris-fr"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

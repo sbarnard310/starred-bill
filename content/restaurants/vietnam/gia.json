@@ -4,8 +4,6 @@
   "address": "61 Van Mieu Street, Quoc Tu Giam Ward, 100000, Hanoi",
   "stars": 1,
   "cuisine": "Vietnamese",
-  "rating": 4.4,
-  "reviews": 515,
   "dinnerType": "menu",
   "dinner": 3500000,
   "dinnerNote": "Tasting menu",
@@ -33,5 +31,14 @@
     "via": "website",
     "source": "https://www.gia-hanoi.com/reservation",
     "checked": "2026-10-10"
-  }
+  },
+  "rankings": [
+    {
+      "list": "oad-asia",
+      "year": 2026,
+      "rank": 505,
+      "url": "https://www.oadguides.com/lists/asia/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

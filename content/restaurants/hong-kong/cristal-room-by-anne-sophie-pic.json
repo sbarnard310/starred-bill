@@ -11,8 +11,6 @@
   "changeNote": "Gained a second star",
   "changeNoteZh": "晉升二星",
   "changeDate": "2026-03",
-  "rating": 4.2,
-  "reviews": 79,
   "dinner": 2480,
   "dinnerType": "menu",
   "dinnerNote": "Voyage tasting menu (Découverte menu HK$1,880)",
@@ -71,5 +69,14 @@
   "duration": "About two and a half hours at lunch and three hours at dinner.",
   "byob": "Corkage is HK$800 a 750ml bottle of wine and HK$1,600 a magnum or bottle of spirits, plus 10% service. Outside cakes are not allowed.",
   "infoSource": "https://cristalroombyasp.com/",
-  "infoChecked": "2026-10-13"
+  "infoChecked": "2026-10-13",
+  "rankings": [
+    {
+      "list": "oad-asia",
+      "year": 2026,
+      "rank": 139,
+      "url": "https://www.oadguides.com/lists/asia/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

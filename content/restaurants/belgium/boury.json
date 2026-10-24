@@ -5,8 +5,6 @@
   "address": "Rumbeeksesteenweg 300, 8800, Roeselare",
   "stars": 3,
   "cuisine": "French",
-  "rating": 4.9,
-  "reviews": 905,
   "dinnerType": "menu",
   "dinner": 340,
   "dinnerNote": "Tasting menu",
@@ -33,5 +31,14 @@
   "lunchNoteFr": "Menu déjeuner",
   "chef": "Tim Boury",
   "chefSource": "press",
-  "dietsManual": true
+  "dietsManual": true,
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 97.5,
+      "url": "https://www.laliste.com/places/boury-roeselare-be"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

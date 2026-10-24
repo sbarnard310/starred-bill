@@ -6,8 +6,6 @@
   "address": "Isaac Newton 55, Polanco, Mexico City",
   "stars": 2,
   "cuisine": "Mexican",
-  "rating": 4.4,
-  "reviews": 2981,
   "dinner": 6090,
   "dinnerType": "menu",
   "dinnerNote": "Tasting menu",
@@ -43,5 +41,32 @@
   "photoWidth": 1000,
   "photoHeight": 691,
   "photoChecked": "2026-10-13",
-  "dietsManual": true
+  "dietsManual": true,
+  "rankings": [
+    {
+      "list": "worlds-50-best",
+      "year": 2025,
+      "rank": 3,
+      "url": "https://www.the50.com/restaurants/best-in-the-world/list/1-50"
+    },
+    {
+      "list": "latin-americas-50-best",
+      "year": 2025,
+      "rank": 7,
+      "url": "https://www.the50.com/restaurants/best-in-latin-america/list/1-50"
+    },
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 96,
+      "url": "https://www.laliste.com/places/quintonil-ciudad-de-mexico-mx"
+    },
+    {
+      "list": "oad-north-america",
+      "year": 2026,
+      "rank": 35,
+      "url": "https://www.oadguides.com/lists/north-america/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

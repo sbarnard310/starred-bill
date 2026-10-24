@@ -4,8 +4,6 @@
   "address": "5500 Main St., Houston, 77004",
   "stars": 1,
   "cuisine": "French",
-  "rating": 4.5,
-  "reviews": 753,
   "dinnerType": "menu",
   "dinner": 195,
   "dinnerNote": "Seasonal Expression menu, 5 courses (four-course lunch menu $90, two-course lunch $45)",
@@ -70,6 +68,6 @@
       "url": "https://www.oadguides.com/lists/north-america/top-restaurants/2026"
     }
   ],
-  "rankingsChecked": "2026-10-13",
+  "rankingsChecked": "2026-10-24",
   "dietsManual": true
 }

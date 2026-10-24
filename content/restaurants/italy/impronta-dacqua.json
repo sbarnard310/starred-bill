@@ -5,8 +5,6 @@
   "address": "Via Aurelia 2121, 16030, Cavi di Lavagna",
   "stars": 1,
   "cuisine": "Italian",
-  "rating": 4.8,
-  "reviews": 200,
   "dinnerType": "menu",
   "dinner": 160,
   "dinnerNote": "Tasting menu (other menus from €130)",
@@ -30,5 +28,14 @@
     "gluten-free"
   ],
   "chef": "Ivan Maniago",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "rankings": [
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 516,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

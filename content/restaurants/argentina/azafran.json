@@ -6,8 +6,6 @@
   "address": "Sarmiento 765, Mendoza",
   "stars": 1,
   "cuisine": "Modern American",
-  "rating": 4.5,
-  "reviews": 2491,
   "dinner": 180000,
   "dinnerType": "menu",
   "dinnerNote": "Paseo Federal menu (Paseo por el Campo ARS 140,000)",
@@ -28,5 +26,14 @@
   "placeId": "ChIJFyEWbkAJfpYRDb2xBz1l0nU",
   "michelinId": "532684",
   "chef": "Sebastián Weigandt",
-  "chefSource": "site"
+  "chefSource": "site",
+  "rankings": [
+    {
+      "list": "latin-americas-50-best",
+      "year": 2025,
+      "rank": 97,
+      "url": "https://www.the50.com/restaurants/best-in-latin-america/list/51-100"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

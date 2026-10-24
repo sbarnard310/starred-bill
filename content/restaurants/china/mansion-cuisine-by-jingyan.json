@@ -23,6 +23,13 @@
   "chef": "Duan Yu",
   "chefSource": "press",
   "placeId": "ChIJH5whDUlT8DUR9qhf1VQOcQw",
-  "rating": 4.3,
-  "reviews": 17
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 95,
+      "url": "https://www.laliste.com/places/mansion-cuisine-by-jingyan-cn"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

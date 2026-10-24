@@ -4,8 +4,6 @@
   "address": "De Ruyterkade 128, 1011 AC, Amsterdam",
   "stars": 1,
   "cuisine": "French",
-  "rating": 4.6,
-  "reviews": 1030,
   "dinnerType": "menu",
   "dinner": 82.5,
   "dinnerNote": "Tasting menu (other menus from €52.50)",
@@ -27,5 +25,14 @@
   "lunchNoteNl": "Alleen diner",
   "chef": "Merijn van Berlo",
   "chefSource": "press",
-  "dietsManual": true
+  "dietsManual": true,
+  "rankings": [
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 595,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

@@ -5,8 +5,6 @@
   "address": "Fondamenta Santa Caterina 3, 30142, Mazzorbo",
   "stars": 1,
   "cuisine": "Regional",
-  "rating": 4.6,
-  "reviews": 163,
   "dinnerType": "menu",
   "dinner": 185,
   "dinnerNote": "Tasting menu (other menus from €165)",
@@ -57,5 +55,20 @@
     ],
     "note": "Five rooms at the wine estate on Mazzorbo, plus Casa Burano, its separate 13-room guesthouse on the island of Burano; the winter offer is the one that includes the starred restaurant.",
     "checked": "2026-10-23"
-  }
+  },
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 80.5,
+      "url": "https://www.laliste.com/places/venissa-venezia-it"
+    },
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 114,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

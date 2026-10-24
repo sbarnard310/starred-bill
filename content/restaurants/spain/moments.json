@@ -11,8 +11,6 @@
   "changeNoteZh": "由二星降為一星",
   "changeNoteEs": "Bajó de dos estrellas a una",
   "changeDate": "2024-11",
-  "rating": 4.6,
-  "reviews": 467,
   "dinner": 180,
   "dinnerType": "menu",
   "dinnerNote": "Tasting menu (shorter seasonal menu €125)",
@@ -44,5 +42,20 @@
     "name": "Mandarin Oriental, Barcelona",
     "url": "https://www.mandarinoriental.com/en/barcelona/passeig-de-gracia/stay",
     "checked": "2026-10-23"
-  }
+  },
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 78,
+      "url": "https://www.laliste.com/places/moments-barcelona-es"
+    },
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 160,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

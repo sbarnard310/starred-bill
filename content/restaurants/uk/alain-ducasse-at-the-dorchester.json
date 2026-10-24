@@ -5,8 +5,6 @@
   "address": "The Dorchester Hotel, 53 Park Lane, Mayfair, London, W1K 1QA",
   "stars": 3,
   "cuisine": "French",
-  "rating": 4.3,
-  "reviews": 652,
   "dinner": 285,
   "dinnerType": "menu",
   "dinnerNote": "Harmonie tasting menu, 7 courses (three-course à la carte £215)",
@@ -88,7 +86,7 @@
       "url": "https://www.laliste.com/places/alain-ducasse-at-the-dorchester-london-gb"
     }
   ],
-  "rankingsChecked": "2026-10-13",
+  "rankingsChecked": "2026-10-24",
   "photo": "alain-ducasse-at-the-dorchester.jpg",
   "photoAlt": "The Table Lumière inside Alain Ducasse at The Dorchester, ringed by a curtain of fibre-optic strands",
   "photoCredit": "Pierre Monetta",

@@ -6,8 +6,6 @@
   "address": "Ercilla 37, Bilbao, 48011",
   "stars": 1,
   "cuisine": "Creative",
-  "rating": 4.5,
-  "reviews": 319,
   "dinner": 180,
   "dinnerType": "menu",
   "dinnerNote": "Full tasting menu (shorter menu €160)",
@@ -33,5 +31,14 @@
     "gluten-free"
   ],
   "chef": "Álvaro Garrido",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "rankings": [
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 599,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

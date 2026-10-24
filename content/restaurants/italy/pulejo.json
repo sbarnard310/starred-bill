@@ -6,8 +6,6 @@
   "address": "Via dei Gracchi 31, Rome, 00192",
   "stars": 1,
   "cuisine": "Italian",
-  "rating": 4.8,
-  "reviews": 334,
   "dinner": 140,
   "dinnerType": "menu",
   "dinnerNote": "Crepuscolo tasting menu, 7 courses (Albore, 5 courses, €110)",
@@ -30,5 +28,14 @@
     "gluten-free"
   ],
   "chef": "Davide Puleio",
-  "chefSource": "site"
+  "chefSource": "site",
+  "rankings": [
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 350,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

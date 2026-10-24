@@ -9,8 +9,6 @@
   "changeNote": "Gained a third star",
   "changeNoteZh": "晉升三星",
   "changeDate": "2025-06",
-  "rating": 4.7,
-  "reviews": 1164,
   "dinner": 375,
   "dinnerType": "menu",
   "dinnerNote": "Tasting menu",
@@ -33,5 +31,26 @@
     "via": "website",
     "source": "https://providencela.com/reservations/",
     "checked": "2026-10-10"
-  }
+  },
+  "rankings": [
+    {
+      "list": "north-americas-50-best",
+      "year": 2026,
+      "rank": 32,
+      "url": "https://www.the50.com/restaurants/best-in-north-america/list/1-50"
+    },
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 90,
+      "url": "https://www.laliste.com/places/providence-los-angeles-us"
+    },
+    {
+      "list": "oad-north-america",
+      "year": 2026,
+      "rank": 112,
+      "url": "https://www.oadguides.com/lists/north-america/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

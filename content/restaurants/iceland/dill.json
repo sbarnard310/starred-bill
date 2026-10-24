@@ -6,8 +6,6 @@
   "address": "Laugavegur 59, Reykjavík",
   "stars": 1,
   "cuisine": "Creative",
-  "rating": 4.5,
-  "reviews": 652,
   "dinner": 27500,
   "dinnerType": "menu",
   "dinnerNote": "Tasting menu, 13 courses; dinner only, Tue–Sat",
@@ -22,5 +20,20 @@
   "placeId": "ChIJxeTXptJ01kgR4Dcvo45O5Cs",
   "michelinId": "1186101",
   "chef": "Gunnar Karl Gíslason",
-  "chefSource": "site"
+  "chefSource": "site",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 77.5,
+      "url": "https://www.laliste.com/places/dill-reykjavik-is"
+    },
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 492,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

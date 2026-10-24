@@ -8,8 +8,6 @@
   "addressZh": "香港尖沙咀梳士巴利道18號麗晶酒店地下",
   "stars": 2,
   "cuisine": "Cantonese",
-  "rating": 4.5,
-  "reviews": 698,
   "dinner": 1688,
   "dinnerType": "menu",
   "dinnerNote": "Lai Ching Heen tasting menu",
@@ -41,5 +39,20 @@
     "source": "https://hongkong.regenthotels.com/dining-destination/lai-ching-heen/",
     "checked": "2026-10-10"
   },
-  "dietsManual": true
+  "dietsManual": true,
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 92.5,
+      "url": "https://www.laliste.com/places/lai-ching-heen-yan-toh-heen-hk"
+    },
+    {
+      "list": "oad-asia",
+      "year": 2026,
+      "rank": 90,
+      "url": "https://www.oadguides.com/lists/asia/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

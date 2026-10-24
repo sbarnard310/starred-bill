@@ -5,8 +5,6 @@
   "address": "Oberdorfstrasse 8, 8556, Wigoltingen",
   "stars": 2,
   "cuisine": "Creative",
-  "rating": 4.8,
-  "reviews": 208,
   "dinnerType": "menu",
   "dinner": 255,
   "sourceType": "site",
@@ -43,5 +41,14 @@
   "photoWidth": 1000,
   "photoHeight": 666,
   "photoChecked": "2026-10-13",
-  "dietsManual": true
+  "dietsManual": true,
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 86.5,
+      "url": "https://www.laliste.com/places/taverne-zum-schafli-wigoltingen-ch"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

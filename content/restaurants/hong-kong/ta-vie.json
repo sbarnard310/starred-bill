@@ -8,8 +8,6 @@
   "addressZh": "香港中環士丹利街21號中環‧石板街酒店2樓",
   "stars": 3,
   "cuisine": "Creative",
-  "rating": 4.6,
-  "reviews": 156,
   "dinner": 4000,
   "dinnerType": "menu",
   "dinnerNote": "Seasonal tasting menu, about HK$4,000 (late-2025 review; price on request)",
@@ -34,5 +32,26 @@
     "via": "WhatsApp or email",
     "source": "https://www.tavie.com.hk/reservation-1",
     "checked": "2026-10-10"
-  }
+  },
+  "rankings": [
+    {
+      "list": "asias-50-best",
+      "year": 2026,
+      "rank": 68,
+      "url": "https://www.the50.com/restaurants/best-in-asia/list/51-100"
+    },
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 94,
+      "url": "https://www.laliste.com/places/ta-vie-hk"
+    },
+    {
+      "list": "oad-asia",
+      "year": 2026,
+      "rank": 28,
+      "url": "https://www.oadguides.com/lists/asia/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

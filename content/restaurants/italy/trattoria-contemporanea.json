@@ -6,8 +6,6 @@
   "address": "Via del Ronco 10, Lomazzo, 22074",
   "stars": 1,
   "cuisine": "Italian",
-  "rating": 4.6,
-  "reviews": 752,
   "dinner": 170,
   "dinnerType": "menu",
   "dinnerNote": "Coraggio tasting menu, 7 courses (others €130 and €150); plus €10 cover",
@@ -91,5 +89,14 @@
   "children": "Children of any age are welcome, as long as other guests' peace is respected.",
   "infoSource": "https://trattoriacontemporanea.prenota-web.it/prenotazioni/singlepage.asp?iframe=1&lang=it&ristorante=default",
   "infoChecked": "2026-10-13",
-  "dietsManual": true
+  "dietsManual": true,
+  "rankings": [
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 397,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

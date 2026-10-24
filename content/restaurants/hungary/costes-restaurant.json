@@ -4,8 +4,6 @@
   "address": "Ráday utca 4, 1092, Budapest",
   "stars": 1,
   "cuisine": "Modern European",
-  "rating": 4.7,
-  "reviews": 826,
   "dinnerType": "menu",
   "dinner": 51500,
   "dinnerNote": "Tasting menu (other menus from HUF 39,500)",
@@ -40,5 +38,20 @@
   "photoWidth": 1000,
   "photoHeight": 750,
   "photoChecked": "2026-10-13",
-  "dietsManual": true
+  "dietsManual": true,
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 77,
+      "url": "https://www.laliste.com/places/costes-budapest-hu"
+    },
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 613,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

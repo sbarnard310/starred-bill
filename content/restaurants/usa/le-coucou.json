@@ -6,8 +6,6 @@
   "address": "11 Howard Hotel, 138 Lafayette St., New York, NY, 10013",
   "stars": 1,
   "cuisine": "French",
-  "rating": 4.5,
-  "reviews": 2153,
   "dinner": 220,
   "dinnerType": "menu",
   "dinnerNote": "A Very Coucou Dinner tasting menu (à la carte mains $51–$95)",
@@ -84,7 +82,7 @@
       "url": "https://www.oadguides.com/lists/north-america/top-restaurants/2026"
     }
   ],
-  "rankingsChecked": "2026-10-13",
+  "rankingsChecked": "2026-10-24",
   "photo": "le-coucou.jpg",
   "photoAlt": "The entrance of Le Coucou at 138 Lafayette Street, Manhattan, framed by plants",
   "photoCredit": "Transpoman",

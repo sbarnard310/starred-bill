@@ -11,8 +11,6 @@
   "changeNoteZh": "首度摘星",
   "changeNoteEs": "Consiguió su primera estrella",
   "changeDate": "2025-11",
-  "rating": 4.4,
-  "reviews": 343,
   "dinner": 165,
   "dinnerType": "menu",
   "dinnerNote": "N-634 menu, 13 courses (A-8 menu, 9 courses, €130) · dinner Fri–Sat only",
@@ -36,5 +34,14 @@
     "gluten-free"
   ],
   "chef": "Julen Bergantiños",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "rankings": [
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 363,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

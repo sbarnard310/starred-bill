@@ -6,8 +6,6 @@
   "address": "The Shoppes at Marina Bay Sands, Galleria Level, #B1-71, 10 Bayfront Avenue, Singapore 018972",
   "stars": 1,
   "cuisine": "Steak and grill",
-  "rating": 4.6,
-  "reviews": 2038,
   "dinnerType": "spend",
   "dinnerNote": "À la carte steakhouse; typical spend about S$250 per person (early and late 3-course set S$125)",
   "dinnerNoteZh": "單點牛排館；人均消費約新幣250元（早場及深夜三道菜套餐新幣125元）",
@@ -27,5 +25,20 @@
   "chefSource": "site",
   "dinner": 250,
   "source": "https://www.burpple.com/cut-by-wolfgang-puck",
-  "dietsManual": true
+  "dietsManual": true,
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 77.5,
+      "url": "https://www.laliste.com/places/cut-by-wolfgang-puck-singapore-sg"
+    },
+    {
+      "list": "oad-asia",
+      "year": 2026,
+      "rank": 331,
+      "url": "https://www.oadguides.com/lists/asia/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

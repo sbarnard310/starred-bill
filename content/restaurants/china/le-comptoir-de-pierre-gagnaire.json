@@ -23,6 +23,19 @@
   "lunchNote": "Open for lunch",
   "lunchNoteZhs": "供应午餐",
   "placeId": "ChIJ6WX0Z7F6sjURiYRvVLxysqM",
-  "rating": 4.5,
-  "reviews": 13
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 81,
+      "url": "https://www.laliste.com/places/le-comptoir-de-pierre-gagnaire-at-shanghai-jianyeli-capella-hotel-cn"
+    },
+    {
+      "list": "oad-asia",
+      "year": 2026,
+      "rank": 368,
+      "url": "https://www.oadguides.com/lists/asia/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

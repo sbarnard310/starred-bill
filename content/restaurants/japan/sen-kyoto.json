@@ -6,8 +6,6 @@
   "address": "379 Shiogamacho, Shimogyo-ku, 600-8103, Kyoto",
   "stars": 1,
   "cuisine": "Japanese",
-  "rating": 4.6,
-  "reviews": 144,
   "dinnerType": "menu",
   "dinnerNote": "Omakase course (others from ¥24,200); including tax, service extra",
   "sourceType": "site",
@@ -24,5 +22,14 @@
   "lunchSourceType": "site",
   "lunchSource": "https://kyoto-sen.com/menu/",
   "lunchNote": "Lunch omakase; including tax, service extra",
-  "lunchNoteJa": "昼のおまかせコース・税込・サービス料別"
+  "lunchNoteJa": "昼のおまかせコース・税込・サービス料別",
+  "rankings": [
+    {
+      "list": "oad-japan",
+      "year": 2026,
+      "rank": 400,
+      "url": "https://www.oadguides.com/lists/japan/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

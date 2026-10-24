@@ -12,8 +12,6 @@
   "changeNote": "Gained its first star",
   "changeNoteZh": "首度摘星",
   "changeDate": "2025-03",
-  "rating": 4.1,
-  "reviews": 38,
   "dinner": 1288,
   "dinnerType": "menu",
   "dinnerNote": "Teppanyaki menu Sakura, at the counter (Kaede MOP$888)",
@@ -30,5 +28,14 @@
   "placeId": "ChIJgb1PcwJwATQReeMSnp8gCRs",
   "michelinId": "1215974",
   "chef": "Hironori Maeda",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "rankings": [
+    {
+      "list": "oad-asia",
+      "year": 2026,
+      "rank": 293,
+      "url": "https://www.oadguides.com/lists/asia/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

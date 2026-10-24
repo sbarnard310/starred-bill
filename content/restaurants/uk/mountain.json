@@ -5,8 +5,6 @@
   "address": "16-18 Beak Street, Soho, London, W1F 9RD",
   "stars": 1,
   "cuisine": "Spanish",
-  "rating": 4.3,
-  "reviews": 1503,
   "dinner": 40,
   "dinnerType": "main",
   "dinnerNote": "À la carte, wood-grilled mains",
@@ -28,5 +26,14 @@
   ],
   "chef": "Tomos Parry",
   "chefSource": "press",
-  "dietsManual": true
+  "dietsManual": true,
+  "rankings": [
+    {
+      "list": "worlds-50-best",
+      "year": 2025,
+      "rank": 74,
+      "url": "https://www.the50.com/restaurants/best-in-the-world/list/51-100"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

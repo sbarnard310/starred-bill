@@ -5,8 +5,6 @@
   "address": "Alcalde José de la Bandera 7, 41003, Seville",
   "stars": 1,
   "cuisine": "Creative",
-  "rating": 4.6,
-  "reviews": 1375,
   "dinnerType": "menu",
   "dinner": 118,
   "dinnerNote": "Tasting menu (other menus from €98)",
@@ -22,5 +20,14 @@
   "placeId": "ChIJZ9KMjB1sEg0R6NhDbHBZO9M",
   "michelinId": "223478",
   "chef": "Julio Fernández Quintero",
-  "chefSource": "site"
+  "chefSource": "site",
+  "rankings": [
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 258,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

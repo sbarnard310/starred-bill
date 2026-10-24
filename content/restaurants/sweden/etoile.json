@@ -4,8 +4,6 @@
   "address": "Norra Stationsgatan 51, 113 44, Stockholm",
   "stars": 1,
   "cuisine": "Creative",
-  "rating": 4.8,
-  "reviews": 306,
   "dinnerType": "menu",
   "dinner": 2400,
   "dinnerNote": "Tasting menu",
@@ -35,5 +33,14 @@
   "photoSourceType": "commons",
   "photoWidth": 750,
   "photoHeight": 1000,
-  "photoChecked": "2026-10-13"
+  "photoChecked": "2026-10-13",
+  "rankings": [
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 648,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

@@ -5,8 +5,6 @@
   "address": "920 Blagden Alley NW, Washington, DC 20001",
   "stars": 1,
   "cuisine": "Latin American",
-  "rating": 4.1,
-  "reviews": 61,
   "dinner": 179,
   "dinnerType": "menu",
   "dinnerNote": "Tasting menu",
@@ -25,5 +23,14 @@
     "gluten-free"
   ],
   "chef": "Carlos Delgado",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "rankings": [
+    {
+      "list": "oad-north-america",
+      "year": 2026,
+      "rank": 233,
+      "url": "https://www.oadguides.com/lists/north-america/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

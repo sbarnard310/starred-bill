@@ -4,8 +4,6 @@
   "address": "Humlegårdsgatan 17, 114 46, Stockholm",
   "stars": 1,
   "cuisine": "Steak and grill",
-  "rating": 4.7,
-  "reviews": 913,
   "dinnerType": "menu",
   "dinner": 2900,
   "dinnerNote": "Tasting menu",
@@ -38,5 +36,20 @@
   "photoWidth": 1000,
   "photoHeight": 667,
   "photoChecked": "2026-10-13",
-  "dietsManual": true
+  "dietsManual": true,
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 80.5,
+      "url": "https://www.laliste.com/places/ekstedt-stockholm-se"
+    },
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 115,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

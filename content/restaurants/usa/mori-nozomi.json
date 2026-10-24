@@ -9,8 +9,6 @@
   "changeNote": "Gained its first star",
   "changeNoteZh": "首度摘星",
   "changeDate": "2025-06",
-  "rating": 4.9,
-  "reviews": 37,
   "dinner": 280,
   "dinnerType": "menu",
   "dinnerNote": "Omakase, 22–25 courses",
@@ -43,5 +41,14 @@
   "waitlist": "Tock's waiting list is open for full dates.",
   "byob": "Corkage is $100 per 750ml bottle of wine or champagne and $150 per bottle of sake, not allowed for anything the restaurant sells.",
   "infoSource": "https://www.exploretock.com/mori-nozomi-los-angeles",
-  "infoChecked": "2026-10-13"
+  "infoChecked": "2026-10-13",
+  "rankings": [
+    {
+      "list": "oad-north-america",
+      "year": 2026,
+      "rank": 511,
+      "url": "https://www.oadguides.com/lists/north-america/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

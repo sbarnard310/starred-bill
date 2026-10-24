@@ -5,8 +5,6 @@
   "address": "5-7 Side, Newcastle upon Tyne, NE1 3JE",
   "stars": 1,
   "cuisine": "British",
-  "rating": 4.9,
-  "reviews": 67,
   "dinner": 175,
   "dinnerType": "menu",
   "dinnerNote": "Tasting menu",
@@ -19,5 +17,14 @@
   "placeId": "ChIJowVncBFxfkgRerIB1m5QxjY",
   "michelinId": "1197068",
   "chef": "Kenny Atkinson",
-  "chefSource": "press"
+  "chefSource": "press",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 83,
+      "url": "https://www.laliste.com/places/solstice-by-kenny-atkinson-newcastle-upon-tyne-gb"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

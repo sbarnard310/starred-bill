@@ -7,8 +7,6 @@
   "address": "4 rue d'Assas, 75006, Paris",
   "stars": 2,
   "cuisine": "Modern European",
-  "rating": 4.4,
-  "reviews": 1016,
   "dinner": 225,
   "dinnerType": "menu",
   "sourceType": "site",
@@ -28,5 +26,14 @@
   "dinnerNote": "Tasting menu, 5 courses (8 courses €290)",
   "dinnerNoteFr": "Menu en 5 services (8 services 290 €)",
   "lunchNote": "Lunch menu",
-  "lunchNoteFr": "Menu déjeuner"
+  "lunchNoteFr": "Menu déjeuner",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 78,
+      "url": "https://www.laliste.com/places/marsan-helene-darroze-paris-fr"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

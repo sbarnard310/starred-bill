@@ -7,8 +7,6 @@
   "change": "new",
   "changeNote": "Gained two stars in the first American South guide",
   "changeDate": "2025-11",
-  "rating": 4.5,
-  "reviews": 2568,
   "dinnerType": "menu",
   "dinner": 165,
   "dinnerNote": "Classic tasting menu, 7 courses",
@@ -23,5 +21,26 @@
   "placeId": "ChIJp6mGj3GmIIYRfS0qjpoGsmo",
   "michelinId": "1214987",
   "chef": "E.j. Lagasse",
-  "chefSource": "press"
+  "chefSource": "press",
+  "rankings": [
+    {
+      "list": "north-americas-50-best",
+      "year": 2026,
+      "rank": 20,
+      "url": "https://www.the50.com/restaurants/best-in-north-america/list/1-50"
+    },
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 92.5,
+      "url": "https://www.laliste.com/places/emerils-new-orleans-us"
+    },
+    {
+      "list": "oad-north-america",
+      "year": 2026,
+      "rank": 101,
+      "url": "https://www.oadguides.com/lists/north-america/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

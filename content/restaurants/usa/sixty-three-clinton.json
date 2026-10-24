@@ -6,8 +6,6 @@
   "address": "63 Clinton St., New York, NY, 10002",
   "stars": 1,
   "cuisine": "Modern American",
-  "rating": 4.6,
-  "reviews": 563,
   "dinner": 130,
   "dinnerType": "menu",
   "dinnerNote": "Seven-course seasonal tasting menu",
@@ -51,5 +49,14 @@
   "groups": "Resy takes parties of up to six; parties of six or more pay a 20% service charge.",
   "byob": "Corkage is $75 per 750ml bottle, waived if a bottle is bought from the wine list.",
   "infoSource": "https://resy.com/cities/new-york-ny/venues/sixty-three-clinton",
-  "infoChecked": "2026-10-13"
+  "infoChecked": "2026-10-13",
+  "rankings": [
+    {
+      "list": "oad-north-america",
+      "year": 2026,
+      "rank": 138,
+      "url": "https://www.oadguides.com/lists/north-america/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

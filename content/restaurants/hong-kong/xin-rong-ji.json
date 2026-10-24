@@ -8,8 +8,6 @@
   "addressZh": "香港灣仔駱克道139號中國海外大廈地下及1樓",
   "stars": 1,
   "cuisine": "Zhejiang",
-  "rating": 4.2,
-  "reviews": 297,
   "dinner": 1100,
   "dinnerType": "spend",
   "dinnerNote": "À la carte Taizhou dishes; average dinner spend",
@@ -42,5 +40,14 @@
   "photoSourceType": "commons",
   "photoWidth": 1000,
   "photoHeight": 750,
-  "photoChecked": "2026-10-13"
+  "photoChecked": "2026-10-13",
+  "rankings": [
+    {
+      "list": "oad-asia",
+      "year": 2026,
+      "rank": 17,
+      "url": "https://www.oadguides.com/lists/asia/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

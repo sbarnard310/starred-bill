@@ -9,8 +9,6 @@
   "addressJa": "〒106-0032 東京都港区六本木 7-9-9",
   "stars": 1,
   "cuisine": "French",
-  "rating": 4.4,
-  "reviews": 272,
   "dinner": 28526,
   "dinnerType": "menu",
   "dinnerNote": "Omakase course",
@@ -40,5 +38,14 @@
     "note": "When that day is a closing day, bookings open on the next day the restaurant is open.",
     "source": "https://le-sputnik.jp/",
     "checked": "2026-10-10"
-  }
+  },
+  "rankings": [
+    {
+      "list": "oad-japan",
+      "year": 2026,
+      "rank": 444,
+      "url": "https://www.oadguides.com/lists/japan/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

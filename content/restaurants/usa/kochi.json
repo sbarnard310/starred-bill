@@ -6,8 +6,6 @@
   "address": "652 Tenth Ave., New York, NY, 10036",
   "stars": 1,
   "cuisine": "Korean",
-  "rating": 4.6,
-  "reviews": 1037,
   "dinner": 145,
   "dinnerType": "menu",
   "dinnerNote": "Tasting menu, 8–9 courses",
@@ -36,5 +34,14 @@
   "photoWidth": 1000,
   "photoHeight": 750,
   "photoChecked": "2026-10-13",
-  "dietsManual": true
+  "dietsManual": true,
+  "rankings": [
+    {
+      "list": "oad-north-america",
+      "year": 2026,
+      "rank": 108,
+      "url": "https://www.oadguides.com/lists/north-america/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

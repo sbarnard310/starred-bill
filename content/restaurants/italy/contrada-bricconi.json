@@ -6,8 +6,6 @@
   "address": "Via Bricconi 3, Oltressenda Alta, 24020",
   "stars": 1,
   "cuisine": "Regional",
-  "rating": 4.8,
-  "reviews": 392,
   "dinner": 165,
   "dinnerType": "menu",
   "dinnerNote": "Tasting menu, 10 courses (6 courses for under-30s €95)",
@@ -61,5 +59,5 @@
       "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
     }
   ],
-  "rankingsChecked": "2026-10-13"
+  "rankingsChecked": "2026-10-24"
 }

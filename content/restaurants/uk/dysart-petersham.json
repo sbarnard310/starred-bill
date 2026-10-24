@@ -5,8 +5,6 @@
   "address": "135 Petersham Road, Richmond, London, TW10 7AA",
   "stars": 1,
   "cuisine": "Modern European",
-  "rating": 4.7,
-  "reviews": 422,
   "dinner": 165,
   "dinnerType": "menu",
   "dinnerNote": "Tasting menu",
@@ -39,5 +37,14 @@
   "photoSourceType": "commons",
   "photoWidth": 1000,
   "photoHeight": 667,
-  "photoChecked": "2026-10-13"
+  "photoChecked": "2026-10-13",
+  "rankings": [
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 477,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

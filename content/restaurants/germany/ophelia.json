@@ -5,8 +5,6 @@
   "address": "Seestraße 25, 78464, Constance",
   "stars": 2,
   "cuisine": "French",
-  "rating": 4.7,
-  "reviews": 232,
   "dinnerType": "menu",
   "dinner": 285,
   "dinnerNote": "Tasting menu",
@@ -24,5 +22,14 @@
   "lunchNoteDe": "Nur abends",
   "areaDe": "Konstanz",
   "chef": "Dirk Hoberg",
-  "chefSource": "press"
+  "chefSource": "press",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 91.5,
+      "url": "https://www.laliste.com/places/ophelia-konstanz-de"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

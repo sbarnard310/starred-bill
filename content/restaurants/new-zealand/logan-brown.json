@@ -6,8 +6,6 @@
   "address": "192 Cuba Street, Te Aro, Wellington 6011",
   "stars": 1,
   "cuisine": "New Zealand",
-  "rating": 4.6,
-  "reviews": 913,
   "dinner": 120,
   "dinnerType": "menu",
   "dinnerNote": "Set menu: entrée, main and dessert with sides (early Bistro menu from $75)",
@@ -32,5 +30,14 @@
   ],
   "chef": "Shaun Clouston",
   "chefSource": "site",
-  "dietsManual": true
+  "dietsManual": true,
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 90.5,
+      "url": "https://www.laliste.com/places/logan-brown-wellington-nz"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

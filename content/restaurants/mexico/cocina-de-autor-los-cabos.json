@@ -6,8 +6,6 @@
   "address": "Grand Velas Los Cabos, Carretera Transpeninsular km 17, Los Cabos",
   "stars": 1,
   "cuisine": "Mexican",
-  "rating": 4.5,
-  "reviews": 69,
   "dinner": 4680,
   "dinnerType": "menu",
   "dinnerNote": "Set menu for non-resort guests, 8–10 courses; dinner only",
@@ -24,5 +22,14 @@
     "vegetarian"
   ],
   "chef": "Francisco Sixtos",
-  "chefSource": "press"
+  "chefSource": "press",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 89,
+      "url": "https://www.laliste.com/places/cocina-de-autor-cabo-san-lucas-mx"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

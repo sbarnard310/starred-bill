@@ -6,8 +6,6 @@
   "address": "41-4 Toyotsucho, Suita, 564-0051, Osaka",
   "stars": 2,
   "cuisine": "Tempura",
-  "rating": 4.5,
-  "reviews": 238,
   "dinnerType": "menu",
   "dinnerNote": "Tempura course, from; including tax and service",
   "sourceType": "site",
@@ -33,5 +31,14 @@
     "via": "website",
     "source": "https://www.shunsaiten-tsuchiya.com/",
     "checked": "2026-10-10"
-  }
+  },
+  "rankings": [
+    {
+      "list": "oad-japan",
+      "year": 2026,
+      "rank": 681,
+      "url": "https://www.oadguides.com/lists/japan/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

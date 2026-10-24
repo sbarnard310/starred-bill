@@ -10,8 +10,6 @@
   "changeNote": "Gained a second star",
   "changeNoteZh": "晉升二星",
   "changeDate": "2025-07",
-  "rating": 4.8,
-  "reviews": 85,
   "dinner": 580,
   "dinnerType": "menu",
   "dinnerNote": "Omakase, 5 appetisers and 10 sushi",
@@ -60,5 +58,14 @@
   "dressCode": "No heavy perfume: guests whose scent is overpowering may be turned away.",
   "byob": "No outside bottles; the restaurant does not allow corkage.",
   "infoSource": "https://www.tablecheck.com/en/sushi-sakuta/reserve",
-  "infoChecked": "2026-10-13"
+  "infoChecked": "2026-10-13",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 75,
+      "url": "https://www.laliste.com/places/sushi-sakuta-singapore-sg"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

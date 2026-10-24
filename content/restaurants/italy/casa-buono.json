@@ -5,8 +5,6 @@
   "address": "Corso Cuneo 28, Località Trucco, 18039, Ventimiglia",
   "stars": 1,
   "cuisine": "Regional",
-  "rating": 4.8,
-  "reviews": 378,
   "dinnerType": "menu",
   "dinner": 150,
   "dinnerNote": "Tasting menu (other menus from €60)",
@@ -31,5 +29,14 @@
     "kosher"
   ],
   "chef": "Antonio Buono",
-  "chefSource": "site"
+  "chefSource": "site",
+  "rankings": [
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 243,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

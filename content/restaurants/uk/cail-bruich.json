@@ -5,8 +5,6 @@
   "address": "725 Great Western Road, Glasgow, G12 8QX",
   "stars": 1,
   "cuisine": "Modern European",
-  "rating": 4.8,
-  "reviews": 602,
   "dinner": 140,
   "dinnerType": "menu",
   "dinnerNote": "Dinner tasting menu (Chef's Table £210)",
@@ -81,5 +79,5 @@
       "url": "https://www.laliste.com/places/cail-bruich-glasgow-gb"
     }
   ],
-  "rankingsChecked": "2026-10-13"
+  "rankingsChecked": "2026-10-24"
 }

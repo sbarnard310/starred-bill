@@ -4,8 +4,6 @@
   "address": "Konviktstraße 8, 79098, Freiburg im Breisgau",
   "stars": 1,
   "cuisine": "Classic",
-  "rating": 4.7,
-  "reviews": 444,
   "dinnerType": "menu",
   "dinner": 89,
   "dinnerNote": "Tasting menu (other menus from €63)",
@@ -29,5 +27,14 @@
   "lunchSourceType": "site",
   "lunchSource": "https://www.wolfshoehle-freiburg.de",
   "chef": "Sascha Weiss",
-  "chefSource": "press"
+  "chefSource": "press",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 81,
+      "url": "https://www.laliste.com/places/wolfshohle-freiburg-im-breisgau-de"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

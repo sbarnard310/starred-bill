@@ -6,8 +6,6 @@
   "address": "968 Kideracho, Nara, 630-8306, Nara",
   "stars": 2,
   "cuisine": "Japanese",
-  "rating": 4.7,
-  "reviews": 134,
   "dinnerType": "spend",
   "dinnerNote": "Tabelog range ¥20,000–29,999",
   "sourceType": "press",
@@ -26,5 +24,14 @@
   "lunchNote": "Tabelog range ¥20,000–29,999",
   "lunchNoteJa": "食べログの価格帯 20,000～29,999円",
   "chef": "Masato Nishihara",
-  "chefSource": "press"
+  "chefSource": "press",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 85,
+      "url": "https://www.laliste.com/places/tsukumo-nara-jp"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

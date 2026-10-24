@@ -8,8 +8,6 @@
   "changeNote": "Gained its first star",
   "changeDate": "2025-11",
   "changeNoteMs": "Memperoleh bintang pertamanya",
-  "rating": 4.8,
-  "reviews": 1187,
   "dinnerType": "menu",
   "dinner": 588,
   "dinnerNote": "Tasting menu",
@@ -34,5 +32,14 @@
   "lunchNoteMs": "Menu makan tengah hari",
   "chef": "Aidan Low",
   "chefSource": "press",
-  "dietsManual": true
+  "dietsManual": true,
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 90,
+      "url": "https://www.laliste.com/places/akar-dining-kuala-lumpur-my"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

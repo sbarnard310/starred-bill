@@ -6,8 +6,6 @@
   "address": "Via per Cernobbio 41/a, Como, 22100",
   "stars": 1,
   "cuisine": "Italian",
-  "rating": 4.5,
-  "reviews": 429,
   "dinner": 170,
   "dinnerType": "menu",
   "dinnerNote": "Evoluzione tasting menu",
@@ -39,5 +37,14 @@
     "name": "Sheraton Lake Como Hotel",
     "url": "https://www.marriott.com/en-us/hotels/lilsi-sheraton-lake-como-hotel/overview/",
     "checked": "2026-10-23"
-  }
+  },
+  "rankings": [
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 734,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

@@ -5,8 +5,6 @@
   "address": "Flemings Hotel, 7-12 Half Moon Street, Mayfair, London, W1J 7BH",
   "stars": 1,
   "cuisine": "British",
-  "rating": 4.8,
-  "reviews": 533,
   "dinner": 140,
   "dinnerType": "menu",
   "dinnerNote": "Signature tasting menu, 7 courses",
@@ -56,5 +54,20 @@
     ],
     "note": "The hotel’s breakfast is served in Ormer Mayfair.",
     "checked": "2026-10-23"
-  }
+  },
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 78,
+      "url": "https://www.laliste.com/places/ormer-mayfair-london-gb"
+    },
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 601,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

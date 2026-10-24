@@ -4,8 +4,6 @@
   "address": "Rickenbachstrasse 127, 6432, Schwyz",
   "stars": 2,
   "cuisine": "Modern European",
-  "rating": 4.9,
-  "reviews": 416,
   "dinnerType": "menu",
   "dinner": 220,
   "sourceType": "site",
@@ -28,5 +26,14 @@
   "dinnerNote": "Surprise menu (wine pairing CHF 17 a glass)",
   "dinnerNoteDe": "Überraschungsmenü (Weinbegleitung CHF 17 pro Glas)",
   "dinnerNoteFr": "Menu surprise (accord vins 17 CHF le verre)",
-  "dinnerNoteIt": "Menu a sorpresa (abbinamento vini CHF 17 al calice)"
+  "dinnerNoteIt": "Menu a sorpresa (abbinamento vini CHF 17 al calice)",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 87.5,
+      "url": "https://www.laliste.com/places/magdalena-rickenbach-sz-ch"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

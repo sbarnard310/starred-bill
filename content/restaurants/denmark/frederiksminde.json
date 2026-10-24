@@ -5,8 +5,6 @@
   "address": "Klosternakken 8, 4720, Præstø",
   "stars": 1,
   "cuisine": "Modern European",
-  "rating": 4.5,
-  "reviews": 37,
   "dinnerType": "menu",
   "dinner": 2200,
   "dinnerNote": "Essens menu (other menus from DKK 700)",
@@ -39,5 +37,14 @@
   "photoSourceType": "commons",
   "photoWidth": 1000,
   "photoHeight": 683,
-  "photoChecked": "2026-10-13"
+  "photoChecked": "2026-10-13",
+  "rankings": [
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 471,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

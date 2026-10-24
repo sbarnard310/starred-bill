@@ -5,8 +5,6 @@
   "address": "18-19 Parnell Square North, Rotunda, Dublin, D01 T3V8",
   "stars": 2,
   "cuisine": "Modern European",
-  "rating": 4.8,
-  "reviews": 1176,
   "dinner": 195,
   "dinnerType": "menu",
   "dinnerNote": "Tasting menu",
@@ -24,5 +22,14 @@
   "placeId": "ChIJa7Nrz4AOZ0gRptxMf68t1Qk",
   "michelinId": "1196469",
   "chef": "Mickael Viljanen",
-  "chefSource": "site"
+  "chefSource": "site",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 89.5,
+      "url": "https://www.laliste.com/places/chapter-one-by-mickael-viljanen-dublin-1-ie"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

@@ -5,8 +5,6 @@
   "address": "Castillo 18, 46500, Sagunt",
   "stars": 1,
   "cuisine": "Modern European",
-  "rating": 4.6,
-  "reviews": 1032,
   "dinnerType": "menu",
   "dinner": 138,
   "dinnerNote": "Tasting menu (other menus from €110)",
@@ -21,5 +19,14 @@
   "placeId": "ChIJ1_2k9BYVYA0RRq5vCnMafJo",
   "michelinId": "1154554",
   "chef": "Vicky Sevilla",
-  "chefSource": "press"
+  "chefSource": "press",
+  "rankings": [
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 208,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

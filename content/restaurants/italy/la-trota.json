@@ -6,8 +6,6 @@
   "address": "Via Santa Susanna 33, località Piedicolle, Rivodutri, 02010",
   "stars": 1,
   "cuisine": "Regional",
-  "rating": 4.8,
-  "reviews": 381,
   "dinner": 150,
   "dinnerType": "menu",
   "dinnerNote": "Tasting menu (others €130 and €140)",
@@ -33,5 +31,14 @@
     "gluten-free"
   ],
   "chef": "Maurizio and Sandro Serva",
-  "chefSource": "press"
+  "chefSource": "press",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 88,
+      "url": "https://www.laliste.com/places/la-trota-rivodutri-it"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

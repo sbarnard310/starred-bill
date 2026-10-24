@@ -8,8 +8,6 @@
   "change": "up",
   "changeNote": "Gained its second star",
   "changeDate": "2025-02",
-  "rating": 4.7,
-  "reviews": 1418,
   "dinner": 235,
   "dinnerType": "menu",
   "dinnerNote": "Tasting menu, 7 courses (5 courses £215)",
@@ -47,5 +45,14 @@
       }
     ],
     "checked": "2026-10-23"
-  }
+  },
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 98,
+      "url": "https://www.laliste.com/places/the-ritz-restaurant-london-gb"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

@@ -10,8 +10,6 @@
   "addressJa": "〒107-0062 東京都港区南青山 2-11-11",
   "stars": 1,
   "cuisine": "Sushi",
-  "rating": 4.5,
-  "reviews": 329,
   "dinner": 33000,
   "dinnerType": "menu",
   "dinnerNote": "Chef's tasting course",
@@ -32,5 +30,14 @@
   "placeId": "ChIJwaYqX1CNGGARY7CAGDEQOIE",
   "michelinId": "1195301",
   "chef": "Ryujiro Nakamura",
-  "chefSource": "press"
+  "chefSource": "press",
+  "rankings": [
+    {
+      "list": "oad-japan",
+      "year": 2026,
+      "rank": 200,
+      "url": "https://www.oadguides.com/lists/japan/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

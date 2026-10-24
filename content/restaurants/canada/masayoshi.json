@@ -4,8 +4,6 @@
   "address": "4376 Fraser St., Vancouver, V5V 4G3",
   "stars": 1,
   "cuisine": "Japanese",
-  "rating": 4.3,
-  "reviews": 465,
   "dinnerType": "menu",
   "dinner": 260,
   "dinnerNote": "Omakase (shorter menu $245)",
@@ -19,5 +17,14 @@
   "placeId": "ChIJS7QNEQd0hlQRuTZ2xFQRWHk",
   "michelinId": "1198929",
   "chef": "Masayoshi Baba",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "rankings": [
+    {
+      "list": "oad-north-america",
+      "year": 2026,
+      "rank": 318,
+      "url": "https://www.oadguides.com/lists/north-america/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

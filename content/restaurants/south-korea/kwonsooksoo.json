@@ -7,8 +7,6 @@
   "address": "4F, 37 Apgujeong-ro 80-gil, Gangnam-gu, Seoul",
   "stars": 2,
   "cuisine": "Korean",
-  "rating": 4.5,
-  "reviews": 518,
   "dinner": 340000,
   "dinnerType": "menu",
   "dinnerNote": "Dinner course (저녁미식상)",
@@ -27,5 +25,26 @@
   "placeId": "ChIJZ1-yoYijfDURvkRg_wdaQao",
   "michelinId": "511972",
   "chef": "Kwon Woo-joong",
-  "chefSource": "press"
+  "chefSource": "press",
+  "rankings": [
+    {
+      "list": "asias-50-best",
+      "year": 2026,
+      "rank": 98,
+      "url": "https://www.the50.com/restaurants/best-in-asia/list/51-100"
+    },
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 85,
+      "url": "https://www.laliste.com/places/kwon-sook-soo-gangnam-gu-kr"
+    },
+    {
+      "list": "oad-asia",
+      "year": 2026,
+      "rank": 65,
+      "url": "https://www.oadguides.com/lists/asia/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

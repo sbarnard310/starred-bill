@@ -5,8 +5,6 @@
   "address": "Doktara Jakobsens gøta 14-16, 100, Tórshavn",
   "stars": 2,
   "cuisine": "Creative",
-  "rating": 4.9,
-  "reviews": 27,
   "dinner": 3400,
   "dinnerType": "menu",
   "dinnerNote": "Tasting menu",
@@ -23,5 +21,14 @@
   "dinnerNoteDa": "Smagsmenu",
   "noLunch": true,
   "lunchNote": "Dinner only",
-  "lunchNoteDa": "Kun middag"
+  "lunchNoteDa": "Kun middag",
+  "rankings": [
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 356,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

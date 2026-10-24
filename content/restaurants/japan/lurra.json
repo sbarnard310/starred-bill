@@ -6,8 +6,6 @@
   "address": "396 Sekisenincho, Higashiyama-ku, 605-0021, Kyoto",
   "stars": 1,
   "cuisine": "Creative",
-  "rating": 4.4,
-  "reviews": 244,
   "dinnerType": "menu",
   "dinnerNote": "Tasting menu; including tax, service extra",
   "sourceType": "press",
@@ -27,5 +25,14 @@
   "wine": 15000,
   "noLunch": true,
   "lunchNote": "Dinner only",
-  "lunchNoteJa": "ディナーのみ"
+  "lunchNoteJa": "ディナーのみ",
+  "rankings": [
+    {
+      "list": "oad-japan",
+      "year": 2026,
+      "rank": 470,
+      "url": "https://www.oadguides.com/lists/japan/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

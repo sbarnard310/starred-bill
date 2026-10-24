@@ -10,8 +10,6 @@
   "changeDate": "2026-05",
   "changeNoteNl": "Kreeg zijn eerste ster",
   "changeNoteFr": "Obtient sa première étoile",
-  "rating": 4.9,
-  "reviews": 106,
   "dinnerType": "menu",
   "dinner": 120,
   "dinnerNote": "Tasting menu",
@@ -34,5 +32,14 @@
   "lunchSourceType": "site",
   "lunchSource": "https://www.restaurantbloesem.com/menu",
   "chef": "Brend Geudens and Nebo Schamp",
-  "chefSource": "press"
+  "chefSource": "press",
+  "rankings": [
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 302,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

@@ -4,8 +4,6 @@
   "address": "7F, The Balmori Suites, Hidalgo Drive, Rockwell Centre, Makati - Metro Manila",
   "stars": 1,
   "cuisine": "Filipino",
-  "rating": 4.6,
-  "reviews": 452,
   "dinnerType": "menu",
   "dinner": 7500,
   "dinnerNote": "Tasting menu",
@@ -24,5 +22,14 @@
   "lunchNote": "Open for lunch · Thu–Sun",
   "lunchNoteFil": "Bukas para sa tanghalian · Huw–Lin",
   "chef": "Thirdy Dolatre and Kevin Navoa",
-  "chefSource": "press"
+  "chefSource": "press",
+  "rankings": [
+    {
+      "list": "oad-asia",
+      "year": 2026,
+      "rank": 241,
+      "url": "https://www.oadguides.com/lists/asia/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

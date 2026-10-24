@@ -10,8 +10,6 @@
   "changeNote": "Dropped from two stars to one",
   "changeNoteFr": "Passe de deux étoiles à une",
   "changeDate": "2026-03",
-  "rating": 4.7,
-  "reviews": 40,
   "dinner": 185,
   "dinnerType": "menu",
   "dinnerNote": "Longest tasting menu (other menus from €145)",
@@ -49,5 +47,14 @@
     ],
     "note": "Hotel and restaurant close from 11 November to 11 December.",
     "checked": "2026-10-23"
-  }
+  },
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 88.5,
+      "url": "https://www.laliste.com/places/relais-de-la-poste-magescq-fr"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

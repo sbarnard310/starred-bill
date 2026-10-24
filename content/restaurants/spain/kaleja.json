@@ -5,8 +5,6 @@
   "address": "Marquesa de Moya 9, 29015, Malaga",
   "stars": 1,
   "cuisine": "Modern European",
-  "rating": 4.7,
-  "reviews": 659,
   "dinnerType": "menu",
   "dinner": 130,
   "dinnerNote": "Tasting menu (other menus from €100)",
@@ -21,5 +19,14 @@
   "placeId": "ChIJ26NsLJj3cg0R7M1qfOYrukA",
   "michelinId": "1190422",
   "chef": "Dani Carnero",
-  "chefSource": "site"
+  "chefSource": "site",
+  "rankings": [
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 128,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

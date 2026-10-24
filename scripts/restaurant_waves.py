@@ -56,8 +56,9 @@ def qualifies(r):
 
 
 def popularity(item):
+    """Most stars first, then those on the most critics' lists (we no longer keep Google review counts, 24 Oct 2026)."""
     rid, r = item
-    return (-r["stars"], -(r.get("reviews") or 0), rid)
+    return (-r["stars"], -len(r.get("rankings") or []), rid)
 
 
 def waiting(rs, data):

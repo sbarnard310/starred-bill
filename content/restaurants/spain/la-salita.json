@@ -4,8 +4,6 @@
   "address": "Pere III El Gran 11, 46005, Valencia",
   "stars": 1,
   "cuisine": "Creative",
-  "rating": 4.6,
-  "reviews": 2208,
   "dinnerType": "menu",
   "dinner": 190.7,
   "wine": 160,
@@ -31,5 +29,20 @@
   "chefSource": "site",
   "dinnerNote": "La Salita tasting menu",
   "dinnerNoteEs": "Menú La Salita",
-  "dietsManual": true
+  "dietsManual": true,
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 83.5,
+      "url": "https://www.laliste.com/places/la-salita-de-begona-rodrigo-valencia-es"
+    },
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 134,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

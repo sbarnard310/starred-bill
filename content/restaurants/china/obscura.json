@@ -18,5 +18,14 @@
   "lunchNote": "Dinner only",
   "lunchNoteZhs": "仅供应晚餐",
   "chef": "DeAille Tam and Simon Wong",
-  "chefSource": "press"
+  "chefSource": "press",
+  "rankings": [
+    {
+      "list": "oad-asia",
+      "year": 2026,
+      "rank": 514,
+      "url": "https://www.oadguides.com/lists/asia/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

@@ -5,8 +5,6 @@
   "address": "Toldkammeret 9, 7000, Fredericia",
   "stars": 1,
   "cuisine": "Creative",
-  "rating": 4.8,
-  "reviews": 237,
   "dinnerType": "menu",
   "dinner": 2000,
   "dinnerNote": "Tasting menu (other menus from DKK 1,200)",
@@ -33,5 +31,14 @@
   ],
   "chef": "Michael Nørtoft",
   "chefSource": "michelin",
-  "dinnerNoteDa": "Smagsmenu (andre menuer fra 1.200 kr.)"
+  "dinnerNoteDa": "Smagsmenu (andre menuer fra 1.200 kr.)",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 79,
+      "url": "https://www.laliste.com/places/ti-trin-ned-fredericia-dk"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

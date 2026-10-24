@@ -6,8 +6,6 @@
   "address": "#01-01, 1 Neil Road, Singapore 088804",
   "stars": 1,
   "cuisine": "Creative",
-  "rating": 4.6,
-  "reviews": 201,
   "dinner": 368,
   "dinnerType": "menu",
   "dinnerNote": "Chef's menu",
@@ -30,5 +28,20 @@
     "vegetarian"
   ],
   "chef": "Zor Tan",
-  "chefSource": "site"
+  "chefSource": "site",
+  "rankings": [
+    {
+      "list": "asias-50-best",
+      "year": 2026,
+      "rank": 23,
+      "url": "https://www.the50.com/restaurants/best-in-asia/list/1-50"
+    },
+    {
+      "list": "oad-asia",
+      "year": 2026,
+      "rank": 58,
+      "url": "https://www.oadguides.com/lists/asia/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

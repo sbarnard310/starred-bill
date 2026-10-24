@@ -17,5 +17,26 @@
   "lunchNoteZhs": "供应午餐",
   "nameZhs": "如院",
   "chef": "Fu Yueliang",
-  "chefSource": "press"
+  "chefSource": "press",
+  "rankings": [
+    {
+      "list": "asias-50-best",
+      "year": 2026,
+      "rank": 10,
+      "url": "https://www.the50.com/restaurants/best-in-asia/list/1-50"
+    },
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 79,
+      "url": "https://www.laliste.com/places/ru-yuan-hangzhou-cn"
+    },
+    {
+      "list": "oad-asia",
+      "year": 2026,
+      "rank": 18,
+      "url": "https://www.oadguides.com/lists/asia/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

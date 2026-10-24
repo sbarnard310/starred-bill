@@ -7,8 +7,6 @@
   "address": "80 rue de Charonne, 75011, Paris",
   "stars": 1,
   "cuisine": "Modern European",
-  "rating": 4.3,
-  "reviews": 1443,
   "dinner": 120,
   "dinnerType": "menu",
   "dinnerNote": "Tasting menu, 7 courses",
@@ -27,5 +25,20 @@
   "lat": 48.85363,
   "lng": 2.3809166,
   "placeId": "ChIJE6kCUghy5kcRmWSg3RUHIwM",
-  "michelinId": "344933"
+  "michelinId": "344933",
+  "rankings": [
+    {
+      "list": "worlds-50-best",
+      "year": 2025,
+      "rank": 40,
+      "url": "https://www.the50.com/restaurants/best-in-the-world/list/1-50"
+    },
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 112,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

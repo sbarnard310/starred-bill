@@ -4,8 +4,6 @@
   "address": "Söllheimerstrasse 16, 5020, Salzburg",
   "stars": 2,
   "cuisine": "Creative",
-  "rating": 4.8,
-  "reviews": 249,
   "dinnerType": "menu",
   "dinner": 499,
   "dinnerNote": "Tasting menu (other menus from €225)",
@@ -22,5 +20,14 @@
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 225 €)",
   "noLunch": true,
   "lunchNote": "Dinner only",
-  "lunchNoteDe": "Nur abends"
+  "lunchNoteDe": "Nur abends",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 92.5,
+      "url": "https://www.laliste.com/places/senns-salzburg-at"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

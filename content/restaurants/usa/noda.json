@@ -6,8 +6,6 @@
   "address": "37 W. 20th St., New York, NY, 10011",
   "stars": 1,
   "cuisine": "Japanese",
-  "rating": 4.7,
-  "reviews": 181,
   "dinner": 315,
   "dinnerType": "menu",
   "dinnerNote": "Omakase",
@@ -31,5 +29,14 @@
   "photoSourceType": "commons",
   "photoWidth": 1000,
   "photoHeight": 750,
-  "photoChecked": "2026-10-13"
+  "photoChecked": "2026-10-13",
+  "rankings": [
+    {
+      "list": "oad-north-america",
+      "year": 2026,
+      "rank": 46,
+      "url": "https://www.oadguides.com/lists/north-america/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

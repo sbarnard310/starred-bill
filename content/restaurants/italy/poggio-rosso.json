@@ -6,8 +6,6 @@
   "address": "Località San Felice, Castelnuovo Berardenga, 53019",
   "stars": 1,
   "cuisine": "Creative",
-  "rating": 5,
-  "reviews": 6,
   "dinner": 195,
   "dinnerType": "menu",
   "dinnerNote": "Le mie origini, 6 courses (Chianti, 4 courses, €175)",
@@ -34,5 +32,14 @@
     "rooms": 63,
     "url": "https://www.borgosanfelice.it/en/where-to-stay-chianti-tuscany",
     "checked": "2026-10-23"
-  }
+  },
+  "rankings": [
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 266,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

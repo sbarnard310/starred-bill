@@ -5,8 +5,6 @@
   "address": "Magic Hill, Whinlatter Forest, Braithwaite, CA12 5TW",
   "stars": 1,
   "cuisine": "British",
-  "rating": 4.8,
-  "reviews": 340,
   "dinner": 130,
   "dinnerType": "menu",
   "dinnerNote": "Tasting menu, 7 courses",
@@ -45,5 +43,14 @@
     ],
     "note": "Rooms are sold only with dinner and breakfast.",
     "checked": "2026-10-23"
-  }
+  },
+  "rankings": [
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 756,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

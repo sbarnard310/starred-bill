@@ -9,8 +9,6 @@
   "addressJa": "〒108-0071 東京都港区白金台 4-2-7 2F",
   "stars": 1,
   "cuisine": "Chinese",
-  "rating": 4.4,
-  "reviews": 74,
   "dinner": 37500,
   "dinnerType": "menu",
   "dinnerNote": "Seasonal course",
@@ -28,5 +26,14 @@
   "placeId": "ChIJoVieO_GLGGARmorh-DZUURk",
   "michelinId": "1193966",
   "chef": "Hiroyuki Shinohara",
-  "chefSource": "site"
+  "chefSource": "site",
+  "rankings": [
+    {
+      "list": "oad-japan",
+      "year": 2026,
+      "rank": 247,
+      "url": "https://www.oadguides.com/lists/japan/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

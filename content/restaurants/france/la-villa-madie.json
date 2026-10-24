@@ -6,8 +6,6 @@
   "address": "Avenue de Revestel, 13260 Cassis",
   "stars": 3,
   "cuisine": "Creative",
-  "rating": 4.6,
-  "reviews": 1738,
   "dinner": 380,
   "dinnerType": "menu",
   "dinnerNote": "Les Agapes de Soubeyrannes menu, 8 acts (L'Espassado €295, Anse de L'Arène €195 Thu–Fri)",
@@ -69,5 +67,14 @@
   "groupsUrl": "https://www.lavillamadie.com/en/book-group-event/",
   "dressCode": "Smart casual. At dinner, men are asked to wear long trousers and closed shoes.",
   "infoSource": "https://www.lavillamadie.com/en/faq/",
-  "infoChecked": "2026-10-13"
+  "infoChecked": "2026-10-13",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 94,
+      "url": "https://www.laliste.com/places/la-villa-madie-cassis-fr"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

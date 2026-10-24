@@ -6,8 +6,6 @@
   "address": "459 Shimokawaracho, Higashiyama-ku, 605-0825, Kyoto",
   "stars": 3,
   "cuisine": "Japanese",
-  "rating": 4.4,
-  "reviews": 974,
   "dinnerType": "menu",
   "dinnerNote": "Kaiseki course (others from ¥22,000); including tax, service extra",
   "sourceType": "site",
@@ -66,5 +64,20 @@
   "children": "Children aged 8 and over who can eat the adult course; no children under 8.",
   "servicePct": 15,
   "infoSource": "https://myconciergejapan.com/restaurants/kikunoi/",
-  "infoChecked": "2026-10-13"
+  "infoChecked": "2026-10-13",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 95,
+      "url": "https://www.laliste.com/places/kikunoi-honten-kyoto-shi-jp"
+    },
+    {
+      "list": "oad-japan",
+      "year": 2026,
+      "rank": 163,
+      "url": "https://www.oadguides.com/lists/japan/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

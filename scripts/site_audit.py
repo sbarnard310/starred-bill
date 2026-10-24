@@ -7,7 +7,7 @@ SITE_DIR is a folder holding a fresh copy of the site with _site/ already built 
 checks every page (titles, descriptions, headings, structured data, broken links, sitemap, page weight), the internal
 links (orphan pages, pages with few links in or out, self-links, vague anchor text, and the guides' own links), guides
 and pages without their Sources, keyword clashes (pages competing for the same search, with Google Search Console's
-searches that showed two or more of our pages), the restaurant data (missing prices, ratings, chefs, positions, duplicates, odd prices), the MICHELIN Guide ceremonies
+searches that showed two or more of our pages), the restaurant data (missing prices, Google place IDs, chefs, positions, duplicates, odd prices), the MICHELIN Guide ceremonies
 (stars announced since our files caught up, ceremonies in the next two weeks), then the live site's
 basics (HTTPS, redirects, 404 page, robots.txt, sitemap). It writes the figures to OUT.json and prints a
 plain report; with PREVIOUS.json it also says what changed since then. It only reads; nothing is changed.
@@ -286,8 +286,9 @@ def data_checks(site):
         g["starred"] += 1
         g["no_price"] += r.get("dinner") is None and r.get("lunch") is None  # no price at all, as page titles count it
         g["no_dinner_price"] += r.get("dinner") is None and r.get("lunch") is not None and not LUNCH_ONLY_RE.match(r.get("dinnerNote") or "")
-        g["no_rating"] += r.get("rating") is None
-        g["few_reviews"] += r.get("rating") is not None and (r.get("reviews") or 0) < 20
+        g["no_place_id"] += not r.get("placeId")  # no Google place ID, so no Google card or Reviews link to the right place
+        g["stored_google_rating"] += r.get("rating") is not None or r.get("reviews") is not None  # Google's terms don't allow keeping them (24 Oct 2026)
+        g["critics_pick"] += bool(r.get("rankings"))
         g["no_chef"] += not r.get("chef")
         g["no_wine"] += r.get("wine") is None and not r.get("noPairing")  # restaurants that don't offer one aren't a gap
         g["no_pairing_offered"] += bool(r.get("noPairing"))
@@ -315,7 +316,7 @@ def data_checks(site):
                     odd.append(f"{r['name']} ({r['_country']}, {r['stars']} star, about ${round(usd)})")
     stale = [r["name"] for r in live if r.get("dinner") is not None and "still to be added" in (r.get("dinnerNote") or "")]
     by_gap = {k: sorted(((g[k], c, g["starred"]) for c, g in gaps.items() if g[k]), reverse=True)[:8]
-              for k in ("no_price", "no_dinner_price", "no_chef", "no_rating", "no_hours", "stars_from_guide_site")}
+              for k in ("no_price", "no_dinner_price", "no_chef", "no_place_id", "no_hours", "stars_from_guide_site")}
     return {"restaurants": len(rows), "starred": len(live), "totals": dict(total),
             "worst_countries": {k: [f"{c}: {n} of {s}" for n, c, s in v] for k, v in by_gap.items()},
             "duplicates": [v for v in seen.values() if len(v) > 1], "odd_prices": odd, "stale_notes": stale,

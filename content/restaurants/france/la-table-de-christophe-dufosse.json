@@ -6,8 +6,6 @@
   "address": "1098 rue de Lillers, 62350 Busnes",
   "stars": 2,
   "cuisine": "Modern European",
-  "rating": 4.4,
-  "reviews": 69,
   "dinner": 230,
   "dinnerType": "menu",
   "dinnerNote": "Au détour des Saisons menu, 7 courses (other menus from €130)",
@@ -50,5 +48,14 @@
     ],
     "note": "A 28-room château hotel with a spa in the grounds, run by the chef and his wife.",
     "checked": "2026-10-23"
-  }
+  },
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 83.5,
+      "url": "https://www.laliste.com/places/christophe-dufosse-le-chateau-de-beaulieu-busnes-fr"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

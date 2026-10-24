@@ -4,8 +4,6 @@
   "address": "Largo da Academia Nacional de Belas Artes 14, 1200-005, Lisbon",
   "stars": 1,
   "cuisine": "Creative",
-  "rating": 4.7,
-  "reviews": 321,
   "dinnerType": "menu",
   "dinner": 185,
   "dinnerNote": "Tasting menu (other menus from €150)",
@@ -30,5 +28,14 @@
   "lunchNotePt": "O mesmo menu ao almoço · sábado",
   "lunchWine": 100,
   "lunchSourceType": "site",
-  "lunchSource": "https://www.epur.pt/"
+  "lunchSource": "https://www.epur.pt/",
+  "rankings": [
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 533,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

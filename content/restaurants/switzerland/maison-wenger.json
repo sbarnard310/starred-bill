@@ -5,8 +5,6 @@
   "address": "Rue de la Gare 2, 2340, Le Noirmont",
   "stars": 2,
   "cuisine": "French",
-  "rating": 4.8,
-  "reviews": 413,
   "dinnerType": "menu",
   "dinner": 310,
   "dinnerNote": "Tasting menu (other menus from CHF 200)",
@@ -39,5 +37,14 @@
   "photoSourceType": "commons",
   "photoWidth": 667,
   "photoHeight": 1000,
-  "photoChecked": "2026-10-13"
+  "photoChecked": "2026-10-13",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 92.5,
+      "url": "https://www.laliste.com/places/maison-wenger-le-noirmont-ch"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

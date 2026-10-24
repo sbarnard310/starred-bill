@@ -6,8 +6,6 @@
   "address": "Via Boncompagni 31, Rome, 00187",
   "stars": 1,
   "cuisine": "Fusion",
-  "rating": 4.7,
-  "reviews": 212,
   "dinner": 190,
   "dinnerType": "menu",
   "dinnerNote": "Tracce Correnti menu (Tracce Indelebili €150)",
@@ -32,5 +30,14 @@
     "kosher"
   ],
   "chef": "Roy Caceres",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "rankings": [
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 486,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

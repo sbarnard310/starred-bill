@@ -6,8 +6,6 @@
   "address": "Rue du Barri, 06360 Èze",
   "stars": 2,
   "cuisine": "Creative",
-  "rating": 4.5,
-  "reviews": 208,
   "dinner": 350,
   "dinnerType": "menu",
   "dinnerNote": "Longest tasting menu (other menus from €200)",
@@ -53,5 +51,14 @@
     ],
     "note": "A hilltop hotel in Èze with 45 rooms and suites.",
     "checked": "2026-10-23"
-  }
+  },
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 91,
+      "url": "https://www.laliste.com/places/la-chevre-dor-eze-fr"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

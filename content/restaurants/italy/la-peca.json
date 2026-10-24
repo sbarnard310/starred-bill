@@ -5,8 +5,6 @@
   "address": "Via Alberto Giovanelli 2, 36045, Lonigo",
   "stars": 2,
   "cuisine": "Modern European",
-  "rating": 4.8,
-  "reviews": 483,
   "dinnerType": "menu",
   "dinner": 235,
   "dinnerNote": "Tasting menu (other menus from €130)",
@@ -26,5 +24,14 @@
   ],
   "chef": "Nicola Portinari",
   "chefSource": "site",
-  "dietsManual": true
+  "dietsManual": true,
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 93,
+      "url": "https://www.laliste.com/places/la-peca-lonigo-it"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

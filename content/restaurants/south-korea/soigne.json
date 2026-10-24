@@ -7,8 +7,6 @@
   "address": "#201, 2F, Sinsa square, 652 Gangnam-daero, Gangnam-gu, Seoul",
   "stars": 2,
   "cuisine": "Modern",
-  "rating": 4.5,
-  "reviews": 468,
   "dinner": 380000,
   "dinnerType": "menu",
   "dinnerNote": "Dinner course",
@@ -29,5 +27,26 @@
   "placeId": "ChIJIU2RrnahfDURNvCJDhODupM",
   "michelinId": "512018",
   "chef": "Jun Lee",
-  "chefSource": "press"
+  "chefSource": "press",
+  "rankings": [
+    {
+      "list": "asias-50-best",
+      "year": 2026,
+      "rank": 74,
+      "url": "https://www.the50.com/restaurants/best-in-asia/list/51-100"
+    },
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 88.5,
+      "url": "https://www.laliste.com/places/soigne-kr"
+    },
+    {
+      "list": "oad-asia",
+      "year": 2026,
+      "rank": 53,
+      "url": "https://www.oadguides.com/lists/asia/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

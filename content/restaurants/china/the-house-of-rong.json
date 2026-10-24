@@ -4,8 +4,6 @@
   "address": "170 Nanyang Road, Jingan, Shanghai",
   "stars": 2,
   "cuisine": "Zhejiang",
-  "rating": 4.3,
-  "reviews": 8,
   "dinnerType": "spend",
   "dinner": 1996,
   "dinnerNote": "Typical spend",
@@ -19,5 +17,14 @@
   "dinnerNoteZhs": "人均消费",
   "lunchNote": "Open for lunch",
   "lunchNoteZhs": "供应午餐",
-  "nameZhs": "荣府宴"
+  "nameZhs": "荣府宴",
+  "rankings": [
+    {
+      "list": "oad-asia",
+      "year": 2026,
+      "rank": 126,
+      "url": "https://www.oadguides.com/lists/asia/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

@@ -9,8 +9,6 @@
   "addressJa": "〒160-0007 東京都新宿区荒木町 2-14",
   "stars": 1,
   "cuisine": "Japanese",
-  "rating": 4.5,
-  "reviews": 125,
   "dinner": 22000,
   "dinnerType": "menu",
   "dinnerNote": "Crab course",
@@ -27,5 +25,14 @@
   "placeId": "ChIJhUiHj_KMGGARITbHliNHtTc",
   "michelinId": "1207231",
   "chef": "Kunihiko Kato",
-  "chefSource": "press"
+  "chefSource": "press",
+  "rankings": [
+    {
+      "list": "oad-japan",
+      "year": 2026,
+      "rank": 760,
+      "url": "https://www.oadguides.com/lists/japan/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

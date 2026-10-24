@@ -5,8 +5,6 @@
   "address": "3540 Main Hwy., Miami, FL 33133",
   "stars": 1,
   "cuisine": "Modern American",
-  "rating": 4.4,
-  "reviews": 994,
   "dinner": 165,
   "dinnerType": "menu",
   "dinnerNote": "Tasting menu",
@@ -22,5 +20,14 @@
   "placeId": "ChIJEV1uzNq32YgReJLG9ncPUQQ",
   "michelinId": "1197759",
   "chef": "Michael Beltran",
-  "chefSource": "site"
+  "chefSource": "site",
+  "rankings": [
+    {
+      "list": "oad-north-america",
+      "year": 2026,
+      "rank": 455,
+      "url": "https://www.oadguides.com/lists/north-america/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

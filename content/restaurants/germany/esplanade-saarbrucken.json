@@ -5,8 +5,6 @@
   "address": "Nauwieserstraße 5, 66111, Saarbrücken",
   "stars": 2,
   "cuisine": "Classic",
-  "rating": 4.6,
-  "reviews": 365,
   "dinnerType": "menu",
   "dinner": 254,
   "dinnerNote": "Tasting menu (other menus from €72)",
@@ -21,5 +19,14 @@
   "chefSource": "site",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 72 €)",
   "lunchNote": "Open for lunch · Wed–Sat",
-  "lunchNoteDe": "Mittags geöffnet · Mi–Sa"
+  "lunchNoteDe": "Mittags geöffnet · Mi–Sa",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 85,
+      "url": "https://www.laliste.com/places/esplanade-saarbrucken-de"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

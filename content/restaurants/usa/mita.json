@@ -9,8 +9,6 @@
   "changeNote": "Gained its first star",
   "changeNoteZh": "首度摘星",
   "changeDate": "2024-12",
-  "rating": 4.6,
-  "reviews": 229,
   "dinner": 150,
   "dinnerType": "menu",
   "dinnerNote": "Tasting menu",
@@ -31,5 +29,14 @@
     "gluten-free"
   ],
   "chef": "Tatiana Mora and Miguel Guerra",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "rankings": [
+    {
+      "list": "oad-north-america",
+      "year": 2026,
+      "rank": 386,
+      "url": "https://www.oadguides.com/lists/north-america/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

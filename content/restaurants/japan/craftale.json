@@ -9,8 +9,6 @@
   "addressJa": "〒153-0042 東京都目黒区青葉台 1-16-11 2F",
   "stars": 1,
   "cuisine": "French",
-  "rating": 4.9,
-  "reviews": 197,
   "dinner": 16500,
   "dinnerType": "menu",
   "dinnerNote": "Dinner course, tax included, plus 10% service (¥18,000 from 1 Nov 2026)",
@@ -30,5 +28,14 @@
   "placeId": "ChIJ98Cj6omLGGARJJAjE1PmYcI",
   "michelinId": "1193934",
   "chef": "Shinya Otsuchihashi",
-  "chefSource": "press"
+  "chefSource": "press",
+  "rankings": [
+    {
+      "list": "oad-japan",
+      "year": 2026,
+      "rank": 701,
+      "url": "https://www.oadguides.com/lists/japan/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

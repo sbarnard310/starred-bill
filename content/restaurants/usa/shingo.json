@@ -5,8 +5,6 @@
   "address": "112 Alhambra Cir., Coral Gables, FL 33134",
   "stars": 1,
   "cuisine": "Japanese",
-  "rating": 4.8,
-  "reviews": 160,
   "dinner": 225,
   "dinnerType": "menu",
   "dinnerNote": "Omakase",
@@ -21,5 +19,14 @@
   "placeId": "ChIJu5d4Dui32YgRs6qW_4aQOWM",
   "michelinId": "1204469",
   "chef": "Shingo Akikuni",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "rankings": [
+    {
+      "list": "oad-north-america",
+      "year": 2026,
+      "rank": 271,
+      "url": "https://www.oadguides.com/lists/north-america/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

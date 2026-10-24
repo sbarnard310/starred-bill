@@ -6,8 +6,6 @@
   "address": "Grand Velas Riviera Maya, Carretera Cancún–Tulum km 62, Playa del Carmen",
   "stars": 1,
   "cuisine": "Creative",
-  "rating": 4.8,
-  "reviews": 188,
   "dinner": 2800,
   "dinnerType": "menu",
   "dinnerNote": "Tasting menu for non-resort guests, plus 15% service; dinner only",
@@ -27,5 +25,14 @@
     "gluten-free"
   ],
   "chef": "Nahúm Velasco",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 92.5,
+      "url": "https://www.laliste.com/places/cocina-de-autor-playa-del-carmen-mx"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

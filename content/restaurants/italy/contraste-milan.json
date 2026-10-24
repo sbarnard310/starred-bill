@@ -6,8 +6,6 @@
   "address": "Via Giuseppe Meda 2, Milan, 20136",
   "stars": 1,
   "cuisine": "Modern European",
-  "rating": 4.7,
-  "reviews": 1073,
   "dinner": 180,
   "dinnerType": "menu",
   "dinnerNote": "Riflesso or Riflessioni menu",
@@ -26,5 +24,20 @@
   "placeId": "ChIJ_ZtXxwnEhkcRcjJYx_eS3Ak",
   "michelinId": "479517",
   "chef": "Matias Perdomo",
-  "chefSource": "press"
+  "chefSource": "press",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 82.5,
+      "url": "https://www.laliste.com/places/contraste-milano-it"
+    },
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 96,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

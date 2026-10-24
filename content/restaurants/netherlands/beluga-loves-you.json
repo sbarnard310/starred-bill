@@ -4,8 +4,6 @@
   "address": "Plein 1992 nr 12, 6221 JP, Maastricht",
   "stars": 1,
   "cuisine": "Creative",
-  "rating": 4.7,
-  "reviews": 631,
   "dinnerType": "menu",
   "dinner": 165,
   "dinnerNote": "Tasting menu",
@@ -30,5 +28,14 @@
   "dinnerNoteNl": "Proeverijmenu",
   "lunchNoteNl": "Lunchmenu",
   "chef": "Servais Tielman",
-  "chefSource": "site"
+  "chefSource": "site",
+  "rankings": [
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 735,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

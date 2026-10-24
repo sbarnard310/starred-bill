@@ -10,8 +10,6 @@
   "addressJa": "〒104-0045 東京都中央区築地 3-16-9 B1F",
   "stars": 1,
   "cuisine": "Tempura",
-  "rating": 4.4,
-  "reviews": 117,
   "dinner": 33600,
   "dinnerType": "menu",
   "dinnerNote": "Omakase course",
@@ -26,5 +24,14 @@
   "placeId": "ChIJG1lyFt-LGGARncAz9dvAwlg",
   "michelinId": "1194019",
   "chef": "Yoshiaki Shimizu",
-  "chefSource": "press"
+  "chefSource": "press",
+  "rankings": [
+    {
+      "list": "oad-japan",
+      "year": 2026,
+      "rank": 246,
+      "url": "https://www.oadguides.com/lists/japan/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

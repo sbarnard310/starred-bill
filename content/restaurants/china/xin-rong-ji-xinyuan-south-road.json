@@ -4,8 +4,6 @@
   "address": "1F, East Tower, Genesis Beijing, 8 Xinyuan South Road, Chaoyang, Beijing",
   "stars": 3,
   "cuisine": "Zhejiang",
-  "rating": 4.4,
-  "reviews": 67,
   "dinnerType": "spend",
   "dinner": 1017,
   "dinnerNote": "Typical spend",
@@ -19,5 +17,20 @@
   "lunchNote": "Open for lunch",
   "lunchNoteZhs": "供应午餐",
   "nameZhs": "新荣记（新源南路）",
-  "website": "https://www.xinrongji.com/"
+  "website": "https://www.xinrongji.com/",
+  "rankings": [
+    {
+      "list": "asias-50-best",
+      "year": 2026,
+      "rank": 84,
+      "url": "https://www.the50.com/restaurants/best-in-asia/list/51-100"
+    },
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 95,
+      "url": "https://www.laliste.com/places/xin-rongji-xinyuan-south-road-cn"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

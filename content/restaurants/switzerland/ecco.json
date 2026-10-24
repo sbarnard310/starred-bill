@@ -11,8 +11,6 @@
   "changeNoteDe": "Erhielt einen zweiten Stern",
   "changeNoteFr": "Obtient sa deuxième étoile",
   "changeNoteIt": "Ha ottenuto la seconda stella",
-  "rating": 4.9,
-  "reviews": 82,
   "dinnerType": "menu",
   "dinner": 265,
   "dinnerNote": "Tasting menu (other menus from CHF 245)",
@@ -38,5 +36,14 @@
   "lunchNoteFr": "Uniquement le soir",
   "lunchNoteIt": "Solo a cena",
   "dietsManual": true,
-  "notice": "Closed for the season since 18 October 2026 (its hotel’s website)"
+  "notice": "Closed for the season since 18 October 2026 (its hotel’s website)",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 93,
+      "url": "https://www.laliste.com/places/ecco-ascona-ascona-ch"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

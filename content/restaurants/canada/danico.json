@@ -4,8 +4,6 @@
   "address": "440 College St., Toronto, M5T 1T3",
   "stars": 1,
   "cuisine": "Italian",
-  "rating": 4.6,
-  "reviews": 530,
   "dinnerType": "menu",
   "dinner": 240,
   "dinnerNote": "Signature tasting menu",
@@ -24,5 +22,14 @@
     "gluten-free"
   ],
   "chef": "Daniele Corona",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "rankings": [
+    {
+      "list": "oad-north-america",
+      "year": 2026,
+      "rank": 603,
+      "url": "https://www.oadguides.com/lists/north-america/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

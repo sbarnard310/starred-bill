@@ -5,8 +5,6 @@
   "address": "Kosančićev Venac 29, 11000, Belgrade",
   "stars": 1,
   "cuisine": "Modern European",
-  "rating": 4.7,
-  "reviews": 764,
   "dinnerType": "menu",
   "dinner": 20500,
   "dinnerNote": "Tasting menu (other menus from RSD 14,500)",
@@ -30,5 +28,14 @@
   "dinnerNoteSr": "Дегустациони мени (остали менији од RSD 14,500)",
   "areaSr": "Београд",
   "lunchNoteSr": "Мени за ручак",
-  "dietsManual": true
+  "dietsManual": true,
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 82,
+      "url": "https://www.laliste.com/places/langouste-beograd-rs"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

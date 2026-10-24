@@ -15,8 +15,6 @@
   "changeNoteZh": "晉升二星",
   "changeNoteJa": "二つ星に昇格",
   "changeDate": "2025-09",
-  "rating": 4.4,
-  "reviews": 290,
   "dinner": 36300,
   "dinnerType": "menu",
   "dinnerNote": "Omakase of small dishes and nigiri, ¥33,000 before tax; service extra",
@@ -68,5 +66,14 @@
   "groups": "Private rooms cost an extra ¥5,000 at lunch and ¥8,000 at dinner, unless guests are moved there because the counter and tables are full.",
   "children": "Parties with children aged 14 or under must book a private room; the children may order à la carte instead of a course.",
   "infoSource": "https://www.byfood.com/restaurant/sushi-shin-1173",
-  "infoChecked": "2026-10-13"
+  "infoChecked": "2026-10-13",
+  "rankings": [
+    {
+      "list": "oad-japan",
+      "year": 2026,
+      "rank": 407,
+      "url": "https://www.oadguides.com/lists/japan/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

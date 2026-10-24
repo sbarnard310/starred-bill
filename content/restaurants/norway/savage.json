@@ -4,8 +4,6 @@
   "address": "Nedre Slottsgate 2, 0153, Oslo",
   "stars": 1,
   "cuisine": "Creative",
-  "rating": 4.6,
-  "reviews": 143,
   "dinnerType": "menu",
   "dinner": 2500,
   "dinnerNote": "Tasting menu (other menus from NOK 1,550)",
@@ -27,5 +25,14 @@
   "dinnerNoteNb": "Smaksmeny (andre menyer fra 1 550 kr)",
   "noLunch": true,
   "lunchNote": "Dinner only",
-  "lunchNoteNb": "Kun middag"
+  "lunchNoteNb": "Kun middag",
+  "rankings": [
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 358,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

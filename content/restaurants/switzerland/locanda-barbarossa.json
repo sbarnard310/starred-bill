@@ -5,8 +5,6 @@
   "address": "via Muraccio 142, 6612, Ascona",
   "stars": 1,
   "cuisine": "Mediterranean",
-  "rating": 4.7,
-  "reviews": 22,
   "dinnerType": "menu",
   "dinner": 150,
   "dinnerNote": "Tasting menu (other menus from CHF 125)",
@@ -34,5 +32,14 @@
   "lunchSourceType": "site",
   "lunchSource": "https://www.castellodelsole.com/media/ingkgyes/menu-sapori-del-nostro-orto-autunno_fr_en.pdf",
   "chef": "Mattias Roock",
-  "chefSource": "press"
+  "chefSource": "press",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 87.5,
+      "url": "https://www.laliste.com/places/locanda-barbarossa-hotel-castello-del-sole-ascona-ch"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

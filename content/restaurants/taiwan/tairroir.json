@@ -8,8 +8,6 @@
   "addressZh": "中山區樂群三路299號6樓",
   "stars": 3,
   "cuisine": "Taiwanese",
-  "rating": 4.2,
-  "reviews": 1748,
   "dinner": 8880,
   "dinnerType": "menu",
   "dinnerNote": "Seasonal dinner menu",
@@ -34,5 +32,20 @@
   ],
   "chef": "Kai Ho",
   "chefSource": "site",
-  "dietsManual": true
+  "dietsManual": true,
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 95,
+      "url": "https://www.laliste.com/places/tairroir-tw"
+    },
+    {
+      "list": "oad-asia",
+      "year": 2026,
+      "rank": 132,
+      "url": "https://www.oadguides.com/lists/asia/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

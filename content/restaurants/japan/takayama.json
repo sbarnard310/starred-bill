@@ -6,8 +6,6 @@
   "address": "2F, Good Nature Station, 318-6 Inaricho, Shimogyo-ku, 600-8022, Kyoto",
   "stars": 1,
   "cuisine": "Italian",
-  "rating": 4.8,
-  "reviews": 144,
   "dinnerType": "menu",
   "dinnerNote": "Cheapest dinner course (others up to ¥38,000); usually including tax and service",
   "sourceType": "press",
@@ -29,5 +27,14 @@
     "gluten-free"
   ],
   "chef": "Tadashi Takayama",
-  "chefSource": "press"
+  "chefSource": "press",
+  "rankings": [
+    {
+      "list": "oad-japan",
+      "year": 2026,
+      "rank": 495,
+      "url": "https://www.oadguides.com/lists/japan/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

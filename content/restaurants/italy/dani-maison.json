@@ -5,8 +5,6 @@
   "address": "Via Montetignuso 4, 80077, Ischia",
   "stars": 2,
   "cuisine": "Modern European",
-  "rating": 4.7,
-  "reviews": 245,
   "dinnerType": "menu",
   "dinner": 280,
   "sourceType": "site",
@@ -26,5 +24,20 @@
   "chefSource": "site",
   "dinnerNote": "Ci pensa lo Chef surprise tasting menu (also à la carte)",
   "dinnerNoteIt": "Ci pensa lo Chef, menu degustazione a sorpresa (anche alla carta)",
-  "notice": "Closed for the season; reopens on 22 April 2027 (its website, October 2026)"
+  "notice": "Closed for the season; reopens on 22 April 2027 (its website, October 2026)",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 94,
+      "url": "https://www.laliste.com/places/dani-maison-ischia-it"
+    },
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 507,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

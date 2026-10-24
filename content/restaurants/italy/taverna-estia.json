@@ -5,8 +5,6 @@
   "address": "Via Guido De Ruggiero 108, 80031, Brusciano",
   "stars": 2,
   "cuisine": "Modern European",
-  "rating": 4.6,
-  "reviews": 471,
   "dinnerType": "menu",
   "dinner": 250,
   "dinnerNote": "Tasting menu (other menus from €200)",
@@ -31,5 +29,14 @@
   ],
   "chef": "Francesco Sposito",
   "chefSource": "site",
-  "dietsManual": true
+  "dietsManual": true,
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 90,
+      "url": "https://www.laliste.com/places/taverna-estia-brusciano-it"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

@@ -6,8 +6,6 @@
   "address": "Viale Aventino 121, Rome, 00153",
   "stars": 1,
   "cuisine": "Creative",
-  "rating": 4.3,
-  "reviews": 690,
   "dinner": 195,
   "dinnerType": "menu",
   "dinnerNote": "Empatia tasting menu, 10 courses (Percezione €170; I Romanissimi €150)",
@@ -30,5 +28,14 @@
   ],
   "chef": "Marco Martini",
   "chefSource": "press",
-  "dietsManual": true
+  "dietsManual": true,
+  "rankings": [
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 513,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

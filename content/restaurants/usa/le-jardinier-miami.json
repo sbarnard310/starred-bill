@@ -5,8 +5,6 @@
   "address": "151 N.E. 41st St., Ste. 135, Miami, FL 33137",
   "stars": 1,
   "cuisine": "French",
-  "rating": 4.2,
-  "reviews": 758,
   "dinner": 140,
   "dinnerType": "menu",
   "sourceType": "site",
@@ -29,5 +27,14 @@
   "wine": 150,
   "lunchWine": 150,
   "dinnerNote": "Seasonal Expression menu, 5 courses (also à la carte)",
-  "dietsManual": true
+  "dietsManual": true,
+  "rankings": [
+    {
+      "list": "oad-north-america",
+      "year": 2026,
+      "rank": 353,
+      "url": "https://www.oadguides.com/lists/north-america/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

@@ -5,8 +5,6 @@
   "address": "L'Auberge Carmel, Monte Verde at 7th Ave., Carmel-by-the-Sea, 93921",
   "stars": 2,
   "cuisine": "Modern American",
-  "rating": 4.7,
-  "reviews": 240,
   "dinnerType": "menu",
   "dinner": 285,
   "dinnerNote": "Tasting menu (longer menus to $395), plus 22% service",
@@ -21,5 +19,20 @@
   "placeId": "ChIJZ7svYhXmjYARp68gV6eBnX4",
   "michelinId": "559386",
   "chef": "Justin Cogley",
-  "chefSource": "site"
+  "chefSource": "site",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 88.5,
+      "url": "https://www.laliste.com/places/aubergine-carmel-by-the-sea-us"
+    },
+    {
+      "list": "oad-north-america",
+      "year": 2026,
+      "rank": 36,
+      "url": "https://www.oadguides.com/lists/north-america/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

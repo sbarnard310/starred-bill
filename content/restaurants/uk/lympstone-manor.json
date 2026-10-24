@@ -5,8 +5,6 @@
   "address": "Courtlands Lane, Lympstone, EX8 3NZ",
   "stars": 1,
   "cuisine": "French",
-  "rating": 4.7,
-  "reviews": 764,
   "dinner": 265,
   "dinnerType": "menu",
   "dinnerNote": "Signature tasting menu, 8 courses (Estuary menu £250)",
@@ -96,7 +94,7 @@
       "url": "https://www.laliste.com/places/lympstone-manor-exmouth-gb"
     }
   ],
-  "rankingsChecked": "2026-10-13",
+  "rankingsChecked": "2026-10-24",
   "photo": "lympstone-manor.jpg",
   "photoAlt": "The white Georgian front of Lympstone Manor in Devon, across its lawn",
   "photoCredit": "Maypm",

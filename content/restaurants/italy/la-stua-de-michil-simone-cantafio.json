@@ -5,8 +5,6 @@
   "address": "Strada Col Alt 105, 39033, Corvara in Badia",
   "stars": 1,
   "cuisine": "Creative",
-  "rating": 4.7,
-  "reviews": 167,
   "dinnerType": "menu",
   "dinner": 195,
   "dinnerNote": "Tasting menu (other menus from €65)",
@@ -40,5 +38,14 @@
     ],
     "note": "The hotel reopens for winter on 4 December.",
     "checked": "2026-10-23"
-  }
+  },
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 87.5,
+      "url": "https://www.laliste.com/places/la-stua-de-michil-simone-cantafio-corvara-in-badia-it"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

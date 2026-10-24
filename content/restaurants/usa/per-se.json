@@ -6,8 +6,6 @@
   "address": "10 Columbus Circle, New York, NY, 10019",
   "stars": 3,
   "cuisine": "Modern American",
-  "rating": 4.5,
-  "reviews": 2154,
   "dinner": 425,
   "dinnerType": "menu",
   "dinnerNote": "Chef's tasting, 9 courses; service included (Salon menu $285)",
@@ -45,5 +43,20 @@
   "photoWidth": 800,
   "photoHeight": 535,
   "photoChecked": "2026-10-13",
-  "dietsManual": true
+  "dietsManual": true,
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 92.5,
+      "url": "https://www.laliste.com/places/per-se-new-york-us"
+    },
+    {
+      "list": "oad-north-america",
+      "year": 2026,
+      "rank": 29,
+      "url": "https://www.oadguides.com/lists/north-america/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

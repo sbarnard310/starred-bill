@@ -5,8 +5,6 @@
   "address": "3F, 154 Dalmaji-gil 65 beon-gil, Haeundae-gu, 48576, Busan",
   "stars": 1,
   "cuisine": "Modern",
-  "rating": 4.5,
-  "reviews": 63,
   "dinnerType": "menu",
   "dinnerNote": "Dinner course",
   "sourceType": "press",
@@ -30,5 +28,14 @@
   "lunch": 125000,
   "lunchType": "menu",
   "lunchSourceType": "press",
-  "lunchSource": "https://app.catchtable.co.kr/ct/shop/palate"
+  "lunchSource": "https://app.catchtable.co.kr/ct/shop/palate",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 79.5,
+      "url": "https://www.laliste.com/places/palate-kr"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

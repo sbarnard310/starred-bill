@@ -5,8 +5,6 @@
   "address": "Pujada Estació del Nord 205, 03824, Cocentaina",
   "stars": 2,
   "cuisine": "Mediterranean",
-  "rating": 4.6,
-  "reviews": 1045,
   "dinnerType": "menu",
   "dinner": 175,
   "dinnerNote": "Tasting menu (other menus from €135)",
@@ -22,5 +20,20 @@
   "placeId": "ChIJcTrsHV6PYQ0R6lS93LclZQc",
   "michelinId": "219581",
   "chef": "Kiko Moya",
-  "chefSource": "site"
+  "chefSource": "site",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 94,
+      "url": "https://www.laliste.com/places/lescaleta-cocentaina-es"
+    },
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 127,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

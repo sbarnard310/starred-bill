@@ -9,8 +9,6 @@
   "addressJa": "〒103-0013 東京都中央区日本橋人形町 2-9-7",
   "stars": 1,
   "cuisine": "Tempura",
-  "rating": 4.4,
-  "reviews": 71,
   "dinnerType": "spend",
   "lat": 35.686176,
   "lng": 139.784022,
@@ -28,5 +26,14 @@
   "lunchSourceType": "press",
   "lunchSource": "https://tabelog.com/en/tokyo/A1302/A130204/13248312/",
   "lunchNote": "Tabelog range ¥20,000–29,999",
-  "lunchNoteJa": "食べログの価格帯 20,000～29,999円"
+  "lunchNoteJa": "食べログの価格帯 20,000～29,999円",
+  "rankings": [
+    {
+      "list": "oad-japan",
+      "year": 2026,
+      "rank": 546,
+      "url": "https://www.oadguides.com/lists/japan/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

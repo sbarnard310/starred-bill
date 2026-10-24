@@ -10,8 +10,6 @@
   "changeNote": "Gained a second star",
   "changeNoteIt": "Ha ottenuto la seconda stella",
   "changeDate": "2024-11",
-  "rating": 4.6,
-  "reviews": 42,
   "dinner": 260,
   "dinnerType": "menu",
   "dinnerNote": "Chef's menu (shorter menu €220; vegetarian €210)",
@@ -49,5 +47,14 @@
     ],
     "note": "A Rosewood resort in a medieval estate near Montalcino; hotel suites and villas close for the winter in January to mid-March 2027.",
     "checked": "2026-10-23"
-  }
+  },
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 87.5,
+      "url": "https://www.laliste.com/places/campo-del-drago-rosewood-castiglion-del-bosco-castiglion-del-bosco-it"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

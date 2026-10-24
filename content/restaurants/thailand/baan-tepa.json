@@ -6,8 +6,6 @@
   "address": "561 Ramkhamhaeng Road, Hua Mak, Bang Kapi, Bangkok",
   "stars": 2,
   "cuisine": "Thai",
-  "rating": 4.7,
-  "reviews": 446,
   "dinner": 6200,
   "dinnerType": "menu",
   "dinnerNote": "Tasting menu, 7 courses, plus service and VAT (++)",
@@ -77,5 +75,5 @@
       "url": "https://www.oadguides.com/lists/asia/top-restaurants/2026"
     }
   ],
-  "rankingsChecked": "2026-10-13"
+  "rankingsChecked": "2026-10-24"
 }

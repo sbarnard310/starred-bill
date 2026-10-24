@@ -5,8 +5,6 @@
   "address": "Aldura Aldea 20 - Otzazulueta Baserria, Errenteria, 20100",
   "stars": 2,
   "cuisine": "Creative",
-  "rating": 3.7,
-  "reviews": 1227,
   "dinner": 319,
   "dinnerType": "menu",
   "dinnerNote": "Single menu, 25–30 servings; open May–October",
@@ -38,5 +36,26 @@
   "photoWidth": 1000,
   "photoHeight": 666,
   "photoChecked": "2026-10-13",
-  "notice": "Closed for the season from 26 October 2026; reopens in spring 2027 (its website, October 2026)"
+  "notice": "Closed for the season from 26 October 2026; reopens in spring 2027 (its website, October 2026)",
+  "rankings": [
+    {
+      "list": "worlds-50-best",
+      "year": 2025,
+      "rank": 87,
+      "url": "https://www.the50.com/restaurants/best-in-the-world/list/51-100"
+    },
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 75,
+      "url": "https://www.laliste.com/places/mugaritz-errenteria-es"
+    },
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 109,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

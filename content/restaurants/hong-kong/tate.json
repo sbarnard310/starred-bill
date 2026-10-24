@@ -8,8 +8,6 @@
   "addressZh": "香港上環樂古道68號",
   "stars": 2,
   "cuisine": "Creative",
-  "rating": 4.6,
-  "reviews": 263,
   "dinner": 2880,
   "dinnerType": "menu",
   "dinnerNote": "Porcelain tasting menu (shorter \"Celadon\" HK$2,280)",
@@ -34,5 +32,20 @@
   ],
   "chef": "Vicky Lau",
   "chefSource": "site",
-  "dietsManual": true
+  "dietsManual": true,
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 76.5,
+      "url": "https://www.laliste.com/places/tate-dining-room-hk"
+    },
+    {
+      "list": "oad-asia",
+      "year": 2026,
+      "rank": 81,
+      "url": "https://www.oadguides.com/lists/asia/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

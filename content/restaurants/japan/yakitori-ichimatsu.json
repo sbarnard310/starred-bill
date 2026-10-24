@@ -6,8 +6,6 @@
   "address": "1-5-1 Dojima, Kita-ku, 530-0003, Osaka",
   "stars": 1,
   "cuisine": "Yakitori",
-  "rating": 4.4,
-  "reviews": 334,
   "dinnerType": "menu",
   "dinnerNote": "Hinai chicken course (pairing of five sakes and wines ¥5,500 more); tax included",
   "sourceType": "press",
@@ -43,5 +41,14 @@
   "children": "Children are not admitted.",
   "duration": "About two hours: sittings at 4pm and 6:30pm, plus 9pm on Fridays and Saturdays.",
   "infoSource": "https://omakaseje.com/restaurants/ks649628",
-  "infoChecked": "2026-10-13"
+  "infoChecked": "2026-10-13",
+  "rankings": [
+    {
+      "list": "oad-japan",
+      "year": 2026,
+      "rank": 352,
+      "url": "https://www.oadguides.com/lists/japan/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

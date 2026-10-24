@@ -7,8 +7,6 @@
   "address": "3 rue de Prague, 75012, Paris",
   "stars": 2,
   "cuisine": "Creative",
-  "rating": 4.3,
-  "reviews": 499,
   "dinner": 480,
   "dinnerType": "menu",
   "dinnerNote": "Couleur du jour menu, 10–14 dishes",
@@ -40,5 +38,26 @@
   },
   "notice": "Closing for good on 22 December 2026, as Bruno Verjus announced on 8 September 2026 (Gault&Millau)",
   "noticeFr": "Fermeture définitive le 22 décembre 2026, annoncée par Bruno Verjus le 8 septembre 2026 (Gault&Millau)",
-  "closes": "2026-12-22"
+  "closes": "2026-12-22",
+  "rankings": [
+    {
+      "list": "worlds-50-best",
+      "year": 2025,
+      "rank": 8,
+      "url": "https://www.the50.com/restaurants/best-in-the-world/list/1-50"
+    },
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 92.5,
+      "url": "https://www.laliste.com/places/table-bruno-verjus-paris-fr"
+    },
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 34,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

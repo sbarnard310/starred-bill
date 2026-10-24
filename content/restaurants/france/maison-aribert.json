@@ -6,8 +6,6 @@
   "address": "280 allée du Jeune-Bayard, 38410 Uriage-les-Bains",
   "stars": 2,
   "cuisine": "Creative",
-  "rating": 4.6,
-  "reviews": 1003,
   "dinner": 250,
   "dinnerType": "menu",
   "dinnerNote": "Hauts plateaux menu: vegetables, fish and meat (Sentiers alpins €210)",
@@ -70,5 +68,14 @@
     "url": "https://maisonaribert.com/hotel/les-chambres/",
     "note": "Five guest rooms in the chef’s own house in the park at Uriage-les-Bains.",
     "checked": "2026-10-23"
-  }
+  },
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 87.5,
+      "url": "https://www.laliste.com/places/maison-aribert-saint-martin-duriage-fr"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

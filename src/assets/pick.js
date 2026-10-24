@@ -413,11 +413,13 @@ function restart() {
 }
 
 // ---------- The picks ----------
-const bayes = (r) => r.rating ? (r.rating * (r.reviews || 0) + 4.4 * 30) / ((r.reviews || 0) + 30) : 4.4;
-const scoreOf = (r) => r.stars + (bayes(r) - 4.4) * 2.5 + (loadWishlist().includes(r.id) ? 0.6 : 0) + (r.change === "new" || r.change === "up" ? 0.15 : 0);
+// Best match: most stars, then the critics (`ac`, critics' points from acclaim() in build.py: a place on The World's
+// 50 Best, OAD or La Liste), the wishlist, members' score once five have scored it, and a new or added star.
+const scoreOf = (r) => r.stars + Math.min(r.ac || 0, 100) / 100 + (loadWishlist().includes(r.id) ? 0.6 : 0) +
+  (r.memberScore ? (r.memberScore[0] - 4) * 0.3 : 0) + (r.change === "new" || r.change === "up" ? 0.15 : 0);
 const STAR_WEIGHT = { 1: 1, 2: 1.8, 3: 2.6 };
 const perStar = (r) => bill(r).total / STAR_WEIGHT[r.stars];
-const ratingText = (r) => r.rating ? r.rating.toFixed(1) + " on Google" + (r.reviews ? " from " + (fewReviews(r) ? "only " : "") + plural(r.reviews, "review") : "") : "";
+const criticsText = (r) => r.critics || "";  // its best-known place on a critics' list, e.g. "No. 13 on North America’s 50 Best Restaurants 2026"
 const mealWord = (b) => b.meal === "lunch" ? "lunch" : "dinner";
 
 function choose(list) {
@@ -435,15 +437,15 @@ function choose(list) {
 function reason(kind, r, ctx) {
   const b = bill(r);
   if (kind === "best") {
-    if (ctx.n === 1) return "The only restaurant that fits all your answers" + (r.rating ? ": " + ratingText(r) + "." : ".");
-    return (loadWishlist().includes(r.id) ? "On your wishlist, and the " : "The ") + "best-rated " + STAR_WORDS[r.stars] + " " + (ctx.whereShort ? ctx.whereShort + " " : "") +
-      "that fits your answers" + (r.rating ? ": " + ratingText(r) + "." : ".");
+    if (ctx.n === 1) return "The only restaurant that fits all your answers" + (r.critics ? ": " + criticsText(r) + "." : ".");
+    return (loadWishlist().includes(r.id) ? "On your wishlist, and the " : "The ") + (r.ac ? "most acclaimed " : "top ") + STAR_WORDS[r.stars] + " " + (ctx.whereShort ? ctx.whereShort + " " : "") +
+      "that fits your answers" + (r.critics ? ": " + criticsText(r) + "." : ".");
   }
   if (kind === "value") return (r.stars === 1 ? "A star" : r.stars === 2 ? "Two stars" : "Three stars") + " for " + (b.est ? "about " : "") + money(b.total, ask.cur) + (ask.wine ? " with wine" : "") + " at " + mealWord(b) +
     ": the least per star of your " + plural(ctx.n, "match", "matches") + ".";
   if (ctx.wildWhy === "rising") return r.change === "new" ? "A wildcard: newly starred in the latest MICHELIN Guide." : "A wildcard: promoted to " + (r.stars === 3 ? "three stars" : "two stars") + " in the latest MICHELIN Guide.";
-  if (ctx.wildWhy === "different") return "A wildcard: something different, " + (r.cuisine ? cuisineMid(r.cuisine) : moodName(moodOf(r)).toLowerCase()) + (r.rating ? ", " + ratingText(r) : "") + ".";
-  return "Also a strong fit" + (r.rating ? ": " + ratingText(r) : "") + ".";
+  if (ctx.wildWhy === "different") return "A wildcard: something different, " + (r.cuisine ? cuisineMid(r.cuisine) : moodName(moodOf(r)).toLowerCase()) + (r.critics ? ", " + criticsText(r) : "") + ".";
+  return "Also a strong fit" + (r.critics ? ": " + criticsText(r) : "") + ".";
 }
 function priceLines(r) {
   const b = bill(r), out = [];
@@ -507,7 +509,7 @@ function planCard(kind, label, p, ctx) {
     '<span class="pc-sub">' + (p.km < 1 ? "Less than 1 km apart" : useMiles() ? Math.round(p.km / 1.609344) + (Math.round(p.km / 1.609344) === 1 ? " mile" : " miles") + " apart" : Math.round(p.km) + " km apart") + "</span></div></article>";
 }
 
-// Side by side: the picks in one table, the lowest price and the best rating ticked.
+// Side by side: the picks in one table, the lowest price ticked.
 function compareTable(picks) {
   const cols = picks.filter((x) => x[1]);
   if (cols.length < 2) return "";
@@ -515,7 +517,6 @@ function compareTable(picks) {
   const price = (n, r) => localMoney(n, r.cur) + conv(n, r);
   const bills = cols.map(([, r]) => bill(r));
   const totals = bills.map((b) => b ? b.total : null).filter((x) => x != null), low = Math.min(...totals);
-  const rated = cols.map(([, r]) => fewReviews(r) ? 0 : r.rating || 0), top = Math.max(...rated);  // few-review ratings never take the tick
   const tick = ' <span class="cmp-tick" title="Best of these">✓</span>';
   const row = (label, cells, num) => "<tr" + (num ? ' class="num"' : "") + '><th scope="row">' + label + "</th>" + cells.map((c) => "<td>" + c + "</td>").join("") + "</tr>";
   const meal = ask.meal === "lunch" ? "lunch" : ask.meal === "dinner" ? "dinner" : "meal";
@@ -528,7 +529,7 @@ function compareTable(picks) {
     row("Lunch", cols.map(([, r]) => r.lunch > 0 ? price(r.lunch, r) : r.lunch === -1 ? "No lunch" : "Not listed"), true),
     row("Wine pairing", cols.map(([, r], i) => { const b = bills[i], w = b ? b.wine : r.wine; return w != null ? price(w, r) + (b && b.meal === "lunch" ? " <small>with lunch</small>" : "") : "Not listed"; }), true),
     row("Your " + meal + (ask.wine ? " with wine" : ""), cols.map(([, r], i) => { const b = bills[i]; return b ? "<strong>" + (b.est ? "≈ " : "") + money(b.total, ask.cur) + "</strong>" + (ask.meal === "value" ? " <small>" + b.meal + "</small>" : "") + (Math.round(b.total) === Math.round(low) && totals.length > 1 ? tick : "") : "Not listed"; }), true),
-    row("Google rating", cols.map(([, r]) => r.rating ? r.rating.toFixed(1) + (r.reviews ? " <small>(" + r.reviews.toLocaleString("en-GB") + ")</small>" : "") + fewNote(r) + (top && !fewReviews(r) && r.rating === top && rated.filter((x) => x === top).length < cols.length ? tick : "") : "–"), true),
+    row("Critics’ lists", cols.map(([, r]) => r.critics ? esc(criticsText(r)) : "–")),
     row("Dietary", cols.map(([, r]) => badges(r) || "–"))
   ];
   const ids = cols.map(([, r]) => r.id).join(",");
@@ -656,7 +657,7 @@ function renderMore() {
     return '<li class="near-row"><div class="nr-main"><a class="nr-name" href="' + esc(linkOf(r)) + '">' + esc(r.name) + "</a> " + starIcons(r.stars) +
       '<span class="nr-where">' + esc(r.cuisine) + " · " + esc(r.where) + "</span>" +
       '<span class="nr-price">' + (b ? esc(localMoney(b.price, r.cur)) + " " + mealWord(b) + (r.cur !== ask.cur ? " ≈ " + esc(money(toCur(b.price, r.cur), ask.cur)) : "") : "Price not listed yet") +
-      (r.rating ? " · " + r.rating.toFixed(1) + " Google" + (fewReviews(r) ? " (" + plural(r.reviews, "review") + ")" : "") : "") + "</span></div>" +
+      (r.ac ? " · Critics’ pick" : "") + "</span></div>" +
       '<div class="nr-side">' + wishBtn(r) + "</div></li>";
   }).join("");
   const more = ask.list.length - rows.length;

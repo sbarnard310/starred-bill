@@ -8,8 +8,6 @@
   "change": "new",
   "changeNote": "Gained its first star",
   "changeDate": "2025-02",
-  "rating": 4.7,
-  "reviews": 142,
   "dinner": 155,
   "dinnerType": "menu",
   "dinnerNote": "Tasting menu (extended menu £195)",
@@ -30,5 +28,20 @@
     "gluten-free"
   ],
   "chef": "Gary Foulkes",
-  "chefSource": "site"
+  "chefSource": "site",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 82,
+      "url": "https://www.laliste.com/places/cornus-london-gb"
+    },
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 340,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

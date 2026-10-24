@@ -5,8 +5,6 @@
   "address": "470 Pacific Ave., San Francisco, CA 94133",
   "stars": 3,
   "cuisine": "Modern American",
-  "rating": 4.6,
-  "reviews": 802,
   "dinner": 390,
   "dinnerType": "menu",
   "dinnerNote": "Tasting menu",
@@ -40,5 +38,20 @@
     "source": "https://www.quincerestaurant.com/before-your-visit",
     "checked": "2026-10-10"
   },
-  "dietsManual": true
+  "dietsManual": true,
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 89.5,
+      "url": "https://www.laliste.com/places/quince-san-francisco-us"
+    },
+    {
+      "list": "oad-north-america",
+      "year": 2026,
+      "rank": 49,
+      "url": "https://www.oadguides.com/lists/north-america/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

@@ -5,8 +5,6 @@
   "address": "Ramón Gómez de la Serna 18B, 29602, Marbella",
   "stars": 1,
   "cuisine": "Japanese",
-  "rating": 4.7,
-  "reviews": 241,
   "dinnerType": "menu",
   "dinner": 275,
   "dinnerNote": "Tasting menu (other menus from €155)",
@@ -27,5 +25,14 @@
   "michelinId": "1195113",
   "diets": [
     "gluten-free"
-  ]
+  ],
+  "rankings": [
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 658,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

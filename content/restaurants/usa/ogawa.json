@@ -5,8 +5,6 @@
   "address": "7223 N.W. 2nd Ave., Miami, FL 33150",
   "stars": 1,
   "cuisine": "Japanese",
-  "rating": 5,
-  "reviews": 292,
   "dinner": 395,
   "dinnerType": "menu",
   "dinnerNote": "Omakase",
@@ -26,5 +24,14 @@
     "kosher"
   ],
   "chef": "Masayuki Komatsu",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "rankings": [
+    {
+      "list": "oad-north-america",
+      "year": 2026,
+      "rank": 415,
+      "url": "https://www.oadguides.com/lists/north-america/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

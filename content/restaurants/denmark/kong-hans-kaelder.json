@@ -7,8 +7,6 @@
   "address": "Vingaardsstraede 6, 1070 Copenhagen",
   "stars": 2,
   "cuisine": "French",
-  "rating": 4.7,
-  "reviews": 332,
   "dinner": 3200,
   "dinnerType": "menu",
   "dinnerNote": "Anniversary menu",
@@ -54,7 +52,7 @@
       "url": "https://www.laliste.com/places/kong-hans-kaelder-kobenhavn-dk"
     }
   ],
-  "rankingsChecked": "2026-10-13",
+  "rankingsChecked": "2026-10-24",
   "photo": "kong-hans-kaelder.jpg",
   "photoAlt": "The entrance of Kong Hans Kælder with its name above the door, Copenhagen",
   "photoCredit": "City Foodsters",

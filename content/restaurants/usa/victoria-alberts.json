@@ -4,8 +4,6 @@
   "address": "Disney's Grand Floridian Resort & Spa, 4401 Floridian Way, Orlando, 32830",
   "stars": 1,
   "cuisine": "Modern American",
-  "rating": 4.8,
-  "reviews": 435,
   "dinner": 375,
   "dinnerType": "menu",
   "dinnerNote": "Prix-fixe menu",
@@ -33,5 +31,14 @@
   "photoSourceType": "commons",
   "photoWidth": 1000,
   "photoHeight": 563,
-  "photoChecked": "2026-10-13"
+  "photoChecked": "2026-10-13",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 93,
+      "url": "https://www.laliste.com/places/victoria-and-alberts-orlando-us"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

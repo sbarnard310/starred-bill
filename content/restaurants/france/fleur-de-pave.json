@@ -7,8 +7,6 @@
   "address": "5 rue Paul-Lelong, 75002, Paris",
   "stars": 1,
   "cuisine": "Modern European",
-  "rating": 4.6,
-  "reviews": 640,
   "dinner": 135,
   "dinnerType": "menu",
   "dinnerNote": "Dégustation menu, 6 courses",
@@ -31,5 +29,14 @@
     "gluten-free"
   ],
   "chef": "Sylvain Sendra",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "rankings": [
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 376,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

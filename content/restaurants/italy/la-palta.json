@@ -5,8 +5,6 @@
   "address": "Località Bilegno 67, 29011, Borgonovo Val Tidone",
   "stars": 1,
   "cuisine": "Regional",
-  "rating": 4.7,
-  "reviews": 662,
   "dinnerType": "menu",
   "dinner": 100,
   "sourceType": "site",
@@ -29,5 +27,14 @@
   "chefSource": "press",
   "dinnerNote": "Tasting menu (another €130; La Pasta menu €150)",
   "dinnerNoteIt": "Menu degustazione (altro €130; menu La Pasta €150)",
-  "dietsManual": true
+  "dietsManual": true,
+  "rankings": [
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 737,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

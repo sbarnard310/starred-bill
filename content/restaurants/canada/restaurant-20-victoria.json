@@ -4,8 +4,6 @@
   "address": "20 Victoria St., Unit 100, Toronto, M5C 2N8",
   "stars": 1,
   "cuisine": "Modern American",
-  "rating": 4.5,
-  "reviews": 381,
   "dinnerType": "menu",
   "dinner": 200,
   "dinnerNote": "Tasting menu, 7+ courses",
@@ -23,5 +21,14 @@
     "halal"
   ],
   "chef": "Rafa Covarrubias",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 81.5,
+      "url": "https://www.laliste.com/places/20-victoria-toronto-ca"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

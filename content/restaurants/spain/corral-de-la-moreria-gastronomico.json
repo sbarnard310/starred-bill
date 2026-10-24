@@ -6,8 +6,6 @@
   "address": "Morería 17, Madrid, 28005",
   "stars": 1,
   "cuisine": "Modern European",
-  "rating": 4.4,
-  "reviews": 4517,
   "dinner": 105,
   "dinnerType": "menu",
   "dinnerNote": "Tasting menu",
@@ -26,5 +24,20 @@
   "placeId": "ChIJozCS4HcoQg0RrX_GowuiJko",
   "michelinId": "561745",
   "chef": "David García",
-  "chefSource": "site"
+  "chefSource": "site",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 89,
+      "url": "https://www.laliste.com/places/corral-de-la-moreria-madrid-es"
+    },
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 650,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

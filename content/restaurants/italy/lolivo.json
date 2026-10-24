@@ -5,8 +5,6 @@
   "address": "Via Capodimonte 14, 80071, Anacapri",
   "stars": 2,
   "cuisine": "Italian",
-  "rating": 4.3,
-  "reviews": 147,
   "dinnerType": "spend",
   "dinner": 190,
   "dinnerNote": "Typical spend without drinks (Gambero Rosso average)",
@@ -32,5 +30,14 @@
     "name": "Jumeirah Capri Palace",
     "url": "https://www.jumeirah.com/en/stay/italy/jumeirah-capri-palace/accommodation",
     "checked": "2026-10-23"
-  }
+  },
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 92.5,
+      "url": "https://www.laliste.com/places/lolivo-anacapri-it"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

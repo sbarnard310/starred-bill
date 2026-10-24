@@ -7,8 +7,6 @@
   "address": "Søllerødvej 35, 2840 Holte",
   "stars": 1,
   "cuisine": "Modern European",
-  "rating": 4.8,
-  "reviews": 887,
   "dinner": 1895,
   "dinnerType": "menu",
   "dinnerNote": "Menu Prestige (DKK 2,420 with the caviar course)",
@@ -82,7 +80,7 @@
       "url": "https://www.laliste.com/places/sollerod-kro-holte-dk"
     }
   ],
-  "rankingsChecked": "2026-10-13",
+  "rankingsChecked": "2026-10-24",
   "photo": "sollerod-kro.jpg",
   "photoAlt": "The thatched white inn of Søllerød Kro with its name on the wall, Holte",
   "photoCredit": "City Foodsters",

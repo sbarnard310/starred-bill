@@ -10,8 +10,6 @@
   "changeNote": "Gained its first star",
   "changeNoteEs": "Consiguió su primera estrella",
   "changeDate": "2026-05",
-  "rating": 4.5,
-  "reviews": 207,
   "dinner": 2730,
   "dinnerType": "menu",
   "dinnerNote": "Tasting menu, 12 courses, before service; Tue–Sat dinner",
@@ -26,5 +24,26 @@
   "placeId": "ChIJG_gayOp2Vo8R7ZP4TYIkEDc",
   "michelinId": "1245308",
   "chef": "Roberto Solís",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "rankings": [
+    {
+      "list": "worlds-50-best",
+      "year": 2025,
+      "rank": 89,
+      "url": "https://www.the50.com/restaurants/best-in-the-world/list/51-100"
+    },
+    {
+      "list": "latin-americas-50-best",
+      "year": 2025,
+      "rank": 32,
+      "url": "https://www.the50.com/restaurants/best-in-latin-america/list/1-50"
+    },
+    {
+      "list": "oad-north-america",
+      "year": 2026,
+      "rank": 360,
+      "url": "https://www.oadguides.com/lists/north-america/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

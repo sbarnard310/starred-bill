@@ -7,8 +7,6 @@
   "address": "Bonastruc de Porta 10-12, Girona, 17001",
   "stars": 1,
   "cuisine": "Modern European",
-  "rating": 4.7,
-  "reviews": 863,
   "dinner": 165,
   "dinnerType": "menu",
   "dinnerNote": "Tasting menu, 14 dishes",
@@ -31,5 +29,14 @@
   "placeId": "ChIJ1WHjceDmuhIRgdW3srr16BA",
   "michelinId": "220306",
   "chef": "Pere Massana Roger",
-  "chefSource": "site"
+  "chefSource": "site",
+  "rankings": [
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 341,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

@@ -4,8 +4,6 @@
   "address": "263 E. Pender St., Vancouver, V6A 1T8",
   "stars": 1,
   "cuisine": "Fusion",
-  "rating": 4.5,
-  "reviews": 1774,
   "dinnerType": "menu",
   "dinner": 175,
   "dinnerNote": "Omakase menu, from (also à la carte)",
@@ -55,7 +53,7 @@
       "url": "https://www.laliste.com/places/kissa-tanto-vancouver-ca"
     }
   ],
-  "rankingsChecked": "2026-10-13",
+  "rankingsChecked": "2026-10-24",
   "photo": "kissa-tanto.jpg",
   "photoAlt": "Kissa Tanto's red brick front and named awning in Chinatown, Vancouver",
   "photoCredit": "Premeditated Chaos",

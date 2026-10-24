@@ -5,8 +5,6 @@
   "address": "Partida de Perleta 1-7, 03295, Elche",
   "stars": 1,
   "cuisine": "Modern European",
-  "rating": 4.8,
-  "reviews": 2214,
   "dinnerType": "menu",
   "dinner": 159,
   "dinnerNote": "Tasting menu (other menus from €119)",
@@ -25,5 +23,14 @@
   "placeId": "ChIJNQnzeii0Yw0RiAFryDegh4c",
   "michelinId": "219979",
   "chef": "Susi Díaz",
-  "chefSource": "site"
+  "chefSource": "site",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 90,
+      "url": "https://www.laliste.com/places/la-finca-elx-es"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

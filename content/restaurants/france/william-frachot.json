@@ -4,8 +4,6 @@
   "address": "Hostellerie du Chapeau Rouge, 5 rue Michelet, 21000 Dijon",
   "stars": 2,
   "cuisine": "Modern European",
-  "rating": 4.6,
-  "reviews": 621,
   "dinner": 225,
   "dinnerType": "menu",
   "dinnerNote": "Longest tasting menu (other menus from €195)",
@@ -49,5 +47,14 @@
       }
     ],
     "checked": "2026-10-23"
-  }
+  },
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 85.5,
+      "url": "https://www.laliste.com/places/william-frachot-dijon-fr"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

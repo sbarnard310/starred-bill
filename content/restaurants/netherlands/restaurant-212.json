@@ -4,8 +4,6 @@
   "address": "Amstel 212, 1017 AH, Amsterdam",
   "stars": 2,
   "cuisine": "Creative",
-  "rating": 4.6,
-  "reviews": 486,
   "dinnerType": "menu",
   "dinner": 268,
   "dinnerNote": "Chef's tasting menu (3 courses of your choice €258)",
@@ -70,5 +68,20 @@
   "groups": "Tables of more than 4 are served only the chef's menu. The private dining room in the wine cellar seats up to 10, with a 5-course chef's menu; book it online up to 7 days ahead, or email events@group-212.com for later requests.",
   "groupsUrl": "https://www.212.amsterdam/privateroom-group212",
   "infoSource": "https://www.212.amsterdam/restaurant-212",
-  "infoChecked": "2026-10-13"
+  "infoChecked": "2026-10-13",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 93,
+      "url": "https://www.laliste.com/places/212-amsterdam-nl"
+    },
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 139,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

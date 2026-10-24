@@ -9,8 +9,6 @@
   "addressJa": "〒106-0032 東京都港区六本木 4-2-35 B1F",
   "stars": 2,
   "cuisine": "French",
-  "rating": 4.5,
-  "reviews": 519,
   "dinner": 26400,
   "dinnerType": "menu",
   "dinnerNote": "Tasting menu, from",
@@ -31,5 +29,20 @@
   "placeId": "ChIJGcAHwYKLGGARdXaJAZ9g4S4",
   "michelinId": "1194233",
   "chef": "Ryuta Iizuka",
-  "chefSource": "site"
+  "chefSource": "site",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 82.5,
+      "url": "https://www.laliste.com/places/ryuzu-minato-ku-jp"
+    },
+    {
+      "list": "oad-japan",
+      "year": 2026,
+      "rank": 203,
+      "url": "https://www.oadguides.com/lists/japan/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

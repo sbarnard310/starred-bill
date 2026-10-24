@@ -4,8 +4,6 @@
   "address": "Hotel Rum Budapest, Királyi Pál utca 4, 1053, Budapest",
   "stars": 1,
   "cuisine": "Modern European",
-  "rating": 4.4,
-  "reviews": 788,
   "dinnerType": "menu",
   "dinner": 69500,
   "dinnerNote": "Tasting menu",
@@ -31,5 +29,20 @@
   "chefSource": "site",
   "dinnerNoteHu": "Kóstolómenü",
   "lunchNoteHu": "Ebédmenü",
-  "dietsManual": true
+  "dietsManual": true,
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 76.5,
+      "url": "https://www.laliste.com/places/salt-budapest-hu"
+    },
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 223,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

@@ -5,8 +5,6 @@
   "address": "Estrada do Guincho 2413, 2750-642, Cascais",
   "stars": 1,
   "cuisine": "Modern European",
-  "rating": 4.7,
-  "reviews": 1536,
   "dinnerType": "menu",
   "dinner": 190,
   "dinnerNote": "Tasting menu (other menus from €165)",
@@ -33,5 +31,14 @@
   "photoSourceType": "commons",
   "photoWidth": 1000,
   "photoHeight": 639,
-  "photoChecked": "2026-10-13"
+  "photoChecked": "2026-10-13",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 87.5,
+      "url": "https://www.laliste.com/places/fortaleza-do-guincho-cascais-pt"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

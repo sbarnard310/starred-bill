@@ -5,8 +5,6 @@
   "address": "Augustusplatz 8, 04109, Leipzig",
   "stars": 1,
   "cuisine": "Creative",
-  "rating": 4.8,
-  "reviews": 103,
   "dinnerType": "menu",
   "dinner": 180,
   "dinnerNote": "Tasting menu (other menus from €135)",
@@ -27,5 +25,14 @@
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 135 €)",
   "noLunch": true,
   "lunchNote": "Dinner only",
-  "lunchNoteDe": "Nur abends"
+  "lunchNoteDe": "Nur abends",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 78.5,
+      "url": "https://www.laliste.com/places/stadtpfeiffer-leipzig-de"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

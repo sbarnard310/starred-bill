@@ -10,8 +10,6 @@
   "addressJa": "〒162-0825 東京都新宿区神楽坂 3-5-5",
   "stars": 2,
   "cuisine": "Japanese",
-  "rating": 4.6,
-  "reviews": 285,
   "dinner": 51700,
   "dinnerType": "menu",
   "dinnerNote": "Chef's tasting course",
@@ -27,5 +25,20 @@
   "placeId": "ChIJiSRxIluMGGARgaWss9mCC6o",
   "michelinId": "1193943",
   "chef": "Koji Koizumi",
-  "chefSource": "press"
+  "chefSource": "press",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 86.5,
+      "url": "https://www.laliste.com/places/kohaku-shinjuku-city-jp"
+    },
+    {
+      "list": "oad-japan",
+      "year": 2026,
+      "rank": 82,
+      "url": "https://www.oadguides.com/lists/japan/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

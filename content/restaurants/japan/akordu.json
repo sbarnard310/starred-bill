@@ -6,8 +6,6 @@
   "address": "70-1-3-1 Suimoncho, Nara, 630-8208, Nara",
   "stars": 2,
   "cuisine": "Creative",
-  "rating": 4.5,
-  "reviews": 228,
   "dinnerType": "menu",
   "dinnerNote": "Tasting menu, from; including tax, service extra",
   "sourceType": "site",
@@ -28,5 +26,20 @@
   "lunchSource": "https://akordu.com/restaurant/",
   "lunchWine": 9900,
   "lunchNote": "Lunch menu, from; including tax, service extra",
-  "lunchNoteJa": "ランチメニュー（最安値）・税込・サービス料別"
+  "lunchNoteJa": "ランチメニュー（最安値）・税込・サービス料別",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 83.5,
+      "url": "https://www.laliste.com/places/akordu-nara-jp"
+    },
+    {
+      "list": "oad-japan",
+      "year": 2026,
+      "rank": 510,
+      "url": "https://www.oadguides.com/lists/japan/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

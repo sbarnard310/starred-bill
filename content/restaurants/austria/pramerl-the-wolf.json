@@ -4,8 +4,6 @@
   "address": "Pramergasse 21, 1090, Vienna",
   "stars": 1,
   "cuisine": "Creative",
-  "rating": 4.7,
-  "reviews": 368,
   "dinnerType": "menu",
   "dinner": 170,
   "dinnerNote": "Surprise menu, Wednesday and Thursday (Friday and Saturday €185, or €160 at the shorter 6pm seating)",
@@ -58,5 +56,14 @@
   "children": "Children are welcome; tell the restaurant ahead if a child needs different dishes. The 6pm Early Bird seating is suggested for younger children.",
   "byob": "Guests may bring wines not on the list, for €50 corkage.",
   "infoSource": "https://pramerlandthewolf.com/faqs/?lang=en",
-  "infoChecked": "2026-10-13"
+  "infoChecked": "2026-10-13",
+  "rankings": [
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 294,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

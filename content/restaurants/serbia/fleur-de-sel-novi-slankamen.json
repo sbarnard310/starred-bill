@@ -5,8 +5,6 @@
   "address": "Počenta bb, 22323, Novi Slankamen",
   "stars": 1,
   "cuisine": "Modern European",
-  "rating": 4.8,
-  "reviews": 44,
   "dinnerType": "menu",
   "dinnerNote": "Tasting menu; price still to be added",
   "sourceType": "none",
@@ -23,5 +21,14 @@
   "dinnerNoteSr": "Дегустациони мени; цена ће бити додата",
   "lunchNote": "Open for lunch · Wed–Sun",
   "lunchNoteSr": "Отворено за ручак · сре–нед",
-  "areaSr": "Нови Сланкамен"
+  "areaSr": "Нови Сланкамен",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 86.5,
+      "url": "https://www.laliste.com/places/fleur-de-sel-atelje-vina-sapat-novi-slankamen-rs"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

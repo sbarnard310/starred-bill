@@ -5,8 +5,6 @@
   "address": "Blackrock Market, 19a Main Street, Blackrock, A94 V0D8",
   "stars": 2,
   "cuisine": "Creative",
-  "rating": 4.8,
-  "reviews": 221,
   "dinner": 190,
   "dinnerType": "menu",
   "dinnerNote": "Tasting menu",
@@ -38,5 +36,14 @@
     "source": "https://www.liathrestaurant.com/",
     "checked": "2026-10-10"
   },
-  "dietsManual": true
+  "dietsManual": true,
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 85,
+      "url": "https://www.laliste.com/places/liath-blackrock-ie"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

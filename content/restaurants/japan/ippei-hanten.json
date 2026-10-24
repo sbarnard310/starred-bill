@@ -10,8 +10,6 @@
   "addressJa": "〒106-0046 東京都港区元麻布 3-12-41",
   "stars": 1,
   "cuisine": "Chinese",
-  "rating": 4.4,
-  "reviews": 61,
   "dinner": 29150,
   "dinnerType": "menu",
   "dinnerNote": "Seasonal course",
@@ -28,5 +26,14 @@
   "placeId": "ChIJIXrCrK-LGGARfx-SIkgR5Rs",
   "michelinId": "1202736",
   "chef": "Ippei Adachi",
-  "chefSource": "press"
+  "chefSource": "press",
+  "rankings": [
+    {
+      "list": "oad-japan",
+      "year": 2026,
+      "rank": 705,
+      "url": "https://www.oadguides.com/lists/japan/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

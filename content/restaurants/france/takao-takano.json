@@ -6,8 +6,6 @@
   "address": "33 rue Malesherbes, 69006 Lyon",
   "stars": 2,
   "cuisine": "Creative",
-  "rating": 4.7,
-  "reviews": 748,
   "dinner": 440,
   "dinnerType": "menu",
   "dinnerNote": "Longest tasting menu (other menus from €160)",
@@ -26,5 +24,14 @@
   "placeId": "ChIJEcqr9PDq9EcRvr6CTKNFWfY",
   "michelinId": "407977",
   "chef": "Takao Takano",
-  "chefSource": "site"
+  "chefSource": "site",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 87.5,
+      "url": "https://www.laliste.com/places/takao-takano-lyon-fr"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

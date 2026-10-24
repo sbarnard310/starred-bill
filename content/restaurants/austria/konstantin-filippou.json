@@ -4,8 +4,6 @@
   "address": "Dominikanerbastei 17, 1010, Vienna",
   "stars": 2,
   "cuisine": "Modern European",
-  "rating": 4.3,
-  "reviews": 914,
   "dinnerType": "menu",
   "dinner": 285,
   "dinnerNote": "8-course tasting menu (7 courses from €265, 9 courses €350)",
@@ -110,5 +108,20 @@
   "photoSourceType": "commons",
   "photoWidth": 750,
   "photoHeight": 1000,
-  "photoChecked": "2026-10-13"
+  "photoChecked": "2026-10-13",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 91,
+      "url": "https://www.laliste.com/places/konstantin-filippou-wien-at"
+    },
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 70,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

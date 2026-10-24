@@ -8,8 +8,6 @@
   "changeNote": "Gained a second star",
   "changeDate": "2026-03",
   "changeNotePt": "Conquistou a segunda estrela",
-  "rating": 4.8,
-  "reviews": 409,
   "dinnerType": "menu",
   "dinner": 495,
   "dinnerNote": "Tasting menu (other menus from €175)",
@@ -40,5 +38,20 @@
   "photoSourceType": "commons",
   "photoWidth": 744,
   "photoHeight": 1000,
-  "photoChecked": "2026-10-13"
+  "photoChecked": "2026-10-13",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 77,
+      "url": "https://www.laliste.com/places/fifty-seconds-martin-berasategui-lisboa-pt"
+    },
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 681,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

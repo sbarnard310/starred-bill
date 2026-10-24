@@ -4,8 +4,6 @@
   "address": "Lot 3 & 4, GF, Cormar Suites, 10 Jalan Perak, 50450, Kuala Lumpur",
   "stars": 1,
   "cuisine": "Malaysian",
-  "rating": 4.7,
-  "reviews": 1400,
   "dinnerType": "menu",
   "dinner": 630,
   "dinnerNote": "Tasting menu",
@@ -22,5 +20,14 @@
   "lunchNote": "Dinner only",
   "lunchNoteMs": "Makan malam sahaja",
   "chef": "Raymond Tham",
-  "chefSource": "press"
+  "chefSource": "press",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 90,
+      "url": "https://www.laliste.com/places/beta-kl-kuala-lumpur-my"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

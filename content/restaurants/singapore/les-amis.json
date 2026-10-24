@@ -6,8 +6,6 @@
   "address": "Shaw Centre, #01-16, 1 Scotts Road, Singapore 228208",
   "stars": 3,
   "cuisine": "French",
-  "rating": 4.6,
-  "reviews": 965,
   "dinner": 420,
   "dinnerType": "menu",
   "dinnerNote": "Le Menu Automne Classique (other tasting menus $550), plus service and GST",
@@ -79,5 +77,5 @@
       "url": "https://www.oadguides.com/lists/asia/top-restaurants/2026"
     }
   ],
-  "rankingsChecked": "2026-10-13"
+  "rankingsChecked": "2026-10-24"
 }

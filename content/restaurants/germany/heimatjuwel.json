@@ -4,8 +4,6 @@
   "address": "Stellinger Weg 47, 20255, Hamburg",
   "stars": 1,
   "cuisine": "Creative",
-  "rating": 4.7,
-  "reviews": 386,
   "dinnerType": "menu",
   "dinner": 134,
   "dinnerNote": "Tasting menu (other menus from €87)",
@@ -25,5 +23,14 @@
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 87 €)",
   "noLunch": true,
   "lunchNote": "Dinner only",
-  "lunchNoteDe": "Nur abends"
+  "lunchNoteDe": "Nur abends",
+  "rankings": [
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 394,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

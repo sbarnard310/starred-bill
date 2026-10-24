@@ -4,8 +4,6 @@
   "address": "rue Baron Horta 3, 1000, Brussels",
   "stars": 2,
   "cuisine": "French",
-  "rating": 4.5,
-  "reviews": 637,
   "dinnerType": "menu",
   "dinner": 275,
   "dinnerNote": "Bozar menu, 7 courses (Horta menu, 5 courses, €195, not Friday or Saturday evening)",
@@ -102,7 +100,7 @@
       "url": "https://www.laliste.com/places/bozar-bruxelles-be"
     }
   ],
-  "rankingsChecked": "2026-10-13",
+  "rankingsChecked": "2026-10-24",
   "photo": "bozar-restaurant.jpg",
   "photoAlt": "The entrance doors of Bozar Restaurant with its sign, inside the Centre for Fine Arts, Brussels",
   "photoCredit": "GdML",

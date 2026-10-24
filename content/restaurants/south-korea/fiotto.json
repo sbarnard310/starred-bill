@@ -5,8 +5,6 @@
   "address": "2F, 219 Dalmaji-gil 117 beonga-gil, Haeundae-gu, 48105, Busan",
   "stars": 1,
   "cuisine": "Italian",
-  "rating": 4.4,
-  "reviews": 32,
   "dinnerType": "menu",
   "dinnerNote": "Tasting course",
   "sourceType": "press",
@@ -21,5 +19,20 @@
   "chefSource": "michelin",
   "dinner": 250000,
   "dinnerNoteKo": "테이스팅 코스",
-  "source": "https://app.catchtable.co.kr/ct/shop/fiotto"
+  "source": "https://app.catchtable.co.kr/ct/shop/fiotto",
+  "rankings": [
+    {
+      "list": "asias-50-best",
+      "year": 2026,
+      "rank": 99,
+      "url": "https://www.the50.com/restaurants/best-in-asia/list/51-100"
+    },
+    {
+      "list": "oad-asia",
+      "year": 2026,
+      "rank": 348,
+      "url": "https://www.oadguides.com/lists/asia/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

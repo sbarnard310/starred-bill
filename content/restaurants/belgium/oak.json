@@ -5,8 +5,6 @@
   "address": "Burgstraat 16, 9000, Gent",
   "stars": 1,
   "cuisine": "Modern European",
-  "rating": 4.8,
-  "reviews": 677,
   "dinnerType": "menu",
   "dinner": 159,
   "dinnerNote": "Tasting menu (other menus from €75)",
@@ -32,5 +30,14 @@
   "lunchNoteFr": "Même menu le midi · mar.–ven.",
   "lunchSourceType": "site",
   "lunchSource": "https://oakgent.be/menu/",
-  "dietsManual": true
+  "dietsManual": true,
+  "rankings": [
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 452,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

@@ -6,8 +6,6 @@
   "address": "17 W. 19th St., New York, NY, 10011",
   "stars": 1,
   "cuisine": "Korean",
-  "rating": 4.8,
-  "reviews": 175,
   "dinner": 295,
   "dinnerType": "menu",
   "dinnerNote": "Chef's tasting menu, 10 courses",
@@ -47,5 +45,14 @@
   "bookingUrl": "https://www.opentable.com/r/bom-new-york",
   "bookingPhone": "+1 212-256-1368",
   "infoSource": "https://www.bom-nyc.com/",
-  "infoChecked": "2026-10-12"
+  "infoChecked": "2026-10-12",
+  "rankings": [
+    {
+      "list": "oad-north-america",
+      "year": 2026,
+      "rank": 75,
+      "url": "https://www.oadguides.com/lists/north-america/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

@@ -14,8 +14,6 @@
   "changeNoteZh": "首度摘星",
   "changeNoteJa": "初の一つ星を獲得",
   "changeDate": "2025-09",
-  "rating": 4.4,
-  "reviews": 110,
   "dinner": 28600,
   "dinnerType": "menu",
   "dinnerNote": "Sushi omakase",
@@ -35,5 +33,14 @@
   "placeId": "ChIJbUaROACLGGARR56GT3stGy4",
   "michelinId": "1213818",
   "chef": "Yuki Hayashinouchi",
-  "chefSource": "press"
+  "chefSource": "press",
+  "rankings": [
+    {
+      "list": "oad-japan",
+      "year": 2026,
+      "rank": 547,
+      "url": "https://www.oadguides.com/lists/japan/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

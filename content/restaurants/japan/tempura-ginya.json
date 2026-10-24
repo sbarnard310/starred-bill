@@ -9,8 +9,6 @@
   "addressJa": "〒108-0071 東京都港区白金台 5-17-9 B1F",
   "stars": 1,
   "cuisine": "Tempura",
-  "rating": 4.7,
-  "reviews": 67,
   "dinner": 33000,
   "dinnerType": "menu",
   "dinnerNote": "Omakase course",
@@ -25,5 +23,14 @@
   "placeId": "ChIJY-qIlgSLGGAR9e_731B9spg",
   "michelinId": "1194072",
   "chef": "Katsuji Ginya",
-  "chefSource": "press"
+  "chefSource": "press",
+  "rankings": [
+    {
+      "list": "oad-japan",
+      "year": 2026,
+      "rank": 414,
+      "url": "https://www.oadguides.com/lists/japan/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

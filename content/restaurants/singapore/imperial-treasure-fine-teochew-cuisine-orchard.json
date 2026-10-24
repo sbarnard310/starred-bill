@@ -7,8 +7,6 @@
   "address": "ION Orchard, #03-05, 2 Orchard Turn, Singapore 238801",
   "stars": 1,
   "cuisine": "Teochew",
-  "rating": 4.3,
-  "reviews": 655,
   "dinner": 138,
   "dinnerType": "menu",
   "dinnerNote": "Signature tasting set",
@@ -25,5 +23,14 @@
   "diets": [
     "vegetarian-menu"
   ],
-  "dietsManual": true
+  "dietsManual": true,
+  "rankings": [
+    {
+      "list": "oad-asia",
+      "year": 2026,
+      "rank": 182,
+      "url": "https://www.oadguides.com/lists/asia/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

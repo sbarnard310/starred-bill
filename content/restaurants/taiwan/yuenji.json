@@ -8,8 +8,6 @@
   "addressZh": "西屯區安和東路5號",
   "stars": 1,
   "cuisine": "Taiwanese",
-  "rating": 4.4,
-  "reviews": 434,
   "dinner": 3580,
   "dinnerType": "menu",
   "dinnerNote": "Chef's menu, from",
@@ -31,5 +29,14 @@
     "vegetarian"
   ],
   "chef": "Lin Chu-wei",
-  "chefSource": "press"
+  "chefSource": "press",
+  "rankings": [
+    {
+      "list": "oad-asia",
+      "year": 2026,
+      "rank": 120,
+      "url": "https://www.oadguides.com/lists/asia/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

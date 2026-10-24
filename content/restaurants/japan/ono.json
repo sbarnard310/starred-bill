@@ -6,8 +6,6 @@
   "address": "6F, 1-2-22 Sonezakishinchi, Kita-ku, 530-0002, Osaka",
   "stars": 1,
   "cuisine": "Japanese",
-  "rating": 4.4,
-  "reviews": 58,
   "dinnerType": "spend",
   "dinnerNote": "Tabelog range ¥30,000–39,999",
   "sourceType": "press",
@@ -25,5 +23,14 @@
   "lunchSourceType": "press",
   "lunchSource": "https://tabelog.com/en/osaka/A2701/A270101/27112164/",
   "lunchNote": "Tabelog range ¥30,000–39,999",
-  "lunchNoteJa": "食べログの価格帯 30,000～39,999円"
+  "lunchNoteJa": "食べログの価格帯 30,000～39,999円",
+  "rankings": [
+    {
+      "list": "oad-japan",
+      "year": 2026,
+      "rank": 571,
+      "url": "https://www.oadguides.com/lists/japan/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

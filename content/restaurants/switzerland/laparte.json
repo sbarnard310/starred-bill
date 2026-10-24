@@ -4,8 +4,6 @@
   "address": "Rue de Lausanne 43, 1201, Geneva",
   "stars": 1,
   "cuisine": "French",
-  "rating": 4.8,
-  "reviews": 317,
   "dinnerType": "menu",
   "dinner": 164,
   "dinnerNote": "Tasting menu (other menus from CHF 134)",
@@ -33,5 +31,14 @@
   "lunchNoteFr": "Menu déjeuner",
   "lunchNoteIt": "Menu pranzo",
   "chef": "Armel Bedouet",
-  "chefSource": "press"
+  "chefSource": "press",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 82.5,
+      "url": "https://www.laliste.com/places/l-aparte-geneve-ch"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

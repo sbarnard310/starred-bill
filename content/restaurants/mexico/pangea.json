@@ -6,8 +6,6 @@
   "address": "Av. del Roble 660, Valle del Campestre, San Pedro Garza García",
   "stars": 1,
   "cuisine": "Modern American",
-  "rating": 4.7,
-  "reviews": 1662,
   "dinner": 2395,
   "dinnerType": "menu",
   "dinnerNote": "Tasting menu, 9 courses (vegetarian MX$1,775)",
@@ -26,5 +24,20 @@
   "placeId": "ChIJ8Rlqs5W9YoYRFvRQFa-VXl4",
   "michelinId": "1208496",
   "chef": "Guillermo González Beristáin",
-  "chefSource": "site"
+  "chefSource": "site",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 77,
+      "url": "https://www.laliste.com/places/pangea-monterrey-mx"
+    },
+    {
+      "list": "oad-north-america",
+      "year": 2026,
+      "rank": 290,
+      "url": "https://www.oadguides.com/lists/north-america/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

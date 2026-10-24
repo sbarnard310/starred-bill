@@ -6,8 +6,6 @@
   "address": "Regueros 8, Madrid, 28004",
   "stars": 2,
   "cuisine": "Creative",
-  "rating": 4.5,
-  "reviews": 1886,
   "dinner": 210,
   "dinnerType": "menu",
   "dinnerNote": "DStage menu, 18 servings (DTaste, 16 servings, €195)",
@@ -30,5 +28,20 @@
   "placeId": "ChIJM_4eFY8oQg0R3wcnD3nYubk",
   "michelinId": "443649",
   "chef": "Diego Guerrero",
-  "chefSource": "press"
+  "chefSource": "press",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 89.5,
+      "url": "https://www.laliste.com/places/dstage-madrid-es"
+    },
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 427,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

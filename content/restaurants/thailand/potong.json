@@ -6,8 +6,6 @@
   "address": "422 Vanich 1 Road, Samphanthawong, Bangkok",
   "stars": 1,
   "cuisine": "Creative",
-  "rating": 4.6,
-  "reviews": 704,
   "dinner": 6300,
   "dinnerType": "menu",
   "dinnerNote": "“5 senses, 5 elements” tasting menu",
@@ -23,5 +21,32 @@
   "placeId": "ChIJd7grWxeZ4jAR8KwClMpGmHo",
   "michelinId": "1200082",
   "chef": "Pichaya Soontornyanakij",
-  "chefSource": "press"
+  "chefSource": "press",
+  "rankings": [
+    {
+      "list": "worlds-50-best",
+      "year": 2025,
+      "rank": 13,
+      "url": "https://www.the50.com/restaurants/best-in-the-world/list/1-50"
+    },
+    {
+      "list": "asias-50-best",
+      "year": 2026,
+      "rank": 25,
+      "url": "https://www.the50.com/restaurants/best-in-asia/list/1-50"
+    },
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 93,
+      "url": "https://www.laliste.com/places/potong-th"
+    },
+    {
+      "list": "oad-asia",
+      "year": 2026,
+      "rank": 34,
+      "url": "https://www.oadguides.com/lists/asia/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

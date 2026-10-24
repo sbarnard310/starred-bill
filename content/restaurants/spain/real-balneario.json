@@ -5,8 +5,6 @@
   "address": "Avenida Juan Sitges 3, 33405, Salinas",
   "stars": 1,
   "cuisine": "Farm to table",
-  "rating": 4.4,
-  "reviews": 1087,
   "dinnerType": "menu",
   "dinner": 220,
   "dinnerNote": "Tasting menu (other menus from €143)",
@@ -25,5 +23,14 @@
   "placeId": "ChIJKeTo8RWcNg0RM1wtXt3RddU",
   "michelinId": "222862",
   "chef": "Isaac Loya",
-  "chefSource": "site"
+  "chefSource": "site",
+  "rankings": [
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 338,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

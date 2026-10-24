@@ -5,8 +5,6 @@
   "address": "Bernhard-Simon-Strasse 2, 7310, Bad Ragaz",
   "stars": 3,
   "cuisine": "Creative",
-  "rating": 4.8,
-  "reviews": 122,
   "dinnerType": "menu",
   "dinner": 379,
   "dinnerNote": "Tasting menu (other menus from CHF 279)",
@@ -33,5 +31,20 @@
   "lunchNoteDe": "Nur abends",
   "lunchNoteFr": "Uniquement le soir",
   "lunchNoteIt": "Solo a cena",
-  "dietsManual": true
+  "dietsManual": true,
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 97.5,
+      "url": "https://www.laliste.com/places/memories-bad-ragaz-ch"
+    },
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 35,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

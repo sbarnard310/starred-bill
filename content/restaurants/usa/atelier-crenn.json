@@ -5,8 +5,6 @@
   "address": "3127 Fillmore St., San Francisco, CA 94123",
   "stars": 3,
   "cuisine": "Modern American",
-  "rating": 4.6,
-  "reviews": 788,
   "dinner": 405,
   "dinnerType": "menu",
   "dinnerNote": "Tasting menu; a 20% service charge and a 3% San Francisco health-care surcharge are added",
@@ -64,7 +62,7 @@
       "url": "https://www.oadguides.com/lists/north-america/top-restaurants/2026"
     }
   ],
-  "rankingsChecked": "2026-10-13",
+  "rankingsChecked": "2026-10-24",
   "photo": "atelier-crenn.jpg",
   "photoAlt": "The glass front door of Atelier Crenn at 3127 Fillmore Street, San Francisco",
   "photoCredit": "City Foodsters",

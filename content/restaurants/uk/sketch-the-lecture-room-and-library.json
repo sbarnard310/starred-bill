@@ -5,8 +5,6 @@
   "address": "9 Conduit Street, Mayfair, London, W1S 2XG",
   "stars": 3,
   "cuisine": "French",
-  "rating": 4.8,
-  "reviews": 64,
   "dinner": 225,
   "dinnerType": "menu",
   "dinnerNote": "Tasting menu, 7 courses",
@@ -28,5 +26,14 @@
   ],
   "chef": "Pierre Gagnaire",
   "chefSource": "press",
-  "dietsManual": true
+  "dietsManual": true,
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 86,
+      "url": "https://www.laliste.com/places/sketch-the-lecture-room-and-library-london-gb"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

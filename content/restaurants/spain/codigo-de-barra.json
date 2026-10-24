@@ -5,8 +5,6 @@
   "address": "San Francisco 7, 11004, Cadiz",
   "stars": 1,
   "cuisine": "Modern European",
-  "rating": 4.6,
-  "reviews": 905,
   "dinnerType": "menu",
   "dinner": 60,
   "wine": 35,
@@ -27,5 +25,14 @@
   "chef": "Leon Griffioen",
   "chefSource": "site",
   "dinnerNote": "Cotinusa tasting menu, 10 courses (Gadir, 12 courses, €70)",
-  "dinnerNoteEs": "Menú degustación Cotinusa, 10 platos (Gadir, 12 platos, 70 €)"
+  "dinnerNoteEs": "Menú degustación Cotinusa, 10 platos (Gadir, 12 platos, 70 €)",
+  "rankings": [
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 645,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

@@ -4,8 +4,6 @@
   "address": "Brandshofer Deich 68, 20539, Hamburg",
   "stars": 2,
   "cuisine": "Creative",
-  "rating": 4.6,
-  "reviews": 411,
   "dinnerType": "menu",
   "dinner": 250,
   "dinnerNote": "Tasting menu (other menus from €200)",
@@ -24,5 +22,20 @@
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 200 €)",
   "lunchNote": "Open for lunch · Fri–Sun",
   "lunchNoteDe": "Mittags geöffnet · Fr–So",
-  "dietsManual": true
+  "dietsManual": true,
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 82.5,
+      "url": "https://www.laliste.com/places/100200-kitchen-hamburg-de"
+    },
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 493,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

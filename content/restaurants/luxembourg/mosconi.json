@@ -5,8 +5,6 @@
   "address": "13 rue Münster, 2160, Luxembourg City",
   "stars": 1,
   "cuisine": "Italian",
-  "rating": 4.5,
-  "reviews": 282,
   "dinnerType": "menu",
   "dinner": 180,
   "dinnerNote": "Tasting menu (other menus from €145)",
@@ -32,5 +30,14 @@
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 145 €)",
   "lunchNoteFr": "Menu déjeuner",
   "lunchNoteDe": "Mittagsmenü",
-  "areaDe": "Luxemburg"
+  "areaDe": "Luxemburg",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 77,
+      "url": "https://www.laliste.com/places/mosconi-luxembourg-lu"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

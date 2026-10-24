@@ -5,8 +5,6 @@
   "address": "Kortrijkseweg 164, 8791, Beveren-Leie",
   "stars": 2,
   "cuisine": "French",
-  "rating": 4.9,
-  "reviews": 504,
   "dinnerType": "menu",
   "dinner": 370,
   "dinnerNote": "Tasting menu (other menus from €110)",
@@ -33,5 +31,14 @@
   "lunchNoteNl": "Lunchmenu",
   "dinnerNoteFr": "Menu dégustation (autres menus dès 110 €)",
   "lunchNoteFr": "Menu déjeuner",
-  "dietsManual": true
+  "dietsManual": true,
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 78,
+      "url": "https://www.laliste.com/places/castor-waregem-be"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

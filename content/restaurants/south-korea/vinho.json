@@ -7,8 +7,6 @@
   "address": "#162 Wellstone Bldg, 38 Hakdong-ro 43-gil, Gangnam-gu, Seoul",
   "stars": 1,
   "cuisine": "Modern",
-  "rating": 4.8,
-  "reviews": 92,
   "dinner": 280000,
   "dinnerType": "menu",
   "dinnerNote": "Dinner tasting menu, 10 courses (short menu after 8pm ₩180,000)",
@@ -27,5 +25,20 @@
     "vegan"
   ],
   "chef": "Sung-bin Jeon",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 76,
+      "url": "https://www.laliste.com/places/vinho-kr"
+    },
+    {
+      "list": "oad-asia",
+      "year": 2026,
+      "rank": 281,
+      "url": "https://www.oadguides.com/lists/asia/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

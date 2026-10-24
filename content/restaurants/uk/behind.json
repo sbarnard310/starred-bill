@@ -5,8 +5,6 @@
   "address": "20 Sidworth Street, London Fields, London, E8 3SD",
   "stars": 1,
   "cuisine": "Seafood",
-  "rating": 4.7,
-  "reviews": 787,
   "dinner": 125,
   "dinnerType": "menu",
   "dinnerNote": "Tasting menu, 10 courses",
@@ -33,5 +31,14 @@
     "via": "website",
     "source": "https://www.behindrestaurant.co.uk/book",
     "checked": "2026-10-10"
-  }
+  },
+  "rankings": [
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 469,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

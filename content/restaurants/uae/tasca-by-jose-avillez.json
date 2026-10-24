@@ -4,8 +4,6 @@
   "address": "Mandarin Oriental Jumeira Hotel,  Jumeirah Beach Road, Jumeirah 1, Dubai",
   "stars": 1,
   "cuisine": "Portuguese",
-  "rating": 4.7,
-  "reviews": 1168,
   "dinnerType": "menu",
   "dinnerNote": "Taste of Tasca tasting menu (à la carte mains AED 180–340); service and VAT included",
   "sourceType": "site",
@@ -25,5 +23,14 @@
   "chefSource": "site",
   "dinner": 850,
   "source": "https://www.mandarinoriental.com/en/dubai/jumeira-beach/dine/tasca-by-jose-avillez",
-  "dietsManual": true
+  "dietsManual": true,
+  "rankings": [
+    {
+      "list": "oad-asia",
+      "year": 2026,
+      "rank": 498,
+      "url": "https://www.oadguides.com/lists/asia/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

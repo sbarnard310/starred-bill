@@ -10,8 +10,6 @@
   "changeNote": "Gained a third star",
   "changeNoteFr": "Obtient sa troisième étoile",
   "changeDate": "2026-03",
-  "rating": 4.8,
-  "reviews": 791,
   "dinner": 280,
   "dinnerType": "menu",
   "dinnerNote": "Longest tasting menu (other menus from €220)",
@@ -62,7 +60,7 @@
       "url": "https://www.laliste.com/places/les-morainieres-jongieux-fr"
     }
   ],
-  "rankingsChecked": "2026-10-13",
+  "rankingsChecked": "2026-10-24",
   "stay": {
     "kind": "rooms",
     "name": "Maison des Morainières",

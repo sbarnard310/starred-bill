@@ -8,8 +8,6 @@
   "addressZh": "香港金鐘金鐘道88號太古廣場JW萬豪酒店3樓",
   "stars": 1,
   "cuisine": "Cantonese",
-  "rating": 4.4,
-  "reviews": 228,
   "dinnerType": "spend",
   "dinnerNote": "À la carte Cantonese; typical dinner spend per person (SCMP 100 Top Tables 2026)",
   "dinnerNoteZh": "單點粵菜；晚餐每人一般消費（SCMP 100 Top Tables 2026）",
@@ -32,5 +30,14 @@
   "chef": "Jayson Tang",
   "chefSource": "press",
   "dinner": 1000,
-  "source": "https://100toptables.scmp.com/restaurants-profile-2026/man-ho"
+  "source": "https://100toptables.scmp.com/restaurants-profile-2026/man-ho",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 83,
+      "url": "https://www.laliste.com/places/man-ho-jw-marriott-hotel-hong-kong-hk"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

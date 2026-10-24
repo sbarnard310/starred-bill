@@ -6,8 +6,6 @@
   "address": "319 route du Languedoc, 48130 Aumont-Aubrac",
   "stars": 2,
   "cuisine": "Creative",
-  "rating": 4.8,
-  "reviews": 323,
   "dinner": 210,
   "dinnerType": "menu",
   "dinnerNote": "Longest tasting menu (other menus from €170)",
@@ -26,5 +24,14 @@
   "placeId": "ChIJbcdTBTY9sxIRoxschZB717c",
   "michelinId": "542",
   "chef": "Cyril Attrazic",
-  "chefSource": "site"
+  "chefSource": "site",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 75,
+      "url": "https://www.laliste.com/places/cyril-attrazic-chez-camillou-peyre-en-aubrac-fr"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

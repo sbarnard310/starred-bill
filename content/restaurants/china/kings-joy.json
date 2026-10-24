@@ -4,8 +4,6 @@
   "address": "2 Wudaoying Hutong, Dongcheng, 100007, Beijing",
   "stars": 2,
   "cuisine": "Vegetarian",
-  "rating": 4.4,
-  "reviews": 158,
   "dinnerType": "spend",
   "dinner": 1016,
   "dinnerNote": "Typical spend",
@@ -27,5 +25,20 @@
   "dinnerNoteZhs": "人均消费",
   "lunchNote": "Open for lunch",
   "lunchNoteZhs": "供应午餐",
-  "nameZhs": "京兆尹"
+  "nameZhs": "京兆尹",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 77.5,
+      "url": "https://www.laliste.com/places/kings-joy-beijing-beijing-cn"
+    },
+    {
+      "list": "oad-asia",
+      "year": 2026,
+      "rank": 151,
+      "url": "https://www.oadguides.com/lists/asia/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

@@ -7,8 +7,6 @@
   "address": "3F, 30 Toegye-ro 6ga-gil, Jung-gu, Seoul",
   "stars": 1,
   "cuisine": "Mediterranean",
-  "rating": 4.5,
-  "reviews": 37,
   "dinnerType": "menu",
   "dinnerNote": "Chef's tasting menu",
   "dinnerNoteKo": "셰프 테이스팅 코스",
@@ -31,5 +29,14 @@
   "lunch": 220000,
   "lunchType": "menu",
   "lunchSourceType": "press",
-  "lunchSource": "https://app.catchtable.co.kr/ct/shop/gigas"
+  "lunchSource": "https://app.catchtable.co.kr/ct/shop/gigas",
+  "rankings": [
+    {
+      "list": "oad-asia",
+      "year": 2026,
+      "rank": 419,
+      "url": "https://www.oadguides.com/lists/asia/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

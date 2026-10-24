@@ -5,8 +5,6 @@
   "address": "3655 S. Grand Ave., Los Angeles, CA 90007",
   "stars": 1,
   "cuisine": "Mexican",
-  "rating": 4.8,
-  "reviews": 2979,
   "dinner": 130,
   "dinnerType": "menu",
   "noPairing": true,
@@ -24,5 +22,20 @@
   "michelinId": "569592",
   "chef": "Gilberto Cetina",
   "chefSource": "site",
-  "dinnerNote": "Tasting menu at the counter"
+  "dinnerNote": "Tasting menu at the counter",
+  "rankings": [
+    {
+      "list": "north-americas-50-best",
+      "year": 2026,
+      "rank": 26,
+      "url": "https://www.the50.com/restaurants/best-in-north-america/list/1-50"
+    },
+    {
+      "list": "oad-north-america",
+      "year": 2026,
+      "rank": 53,
+      "url": "https://www.oadguides.com/lists/north-america/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

@@ -6,8 +6,6 @@
   "address": "6 rue de la Gare, 67210 Obernai",
   "stars": 2,
   "cuisine": "Modern European",
-  "rating": 4.7,
-  "reviews": 273,
   "dinner": 195,
   "dinnerType": "menu",
   "sourceType": "site",
@@ -31,5 +29,14 @@
   "chefSource": "site",
   "dinnerNote": "Terroir Végétal menu (Libre Émotion €255; also à la carte)",
   "dinnerNoteFr": "Menu Terroir Végétal (Libre Émotion 255 € ; aussi à la carte)",
-  "dietsManual": true
+  "dietsManual": true,
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 85,
+      "url": "https://www.laliste.com/places/la-fourchette-des-ducs-obernai-fr"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

@@ -4,8 +4,6 @@
   "address": "Weinmarkt 3, 90403, Nuremberg",
   "stars": 2,
   "cuisine": "Creative",
-  "rating": 4.7,
-  "reviews": 487,
   "dinnerType": "menu",
   "dinner": 210,
   "dinnerNote": "Tasting menu (other menus from €180)",
@@ -31,5 +29,20 @@
   "chefSource": "site",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 180 €)",
   "lunchNoteDe": "Mittagsmenü",
-  "dietsManual": true
+  "dietsManual": true,
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 85,
+      "url": "https://www.laliste.com/places/essigbratlein-nurnberg-de"
+    },
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 65,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

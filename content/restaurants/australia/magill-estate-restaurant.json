@@ -27,5 +27,14 @@
   "lat": -34.921582,
   "lng": 138.679261,
   "chef": "Scott Huggins",
-  "chefSource": "site"
+  "chefSource": "site",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 83.5,
+      "url": "https://www.laliste.com/places/penfolds-magill-estate-adelaide-au"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

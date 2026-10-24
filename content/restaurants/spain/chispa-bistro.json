@@ -11,8 +11,6 @@
   "changeNoteZh": "首度摘星",
   "changeNoteEs": "Consiguió su primera estrella",
   "changeDate": "2024-11",
-  "rating": 4.5,
-  "reviews": 334,
   "dinner": 135,
   "dinnerType": "menu",
   "dinnerNote": "Fuego Loco menu, 12 courses",
@@ -35,5 +33,14 @@
   "placeId": "ChIJFZPvPOgpQg0Rh6yW8vBMM58",
   "michelinId": "1204019",
   "chef": "Juan D'Onofrio",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "rankings": [
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 535,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

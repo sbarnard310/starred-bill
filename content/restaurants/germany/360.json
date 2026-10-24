@@ -5,8 +5,6 @@
   "address": "Bahnhofsplatz 1a, 65549, Limburg an der Lahn",
   "stars": 1,
   "cuisine": "Modern European",
-  "rating": 4.6,
-  "reviews": 380,
   "dinnerType": "menu",
   "dinner": 195,
   "dinnerNote": "Tasting menu (other menus from €62)",
@@ -25,5 +23,14 @@
   "lunchNote": "Same menu at lunch · Wed–Sat",
   "lunchNoteDe": "Gleiches Menü am Mittag · Mi–Sa",
   "lunchSourceType": "site",
-  "lunchSource": "https://www.restaurant360grad.de/downloads/Karte_Dinner_360Grad_20260904.pdf"
+  "lunchSource": "https://www.restaurant360grad.de/downloads/Karte_Dinner_360Grad_20260904.pdf",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 75.5,
+      "url": "https://www.laliste.com/places/360-limburg-an-der-lahn-de"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

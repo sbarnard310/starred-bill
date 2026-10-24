@@ -4,8 +4,6 @@
   "address": "Eteläranta 10, 00130, Helsinki",
   "stars": 2,
   "cuisine": "Modern European",
-  "rating": 4.7,
-  "reviews": 365,
   "dinnerType": "menu",
   "dinner": 250,
   "dinnerNote": "Tasting menu",
@@ -37,5 +35,14 @@
   "photoWidth": 1000,
   "photoHeight": 562,
   "photoChecked": "2026-10-13",
-  "dietsManual": true
+  "dietsManual": true,
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 75.5,
+      "url": "https://www.laliste.com/places/palace-helsinki-fi"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

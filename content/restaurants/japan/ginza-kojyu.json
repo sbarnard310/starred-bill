@@ -10,8 +10,6 @@
   "addressJa": "〒104-0061 東京都中央区銀座 5-4-8 4F",
   "stars": 2,
   "cuisine": "Japanese",
-  "rating": 4.1,
-  "reviews": 316,
   "dinner": 41800,
   "dinnerType": "menu",
   "dinnerNote": "Omakase course",
@@ -32,5 +30,20 @@
   "placeId": "ChIJVWDJ2-iLGGARrb9VTXObGIE",
   "michelinId": "1193923",
   "chef": "Toru Okuda",
-  "chefSource": "site"
+  "chefSource": "site",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 94,
+      "url": "https://www.laliste.com/places/ginza-kojyu-chuo-ku-jp"
+    },
+    {
+      "list": "oad-japan",
+      "year": 2026,
+      "rank": 286,
+      "url": "https://www.oadguides.com/lists/japan/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

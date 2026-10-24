@@ -5,8 +5,6 @@
   "address": "Carretera Pancar, 33500, Llanes",
   "stars": 1,
   "cuisine": "Modern European",
-  "rating": 4.5,
-  "reviews": 688,
   "dinnerType": "menu",
   "dinner": 139,
   "dinnerNote": "Tasting menu",
@@ -22,5 +20,14 @@
   "placeId": "ChIJtx3YjuTqSQ0R74Oo_l49F3U",
   "michelinId": "332258",
   "chef": "Ricardo González Sotres",
-  "chefSource": "site"
+  "chefSource": "site",
+  "rankings": [
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 639,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

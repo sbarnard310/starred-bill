@@ -14,8 +14,6 @@
   "changeNoteZh": "首度摘星",
   "changeNoteJa": "初の一つ星を獲得",
   "changeDate": "2024-10",
-  "rating": 4.7,
-  "reviews": 29,
   "dinner": 33000,
   "dinnerType": "menu",
   "dinnerNote": "Chef's tasting course",
@@ -28,5 +26,14 @@
   "lat": 35.688613,
   "lng": 139.722947,
   "placeId": "ChIJH9ntRWaNGGARqKM_HdWW-8k",
-  "michelinId": "1213248"
+  "michelinId": "1213248",
+  "rankings": [
+    {
+      "list": "oad-japan",
+      "year": 2026,
+      "rank": 657,
+      "url": "https://www.oadguides.com/lists/japan/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

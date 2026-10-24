@@ -6,8 +6,6 @@
   "address": "17 W. 19th St., New York, NY, 10011",
   "stars": 1,
   "cuisine": "Korean",
-  "rating": 4.6,
-  "reviews": 1307,
   "dinner": 155,
   "dinnerType": "menu",
   "dinnerNote": "Five-course prix fixe (à la carte in the bar and lounge)",
@@ -62,5 +60,5 @@
       "url": "https://www.oadguides.com/lists/north-america/top-restaurants/2026"
     }
   ],
-  "rankingsChecked": "2026-10-13"
+  "rankingsChecked": "2026-10-24"
 }

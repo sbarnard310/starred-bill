@@ -6,8 +6,6 @@
   "address": "422 Myohoimmaekawacho, Higashiyama-ku, 605-0932, Kyoto",
   "stars": 2,
   "cuisine": "Japanese",
-  "rating": 4.5,
-  "reviews": 99,
   "dinnerType": "menu",
   "dinner": 34000,
   "dinnerNote": "Tasting menu",
@@ -25,5 +23,14 @@
   "placeId": "ChIJn3lf01EJAWARbrQUx84vYj4",
   "michelinId": "1193027",
   "chef": "Yoshihisa Suzuki",
-  "chefSource": "press"
+  "chefSource": "press",
+  "rankings": [
+    {
+      "list": "oad-japan",
+      "year": 2026,
+      "rank": 663,
+      "url": "https://www.oadguides.com/lists/japan/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

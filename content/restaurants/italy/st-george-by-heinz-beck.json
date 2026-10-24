@@ -4,8 +4,6 @@
   "address": "Viale San Pancrazio 46, 98039, Taormina",
   "stars": 2,
   "cuisine": "Creative",
-  "rating": 4.8,
-  "reviews": 123,
   "dinnerType": "spend",
   "dinner": 150,
   "dinnerNote": "Typical spend without drinks (Gambero Rosso average)",
@@ -29,5 +27,14 @@
     "from": 415,
     "note": "The two-star restaurant is on the roof of The Ashbee Hotel, a five-star hotel in Taormina.",
     "checked": "2026-10-23"
-  }
+  },
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 84,
+      "url": "https://www.laliste.com/places/st-george-by-heinz-beck-the-ashbee-hotel-taormina-it"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

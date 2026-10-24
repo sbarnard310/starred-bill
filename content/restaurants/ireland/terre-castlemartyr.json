@@ -5,8 +5,6 @@
   "address": "Manor House, Castlemartyr Resort, Castlemartyr, P25 X300",
   "stars": 2,
   "cuisine": "Modern European",
-  "rating": 4.8,
-  "reviews": 72,
   "dinner": 220,
   "dinnerType": "menu",
   "dinnerNote": "Dinner tasting menu",
@@ -21,5 +19,14 @@
   "placeId": "ChIJj58j6sV7Q0gRMSlUfxS_a9k",
   "michelinId": "1203607",
   "chef": "Lewis Barker",
-  "chefSource": "site"
+  "chefSource": "site",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 77,
+      "url": "https://www.laliste.com/places/terre-cork-ie"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

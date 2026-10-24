@@ -5,8 +5,6 @@
   "address": "Breite Straße 53a, 38855, Wernigerode",
   "stars": 2,
   "cuisine": "Creative",
-  "rating": 4.9,
-  "reviews": 435,
   "dinnerType": "menu",
   "dinner": 190,
   "dinnerNote": "Tasting menu (other menus from €170)",
@@ -27,5 +25,14 @@
   "lunchNoteDe": "Nur abends",
   "chef": "Robin Pietsch",
   "chefSource": "press",
-  "dietsManual": true
+  "dietsManual": true,
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 75.5,
+      "url": "https://www.laliste.com/places/pietsch-wernigerode-de"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

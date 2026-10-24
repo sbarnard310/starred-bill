@@ -7,8 +7,6 @@
   "address": "3 rue Papillon, 75009, Paris",
   "stars": 1,
   "cuisine": "Creative",
-  "rating": 4.3,
-  "reviews": 394,
   "dinner": 180,
   "dinnerType": "menu",
   "dinnerNote": "Tasting menu, 8 courses (6 courses €120)",
@@ -30,5 +28,14 @@
     "vegetarian"
   ],
   "chef": "Guillaume Sanchez",
-  "chefSource": "site"
+  "chefSource": "site",
+  "rankings": [
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 326,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

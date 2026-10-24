@@ -5,8 +5,6 @@
   "address": "11680 Chimney Rock Rd., Paso Robles, 93446",
   "stars": 1,
   "cuisine": "American",
-  "rating": 4.4,
-  "reviews": 79,
   "dinnerType": "menu",
   "dinner": 225,
   "dinnerNote": "Estate tasting menu",
@@ -31,5 +29,14 @@
   "photoSourceType": "commons",
   "photoWidth": 1000,
   "photoHeight": 750,
-  "photoChecked": "2026-10-13"
+  "photoChecked": "2026-10-13",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 78,
+      "url": "https://www.laliste.com/places/the-restaurant-at-justin-paso-robles-us"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

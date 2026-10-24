@@ -11,8 +11,6 @@
   "changeNoteZh": "首度摘星",
   "changeNoteEs": "Consiguió su primera estrella",
   "changeDate": "2025-11",
-  "rating": 4.8,
-  "reviews": 731,
   "dinner": 125,
   "dinnerType": "menu",
   "dinnerNote": "Tasting menu",
@@ -33,5 +31,14 @@
   "placeId": "ChIJl8Vm314nQg0RdSw5ZpYvHM4",
   "michelinId": "1195762",
   "chef": "Sergio Tofe",
-  "chefSource": "press"
+  "chefSource": "press",
+  "rankings": [
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 742,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

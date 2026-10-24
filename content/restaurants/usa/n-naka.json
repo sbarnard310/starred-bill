@@ -5,8 +5,6 @@
   "address": "3455 Overland Ave., Los Angeles, CA 90034",
   "stars": 1,
   "cuisine": "Japanese",
-  "rating": 4.9,
-  "reviews": 537,
   "dinner": 395,
   "dinnerType": "menu",
   "dinnerNote": "Tasting menu",
@@ -28,5 +26,20 @@
     "kosher"
   ],
   "chef": "Niki Nakayama",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 83.5,
+      "url": "https://www.laliste.com/places/nnaka-los-angeles-us"
+    },
+    {
+      "list": "oad-north-america",
+      "year": 2026,
+      "rank": 83,
+      "url": "https://www.oadguides.com/lists/north-america/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

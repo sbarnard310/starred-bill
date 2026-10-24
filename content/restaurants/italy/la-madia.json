@@ -5,8 +5,6 @@
   "address": "Corso Filippo Re Capriata 22, 92027, Licata",
   "stars": 2,
   "cuisine": "Creative",
-  "rating": 4.8,
-  "reviews": 745,
   "dinnerType": "menu",
   "dinner": 190,
   "dinnerNote": "Tasting menu (other menus from €100)",
@@ -26,5 +24,20 @@
   "placeId": "ChIJ-6MwyjVeEBMRr7QLyWOtM9Y",
   "michelinId": "159609",
   "chef": "Pino Cuttaia",
-  "chefSource": "site"
+  "chefSource": "site",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 90,
+      "url": "https://www.laliste.com/places/la-madia-licata-it"
+    },
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 256,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

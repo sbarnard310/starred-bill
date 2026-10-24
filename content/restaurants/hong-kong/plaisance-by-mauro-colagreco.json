@@ -11,8 +11,6 @@
   "changeNote": "Gained its first star",
   "changeNoteZh": "首度摘星",
   "changeDate": "2025-03",
-  "rating": 4.7,
-  "reviews": 98,
   "dinner": 2388,
   "dinnerType": "menu",
   "dinnerNote": "Tasting menu, 6 courses (4 courses HK$1,488)",
@@ -31,5 +29,14 @@
   "placeId": "ChIJH5AVEi8BBDQRRc7ueZZyeuI",
   "michelinId": "1212068",
   "chef": "Mauro Colagreco",
-  "chefSource": "press"
+  "chefSource": "press",
+  "rankings": [
+    {
+      "list": "oad-asia",
+      "year": 2026,
+      "rank": 426,
+      "url": "https://www.oadguides.com/lists/asia/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

@@ -9,8 +9,6 @@
   "changeNote": "New straight in with two stars",
   "changeDate": "2025-12",
   "changeNoteCs": "Nově rovnou se dvěma hvězdami",
-  "rating": 4.9,
-  "reviews": 197,
   "dinnerType": "menu",
   "dinner": 6500,
   "dinnerNote": "Tasting menu (other menus from CZK 5,500)",
@@ -60,5 +58,14 @@
   "dressCode": "Smart casual.",
   "children": "Children aged 12 and over are welcome.",
   "infoSource": "https://restaurant-papilio.cz/kontakt",
-  "infoChecked": "2026-10-13"
+  "infoChecked": "2026-10-13",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 77,
+      "url": "https://www.laliste.com/places/papilio-vysoky-ujezd-u-berouna-cz"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

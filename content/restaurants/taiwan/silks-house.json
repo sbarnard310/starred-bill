@@ -12,8 +12,6 @@
   "changeNote": "Gained its first star",
   "changeNoteZh": "首獲一星",
   "changeDate": "2026-07",
-  "rating": 4.4,
-  "reviews": 1823,
   "dinner": 4280,
   "dinnerType": "menu",
   "dinnerNote": "Set menu (from NT$3,380)",
@@ -46,5 +44,20 @@
   "photoWidth": 1000,
   "photoHeight": 682,
   "photoChecked": "2026-10-13",
-  "dietsManual": true
+  "dietsManual": true,
+  "rankings": [
+    {
+      "list": "asias-50-best",
+      "year": 2026,
+      "rank": 64,
+      "url": "https://www.the50.com/restaurants/best-in-asia/list/51-100"
+    },
+    {
+      "list": "oad-asia",
+      "year": 2026,
+      "rank": 91,
+      "url": "https://www.oadguides.com/lists/asia/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

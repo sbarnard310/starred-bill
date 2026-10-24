@@ -5,8 +5,6 @@
   "address": "Piazzale della Libertà 7, 61121, Pesaro",
   "stars": 1,
   "cuisine": "Creative",
-  "rating": 4.6,
-  "reviews": 624,
   "dinnerType": "menu",
   "dinner": 130,
   "dinnerNote": "Tasting menu (other menus from €105)",
@@ -25,5 +23,14 @@
   "placeId": "ChIJI1gAcj4ZLRMRsTSsTgLhuEQ",
   "michelinId": "475673",
   "chef": "Stefano Ciotti",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "rankings": [
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 694,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

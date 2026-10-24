@@ -4,8 +4,6 @@
   "address": "Rua do Ouro 258, 4150-554, Porto",
   "stars": 1,
   "cuisine": "Modern European",
-  "rating": 4.7,
-  "reviews": 499,
   "dinnerType": "menu",
   "dinner": 180,
   "sourceType": "site",
@@ -82,6 +80,6 @@
       "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
     }
   ],
-  "rankingsChecked": "2026-10-13",
+  "rankingsChecked": "2026-10-24",
   "dietsManual": true
 }

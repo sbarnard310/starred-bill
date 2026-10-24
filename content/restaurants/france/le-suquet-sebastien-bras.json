@@ -10,8 +10,6 @@
   "changeNote": "Dropped from two stars to one",
   "changeNoteFr": "Passe de deux étoiles à une",
   "changeDate": "2026-03",
-  "rating": 4.7,
-  "reviews": 1303,
   "dinner": 300,
   "dinnerType": "menu",
   "dinnerNote": "Longest tasting menu (other menus from €215)",
@@ -43,5 +41,14 @@
     "url": "https://www.bras.fr/lhotel-du-suquet/",
     "note": "Thirteen rooms and suites at the Bras family’s hotel.",
     "checked": "2026-10-23"
-  }
+  },
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 94.5,
+      "url": "https://www.laliste.com/places/le-suquet-maison-bras-laguiole-fr"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

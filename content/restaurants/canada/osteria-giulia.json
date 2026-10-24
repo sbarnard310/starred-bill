@@ -4,8 +4,6 @@
   "address": "134 Avenue Rd., Toronto, M5R 2H6",
   "stars": 1,
   "cuisine": "Italian",
-  "rating": 4.4,
-  "reviews": 981,
   "dinnerType": "main",
   "dinner": 65,
   "dinnerNote": "À la carte; fish mains $65–$68, pasta $29–$55",
@@ -69,6 +67,6 @@
       "url": "https://www.laliste.com/places/osteria-giulia-toronto-ca"
     }
   ],
-  "rankingsChecked": "2026-10-13",
+  "rankingsChecked": "2026-10-24",
   "dietsManual": true
 }

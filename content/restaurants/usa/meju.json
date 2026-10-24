@@ -6,8 +6,6 @@
   "address": "5-28 49th Ave., Queens, NY, 11101",
   "stars": 1,
   "cuisine": "Korean",
-  "rating": 4.7,
-  "reviews": 90,
   "dinner": 235,
   "dinnerType": "menu",
   "dinnerNote": "Chef's counter tasting menu",
@@ -22,5 +20,14 @@
   "placeId": "ChIJ6alY3R1ZwokRQXUSqpo8OIM",
   "michelinId": "1207503",
   "chef": "Hooni Kim",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "rankings": [
+    {
+      "list": "oad-north-america",
+      "year": 2026,
+      "rank": 531,
+      "url": "https://www.oadguides.com/lists/north-america/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

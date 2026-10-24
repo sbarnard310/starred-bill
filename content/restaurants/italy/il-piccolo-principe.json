@@ -6,8 +6,6 @@
   "address": "Piazza Giacomo Puccini 1, Viareggio, 55049",
   "stars": 2,
   "cuisine": "Creative",
-  "rating": 4.6,
-  "reviews": 180,
   "dinner": 270,
   "dinnerType": "menu",
   "dinnerNote": "Esperienza tasting menu, 10 courses (I Classici, 8 courses, €220)",
@@ -73,7 +71,7 @@
       "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
     }
   ],
-  "rankingsChecked": "2026-10-13",
+  "rankingsChecked": "2026-10-24",
   "dietsManual": true,
   "stay": {
     "kind": "hotel",

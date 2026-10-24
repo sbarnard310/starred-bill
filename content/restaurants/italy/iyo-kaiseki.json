@@ -6,8 +6,6 @@
   "address": "Piazza Alvar Aalto 9N02, Milan, 20124",
   "stars": 1,
   "cuisine": "Japanese",
-  "rating": 4.8,
-  "reviews": 290,
   "dinner": 180,
   "dinnerType": "menu",
   "dinnerNote": "Kaiseki menu (chef's menu, 6 courses, €140)",
@@ -53,5 +51,14 @@
   "dressCode": "Elegant casual. Guests are asked not to wear strong perfume, scented creams or deodorant, as they interfere with the menu.",
   "children": "Not recommended for children under 10; exceptions can be discussed with the restaurant in advance.",
   "infoSource": "https://www.sevenrooms.com/reservations/iyokaiseki",
-  "infoChecked": "2026-10-13"
+  "infoChecked": "2026-10-13",
+  "rankings": [
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 386,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

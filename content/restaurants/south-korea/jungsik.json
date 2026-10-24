@@ -7,8 +7,6 @@
   "address": "11 Seolleung-ro 158-gil, Gangnam-gu, Seoul",
   "stars": 2,
   "cuisine": "Modern",
-  "rating": 4.4,
-  "reviews": 1642,
   "dinner": 330000,
   "dinnerType": "menu",
   "dinnerNote": "Dinner course",
@@ -33,5 +31,20 @@
   ],
   "chef": "Yim Jung-sik",
   "chefSource": "site",
-  "dietsManual": true
+  "dietsManual": true,
+  "rankings": [
+    {
+      "list": "asias-50-best",
+      "year": 2026,
+      "rank": 87,
+      "url": "https://www.the50.com/restaurants/best-in-asia/list/51-100"
+    },
+    {
+      "list": "oad-asia",
+      "year": 2026,
+      "rank": 51,
+      "url": "https://www.oadguides.com/lists/asia/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

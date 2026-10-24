@@ -11,8 +11,6 @@
   "changeNote": "Gained its first star",
   "changeNoteKo": "첫 번째 별 획득",
   "changeDate": "2026-03",
-  "rating": 4.7,
-  "reviews": 42,
   "dinner": 380000,
   "dinnerType": "menu",
   "dinnerNote": "Tasting menu",
@@ -31,5 +29,20 @@
   "placeId": "ChIJr__jo2OjfDURT4N0VNw62MM",
   "michelinId": "1241613",
   "chef": "Seong-hyun Jo",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "rankings": [
+    {
+      "list": "asias-50-best",
+      "year": 2026,
+      "rank": 54,
+      "url": "https://www.the50.com/restaurants/best-in-asia/list/51-100"
+    },
+    {
+      "list": "oad-asia",
+      "year": 2026,
+      "rank": 175,
+      "url": "https://www.oadguides.com/lists/asia/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

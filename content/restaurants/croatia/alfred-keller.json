@@ -5,8 +5,6 @@
   "address": "Čikat 16, 51550, Mali Lošinj",
   "stars": 1,
   "cuisine": "Modern European",
-  "rating": 4.5,
-  "reviews": 127,
   "dinnerType": "menu",
   "dinner": 137,
   "dinnerNote": "Tasting menu (other menus from €120)",
@@ -25,5 +23,14 @@
   "dinnerNoteHr": "Degustacijski meni (ostali meniji od 120 €)",
   "noLunch": true,
   "lunchNote": "Dinner only",
-  "lunchNoteHr": "Samo večera"
+  "lunchNoteHr": "Samo večera",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 85,
+      "url": "https://www.laliste.com/places/alfred-keller-mali-losinj-hr"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

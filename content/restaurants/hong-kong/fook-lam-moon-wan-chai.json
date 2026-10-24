@@ -8,8 +8,6 @@
   "addressZh": "香港灣仔莊士敦道35-45號",
   "stars": 1,
   "cuisine": "Cantonese",
-  "rating": 4.2,
-  "reviews": 568,
   "dinnerType": "spend",
   "dinnerNote": "À la carte Cantonese; typical dinner spend per person",
   "dinnerNoteZh": "單點粵菜；晚餐每人一般消費",
@@ -39,5 +37,14 @@
   "photoHeight": 1000,
   "photoChecked": "2026-10-13",
   "dinner": 800,
-  "source": "https://www.openrice.com/en/hongkong/r-fook-lam-moon-wan-chai-guangdong-dim-sum-r812/reviews"
+  "source": "https://www.openrice.com/en/hongkong/r-fook-lam-moon-wan-chai-guangdong-dim-sum-r812/reviews",
+  "rankings": [
+    {
+      "list": "oad-asia",
+      "year": 2026,
+      "rank": 179,
+      "url": "https://www.oadguides.com/lists/asia/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

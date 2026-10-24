@@ -6,8 +6,6 @@
   "address": "118 Saitocho, Shimogyo-ku, 600-8012, Kyoto",
   "stars": 2,
   "cuisine": "Japanese",
-  "rating": 4.3,
-  "reviews": 491,
   "dinnerType": "menu",
   "dinnerNote": "Kaiseki course, from; including tax, service extra",
   "sourceType": "site",
@@ -26,5 +24,14 @@
   "lunchSourceType": "site",
   "lunchSource": "https://kikunoi.jp/restaurant/roan.html",
   "lunchNote": "Lunch kaiseki, from; including tax, service extra",
-  "lunchNoteJa": "昼懐石（最安値）・税込・サービス料別"
+  "lunchNoteJa": "昼懐石（最安値）・税込・サービス料別",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 90,
+      "url": "https://www.laliste.com/places/kikunoi-roan-kyoto-shi-jp"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

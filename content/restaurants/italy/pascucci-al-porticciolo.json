@@ -6,8 +6,6 @@
   "address": "Viale Traiano 85, angolo via Fiumara 2, Fiumicino, 00054",
   "stars": 1,
   "cuisine": "Seafood",
-  "rating": 4.6,
-  "reviews": 785,
   "dinner": 150,
   "dinnerType": "menu",
   "dinnerNote": "Come è profondo il mare… tasting menu (classic tasting menu €130)",
@@ -48,5 +46,20 @@
   "bookingPhone": "+39 06 6502 9204",
   "groups": "About 30 seats in all, in a main room and a veranda with three tables, plus a small private room with a view of the wine cellar.",
   "infoSource": "https://pascuccialporticciolo.it/contattaci/",
-  "infoChecked": "2026-10-13"
+  "infoChecked": "2026-10-13",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 85.5,
+      "url": "https://www.laliste.com/places/pascucci-al-porticciolo-fiumicino-it"
+    },
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 156,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

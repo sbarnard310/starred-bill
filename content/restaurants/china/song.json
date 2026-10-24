@@ -4,8 +4,6 @@
   "address": "Shop 417, 4F, G.T. Land Plaza Winter, 16 Zhujiang East Road, Zhujiang New Town, Tianhe, Guangzhou",
   "stars": 1,
   "cuisine": "Sichuan",
-  "rating": 4.7,
-  "reviews": 84,
   "dinnerType": "spend",
   "dinner": 230,
   "dinnerNote": "Typical spend",
@@ -18,5 +16,14 @@
   "dinnerNoteZhs": "人均消费",
   "lunchNote": "Open for lunch",
   "lunchNoteZhs": "供应午餐",
-  "nameZhs": "宋"
+  "nameZhs": "宋",
+  "rankings": [
+    {
+      "list": "oad-asia",
+      "year": 2026,
+      "rank": 588,
+      "url": "https://www.oadguides.com/lists/asia/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

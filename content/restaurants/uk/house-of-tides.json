@@ -5,8 +5,6 @@
   "address": "28-30 The Close, Newcastle upon Tyne, NE1 3RF",
   "stars": 1,
   "cuisine": "Modern European",
-  "rating": 4.6,
-  "reviews": 616,
   "dinner": 125,
   "dinnerType": "menu",
   "dinnerNote": "Tasting menu (3-course prix fixe £65, Thu–Fri)",
@@ -78,5 +76,20 @@
   "children": "No infants or babies; best suited to children over 10. There is no children's menu, and everyone pays the same menu price.",
   "infoSource": "https://www.houseoftides.co.uk/faqs",
   "infoChecked": "2026-10-13",
-  "dietsManual": true
+  "dietsManual": true,
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 82.5,
+      "url": "https://www.laliste.com/places/house-of-tides-newcastle-upon-tyne-gb"
+    },
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 579,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

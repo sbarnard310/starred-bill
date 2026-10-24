@@ -4,8 +4,6 @@
   "address": "Dienerstraße 14, 80331, Munich",
   "stars": 2,
   "cuisine": "Creative",
-  "rating": 4.6,
-  "reviews": 309,
   "dinnerType": "menu",
   "dinner": 300,
   "dinnerNote": "Tasting menu",
@@ -24,5 +22,14 @@
   "lunchNote": "Same menu at lunch · Fri–Sat",
   "lunchNoteDe": "Gleiches Menü am Mittag · Fr–Sa",
   "lunchSourceType": "site",
-  "lunchSource": "https://www.dallmayr.com/fileadmin/Redaktion/Restaurant/Restaurant_Alois_Menue.pdf"
+  "lunchSource": "https://www.dallmayr.com/fileadmin/Redaktion/Restaurant/Restaurant_Alois_Menue.pdf",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 88,
+      "url": "https://www.laliste.com/places/alois-dallmayr-fine-dining-munchen-de"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

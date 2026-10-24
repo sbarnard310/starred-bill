@@ -6,8 +6,6 @@
   "address": "3-2-15 Kawaramachi, Chuo-ku, 541-0048, Osaka",
   "stars": 2,
   "cuisine": "French",
-  "rating": 4.3,
-  "reviews": 341,
   "dinnerType": "menu",
   "dinner": 35200,
   "dinnerNote": "Tasting menu, about 13 courses; tax and service included",
@@ -53,5 +51,32 @@
   "dressCode": "No set dress code, but no shorts or flip-flops.",
   "children": "Only children old enough to eat the adult menu.",
   "infoSource": "https://www.la-cime.com/",
-  "infoChecked": "2026-10-13"
+  "infoChecked": "2026-10-13",
+  "rankings": [
+    {
+      "list": "worlds-50-best",
+      "year": 2025,
+      "rank": 44,
+      "url": "https://www.the50.com/restaurants/best-in-the-world/list/1-50"
+    },
+    {
+      "list": "asias-50-best",
+      "year": 2026,
+      "rank": 13,
+      "url": "https://www.the50.com/restaurants/best-in-asia/list/1-50"
+    },
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 91,
+      "url": "https://www.laliste.com/places/la-cime-osaka-jp"
+    },
+    {
+      "list": "oad-japan",
+      "year": 2026,
+      "rank": 149,
+      "url": "https://www.oadguides.com/lists/japan/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

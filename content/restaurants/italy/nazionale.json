@@ -5,8 +5,6 @@
   "address": "Via Cavour 60, 12019, Vernante",
   "stars": 1,
   "cuisine": "Regional",
-  "rating": 4.6,
-  "reviews": 651,
   "dinnerType": "menu",
   "dinner": 120,
   "dinnerNote": "Tasting menu (other menus from €90)",
@@ -32,5 +30,14 @@
     "url": "https://www.ilnazionale.com/en/relais/",
     "note": "The restaurant sits in a family-run hotel and four-star relais with a spa in Vernante.",
     "checked": "2026-10-23"
-  }
+  },
+  "rankings": [
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 562,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

@@ -6,8 +6,6 @@
   "address": "3-2 Yamatocho, Higashiyama-ku, 605-0802, Kyoto",
   "stars": 1,
   "cuisine": "Japanese",
-  "rating": 4.3,
-  "reviews": 127,
   "dinnerType": "menu",
   "dinnerNote": "Kaiseki course, from; including tax and service",
   "sourceType": "site",
@@ -26,5 +24,14 @@
   "chefSource": "site",
   "dinner": 18975,
   "dinnerNoteJa": "懐石コース（最安値）・税サ込",
-  "source": "https://kyoto-kitcho.com/hana-dishes/"
+  "source": "https://kyoto-kitcho.com/hana-dishes/",
+  "rankings": [
+    {
+      "list": "oad-japan",
+      "year": 2026,
+      "rank": 660,
+      "url": "https://www.oadguides.com/lists/japan/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

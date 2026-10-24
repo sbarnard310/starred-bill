@@ -6,8 +6,6 @@
   "address": "287-5 Shingoryoguchicho, Kamigyo-ku, 602-0897, Kyoto",
   "stars": 2,
   "cuisine": "Japanese",
-  "rating": 4.5,
-  "reviews": 56,
   "dinnerType": "menu",
   "dinnerNote": "Kaiseki course; including tax",
   "sourceType": "site",
@@ -26,5 +24,14 @@
   "lunchSourceType": "site",
   "lunchSource": "https://motonari-kyoto.jp/",
   "lunchNote": "Lunch kaiseki; including tax",
-  "lunchNoteJa": "昼懐石・税込"
+  "lunchNoteJa": "昼懐石・税込",
+  "rankings": [
+    {
+      "list": "oad-japan",
+      "year": 2026,
+      "rank": 52,
+      "url": "https://www.oadguides.com/lists/japan/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

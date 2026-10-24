@@ -5,8 +5,6 @@
   "address": "Via Margone 15, 38123, Ravina",
   "stars": 1,
   "cuisine": "Creative",
-  "rating": 4.8,
-  "reviews": 701,
   "dinnerType": "menu",
   "dinner": 175,
   "dinnerNote": "Tasting menu (other menus from €90)",
@@ -25,5 +23,14 @@
   "placeId": "ChIJuamR9fhzgkcRRU7Sa0Wwgqs",
   "michelinId": "199559",
   "chef": "Edoardo Fumagalli",
-  "chefSource": "site"
+  "chefSource": "site",
+  "rankings": [
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 240,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

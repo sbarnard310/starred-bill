@@ -6,8 +6,6 @@
   "address": "3-11-4 Nishitemma, Kita-ku, 530-0047, Osaka",
   "stars": 1,
   "cuisine": "Yakitori",
-  "rating": 4.4,
-  "reviews": 209,
   "dinnerType": "menu",
   "dinnerNote": "Omakase course; including tax",
   "sourceType": "press",
@@ -21,5 +19,14 @@
   "lunchNote": "Open for lunch",
   "lunchNoteJa": "ランチ営業あり",
   "chef": "Yoshitomo Ishii",
-  "chefSource": "press"
+  "chefSource": "press",
+  "rankings": [
+    {
+      "list": "oad-japan",
+      "year": 2026,
+      "rank": 118,
+      "url": "https://www.oadguides.com/lists/japan/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

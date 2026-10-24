@@ -4,8 +4,6 @@
   "address": "Salizzada dei Greci, sestiere Castello 3303, 30122, Venice",
   "stars": 1,
   "cuisine": "Modern European",
-  "rating": 4.6,
-  "reviews": 747,
   "dinnerType": "spend",
   "dinner": 150,
   "dinnerNote": "Typical spend without drinks (Gambero Rosso average)",
@@ -20,5 +18,14 @@
   "placeId": "ChIJdzcksyeufkcRKolpWat_x9M",
   "michelinId": "496366",
   "chef": "Salvatore Sodano",
-  "chefSource": "site"
+  "chefSource": "site",
+  "rankings": [
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 300,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

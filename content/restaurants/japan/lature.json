@@ -9,8 +9,6 @@
   "addressJa": "〒150-0002 東京都渋谷区渋谷 2-2-2 B1F",
   "stars": 1,
   "cuisine": "French",
-  "rating": 4.4,
-  "reviews": 917,
   "dinner": 19580,
   "dinnerType": "menu",
   "dinnerNote": "Tasting menu, from",
@@ -33,5 +31,14 @@
   "placeId": "ChIJ5S6oA1-LGGAREG-V6VQQP_0",
   "michelinId": "1194213",
   "chef": "Takuto Murota",
-  "chefSource": "site"
+  "chefSource": "site",
+  "rankings": [
+    {
+      "list": "oad-japan",
+      "year": 2026,
+      "rank": 113,
+      "url": "https://www.oadguides.com/lists/japan/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

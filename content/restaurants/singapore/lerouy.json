@@ -6,8 +6,6 @@
   "address": "7 Mohamed Sultan Road, Singapore 238957",
   "stars": 1,
   "cuisine": "French",
-  "rating": 4.5,
-  "reviews": 591,
   "dinner": 158,
   "dinnerType": "menu",
   "dinnerNote": "Tasting menu, 4 courses, from",
@@ -31,5 +29,14 @@
     "vegetarian"
   ],
   "chef": "Christophe Lerouy",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "rankings": [
+    {
+      "list": "oad-asia",
+      "year": 2026,
+      "rank": 492,
+      "url": "https://www.oadguides.com/lists/asia/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

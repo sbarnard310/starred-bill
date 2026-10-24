@@ -7,8 +7,6 @@
   "address": "5 rue Rameau, 75002, Paris",
   "stars": 1,
   "cuisine": "Japanese",
-  "rating": 4.7,
-  "reviews": 551,
   "dinner": 320,
   "dinnerType": "menu",
   "dinnerNote": "Menu WA",
@@ -35,5 +33,14 @@
     "via": "website",
     "source": "https://sushi-b-fr.com/",
     "checked": "2026-10-10"
-  }
+  },
+  "rankings": [
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 594,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

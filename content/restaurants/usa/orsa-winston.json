@@ -5,8 +5,6 @@
   "address": "122 W. 4th St., Los Angeles, CA 90013",
   "stars": 1,
   "cuisine": "Modern American",
-  "rating": 4.4,
-  "reviews": 312,
   "dinner": 150,
   "dinnerType": "menu",
   "dinnerNote": "Omakase",
@@ -28,5 +26,14 @@
     "gluten-free"
   ],
   "chef": "Josef Centeno",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "rankings": [
+    {
+      "list": "oad-north-america",
+      "year": 2026,
+      "rank": 124,
+      "url": "https://www.oadguides.com/lists/north-america/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

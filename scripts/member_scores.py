@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Members' scores: brings each restaurant's average score and count down from Supabase into content/member-scores.json,
-which build.py shows beside the Google rating ("Members: 4.6 (12)") on destination rows, map pop-ups and restaurant pages.
+which build.py shows in the reviews column ("Members: 4.6 (12)") on destination rows, map pop-ups and restaurant pages.
 
 Members who have ticked a restaurant as "been there" can score it from 1 to 5 in their diary (one score each, kept in
 their own `saved` row, supabase/scores.sql). Only member_scores() reads them, with the secret key, and it returns just

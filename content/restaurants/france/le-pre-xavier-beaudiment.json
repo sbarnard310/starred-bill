@@ -4,8 +4,6 @@
   "address": "3 route de la Baraque, 63000 Clermont-Ferrand",
   "stars": 2,
   "cuisine": "Creative",
-  "rating": 4.7,
-  "reviews": 752,
   "dinner": 199,
   "dinnerType": "menu",
   "dinnerNote": "Autumn tasting menu (dinner menu €79)",
@@ -32,5 +30,14 @@
     "url": "https://www.restaurant-lepre.com/",
     "note": "Five four-star bedrooms above the restaurant.",
     "checked": "2026-10-23"
-  }
+  },
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 84,
+      "url": "https://www.laliste.com/places/le-pre-xavier-beaudiment-durtol-fr"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

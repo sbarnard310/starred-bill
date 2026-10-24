@@ -4,8 +4,6 @@
   "address": "1-1 Tongzilin East Road, Wuhou, Chengdu",
   "stars": 1,
   "cuisine": "Sichuan",
-  "rating": 4.5,
-  "reviews": 4,
   "dinnerType": "spend",
   "dinner": 500,
   "dinnerNote": "Typical spend",
@@ -24,5 +22,14 @@
   "lunchNoteZhs": "供应午餐",
   "nameZhs": "漾亚 · 雍雅合鲜（桐梓林东路）",
   "chef": "Fan Jun",
-  "chefSource": "press"
+  "chefSource": "press",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 78.5,
+      "url": "https://www.laliste.com/places/yongya-hexian-tongzilin-chengdu-shi-cn"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

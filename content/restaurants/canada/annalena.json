@@ -7,8 +7,6 @@
   "change": "up",
   "changeNote": "Gained a second star, Vancouver's first two-star restaurant",
   "changeDate": "2026-10",
-  "rating": 4.7,
-  "reviews": 1765,
   "dinnerType": "menu",
   "dinner": 178,
   "dinnerNote": "Tasting menu",
@@ -23,5 +21,26 @@
   "placeId": "ChIJJ_oZQcpzhlQRYmMyGpKp7PA",
   "michelinId": "1198872",
   "chef": "Michael Robbins",
-  "chefSource": "site"
+  "chefSource": "site",
+  "rankings": [
+    {
+      "list": "north-americas-50-best",
+      "year": 2026,
+      "rank": 35,
+      "url": "https://www.the50.com/restaurants/best-in-north-america/list/1-50"
+    },
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 78,
+      "url": "https://www.laliste.com/places/annalena-vancouver-ca"
+    },
+    {
+      "list": "oad-north-america",
+      "year": 2026,
+      "rank": 410,
+      "url": "https://www.oadguides.com/lists/north-america/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

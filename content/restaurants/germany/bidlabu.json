@@ -4,8 +4,6 @@
   "address": "Kleine Bockenheimer Straße 14, 60313, Frankfurt on the Main",
   "stars": 1,
   "cuisine": "Farm to table",
-  "rating": 4.7,
-  "reviews": 704,
   "dinnerType": "menu",
   "dinner": 120,
   "dinnerNote": "Tasting menu (other menus from €52)",
@@ -31,5 +29,14 @@
   "lunchNoteDe": "Gleiches Menü am Mittag · Do–Sa",
   "lunchSourceType": "site",
   "lunchSource": "https://bidlabu.de/",
-  "dietsManual": true
+  "dietsManual": true,
+  "rankings": [
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 722,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

@@ -9,8 +9,6 @@
   "changeNote": "Gained its first star",
   "changeNoteZh": "首次獲得一星",
   "changeDate": "2025-02",
-  "rating": 4.9,
-  "reviews": 43,
   "dinner": 125,
   "dinnerType": "menu",
   "dinnerNote": "Tasting menu, 10 courses",
@@ -36,5 +34,14 @@
     "rooms": 58,
     "url": "https://middletonlodge.co.uk/stay/",
     "checked": "2026-10-23"
-  }
+  },
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 77.5,
+      "url": "https://www.laliste.com/places/forge-at-middleton-lodge-estate-richmond-gb"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

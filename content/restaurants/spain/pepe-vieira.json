@@ -5,8 +5,6 @@
   "address": "Camiño da Serpe, 36992, Raxó",
   "stars": 2,
   "cuisine": "Creative",
-  "rating": 4.6,
-  "reviews": 795,
   "dinnerType": "menu",
   "dinner": 275,
   "dinnerNote": "Romasanta tasting menu (other menus from €190)",
@@ -80,5 +78,20 @@
     "url": "https://pepevieira.com/en/hotel-paisaje",
     "note": "Relais & Châteaux landscape hotel of 14 sheds (double rooms) on the same estate, with a pool; booked through the restaurant site.",
     "checked": "2026-10-23"
-  }
+  },
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 82.5,
+      "url": "https://www.laliste.com/places/pepe-vieira-poio-es"
+    },
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 330,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

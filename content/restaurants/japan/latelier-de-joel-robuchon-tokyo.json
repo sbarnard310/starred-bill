@@ -9,8 +9,6 @@
   "addressJa": "〒106-0032 東京都港区六本木 6-10-1 六本木ヒルズ ヒルサイド 2F",
   "stars": 1,
   "cuisine": "French",
-  "rating": 4.4,
-  "reviews": 1300,
   "dinner": 25000,
   "dinnerType": "menu",
   "dinnerNote": "Tasting menu",
@@ -97,12 +95,12 @@
     },
     {
       "list": "oad-japan",
-      "year": 2025,
-      "rank": 150,
-      "url": "https://www.oadguides.com/lists/japan/top-restaurants/2025"
+      "year": 2026,
+      "rank": 169,
+      "url": "https://www.oadguides.com/lists/japan/top-restaurants/2026"
     }
   ],
-  "rankingsChecked": "2026-10-13",
+  "rankingsChecked": "2026-10-24",
   "photo": "latelier-de-joel-robuchon-tokyo.jpg",
   "photoAlt": "The L'Atelier de Joël Robuchon sign and glass entrance at Roppongi Hills, Tokyo",
   "photoCredit": "Syced",

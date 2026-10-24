@@ -5,8 +5,6 @@
   "address": "Vilniaus gatvė 28, 01144, Vilnius",
   "stars": 1,
   "cuisine": "Modern European",
-  "rating": 4.5,
-  "reviews": 1368,
   "dinnerType": "main",
   "dinnerNote": "À la carte; main courses €42–53",
   "noPairing": true,
@@ -23,5 +21,20 @@
   "chef": "Martynas Praškevičius",
   "chefSource": "press",
   "dinner": 42,
-  "source": "https://www.dziaugsmas.com/valgiarastis"
+  "source": "https://www.dziaugsmas.com/valgiarastis",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 75,
+      "url": "https://www.laliste.com/places/dziaugsmas-vilnius-lt"
+    },
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 404,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

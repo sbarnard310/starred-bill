@@ -6,8 +6,6 @@
   "address": "Avenida del Tibidabo 1, Barcelona, 08022",
   "stars": 3,
   "cuisine": "Creative",
-  "rating": 4.4,
-  "reviews": 3670,
   "dinner": 315,
   "dinnerType": "menu",
   "dinnerNote": "Tasting menu, about 22 dishes",
@@ -61,5 +59,20 @@
     ],
     "note": "A 15-room boutique hotel in a century-old house in Sant Gervasi, next to the restaurant.",
     "checked": "2026-10-23"
-  }
+  },
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 95.5,
+      "url": "https://www.laliste.com/places/abac-barcelona-es"
+    },
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 141,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

@@ -6,8 +6,6 @@
   "address": "Blvd. de la Luz 777, Jardines del Pedregal, Mexico City",
   "stars": 1,
   "cuisine": "Creative",
-  "rating": 4.3,
-  "reviews": 3463,
   "dinner": 2500,
   "dinnerType": "menu",
   "dinnerNote": "Tasting menu, 12 courses, mostly plant-based (à la carte about MX$1,200 a head; September 2025 prices)",
@@ -40,5 +38,26 @@
   "photoSourceType": "commons",
   "photoWidth": 1000,
   "photoHeight": 667,
-  "photoChecked": "2026-10-13"
+  "photoChecked": "2026-10-13",
+  "rankings": [
+    {
+      "list": "latin-americas-50-best",
+      "year": 2025,
+      "rank": 59,
+      "url": "https://www.the50.com/restaurants/best-in-latin-america/list/51-100"
+    },
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 83.5,
+      "url": "https://www.laliste.com/places/sud-777-ciudad-de-mexico-mx"
+    },
+    {
+      "list": "oad-north-america",
+      "year": 2026,
+      "rank": 171,
+      "url": "https://www.oadguides.com/lists/north-america/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

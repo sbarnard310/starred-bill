@@ -9,8 +9,6 @@
   "addressJa": "〒100-8558 東京都千代田区内幸町 1-1-1 帝国ホテル東京 本館 MF",
   "stars": 1,
   "cuisine": "French",
-  "rating": 4.6,
-  "reviews": 535,
   "dinner": 25000,
   "dinnerType": "menu",
   "dinnerNote": "Tasting menu, from",
@@ -36,5 +34,20 @@
     "vegan"
   ],
   "chef": "Thierry Voisin",
-  "chefSource": "press"
+  "chefSource": "press",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 81.5,
+      "url": "https://www.laliste.com/places/les-saisons-hotel-imperial-chiyoda-city-jp"
+    },
+    {
+      "list": "oad-japan",
+      "year": 2026,
+      "rank": 326,
+      "url": "https://www.oadguides.com/lists/japan/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

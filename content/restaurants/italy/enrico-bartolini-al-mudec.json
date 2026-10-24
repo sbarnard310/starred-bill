@@ -6,8 +6,6 @@
   "address": "Via Tortona 56, Milan, 20144",
   "stars": 3,
   "cuisine": "Creative",
-  "rating": 4.6,
-  "reviews": 595,
   "dinner": 375,
   "dinnerType": "menu",
   "dinnerNote": "Mudec Experience, 7 courses (Best Of, 5 courses, €300)",
@@ -33,5 +31,20 @@
     "gluten-free"
   ],
   "chef": "Enrico Bartolini and Davide Boglioli",
-  "chefSource": "press"
+  "chefSource": "press",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 95,
+      "url": "https://www.laliste.com/places/enrico-bartolini-mudec-milano-it"
+    },
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 76,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

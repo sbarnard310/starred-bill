@@ -275,10 +275,11 @@ a.stay-badge:hover { border-color: var(--gold); }
 .note { display: block; font-family: var(--font-body); font-size: .78rem; line-height: 1.35; color: var(--muted); }
 .notes .src { display: block; font-size: .75rem; color: var(--green); text-underline-offset: 2px; margin-top: 2px; }
 .notes { min-width: 0; font-size: .88rem; color: var(--muted); line-height: 1.4; }
-.rating { display: inline-flex; align-items: center; gap: 5px; }
-.rating svg { width: 13px; height: 13px; color: var(--green); }
-.rating.few { color: var(--muted); }
-.few-tag { display: inline-block; font-family: var(--font-body); font-size: .7rem; font-weight: 500; line-height: 1.3; padding: 0 6px; border: 1px solid var(--line); border-radius: 999px; color: var(--muted); white-space: nowrap; cursor: help; vertical-align: 1px; }
+/* The reviews column (24 Oct 2026): a Critics' pick mark, members' score and a link to the reviews on Google Maps. */
+.critics-pick { display: inline-block; width: fit-content; font-family: var(--font-body); font-size: .72rem; font-weight: 600; line-height: 1.35; padding: 0 7px; border: 1px solid var(--gold); border-radius: 999px; color: var(--ink); white-space: nowrap; cursor: help; }
+.rating-cell .critics-pick { margin-bottom: 3px; }
+.reviews-link { display: block; width: fit-content; font-size: .82rem; font-weight: 600; color: var(--green); text-decoration: none; white-space: nowrap; }
+.reviews-link:hover { text-decoration: underline; text-underline-offset: 3px; }
 .tag { display: inline-block; font-size: .8rem; padding: 3px 10px; border-radius: 999px; background: var(--green-soft); color: var(--green); font-weight: 500; cursor: pointer; border: 0; text-align: left; max-width: 100%; }
 .row .cat { min-width: 0; }
 .stars { display: inline-flex; gap: 2px; color: var(--gold); }

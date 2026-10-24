@@ -6,8 +6,6 @@
   "address": "Vicente López 1661, Recoleta, Buenos Aires",
   "stars": 2,
   "cuisine": "Creative",
-  "rating": 4.6,
-  "reviews": 1187,
   "dinner": 400000,
   "dinnerType": "menu",
   "dinnerNote": "Seasonal tasting menu; dinner only, Tue–Sat",
@@ -22,5 +20,26 @@
   "placeId": "ChIJUwhogCjLvJURazYFxCm6cUM",
   "michelinId": "531684",
   "chef": "Gonzalo Aramburu",
-  "chefSource": "site"
+  "chefSource": "site",
+  "rankings": [
+    {
+      "list": "latin-americas-50-best",
+      "year": 2025,
+      "rank": 35,
+      "url": "https://www.the50.com/restaurants/best-in-latin-america/list/1-50"
+    },
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 82.5,
+      "url": "https://www.laliste.com/places/aramburu-acy-ar"
+    },
+    {
+      "list": "oad-south-america",
+      "year": 2026,
+      "rank": 22,
+      "url": "https://www.oadguides.com/lists/south-america/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

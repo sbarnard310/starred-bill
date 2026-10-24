@@ -5,8 +5,6 @@
   "address": "Leonardslee Gardens, Brighton Road, Lower Beeding, RH13 6PP",
   "stars": 1,
   "cuisine": "Creative",
-  "rating": 4.7,
-  "reviews": 173,
   "dinner": 205,
   "dinnerType": "menu",
   "dinnerNote": "Dinner, Thu–Sun",
@@ -35,5 +33,14 @@
     "url": "https://www.leonardsleegardens.co.uk/leonardslee-house-stay",
     "note": "Guests staying at Leonardslee House can book a table up to a year ahead.",
     "checked": "2026-10-23"
-  }
+  },
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 82.5,
+      "url": "https://www.laliste.com/places/interlude-horsham-gb"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

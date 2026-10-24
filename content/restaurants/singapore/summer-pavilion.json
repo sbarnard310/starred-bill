@@ -7,8 +7,6 @@
   "address": "The Ritz-Carlton, Millenia, Level 3, 7 Raffles Avenue, Singapore 039799",
   "stars": 1,
   "cuisine": "Cantonese",
-  "rating": 4.6,
-  "reviews": 889,
   "lunchNote": "Vegetarian set menu (Orchid lunch menu S$138, pairing S$78)",
   "lunchNoteZh": "素食套餐（Orchid午餐套餐S$138，配酒S$78）",
   "lunchType": "menu",
@@ -76,5 +74,14 @@
   "children": "No children's menu.",
   "infoSource": "https://www.summerpavilion.com.sg/",
   "infoChecked": "2026-10-13",
-  "dietsManual": true
+  "dietsManual": true,
+  "rankings": [
+    {
+      "list": "oad-asia",
+      "year": 2026,
+      "rank": 194,
+      "url": "https://www.oadguides.com/lists/asia/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

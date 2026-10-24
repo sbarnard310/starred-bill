@@ -5,8 +5,6 @@
   "address": "Berneggstrasse 2, 9000, Sankt Gallen",
   "stars": 2,
   "cuisine": "Creative",
-  "rating": 4.9,
-  "reviews": 88,
   "dinnerType": "menu",
   "dinner": 340,
   "dinnerNote": "Tasting menu",
@@ -42,5 +40,14 @@
   "photoSourceType": "commons",
   "photoWidth": 1000,
   "photoHeight": 562,
-  "photoChecked": "2026-10-13"
+  "photoChecked": "2026-10-13",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 87,
+      "url": "https://www.laliste.com/places/einstein-gourmet-st-gallen-ch"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

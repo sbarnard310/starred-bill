@@ -5,8 +5,6 @@
   "address": "Oberlech 568, 6764, Lech am Arlberg",
   "stars": 2,
   "cuisine": "Modern European",
-  "rating": 4.8,
-  "reviews": 12,
   "dinnerType": "menu",
   "dinner": 295,
   "dinnerNote": "Griggeler Experience menu, from €295 (winter 2026/27)",
@@ -23,5 +21,14 @@
   "noLunch": true,
   "lunchNote": "Dinner only",
   "lunchNoteDe": "Nur abends",
-  "notice": "Closed between seasons; reopens on 4 December 2026 (its hotel’s website, October 2026)"
+  "notice": "Closed between seasons; reopens on 4 December 2026 (its hotel’s website, October 2026)",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 90.5,
+      "url": "https://www.laliste.com/places/griggeler-stuba-lech-at"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

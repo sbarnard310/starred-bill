@@ -4,8 +4,6 @@
   "address": "Ritterstraße 2, 10969, Berlin",
   "stars": 1,
   "cuisine": "International",
-  "rating": 4.8,
-  "reviews": 223,
   "dinnerType": "menu",
   "dinner": 169,
   "dinnerNote": "Tasting menu (other menus from €110)",
@@ -21,5 +19,14 @@
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 110 €)",
   "noLunch": true,
   "lunchNote": "Dinner only",
-  "lunchNoteDe": "Nur abends"
+  "lunchNoteDe": "Nur abends",
+  "rankings": [
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 702,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

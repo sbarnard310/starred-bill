@@ -6,8 +6,6 @@
   "address": "570-265 Giommachi Minamigawa, Higashiyama-ku, 605-0074, Kyoto",
   "stars": 1,
   "cuisine": "Japanese",
-  "rating": 4.5,
-  "reviews": 111,
   "dinnerType": "menu",
   "dinnerNote": "Cheapest dinner course (others up to ¥46,000); usually including tax and service",
   "sourceType": "press",
@@ -22,5 +20,14 @@
   "lunchNote": "Cheapest lunch course (others up to ¥46,000)",
   "lunchSourceType": "press",
   "lunchSource": "https://omakaseje.com/restaurants/kg782248",
-  "michelinId": "1192921"
+  "michelinId": "1192921",
+  "rankings": [
+    {
+      "list": "oad-japan",
+      "year": 2026,
+      "rank": 107,
+      "url": "https://www.oadguides.com/lists/japan/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

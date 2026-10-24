@@ -6,8 +6,6 @@
   "address": "Sagasta 28, Madrid, 28004",
   "stars": 1,
   "cuisine": "Japanese",
-  "rating": 4.7,
-  "reviews": 109,
   "dinner": 249,
   "dinnerType": "menu",
   "dinnerNote": "Shunkan tasting menu",
@@ -31,5 +29,14 @@
     "gluten-free"
   ],
   "chef": "Tadayoshi Teddy Motoa",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "rankings": [
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 723,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

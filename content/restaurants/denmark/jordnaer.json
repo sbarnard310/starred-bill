@@ -7,8 +7,6 @@
   "address": "Gentoftegade 29, 2820 Gentofte",
   "stars": 3,
   "cuisine": "Creative",
-  "rating": 4.8,
-  "reviews": 302,
   "dinner": 4500,
   "dinnerType": "menu",
   "dinnerNote": "Tasting menu, 18 servings",
@@ -25,5 +23,26 @@
   "placeId": "ChIJWxyiJPFNUkYRTp10-YnYcNg",
   "michelinId": "535485",
   "chef": "Eric Kragh Vildgaard",
-  "chefSource": "press"
+  "chefSource": "press",
+  "rankings": [
+    {
+      "list": "worlds-50-best",
+      "year": 2025,
+      "rank": 56,
+      "url": "https://www.the50.com/restaurants/best-in-the-world/list/51-100"
+    },
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 99,
+      "url": "https://www.laliste.com/places/jordnaer-gentofte-dk"
+    },
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 11,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

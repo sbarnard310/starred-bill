@@ -7,8 +7,6 @@
   "addressZh": "香港尖沙咀梳士巴利道18號K11 Musea 6樓607號舖",
   "stars": 1,
   "cuisine": "Sushi",
-  "rating": 4.5,
-  "reviews": 104,
   "dinner": 2380,
   "dinnerType": "menu",
   "dinnerNote": "Dinner omakase",
@@ -25,5 +23,14 @@
   "lat": 22.29437,
   "lng": 114.1744,
   "placeId": "ChIJ93w683wABDQRJCIstw7aBPc",
-  "michelinId": "1197866"
+  "michelinId": "1197866",
+  "rankings": [
+    {
+      "list": "oad-asia",
+      "year": 2026,
+      "rank": 440,
+      "url": "https://www.oadguides.com/lists/asia/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

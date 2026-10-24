@@ -24,8 +24,6 @@
   "lunchNoteZhs": "供应午餐",
   "nameZhs": "唐阁",
   "placeId": "ChIJL3z__21wsjURcN-9-TRIdqQ",
-  "rating": 4.3,
-  "reviews": 7,
   "starsSince": 2026,
   "hotel": "The Langham, Shanghai, Xintiandi",
   "bookingOpens": "By phone or email to the restaurant (tlshx.tanghostess@langhamhotels.com), or through the hotel's online reservation link. Give a local or hotel phone number so the restaurant can confirm nearer the date.",
@@ -34,5 +32,20 @@
   "groups": "Besides the 24-seat à la carte dining room, private dining rooms seat 91 guests in all.",
   "dressCode": "Smart casual.",
   "infoSource": "https://www.langhamhotels.com/en/the-langham/shanghai/dine/tang-court/",
-  "infoChecked": "2026-10-13"
+  "infoChecked": "2026-10-13",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 82.5,
+      "url": "https://www.laliste.com/places/tang-court-shanghai-cn"
+    },
+    {
+      "list": "oad-asia",
+      "year": 2026,
+      "rank": 255,
+      "url": "https://www.oadguides.com/lists/asia/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

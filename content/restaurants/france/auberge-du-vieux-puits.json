@@ -6,8 +6,6 @@
   "address": "5 avenue Saint-Victor, 11360 Fontjoncouse",
   "stars": 3,
   "cuisine": "Creative",
-  "rating": 4.8,
-  "reviews": 1164,
   "dinner": 328,
   "dinnerType": "menu",
   "dinnerNote": "Air de fêtes en Corbières menu",
@@ -37,5 +35,14 @@
     "fromNote": "room in the chefs’ house, breakfast and tourist tax extra",
     "note": "Rooms in the village and around the pool; suites cost up to €490 a night.",
     "checked": "2026-10-23"
-  }
+  },
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 98,
+      "url": "https://www.laliste.com/places/lauberge-du-vieux-puits-fontjoncouse-fr"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

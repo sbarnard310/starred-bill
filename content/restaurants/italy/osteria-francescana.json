@@ -5,8 +5,6 @@
   "address": "Via Stella 22, 41121, Modena",
   "stars": 3,
   "cuisine": "Creative",
-  "rating": 4.5,
-  "reviews": 3009,
   "dinnerType": "menu",
   "dinner": 350,
   "dinnerNote": "Tasting menu, 11 courses (à la carte mains €100–150)",
@@ -116,7 +114,7 @@
       "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
     }
   ],
-  "rankingsChecked": "2026-10-13",
+  "rankingsChecked": "2026-10-24",
   "photo": "osteria-francescana.jpg",
   "photoAlt": "The entrance of Osteria Francescana at number 22 in Modena, with its brass plaques",
   "photoCredit": "City Foodsters",

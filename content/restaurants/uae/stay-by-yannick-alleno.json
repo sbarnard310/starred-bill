@@ -4,8 +4,6 @@
   "address": "One&Only The Palm Hotel, West Crescent Road, The Palm Jumeirah, Dubai",
   "stars": 2,
   "cuisine": "French",
-  "rating": 4.5,
-  "reviews": 278,
   "dinnerType": "menu",
   "dinnerNote": "Experience menu, 6 courses (4-course Emotion menu AED 950)",
   "sourceType": "press",
@@ -23,5 +21,20 @@
   "dinner": 1250,
   "wine": 900,
   "source": "https://whatson.ae/2024/09/review-stay-by-yannick-alleno/",
-  "dietsManual": true
+  "dietsManual": true,
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 85,
+      "url": "https://www.laliste.com/places/stay-by-yannick-alleno-dubai-ae"
+    },
+    {
+      "list": "oad-asia",
+      "year": 2026,
+      "rank": 529,
+      "url": "https://www.oadguides.com/lists/asia/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

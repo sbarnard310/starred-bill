@@ -4,8 +4,6 @@
   "address": "Bachlettenstrasse 1, 4054, Basel",
   "stars": 2,
   "cuisine": "Modern European",
-  "rating": 4.7,
-  "reviews": 289,
   "dinnerType": "menu",
   "dinner": 228,
   "dinnerNote": "Tasting menu (other menus from CHF 198)",
@@ -29,5 +27,20 @@
   "dinnerNoteIt": "Menu degustazione (altri menu da CHF 198)",
   "lunchNoteDe": "Mittagsmenü",
   "lunchNoteFr": "Menu déjeuner",
-  "lunchNoteIt": "Menu pranzo"
+  "lunchNoteIt": "Menu pranzo",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 82.5,
+      "url": "https://www.laliste.com/places/roots-basel-ch"
+    },
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 467,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

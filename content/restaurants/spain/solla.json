@@ -5,8 +5,6 @@
   "address": "Avenida Sineiro 7, 36005, San Salvador de Poio",
   "stars": 1,
   "cuisine": "Creative",
-  "rating": 4.6,
-  "reviews": 1121,
   "dinnerType": "menu",
   "dinner": 133,
   "dinnerNote": "Tasting menu (other menus from €121)",
@@ -26,5 +24,14 @@
   "placeId": "ChIJa7ERgiRuLw0RG8-XvnH445o",
   "michelinId": "222377",
   "chef": "Pepe Solla",
-  "chefSource": "site"
+  "chefSource": "site",
+  "rankings": [
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 525,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

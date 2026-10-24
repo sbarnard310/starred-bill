@@ -5,8 +5,6 @@
   "address": "Uferstraße 1, 24960, Glücksburg",
   "stars": 2,
   "cuisine": "Classic",
-  "rating": 4.8,
-  "reviews": 95,
   "dinnerType": "menu",
   "dinner": 310,
   "dinnerNote": "Tasting menu (other menus from €290)",
@@ -22,5 +20,14 @@
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 290 €)",
   "noLunch": true,
   "lunchNote": "Dinner only",
-  "lunchNoteDe": "Nur abends"
+  "lunchNoteDe": "Nur abends",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 92,
+      "url": "https://www.laliste.com/places/meierei-dirk-luther-glucksburg-ostsee-de"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

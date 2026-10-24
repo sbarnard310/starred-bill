@@ -4,8 +4,6 @@
   "address": "Fondamenta del Forner, Sestiere San Polo 2908, 30125, Venice",
   "stars": 1,
   "cuisine": "Modern European",
-  "rating": 4.6,
-  "reviews": 607,
   "dinnerType": "menu",
   "dinner": 210,
   "dinnerNote": "Tasting menu, 8 courses (Serendipity, 6 courses, €175)",
@@ -21,5 +19,14 @@
   "placeId": "ChIJC9bavOOxfkcRQ1E-5SEBVZw",
   "michelinId": "1191494",
   "chef": "Marco Gregori and Nicolò Pometti",
-  "chefSource": "press"
+  "chefSource": "press",
+  "rankings": [
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 450,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

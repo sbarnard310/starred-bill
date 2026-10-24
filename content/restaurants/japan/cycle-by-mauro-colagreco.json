@@ -14,8 +14,6 @@
   "changeNoteZh": "首度摘星",
   "changeNoteJa": "初の一つ星を獲得",
   "changeDate": "2024-10",
-  "rating": 4.7,
-  "reviews": 108,
   "dinner": 26400,
   "dinnerType": "menu",
   "dinnerNote": "Tasting menu, from",
@@ -41,5 +39,14 @@
     "gluten-free"
   ],
   "chef": "Mauro Colagreco",
-  "chefSource": "site"
+  "chefSource": "site",
+  "rankings": [
+    {
+      "list": "oad-japan",
+      "year": 2026,
+      "rank": 450,
+      "url": "https://www.oadguides.com/lists/japan/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

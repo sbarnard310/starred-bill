@@ -4,8 +4,6 @@
   "address": "Rua Oscar Freire 216, 01426-001, São Paulo",
   "stars": 1,
   "cuisine": "Italian",
-  "rating": 4.2,
-  "reviews": 221,
   "dinnerType": "menu",
   "dinner": 640,
   "dinnerNote": "Tasting menu, 11 courses (November 2023 price; pairings R$390 for 6 glasses, R$590 for 11)",
@@ -29,5 +27,14 @@
   "bookingOpens": "The tasting menu is served by reservation only, booked by WhatsApp message to +55 11 99364 4442 (the restaurant has no booking website). Dinner is served Tuesday to Saturday from 8pm. Everyone starts the meal at the same time, so guests should not be late.",
   "bookingPhone": "+55 11 99364 4442, WhatsApp",
   "infoSource": "https://www.instagram.com/fame_osteria/",
-  "infoChecked": "2026-10-13"
+  "infoChecked": "2026-10-13",
+  "rankings": [
+    {
+      "list": "oad-south-america",
+      "year": 2026,
+      "rank": 79,
+      "url": "https://www.oadguides.com/lists/south-america/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

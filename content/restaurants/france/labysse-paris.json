@@ -7,8 +7,6 @@
   "address": "8 avenue Dutuit, 75008, Paris",
   "stars": 2,
   "cuisine": "Japanese",
-  "rating": 4.6,
-  "reviews": 286,
   "dinner": 360,
   "dinnerType": "menu",
   "dinnerNote": "Omakase (lighter version €240)",
@@ -28,5 +26,20 @@
   "placeId": "ChIJ58nVS2Bv5kcRvO8K9yE_nGk",
   "michelinId": "1000288",
   "chef": "Yannick Alléno",
-  "chefSource": "site"
+  "chefSource": "site",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 90.5,
+      "url": "https://www.laliste.com/places/labysse-pavillon-ledoyen-paris-fr"
+    },
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 286,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

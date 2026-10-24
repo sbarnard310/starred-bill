@@ -4,8 +4,6 @@
   "address": "3593 Main St., Vancouver, V5V 3N4",
   "stars": 1,
   "cuisine": "Modern American",
-  "rating": 4.4,
-  "reviews": 1851,
   "dinnerType": "menu",
   "dinner": 170,
   "dinnerNote": "Harvest tasting menu, 12 courses",
@@ -56,5 +54,5 @@
       "url": "https://www.laliste.com/places/published-on-main-vancouver-ca"
     }
   ],
-  "rankingsChecked": "2026-10-13"
+  "rankingsChecked": "2026-10-24"
 }

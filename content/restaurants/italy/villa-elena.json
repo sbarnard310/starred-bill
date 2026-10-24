@@ -10,8 +10,6 @@
   "changeNote": "Gained a second star",
   "changeNoteIt": "Ha ottenuto la seconda stella",
   "changeDate": "2024-11",
-  "rating": 4.5,
-  "reviews": 85,
   "dinner": 250,
   "dinnerType": "menu",
   "dinnerNote": "Metamorfosi menu, 7 courses (Classici di San Vigilio €200)",
@@ -59,5 +57,20 @@
   "bookingPhone": "+39 035 260944",
   "groups": "Besides the frescoed main room with five tables, there are two private rooms with fireplaces, for up to 6 and up to 8 guests, and a terrace for eating outside in summer.",
   "infoSource": "https://www.enricobartolini.net/i-ristoranti/villa-elena",
-  "infoChecked": "2026-10-13"
+  "infoChecked": "2026-10-13",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 88,
+      "url": "https://www.laliste.com/places/villa-elena-bergamo-it"
+    },
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 556,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

@@ -6,8 +6,6 @@
   "address": "Plage de la Concurrence, 17000 La Rochelle",
   "stars": 3,
   "cuisine": "Seafood",
-  "rating": 4.7,
-  "reviews": 1266,
   "dinner": 340,
   "dinnerType": "menu",
   "dinnerNote": "Sea voyage menu, 9 dishes (7 dishes €275, not Fri–Sat evenings)",
@@ -71,7 +69,7 @@
       "url": "https://www.laliste.com/places/christopher-coutanceau-la-rochelle-fr"
     }
   ],
-  "rankingsChecked": "2026-10-13",
+  "rankingsChecked": "2026-10-24",
   "photo": "christopher-coutanceau.jpg",
   "photoAlt": "The beachfront building of Christopher Coutanceau on the Plage de la Concurrence, La Rochelle",
   "photoCredit": "Jean-Pierre Bazard Jpbazard",

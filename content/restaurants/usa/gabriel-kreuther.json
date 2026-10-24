@@ -6,8 +6,6 @@
   "address": "41 W. 42nd St., New York, NY, 10036",
   "stars": 2,
   "cuisine": "French",
-  "rating": 4.6,
-  "reviews": 1349,
   "dinner": 325,
   "dinnerType": "menu",
   "dinnerNote": "Chef's Tasting Menu, 6 courses (3 courses $200, 4 courses $235; pre-theater menu $155)",
@@ -110,7 +108,7 @@
       "url": "https://www.oadguides.com/lists/north-america/top-restaurants/2026"
     }
   ],
-  "rankingsChecked": "2026-10-13",
+  "rankingsChecked": "2026-10-24",
   "photo": "gabriel-kreuther.jpg",
   "photoAlt": "The entrance of Gabriel Kreuther in the W. R. Grace Building, New York, with its name on the glass",
   "photoCredit": "BruceSchaff",

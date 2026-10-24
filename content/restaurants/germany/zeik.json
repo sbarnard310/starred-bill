@@ -4,8 +4,6 @@
   "address": "Sierichstraße 112, 22299, Hamburg",
   "stars": 1,
   "cuisine": "Modern European",
-  "rating": 4.8,
-  "reviews": 443,
   "dinnerType": "menu",
   "dinner": 149,
   "dinnerNote": "Tasting menu (other menus from €95)",
@@ -26,5 +24,14 @@
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 95 €)",
   "noLunch": true,
   "lunchNote": "Dinner only",
-  "lunchNoteDe": "Nur abends"
+  "lunchNoteDe": "Nur abends",
+  "rankings": [
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 598,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

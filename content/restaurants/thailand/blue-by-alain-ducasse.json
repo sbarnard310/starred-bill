@@ -6,8 +6,6 @@
   "address": "Unit L101, 1F, ICONLUXE ICONSIAM Shopping Centre, 299 Charoen Nakhon Road, Khlong Ton Sai, Khlong San, Bangkok",
   "stars": 1,
   "cuisine": "French",
-  "rating": 4.5,
-  "reviews": 523,
   "dinner": 8500,
   "dinnerType": "menu",
   "dinnerNote": "Signature menu, 7 courses, plus service and VAT (++) (5 courses THB 6,500, 3 courses THB 4,500)",
@@ -83,5 +81,20 @@
   "photoSourceType": "commons",
   "photoWidth": 1000,
   "photoHeight": 750,
-  "photoChecked": "2026-10-13"
+  "photoChecked": "2026-10-13",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 87.5,
+      "url": "https://www.laliste.com/places/blue-by-alain-ducasse-th"
+    },
+    {
+      "list": "oad-asia",
+      "year": 2026,
+      "rank": 288,
+      "url": "https://www.oadguides.com/lists/asia/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

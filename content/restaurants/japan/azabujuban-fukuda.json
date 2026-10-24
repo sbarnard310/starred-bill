@@ -9,8 +9,6 @@
   "addressJa": "〒106-0045 東京都港区麻布十番 3-7-5",
   "stars": 1,
   "cuisine": "Japanese",
-  "rating": 4.2,
-  "reviews": 35,
   "dinner": 54450,
   "dinnerType": "menu",
   "dinnerNote": "Seasonal course",
@@ -29,5 +27,14 @@
     "halal"
   ],
   "chef": "Kazuto Fukuda",
-  "chefSource": "press"
+  "chefSource": "press",
+  "rankings": [
+    {
+      "list": "oad-japan",
+      "year": 2026,
+      "rank": 418,
+      "url": "https://www.oadguides.com/lists/japan/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

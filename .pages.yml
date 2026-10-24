@@ -449,18 +449,6 @@ content:
         description: Year and month of the Michelin Guide announcement, e.g. 2026-02.
         type: string
         pattern: { regex: '^(\d{4}-\d{2})?$', message: "Use year-month, e.g. 2026-02" }
-      - name: rating
-        label: Google rating
-        description: Out of 5, e.g. 4.6.
-        type: number
-        options: { min: 0, max: 5, step: any }
-      - name: reviews
-        label: Number of Google reviews
-        type: number
-        options: { min: 0, step: 1 }
-      - name: ratingNote
-        label: Google rating note
-        type: string
       - name: dinner
         label: Dinner price
         description: Per person, in the country's currency, numbers only (195, not £195). Leave empty if not confirmed.
@@ -1767,111 +1755,111 @@ content:
         label: "Method: where prices come from (Arabic)"
         type: text
       - name: starsText
-        label: "Method: stars and Google rating"
+        label: "Method: stars and reviews"
         description: Which Michelin Guide edition the stars come from, and when it was announced.
         type: text
       - name: starsTextZh
-        label: "Method: stars and Google rating (Chinese)"
+        label: "Method: stars and reviews (Chinese)"
         type: text
       - name: starsTextYue
-        label: "Method: stars and Google rating (Cantonese)"
+        label: "Method: stars and reviews (Cantonese)"
         type: text
       - name: starsTextFr
-        label: "Method: stars and Google rating (French)"
+        label: "Method: stars and reviews (French)"
         type: text
       - name: starsTextEs
-        label: "Method: stars and Google rating (Spanish)"
+        label: "Method: stars and reviews (Spanish)"
         type: text
       - name: starsTextIt
-        label: "Method: stars and Google rating (Italian)"
+        label: "Method: stars and reviews (Italian)"
         type: text
       - name: starsTextTh
-        label: "Method: stars and Google rating (Thai)"
+        label: "Method: stars and reviews (Thai)"
         type: text
       - name: starsTextDa
-        label: "Method: stars and Google rating (Danish)"
+        label: "Method: stars and reviews (Danish)"
         type: text
       - name: starsTextSv
-        label: "Method: stars and Google rating (Swedish)"
+        label: "Method: stars and reviews (Swedish)"
         type: text
       - name: starsTextIs
-        label: "Method: stars and Google rating (Icelandic)"
+        label: "Method: stars and reviews (Icelandic)"
         type: text
       - name: starsTextCa
-        label: "Method: stars and Google rating (Catalan)"
+        label: "Method: stars and reviews (Catalan)"
         type: text
       - name: starsTextKo
-        label: "Method: stars and Google rating (Korean)"
+        label: "Method: stars and reviews (Korean)"
         type: text
       - name: starsTextJa
-        label: "Method: stars and Google rating (Japanese)"
+        label: "Method: stars and reviews (Japanese)"
         type: text
 
       - name: starsTextZhs
-        label: "Method: stars and Google rating (Simplified Chinese)"
+        label: "Method: stars and reviews (Simplified Chinese)"
         type: text
       - name: starsTextDe
-        label: "Method: stars and Google rating (German)"
+        label: "Method: stars and reviews (German)"
         type: text
       - name: starsTextNl
-        label: "Method: stars and Google rating (Dutch)"
+        label: "Method: stars and reviews (Dutch)"
         type: text
       - name: starsTextPt
-        label: "Method: stars and Google rating (Portuguese)"
+        label: "Method: stars and reviews (Portuguese)"
         type: text
       - name: starsTextNb
-        label: "Method: stars and Google rating (Norwegian)"
+        label: "Method: stars and reviews (Norwegian)"
         type: text
       - name: starsTextFi
-        label: "Method: stars and Google rating (Finnish)"
+        label: "Method: stars and reviews (Finnish)"
         type: text
       - name: starsTextPl
-        label: "Method: stars and Google rating (Polish)"
+        label: "Method: stars and reviews (Polish)"
         type: text
       - name: starsTextCs
-        label: "Method: stars and Google rating (Czech)"
+        label: "Method: stars and reviews (Czech)"
         type: text
       - name: starsTextHu
-        label: "Method: stars and Google rating (Hungarian)"
+        label: "Method: stars and reviews (Hungarian)"
         type: text
       - name: starsTextSl
-        label: "Method: stars and Google rating (Slovenian)"
+        label: "Method: stars and reviews (Slovenian)"
         type: text
       - name: starsTextHr
-        label: "Method: stars and Google rating (Croatian)"
+        label: "Method: stars and reviews (Croatian)"
         type: text
       - name: starsTextSr
-        label: "Method: stars and Google rating (Serbian)"
+        label: "Method: stars and reviews (Serbian)"
         type: text
       - name: starsTextEl
-        label: "Method: stars and Google rating (Greek)"
+        label: "Method: stars and reviews (Greek)"
         type: text
       - name: starsTextTr
-        label: "Method: stars and Google rating (Turkish)"
+        label: "Method: stars and reviews (Turkish)"
         type: text
       - name: starsTextLt
-        label: "Method: stars and Google rating (Lithuanian)"
+        label: "Method: stars and reviews (Lithuanian)"
         type: text
       - name: starsTextLv
-        label: "Method: stars and Google rating (Latvian)"
+        label: "Method: stars and reviews (Latvian)"
         type: text
       - name: starsTextEt
-        label: "Method: stars and Google rating (Estonian)"
+        label: "Method: stars and reviews (Estonian)"
         type: text
       - name: starsTextMt
-        label: "Method: stars and Google rating (Maltese)"
+        label: "Method: stars and reviews (Maltese)"
         type: text
       - name: starsTextMs
-        label: "Method: stars and Google rating (Malay)"
+        label: "Method: stars and reviews (Malay)"
         type: text
       - name: starsTextFil
-        label: "Method: stars and Google rating (Filipino)"
+        label: "Method: stars and reviews (Filipino)"
         type: text
       - name: starsTextVi
-        label: "Method: stars and Google rating (Vietnamese)"
+        label: "Method: stars and reviews (Vietnamese)"
         type: text
       - name: starsTextAr
-        label: "Method: stars and Google rating (Arabic)"
+        label: "Method: stars and reviews (Arabic)"
         type: text
       - name: michelinGuideUrl
         label: "Method: MICHELIN Guide link"

@@ -11,8 +11,6 @@
   "changeNote": "Gained its first star",
   "changeNoteKo": "첫 번째 별 획득",
   "changeDate": "2026-03",
-  "rating": 4.8,
-  "reviews": 91,
   "dinner": 250000,
   "dinnerType": "menu",
   "dinnerNote": "Dinner course",
@@ -37,5 +35,14 @@
     "vegan"
   ],
   "chef": "Park Ju-eun",
-  "chefSource": "site"
+  "chefSource": "site",
+  "rankings": [
+    {
+      "list": "oad-asia",
+      "year": 2026,
+      "rank": 291,
+      "url": "https://www.oadguides.com/lists/asia/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

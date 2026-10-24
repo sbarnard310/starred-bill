@@ -5,8 +5,6 @@
   "address": "Eugenstrasse 3, 6060, Hall in Tirol",
   "stars": 2,
   "cuisine": "Modern European",
-  "rating": 4.5,
-  "reviews": 141,
   "dinnerType": "menu",
   "dinner": 215,
   "dinnerNote": "Set menu, the only one offered",
@@ -51,5 +49,5 @@
       "url": "https://www.laliste.com/places/schwarzer-adler-hall-in-tirol-at"
     }
   ],
-  "rankingsChecked": "2026-10-13"
+  "rankingsChecked": "2026-10-24"
 }

@@ -7,8 +7,6 @@
   "address": "Route de Suresnes - bois de Boulogne, 75016, Paris",
   "stars": 3,
   "cuisine": "Creative",
-  "rating": 4.6,
-  "reviews": 1964,
   "dinner": 450,
   "dinnerType": "menu",
   "dinnerNote": "Menu du Pré (Orsay menu €380)",
@@ -69,5 +67,14 @@
   "groupsUrl": "https://leprecatelan.paris/en/salles-de-reception-paris",
   "dressCode": "Elegant dress. Men are asked to wear a jacket, and shorts and sportswear are not allowed; the restaurant may refuse entry if the dress code isn't followed.",
   "infoSource": "https://leprecatelan.paris/en/informations-pratiques",
-  "infoChecked": "2026-10-13"
+  "infoChecked": "2026-10-13",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 98.5,
+      "url": "https://www.laliste.com/places/le-pre-catelan-paris-fr"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

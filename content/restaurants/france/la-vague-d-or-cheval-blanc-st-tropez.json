@@ -6,8 +6,6 @@
   "address": "Plage de la Bouillabaisse, 83990 Saint-Tropez",
   "stars": 3,
   "cuisine": "Creative",
-  "rating": 4.6,
-  "reviews": 498,
   "dinner": 490,
   "dinnerType": "menu",
   "dinnerNote": "Balade épicurienne menu, 5 acts (4 acts €480)",
@@ -31,5 +29,14 @@
     "url": "https://www.chevalblanc.com/fr/maison/st-tropez",
     "note": "Closed for the winter until 6 May 2027.",
     "checked": "2026-10-23"
-  }
+  },
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 99,
+      "url": "https://www.laliste.com/places/la-vague-dor-le-cheval-blanc-saint-tropez-fr"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

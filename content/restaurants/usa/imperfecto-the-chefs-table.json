@@ -5,8 +5,6 @@
   "address": "1124 23rd St. NW, Washington, DC 20037",
   "stars": 1,
   "cuisine": "Latin American",
-  "rating": 4.7,
-  "reviews": 1203,
   "dinner": 265,
   "dinnerType": "menu",
   "dinnerNote": "Tasting menu",
@@ -26,5 +24,14 @@
   "placeId": "ChIJ3cVPOEW3t4kRoDGlzKQqgKI",
   "michelinId": "1194761",
   "chef": "Enrique Limardo",
-  "chefSource": "site"
+  "chefSource": "site",
+  "rankings": [
+    {
+      "list": "oad-north-america",
+      "year": 2026,
+      "rank": 378,
+      "url": "https://www.oadguides.com/lists/north-america/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

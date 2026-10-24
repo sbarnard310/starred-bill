@@ -5,8 +5,6 @@
   "address": "Plaza de San Martín 5, 26200, Haro",
   "stars": 1,
   "cuisine": "Modern European",
-  "rating": 4.7,
-  "reviews": 633,
   "dinnerType": "menu",
   "dinner": 159,
   "dinnerNote": "Tasting menu (other menus from €124)",
@@ -27,5 +25,14 @@
     "vegan"
   ],
   "chef": "Miguel Caño",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "rankings": [
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 335,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

@@ -6,8 +6,6 @@
   "address": "1983 route de Talloires, Col de la Forclaz, 74210 Talloires-Montmin",
   "stars": 2,
   "cuisine": "Creative",
-  "rating": 4.9,
-  "reviews": 482,
   "dinner": 300,
   "dinnerType": "menu",
   "dinnerNote": "Tasting menu",
@@ -26,5 +24,14 @@
   "placeId": "ChIJSSMJ3rOVi0cRUbuXt4hykSs",
   "michelinId": "1185177",
   "chef": "Florian Favario",
-  "chefSource": "site"
+  "chefSource": "site",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 77,
+      "url": "https://www.laliste.com/places/lauberge-de-montmin-talloires-montmin-fr"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

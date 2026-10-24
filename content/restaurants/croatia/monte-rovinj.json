@@ -5,8 +5,6 @@
   "address": "Montalbano 75, 52210, Rovinj",
   "stars": 1,
   "cuisine": "Creative",
-  "rating": 4.7,
-  "reviews": 536,
   "dinnerType": "menu",
   "dinner": 199,
   "dinnerNote": "Tasting menu (other menus from €129)",
@@ -26,5 +24,20 @@
   "dinnerNoteHr": "Degustacijski meni (ostali meniji od 129 €)",
   "noLunch": true,
   "lunchNote": "Dinner only",
-  "lunchNoteHr": "Samo večera"
+  "lunchNoteHr": "Samo večera",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 81.5,
+      "url": "https://www.laliste.com/places/monte-rovinj-hr"
+    },
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 745,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

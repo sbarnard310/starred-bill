@@ -5,8 +5,6 @@
   "address": "Bahnhofstraße 8a, 54498, Piesport",
   "stars": 3,
   "cuisine": "French",
-  "rating": 4.9,
-  "reviews": 324,
   "dinnerType": "menu",
   "dinner": 320,
   "dinnerNote": "Tasting menu (other menus from €247)",
@@ -21,5 +19,14 @@
   "chefSource": "site",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 247 €)",
   "lunchNote": "Open for lunch · Thu, Sat",
-  "lunchNoteDe": "Mittags geöffnet · Do, Sa"
+  "lunchNoteDe": "Mittags geöffnet · Do, Sa",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 94,
+      "url": "https://www.laliste.com/places/schanz-restaurant-piesport-de"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

@@ -8,8 +8,6 @@
   "addressZh": "香港尖沙咀梳士巴利道半島酒店1樓",
   "stars": 1,
   "cuisine": "Cantonese",
-  "rating": 4.4,
-  "reviews": 734,
   "dinner": 2880,
   "dinnerType": "menu",
   "dinnerNote": "Spring Moon's Classic Menu (Chef's Tasting Menu HK$1,780)",
@@ -74,5 +72,14 @@
   "dressCode": "Smart casual. No sportswear or beachwear (vests, exercise shorts, leggings, flip-flops). Knee-length shorts, jeans, T-shirts and trainers are fine at lunch; at dinner men need closed shoes, long trousers and sleeved shirts.",
   "children": "Children of all ages are welcome.",
   "infoSource": "https://www.sevenrooms.com/reservations/springmoonpenhk",
-  "infoChecked": "2026-10-13"
+  "infoChecked": "2026-10-13",
+  "rankings": [
+    {
+      "list": "oad-asia",
+      "year": 2026,
+      "rank": 161,
+      "url": "https://www.oadguides.com/lists/asia/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

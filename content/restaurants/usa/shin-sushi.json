@@ -5,8 +5,6 @@
   "address": "16573 Ventura Blvd., Ste. 14, Encino, CA 91436",
   "stars": 1,
   "cuisine": "Japanese",
-  "rating": 4.7,
-  "reviews": 141,
   "dinner": 230,
   "dinnerType": "menu",
   "dinnerNote": "Omakase, about $230 (priced by what you eat)",
@@ -26,5 +24,14 @@
   "bookingPhone": "+1 818 616 4148",
   "byob": "Corkage is $50 for a 720ml bottle of wine or sake and $100 for larger bottles.",
   "infoSource": "https://guide.michelin.com/us/en/california/encino/restaurant/shin-sushi",
-  "infoChecked": "2026-10-13"
+  "infoChecked": "2026-10-13",
+  "rankings": [
+    {
+      "list": "oad-north-america",
+      "year": 2026,
+      "rank": 312,
+      "url": "https://www.oadguides.com/lists/north-america/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

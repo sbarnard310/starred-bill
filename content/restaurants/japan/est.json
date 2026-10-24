@@ -9,8 +9,6 @@
   "addressJa": "〒100-0004 東京都千代田区大手町 1-2-1 フォーシーズンズホテル東京大手町 39F",
   "stars": 1,
   "cuisine": "French",
-  "rating": 4.3,
-  "reviews": 181,
   "dinner": 27000,
   "dinnerType": "menu",
   "dinnerNote": "Tasting menu, from",
@@ -36,5 +34,20 @@
     "kosher"
   ],
   "chef": "Guillaume Bracaval",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 93.5,
+      "url": "https://www.laliste.com/places/est-four-seasons-hotel-tokyo-at-otemachi-chiyoda-city-jp"
+    },
+    {
+      "list": "oad-japan",
+      "year": 2026,
+      "rank": 512,
+      "url": "https://www.oadguides.com/lists/japan/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

@@ -6,8 +6,6 @@
   "address": "Amador de los Ríos 6, Madrid, 28010",
   "stars": 1,
   "cuisine": "Modern European",
-  "rating": 4.7,
-  "reviews": 1007,
   "dinner": 195,
   "dinnerType": "menu",
   "dinnerNote": "Seasons tasting menu, 8 courses; also à la carte",
@@ -28,5 +26,14 @@
   "placeId": "ChIJf6BKBFcpQg0R2JMv9g5gOyA",
   "michelinId": "1184765",
   "chef": "Adolfo Santos",
-  "chefSource": "press"
+  "chefSource": "press",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 83.5,
+      "url": "https://www.laliste.com/places/saddle-madrid-es"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

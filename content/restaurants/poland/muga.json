@@ -5,8 +5,6 @@
   "address": "ul. Krysiewicza 5, 61-825, Poznań",
   "stars": 1,
   "cuisine": "Modern European",
-  "rating": 4.7,
-  "reviews": 889,
   "dinnerType": "menu",
   "dinner": 660,
   "dinnerNote": "Tasting menu (other menus from PLN 560)",
@@ -28,5 +26,14 @@
   "lunchNotePl": "Tylko kolacje",
   "chef": "Artur Skotarczyk",
   "chefSource": "press",
-  "dietsManual": true
+  "dietsManual": true,
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 77,
+      "url": "https://www.laliste.com/places/muga-poznan-pl"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

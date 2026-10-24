@@ -6,8 +6,6 @@
   "address": "512 Washiocho, Higashiyama-ku, 605-0072, Kyoto",
   "stars": 2,
   "cuisine": "Japanese",
-  "rating": 4.7,
-  "reviews": 207,
   "dinnerType": "menu",
   "dinnerNote": "Kaiseki course, from; including tax and service",
   "sourceType": "site",
@@ -29,5 +27,14 @@
   "lunchSource": "https://www.wakuden.jp/ryotei/kodaiji/",
   "lunchNote": "Lunch kaiseki, from; including tax and service",
   "lunchNoteJa": "昼懐石（最安値）・税サ込",
-  "dietsManual": true
+  "dietsManual": true,
+  "rankings": [
+    {
+      "list": "oad-japan",
+      "year": 2026,
+      "rank": 135,
+      "url": "https://www.oadguides.com/lists/japan/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

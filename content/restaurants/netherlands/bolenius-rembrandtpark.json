@@ -4,8 +4,6 @@
   "address": "Nachtwachtlaan 20B, 1058 EA, Amsterdam",
   "stars": 1,
   "cuisine": "Modern European",
-  "rating": 4.8,
-  "reviews": 66,
   "dinnerType": "menu",
   "dinner": 125,
   "dinnerNote": "Tasting menu",
@@ -30,5 +28,14 @@
   "chef": "Luc Kusters",
   "chefSource": "michelin",
   "dinnerNoteNl": "Proeverijmenu",
-  "lunchNoteNl": "Lunchmenu"
+  "lunchNoteNl": "Lunchmenu",
+  "rankings": [
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 695,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

@@ -5,8 +5,6 @@
   "address": "Padre José García 19, 26280, Ezcaray",
   "stars": 2,
   "cuisine": "Creative",
-  "rating": 4.6,
-  "reviews": 61,
   "dinnerType": "menu",
   "dinner": 225,
   "dinnerNote": "Usaya menu (Turza menu €170, evenings only)",
@@ -56,5 +54,20 @@
     ],
     "note": "The packages are sold as vouchers valid for a year.",
     "checked": "2026-10-23"
-  }
+  },
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 90.5,
+      "url": "https://www.laliste.com/places/el-portal-de-echaurren-ezcaray-es"
+    },
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 435,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

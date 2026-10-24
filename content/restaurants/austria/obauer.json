@@ -5,8 +5,6 @@
   "address": "Markt 46, 5450, Werfen",
   "stars": 2,
   "cuisine": "Classic",
-  "rating": 4.8,
-  "reviews": 617,
   "dinnerType": "menu",
   "dinner": 248,
   "dinnerNote": "7-course menu (other menus from €108)",
@@ -35,5 +33,14 @@
   "notice": "Closing for good on 26 October 2026 (Salzburg24, July 2026)",
   "noticeDe": "Schließt endgültig am 26. Oktober 2026 (Salzburg24, Juli 2026)",
   "closes": "2026-10-26",
-  "dietsManual": true
+  "dietsManual": true,
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 98,
+      "url": "https://www.laliste.com/places/obauer-werfen-at"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

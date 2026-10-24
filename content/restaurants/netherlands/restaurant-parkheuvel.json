@@ -4,8 +4,6 @@
   "address": "Heuvellaan 21, 3016 GL, Rotterdam",
   "stars": 2,
   "cuisine": "Modern European",
-  "rating": 4.6,
-  "reviews": 677,
   "dinnerType": "menu",
   "dinner": 205,
   "dinnerNote": "Tasting menu (other menus from €165)",
@@ -30,5 +28,14 @@
   "photoSourceType": "commons",
   "photoWidth": 1000,
   "photoHeight": 509,
-  "photoChecked": "2026-10-13"
+  "photoChecked": "2026-10-13",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 92,
+      "url": "https://www.laliste.com/places/parkheuvel-rotterdam-nl"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

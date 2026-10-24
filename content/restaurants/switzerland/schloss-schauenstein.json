@@ -5,8 +5,6 @@
   "address": "Obergass 15, 7414, Fürstenau",
   "stars": 3,
   "cuisine": "Creative",
-  "rating": 4.8,
-  "reviews": 681,
   "dinnerType": "menu",
   "dinner": 318,
   "dinnerNote": "Tasting menu (other menus from CHF 266)",
@@ -107,7 +105,7 @@
       "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
     }
   ],
-  "rankingsChecked": "2026-10-13",
+  "rankingsChecked": "2026-10-24",
   "photo": "schloss-schauenstein.jpg",
   "photoAlt": "Schloss Schauenstein, the castle in Fürstenau that houses the restaurant",
   "photoCredit": "Peter Berger",

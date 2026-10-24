@@ -5,8 +5,6 @@
   "address": "Plaza del Sol, 39793, Villaverde de Pontones",
   "stars": 3,
   "cuisine": "Modern European",
-  "rating": 4.7,
-  "reviews": 1197,
   "dinnerType": "menu",
   "dinner": 297,
   "dinnerNote": "Tasting menu",
@@ -35,5 +33,14 @@
   "photoSourceType": "commons",
   "photoWidth": 1000,
   "photoHeight": 750,
-  "photoChecked": "2026-10-13"
+  "photoChecked": "2026-10-13",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 96,
+      "url": "https://www.laliste.com/places/cenador-de-amos-villaverde-de-pontones-es"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

@@ -9,8 +9,6 @@
   "changeNote": "Gained a second star",
   "changeDate": "2026-06",
   "changeNoteDe": "Erhielt einen zweiten Stern",
-  "rating": 4.9,
-  "reviews": 727,
   "dinnerType": "menu",
   "dinner": 235,
   "dinnerNote": "Tasting menu",
@@ -31,5 +29,14 @@
   "noLunch": true,
   "lunchNote": "Dinner only",
   "lunchNoteDe": "Nur abends",
-  "dietsManual": true
+  "dietsManual": true,
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 78.5,
+      "url": "https://www.laliste.com/places/muhle-schluchsee-de"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

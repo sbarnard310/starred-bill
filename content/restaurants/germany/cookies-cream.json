@@ -4,8 +4,6 @@
   "address": "Behrenstraße 55, 10117, Berlin",
   "stars": 1,
   "cuisine": "Vegetarian",
-  "rating": 4.7,
-  "reviews": 1477,
   "dinnerType": "menu",
   "dinner": 140,
   "dinnerNote": "Tasting menu (other menus from €89)",
@@ -28,5 +26,14 @@
   "noLunch": true,
   "lunchNote": "Dinner only",
   "lunchNoteDe": "Nur abends",
-  "dietsManual": true
+  "dietsManual": true,
+  "rankings": [
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 771,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

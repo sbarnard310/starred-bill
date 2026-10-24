@@ -4,8 +4,6 @@
   "address": "999 Peachtree St. NE, Atlanta, 30309",
   "stars": 1,
   "cuisine": "Modern American",
-  "rating": 4.8,
-  "reviews": 1096,
   "dinnerType": "menu",
   "dinner": 285,
   "dinnerNote": "Tasting menu, 8 courses, service included (bar menu $185)",
@@ -81,5 +79,5 @@
       "url": "https://www.oadguides.com/lists/north-america/top-restaurants/2026"
     }
   ],
-  "rankingsChecked": "2026-10-13"
+  "rankingsChecked": "2026-10-24"
 }

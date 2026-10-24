@@ -5,8 +5,6 @@
   "address": "Unit 1, 8 Melior Street, Southwark, London, SE1 3QP",
   "stars": 1,
   "cuisine": "Creative",
-  "rating": 4.8,
-  "reviews": 415,
   "dinner": 135,
   "dinnerType": "menu",
   "dinnerNote": "Tasting menu, 7 courses",
@@ -36,5 +34,14 @@
     "via": "website",
     "source": "https://www.sollip.co.uk/make-a-reservation",
     "checked": "2026-10-10"
-  }
+  },
+  "rankings": [
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 293,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

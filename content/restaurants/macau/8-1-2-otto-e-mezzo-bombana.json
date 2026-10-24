@@ -7,8 +7,6 @@
   "addressZh": "澳門路氹路氹城大馬路銀河綜合度假城時尚匯1樓1031號舖",
   "stars": 1,
   "cuisine": "Italian",
-  "rating": 4.7,
-  "reviews": 108,
   "dinner": 3280,
   "dinnerType": "menu",
   "dinnerNote": "Dinner tasting menu",
@@ -33,5 +31,20 @@
     "kosher"
   ],
   "chef": "Umberto Bombana",
-  "chefSource": "site"
+  "chefSource": "site",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 85.5,
+      "url": "https://www.laliste.com/places/8-otto-e-mezzo-bombana-macau-mo"
+    },
+    {
+      "list": "oad-asia",
+      "year": 2026,
+      "rank": 184,
+      "url": "https://www.oadguides.com/lists/asia/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

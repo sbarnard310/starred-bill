@@ -5,8 +5,6 @@
   "address": "Juno s/n, 07410, Port d'Alcúdia",
   "stars": 1,
   "cuisine": "Creative",
-  "rating": 4.6,
-  "reviews": 444,
   "dinnerType": "menu",
   "dinner": 165,
   "dinnerNote": "Tasting menu",
@@ -31,5 +29,20 @@
     "gluten-free"
   ],
   "chef": "Macarena De Castro Martín",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 86,
+      "url": "https://www.laliste.com/places/maca-de-castro-alcudia-es"
+    },
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 701,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

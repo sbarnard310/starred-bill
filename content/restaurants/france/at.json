@@ -7,8 +7,6 @@
   "address": "4bis rue du Cardinal-Lemoine, 75005, Paris",
   "stars": 1,
   "cuisine": "Creative",
-  "rating": 4.7,
-  "reviews": 615,
   "dinner": 195,
   "dinnerType": "menu",
   "dinnerNote": "Tasting menu",
@@ -32,5 +30,14 @@
     "vegetarian"
   ],
   "chef": "Atsushi Tanaka",
-  "chefSource": "site"
+  "chefSource": "site",
+  "rankings": [
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 87,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

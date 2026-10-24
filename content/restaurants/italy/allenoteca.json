@@ -5,8 +5,6 @@
   "address": "Via Roma 57, 12043, Canale",
   "stars": 1,
   "cuisine": "Italian",
-  "rating": 4.6,
-  "reviews": 793,
   "dinnerType": "menu",
   "dinner": 135,
   "dinnerNote": "Tasting menu",
@@ -22,5 +20,14 @@
   "placeId": "ChIJg1NnkLLwh0cRyOHFVdpLOA8",
   "michelinId": "128675",
   "chef": "Davide Palluda",
-  "chefSource": "site"
+  "chefSource": "site",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 82.5,
+      "url": "https://www.laliste.com/places/allenoteca-canale-it"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

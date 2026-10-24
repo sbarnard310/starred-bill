@@ -6,8 +6,6 @@
   "address": "3 place Saint-Martin, 50170 Servon",
   "stars": 1,
   "cuisine": "Creative",
-  "rating": 4.7,
-  "reviews": 259,
   "dinner": 120,
   "dinnerType": "menu",
   "dinnerNote": "Tasting menu",
@@ -51,5 +49,14 @@
     ],
     "note": "Three rooms and an apartment; stays are booked by email and always include dinner.",
     "checked": "2026-10-23"
-  }
+  },
+  "rankings": [
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 213,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

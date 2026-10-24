@@ -6,8 +6,6 @@
   "address": "16 W. 22nd St., New York, NY, 10010",
   "stars": 1,
   "cuisine": "Korean",
-  "rating": 4.6,
-  "reviews": 4346,
   "dinner": 82,
   "dinnerType": "menu",
   "dinnerNote": "Butcher's Feast (steak omakase $225)",
@@ -31,5 +29,14 @@
   "photoSourceType": "commons",
   "photoWidth": 1000,
   "photoHeight": 750,
-  "photoChecked": "2026-10-13"
+  "photoChecked": "2026-10-13",
+  "rankings": [
+    {
+      "list": "oad-north-america",
+      "year": 2026,
+      "rank": 96,
+      "url": "https://www.oadguides.com/lists/north-america/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

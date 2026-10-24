@@ -6,8 +6,6 @@
   "address": "80 chemin des Anglais, au Sud de la Cité, 11000 Carcassonne",
   "stars": 2,
   "cuisine": "Creative",
-  "rating": 4.7,
-  "reviews": 817,
   "dinner": 230,
   "dinnerType": "menu",
   "dinnerNote": "Longest tasting menu (other menus from €58)",
@@ -33,5 +31,14 @@
     "rooms": 7,
     "url": "https://hotelleparc.franckputelat.com/les-chambres/",
     "checked": "2026-10-23"
-  }
+  },
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 87.5,
+      "url": "https://www.laliste.com/places/la-table-de-franck-putelat-carcassonne-fr"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

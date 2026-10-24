@@ -6,8 +6,6 @@
   "address": "Piazza della Signoria 10, Florence, 50122",
   "stars": 1,
   "cuisine": "Italian",
-  "rating": 4.2,
-  "reviews": 907,
   "dinner": 175,
   "dinnerType": "menu",
   "dinnerNote": "Journey to Tuscany tasting menu (with wine €290)",
@@ -59,5 +57,14 @@
   "groupsUrl": "https://www.gucciosteria.com/en/florence/contact/",
   "infoSource": "https://www.gucciosteria.com/en/florence/reservation/",
   "infoChecked": "2026-10-13",
-  "dietsManual": true
+  "dietsManual": true,
+  "rankings": [
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 143,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

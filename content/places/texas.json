@@ -3,7 +3,7 @@
   "type": "region",
   "parent": "usa",
   "name": "Texas",
-  "starsText": "The Google reviews score out of 5 and the number of reviews, checked in October 2026. Stars come from the latest MICHELIN Guide covering Texas.",
+  "starsText": "Stars come from the latest MICHELIN Guide covering Texas.",
   "michelinGuideUrl": "https://guide.michelin.com/us/en/texas/restaurants/all-starred",
   "areasNote": "In Dallas, {r:tatsu-dallas|Tatsu Dallas}, Tatsuya Sekiguchi’s Edomae sushi counter in Deep Ellum, sells its seats on Tock on the 1st and 15th of each month."
 }

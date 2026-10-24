@@ -18,5 +18,14 @@
   "lunchNoteZhs": "供应午餐",
   "nameZhs": "宝丽轩",
   "chef": "Bill Fu",
-  "chefSource": "press"
+  "chefSource": "press",
+  "rankings": [
+    {
+      "list": "oad-asia",
+      "year": 2026,
+      "rank": 362,
+      "url": "https://www.oadguides.com/lists/asia/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

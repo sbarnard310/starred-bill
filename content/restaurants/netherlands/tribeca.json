@@ -5,8 +5,6 @@
   "address": "Jan Deckersstraat 7, 5591 HN, Heeze",
   "stars": 2,
   "cuisine": "Creative",
-  "rating": 4.8,
-  "reviews": 486,
   "dinnerType": "menu",
   "dinner": 235,
   "dinnerNote": "Tasting menu (other menus from €185)",
@@ -30,5 +28,20 @@
   "chefSource": "site",
   "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 185)",
   "lunchNoteNl": "Lunchmenu",
-  "dietsManual": true
+  "dietsManual": true,
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 92,
+      "url": "https://www.laliste.com/places/tribeca-heeze-nl"
+    },
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 388,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

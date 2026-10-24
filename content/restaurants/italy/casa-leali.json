@@ -6,8 +6,6 @@
   "address": "Via Valle 1, Puegnago sul Garda, 25080",
   "stars": 1,
   "cuisine": "Italian",
-  "rating": 4.6,
-  "reviews": 426,
   "dinner": 95,
   "dinnerType": "menu",
   "dinnerNote": "Originale menu (Classici €85)",
@@ -30,5 +28,14 @@
     "gluten-free"
   ],
   "chef": "Andrea Leali",
-  "chefSource": "press"
+  "chefSource": "press",
+  "rankings": [
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 461,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

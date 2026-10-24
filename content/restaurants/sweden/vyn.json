@@ -5,8 +5,6 @@
   "address": "Höga vägen 72, 272 92, Simrishamn",
   "stars": 2,
   "cuisine": "Creative",
-  "rating": 4.8,
-  "reviews": 407,
   "dinnerType": "menu",
   "dinner": 4000,
   "wine": 2500,
@@ -27,5 +25,26 @@
   "lunchSourceType": "site",
   "lunchSource": "https://vynrestaurant.se/restaurant/",
   "dinnerNote": "Tasting menu (SEK 4,500 from 1 January)",
-  "dinnerNoteSv": "Avsmakningsmeny (4 500 kr från 1 januari)"
+  "dinnerNoteSv": "Avsmakningsmeny (4 500 kr från 1 januari)",
+  "rankings": [
+    {
+      "list": "worlds-50-best",
+      "year": 2025,
+      "rank": 47,
+      "url": "https://www.the50.com/restaurants/best-in-the-world/list/1-50"
+    },
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 89.5,
+      "url": "https://www.laliste.com/places/vyn-daniel-berlin-simrishamn-se"
+    },
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 3,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

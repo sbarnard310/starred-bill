@@ -16,5 +16,14 @@
   "dinnerNoteZhs": "人均消费",
   "lunchNote": "Open for lunch",
   "lunchNoteZhs": "供应午餐",
-  "nameZhs": "甬府（虹口）"
+  "nameZhs": "甬府（虹口）",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 97,
+      "url": "https://www.laliste.com/places/yong-fu-shanghai-cn"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

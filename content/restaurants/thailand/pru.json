@@ -6,8 +6,6 @@
   "address": "60/1 Mu 6, Srisoonthorn Road, Choeng Thale, Thalang, Phuket",
   "stars": 1,
   "cuisine": "Modern",
-  "rating": 4.4,
-  "reviews": 346,
   "dinner": 7500,
   "dinnerType": "menu",
   "dinnerNote": "Tasting menu, plus service and VAT (++)",
@@ -29,5 +27,14 @@
   "lunch": 4000,
   "lunchType": "menu",
   "lunchSourceType": "site",
-  "lunchSource": "https://www.prurestaurant.com"
+  "lunchSource": "https://www.prurestaurant.com",
+  "rankings": [
+    {
+      "list": "oad-asia",
+      "year": 2026,
+      "rank": 160,
+      "url": "https://www.oadguides.com/lists/asia/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

@@ -9,8 +9,6 @@
   "addressJa": "〒106-0046 東京都港区元麻布 3-10-5 2F",
   "stars": 1,
   "cuisine": "Tempura",
-  "rating": 4.5,
-  "reviews": 69,
   "dinner": 18000,
   "dinnerType": "menu",
   "dinnerNote": "Tempura course",
@@ -27,5 +25,14 @@
   "placeId": "ChIJ_QGYGmmLGGAR-YlgCpayN5w",
   "michelinId": "1196642",
   "chef": "Shogo Yokota",
-  "chefSource": "site"
+  "chefSource": "site",
+  "rankings": [
+    {
+      "list": "oad-japan",
+      "year": 2026,
+      "rank": 678,
+      "url": "https://www.oadguides.com/lists/japan/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

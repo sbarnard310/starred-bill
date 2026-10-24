@@ -7,8 +7,6 @@
   "addressZh": "香港銅鑼灣希慎道33號利園一期4樓402-403號舖",
   "stars": 1,
   "cuisine": "European",
-  "rating": 4.5,
-  "reviews": 567,
   "dinner": 1380,
   "dinnerType": "menu",
   "dinnerNote": "Full tasting menu (short menu HK$980)",
@@ -30,5 +28,14 @@
     "vegetarian"
   ],
   "chef": "Oliver Marlow",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "rankings": [
+    {
+      "list": "oad-asia",
+      "year": 2026,
+      "rank": 79,
+      "url": "https://www.oadguides.com/lists/asia/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

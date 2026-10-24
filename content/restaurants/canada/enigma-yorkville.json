@@ -4,8 +4,6 @@
   "address": "23 Saint Thomas St., Toronto, M5S 3E7",
   "stars": 1,
   "cuisine": "Modern American",
-  "rating": 4.4,
-  "reviews": 470,
   "dinnerType": "menu",
   "dinner": 242,
   "dinnerNote": "Tasting menu, 10 courses (chef's counter, 12 courses, $332); plus 20% gratuity and a 5% house fee",
@@ -67,5 +65,14 @@
   "infoSource": "https://www.opentable.com/r/enigma-yorkville-toronto",
   "infoChecked": "2026-10-13",
   "servicePct": 38,
-  "dietsManual": true
+  "dietsManual": true,
+  "rankings": [
+    {
+      "list": "oad-north-america",
+      "year": 2026,
+      "rank": 580,
+      "url": "https://www.oadguides.com/lists/north-america/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

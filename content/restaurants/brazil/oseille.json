@@ -4,8 +4,6 @@
   "address": "Rua Joana Angélica, 155, 22420-030, Rio de Janeiro",
   "stars": 1,
   "cuisine": "Modern American",
-  "rating": 4.9,
-  "reviews": 167,
   "dinnerType": "menu",
   "dinner": 650,
   "dinnerNote": "Tasting menu (other menus from R$490)",
@@ -22,5 +20,14 @@
   "dinnerNotePt": "Menu de degustação (outros menus desde R$490)",
   "noLunch": true,
   "lunchNote": "Dinner only",
-  "lunchNotePt": "Só jantar"
+  "lunchNotePt": "Só jantar",
+  "rankings": [
+    {
+      "list": "latin-americas-50-best",
+      "year": 2025,
+      "rank": 65,
+      "url": "https://www.the50.com/restaurants/best-in-latin-america/list/51-100"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

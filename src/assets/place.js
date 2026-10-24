@@ -110,7 +110,7 @@ window.addEventListener("sb:profile", (e) => {
 });
 function load() {
   const prefs = store.get(PREFS_KEY, {});
-  if (prefs.sort) state.sort = prefs.sort;
+  if (prefs.sort) state.sort = prefs.sort === "rating" ? "acclaim" : prefs.sort;  // "rating" until 24 Oct 2026
   if (prefs.meal === "lunch") state.meal = "lunch";
   state.currency = startCurrency();
   state.wishlist = loadWishlist();
@@ -169,7 +169,7 @@ function filtered() {
     "price-asc": (a, b) => priceRank(a) - priceRank(b) || byPrice(a, b),
     "price-desc": (a, b) => priceRank(a) - priceRank(b) || byPrice(b, a),
     "stars": (a, b) => b.stars - a.stars || priceRank(a) - priceRank(b) || byPrice(b, a),
-    "rating": (a, b) => (L() ? (a.noLunch ? 1 : 0) - (b.noLunch ? 1 : 0) : 0) || (fewReviews(a) ? 1 : 0) - (fewReviews(b) ? 1 : 0) || (b.rating || 0) - (a.rating || 0) || coll.compare(nameOf(a), nameOf(b)),
+    "acclaim": (a, b) => (b.ac || 0) - (a.ac || 0) || b.stars - a.stars || coll.compare(nameOf(a), nameOf(b)),
     "name": (a, b) => coll.compare(nameOf(a), nameOf(b))
   };
   return rows.sort(sorters[state.sort] || sorters["price-asc"]);
@@ -546,13 +546,18 @@ function ledgerRow(r) {
   return '<div class="row rc-row' + (L() && r.noLunch ? " nolunch" : "") + (state.openRow === r.id ? " open" : "") + '" role="row">' + summaryCell(r) + nameCell(r) +
     '<span class="cat" role="cell"><button type="button" class="tag" data-cat="' + esc(r.cuisine) + '" title="' + esc(t("showOnly", { cat: cuisineOf(r) })) + '">' + esc(cuisineOf(r)) + "</button></span>" +
     '<span class="stars-cell" role="cell">' + starIcons(r.stars) + changeBadge(r) + "</span>" +
-    '<span class="rating-cell" role="cell"><span class="mlabel">' + t("hGoogle") + "</span>" + (r.rating ? '<span class="rating num' + (fewReviews(r) ? " few" : "") + '" aria-label="' + esc(t("ratingAria", { r: r.rating.toFixed(1) })) + '"><svg aria-hidden="true"><use href="#gstar"/></svg>' + r.rating.toFixed(1) + "</span>" + (r.reviews ? '<span class="note">' + t("reviews", { n: r.reviews.toLocaleString("en-GB") }) + fewNote(r) + "</span>" : "") : '<span class="num muted" aria-hidden="true">–</span><span class="note">' + t("noRating") + "</span>") + memberNote(r) + "</span>" +
+    '<span class="rating-cell" role="cell"><span class="mlabel">' + t("hGoogle") + "</span>" + criticsMark(r) + memberNote(r) + reviewsLink(r) + "</span>" +
     '<span class="notes" role="cell">' + noticeBadge(r) + esc(noteOf(r) || "–") +
       srcHtml(r) + bwLine(r) + tripButton(r) + reportButton(r) + "</span>" +
     '<span class="dinner" role="cell"><span class="mlabel">' + t("hPrice") + "</span>" + stub(r) + "</span>" + receipt(r) + actsCell(r) +
     '<span class="wish-cell" role="cell">' + beenButton(r) + '<button type="button" class="wish" data-wish="' + esc(r.id) + '" aria-pressed="' + on + '" aria-label="' + esc(t(on ? "wishRemove" : "wishAdd", { name: nameOf(r) })) + '" title="' + esc(t(on ? "wishRemoveT" : "wishAddT")) + '">' + heart + "</button></span>" +
     "</div>";
 }
+// The reviews column: a Critics' pick mark for a restaurant on The World's 50 Best, OAD or La Liste (`ac`, its critics'
+// points from acclaim() in build.py), members' score, and a link to its reviews on Google Maps (we don't keep Google's
+// ratings: Google's terms don't allow it).
+const criticsMark = (r) => r.ac ? '<span class="critics-pick" title="' + esc(t("criticsTitle")) + '">' + esc(t("critics")) + "</span>" : "";
+const reviewsLink = (r) => r.status === "closed" ? "" : '<a class="reviews-link" href="' + mapsUrl(r) + '" target="_blank" rel="noopener" aria-label="' + esc(t("gReviewsAria", { name: nameOf(r) })) + '">' + esc(t("gReviews")) + " ↗</a>";
 // Members' score (memberScore: [average, count], only once five members have scored it): "Members: 4.6 (12)".
 const memberText = (r) => t("members", { s: r.memberScore[0].toFixed(1), n: r.memberScore[1].toLocaleString("en-GB") });
 const memberNote = (r) => r.memberScore ? '<span class="note member-score" title="' + esc(t("membersTitle", { n: r.memberScore[1] })) + '">' + esc(memberText(r)) + "</span>" : "";
@@ -657,8 +662,7 @@ function renderTiers() {
     const list = RESTAURANTS.filter((r) => r.stars === s);
     const prices = list.filter(isMenu).map(priceOf);
     const avg = prices.length ? Math.round(prices.reduce((a, b) => a + b, 0) / prices.length) : 0;
-    const rated = list.filter((r) => r.rating);
-    return { s, n: list.length, priced: prices.length, avg, min: Math.min(...prices), max: Math.max(...prices), rating: rated.length ? rated.reduce((a, r) => a + r.rating, 0) / rated.length : null };
+    return { s, n: list.length, priced: prices.length, avg, min: Math.min(...prices), max: Math.max(...prices) };
   });
   const top = Math.max(...tiers.map((x) => x.avg), 1);
   const names = t("tierNames");
@@ -668,7 +672,7 @@ function renderTiers() {
       (x.priced
         ? '<div class="avg">' + money(x.avg) + "<small>" + t(L() ? "avgLunch" : "avgDinner") + "</small></div>" +
           '<div class="bar"><span style="width:' + (x.avg / top * 100).toFixed(1) + '%"></span></div>' +
-          "<dl><dt>" + t("tRestaurants") + "</dt><dd>" + x.n + "</dd><dt>" + t("tRange") + "</dt><dd>" + money(x.min) + "–" + money(x.max) + "</dd><dt>" + t("tRating") + "</dt><dd>" + (x.rating ? x.rating.toFixed(1) : "–") + "</dd>" +
+          "<dl><dt>" + t("tRestaurants") + "</dt><dd>" + x.n + "</dd><dt>" + t("tRange") + "</dt><dd>" + money(x.min) + "–" + money(x.max) + "</dd>" +
           (prev !== null ? "<dt>" + t("tVs", { n: x.s - 1 }) + "</dt><dd>" + (prev >= 0 ? "+" : "−") + money(Math.abs(prev)).replace("≈", "") + "</dd>" : "") + "</dl>"
         : '<p style="color: var(--muted)">' + (x.n ? t("tNoPrices") : t("tNone", { tier: names[x.s - 1] })) + "</p>") + "</div>";
   }).join("");
@@ -723,7 +727,7 @@ function infoHtml(r) {
     (r.chef ? '<div style="font-size:12px;color:#5A6E62">' + esc(t("chefLabel", { name: r.chef })) + "</div>" : "") +
     (BADGES.some(([d]) => (r.diets || []).includes(d)) ? '<div style="font-size:12px;color:#1E6142;font-weight:600;margin-top:2px">🌿 ' + BADGES.filter(([d]) => r.diets.includes(d) && !(d === "vegetarian-menu" && r.diets.includes("vegetarian-only"))).map(([, , full]) => esc(t(full))).join(" · ") + "</div>" : "") +
     '<div style="margin-top:6px;font-size:13px">' + esc(price) + (wineOf(r) ? " · " + t("infoWine") + " " + money(wineOf(r), r) : "") + "</div>" +
-    (r.rating ? '<div style="font-size:13px;color:#5A6E62">★ ' + r.rating.toFixed(1) + " " + t("infoGoogle") + (fewReviews(r) ? ' · <span title="' + esc(t("fewTitle")) + '">' + esc(t("fewReviews")) + "</span>" : "") + "</div>" : "") +
+    (r.ac ? '<div style="font-size:12px;color:#8A6A1F;font-weight:600" title="' + esc(t("criticsTitle")) + '">' + esc(t("critics")) + "</div>" : "") +
     (r.memberScore ? '<div style="font-size:13px;color:#5A6E62" title="' + esc(t("membersTitle", { n: r.memberScore[1] })) + '">' + esc(memberText(r)) + "</div>" : "") +
     (r.change ? '<div style="font-size:12px;color:' + (r.change === "down" ? "#A33A2E" : "#1E6142") + '">' + esc(pick(r, "changeNote") + ", " + monthYear(r.changeDate)) + "</div>" : "") +
     '<a href="' + mapsUrl(r) + '" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:#1E6142;font-weight:600;font-size:13px">' + t("infoOpen") + "</a></div>";

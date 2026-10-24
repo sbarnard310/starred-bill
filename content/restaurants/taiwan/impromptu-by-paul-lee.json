@@ -7,8 +7,6 @@
   "addressZh": "中山區中山北路二段39巷3號B1 (晶華酒店)",
   "stars": 1,
   "cuisine": "Creative",
-  "rating": 4.1,
-  "reviews": 829,
   "dinner": 4750,
   "dinnerType": "menu",
   "dinnerNote": "Chef's tasting menu",
@@ -56,5 +54,14 @@
   "duration": "Two and a half to three hours.",
   "byob": "Corkage NT$1,000 a bottle of wine and NT$1,500 a bottle of spirits (more for bottles over 750ml).",
   "infoSource": "https://inline.app/booking/-LHc6eHwN-k9m52dJVb6/-LHc6eHwN-k9m52dJVb7?language=zh-tw",
-  "infoChecked": "2026-10-13"
+  "infoChecked": "2026-10-13",
+  "rankings": [
+    {
+      "list": "oad-asia",
+      "year": 2026,
+      "rank": 290,
+      "url": "https://www.oadguides.com/lists/asia/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

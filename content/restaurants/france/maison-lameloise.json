@@ -6,8 +6,6 @@
   "address": "36 place d'Armes, 71150 Chagny",
   "stars": 3,
   "cuisine": "Modern European",
-  "rating": 4.8,
-  "reviews": 1060,
   "dinner": 335,
   "dinnerType": "menu",
   "dinnerNote": "Longest tasting menu (other menus from €265)",
@@ -44,5 +42,14 @@
     "url": "https://www.lameloise.fr/hotel-lameloise/",
     "note": "A 4-star hotel of 16 air-conditioned rooms in a former coaching inn.",
     "checked": "2026-10-23"
-  }
+  },
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 95.5,
+      "url": "https://www.laliste.com/places/lameloise-chagny-fr"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

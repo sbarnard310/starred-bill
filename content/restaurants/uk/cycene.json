@@ -5,8 +5,6 @@
   "address": "Blue Mountain School, 9 Chance Street, Shoreditch, London, E2 7JB",
   "stars": 1,
   "cuisine": "Modern European",
-  "rating": 4.8,
-  "reviews": 332,
   "dinner": 195,
   "dinnerType": "menu",
   "dinnerNote": "Tasting menu, 9 courses",
@@ -24,5 +22,14 @@
   "placeId": "ChIJsxeqTo4ddkgRJq0WOb2AgvE",
   "michelinId": "1204793",
   "chef": "Taz Sarhane",
-  "chefSource": "press"
+  "chefSource": "press",
+  "rankings": [
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 339,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

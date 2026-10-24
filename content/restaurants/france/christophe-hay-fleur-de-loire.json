@@ -6,8 +6,6 @@
   "address": "26 quai Villebois-Mareuil, 41000 Blois",
   "stars": 2,
   "cuisine": "Modern European",
-  "rating": 4.7,
-  "reviews": 260,
   "dinner": 290,
   "dinnerType": "menu",
   "dinnerNote": "Longest tasting menu (other menus from €180)",
@@ -43,5 +41,14 @@
     ],
     "note": "A hotel with 44 rooms including 12 suites.",
     "checked": "2026-10-23"
-  }
+  },
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 95.5,
+      "url": "https://www.laliste.com/places/christophe-hay-fleur-de-loire-blois-fr"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

@@ -7,8 +7,6 @@
   "address": "71 rue de la Folie-Méricourt, 75011, Paris",
   "stars": 1,
   "cuisine": "Creative",
-  "rating": 4.7,
-  "reviews": 1026,
   "dinner": 140,
   "dinnerType": "menu",
   "dinnerNote": "Carte blanche menu, 11 steps",
@@ -27,5 +25,14 @@
   "placeId": "ChIJ0YZ8pABt5kcRusXBA2KP8uU",
   "michelinId": "1208274",
   "chef": "Maxime Bouttier",
-  "chefSource": "press"
+  "chefSource": "press",
+  "rankings": [
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 512,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

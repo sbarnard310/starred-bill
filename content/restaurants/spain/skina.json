@@ -5,8 +5,6 @@
   "address": "Cánovas del Castillo 9, 29601, Marbella",
   "stars": 2,
   "cuisine": "Modern European",
-  "rating": 4.4,
-  "reviews": 316,
   "dinnerType": "menu",
   "dinner": 349,
   "dinnerNote": "Tasting menu",
@@ -26,5 +24,20 @@
   "placeId": "ChIJ-Q9epwfYcg0RaTPKmHo19EI",
   "michelinId": "221482",
   "chef": "Mario Cachinero",
-  "chefSource": "site"
+  "chefSource": "site",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 80.5,
+      "url": "https://www.laliste.com/places/skina-marbella-es"
+    },
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 231,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

@@ -5,8 +5,6 @@
   "address": "45 Park Lane, Mayfair, London, W1K 1PN",
   "stars": 1,
   "cuisine": "Japanese",
-  "rating": 4.7,
-  "reviews": 75,
   "dinner": 420,
   "dinnerType": "menu",
   "dinnerNote": "Omakase, about 20 courses",
@@ -57,7 +55,7 @@
       "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
     }
   ],
-  "rankingsChecked": "2026-10-13",
+  "rankingsChecked": "2026-10-24",
   "stay": {
     "kind": "hotel",
     "name": "45 Park Lane",

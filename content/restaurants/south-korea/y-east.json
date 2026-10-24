@@ -7,8 +7,6 @@
   "address": "3F, 26-6 Eonju-ro 170-gil, Gangnam-gu, Seoul",
   "stars": 1,
   "cuisine": "Modern",
-  "rating": 4.9,
-  "reviews": 75,
   "dinner": 260000,
   "dinnerType": "menu",
   "dinnerNote": "Dinner tasting menu, Tue–Sat",
@@ -32,5 +30,14 @@
     "kosher"
   ],
   "chef": "Young-dong Cho",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "rankings": [
+    {
+      "list": "oad-asia",
+      "year": 2026,
+      "rank": 353,
+      "url": "https://www.oadguides.com/lists/asia/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

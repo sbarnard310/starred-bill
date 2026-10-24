@@ -7,8 +7,6 @@
   "address": "E205, 2F, Center field EAST, 231 Teheran-ro, Gangnam-gu, Seoul",
   "stars": 2,
   "cuisine": "Modern",
-  "rating": 4.5,
-  "reviews": 108,
   "dinner": 360000,
   "dinnerType": "menu",
   "dinnerNote": "Dinner tasting course",
@@ -29,5 +27,20 @@
   "placeId": "ChIJQ-Y88belfDURrUsKUS6HMVY",
   "michelinId": "1200922",
   "chef": "Allen Hyunmin Suh",
-  "chefSource": "site"
+  "chefSource": "site",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 86,
+      "url": "https://www.laliste.com/places/allen-kr"
+    },
+    {
+      "list": "oad-asia",
+      "year": 2026,
+      "rank": 272,
+      "url": "https://www.oadguides.com/lists/asia/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

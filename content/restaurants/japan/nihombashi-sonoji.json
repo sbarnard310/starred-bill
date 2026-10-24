@@ -9,8 +9,6 @@
   "addressJa": "〒103-0013 東京都中央区日本橋人形町 2-22-11",
   "stars": 1,
   "cuisine": "Tempura",
-  "rating": 4.5,
-  "reviews": 135,
   "dinner": 27500,
   "dinnerType": "menu",
   "dinnerNote": "Tempura course, tax included, plus 5% service",
@@ -30,5 +28,20 @@
   "placeId": "ChIJ1_FOtE-JGGAR_cxJzzITqhA",
   "michelinId": "1194117",
   "chef": "Toshiyuki Suzuki",
-  "chefSource": "press"
+  "chefSource": "press",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 83.5,
+      "url": "https://www.laliste.com/places/nihombashi-sonoji-chuo-city-jp"
+    },
+    {
+      "list": "oad-japan",
+      "year": 2026,
+      "rank": 129,
+      "url": "https://www.oadguides.com/lists/japan/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

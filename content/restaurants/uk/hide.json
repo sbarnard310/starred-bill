@@ -5,8 +5,6 @@
   "address": "85 Piccadilly, Mayfair, London, W1J 7NB",
   "stars": 1,
   "cuisine": "British",
-  "rating": 4.5,
-  "reviews": 4650,
   "dinner": 165,
   "dinnerType": "menu",
   "dinnerNote": "Tasting menu, 8 courses",
@@ -30,5 +28,14 @@
   ],
   "chef": "Josh Angus",
   "chefSource": "site",
-  "dietsManual": true
+  "dietsManual": true,
+  "rankings": [
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 261,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

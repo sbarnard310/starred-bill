@@ -9,8 +9,6 @@
   "changeNote": "Entered the guide with three stars",
   "changeNoteZh": "首度入選即獲三星",
   "changeDate": "2025-06",
-  "rating": 4.4,
-  "reviews": 157,
   "dinner": 495,
   "dinnerType": "menu",
   "dinnerNote": "Tasting menu",
@@ -26,5 +24,26 @@
   "placeId": "ChIJVa5jok65woARLJWEqmHTCp8",
   "michelinId": "559610",
   "chef": "Aitor Zabala",
-  "chefSource": "site"
+  "chefSource": "site",
+  "rankings": [
+    {
+      "list": "north-americas-50-best",
+      "year": 2026,
+      "rank": 46,
+      "url": "https://www.the50.com/restaurants/best-in-north-america/list/1-50"
+    },
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 96.5,
+      "url": "https://www.laliste.com/places/somni-los-angeles-us"
+    },
+    {
+      "list": "oad-north-america",
+      "year": 2026,
+      "rank": 23,
+      "url": "https://www.oadguides.com/lists/north-america/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

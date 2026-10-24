@@ -5,8 +5,6 @@
   "address": "Via Roddino 21, 12050, Serralunga d'Alba",
   "stars": 3,
   "cuisine": "Creative",
-  "rating": 4.6,
-  "reviews": 58,
   "dinnerType": "menu",
   "dinner": 450,
   "dinnerNote": "Tasting menu (other menus from €280)",
@@ -35,5 +33,14 @@
     "url": "https://www.ilboscaretoresort.it/camere/",
     "note": "A five-star resort in Serralunga d’Alba.",
     "checked": "2026-10-23"
-  }
+  },
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 92.5,
+      "url": "https://www.laliste.com/places/la-rei-natura-il-boscareto-resort-and-spa-serralunga-dalba-it"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

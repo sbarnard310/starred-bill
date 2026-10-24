@@ -12,8 +12,6 @@
   "changeNoteFr": "Deuxième étoile",
   "changeNoteZh": "晉升二星",
   "changeDate": "2026-03",
-  "rating": 4.8,
-  "reviews": 1521,
   "dinner": 180,
   "dinnerType": "menu",
   "dinnerNote": "L'Échappée Belle, 6 courses",
@@ -32,5 +30,14 @@
   "placeId": "ChIJ__-zAA5y5kcRqLoe0pGwlcw",
   "michelinId": "504298",
   "chef": "Frédéric Lorimier",
-  "chefSource": "site"
+  "chefSource": "site",
+  "rankings": [
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 418,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

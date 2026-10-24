@@ -5,8 +5,6 @@
   "address": "Johannes-Haag-Straße 14, 86153, Augsburg",
   "stars": 2,
   "cuisine": "Creative",
-  "rating": 4.6,
-  "reviews": 118,
   "dinnerType": "menu",
   "dinner": 280,
   "dinnerNote": "Tasting menu (other menus from €150)",
@@ -25,5 +23,14 @@
   "chef": "Christian Grünwald",
   "chefSource": "site",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 150 €)",
-  "lunchNoteDe": "Mittagsmenü"
+  "lunchNoteDe": "Mittagsmenü",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 79.5,
+      "url": "https://www.laliste.com/places/august-augsburg-de"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

@@ -6,8 +6,6 @@
   "address": "60 Greenwich Ave., New York, NY, 10011",
   "stars": 1,
   "cuisine": "Indian",
-  "rating": 4.2,
-  "reviews": 1711,
   "dinner": 39,
   "dinnerType": "main",
   "dinnerNote": "À la carte; mains about $36–$49",
@@ -41,5 +39,14 @@
   "photoSourceType": "commons",
   "photoWidth": 1000,
   "photoHeight": 750,
-  "photoChecked": "2026-10-13"
+  "photoChecked": "2026-10-13",
+  "rankings": [
+    {
+      "list": "north-americas-50-best",
+      "year": 2026,
+      "rank": 41,
+      "url": "https://www.the50.com/restaurants/best-in-north-america/list/1-50"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

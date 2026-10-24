@@ -6,8 +6,6 @@
   "address": "44-7 Shogoin Entomicho, Sakyo-ku, 606-8323, Kyoto",
   "stars": 1,
   "cuisine": "Italian",
-  "rating": 4.6,
-  "reviews": 434,
   "dinnerType": "menu",
   "dinnerNote": "Tasting menu; including tax and service",
   "sourceType": "site",
@@ -40,5 +38,20 @@
     "note": "When that day is a closing day, bookings open on the next day the restaurant is open.",
     "source": "https://cenci-kyoto.com/reservation",
     "checked": "2026-10-10"
-  }
+  },
+  "rankings": [
+    {
+      "list": "asias-50-best",
+      "year": 2026,
+      "rank": 76,
+      "url": "https://www.the50.com/restaurants/best-in-asia/list/51-100"
+    },
+    {
+      "list": "oad-japan",
+      "year": 2026,
+      "rank": 188,
+      "url": "https://www.oadguides.com/lists/japan/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

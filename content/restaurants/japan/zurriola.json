@@ -9,8 +9,6 @@
   "addressJa": "〒104-0061 東京都中央区銀座 6-8-7 交詢ビル 4F",
   "stars": 1,
   "cuisine": "Spanish",
-  "rating": 4.5,
-  "reviews": 356,
   "dinner": 35695,
   "dinnerType": "menu",
   "dinnerNote": "Tasting menu, from",
@@ -31,5 +29,14 @@
   "placeId": "ChIJl5BHHOaLGGAR3z0Dg9Gyf3g",
   "michelinId": "1194016",
   "chef": "Seiichi Honda",
-  "chefSource": "press"
+  "chefSource": "press",
+  "rankings": [
+    {
+      "list": "oad-japan",
+      "year": 2026,
+      "rank": 376,
+      "url": "https://www.oadguides.com/lists/japan/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

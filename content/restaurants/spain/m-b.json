@@ -5,8 +5,6 @@
   "address": "Maria Zambrano 2, Carretera TF 47, 38687, Guía de Isora",
   "stars": 2,
   "cuisine": "Modern European",
-  "rating": 4.3,
-  "reviews": 304,
   "dinnerType": "menu",
   "dinner": 240,
   "dinnerNote": "Tasting menu (other menus from €180)",
@@ -30,5 +28,14 @@
     "url": "https://www.ritzcarlton.com/en/hotels/tfsrz-the-ritz-carlton-abama/rooms/",
     "note": "The hotel counts rooms, suites and penthouses together.",
     "checked": "2026-10-23"
-  }
+  },
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 85.5,
+      "url": "https://www.laliste.com/places/mb-guia-de-isora-tenerife-es"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

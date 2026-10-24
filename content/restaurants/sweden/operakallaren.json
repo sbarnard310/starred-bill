@@ -4,8 +4,6 @@
   "address": "Operahuset, Karl XII's Torg, 111 86, Stockholm",
   "stars": 1,
   "cuisine": "Modern European",
-  "rating": 4.5,
-  "reviews": 784,
   "dinnerType": "menu",
   "dinner": 4500,
   "dinnerNote": "Tasting menu (other menus from SEK 3,300)",
@@ -31,5 +29,14 @@
   "photoSourceType": "commons",
   "photoWidth": 1000,
   "photoHeight": 664,
-  "photoChecked": "2026-10-13"
+  "photoChecked": "2026-10-13",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 88,
+      "url": "https://www.laliste.com/places/operakallaren-stockholm-se"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

@@ -6,8 +6,6 @@
   "address": "46-3 Kagamiyacho, Nakagyo-ku, 604-0002, Kyoto",
   "stars": 1,
   "cuisine": "Italian",
-  "rating": 4.6,
-  "reviews": 144,
   "dinnerType": "menu",
   "dinnerNote": "Chef's choice course, 8 items (¥36,000 with wine pairing); usually including tax and service",
   "wine": 12000,
@@ -26,5 +24,14 @@
   "lunchSource": "https://omakaseje.com/restaurants/wz481925",
   "michelinId": "1192886",
   "chef": "Daiki Hayakawa",
-  "chefSource": "press"
+  "chefSource": "press",
+  "rankings": [
+    {
+      "list": "oad-japan",
+      "year": 2026,
+      "rank": 790,
+      "url": "https://www.oadguides.com/lists/japan/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

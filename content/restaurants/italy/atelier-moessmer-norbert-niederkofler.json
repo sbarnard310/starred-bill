@@ -5,8 +5,6 @@
   "address": "Via Walther Von der Vogelweide 17, 39031, Brunico",
   "stars": 3,
   "cuisine": "Creative",
-  "rating": 4.8,
-  "reviews": 203,
   "dinnerType": "menu",
   "dinner": 320,
   "dinnerNote": "Tasting menu",
@@ -22,5 +20,26 @@
   "placeId": "ChIJf6LW4bcheEcRuUfcDFw1q30",
   "michelinId": "1209246",
   "chef": "Norbert Niederkofler",
-  "chefSource": "site"
+  "chefSource": "site",
+  "rankings": [
+    {
+      "list": "worlds-50-best",
+      "year": 2025,
+      "rank": 20,
+      "url": "https://www.the50.com/restaurants/best-in-the-world/list/1-50"
+    },
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 99,
+      "url": "https://www.laliste.com/places/atelier-moessmer-norbert-niederkofler-brunico-it"
+    },
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 9,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

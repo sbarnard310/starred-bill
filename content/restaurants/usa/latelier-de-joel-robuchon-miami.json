@@ -5,8 +5,6 @@
   "address": "151 N.E. 41st St., Miami, FL 33137",
   "stars": 2,
   "cuisine": "French",
-  "rating": 4.4,
-  "reviews": 738,
   "dinner": 295,
   "dinnerType": "menu",
   "dinnerNote": "Tasting menu",
@@ -24,5 +22,20 @@
   ],
   "chef": "James Friedberg",
   "chefSource": "site",
-  "dietsManual": true
+  "dietsManual": true,
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 80.5,
+      "url": "https://www.laliste.com/places/latelier-de-joel-robuchon-miami-us"
+    },
+    {
+      "list": "oad-north-america",
+      "year": 2026,
+      "rank": 425,
+      "url": "https://www.oadguides.com/lists/north-america/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

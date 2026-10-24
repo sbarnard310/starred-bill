@@ -4,8 +4,6 @@
   "address": "1460 Ellsworth Industrial Blvd., Ste. A, Atlanta, 30318",
   "stars": 1,
   "cuisine": "American",
-  "rating": 4.6,
-  "reviews": 1350,
   "dinnerType": "menu",
   "dinner": 140,
   "dinnerNote": "Tasting menu",
@@ -27,5 +25,14 @@
     "via": "website",
     "source": "https://www.starprovisions.com/bacchanalia",
     "checked": "2026-10-10"
-  }
+  },
+  "rankings": [
+    {
+      "list": "oad-north-america",
+      "year": 2026,
+      "rank": 439,
+      "url": "https://www.oadguides.com/lists/north-america/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

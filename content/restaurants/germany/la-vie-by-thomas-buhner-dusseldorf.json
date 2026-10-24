@@ -4,8 +4,6 @@
   "address": "Schlüterstraße 1, 40235, Düsseldorf",
   "stars": 1,
   "cuisine": "Modern European",
-  "rating": 4.9,
-  "reviews": 167,
   "dinnerType": "menu",
   "dinner": 258,
   "dinnerNote": "Omnivore menu, 8 courses (other menus from €173)",
@@ -53,5 +51,14 @@
   "duration": "About 3½ to 4 hours for the full menu.",
   "infoSource": "https://laviebythomasbuehner.de/faq/",
   "infoChecked": "2026-10-13",
-  "dietsManual": true
+  "dietsManual": true,
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 81,
+      "url": "https://www.laliste.com/places/la-vie-by-thomas-buhner-dusseldorf-de"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

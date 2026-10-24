@@ -5,8 +5,6 @@
   "address": "ul. Bocheńska 5, 31-061, Kraków",
   "stars": 2,
   "cuisine": "Creative",
-  "rating": 4.6,
-  "reviews": 1076,
   "dinnerType": "menu",
   "dinner": 990,
   "dinnerNote": "Tasting menu (other menus from PLN 940)",
@@ -65,5 +63,5 @@
       "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
     }
   ],
-  "rankingsChecked": "2026-10-13"
+  "rankingsChecked": "2026-10-24"
 }

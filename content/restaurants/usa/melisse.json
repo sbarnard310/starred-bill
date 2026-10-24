@@ -5,8 +5,6 @@
   "address": "1104 Wilshire Blvd., Santa Monica, CA 90401",
   "stars": 2,
   "cuisine": "French",
-  "rating": 4.5,
-  "reviews": 410,
   "dinner": 399,
   "dinnerType": "menu",
   "dinnerNote": "Tasting menu",
@@ -21,5 +19,20 @@
   "placeId": "ChIJ7fOMUsSkwoARIOVuE_23I1Q",
   "michelinId": "560034",
   "chef": "Josiah Citrin",
-  "chefSource": "site"
+  "chefSource": "site",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 87.5,
+      "url": "https://www.laliste.com/places/melisse-santa-monica-us"
+    },
+    {
+      "list": "oad-north-america",
+      "year": 2026,
+      "rank": 130,
+      "url": "https://www.oadguides.com/lists/north-america/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

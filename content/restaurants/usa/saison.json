@@ -5,8 +5,6 @@
   "address": "178 Townsend St., San Francisco, CA 94107",
   "stars": 2,
   "cuisine": "American",
-  "rating": 4.6,
-  "reviews": 658,
   "dinner": 368,
   "dinnerType": "menu",
   "dinnerNote": "Tasting menu, from",
@@ -31,5 +29,26 @@
   "photoSourceType": "commons",
   "photoWidth": 1000,
   "photoHeight": 778,
-  "photoChecked": "2026-10-13"
+  "photoChecked": "2026-10-13",
+  "rankings": [
+    {
+      "list": "north-americas-50-best",
+      "year": 2026,
+      "rank": 22,
+      "url": "https://www.the50.com/restaurants/best-in-north-america/list/1-50"
+    },
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 93.5,
+      "url": "https://www.laliste.com/places/saison-san-francisco-us"
+    },
+    {
+      "list": "oad-north-america",
+      "year": 2026,
+      "rank": 7,
+      "url": "https://www.oadguides.com/lists/north-america/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

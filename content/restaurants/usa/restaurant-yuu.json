@@ -6,8 +6,6 @@
   "address": "55 Nassau Ave., #1A, Brooklyn, NY, 11222",
   "stars": 1,
   "cuisine": "French",
-  "rating": 4.6,
-  "reviews": 236,
   "dinner": 300,
   "dinnerType": "menu",
   "dinnerNote": "Tasting menu (short menu $65)",
@@ -25,5 +23,14 @@
     "vegetarian-menu"
   ],
   "chef": "Yuu Shimano",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "rankings": [
+    {
+      "list": "oad-north-america",
+      "year": 2026,
+      "rank": 25,
+      "url": "https://www.oadguides.com/lists/north-america/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

@@ -8,8 +8,6 @@
   "changeNote": "Gained its first star",
   "changeDate": "2025-05",
   "changeNoteAr": "حصل على نجمته الأولى",
-  "rating": 4.9,
-  "reviews": 333,
   "dinnerType": "menu",
   "dinner": 490,
   "dinnerNote": "Tasting menu",
@@ -27,5 +25,20 @@
   "chefSource": "michelin",
   "dinnerNoteAr": "قائمة تذوق",
   "lunchNote": "Open for lunch · Sat–Sun",
-  "lunchNoteAr": "مفتوح وقت الغداء · سبت–أحد"
+  "lunchNoteAr": "مفتوح وقت الغداء · سبت–أحد",
+  "rankings": [
+    {
+      "list": "mena-50-best",
+      "year": 2026,
+      "rank": 9,
+      "url": "https://www.the50.com/restaurants/best-in-middle-east-and-north-africa/list/1-50"
+    },
+    {
+      "list": "oad-asia",
+      "year": 2026,
+      "rank": 220,
+      "url": "https://www.oadguides.com/lists/asia/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

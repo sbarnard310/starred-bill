@@ -4,8 +4,6 @@
   "address": "InterContinental Bordeaux - Le Grand Hôtel, 2-5 place de la Comédie, 33000 Bordeaux",
   "stars": 2,
   "cuisine": "Modern European",
-  "rating": 4.7,
-  "reviews": 579,
   "dinner": 235,
   "dinnerType": "menu",
   "dinnerNote": "Héritage menu, 7 courses (Origines, 5 courses €195)",
@@ -38,5 +36,14 @@
       }
     ],
     "checked": "2026-10-23"
-  }
+  },
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 78.5,
+      "url": "https://www.laliste.com/places/le-pressoir-dargent-bordeaux-fr"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

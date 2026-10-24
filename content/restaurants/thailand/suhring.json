@@ -10,8 +10,6 @@
   "changeNote": "Gained a third star",
   "changeNoteTh": "ได้ดาวดวงที่สาม",
   "changeDate": "2025-11",
-  "rating": 4.6,
-  "reviews": 1762,
   "dinner": 7800,
   "dinnerType": "menu",
   "dinnerNote": "Tasting menu (longer menu about THB 9,800)",
@@ -27,5 +25,32 @@
   "placeId": "ChIJa4FyWkef4jARYosTC995W8U",
   "michelinId": "547021",
   "chef": "Thomas Sühring and Mathias Sühring",
-  "chefSource": "site"
+  "chefSource": "site",
+  "rankings": [
+    {
+      "list": "worlds-50-best",
+      "year": 2025,
+      "rank": 22,
+      "url": "https://www.the50.com/restaurants/best-in-the-world/list/1-50"
+    },
+    {
+      "list": "asias-50-best",
+      "year": 2026,
+      "rank": 18,
+      "url": "https://www.the50.com/restaurants/best-in-asia/list/1-50"
+    },
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 96,
+      "url": "https://www.laliste.com/places/suhring-th"
+    },
+    {
+      "list": "oad-asia",
+      "year": 2026,
+      "rank": 14,
+      "url": "https://www.oadguides.com/lists/asia/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

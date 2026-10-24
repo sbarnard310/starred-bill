@@ -5,8 +5,6 @@
   "address": "rue de Vergnies 2, 1050, Ixelles",
   "stars": 1,
   "cuisine": "Creative",
-  "rating": 4.4,
-  "reviews": 771,
   "dinnerType": "menu",
   "dinner": 150,
   "dinnerNote": "Tasting menu",
@@ -35,5 +33,14 @@
   "dinnerNoteFr": "Menu dégustation",
   "lunchNoteNl": "Lunchmenu",
   "lunchNoteFr": "Menu déjeuner",
-  "dietsManual": true
+  "dietsManual": true,
+  "rankings": [
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 320,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

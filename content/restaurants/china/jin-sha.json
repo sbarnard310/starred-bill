@@ -20,8 +20,6 @@
   "chef": "Wang Yong",
   "chefSource": "press",
   "placeId": "ChIJm_JDr8ViSzQRfkheV_pEUKg",
-  "rating": 4.7,
-  "reviews": 14,
   "starsSince": 2023,
   "hotel": "the Four Seasons Hotel Hangzhou at West Lake",
   "bookingOpens": "Online through TableCheck, or by phone or email to the hotel's dining reservations team (dining.reservations.hangzhou@fourseasons.com).",
@@ -31,5 +29,26 @@
   "groups": "Private rooms for 2 to 14 guests, each with a set menu priced per room: CN¥4,888 for 2 to 6 guests, CN¥7,888 for 7 or 8, CN¥9,888 for 9 or 10, CN¥12,888 for 11 or 12 and CN¥15,888 for 13 or 14, plus service and VAT, drinks extra. The restaurant calls the day before to confirm the menu.",
   "servicePct": 16.6,
   "infoSource": "https://www.szuo.com/en/fourseasons-hotelhangzhou-jinsha/reserve/landing",
-  "infoChecked": "2026-10-13"
+  "infoChecked": "2026-10-13",
+  "rankings": [
+    {
+      "list": "asias-50-best",
+      "year": 2026,
+      "rank": 85,
+      "url": "https://www.the50.com/restaurants/best-in-asia/list/51-100"
+    },
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 92,
+      "url": "https://www.laliste.com/places/jin-sha-at-four-seasons-hotel-hangzhou-hangzhou-shi-cn"
+    },
+    {
+      "list": "oad-asia",
+      "year": 2026,
+      "rank": 44,
+      "url": "https://www.oadguides.com/lists/asia/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

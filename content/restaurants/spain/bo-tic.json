@@ -5,8 +5,6 @@
   "address": "Avenida Costa brava 6, Corçà, 17121",
   "stars": 2,
   "cuisine": "Creative",
-  "rating": 4.8,
-  "reviews": 2061,
   "dinner": 190,
   "dinnerType": "menu",
   "dinnerNote": "Tasting menu (chef's menu €250)",
@@ -37,5 +35,20 @@
   "photoSourceType": "commons",
   "photoWidth": 1000,
   "photoHeight": 562,
-  "photoChecked": "2026-10-13"
+  "photoChecked": "2026-10-13",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 77.5,
+      "url": "https://www.laliste.com/places/botic-corca-es"
+    },
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 550,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

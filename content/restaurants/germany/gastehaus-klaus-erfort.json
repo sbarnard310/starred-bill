@@ -5,8 +5,6 @@
   "address": "Mainzer Straße 95, 66121, Saarbrücken",
   "stars": 2,
   "cuisine": "French",
-  "rating": 4.7,
-  "reviews": 312,
   "dinnerType": "menu",
   "dinner": 244,
   "dinnerNote": "Tasting menu (other menus from €125)",
@@ -25,5 +23,14 @@
   "lunchNote": "Same menu at lunch · Mon–Fri",
   "lunchNoteDe": "Gleiches Menü am Mittag · Mo–Fr",
   "lunchSourceType": "site",
-  "lunchSource": "https://www.gaestehaus-erfort.de/"
+  "lunchSource": "https://www.gaestehaus-erfort.de/",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 95,
+      "url": "https://www.laliste.com/places/gastehaus-klaus-erfort-saarbrucken-de"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

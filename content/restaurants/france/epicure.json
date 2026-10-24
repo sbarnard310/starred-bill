@@ -7,8 +7,6 @@
   "address": "Le Bristol, 112 rue du Faubourg-Saint-Honoré, 75008, Paris",
   "stars": 3,
   "cuisine": "Modern European",
-  "rating": 4.7,
-  "reviews": 1759,
   "dinner": 490,
   "dinnerType": "menu",
   "dinnerNote": "Tasting menu",
@@ -38,5 +36,14 @@
     "name": "Le Bristol Paris",
     "url": "https://www.oetkerhotels.com/fr/hotels/le-bristol-paris/",
     "checked": "2026-10-23"
-  }
+  },
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 98,
+      "url": "https://www.laliste.com/places/lepicure-paris-fr"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

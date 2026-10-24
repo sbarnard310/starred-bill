@@ -6,8 +6,6 @@
   "address": "Can Sunyer 48, Girona, 17007",
   "stars": 3,
   "cuisine": "Creative",
-  "rating": 4.8,
-  "reviews": 4744,
   "dinner": 320,
   "dinnerType": "menu",
   "dinnerNote": "Festival menu: appetisers, 12 dishes and 4 desserts, for the whole table",
@@ -76,7 +74,7 @@
       "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
     }
   ],
-  "rankingsChecked": "2026-10-13",
+  "rankingsChecked": "2026-10-24",
   "photo": "el-celler-de-can-roca.jpg",
   "photoAlt": "The entrance gate and villa of El Celler de Can Roca in Girona",
   "photoCredit": "e_calamar",

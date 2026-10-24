@@ -5,8 +5,6 @@
   "address": "Strada Sant'Uffizio 1, 14030, Cioccaro",
   "stars": 2,
   "cuisine": "Italian",
-  "rating": 4.6,
-  "reviews": 121,
   "dinnerType": "spend",
   "dinner": 170,
   "dinnerNote": "Typical spend without drinks (Gambero Rosso average)",
@@ -41,5 +39,20 @@
       }
     ],
     "checked": "2026-10-23"
-  }
+  },
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 86,
+      "url": "https://www.laliste.com/places/locanda-del-santuffizio-enrico-bartolini-cioccaro-di-penango-it"
+    },
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 292,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

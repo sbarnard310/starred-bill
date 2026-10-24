@@ -4,8 +4,6 @@
   "address": "2194 rue Centre, Montréal, H3K 1J4",
   "stars": 1,
   "cuisine": "Modern American",
-  "rating": 4.8,
-  "reviews": 112,
   "dinnerType": "menu",
   "dinner": 165,
   "wine": 70,
@@ -24,5 +22,14 @@
   "dinnerNote": "Tasting menu, service included, prepaid",
   "dinnerNoteFr": "Menu dégustation, service compris, payé à la réservation",
   "lunchNote": "Dinner only",
-  "lunchNoteFr": "Uniquement le soir"
+  "lunchNoteFr": "Uniquement le soir",
+  "rankings": [
+    {
+      "list": "north-americas-50-best",
+      "year": 2026,
+      "rank": 34,
+      "url": "https://www.the50.com/restaurants/best-in-north-america/list/1-50"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

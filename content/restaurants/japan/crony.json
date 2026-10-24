@@ -9,8 +9,6 @@
   "addressJa": "〒106-0044 東京都港区東麻布 1-20-3",
   "stars": 2,
   "cuisine": "French",
-  "rating": 4.7,
-  "reviews": 266,
   "dinner": 28600,
   "dinnerType": "menu",
   "dinnerNote": "Tasting menu",
@@ -28,5 +26,20 @@
   "placeId": "ChIJz29nSWWLGGARQibtSAIQLP0",
   "michelinId": "1194937",
   "chef": "Michihiro Haruta",
-  "chefSource": "press"
+  "chefSource": "press",
+  "rankings": [
+    {
+      "list": "asias-50-best",
+      "year": 2026,
+      "rank": 34,
+      "url": "https://www.the50.com/restaurants/best-in-asia/list/1-50"
+    },
+    {
+      "list": "oad-japan",
+      "year": 2026,
+      "rank": 251,
+      "url": "https://www.oadguides.com/lists/japan/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

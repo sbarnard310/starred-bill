@@ -5,8 +5,6 @@
   "address": "2316 Polk St., San Francisco, CA 94109",
   "stars": 1,
   "cuisine": "Japanese",
-  "rating": 4.6,
-  "reviews": 243,
   "dinner": 274,
   "dinnerType": "menu",
   "dinnerNote": "Tasting menu",
@@ -25,5 +23,14 @@
     "kosher"
   ],
   "chef": "David Yoshimura",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "rankings": [
+    {
+      "list": "oad-north-america",
+      "year": 2026,
+      "rank": 283,
+      "url": "https://www.oadguides.com/lists/north-america/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

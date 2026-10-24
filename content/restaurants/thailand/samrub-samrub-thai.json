@@ -6,8 +6,6 @@
   "address": "39/11 Soi Yommarat, Si Lom, Bang Rak, Bangkok",
   "stars": 1,
   "cuisine": "Thai",
-  "rating": 4.3,
-  "reviews": 307,
   "dinner": 4290,
   "dinnerType": "menu",
   "dinnerNote": "Full-course menu, plus service and VAT (++)",
@@ -43,5 +41,14 @@
   "dressCode": "Smart casual.",
   "duration": "About two and a quarter hours: the 5.30pm sitting ends by 7.45pm. Guests more than 30 minutes late may miss some courses.",
   "infoSource": "https://www.tablecheck.com/en/samrub-samrub-thai/reserve/message",
-  "infoChecked": "2026-10-13"
+  "infoChecked": "2026-10-13",
+  "rankings": [
+    {
+      "list": "asias-50-best",
+      "year": 2026,
+      "rank": 67,
+      "url": "https://www.the50.com/restaurants/best-in-asia/list/51-100"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

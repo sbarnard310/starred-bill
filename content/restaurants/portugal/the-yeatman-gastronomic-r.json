@@ -5,8 +5,6 @@
   "address": "Rua do Choupelo (Santa Marinha), 4400-088, Vila Nova de Gaia",
   "stars": 2,
   "cuisine": "Creative",
-  "rating": 4.9,
-  "reviews": 57,
   "dinnerType": "menu",
   "dinner": 300,
   "dinnerNote": "Tasting menu (other menus from €260)",
@@ -23,5 +21,14 @@
   "dinnerNotePt": "Menu de degustação (outros menus desde 260 €)",
   "noLunch": true,
   "lunchNote": "Dinner only",
-  "lunchNotePt": "Só jantar"
+  "lunchNotePt": "Só jantar",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 94.5,
+      "url": "https://www.laliste.com/places/the-yeatman-vila-nova-de-gaia-pt"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

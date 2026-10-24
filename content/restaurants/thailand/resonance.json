@@ -6,8 +6,6 @@
   "address": "108, 4 Soi Sukhumvit 65, Phra Khanong Nuea, Vadhana, Bangkok",
   "stars": 1,
   "cuisine": "Modern",
-  "rating": 4.7,
-  "reviews": 162,
   "dinner": 4500,
   "dinnerType": "menu",
   "dinnerNote": "Tasting menu, 10 courses (shorter menu THB 3,900)",
@@ -30,5 +28,14 @@
     "vegetarian"
   ],
   "chef": "Shunsuke Shimomura",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 76.5,
+      "url": "https://www.laliste.com/places/resonance-th"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

@@ -6,8 +6,6 @@
   "address": "Avenida Alcalde José Elosegi 273, Donostia / San Sebastián, 20015",
   "stars": 3,
   "cuisine": "Classic",
-  "rating": 4.6,
-  "reviews": 2142,
   "dinner": 315,
   "dinnerType": "menu",
   "dinnerNote": "Tasting menu (with the wine pairing: menu €365 plus €220 for the wines)",
@@ -40,5 +38,20 @@
   "photoSourceType": "commons",
   "photoWidth": 677,
   "photoHeight": 1000,
-  "photoChecked": "2026-10-13"
+  "photoChecked": "2026-10-13",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 99,
+      "url": "https://www.laliste.com/places/arzak-donostia-es"
+    },
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 102,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

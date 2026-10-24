@@ -7,8 +7,6 @@
   "address": "Vesterbrogade 184, 1800 Frederiksberg C",
   "stars": 1,
   "cuisine": "Modern European",
-  "rating": 4.5,
-  "reviews": 646,
   "dinner": 1500,
   "dinnerType": "menu",
   "dinnerNote": "Menu, 5 courses",
@@ -62,7 +60,7 @@
       "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
     }
   ],
-  "rankingsChecked": "2026-10-13",
+  "rankingsChecked": "2026-10-24",
   "photo": "formel-b.jpg",
   "photoAlt": "The front of formel B in Frederiksberg, Copenhagen, with planters by the steps",
   "photoCredit": "Royal Export",

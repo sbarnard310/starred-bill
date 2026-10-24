@@ -6,8 +6,6 @@
   "address": "Piazza della Chiesa 14, loc. San Pietro all'Olmo, Cornaredo, 20007",
   "stars": 2,
   "cuisine": "Creative",
-  "rating": 4.7,
-  "reviews": 1465,
   "dinner": 210,
   "dinnerType": "menu",
   "dinnerNote": "Tasting menu (shorter menu €170)",
@@ -32,5 +30,14 @@
   ],
   "chef": "Davide Oldani",
   "chefSource": "site",
-  "dietsManual": true
+  "dietsManual": true,
+  "rankings": [
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 56,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

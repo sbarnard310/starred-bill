@@ -6,8 +6,6 @@
   "address": "570-192 Giommachi Minamigawa, Higashiyama-ku, 605-0074, Kyoto",
   "stars": 1,
   "cuisine": "Japanese",
-  "rating": 4.8,
-  "reviews": 56,
   "dinnerType": "menu",
   "dinnerNote": "Dinner course; usually including tax and service",
   "sourceType": "press",
@@ -21,5 +19,14 @@
   "lunchNoteJa": "ディナーのみ",
   "michelinId": "1192923",
   "chef": "Yasuo Kida",
-  "chefSource": "press"
+  "chefSource": "press",
+  "rankings": [
+    {
+      "list": "oad-japan",
+      "year": 2026,
+      "rank": 748,
+      "url": "https://www.oadguides.com/lists/japan/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

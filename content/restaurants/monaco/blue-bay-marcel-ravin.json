@@ -6,8 +6,6 @@
   "address": "40 avenue Princesse-Grace, Monaco, 98000",
   "stars": 2,
   "cuisine": "Creative",
-  "rating": 4.6,
-  "reviews": 334,
   "dinner": 345,
   "dinnerType": "menu",
   "dinnerNote": "L'Agoulou de Marcel menu (Solstice €225; vegetable menu €180)",
@@ -26,5 +24,14 @@
   "placeId": "ChIJ8d2-BHjCzRIRe3R14j7Z0ZI",
   "michelinId": "118531",
   "chef": "Marcel Ravin",
-  "chefSource": "site"
+  "chefSource": "site",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 86.5,
+      "url": "https://www.laliste.com/places/blue-bay-monaco-mc"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

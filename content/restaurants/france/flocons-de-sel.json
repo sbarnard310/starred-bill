@@ -6,8 +6,6 @@
   "address": "1775 route du Leutaz, Le Leutaz, 74120 Megève",
   "stars": 3,
   "cuisine": "Modern European",
-  "rating": 4.8,
-  "reviews": 792,
   "dinner": 350,
   "dinnerType": "menu",
   "dinnerNote": "Seasonal menu, can be made vegetarian",
@@ -39,5 +37,14 @@
     "url": "https://www.floconsdesel.com/fr/les-hebergements/hotel-luxe-megeve-chambres-suites-mazots.html",
     "note": "Ten rooms, suites and mazots.",
     "checked": "2026-10-23"
-  }
+  },
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 98,
+      "url": "https://www.laliste.com/places/flocons-de-sel-megeve-fr"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

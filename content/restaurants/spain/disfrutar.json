@@ -6,8 +6,6 @@
   "address": "Villarroel 163, Barcelona, 08036",
   "stars": 3,
   "cuisine": "Creative",
-  "rating": 4.8,
-  "reviews": 3814,
   "dinner": 325,
   "dinnerType": "menu",
   "dinnerNote": "Tasting menu: Classics or this season's (kitchen table €470)",
@@ -48,5 +46,20 @@
   "photoSourceType": "commons",
   "photoWidth": 563,
   "photoHeight": 1000,
-  "photoChecked": "2026-10-13"
+  "photoChecked": "2026-10-13",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 94,
+      "url": "https://www.laliste.com/places/disfrutar-barcelona-es"
+    },
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 8,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

@@ -5,8 +5,6 @@
   "address": "Rosewood Miramar Beach, 1759 S. Jameson Ln., Montecito, 93108",
   "stars": 1,
   "cuisine": "American",
-  "rating": 4.6,
-  "reviews": 242,
   "dinner": 225,
   "dinnerType": "menu",
   "dinnerNote": "Four-course menu (chef's tasting menu $325)",
@@ -25,5 +23,14 @@
     "vegan"
   ],
   "chef": "Massimo Falsini",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 76,
+      "url": "https://www.laliste.com/places/carusos-montecito-us"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

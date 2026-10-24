@@ -7,8 +7,6 @@
   "addressZh": "香港灣仔港灣徑1號瑞吉酒店3樓",
   "stars": 2,
   "cuisine": "French",
-  "rating": 4.7,
-  "reviews": 282,
   "dinner": 2988,
   "dinnerType": "menu",
   "dinnerNote": "Les Héritages, 7 courses (5 courses HK$2,088)",
@@ -33,5 +31,20 @@
   ],
   "chef": "Olivier Elzer",
   "chefSource": "site",
-  "dietsManual": true
+  "dietsManual": true,
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 94.5,
+      "url": "https://www.laliste.com/places/lenvol-hk"
+    },
+    {
+      "list": "oad-asia",
+      "year": 2026,
+      "rank": 71,
+      "url": "https://www.oadguides.com/lists/asia/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

@@ -5,8 +5,6 @@
   "address": "Via Ticciano 137, 80069, Ticciano",
   "stars": 1,
   "cuisine": "Mediterranean",
-  "rating": 4.7,
-  "reviews": 289,
   "dinnerType": "menu",
   "dinner": 160,
   "dinnerNote": "Tasting menu (other menus from €130)",
@@ -58,5 +56,14 @@
     ],
     "note": "Boutique hotel with six themed rooms in the chef’s family home; it runs seasonally, so check opening dates.",
     "checked": "2026-10-23"
-  }
+  },
+  "rankings": [
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 522,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

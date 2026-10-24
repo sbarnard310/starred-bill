@@ -5,8 +5,6 @@
   "address": "115 De Anza Blvd., San Mateo, 94402",
   "stars": 1,
   "cuisine": "Japanese",
-  "rating": 4.7,
-  "reviews": 207,
   "dinnerType": "menu",
   "dinnerNote": "Kaiseki menu, changing monthly; price not published (booked by phone)",
   "sourceType": "none",
@@ -26,5 +24,14 @@
     "via": "phone",
     "source": "https://www.wakuriya.com/",
     "checked": "2026-10-10"
-  }
+  },
+  "rankings": [
+    {
+      "list": "oad-north-america",
+      "year": 2026,
+      "rank": 296,
+      "url": "https://www.oadguides.com/lists/north-america/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

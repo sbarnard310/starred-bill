@@ -6,8 +6,6 @@
   "address": "3-3-3 Uchiawajimachi, Chuo-ku, 540-0038, Osaka",
   "stars": 2,
   "cuisine": "Japanese",
-  "rating": 4.4,
-  "reviews": 103,
   "dinnerType": "menu",
   "dinnerNote": "Dinner course; usually including tax and service",
   "sourceType": "press",
@@ -24,5 +22,20 @@
   "lunchSource": "https://omakaseje.com/restaurants/yh341576",
   "michelinId": "1193150",
   "chef": "Shintaro Matsuo",
-  "chefSource": "press"
+  "chefSource": "press",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 84.5,
+      "url": "https://www.laliste.com/places/koryu-osaka-shi-jp"
+    },
+    {
+      "list": "oad-japan",
+      "year": 2026,
+      "rank": 232,
+      "url": "https://www.oadguides.com/lists/japan/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

@@ -4,8 +4,6 @@
   "address": "Rennweg 7, 8001, Zurich",
   "stars": 2,
   "cuisine": "French",
-  "rating": 4.6,
-  "reviews": 61,
   "dinnerType": "menu",
   "dinner": 350,
   "dinnerNote": "Tasting menu (other menus from CHF 290)",
@@ -106,5 +104,14 @@
   "groupsUrl": "https://www.widderhotel.com/en/meetings-occasions/",
   "infoSource": "https://www.widderhotel.com/en/eat-drink/widder-restaurant/",
   "infoChecked": "2026-10-13",
-  "dietsManual": true
+  "dietsManual": true,
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 84,
+      "url": "https://www.laliste.com/places/widder-zurich-ch"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

@@ -17,5 +17,14 @@
   "lunchNoteZhs": "供应午餐",
   "nameZhs": "潮上潮（朝阳）",
   "chef": "Cheung Yat Fung",
-  "chefSource": "press"
+  "chefSource": "press",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 75,
+      "url": "https://www.laliste.com/places/chaoshangchao-beijing-cn"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

@@ -6,8 +6,6 @@
   "address": "Avenida de Abandoibarra 2, Bilbao, 48009",
   "stars": 1,
   "cuisine": "Creative",
-  "rating": 4.2,
-  "reviews": 794,
   "dinner": 110,
   "dinnerType": "menu",
   "dinnerNote": "Tasting menu, whole table",
@@ -30,5 +28,14 @@
   "placeId": "ChIJ1TWrrCZQTg0REIRME28oDuA",
   "michelinId": "218659",
   "chef": "Josean Alija",
-  "chefSource": "site"
+  "chefSource": "site",
+  "rankings": [
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 129,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

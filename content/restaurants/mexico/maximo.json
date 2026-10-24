@@ -6,8 +6,6 @@
   "address": "Álvaro Obregón 65 Bis, Roma Norte, Mexico City",
   "stars": 1,
   "cuisine": "Mexican",
-  "rating": 4.3,
-  "reviews": 2841,
   "dinner": 3200,
   "dinnerType": "menu",
   "dinnerNote": "Tasting menu, 4 courses (also à la carte, mains about MX$645–790)",
@@ -38,5 +36,14 @@
   "photoSourceType": "commons",
   "photoWidth": 1000,
   "photoHeight": 993,
-  "photoChecked": "2026-10-13"
+  "photoChecked": "2026-10-13",
+  "rankings": [
+    {
+      "list": "latin-americas-50-best",
+      "year": 2025,
+      "rank": 30,
+      "url": "https://www.the50.com/restaurants/best-in-latin-america/list/1-50"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

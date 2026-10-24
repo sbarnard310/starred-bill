@@ -5,8 +5,6 @@
   "address": "Oddervej 19-21, 8000, Aarhus",
   "stars": 2,
   "cuisine": "Creative",
-  "rating": 4.8,
-  "reviews": 346,
   "dinnerType": "menu",
   "dinner": 2800,
   "dinnerNote": "Tasting menu",
@@ -33,5 +31,20 @@
   "photoSourceType": "commons",
   "photoWidth": 1000,
   "photoHeight": 562,
-  "photoChecked": "2026-10-13"
+  "photoChecked": "2026-10-13",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 93.5,
+      "url": "https://www.laliste.com/places/frederikshoj-aarhus-dk"
+    },
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 274,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

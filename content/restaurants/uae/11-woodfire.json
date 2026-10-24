@@ -4,8 +4,6 @@
   "address": "Villa 11, 75B Street, Jumeirah 1, Dubai",
   "stars": 1,
   "cuisine": "Modern",
-  "rating": 4.5,
-  "reviews": 2355,
   "dinnerType": "main",
   "dinnerNote": "À la carte; mains AED 125–370 (steaks to share AED 550–850); VAT included",
   "noPairing": true,
@@ -57,5 +55,5 @@
       "url": "https://www.oadguides.com/lists/asia/top-restaurants/2026"
     }
   ],
-  "rankingsChecked": "2026-10-13"
+  "rankingsChecked": "2026-10-24"
 }

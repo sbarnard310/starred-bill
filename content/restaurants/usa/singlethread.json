@@ -5,8 +5,6 @@
   "address": "131 North St., Healdsburg, 95448",
   "stars": 3,
   "cuisine": "Modern American",
-  "rating": 4.6,
-  "reviews": 772,
   "dinnerType": "menu",
   "dinner": 489,
   "dinnerNote": "Tasting menu, Mon–Wed (Thu–Sun about $541)",
@@ -46,5 +44,32 @@
   "photoWidth": 1000,
   "photoHeight": 750,
   "photoChecked": "2026-10-13",
-  "dietsManual": true
+  "dietsManual": true,
+  "rankings": [
+    {
+      "list": "worlds-50-best",
+      "year": 2025,
+      "rank": 80,
+      "url": "https://www.the50.com/restaurants/best-in-the-world/list/51-100"
+    },
+    {
+      "list": "north-americas-50-best",
+      "year": 2026,
+      "rank": 16,
+      "url": "https://www.the50.com/restaurants/best-in-north-america/list/1-50"
+    },
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 99.5,
+      "url": "https://www.laliste.com/places/singlethread-healdsburg-us"
+    },
+    {
+      "list": "oad-north-america",
+      "year": 2026,
+      "rank": 4,
+      "url": "https://www.oadguides.com/lists/north-america/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

@@ -5,8 +5,6 @@
   "address": "Mietenkamer Straße 65, 83224, Grassau",
   "stars": 3,
   "cuisine": "Creative",
-  "rating": 4.9,
-  "reviews": 372,
   "dinnerType": "menu",
   "dinner": 436,
   "dinnerNote": "Tasting menu",
@@ -23,5 +21,14 @@
   "dinnerNoteDe": "Degustationsmenü",
   "noLunch": true,
   "lunchNote": "Dinner only",
-  "lunchNoteDe": "Nur abends"
+  "lunchNoteDe": "Nur abends",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 95.5,
+      "url": "https://www.laliste.com/places/essenz-grassau-de"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

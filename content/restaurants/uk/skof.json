@@ -9,8 +9,6 @@
   "changeNote": "Gained its first star",
   "changeNoteZh": "首次獲得一星",
   "changeDate": "2025-02",
-  "rating": 4.9,
-  "reviews": 224,
   "dinner": 175,
   "dinnerType": "menu",
   "dinnerNote": "Tasting menu (shorter menu £130)",
@@ -31,5 +29,14 @@
     "vegan"
   ],
   "chef": "Tom Barnes",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "rankings": [
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 344,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

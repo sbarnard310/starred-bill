@@ -5,8 +5,6 @@
   "address": "Molenweg 177, 3660, Opglabbeek",
   "stars": 2,
   "cuisine": "French",
-  "rating": 4.8,
-  "reviews": 578,
   "dinnerType": "menu",
   "dinner": 150,
   "sourceType": "site",
@@ -28,5 +26,14 @@
   "dinnerNoteFr": "Menu dégustation (menu Slagmolen 235 € ; aussi à la carte)",
   "lunchNote": "Business lunch, 3 courses · Mon–Tue, Thu–Fri (4 courses €125)",
   "lunchNoteNl": "Zakenlunch, 3 gangen · ma–di, do–vr (4 gangen € 125)",
-  "lunchNoteFr": "Lunch d'affaires, 3 services · lun.–mar., jeu.–ven. (4 services 125 €)"
+  "lunchNoteFr": "Lunch d'affaires, 3 services · lun.–mar., jeu.–ven. (4 services 125 €)",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 82.5,
+      "url": "https://www.laliste.com/places/slagmolen-opglabbeek-be"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

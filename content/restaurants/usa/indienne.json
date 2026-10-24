@@ -5,8 +5,6 @@
   "address": "217 W. Huron St., Chicago, IL 60654",
   "stars": 1,
   "cuisine": "Indian",
-  "rating": 4.6,
-  "reviews": 869,
   "dinner": 145,
   "dinnerType": "menu",
   "dinnerNote": "Tasting menu",
@@ -28,5 +26,14 @@
   ],
   "chef": "Sujan Sarkar",
   "chefSource": "site",
-  "dietsManual": true
+  "dietsManual": true,
+  "rankings": [
+    {
+      "list": "oad-north-america",
+      "year": 2026,
+      "rank": 444,
+      "url": "https://www.oadguides.com/lists/north-america/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

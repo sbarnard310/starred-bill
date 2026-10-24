@@ -5,8 +5,6 @@
   "address": "Tschuggentorweg 1, 7050, Arosa",
   "stars": 2,
   "cuisine": "Modern European",
-  "rating": 5,
-  "reviews": 7,
   "dinnerType": "menu",
   "dinnerNote": "Winter menus not yet published (La Brezza in Ascona: CHF 230–305)",
   "sourceType": "none",
@@ -37,5 +35,14 @@
   "bookingPhone": "+41 81 378 99 99",
   "infoSource": "https://tschuggencollection.ch/en/hotel/tschuggen-grand-hotel/restaurants",
   "infoChecked": "2026-10-13",
-  "dietsManual": true
+  "dietsManual": true,
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 95.5,
+      "url": "https://www.laliste.com/places/la-brezza-arosa-arosa-ch"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

@@ -5,8 +5,6 @@
   "address": "Campo di Trens, 39040, Mules",
   "stars": 1,
   "cuisine": "Creative",
-  "rating": 4.8,
-  "reviews": 75,
   "dinnerType": "menu",
   "dinner": 219,
   "dinnerNote": "Tasting menu (other menus from €192)",
@@ -43,5 +41,14 @@
     ],
     "note": "The Notte stellata package is the one that includes the starred tasting menu.",
     "checked": "2026-10-23"
-  }
+  },
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 84,
+      "url": "https://www.laliste.com/places/gourmetstube-einhorn-hotel-stafler-freienfeld-bei-sterzing-it"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

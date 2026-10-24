@@ -9,8 +9,6 @@
   "changeNote": "Gained its first star",
   "changeNoteZh": "首度摘星",
   "changeDate": "2025-11",
-  "rating": 4.7,
-  "reviews": 180,
   "dinner": 225,
   "dinnerType": "menu",
   "dinnerNote": "Tasting menu",
@@ -30,5 +28,14 @@
     "kosher"
   ],
   "chef": "Jacob Potashnick",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "rankings": [
+    {
+      "list": "oad-north-america",
+      "year": 2026,
+      "rank": 279,
+      "url": "https://www.oadguides.com/lists/north-america/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

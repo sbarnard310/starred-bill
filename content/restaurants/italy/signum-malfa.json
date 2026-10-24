@@ -5,8 +5,6 @@
   "address": "Via Pastifico 12, 98050, Malfa",
   "stars": 1,
   "cuisine": "Italian",
-  "rating": 4.2,
-  "reviews": 394,
   "dinnerType": "menu",
   "dinner": 250,
   "dinnerNote": "Sigillo tasting menu, 12 dishes (other menus from €170)",
@@ -34,5 +32,14 @@
     "url": "https://www.hotelsignum.it/en/hotel.html",
     "note": "The restaurant is in a boutique hotel with a spa on Salina.",
     "checked": "2026-10-23"
-  }
+  },
+  "rankings": [
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 284,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

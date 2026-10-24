@@ -9,8 +9,6 @@
   "addressJa": "〒106-0047 東京都港区南麻布 5-1-5",
   "stars": 1,
   "cuisine": "Japanese",
-  "rating": 4.5,
-  "reviews": 409,
   "dinner": 25103,
   "dinnerType": "menu",
   "dinnerNote": "Chef's tasting course",
@@ -31,5 +29,14 @@
     "kosher"
   ],
   "chef": "Yuki Anan",
-  "chefSource": "press"
+  "chefSource": "press",
+  "rankings": [
+    {
+      "list": "oad-japan",
+      "year": 2026,
+      "rank": 520,
+      "url": "https://www.oadguides.com/lists/japan/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

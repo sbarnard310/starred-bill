@@ -4,8 +4,6 @@
   "address": "Eden House, 41 Street, Al Satwa, Dubai",
   "stars": 1,
   "cuisine": "Creative",
-  "rating": 4.8,
-  "reviews": 378,
   "dinnerType": "menu",
   "dinner": 995,
   "dinnerNote": "Tasting menu",
@@ -22,5 +20,20 @@
   "dinnerNoteAr": "قائمة تذوق",
   "noLunch": true,
   "lunchNote": "Dinner only",
-  "lunchNoteAr": "العشاء فقط"
+  "lunchNoteAr": "العشاء فقط",
+  "rankings": [
+    {
+      "list": "mena-50-best",
+      "year": 2026,
+      "rank": 10,
+      "url": "https://www.the50.com/restaurants/best-in-middle-east-and-north-africa/list/1-50"
+    },
+    {
+      "list": "oad-asia",
+      "year": 2026,
+      "rank": 239,
+      "url": "https://www.oadguides.com/lists/asia/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

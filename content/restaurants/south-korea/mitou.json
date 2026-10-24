@@ -7,8 +7,6 @@
   "address": "24 Dosan-daero 70-gil, Gangnam-gu, Seoul",
   "stars": 2,
   "cuisine": "Japanese",
-  "rating": 4.8,
-  "reviews": 86,
   "dinner": 250000,
   "dinnerType": "menu",
   "dinnerNote": "Kaiseki course, about",
@@ -22,5 +20,14 @@
   "placeId": "ChIJGZ6vIe2jfDURWOUsVCO94cA",
   "michelinId": "570656",
   "chef": "Kim Bo-mi and Kwon Young-woon",
-  "chefSource": "press"
+  "chefSource": "press",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 89,
+      "url": "https://www.laliste.com/places/mitou-kr"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

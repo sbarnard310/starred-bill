@@ -6,8 +6,6 @@
   "address": "235 Parnell Road, Parnell, Auckland 1052",
   "stars": 1,
   "cuisine": "Pacific Islands",
-  "rating": 4.9,
-  "reviews": 331,
   "dinner": 215,
   "dinnerType": "menu",
   "dinnerNote": "Chef's Journey, 14 dishes (Fāgogo Journey $165)",
@@ -26,5 +24,14 @@
   "placeId": "ChIJnbOIYiNJDW0RBWRieSjmtk0",
   "michelinId": "1241069",
   "chef": "Henry Onesemo",
-  "chefSource": "site"
+  "chefSource": "site",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 91,
+      "url": "https://www.laliste.com/places/tala-auckland-nz"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

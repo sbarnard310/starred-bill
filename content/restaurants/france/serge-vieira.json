@@ -6,8 +6,6 @@
   "address": "Le Couffour, 15110 Chaudes-Aigues",
   "stars": 2,
   "cuisine": "Creative",
-  "rating": 4.7,
-  "reviews": 500,
   "dinner": 246,
   "dinnerType": "menu",
   "dinnerNote": "Longest tasting menu (other menus from €146)",
@@ -36,5 +34,14 @@
     "fromNote": "including continental breakfast",
     "note": "Three rooms in the medieval Château de Couffour, where the restaurant is.",
     "checked": "2026-10-23"
-  }
+  },
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 86.5,
+      "url": "https://www.laliste.com/places/serge-vieira-chaudes-aigues-fr"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

@@ -7,8 +7,6 @@
   "address": "2F, Sinsa Square, 652 Gangnam-daero, Gangnam-gu, Seoul",
   "stars": 1,
   "cuisine": "Vegan",
-  "rating": 4.8,
-  "reviews": 83,
   "dinner": 260000,
   "dinnerType": "menu",
   "dinnerNote": "Dinner course, 100% plant-based (from 1 Oct 2026)",
@@ -33,5 +31,14 @@
     "vegan"
   ],
   "chef": "Si-woo Sung",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "rankings": [
+    {
+      "list": "oad-asia",
+      "year": 2026,
+      "rank": 273,
+      "url": "https://www.oadguides.com/lists/asia/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

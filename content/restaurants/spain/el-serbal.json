@@ -5,8 +5,6 @@
   "address": "Avenida de Manuel García Lago 1, 39005, Santander",
   "stars": 1,
   "cuisine": "Modern European",
-  "rating": 4.5,
-  "reviews": 2313,
   "dinnerType": "menu",
   "dinner": 86,
   "sourceType": "site",
@@ -25,5 +23,14 @@
   "placeId": "ChIJ6yRXjrFLSQ0RqBrm0WBDD-I",
   "michelinId": "1197026",
   "dinnerNote": "Gastronomic menu (tasting menu €110)",
-  "dinnerNoteEs": "Menú gastronómico (menú degustación 110 €)"
+  "dinnerNoteEs": "Menú gastronómico (menú degustación 110 €)",
+  "rankings": [
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 600,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

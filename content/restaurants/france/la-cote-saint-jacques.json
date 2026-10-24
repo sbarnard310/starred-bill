@@ -6,8 +6,6 @@
   "address": "14 faubourg de Paris, 89300 Joigny",
   "stars": 2,
   "cuisine": "Modern European",
-  "rating": 4.6,
-  "reviews": 654,
   "dinner": 320,
   "dinnerType": "menu",
   "dinnerNote": "Longest tasting menu (other menus from €132)",
@@ -35,5 +33,14 @@
     "url": "https://www.cotesaintjacques.com/en/page/rooms-romantic-weekend-burgundy.11825.html",
     "note": "A 5-star Relais & Châteaux hotel with spa; other tailor-made stays are arranged through reception.",
     "checked": "2026-10-23"
-  }
+  },
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 89,
+      "url": "https://www.laliste.com/places/la-cote-st-jacques-joigny-fr"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

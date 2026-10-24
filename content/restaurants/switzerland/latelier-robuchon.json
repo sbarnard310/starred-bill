@@ -4,8 +4,6 @@
   "address": "Quai Wilson 37, 1201, Geneva",
   "stars": 2,
   "cuisine": "French",
-  "rating": 4.6,
-  "reviews": 368,
   "dinnerType": "menu",
   "dinner": 300,
   "dinnerNote": "Tasting menu (or à la carte)",
@@ -33,5 +31,14 @@
   "lunchNoteIt": "Menu pranzo",
   "chef": "Olivier Jean",
   "chefSource": "press",
-  "dietsManual": true
+  "dietsManual": true,
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 85.5,
+      "url": "https://www.laliste.com/places/latelier-de-joel-robuchon-geneve-ch"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

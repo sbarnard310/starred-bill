@@ -5,8 +5,6 @@
   "address": "Hambleton, LE15 8TH",
   "stars": 1,
   "cuisine": "Classic",
-  "rating": 4.8,
-  "reviews": 569,
   "dinner": 180,
   "dinnerType": "menu",
   "dinnerNote": "Tasting menu",
@@ -89,7 +87,7 @@
       "url": "https://www.laliste.com/places/hambleton-hall-oakham-gb"
     }
   ],
-  "rankingsChecked": "2026-10-13",
+  "rankingsChecked": "2026-10-24",
   "photo": "hambleton-hall.jpg",
   "photoAlt": "The front and gardens of Hambleton Hall in Rutland",
   "photoCredit": "Iain Crump",

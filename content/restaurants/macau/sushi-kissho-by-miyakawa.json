@@ -12,8 +12,6 @@
   "changeNote": "Gained its first star",
   "changeNoteZh": "首度摘星",
   "changeDate": "2025-03",
-  "rating": 4.9,
-  "reviews": 12,
   "dinner": 1888,
   "dinnerType": "menu",
   "dinnerNote": "Omakase, 8 sushi (10 sushi MOP$2,888); plus 15% service",
@@ -30,5 +28,14 @@
   "placeId": "ChIJmapmsbhxATQRPjI6-GA20wM",
   "michelinId": "1215980",
   "chef": "Hironori Satake",
-  "chefSource": "press"
+  "chefSource": "press",
+  "rankings": [
+    {
+      "list": "oad-asia",
+      "year": 2026,
+      "rank": 231,
+      "url": "https://www.oadguides.com/lists/asia/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

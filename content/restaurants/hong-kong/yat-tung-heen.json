@@ -8,8 +8,6 @@
   "addressZh": "香港佐敦彌敦道380號逸東酒店地庫2樓",
   "stars": 1,
   "cuisine": "Cantonese",
-  "rating": 4.2,
-  "reviews": 2193,
   "dinner": 968,
   "dinnerType": "menu",
   "dinnerNote": "Michelin degustation menu, 8 courses (minimum 2 guests)",
@@ -92,5 +90,14 @@
   "photoWidth": 1000,
   "photoHeight": 747,
   "photoChecked": "2026-10-13",
-  "dietsManual": true
+  "dietsManual": true,
+  "rankings": [
+    {
+      "list": "oad-asia",
+      "year": 2026,
+      "rank": 488,
+      "url": "https://www.oadguides.com/lists/asia/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

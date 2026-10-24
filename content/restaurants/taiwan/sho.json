@@ -8,8 +8,6 @@
   "addressZh": "前鎮區中華五路806號2樓",
   "stars": 1,
   "cuisine": "Japanese",
-  "rating": 4.4,
-  "reviews": 386,
   "dinner": 3600,
   "dinnerType": "menu",
   "dinnerNote": "Omakase dinner",
@@ -28,5 +26,14 @@
   "placeId": "ChIJX9KFFQUDbjQRKDSaXfkeEDA",
   "michelinId": "1197419",
   "chef": "Shoichi Fujimoto",
-  "chefSource": "press"
+  "chefSource": "press",
+  "rankings": [
+    {
+      "list": "oad-asia",
+      "year": 2026,
+      "rank": 443,
+      "url": "https://www.oadguides.com/lists/asia/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

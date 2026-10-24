@@ -6,8 +6,6 @@
   "address": "Hôtel Ha(a)ïtza, 1 avenue Louis-Gaume, 33115 Pyla-sur-Mer",
   "stars": 2,
   "cuisine": "Modern European",
-  "rating": 4.6,
-  "reviews": 1385,
   "dinner": 270,
   "dinnerType": "menu",
   "dinnerNote": "Longest tasting menu (other menus from €180)",
@@ -42,5 +40,14 @@
     ],
     "note": "Hotel in Pyla-sur-Mer with 30 rooms, 5 suites, 2 junior suites and an apartment.",
     "checked": "2026-10-23"
-  }
+  },
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 79.5,
+      "url": "https://www.laliste.com/places/le-skiff-club-la-teste-de-buch-fr"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

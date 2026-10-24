@@ -5,8 +5,6 @@
   "address": "via Albarelle 16, 6612, Ascona",
   "stars": 2,
   "cuisine": "Mediterranean",
-  "rating": 4.5,
-  "reviews": 23,
   "dinnerType": "menu",
   "dinner": 305,
   "dinnerNote": "Tasting menu (other menus from CHF 230)",
@@ -60,5 +58,14 @@
   "dressCode": "Long trousers are appreciated for men at dinner; shorts and Bermuda shorts should be avoided.",
   "infoSource": "https://tschuggencollection.ch/en/hotel/hotel-eden-roc/restaurants",
   "infoChecked": "2026-10-13",
-  "dietsManual": true
+  "dietsManual": true,
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 95.5,
+      "url": "https://www.laliste.com/places/la-brezza-hotel-eden-roc-ascona-ch"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

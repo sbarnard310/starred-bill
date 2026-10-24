@@ -5,8 +5,6 @@
   "address": "68-69 Royal Hospital Road, Chelsea, London, SW3 4HP",
   "stars": 3,
   "cuisine": "French",
-  "rating": 4.4,
-  "reviews": 1874,
   "dinner": 225,
   "dinnerType": "menu",
   "dinnerNote": "Menu Prestige, 6 courses (three-course à la carte £190)",
@@ -83,6 +81,6 @@
       "url": "https://www.laliste.com/places/gordon-ramsay-london-gb"
     }
   ],
-  "rankingsChecked": "2026-10-13",
+  "rankingsChecked": "2026-10-24",
   "dietsManual": true
 }

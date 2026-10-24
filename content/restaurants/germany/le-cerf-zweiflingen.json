@@ -5,8 +5,6 @@
   "address": "Kärcherstr. 11, 74639, Zweiflingen",
   "stars": 2,
   "cuisine": "French",
-  "rating": 4.5,
-  "reviews": 33,
   "dinnerType": "menu",
   "dinner": 298,
   "dinnerNote": "Menu \"Chef\", 6 courses (other menus from €178)",
@@ -70,6 +68,6 @@
       "url": "https://www.laliste.com/places/le-cerf-wald-and-schlosshotel-friedrichsruhe-zweiflingen-de"
     }
   ],
-  "rankingsChecked": "2026-10-13",
+  "rankingsChecked": "2026-10-24",
   "dietsManual": true
 }

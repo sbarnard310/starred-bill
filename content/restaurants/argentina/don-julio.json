@@ -6,8 +6,6 @@
   "address": "Guatemala 4699, Palermo, Buenos Aires",
   "stars": 1,
   "cuisine": "Steak and grill",
-  "rating": 4.4,
-  "reviews": 19846,
   "dinner": 150000,
   "dinnerType": "spend",
   "dinnerNote": "À la carte parrilla; typical spend from",
@@ -36,5 +34,32 @@
   "photoSourceType": "commons",
   "photoWidth": 1000,
   "photoHeight": 562,
-  "photoChecked": "2026-10-13"
+  "photoChecked": "2026-10-13",
+  "rankings": [
+    {
+      "list": "worlds-50-best",
+      "year": 2025,
+      "rank": 10,
+      "url": "https://www.the50.com/restaurants/best-in-the-world/list/1-50"
+    },
+    {
+      "list": "latin-americas-50-best",
+      "year": 2025,
+      "rank": 3,
+      "url": "https://www.the50.com/restaurants/best-in-latin-america/list/1-50"
+    },
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 83.5,
+      "url": "https://www.laliste.com/places/don-julio-buenos-aires-ar"
+    },
+    {
+      "list": "oad-south-america",
+      "year": 2026,
+      "rank": 8,
+      "url": "https://www.oadguides.com/lists/south-america/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

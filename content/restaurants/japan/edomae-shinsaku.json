@@ -10,8 +10,6 @@
   "addressJa": "〒103-0013 東京都中央区日本橋人形町 2-10-11 6F",
   "stars": 1,
   "cuisine": "Tempura",
-  "rating": 3.8,
-  "reviews": 123,
   "dinner": 28500,
   "dinnerType": "menu",
   "dinnerNote": "Chef's tasting course",
@@ -26,5 +24,14 @@
   "lat": 35.685565,
   "lng": 139.783986,
   "placeId": "ChIJTYq7oTuMGGARPRWkVW95glw",
-  "michelinId": "1193874"
+  "michelinId": "1193874",
+  "rankings": [
+    {
+      "list": "oad-japan",
+      "year": 2026,
+      "rank": 451,
+      "url": "https://www.oadguides.com/lists/japan/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

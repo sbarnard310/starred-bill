@@ -6,8 +6,6 @@
   "address": "34 rue Raymond-Derain, 59700 Marcq-en-Barœul",
   "stars": 2,
   "cuisine": "Creative",
-  "rating": 4.8,
-  "reviews": 1128,
   "dinner": 195,
   "dinnerType": "menu",
   "dinnerNote": "Longest tasting menu (other menus from €89)",
@@ -31,5 +29,14 @@
   ],
   "chef": "Diego Delbecq",
   "chefSource": "site",
-  "dietsManual": true
+  "dietsManual": true,
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 78.5,
+      "url": "https://www.laliste.com/places/rozo-marcq-en-baroeul-fr"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

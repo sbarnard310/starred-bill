@@ -11,8 +11,6 @@
   "changeNoteZh": "首度摘星",
   "changeNoteEs": "Consiguió su primera estrella",
   "changeDate": "2024-11",
-  "rating": 4.3,
-  "reviews": 1465,
   "dinner": 125,
   "dinnerType": "menu",
   "dinnerNote": "Canariedad Máxima menu (Plus €185; Gofio Express €95)",
@@ -33,5 +31,14 @@
   "placeId": "ChIJVZqm8YEoQg0RuCSMSdWBFDk",
   "michelinId": "482939",
   "chef": "Safe Cruz",
-  "chefSource": "site"
+  "chefSource": "site",
+  "rankings": [
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 501,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

@@ -4,8 +4,6 @@
   "address": "269 Powell St., Vancouver, V6A 1G3",
   "stars": 1,
   "cuisine": "French",
-  "rating": 4.6,
-  "reviews": 1538,
   "dinnerType": "menu",
   "dinner": 135,
   "dinnerNote": "Tasting menu (other menus from $110)",
@@ -30,5 +28,20 @@
   "photoSourceType": "commons",
   "photoWidth": 486,
   "photoHeight": 1000,
-  "photoChecked": "2026-10-13"
+  "photoChecked": "2026-10-13",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 76.5,
+      "url": "https://www.laliste.com/places/st-lawrence-vancouver-ca"
+    },
+    {
+      "list": "oad-north-america",
+      "year": 2026,
+      "rank": 160,
+      "url": "https://www.oadguides.com/lists/north-america/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

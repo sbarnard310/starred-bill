@@ -6,8 +6,6 @@
   "address": "347-92 Giommachi Kitagawa, Higashiyama-ku, 605-0073, Kyoto",
   "stars": 1,
   "cuisine": "Tempura",
-  "rating": 4.5,
-  "reviews": 77,
   "dinnerType": "spend",
   "dinnerNote": "Tabelog range ¥15,000–19,999",
   "sourceType": "press",
@@ -22,5 +20,14 @@
   "chefSource": "press",
   "dinner": 15000,
   "dinnerNoteJa": "食べログの価格帯 15,000～19,999円",
-  "source": "https://tabelog.com/en/kyoto/A2601/A260301/26006057/"
+  "source": "https://tabelog.com/en/kyoto/A2601/A260301/26006057/",
+  "rankings": [
+    {
+      "list": "oad-japan",
+      "year": 2026,
+      "rank": 307,
+      "url": "https://www.oadguides.com/lists/japan/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

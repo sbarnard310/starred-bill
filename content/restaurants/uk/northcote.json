@@ -5,8 +5,6 @@
   "address": "Northcote Road, Langho, BB6 8BE",
   "stars": 1,
   "cuisine": "British",
-  "rating": 4.7,
-  "reviews": 1291,
   "dinner": 155,
   "dinnerType": "menu",
   "dinnerNote": "Seasonal Gourmet menu, 5 courses",
@@ -68,5 +66,14 @@
     ],
     "checked": "2026-10-23"
   },
-  "dietsManual": true
+  "dietsManual": true,
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 87,
+      "url": "https://www.laliste.com/places/northcote-blackburn-gb"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

@@ -6,8 +6,6 @@
   "address": "Via Cantalupa 17, Brusaporto, 24060",
   "stars": 3,
   "cuisine": "Italian",
-  "rating": 5,
-  "reviews": 18,
   "dinner": 440,
   "dinnerType": "menu",
   "dinnerNote": "Senza Confini menu, 12 courses (8-course menus from €280)",
@@ -78,7 +76,7 @@
       "url": "https://www.laliste.com/places/da-vittorio-brusaporto-it"
     }
   ],
-  "rankingsChecked": "2026-10-13",
+  "rankingsChecked": "2026-10-24",
   "dietsManual": true,
   "stay": {
     "kind": "hotel",

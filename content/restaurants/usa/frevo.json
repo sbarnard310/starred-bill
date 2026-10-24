@@ -6,8 +6,6 @@
   "address": "48 W. 8th St., New York, NY, 10011",
   "stars": 1,
   "cuisine": "Modern American",
-  "rating": 4.8,
-  "reviews": 891,
   "dinner": 255,
   "dinnerType": "menu",
   "dinnerNote": "Tasting menu",
@@ -42,5 +40,14 @@
   "photoSourceType": "commons",
   "photoWidth": 1000,
   "photoHeight": 750,
-  "photoChecked": "2026-10-13"
+  "photoChecked": "2026-10-13",
+  "rankings": [
+    {
+      "list": "oad-north-america",
+      "year": 2026,
+      "rank": 186,
+      "url": "https://www.oadguides.com/lists/north-america/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

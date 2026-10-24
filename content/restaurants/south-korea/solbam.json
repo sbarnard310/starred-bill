@@ -7,8 +7,6 @@
   "address": "2F, 231 Hakdong-ro, Gangnam-gu, Seoul",
   "stars": 1,
   "cuisine": "Modern",
-  "rating": 4.8,
-  "reviews": 92,
   "dinner": 320000,
   "dinnerType": "menu",
   "dinnerNote": "Dinner course, about; dinner only",
@@ -25,5 +23,26 @@
     "vegetarian"
   ],
   "chef": "Tae-jun Eom",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "rankings": [
+    {
+      "list": "asias-50-best",
+      "year": 2026,
+      "rank": 55,
+      "url": "https://www.the50.com/restaurants/best-in-asia/list/51-100"
+    },
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 80,
+      "url": "https://www.laliste.com/places/solbam-kr"
+    },
+    {
+      "list": "oad-asia",
+      "year": 2026,
+      "rank": 236,
+      "url": "https://www.oadguides.com/lists/asia/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

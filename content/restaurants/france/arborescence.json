@@ -6,8 +6,6 @@
   "address": "76 rue de la Gare, 59170 Croix",
   "stars": 1,
   "cuisine": "Creative",
-  "rating": 5,
-  "reviews": 595,
   "dinner": 115,
   "dinnerType": "menu",
   "dinnerNote": "Longest tasting menu (other menus from €85)",
@@ -28,5 +26,14 @@
   "placeId": "ChIJU4al_I4pw0cReL3dOWGGlSk",
   "michelinId": "1204361",
   "chef": "Félix Robert",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "rankings": [
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 228,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

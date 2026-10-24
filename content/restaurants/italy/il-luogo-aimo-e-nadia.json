@@ -6,8 +6,6 @@
   "address": "Via Montecuccoli 6, Milan, 20147",
   "stars": 1,
   "cuisine": "Italian",
-  "rating": 4.5,
-  "reviews": 587,
   "dinner": 260,
   "dinnerType": "menu",
   "dinnerNote": "Territori menu",
@@ -29,5 +27,14 @@
     "gluten-free"
   ],
   "chef": "Alessandro Negrini and Fabio Pisani",
-  "chefSource": "site"
+  "chefSource": "site",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 88.5,
+      "url": "https://www.laliste.com/places/il-luogo-di-aimo-e-nadia-milano-it"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

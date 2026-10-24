@@ -6476,7 +6476,7 @@ def google_card_html(r):
            + "&zoom=16&language=en")
     return (f'<div class="rp-gframe"><iframe class="rp-gcard" src="{e(src)}" title="{e(r["name"])} on Google Maps, with its Google rating" loading="lazy" '
             'referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe></div>'
-            '<small>Live from Google Maps: the rating and number of reviews are in the card at the top left.</small>')
+            '<small>Google rating, live from Google Maps</small>')
 
 
 def reviewed():
@@ -8348,6 +8348,7 @@ def build_restaurant_pages():
         maps = ("https://www.google.com/maps/search/?api=1&query=" + urllib.parse.quote(", ".join([r["name"], r.get("address") or where]))
                 + (f"&query_place_id={urllib.parse.quote(r['placeId'])}" if r.get("placeId") else ""))
 
+        gcard = r["id"] in GOOGLE_EMBED_PAGES and r.get("placeId") and GOOGLE_MAPS_KEY
         hero = (f'<div class="hero rp-hero" id="top">\n  <div class="wrap">\n    <div>\n'
                 f'      <span class="eyebrow" style="color: var(--band-muted)">{stars_html} {e(stars_label)} · {e(r.get("cuisine", ""))}</span>\n'
                 f'      <h1 style="margin-top: 12px">'
@@ -8365,7 +8366,8 @@ def build_restaurant_pages():
                 + f'<button type="button" class="rp-btn" {trip_attrs(r)}>Add to a trip</button>'
                 + f'<button type="button" class="rp-btn" {report_attrs(r)}>Report a price or change</button></div>\n'
                 '      <div class="rp-cur" id="rpCur" role="group" aria-label="Show prices in" hidden></div>\n'
-                f'    </div>\n    <div class="rp-side">{own_photo_html(r)}{receipt_html(r, kind, src_links)}</div>\n  </div>\n</div>\n')
+                + f'    </div>\n    <div class="rp-side">{own_photo_html(r)}{receipt_html(r, kind, src_links)}'
+                + (f'<div class="rp-gtop">{google_card_html(r)}</div>' if gcard else "") + '</div>\n  </div>\n</div>\n')
 
         # The facts.
         change = r.get("change")
@@ -8408,7 +8410,6 @@ def build_restaurant_pages():
             facts.append(("Dietary needs", e("; ".join(x for x in (
                 "A vegetarian restaurant" if "vegetarian-only" in diets else "", "Has a vegetarian tasting menu" if "vegetarian-menu" in diets else "",
                 ("Can cater for " + and_list(plain_diets) + " diets") if plain_diets else "") if x)) + "<small>From " + ("the restaurant’s website" if r.get("dietsManual") else "the MICHELIN Guide") + "; say when you book</small>"))
-        gcard = r["id"] in GOOGLE_EMBED_PAGES and r.get("placeId") and GOOGLE_MAPS_KEY
         if r.get("rating") and not gcard:
             facts.append(("Google rating", f'{r["rating"]:.1f} out of 5' + (f'<small>{r["reviews"]:,} reviews, checked {RATINGS_CHECKED}</small>' if r.get("reviews") else "")))
         if r.get("memberScore"):
@@ -8418,12 +8419,10 @@ def build_restaurant_pages():
             links.append(f'<a href="{e(mg[r["id"]])}">MICHELIN Guide page</a>')
         if links:
             facts.append(("Links", " · ".join(links)))
-        if gcard:
-            facts.append(("Google rating", google_card_html(r)))
         facts_html = ('<section id="facts">\n  <div class="wrap">\n    <div class="section-head"><div><span class="eyebrow">At a glance</span>'
                       f'<h2 style="margin-top: 6px">{e(r["name"])}: stars, chef and address</h2></div></div>\n'
                       '    <div class="faq rp-qa">' + "".join(qa_block(q, glance_page.get(q) or f"<p>{e(a)}</p>") for q, a in glance_qa) + "</div>\n"
-                      '    <dl class="rp-facts">' + "".join(("<div class=\"rp-gwide\">" if "rp-gcard" in v else "<div>") + f"<dt>{e(k)}</dt><dd>{v}</dd></div>" for k, v in facts) + "</dl>\n  </div>\n</section>\n")
+                      '    <dl class="rp-facts">' + "".join(f"<div><dt>{e(k)}</dt><dd>{v}</dd></div>" for k, v in facts) + "</dl>\n  </div>\n</section>\n")
 
         # What you'll pay, with the country's service note and the sources.
         service_text = inherited(city, "serviceText") or ""

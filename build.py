@@ -6474,8 +6474,8 @@ def google_card_html(r):
     """Google's place card for a restaurant (a lazy-loaded Maps Embed iframe), in place of a stored rating."""
     src = ("https://www.google.com/maps/embed/v1/place?key=" + GOOGLE_MAPS_KEY + "&q=place_id:" + urllib.parse.quote(r["placeId"])
            + "&zoom=16&language=en")
-    return (f'<iframe class="rp-gcard" src="{e(src)}" title="{e(r["name"])} on Google Maps, with its Google rating" loading="lazy" '
-            'referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>'
+    return (f'<div class="rp-gframe"><iframe class="rp-gcard" src="{e(src)}" title="{e(r["name"])} on Google Maps, with its Google rating" loading="lazy" '
+            'referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe></div>'
             '<small>Live from Google Maps: the rating and number of reviews are in the card at the top left.</small>')
 
 
@@ -8423,7 +8423,7 @@ def build_restaurant_pages():
         facts_html = ('<section id="facts">\n  <div class="wrap">\n    <div class="section-head"><div><span class="eyebrow">At a glance</span>'
                       f'<h2 style="margin-top: 6px">{e(r["name"])}: stars, chef and address</h2></div></div>\n'
                       '    <div class="faq rp-qa">' + "".join(qa_block(q, glance_page.get(q) or f"<p>{e(a)}</p>") for q, a in glance_qa) + "</div>\n"
-                      '    <dl class="rp-facts">' + "".join(("<div class=\"rp-gwide\">" if v.startswith("<iframe") else "<div>") + f"<dt>{e(k)}</dt><dd>{v}</dd></div>" for k, v in facts) + "</dl>\n  </div>\n</section>\n")
+                      '    <dl class="rp-facts">' + "".join(("<div class=\"rp-gwide\">" if "rp-gcard" in v else "<div>") + f"<dt>{e(k)}</dt><dd>{v}</dd></div>" for k, v in facts) + "</dl>\n  </div>\n</section>\n")
 
         # What you'll pay, with the country's service note and the sources.
         service_text = inherited(city, "serviceText") or ""

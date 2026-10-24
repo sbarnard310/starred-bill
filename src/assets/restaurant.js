@@ -197,6 +197,21 @@ function startMapWhenNear() {
 showPhoto();
 startMapWhenNear();
 
+// ---------- Google's place card ----------
+// Google draws its card (name, rating, reviews) only in a map at least 420px wide and 300px tall, so on narrow
+// screens the map is drawn 420px wide and shrunk to fit, keeping the card and Google's credits in view.
+const GCARD_W = 420, GCARD_H = 320;
+function fitGoogleCard() {
+  const box = document.querySelector(".rp-gframe");
+  if (!box) return;
+  const frame = box.firstElementChild, s = Math.min(1, box.clientWidth / GCARD_W);
+  frame.style.width = s < 1 ? GCARD_W + "px" : "";
+  frame.style.transform = s < 1 ? "scale(" + s + ")" : "";
+  box.style.height = s < 1 ? Math.round(GCARD_H * s) + "px" : "";
+}
+fitGoogleCard();
+window.addEventListener("resize", fitGoogleCard);
+
 // ---------- Prices in another currency ----------
 // The page is written in the restaurant's own currency; the buttons under the answer show every price on it in pounds,
 // euros or dollars too (marked ≈, at the rates in currencies.json). The price history keeps the original figures

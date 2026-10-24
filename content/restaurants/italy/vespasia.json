@@ -27,5 +27,11 @@
     "gluten-free"
   ],
   "chef": "Fabio Cappiello",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "hotel",
+    "name": "Palazzo Seneca",
+    "url": "https://palazzoseneca.com/en/offers-4-star-hotel-norcia-italy",
+    "checked": "2026-10-23"
+  }
 }

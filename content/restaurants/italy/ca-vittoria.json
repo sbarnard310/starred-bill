@@ -22,5 +22,13 @@
   "placeId": "ChIJWcUi1G3uh0cRAcXqyXuoiUI",
   "michelinId": "154279",
   "chef": "Massimiliano Musso",
-  "chefSource": "site"
+  "chefSource": "site",
+  "stay": {
+    "kind": "rooms",
+    "name": "Albergo Ristorante Ca’ Vittoria",
+    "rooms": 10,
+    "url": "https://www.ristorantevittoria.it/lalbergo",
+    "note": "Ten individually styled rooms in an 18th-century house next to the restaurant.",
+    "checked": "2026-10-23"
+  }
 }

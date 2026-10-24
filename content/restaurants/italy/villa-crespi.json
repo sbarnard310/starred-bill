@@ -94,5 +94,26 @@
   "photoWidth": 750,
   "photoHeight": 1000,
   "photoChecked": "2026-10-13",
-  "dietsManual": true
+  "dietsManual": true,
+  "stay": {
+    "kind": "hotel",
+    "name": "Villa Crespi",
+    "rooms": 14,
+    "url": "https://villacrespi.it/en/suite/",
+    "packages": [
+      {
+        "name": "Gourmet Journey",
+        "includes": "A night in the room or suite chosen, buffet breakfast and the Inner Spirit tasting menu at the three-star restaurant with a drinks package of sparkling wine, wine pairing, water and coffee",
+        "url": "https://villacrespi.it/en/pacchetti_vc/gourmet-journey/"
+      },
+      {
+        "name": "Lovers of Good Food",
+        "includes": "Two nights in a room or suite with breakfast, a prosecco welcome, dinners with the Inner Spirit and Italian Journey tasting menus at the three-star restaurant, and a full-day wine-cellar tour with light lunch",
+        "nights": 2,
+        "url": "https://villacrespi.it/en/pacchetti_vc/lovers-of-good-food/"
+      }
+    ],
+    "note": "A Moorish-style five-star villa on Lake Orta with 14 suites.",
+    "checked": "2026-10-23"
+  }
 }

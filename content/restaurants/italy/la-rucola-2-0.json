@@ -33,5 +33,13 @@
     "gluten-free"
   ],
   "chef": "Francesco Turturro",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "hotel",
+    "name": "Casa Scaligeri",
+    "rooms": 18,
+    "url": "https://www.casascaligeri.com/camere",
+    "note": "Casa Scaligeri is a boutique hotel in a 15th-century palace beside the Scaliger Castle, run by the same Bignotti family and linked from the restaurant’s website.",
+    "checked": "2026-10-23"
+  }
 }

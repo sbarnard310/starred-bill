@@ -27,5 +27,13 @@
     "gluten-free"
   ],
   "chef": "Giuseppe Stanzione",
-  "chefSource": "site"
+  "chefSource": "site",
+  "stay": {
+    "kind": "hotel",
+    "name": "Hotel Santa Caterina",
+    "rooms": 78,
+    "url": "https://www.hotelsantacaterina.it/en/rooms-and-suites/",
+    "note": "Clifftop hotel above Amalfi; 66 rooms and suites plus 12 in the annexe Casa Marchesa.",
+    "checked": "2026-10-23"
+  }
 }

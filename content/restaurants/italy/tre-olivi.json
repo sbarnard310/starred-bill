@@ -25,5 +25,20 @@
   "placeId": "ChIJJ2c0vQH9OxMRXSHjZPj7Frs",
   "michelinId": "163029",
   "chef": "Oliver Glowig",
-  "chefSource": "press"
+  "chefSource": "press",
+  "stay": {
+    "kind": "hotel",
+    "name": "Savoy Hotel & Spa",
+    "url": "https://www.paganopaestum.it/savoy_hotel_spa/camere-e-suite/",
+    "packages": [
+      {
+        "name": "Savoy Dream",
+        "includes": "One night at the Savoy Hotel & Spa with the Holos spa circuit, and a tasting menu for two at Tre Olivi (drinks extra)",
+        "price": 600,
+        "per": "room",
+        "url": "https://www.paganopaestum.it/savoy-dream/"
+      }
+    ],
+    "checked": "2026-10-23"
+  }
 }

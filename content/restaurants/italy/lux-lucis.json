@@ -32,5 +32,11 @@
     "kosher"
   ],
   "chef": "Valentino Cassanelli",
-  "chefSource": "site"
+  "chefSource": "site",
+  "stay": {
+    "kind": "hotel",
+    "name": "Principe Forte dei Marmi",
+    "url": "https://www.principefortedeimarmi.com/en/suites-e-rooms/",
+    "checked": "2026-10-23"
+  }
 }

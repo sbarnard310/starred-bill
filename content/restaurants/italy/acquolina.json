@@ -28,5 +28,12 @@
   ],
   "chef": "Daniele Lippi",
   "chefSource": "site",
-  "dietsManual": true
+  "dietsManual": true,
+  "stay": {
+    "kind": "hotel",
+    "name": "The First Arte, Rome",
+    "rooms": 26,
+    "url": "https://www.pavilionshotels.com/destinations/italy/thefirstarte/",
+    "checked": "2026-10-23"
+  }
 }

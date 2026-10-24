@@ -34,5 +34,21 @@
     "gluten-free"
   ],
   "chef": "Raffaele Lenzi",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "hotel",
+    "name": "Il Sereno",
+    "rooms": 40,
+    "url": "https://www.serenohotels.com/property/il-sereno/suites/",
+    "packages": [
+      {
+        "name": "Michelin-Starred Getaway",
+        "includes": "A night in one of the suites, daily continental breakfast, and the five-course signature tasting menu at the starred restaurant Al Lago (drinks not included; vegetarian option available)",
+        "per": "room",
+        "url": "https://www.serenohotels.com/promotion/starred-getaway/"
+      }
+    ],
+    "note": "All 40 suites face Lake Como; the hotel is closed for the season and reopens on 16 November 2026.",
+    "checked": "2026-10-23"
+  }
 }

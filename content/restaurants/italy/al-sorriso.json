@@ -26,5 +26,12 @@
     "gluten-free"
   ],
   "chef": "Luisa Marelli",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "hotel",
+    "name": "Hotel Al Sorriso",
+    "url": "https://www.alsorriso.com/hotel/",
+    "note": "The restaurant has its own hotel rooms (singles and doubles).",
+    "checked": "2026-10-23"
+  }
 }

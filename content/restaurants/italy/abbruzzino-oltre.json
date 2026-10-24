@@ -27,5 +27,12 @@
     "gluten-free"
   ],
   "chef": "Luca Abbruzzino",
-  "chefSource": "site"
+  "chefSource": "site",
+  "stay": {
+    "kind": "hotel",
+    "name": "Palazzo Greco Stella",
+    "rooms": 6,
+    "url": "https://www.palazzogrecostella.com/le-camere/",
+    "checked": "2026-10-23"
+  }
 }

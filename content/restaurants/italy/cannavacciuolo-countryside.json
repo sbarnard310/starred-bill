@@ -31,5 +31,32 @@
     "gluten-free"
   ],
   "chef": "Nicola Somma",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "hotel",
+    "name": "LAQUA Countryside",
+    "rooms": 6,
+    "url": "https://laquacountryside.it/en/resort-in-campania-vico-equense/",
+    "packages": [
+      {
+        "name": "And this is Christmas",
+        "includes": "Two nights, breakfast at the restaurant, Christmas lunch tasting menu by Chef Cannavacciuolo (drinks extra), welcome panettone and a bottle of sparkling wine",
+        "price": 264.75,
+        "from": true,
+        "per": "person",
+        "nights": 2,
+        "when": "Christmas period",
+        "url": "https://laquacountryside.it/en/resort-in-campania-vico-equense/packages/"
+      },
+      {
+        "name": "New Year’s Eve Between The Hills",
+        "includes": "Two nights in a double room, family room or suite, breakfast at the restaurant, New Year’s Eve dinner tasting menu (drinks extra), welcome sparkling wine and fruit",
+        "nights": 2,
+        "when": "New Year’s Eve",
+        "url": "https://laquacountryside.it/en/resort-in-campania-vico-equense/packages/"
+      }
+    ],
+    "note": "Boutique hotel with six themed rooms in the chef’s family home; it runs seasonally, so check opening dates.",
+    "checked": "2026-10-23"
+  }
 }

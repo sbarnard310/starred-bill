@@ -21,5 +21,12 @@
   "placeId": "ChIJEyOciPmYOxMRGiimZJL8YNg",
   "michelinId": "157550",
   "chef": "Gennaro Esposito",
-  "chefSource": "site"
+  "chefSource": "site",
+  "stay": {
+    "kind": "hotel",
+    "name": "Bellevue Syrene",
+    "url": "https://www.bellevue.it/suites-camere",
+    "note": "Moved in 2026 into the five-star Bellevue Syrene hotel on Piazza della Vittoria, Sorrento, which lists suites and rooms in 21 categories.",
+    "checked": "2026-10-23"
+  }
 }

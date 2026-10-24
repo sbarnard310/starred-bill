@@ -27,5 +27,12 @@
     "vegetarian"
   ],
   "chef": "Stelios Sakalis",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "hotel",
+    "name": "Borgo San Felice",
+    "rooms": 63,
+    "url": "https://www.borgosanfelice.it/en/where-to-stay-chianti-tuscany",
+    "checked": "2026-10-23"
+  }
 }

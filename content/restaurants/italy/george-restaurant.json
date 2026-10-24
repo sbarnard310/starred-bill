@@ -27,5 +27,24 @@
   ],
   "chef": "Domenico Candela",
   "chefSource": "site",
-  "dietsManual": true
+  "dietsManual": true,
+  "stay": {
+    "kind": "hotel",
+    "name": "Grand Hotel Parker’s",
+    "rooms": 67,
+    "url": "https://en.grandhotelparkers.it/panoramic-suite-naples/rooms",
+    "packages": [
+      {
+        "name": "Gourmet Experience",
+        "includes": "One night for two in a Deluxe sea-view room or Executive Suite, dinner for two at George Restaurant (drinks not included), full breakfast on the Bidder Terrace, fitness access and garage parking",
+        "price": 1337,
+        "from": true,
+        "per": "room",
+        "when": "VAT included; city tax of EUR 6 per person per night is extra; valid only on direct bookings",
+        "url": "https://en.grandhotelparkers.it/special-offers-naples/gourmet-experience"
+      }
+    ],
+    "note": "George is on the rooftop of the 67-room Grand Hotel Parker’s.",
+    "checked": "2026-10-23"
+  }
 }

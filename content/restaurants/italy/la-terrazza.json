@@ -32,5 +32,11 @@
     "vegan"
   ],
   "chef": "Salvatore Bianco",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "hotel",
+    "name": "Hotel Eden",
+    "url": "https://www.dorchestercollection.com/en/rome/hotel-eden/",
+    "checked": "2026-10-23"
+  }
 }

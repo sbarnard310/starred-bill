@@ -25,5 +25,12 @@
     "vegetarian"
   ],
   "chef": "Reimund Brunner",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "hotel",
+    "name": "Gardena Grödnerhof Hotel & Spa",
+    "url": "https://www.gardena.it/it/camere-e-suite.asp",
+    "note": "A Relais & Châteaux hotel in Ortisei with rooms and suites from comfort to chalet suites.",
+    "checked": "2026-10-23"
+  }
 }

@@ -30,5 +30,12 @@
     "vegetarian"
   ],
   "chef": "Heros De Agostinis",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "hotel",
+    "name": "Anantara Palazzo Naiadi Rome Hotel",
+    "url": "https://www.ineorestaurant.com/",
+    "note": "Closed Sunday and Monday.",
+    "checked": "2026-10-23"
+  }
 }

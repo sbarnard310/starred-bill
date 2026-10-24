@@ -68,5 +68,11 @@
   "byob": "Outside food and wine are not allowed.",
   "infoSource": "https://www.ligallirestaurant.it/en/reserve-a-table-ligallirestaurant/",
   "infoChecked": "2026-10-12",
-  "dietsManual": true
+  "dietsManual": true,
+  "stay": {
+    "kind": "hotel",
+    "name": "Hotel Villa Franca",
+    "url": "https://www.villafrancahotel.it/en/rooms-and-suite-positano/",
+    "checked": "2026-10-23"
+  }
 }

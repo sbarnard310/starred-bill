@@ -27,5 +27,11 @@
     "gluten-free"
   ],
   "chef": "Sabino Fortunato",
-  "chefSource": "press"
+  "chefSource": "press",
+  "stay": {
+    "kind": "hotel",
+    "name": "Hotel Bertelli",
+    "url": "https://www.hotelbertelli.it/it/hotel-bertelli-madonna-di-campiglio/camere",
+    "checked": "2026-10-23"
+  }
 }

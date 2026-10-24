@@ -74,5 +74,25 @@
     }
   ],
   "rankingsChecked": "2026-10-13",
-  "dietsManual": true
+  "dietsManual": true,
+  "stay": {
+    "kind": "hotel",
+    "name": "Grand Hotel Principe di Piemonte",
+    "url": "https://www.principedipiemonte.com/en/stay/rooms/",
+    "packages": [
+      {
+        "name": "Two Michelin Star Stay",
+        "includes": "One night in the room category of your choice, the ‘I Classici’ tasting menu at Il Piccolo Principe, breakfast, access to the Thermarium spa path",
+        "per": "room",
+        "url": "https://www.principedipiemonte.com/en/offers/two-michelin-star-stay.html"
+      },
+      {
+        "name": "Tasting Weekend (Sunday lunch)",
+        "includes": "Overnight stay in the room or suite of your choice, late check-out until 4pm, the Sunday lunch by Chef Giuseppe Mancino (the starred kitchen’s menu, set each Sunday), breakfast, Thermarium spa path",
+        "when": "Saturday to Sunday bookings only",
+        "url": "https://www.principedipiemonte.com/en/offers/tasting-weekend.html"
+      }
+    ],
+    "checked": "2026-10-23"
+  }
 }

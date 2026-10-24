@@ -27,5 +27,23 @@
     "kosher"
   ],
   "chef": "Matteo Maezza",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "hotel",
+    "name": "Lefay Resort & SPA Dolomiti",
+    "url": "https://www.lefayresorts.com/en/relaxing-holiday-offers-lefay-resorts",
+    "packages": [
+      {
+        "name": "Dolomiti Gourmet & Relax",
+        "includes": "A night in a Prestige Junior Suite (double occupancy), breakfast, the 8-course tasting menu ‘The Path’ at the starred Grual restaurant (water and coffee included), a 50-minute massage and entry to the spa",
+        "price": 420,
+        "from": true,
+        "per": "person",
+        "when": "Limited availability; not on Grual’s closing days; restaurant guests must be 12 or older",
+        "url": "https://www.lefayresorts.com/en/relaxing-holiday-offers-lefay-resorts/dolomiti-gourmet-experience"
+      }
+    ],
+    "note": "Guests can book the gourmet package with dinner at Grual.",
+    "checked": "2026-10-23"
+  }
 }

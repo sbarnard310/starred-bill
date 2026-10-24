@@ -27,5 +27,11 @@
   "chef": "Alberto Faccani",
   "chefSource": "site",
   "dinnerNote": "Tasting menu, I Classici or Magnolia (also à la carte)",
-  "dinnerNoteIt": "Menu degustazione I Classici o Magnolia (anche alla carta)"
+  "dinnerNoteIt": "Menu degustazione I Classici o Magnolia (anche alla carta)",
+  "stay": {
+    "kind": "hotel",
+    "name": "Relais Villa Margherita",
+    "url": "https://www.relaisvillamargherita.it/en/room-suites/",
+    "checked": "2026-10-23"
+  }
 }

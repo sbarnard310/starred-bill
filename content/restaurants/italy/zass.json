@@ -28,5 +28,11 @@
     "gluten-free"
   ],
   "chef": "Alois Vanlangenaeker",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "hotel",
+    "name": "Il San Pietro di Positano",
+    "url": "https://www.ilsanpietro.com/rooms-suites/",
+    "checked": "2026-10-23"
+  }
 }

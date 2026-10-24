@@ -25,5 +25,20 @@
     "gluten-free"
   ],
   "chef": "Simone Cantafio",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "hotel",
+    "name": "Hotel La Perla",
+    "url": "https://www.laperlacorvara.it/it/dormire/le-nostre-camere",
+    "packages": [
+      {
+        "name": "La Perla Gourmet Ski Experience",
+        "includes": "Four nights in a room or suite, a gourmet welcome in the room with champagne, daily breakfast and three dining experiences with reserved tables at the hotel’s restaurants, including the starred La Stüa de Michil",
+        "nights": 4,
+        "url": "https://www.laperlacorvara.it/it/dormire/offerte-esclusive"
+      }
+    ],
+    "note": "The hotel reopens for winter on 4 December.",
+    "checked": "2026-10-23"
+  }
 }

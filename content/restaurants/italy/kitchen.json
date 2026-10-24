@@ -33,5 +33,11 @@
     "halal"
   ],
   "chef": "Andrea Casali",
-  "chefSource": "site"
+  "chefSource": "site",
+  "stay": {
+    "kind": "hotel",
+    "name": "Sheraton Lake Como Hotel",
+    "url": "https://www.marriott.com/en-us/hotels/lilsi-sheraton-lake-como-hotel/overview/",
+    "checked": "2026-10-23"
+  }
 }

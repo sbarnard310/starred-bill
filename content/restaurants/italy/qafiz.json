@@ -27,5 +27,50 @@
     "gluten-free"
   ],
   "chef": "Nino Rossi",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "rooms",
+    "name": "Casa Qafiz",
+    "url": "https://qafiz.it/en/casa-qafiz/",
+    "from": 250,
+    "fromNote": "including breakfast; double rooms from €250 to €350",
+    "packages": [
+      {
+        "name": "Qafiz First Taste Autunno",
+        "includes": "Welcome cocktail, couple’s massage, the ten-course tasting menu at Qafiz (drinks extra), a night in a double room, breakfast, a guided walk with a gourmet picnic",
+        "price": 900,
+        "per": "room",
+        "when": "Wednesday to Friday, autumn season",
+        "url": "https://qafiz.it/pacchetti-ed-esperienze/qafiz-first-taste-autunno-1-notte/"
+      },
+      {
+        "name": "Qafiz Olive Harvest",
+        "includes": "Welcome cocktail, couple’s massage, the ten-course tasting menu at Qafiz (drinks extra), a night in a double room, breakfast, olive picking, mill visit and a light lunch",
+        "price": 900,
+        "per": "room",
+        "when": "Wednesday to Friday, autumn season",
+        "url": "https://qafiz.it/pacchetti-ed-esperienze/qafiz-olive-harvest-1-notte/"
+      },
+      {
+        "name": "Qafiz Immersion Autunno",
+        "includes": "Welcome cocktail, couple’s massage, the ten-course tasting menu at Qafiz (drinks extra), dinner at the grill restaurant Ilici, two nights in a double room, breakfasts, a guided walk with picnic, olive picking and a mill visit",
+        "price": 2000,
+        "per": "room",
+        "nights": 2,
+        "when": "Wednesday to Friday, autumn season",
+        "url": "https://qafiz.it/pacchetti-ed-esperienze/qafiz-immersion-autunno-2-notti/"
+      },
+      {
+        "name": "Radici & Alta Cucina Light",
+        "includes": "Welcome cocktail, spa access with massage and pool, the ten-course tasting menu at Qafiz (drinks extra), dinner at Ilici, three nights in a double room, breakfasts, a day of art and sea visits, a picnic",
+        "price": 1700,
+        "per": "room",
+        "nights": 3,
+        "when": "Wednesday to Friday; some activities May to October",
+        "url": "https://qafiz.it/pacchetti-ed-esperienze/radici-alta-cucina-light-3-notti/"
+      }
+    ],
+    "note": "Casa Qafiz is a restored 1700s estate house with double rooms; guests must book rooms together with a table at Qafiz or Ilici, and children under 12 are not accepted.",
+    "checked": "2026-10-23"
+  }
 }

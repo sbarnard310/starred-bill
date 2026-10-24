@@ -26,5 +26,12 @@
   "placeId": "ChIJRU47VRcKeUcRdgQDoz930Ss",
   "michelinId": "146994",
   "chef": "Renzo Dal Farra",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "rooms",
+    "rooms": 10,
+    "url": "https://www.locandasanlorenzo.it/en/3-star-hotel-locanda-san-lorenzo-alpago/rooms-hotel-puos-alpago/",
+    "note": "Ten rooms on the two floors above the restaurant (six deluxe, four in Alpine style), breakfast included in the stay; the inn calls itself a 3-star albergo.",
+    "checked": "2026-10-23"
+  }
 }

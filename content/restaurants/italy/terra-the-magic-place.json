@@ -22,5 +22,51 @@
   "placeId": "ChIJI0PeyImjgkcRar4w7mUaHAo",
   "michelinId": "151934",
   "chef": "Heinrich Schneider",
-  "chefSource": "site"
+  "chefSource": "site",
+  "stay": {
+    "kind": "hotel",
+    "name": "Terra - The Magic Place",
+    "rooms": 11,
+    "url": "https://terra.place/en/rooms.html",
+    "packages": [
+      {
+        "name": "Short stay & Gourmet Experience",
+        "includes": "A night’s stay, the 10-course TERRA EXPERIENCE tasting menu in the two-star restaurant, gourmet breakfast, welcome drink and afternoon spa and jacuzzi access",
+        "price": 375,
+        "from": true,
+        "per": "person",
+        "url": "https://terra.place/en/packages.html"
+      },
+      {
+        "name": "2-nights Romantic Getaway",
+        "includes": "Two nights, two dinners in the two-star restaurant (one 5-course menu, one TERRA EXPERIENCE menu), breakfast, welcome drink and afternoon spa and jacuzzi access",
+        "price": 676,
+        "from": true,
+        "per": "person",
+        "nights": 2,
+        "url": "https://terra.place/en/packages.html"
+      },
+      {
+        "name": "Mid-week special",
+        "includes": "Three nights, all dinners in the two-star restaurant (two 5-course menus, one TERRA EXPERIENCE menu), gourmet breakfast, welcome drink and free hiking poles and backpacks",
+        "price": 873,
+        "from": true,
+        "per": "person",
+        "nights": 3,
+        "when": "Tuesday to Friday; not 15 July to 15 September or 25 December to 8 January",
+        "url": "https://terra.place/en/packages.html"
+      },
+      {
+        "name": "4 Nights Wine & Dine",
+        "includes": "Four nights, four dinners in the two-star restaurant with wine pairing on two evenings, breakfast, a bottle of sparkling wine on arrival and spa and jacuzzi access",
+        "price": 1424,
+        "from": true,
+        "per": "person",
+        "nights": 4,
+        "url": "https://terra.place/en/packages.html"
+      }
+    ],
+    "note": "A family-run hotel of 8 rooms and 3 suites with the highest-lying two-star restaurant in Italy; stay packages include the dinners.",
+    "checked": "2026-10-23"
+  }
 }

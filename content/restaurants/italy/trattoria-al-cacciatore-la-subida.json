@@ -27,5 +27,30 @@
   "placeId": "ChIJCXKrvQmse0cRYCCG3QON2DI",
   "michelinId": "132144",
   "chef": "Alessandro Gavagna",
-  "chefSource": "site"
+  "chefSource": "site",
+  "stay": {
+    "kind": "hotel",
+    "name": "La Subida",
+    "url": "https://www.lasubida.it/en/stay-with-us/",
+    "packages": [
+      {
+        "name": "A night of relaxation",
+        "includes": "A night in The Nest, The Library or La Casa Relax (chosen when booking), dinner at Trattoria al Cacciatore with the Grand Tasting Menu (drinks excluded) and breakfast",
+        "per": "room",
+        "url": "https://www.lasubida.it/en/stay-with-us/made-to-measure/"
+      },
+      {
+        "name": "Casa della Nonna package",
+        "includes": "A night in a Casa della Nonna, dinner at Trattoria al Cacciatore with the Grand Tasting Menu (drinks excluded) and breakfast",
+        "url": "https://www.lasubida.it/en/stay-with-us/made-to-measure/"
+      },
+      {
+        "name": "Forest House package",
+        "includes": "A night in a Casa nel Bosco (forest house), dinner at Trattoria al Cacciatore with the Grand Tasting Menu (drinks excluded) and breakfast",
+        "url": "https://www.lasubida.it/en/stay-with-us/made-to-measure/"
+      }
+    ],
+    "note": "Guests sleep in separate houses and residences in the woods around the restaurant.",
+    "checked": "2026-10-23"
+  }
 }

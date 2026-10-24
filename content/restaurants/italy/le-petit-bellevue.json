@@ -25,5 +25,12 @@
     "gluten-free"
   ],
   "chef": "Niccolò de Riu",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "hotel",
+    "name": "Hotel Bellevue & Spa",
+    "url": "https://www.hotelbellevue.it/en/camere",
+    "note": "The hotel also has a spa.",
+    "checked": "2026-10-23"
+  }
 }

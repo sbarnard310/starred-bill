@@ -27,5 +27,19 @@
     "gluten-free"
   ],
   "chef": "Alessandro Lucassino",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "hotel",
+    "name": "ROMEO Hotel Napoli",
+    "url": "https://theromeocollection.com/en/romeo-napoli/rooms-suites/",
+    "packages": [
+      {
+        "name": "The Gourmet Escape",
+        "includes": "Accommodation, an Alain Ducasse signature in-room amenity and a tasting menu dinner at Il Ristorante Alain Ducasse (drinks not included)",
+        "when": "Until 31 December 2026",
+        "url": "https://theromeocollection.com/en/romeo-napoli/exclusive-offers/"
+      }
+    ],
+    "checked": "2026-10-23"
+  }
 }

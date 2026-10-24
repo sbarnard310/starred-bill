@@ -25,5 +25,13 @@
     "gluten-free"
   ],
   "chef": "Francesco Marchese",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "hotel",
+    "name": "Réva Resort & Spa",
+    "rooms": 12,
+    "url": "https://www.revamonforte.com/en/where-to-stay-in-langhe",
+    "note": "FRE is the resort’s restaurant (dinner Thursday to Sunday).",
+    "checked": "2026-10-23"
+  }
 }

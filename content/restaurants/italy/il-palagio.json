@@ -27,5 +27,11 @@
     "vegetarian"
   ],
   "chef": "Paolo Lavezzini",
-  "chefSource": "site"
+  "chefSource": "site",
+  "stay": {
+    "kind": "hotel",
+    "name": "Four Seasons Hotel Firenze",
+    "url": "https://www.fourseasons.com/florence/",
+    "checked": "2026-10-23"
+  }
 }

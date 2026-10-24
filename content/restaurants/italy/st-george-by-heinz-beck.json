@@ -21,5 +21,13 @@
   "placeId": "ChIJk3INh58RFBMRp9846eqSPUA",
   "michelinId": "439039",
   "chef": "Salvatore Iuliano",
-  "chefSource": "press"
+  "chefSource": "press",
+  "stay": {
+    "kind": "hotel",
+    "name": "The Ashbee Hotel",
+    "url": "https://www.theashbeehotel.it/our-rooms/",
+    "from": 415,
+    "note": "The two-star restaurant is on the roof of The Ashbee Hotel, a five-star hotel in Taormina.",
+    "checked": "2026-10-23"
+  }
 }

@@ -27,5 +27,20 @@
     "vegetarian"
   ],
   "chef": "Giovanni Luca Di Pirro",
-  "chefSource": "site"
+  "chefSource": "site",
+  "stay": {
+    "kind": "hotel",
+    "name": "COMO Castello Del Nero",
+    "url": "https://www.comohotels.com/italy/como-castello-del-nero/accommodation/rooms",
+    "packages": [
+      {
+        "name": "La Torre Tuscan Dining Experience",
+        "includes": "Two nights in a room or suite, daily breakfast, a three-course dinner at the one-star La Torre (drinks not included), wellness classes and spa facilities",
+        "nights": 2,
+        "url": "https://www.comohotels.com/italy/como-castello-del-nero/offers/la-torre-tuscan-dining-experience"
+      }
+    ],
+    "note": "A restored Tuscan estate hotel in the Chianti hills; La Torre is its fine-dining restaurant.",
+    "checked": "2026-10-23"
+  }
 }

@@ -31,5 +31,12 @@
     "kosher"
   ],
   "chef": "Arcangelo Tinari",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "hotel",
+    "name": "Villa Maiella",
+    "url": "https://www.villamaiella.it/camere/",
+    "note": "Villa Maiella runs a hotel alongside the restaurant; rooms are booked by request form.",
+    "checked": "2026-10-23"
+  }
 }

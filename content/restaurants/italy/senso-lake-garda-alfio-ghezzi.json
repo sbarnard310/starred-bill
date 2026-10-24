@@ -28,5 +28,13 @@
   "placeId": "ChIJV9MIuKgZgkcRQ6zzx6l2rKA",
   "michelinId": "1191172",
   "chef": "Alfio Ghezzi",
-  "chefSource": "press"
+  "chefSource": "press",
+  "stay": {
+    "kind": "hotel",
+    "name": "EALA My Lakeside Dream",
+    "rooms": 5,
+    "url": "https://www.ealalakegarda.com/en/suites",
+    "note": "Suite prices are on request.",
+    "checked": "2026-10-23"
+  }
 }

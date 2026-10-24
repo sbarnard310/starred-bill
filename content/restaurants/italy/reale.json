@@ -27,5 +27,21 @@
   "chef": "Niko Romito",
   "chefSource": "site",
   "dinnerNote": "Tasting menu (also à la carte, 3 dishes minimum)",
-  "dinnerNoteIt": "Menu degustazione (anche alla carta, minimo 3 portate)"
+  "dinnerNoteIt": "Menu degustazione (anche alla carta, minimo 3 portate)",
+  "stay": {
+    "kind": "hotel",
+    "name": "Casadonna",
+    "rooms": 10,
+    "url": "https://www.nikoromito.com/casadonna/",
+    "packages": [
+      {
+        "name": "L’essenza e le stelle",
+        "includes": "A night in a Classic or Superior room at Casadonna, the tasting menu for two at Reale, water and coffee, a gourmet breakfast by Niko Romito",
+        "per": "room",
+        "url": "https://www.nikoromito.com/casadonna/"
+      }
+    ],
+    "note": "Casadonna is a 16th-century former monastery with ten rooms, run by the same family as the restaurant.",
+    "checked": "2026-10-23"
+  }
 }

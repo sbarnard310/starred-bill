@@ -26,5 +26,11 @@
     "vegan"
   ],
   "chef": "Antonio Romano",
-  "chefSource": "site"
+  "chefSource": "site",
+  "stay": {
+    "kind": "hotel",
+    "name": "Villa della Pergola",
+    "url": "https://www.villadellapergola.com/en/rooms/",
+    "checked": "2026-10-23"
+  }
 }

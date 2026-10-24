@@ -29,5 +29,11 @@
     "gluten-free"
   ],
   "chef": "Vincenzo Pietroluongo",
-  "chefSource": "press"
+  "chefSource": "press",
+  "stay": {
+    "kind": "rooms",
+    "url": "https://www.umbertoamare.it/en/hotel-umberto-a-mare/",
+    "note": "Has Classic (about 16 sq m) and Superior sea-view rooms with terraces above the restaurant in Forio, Ischia; breakfast is served on the sea terrace.",
+    "checked": "2026-10-23"
+  }
 }

@@ -26,5 +26,14 @@
     "gluten-free"
   ],
   "chef": "Riccardo De Pra",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "hotel",
+    "name": "Dolada Boutique Hotel",
+    "rooms": 7,
+    "url": "https://hotel.dolada.it/",
+    "from": 190,
+    "note": "Seven rooms and suites in the Dolada boutique hotel, beside the restaurant in the Alpago valley.",
+    "checked": "2026-10-23"
+  }
 }

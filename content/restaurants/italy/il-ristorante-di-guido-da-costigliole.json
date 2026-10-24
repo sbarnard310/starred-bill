@@ -27,5 +27,12 @@
     "gluten-free"
   ],
   "chef": "Fabio Sgrò",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "hotel",
+    "name": "Relais San Maurizio",
+    "url": "https://www.relaissanmaurizio.it/en/",
+    "note": "The restaurant is in the cellars of the former monastery that is now the Relais San Maurizio.",
+    "checked": "2026-10-23"
+  }
 }

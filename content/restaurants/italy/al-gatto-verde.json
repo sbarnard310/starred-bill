@@ -29,5 +29,12 @@
     "gluten-free"
   ],
   "chef": "Jessica Rosval",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "hotel",
+    "name": "Casa Maria Luigia",
+    "url": "https://casamarialuigia.com/rooms/",
+    "note": "Massimo Bottura’s guesthouse in the Modena countryside, with a handful of individually designed rooms, suites and a cottage; rooms are not booked on Sunday and Monday nights.",
+    "checked": "2026-10-23"
+  }
 }

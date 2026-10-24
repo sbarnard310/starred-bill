@@ -26,5 +26,11 @@
   ],
   "chef": "Andrea Migliaccio",
   "chefSource": "site",
-  "dietsManual": true
+  "dietsManual": true,
+  "stay": {
+    "kind": "hotel",
+    "name": "Jumeirah Capri Palace",
+    "url": "https://www.jumeirah.com/en/stay/italy/jumeirah-capri-palace/accommodation",
+    "checked": "2026-10-23"
+  }
 }

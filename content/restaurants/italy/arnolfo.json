@@ -33,5 +33,25 @@
   ],
   "chef": "Gaetano Trovato",
   "chefSource": "site",
-  "dietsManual": true
+  "dietsManual": true,
+  "stay": {
+    "kind": "rooms",
+    "name": "Dormire da Arnolfo",
+    "rooms": 4,
+    "url": "https://www.arnolfo.com/en/rooms/",
+    "from": 180,
+    "fromNote": "double room without breakfast; with breakfast it is 240",
+    "packages": [
+      {
+        "name": "Romantic moments",
+        "includes": "A night in a charming room in the 16th-century house, the chef’s tasting menu with a selected wine pairing, breakfast, minibar and a welcome from the chef",
+        "price": 480,
+        "per": "person",
+        "when": "Valid for 4 months from the date of purchase",
+        "url": "https://www.arnolfo.com/en/package/romantic-moments/"
+      }
+    ],
+    "note": "Four double rooms in the 16th-century house where Arnolfo began, in the old town of Colle di Val d’Elsa.",
+    "checked": "2026-10-23"
+  }
 }

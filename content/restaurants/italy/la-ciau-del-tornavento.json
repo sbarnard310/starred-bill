@@ -42,5 +42,14 @@
   "dressCode": "No dress code, but men are asked not to wear shorts or flip-flops.",
   "children": "Children are welcome, with a children's menu of smaller dishes and their own tableware, colouring and toys; parents are asked to keep the other guests' peace in mind.",
   "infoSource": "https://www.laciaudeltornavento.it/it/prenota",
-  "infoChecked": "2026-10-13"
+  "infoChecked": "2026-10-13",
+  "stay": {
+    "kind": "rooms",
+    "name": "Locanda del Tornavento",
+    "rooms": 4,
+    "url": "https://www.laciaudeltornavento.it/en/rooms",
+    "from": 150,
+    "note": "Four rooms in the old post office in Treiso’s village centre.",
+    "checked": "2026-10-23"
+  }
 }

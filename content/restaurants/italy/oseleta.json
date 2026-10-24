@@ -32,5 +32,22 @@
     "vegan"
   ],
   "chef": "Marco Marras",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "hotel",
+    "name": "Villa Cordevigo Wine Relais",
+    "rooms": 40,
+    "url": "https://en.villacordevigo.com/villa/rooms",
+    "packages": [
+      {
+        "name": "Gourmet stay",
+        "includes": "A welcome aperitif, a 4-course tasting menu for two with paired wines at Oseleta, a night in a double room with breakfast, use of the pool and gym, Wi-Fi, parking, taxes and service",
+        "per": "room",
+        "when": "Not available on Tuesdays and Saturdays",
+        "url": "https://en.villacordevigo.com/offers/gourmet-stay"
+      }
+    ],
+    "note": "The restaurant closes for the season from 2 November 2026 to 23 March 2027.",
+    "checked": "2026-10-23"
+  }
 }

@@ -27,5 +27,12 @@
     "gluten-free"
   ],
   "chef": "Fiorenzo Perremuto",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "hotel",
+    "name": "DV Chalet Boutique Hotel & SPA",
+    "rooms": 26,
+    "url": "https://www.dvchalet.it/en/rooms-and-suites-dv-chalet-campiglio",
+    "checked": "2026-10-23"
+  }
 }

@@ -27,5 +27,11 @@
     "kosher"
   ],
   "chef": "Vania Ghedini",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "hotel",
+    "name": "Belmond Hotel Cipriani",
+    "url": "https://www.belmond.com/en/hotels/europe/italy/hotel-cipriani-venice/accommodation",
+    "checked": "2026-10-23"
+  }
 }

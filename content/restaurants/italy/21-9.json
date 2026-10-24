@@ -28,5 +28,13 @@
     "gluten-free"
   ],
   "chef": "Flavio Costa",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "hotel",
+    "name": "Hotel di Charme 21.9",
+    "rooms": 9,
+    "url": "https://www.ristorante21punto9.it/albergo.asp",
+    "note": "Nine rooms on the Tenuta Carretta wine estate, each named after a wine.",
+    "checked": "2026-10-23"
+  }
 }

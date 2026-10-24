@@ -33,5 +33,21 @@
     "gluten-free"
   ],
   "chef": "Mattia Trabetti",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "hotel",
+    "name": "Executive Spa Hotel",
+    "rooms": 64,
+    "url": "https://executivespahotel.com/en/",
+    "packages": [
+      {
+        "name": "Pacchetto Alto Rooftop Experience",
+        "includes": "A night for two in a Superior Room, spa access, an aperitif at the Aria rooftop bar, the 8-course chef’s table experience at Alto for two (drinks extra), breakfast, free parking",
+        "price": 489,
+        "per": "room",
+        "url": "https://shop.executivespahotel.com/prodotti/esperienze/soggiorno-pacchetto-alto-rooftop-experience/"
+      }
+    ],
+    "checked": "2026-10-23"
+  }
 }

@@ -27,5 +27,12 @@
     "kosher"
   ],
   "chef": "Giovanni Santoro",
-  "chefSource": "site"
+  "chefSource": "site",
+  "stay": {
+    "kind": "hotel",
+    "name": "Shalai",
+    "url": "https://www.shalai.it/camere-suite.html",
+    "note": "A small design hotel in a historic palace in Linguaglossa with nine room and suite types and a spa.",
+    "checked": "2026-10-23"
+  }
 }

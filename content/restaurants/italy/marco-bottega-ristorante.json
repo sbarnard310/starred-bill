@@ -31,5 +31,11 @@
   "chef": "Marco Bottega",
   "chefSource": "michelin",
   "dinnerNote": "Tasting menu (another €180; 3 courses à la carte €120)",
-  "dinnerNoteIt": "Menu degustazione (altro €180; tre piatti alla carta €120)"
+  "dinnerNoteIt": "Menu degustazione (altro €180; tre piatti alla carta €120)",
+  "stay": {
+    "kind": "hotel",
+    "name": "Dimora Genista Resort",
+    "url": "https://dimoragenista.it/",
+    "checked": "2026-10-23"
+  }
 }

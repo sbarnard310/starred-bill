@@ -29,5 +29,33 @@
     "halal"
   ],
   "chef": "Chiara Pavan",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "hotel",
+    "name": "Venissa Wine Resort",
+    "rooms": 5,
+    "url": "https://www.venissa.it/en/wineresort/rooms/",
+    "packages": [
+      {
+        "name": "A Winter Escape",
+        "includes": "A night in a Superior room at Casa Burano, buffet breakfast, and a 7-course tasting menu with paired wines at the starred Ristorante Venissa for two",
+        "price": 520,
+        "from": true,
+        "per": "room",
+        "when": "2 November 2026 to 6 January 2027, nights of Monday and Thursday; some dates excluded; tourist tax extra",
+        "url": "https://www.venissa.it/a-winter-escape-fuga-in-laguna/"
+      },
+      {
+        "name": "Vivere Venissa",
+        "includes": "Three nights in a Superior room at Casa Burano (third night free), gourmet breakfast, a wine experience, a 4-course lunch or dinner with wines at the Osteria Contemporanea, and a EUR 100 credit towards lunch or dinner at the starred restaurant",
+        "price": 850,
+        "from": true,
+        "per": "room",
+        "nights": 3,
+        "url": "https://www.venissa.it/venissa-pacchetti/"
+      }
+    ],
+    "note": "Five rooms at the wine estate on Mazzorbo, plus Casa Burano, its separate 13-room guesthouse on the island of Burano; the winter offer is the one that includes the starred restaurant.",
+    "checked": "2026-10-23"
+  }
 }

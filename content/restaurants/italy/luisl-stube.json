@@ -25,5 +25,13 @@
     "vegetarian"
   ],
   "chef": "Luis Haller",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "rooms",
+    "name": "Schlosswirt Forst",
+    "rooms": 6,
+    "url": "https://www.schlosswirt-forst.it/it/tempo-per-voi/",
+    "note": "Six rooms above the Schlosswirt Forst inn in Lagundo, near Merano.",
+    "checked": "2026-10-23"
+  }
 }

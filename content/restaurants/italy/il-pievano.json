@@ -28,5 +28,11 @@
     "vegetarian"
   ],
   "chef": "Antonio Iacoviello",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "hotel",
+    "name": "Castello di Spaltenna",
+    "url": "https://www.spaltenna.it/it/camere-e-suite",
+    "checked": "2026-10-23"
+  }
 }

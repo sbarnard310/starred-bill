@@ -29,5 +29,20 @@
   "chef": "Antonia Klugmann",
   "chefSource": "michelin",
   "dinnerNote": "Il Nostro Menù, 7 courses (10 courses €150)",
-  "dinnerNoteIt": "Il Nostro Menù, 7 portate (10 portate €150)"
+  "dinnerNoteIt": "Il Nostro Menù, 7 portate (10 portate €150)",
+  "stay": {
+    "kind": "rooms",
+    "name": "L’Argine a Vencò",
+    "url": "https://largineavenco.it/en/hospitality/",
+    "from": 130,
+    "packages": [
+      {
+        "name": "Cena e soggiorno (The Complete Experience)",
+        "includes": "Dinner at the restaurant and a night in one of its rooms in the 17th-century mill, which is connected inside to the restaurant; gourmet breakfast is served daily",
+        "url": "https://largineavenco.it/en/hospitality/"
+      }
+    ],
+    "note": "Rooms in the restaurant’s 17th-century mill, joined to the dining room, with a gourmet breakfast.",
+    "checked": "2026-10-23"
+  }
 }

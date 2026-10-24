@@ -30,5 +30,32 @@
     "vegetarian-menu"
   ],
   "chef": "Gianni Bertone",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "hotel",
+    "name": "Laqua by the Lake",
+    "rooms": 22,
+    "url": "https://laquabythelake.it/en/home/suites/",
+    "packages": [
+      {
+        "name": "Flavor & Relaxation by the Lake",
+        "includes": "A night in a lake-view room or suite, gourmet breakfast, and the Brezza tasting menu dinner at the one-star restaurant (drinks not included)",
+        "url": "https://laquabythelake.it/en/home/packages/"
+      },
+      {
+        "name": "Lake Experience",
+        "includes": "Two nights in a lake-view room or suite, breakfast, dinner at the lake-view restaurant with the Acquolina tasting menu and wine pairings, a sunset Riva boat trip, a 50-minute couples massage and a beach club afternoon",
+        "nights": 2,
+        "url": "https://laquabythelake.it/en/home/packages/"
+      },
+      {
+        "name": "Easter on Lake Orta",
+        "includes": "Two nights in a room or suite with buffet breakfast, the Brezza four-course tasting menu dinner at the one-star restaurant (drinks not included) and an 80-minute couples massage",
+        "nights": 2,
+        "url": "https://laquabythelake.it/en/home/packages/"
+      }
+    ],
+    "note": "A lake resort of 14 suites, 5 comfort rooms, 2 penthouses and a separate boathouse suite.",
+    "checked": "2026-10-23"
+  }
 }

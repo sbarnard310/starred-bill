@@ -29,5 +29,12 @@
   "bookingPhone": "+39 0564 858275",
   "dressCode": "Casual-elegant for dinner.",
   "infoSource": "https://www.hotelilpellicano.com/it/esperienze-culinarie/ristorante-il-pellicano.html",
-  "infoChecked": "2026-10-12"
+  "infoChecked": "2026-10-12",
+  "stay": {
+    "kind": "hotel",
+    "name": "Hotel Il Pellicano",
+    "url": "https://www.pellicanohotels.com/en/hotels/hotel-il-pellicano/rooms-suites.html",
+    "note": "Children 8 and over; the hotel closes for the winter from 27 October 2026 and reopens on 8 April 2027.",
+    "checked": "2026-10-23"
+  }
 }

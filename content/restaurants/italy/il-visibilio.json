@@ -27,5 +27,21 @@
     "gluten-free"
   ],
   "chef": "Giuseppe Iannotti",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "hotel",
+    "name": "The Club House Hotel",
+    "url": "https://www.fontanellestate.com/listing-camere-hotel-the-club-house",
+    "from": 479,
+    "packages": [
+      {
+        "name": "Sogno Stellato",
+        "includes": "One night for two in a room with free upgrade to a higher category, continental breakfast, welcome gift, 30-minute signature massage each, spa access, and a dinner for two at the one-star Il Visibilio (surprise tasting menu, drinks not included)",
+        "per": "room",
+        "when": "Summer and autumn 2026",
+        "url": "https://www.fontanellestate.com/deals/sogno-stellato"
+      }
+    ],
+    "checked": "2026-10-23"
+  }
 }

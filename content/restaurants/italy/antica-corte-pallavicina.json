@@ -35,5 +35,14 @@
   "photoWidth": 750,
   "photoHeight": 1000,
   "photoChecked": "2026-10-13",
-  "dietsManual": true
+  "dietsManual": true,
+  "stay": {
+    "kind": "hotel",
+    "name": "Antica Corte Pallavicina Relais",
+    "rooms": 12,
+    "url": "https://www.anticacortepallavicinarelais.it/camere/",
+    "from": 160,
+    "note": "Twelve rooms in a 16th-century castle and farm buildings beside the Po; a young-guests promotion adds the room for €100 on top of the 100-euro dinner for two.",
+    "checked": "2026-10-23"
+  }
 }

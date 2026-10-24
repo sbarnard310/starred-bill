@@ -79,5 +79,15 @@
     }
   ],
   "rankingsChecked": "2026-10-13",
-  "dietsManual": true
+  "dietsManual": true,
+  "stay": {
+    "kind": "hotel",
+    "name": "La Dimora",
+    "rooms": 10,
+    "url": "https://www.davittorio.com/en/hotel-en/la-dimora.html",
+    "from": 550,
+    "fromNote": "standard room for single use, continental breakfast included",
+    "note": "Ten individually decorated rooms in the Relais & Châteaux estate beside the restaurant; closed 20 days in August.",
+    "checked": "2026-10-23"
+  }
 }

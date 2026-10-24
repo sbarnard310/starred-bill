@@ -25,5 +25,23 @@
     "gluten-free"
   ],
   "chef": "Peter Girtler",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "hotel",
+    "name": "Romantik Hotel Stafler",
+    "url": "https://www.stafler.com/it/romantik-hotel/camere-e-prezzi/offerte.html",
+    "packages": [
+      {
+        "name": "Notte stellata",
+        "includes": "A night in a double room or suite, the gourmet tasting menu at the Gourmetstube Einhorn, breakfast, afternoon coffee and cake, and spa access",
+        "price": 299,
+        "from": true,
+        "per": "person",
+        "when": "All year except high season",
+        "url": "https://www.stafler.com/it/romantik-hotel/camere-e-prezzi/offerte/87-notte-stellata.html"
+      }
+    ],
+    "note": "The Notte stellata package is the one that includes the starred tasting menu.",
+    "checked": "2026-10-23"
+  }
 }

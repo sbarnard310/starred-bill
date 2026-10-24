@@ -35,5 +35,49 @@
     "kosher"
   ],
   "chef": "Antonello Colonna",
-  "chefSource": "site"
+  "chefSource": "site",
+  "stay": {
+    "kind": "hotel",
+    "name": "Antonello Colonna Resort & Spa",
+    "rooms": 12,
+    "url": "https://antonellocolonna.it/colonna-resort-spa/rooms/",
+    "packages": [
+      {
+        "name": "Dream",
+        "includes": "A night in a Deluxe room for two, spa access with wellness path, tasting menu dinner (drinks excluded) and breakfast",
+        "price": 495,
+        "per": "room",
+        "when": "Wednesday and Thursday only, holidays excluded; VAT included; prepaid and non-refundable",
+        "url": "https://antonellocolonna.it/colonna-resort-spa/special-offers/dream/"
+      },
+      {
+        "name": "Gourmet Night",
+        "includes": "Check-in after dinner, tasting menu dinner (drinks excluded), a night in a Deluxe room for two and buffet breakfast",
+        "price": 445,
+        "per": "room",
+        "when": "Wednesday and Thursday only, holidays excluded; VAT included; prepaid and non-refundable",
+        "url": "https://antonellocolonna.it/colonna-resort-spa/special-offers/gourmet-night/"
+      },
+      {
+        "name": "Dedicare",
+        "includes": "A night in a Deluxe (from €280) or Gran Deluxe (from €380) room, buffet breakfast, tasting menu dinner (drinks excluded), spa access and a 25-minute body treatment",
+        "price": 280,
+        "from": true,
+        "per": "person",
+        "when": "Wednesday and Thursday only, holidays excluded; VAT included; prepaid and non-refundable",
+        "url": "https://antonellocolonna.it/colonna-resort-spa/special-offers/dedicare-for-you/"
+      },
+      {
+        "name": "Barolo meets Champagne",
+        "includes": "A night in a Deluxe (from €295) or Gran Deluxe (from €325) room, buffet breakfast, tasting menu dinner, two glasses of Champagne and a bottle of Barolo, and spa access",
+        "price": 295,
+        "from": true,
+        "per": "person",
+        "when": "Wednesday and Thursday only, holidays excluded; VAT included; prepaid and non-refundable",
+        "url": "https://antonellocolonna.it/colonna-resort-spa/special-offers/barolo-meets-champagne/"
+      }
+    ],
+    "note": "Twelve rooms and suites in a resort with spa and park near Rome; the stay packages run midweek only.",
+    "checked": "2026-10-23"
+  }
 }

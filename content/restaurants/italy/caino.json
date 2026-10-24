@@ -28,5 +28,13 @@
   "placeId": "ChIJBY28iyIDKRMRPCvsN3s5E2A",
   "michelinId": "142369",
   "chef": "Valeria Piccini",
-  "chefSource": "site"
+  "chefSource": "site",
+  "stay": {
+    "kind": "rooms",
+    "name": "La Locanda di Caino",
+    "rooms": 3,
+    "url": "https://dacaino.it/locanda-caino/",
+    "note": "Three antique-furnished rooms upstairs from the restaurant, breakfast with home-baked cakes.",
+    "checked": "2026-10-23"
+  }
 }

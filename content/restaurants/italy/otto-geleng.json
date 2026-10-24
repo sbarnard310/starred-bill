@@ -25,5 +25,13 @@
     "gluten-free"
   ],
   "chef": "Roberto Toro",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "hotel",
+    "name": "Grand Hotel Timeo, A Belmond Hotel",
+    "rooms": 90,
+    "url": "https://www.belmond.com/hotels/europe/italy/taormina/belmond-grand-hotel-timeo/",
+    "note": "Otto Geleng is the hotel’s fine-dining restaurant beside Taormina’s Greek theatre; the 90 comes from 67 rooms, 2 signature suites and 21 rooms in Villa Timeo.",
+    "checked": "2026-10-23"
+  }
 }

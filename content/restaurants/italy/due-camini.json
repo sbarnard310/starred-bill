@@ -30,5 +30,11 @@
     "kosher"
   ],
   "chef": "Domingo Schingaro",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "hotel",
+    "name": "Borgo Egnazia",
+    "url": "https://www.borgoegnazia.com/rooms/",
+    "checked": "2026-10-23"
+  }
 }

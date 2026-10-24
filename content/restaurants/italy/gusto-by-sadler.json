@@ -22,5 +22,11 @@
     "vegetarian-menu"
   ],
   "chef": "Claudio Sadler",
-  "chefSource": "press"
+  "chefSource": "press",
+  "stay": {
+    "kind": "hotel",
+    "name": "Baglioni Resort Sardinia",
+    "url": "https://sardinia.baglionihotels.com/it/ristoranti/gusto-by-sadler",
+    "checked": "2026-10-23"
+  }
 }

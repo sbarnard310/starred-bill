@@ -28,5 +28,27 @@
   ],
   "chef": "Davide Guidara",
   "chefSource": "site",
-  "dietsManual": true
+  "dietsManual": true,
+  "stay": {
+    "kind": "hotel",
+    "name": "Therasia Resort Sea & Spa",
+    "url": "https://www.therasiaresort.it/dove-dormire-isole-eolie/camere",
+    "packages": [
+      {
+        "name": "Therasia Fine Dining",
+        "includes": "A stay with a Michelin-starred tasting dinner at your choice of Il Cappero or I Tenerumi, half board at the resort’s I Grusoni sea-view restaurant on the other nights, and an aperitif for two",
+        "per": "room",
+        "when": "Minimum 3 nights",
+        "url": "https://www.therasiaresort.it/offerte-hotel-vulcano/therasia-fine-dining"
+      },
+      {
+        "name": "Therasia Gourmet Experience",
+        "includes": "A stay of at least 4 nights that includes dinner at both of the resort’s Michelin-starred restaurants, Il Cappero (Mediterranean) and I Tenerumi (plant-based)",
+        "per": "room",
+        "when": "Minimum 4 nights",
+        "url": "https://www.therasiaresort.it/offerte-hotel-vulcano/therasia-gourmet-experience"
+      }
+    ],
+    "checked": "2026-10-23"
+  }
 }

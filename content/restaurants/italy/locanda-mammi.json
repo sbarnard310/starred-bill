@@ -32,5 +32,11 @@
   "lunchSourceType": "site",
   "lunchSource": "https://www.locandamammi.it/menu/",
   "dinnerNote": "Terra menu, 4 courses (5 courses €65; Espressioni, 8 courses, €75)",
-  "dinnerNoteIt": "Menu Terra, 4 portate (cinque portate €65; Espressioni, 8 portate, €75)"
+  "dinnerNoteIt": "Menu Terra, 4 portate (cinque portate €65; Espressioni, 8 portate, €75)",
+  "stay": {
+    "kind": "rooms",
+    "url": "https://www.locandamammi.it/#camere",
+    "note": "The Locanda has its own guest rooms, with breakfast.",
+    "checked": "2026-10-23"
+  }
 }

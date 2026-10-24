@@ -30,5 +30,20 @@
     "gluten-free"
   ],
   "chef": "Gianni Tarabini",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "hotel",
+    "name": "La Fiorida",
+    "rooms": 29,
+    "url": "https://www.lafiorida.com/it/le-camere/",
+    "packages": [
+      {
+        "name": "Notte di Stelle",
+        "includes": "A night in the room or suite of your choice, breakfast with farm products, the ‘Le Stagioni’ tasting menu at La Preséf, access to the spa’s sensory circuit and a farm visit",
+        "per": "room",
+        "url": "https://www.lafiorida.com/it/pacchetto/notte-di-stelle/"
+      }
+    ],
+    "checked": "2026-10-23"
+  }
 }

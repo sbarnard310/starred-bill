@@ -28,5 +28,12 @@
     "gluten-free"
   ],
   "chef": "Luigi Bergeretto and Alessandro Menditto",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "hotel",
+    "name": "Petra Segreta Resort & Spa",
+    "rooms": 27,
+    "url": "https://www.petrasegretaresort.com/en/rooms/",
+    "checked": "2026-10-23"
+  }
 }

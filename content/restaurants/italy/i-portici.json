@@ -30,5 +30,12 @@
   ],
   "chef": "Nicola Annunziata",
   "chefSource": "site",
-  "dietsManual": true
+  "dietsManual": true,
+  "stay": {
+    "kind": "hotel",
+    "name": "I Portici Hotel Bologna",
+    "rooms": 100,
+    "url": "https://www.iporticihotel.com/camere/",
+    "checked": "2026-10-23"
+  }
 }

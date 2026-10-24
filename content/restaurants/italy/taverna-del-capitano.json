@@ -30,5 +30,12 @@
   "lunchNoteIt": "Stesso menu a pranzo · mar–dom",
   "lunchWine": 80,
   "lunchSourceType": "site",
-  "lunchSource": "https://cdn.prod.website-files.com/618a2d65b08016a0d8c12ca8/61fd710b7daa8438aaf53b14_taverna-capitano-nerano-menu-2021-ita.pdf"
+  "lunchSource": "https://cdn.prod.website-files.com/618a2d65b08016a0d8c12ca8/61fd710b7daa8438aaf53b14_taverna-capitano-nerano-menu-2021-ita.pdf",
+  "stay": {
+    "kind": "rooms",
+    "rooms": 11,
+    "url": "https://www.tavernadelcapitano.com/locanda",
+    "note": "Has a small locanda of eleven rooms with terraces or balconies in Marina del Cantone (Nerano).",
+    "checked": "2026-10-23"
+  }
 }

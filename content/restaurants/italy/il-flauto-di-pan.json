@@ -27,5 +27,12 @@
     "gluten-free"
   ],
   "chef": "Lorenzo Montoro",
-  "chefSource": "site"
+  "chefSource": "site",
+  "stay": {
+    "kind": "hotel",
+    "name": "Hotel Villa Cimbrone",
+    "rooms": 19,
+    "url": "https://www.hotelvillacimbrone.com/rooms-and-suites/",
+    "checked": "2026-10-23"
+  }
 }

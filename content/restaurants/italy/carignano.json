@@ -22,5 +22,12 @@
   "placeId": "ChIJL28dO29tiEcRlf0ZAcYXqAY",
   "michelinId": "164245",
   "chef": "Davide Scabin",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "hotel",
+    "name": "Grand Hotel Sitea",
+    "url": "https://www.grandhotelsitea.it/en/",
+    "note": "Carignano is chef Davide Scabin’s restaurant inside the Grand Hotel Sitea in central Turin.",
+    "checked": "2026-10-23"
+  }
 }

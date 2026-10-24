@@ -27,5 +27,13 @@
   "placeId": "ChIJe7N7uXiZERMRXmEGHV5njqg",
   "michelinId": "160082",
   "chef": "Vincenzo Candiano",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "hotel",
+    "name": "Locanda Don Serafino Hotel",
+    "rooms": 11,
+    "url": "https://www.locandadonserafino.it/en/locanda-don-serafino-hotel/index",
+    "note": "The group’s 11-room boutique hotel is a short walk from the restaurant in Ragusa Ibla.",
+    "checked": "2026-10-23"
+  }
 }

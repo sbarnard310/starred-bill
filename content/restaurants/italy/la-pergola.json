@@ -103,5 +103,11 @@
     }
   ],
   "rankingsChecked": "2026-10-13",
-  "dietsManual": true
+  "dietsManual": true,
+  "stay": {
+    "kind": "hotel",
+    "name": "Rome Cavalieri, A Waldorf Astoria Hotel",
+    "url": "https://romecavalieri.com/rooms/premium-deluxe-rooms/",
+    "checked": "2026-10-23"
+  }
 }

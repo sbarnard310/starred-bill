@@ -34,5 +34,19 @@
     "gluten-free"
   ],
   "chef": "Giacomo Devoto",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "hotel",
+    "name": "Locanda de’ Banchieri",
+    "url": "https://www.locandadebanchieri.it/en/where-to-stay-lunigiana-tuscany",
+    "packages": [
+      {
+        "name": "La notte che resta",
+        "includes": "A two-night stay with a starred dining experience and a second-night privilege; details shown when booking",
+        "nights": 2,
+        "url": "https://www.locandadebanchieri.it/en/offers-guesthouse-lunigiana-tuscany"
+      }
+    ],
+    "checked": "2026-10-23"
+  }
 }

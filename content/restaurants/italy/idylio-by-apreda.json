@@ -29,5 +29,11 @@
     "gluten-free"
   ],
   "chef": "Francesco Apreda",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "hotel",
+    "name": "The Pantheon Iconic Rome Hotel",
+    "url": "https://www.thepantheonhotel.com/en/",
+    "checked": "2026-10-23"
+  }
 }

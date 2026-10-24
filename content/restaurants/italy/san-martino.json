@@ -27,5 +27,12 @@
     "gluten-free"
   ],
   "chef": "Stefano Locatelli",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "hotel",
+    "rooms": 15,
+    "url": "https://www.sanmartinotreviglio.it/rooms/",
+    "note": "The restaurant has its own 15-room hotel (6 singles, 7 doubles, 2 junior suites) in Treviglio.",
+    "checked": "2026-10-23"
+  }
 }

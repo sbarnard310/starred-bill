@@ -30,5 +30,27 @@
     "gluten-free"
   ],
   "chef": "Kevin Trafoier",
-  "chefSource": "press"
+  "chefSource": "press",
+  "stay": {
+    "kind": "rooms",
+    "name": "Kuppelrain",
+    "rooms": 3,
+    "url": "https://www.kuppelrain.com/it/camera",
+    "from": 175,
+    "fromNote": "for two people including breakfast",
+    "packages": [
+      {
+        "name": "Mezza pensione gourmet",
+        "price": 480,
+        "from": true,
+        "per": "person",
+        "nights": 3,
+        "includes": "Three nights in a double room with breakfast and a five- or six-course gourmet dinner each evening from the starred kitchen (from €160 a person a night)",
+        "when": "From three nights; Erker room, other rooms €165 and €170 a person a night",
+        "url": "https://www.kuppelrain.com/it/camera"
+      }
+    ],
+    "note": "Three rooms in the same historic building as the restaurant in Castelbello.",
+    "checked": "2026-10-23"
+  }
 }

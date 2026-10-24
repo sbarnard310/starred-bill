@@ -31,5 +31,11 @@
     "gluten-free"
   ],
   "chef": "Marco Bernardo",
-  "chefSource": "press"
+  "chefSource": "press",
+  "stay": {
+    "kind": "hotel",
+    "name": "Hotel Byron",
+    "url": "https://www.hotelbyron.net/en/index",
+    "checked": "2026-10-23"
+  }
 }

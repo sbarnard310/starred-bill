@@ -28,5 +28,25 @@
     "gluten-free"
   ],
   "chef": "Enrico Bartolini and Gabriele Verri",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "hotel",
+    "name": "L’Andana",
+    "rooms": 33,
+    "url": "https://www.andana.it/en/luxury-accommodation-tuscany/",
+    "packages": [
+      {
+        "name": "Signature Gourmet Escape",
+        "includes": "Two nights in a Deluxe double room, breakfast, spa entrance, a three-course dinner for two at La Villa Bistrot, a 50-minute massage each, and a tasting menu at the Michelin-starred La Trattoria Enrico Bartolini (drinks not included)",
+        "price": 2022,
+        "from": true,
+        "per": "room",
+        "nights": 2,
+        "when": "27 April to 1 November 2026; price for two people in the lower-season Deluxe, tourist tax (€5 per person aged 14 and over) extra",
+        "url": "https://www.andana.it/en/tuscany/summer-in-tuscany/"
+      }
+    ],
+    "note": "The restaurant is at the L’Andana resort on the Tenuta La Badiola estate, whose La Villa has 33 rooms and suites.",
+    "checked": "2026-10-23"
+  }
 }

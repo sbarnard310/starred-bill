@@ -27,5 +27,12 @@
   ],
   "chef": "Martina Caruso",
   "chefSource": "michelin",
-  "dinnerNoteIt": "Degustazione Sigillo, 12 piatti (altri menu da 170 €)"
+  "dinnerNoteIt": "Degustazione Sigillo, 12 piatti (altri menu da 170 €)",
+  "stay": {
+    "kind": "hotel",
+    "name": "Hotel Signum",
+    "url": "https://www.hotelsignum.it/en/hotel.html",
+    "note": "The restaurant is in a boutique hotel with a spa on Salina.",
+    "checked": "2026-10-23"
+  }
 }

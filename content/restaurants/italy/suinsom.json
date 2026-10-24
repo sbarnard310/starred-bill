@@ -29,5 +29,12 @@
   ],
   "chef": "Alessandro Martellini",
   "chefSource": "site",
-  "dinnerNoteIt": "Menu degustazione"
+  "dinnerNoteIt": "Menu degustazione",
+  "stay": {
+    "kind": "hotel",
+    "name": "Tyrol Hotel",
+    "url": "https://www.tyrolhotel.it/en/suinsom-restaurant.html",
+    "note": "Suinsom is the fine-dining stube of the Tyrol Hotel in Selva di Val Gardena.",
+    "checked": "2026-10-23"
+  }
 }

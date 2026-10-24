@@ -20,5 +20,27 @@
   "placeId": "ChIJcypW7sOxfkcRz-086hZfk34",
   "michelinId": "526938",
   "chef": "Donato Ascani",
-  "chefSource": "site"
+  "chefSource": "site",
+  "stay": {
+    "kind": "hotel",
+    "name": "Palazzo Venart",
+    "url": "https://www.ldchotelsitaly.com/en/palazzovenart-venice/",
+    "packages": [
+      {
+        "name": "A romantic getaway on the Grand Canal in Venice",
+        "includes": "Two nights in a double room or suite, a la carte breakfast at Glam, a bottle of Prosecco with snacks, a six-course tasting menu for two at Glam (drinks not included), a one-hour private boat tour on the Grand Canal at sunset, flowers in the room",
+        "per": "room",
+        "nights": 2,
+        "url": "https://www.ldchotelsitaly.com/en/palazzovenart-venice/offers/"
+      },
+      {
+        "name": "The starred cuisine of Enrico Bartolini",
+        "includes": "Two nights in a Classic room, a la carte breakfast at Glam, a six-course tasting menu at Glam, and a bottle of wine with snacks on arrival",
+        "per": "room",
+        "nights": 2,
+        "url": "https://www.ldchotelsitaly.com/en/palazzovenart-venice/offers/"
+      }
+    ],
+    "checked": "2026-10-23"
+  }
 }

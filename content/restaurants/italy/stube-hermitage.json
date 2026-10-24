@@ -22,5 +22,11 @@
     "vegetarian"
   ],
   "chef": "Domenico Sepe",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "hotel",
+    "name": "Bio Hotel Hermitage",
+    "url": "https://biohotelhermitage.it/camere-e-suite/",
+    "checked": "2026-10-23"
+  }
 }

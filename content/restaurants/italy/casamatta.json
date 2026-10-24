@@ -27,5 +27,28 @@
     "gluten-free"
   ],
   "chef": "Pietro Penna",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "hotel",
+    "name": "Vinilia Wine Resort",
+    "url": "https://www.viniliaresort.com/it/camere-suite-resort-lusso-taranto",
+    "packages": [
+      {
+        "name": "Gourmet lovers (6-course tasting menu with wine pairing)",
+        "includes": "A stay with breakfast and a dinner of the six-course tasting menu with matching wines",
+        "url": "https://www.viniliaresort.com/it/pacchetti-sconti-promozioni-resort-taranto"
+      },
+      {
+        "name": "Gourmet lovers (8-course tasting menu with wine pairing)",
+        "includes": "A stay with breakfast and a dinner of the eight-course tasting menu with matching wines",
+        "url": "https://www.viniliaresort.com/it/pacchetti-sconti-promozioni-resort-taranto"
+      },
+      {
+        "name": "Gourmet lovers at Casamatta",
+        "includes": "A stay with breakfast and a tasting-menu dinner with wine pairing at the Casamatta restaurant",
+        "url": "https://www.viniliaresort.com/it/pacchetti-sconti-promozioni-resort-taranto"
+      }
+    ],
+    "checked": "2026-10-23"
+  }
 }

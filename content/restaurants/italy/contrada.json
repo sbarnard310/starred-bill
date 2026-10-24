@@ -27,5 +27,20 @@
   "placeId": "ChIJgwr7hEvbKxMRhHlbpNHHzR4",
   "michelinId": "264805",
   "chef": "Davide Canella",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "hotel",
+    "name": "Castel Monastero",
+    "rooms": 70,
+    "url": "https://www.castelmonastero.com/en/luxury-resort-chianti/rooms",
+    "packages": [
+      {
+        "name": "Michelin Star Night",
+        "includes": "A stay at the resort with a Michelin-star dining experience; details and rates shown when booking",
+        "url": "https://www.castelmonastero.com/en/offers-for-luxury-resorts-tuscany"
+      }
+    ],
+    "note": "A restored medieval monastery resort with 70 rooms and suites in the Chianti countryside.",
+    "checked": "2026-10-23"
+  }
 }

@@ -26,5 +26,12 @@
     "vegan"
   ],
   "chef": "Pasquale D'Ambrosio",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "hotel",
+    "name": "7Pines Resort Sardinia",
+    "url": "https://7pines-sardinia.com/it/camere",
+    "note": "Rooms and suites sit in three garden, lagoon and sea-view areas.",
+    "checked": "2026-10-23"
+  }
 }

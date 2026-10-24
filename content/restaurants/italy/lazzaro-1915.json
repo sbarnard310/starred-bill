@@ -30,5 +30,11 @@
   "dinnerNote": "Il Porto di Chioggia menu (other menu €150)",
   "dinnerNoteIt": "Menu Il Porto di Chioggia (altro menu €150)",
   "lunchNote": "Light lunch: three dishes and a dessert · Tue–Fri",
-  "lunchNoteIt": "Light lunch: tre piatti e un dolce · mar–ven"
+  "lunchNoteIt": "Light lunch: tre piatti e un dolce · mar–ven",
+  "stay": {
+    "kind": "hotel",
+    "name": "Albergo Trieste",
+    "url": "https://www.lazzaro1915.it/about",
+    "checked": "2026-10-23"
+  }
 }

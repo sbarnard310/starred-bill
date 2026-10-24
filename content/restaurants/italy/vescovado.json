@@ -30,5 +30,13 @@
     "gluten-free"
   ],
   "chef": "Giuseppe Ricchebuono",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "hotel",
+    "name": "Hotel Vescovado",
+    "rooms": 8,
+    "url": "https://www.ricchebuonochef.it/hotel-vescovado/",
+    "note": "A small boutique hotel of 8 rooms and suites in a historic palace above the Gulf of Noli.",
+    "checked": "2026-10-23"
+  }
 }

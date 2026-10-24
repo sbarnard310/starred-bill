@@ -25,5 +25,11 @@
     "vegetarian"
   ],
   "chef": "Philip Lochmann",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "hotel",
+    "name": "Hotel Engel Gourmet & SPA",
+    "url": "https://www.hotel-engel.com/en/resort-dolomites/living",
+    "checked": "2026-10-23"
+  }
 }

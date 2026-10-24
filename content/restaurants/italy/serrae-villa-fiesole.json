@@ -34,5 +34,25 @@
     "vegetarian"
   ],
   "chef": "Antonello Sardi",
-  "chefSource": "site"
+  "chefSource": "site",
+  "stay": {
+    "kind": "hotel",
+    "name": "Hotel Villa Fiesole",
+    "rooms": 32,
+    "url": "https://www.fhhotelgroup.it/hotel-villa-fiesole/camere-di-lusso-fiesole/",
+    "packages": [
+      {
+        "name": "Gourmet Experience",
+        "includes": "A stay at Hotel Villa Fiesole with a tasting dinner at Serrae Villa Fiesole",
+        "url": "https://www.fhhotelgroup.it/offerte-hotel/gourmet-experience/"
+      },
+      {
+        "name": "Capodanno 2027 a Fiesole",
+        "includes": "A stay with the New Year’s Eve dinner at Serrae Villa Fiesole",
+        "when": "New Year 2027",
+        "url": "https://www.fhhotelgroup.it/offerte-hotel/capodanno-fiesole/"
+      }
+    ],
+    "checked": "2026-10-23"
+  }
 }

@@ -32,5 +32,11 @@
     "gluten-free"
   ],
   "chef": "Luca Landi",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "hotel",
+    "name": "Hotel Plaza e de Russie",
+    "url": "https://www.plazaederussie.com/en/5-star-hotel-viareggio/rooms/deluxe",
+    "checked": "2026-10-23"
+  }
 }

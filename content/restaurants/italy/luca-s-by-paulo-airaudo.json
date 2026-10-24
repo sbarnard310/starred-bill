@@ -32,5 +32,20 @@
     "gluten-free"
   ],
   "chef": "Paulo Airaudo",
-  "chefSource": "press"
+  "chefSource": "press",
+  "stay": {
+    "kind": "hotel",
+    "name": "La Gemma Hotel Firenze",
+    "rooms": 39,
+    "url": "https://www.lagemmahotel.com/florence/rooms-and-suites",
+    "packages": [
+      {
+        "name": "La Gemma Gourmet Experience",
+        "includes": "Accommodation at La Gemma Hotel, daily a la carte breakfast, a four-course ATTO tasting menu at Luca’s Restaurant (ATTO I or ATTO II, beverages not included), a welcome cocktail and a complimentary non-alcoholic minibar",
+        "url": "https://www.lagemmahotel.com/florence/exclusive-offers/gourmet"
+      }
+    ],
+    "note": "Dinner is served Tuesday to Saturday.",
+    "checked": "2026-10-23"
+  }
 }

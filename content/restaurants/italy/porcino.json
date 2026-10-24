@@ -25,5 +25,14 @@
     "gluten-free"
   ],
   "chef": "Marco Verginer",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "hotel",
+    "name": "Badia Hill Food Boutique Hotel",
+    "rooms": 33,
+    "url": "https://www.badiahill.com/it/camere-e-suite/",
+    "from": 170,
+    "fromNote": "per person, in the smallest room category",
+    "checked": "2026-10-23"
+  }
 }

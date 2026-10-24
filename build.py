@@ -648,7 +648,7 @@ GUIDE_WORDS = {
     "it": {"name": "Italiano", "sources": "Fonti", "sourceChecked": "(consultato a {month})",
            "ownData": "Prezzi e conteggi sono dati di The Starred Bill su {total} ristoranti stellati: stelle dall’ultima edizione della Guida MICHELIN di ogni paese, prezzi dei menù dal sito di ogni ristorante o, se non li pubblica, da una recensione recente, verificati a {checked}. Gli importi in dollari usano i tassi di cambio di {rates} ({day}).",
            "updated": "Aggiornato il {date}", "checked": "Stelle e prezzi verificati a {month}",
-           "faq": "Domande frequenti", "inEnglish": "in inglese", "usd": "{n} USD", "thousands": ".", "date": "{d} {m} {y}", "monthYear": "{m} {y}",
+           "faq": "Domande frequenti", "related": "Guide correlate", "inEnglish": "in inglese", "usd": "{n} USD", "thousands": ".", "date": "{d} {m} {y}", "monthYear": "{m} {y}",
            "months": ["gennaio", "febbraio", "marzo", "aprile", "maggio", "giugno", "luglio", "agosto", "settembre", "ottobre", "novembre", "dicembre"],
            "countries": {"France": "Francia", "Japan": "Giappone", "Italy": "Italia", "Germany": "Germania", "Spain": "Spagna",
                          "United States": "Stati Uniti", "China": "Cina", "United Kingdom": "Regno Unito", "Hong Kong": "Hong Kong",
@@ -4833,7 +4833,7 @@ VEG_SERVES = {"oyster-oyster": "Vegetarian or vegan, oysters optional", "fields-
               "mita": "Plant-based", "daigo": "Shōjin ryōri (Buddhist vegetarian)", "avatara": "Vegetarian (Indian)"}
 # The restaurants-with-rooms guides (23 Oct 2026): {{table:rooms-<place>}} (restaurants with rooms of their own) and
 # {{table:rooms-hotel-<place>}} (restaurants inside a hotel) for each place here, from each restaurant's `stay`.
-ROOMS_LISTS = ("uk", "france", "netherlands", "spain")
+ROOMS_LISTS = ("uk", "france", "netherlands", "spain", "italy")
 # Their wording in the translated guides (a translation's {{table:rooms-…}} needs its language here; rooms_blocks_in()).
 ROOMS_WORDS = {
     "fr": {"heads": ("Restaurant", "Étoiles", "Où", "Chambres", "Chambre dès, la nuit", "Séjour avec dîner", "Menu dégustation, par personne"),
@@ -4856,6 +4856,16 @@ ROOMS_WORDS = {
                         "restaurante en The Starred Bill; el del hotel, su página de habitaciones.",
            "noteEnd": " El precio de la habitación es el más bajo que se anuncia por una noche, y la estancia, el paquete más barato con cena y noche, "
                       "ambos de la web del restaurante o del hotel y variables según la fecha. Menús por persona, sin bebidas. Comprobado en {month}."},
+    "it": {"heads": ("Ristorante", "Stelle", "Dove", "Camere", "Camera da, a notte", "Soggiorno con cena", "Menu degustazione, a persona"),
+           "hotelHead": "Hotel", "seeRooms": "Vedi", "from": "da ", "per": {"person": " a persona", "room": " a camera"},
+           "nights": " per {n} notti", "stars": ("1 stella", "2 stelle", "3 stelle"), "notPublished": "Non pubblicato",
+           "main": "piatto principale alla carta", "spend": "spesa media", "onGuide": "{name} sulla Guida MICHELIN",
+           "noteRooms": "Ristoranti stellati con camere proprie, dal più al meno stellato. Il nome apre la scheda del ristorante su "
+                        "The Starred Bill, il numero di camere la pagina delle camere sul suo sito.",
+           "noteHotel": "Ristoranti stellati dentro un hotel dove si può dormire, dal più al meno stellato. Il nome apre la scheda del "
+                        "ristorante su The Starred Bill, quello dell’hotel la pagina delle camere.",
+           "noteEnd": " Il prezzo della camera è il più basso indicato per una notte, il soggiorno il pacchetto più economico con cena e pernottamento, "
+                      "entrambi dal sito del ristorante o dell’hotel e variabili secondo la data. Menu a persona, bevande escluse. Verificato a {month}."},
     "nl": {"heads": ("Restaurant", "Sterren", "Waar", "Kamers", "Kamer vanaf, per nacht", "Arrangement met diner", "Proeverijmenu, per persoon"),
            "hotelHead": "Hotel", "seeRooms": "Bekijk", "from": "vanaf ", "per": {"person": " p.p.", "room": " per kamer"},
            "nights": " voor {n} nachten", "stars": ("1 ster", "2 sterren", "3 sterren"), "notPublished": "Niet gepubliceerd",

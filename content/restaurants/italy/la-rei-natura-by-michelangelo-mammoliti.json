@@ -27,5 +27,13 @@
   ],
   "chef": "Michelangelo Mammoliti",
   "chefSource": "site",
-  "dietsManual": true
+  "dietsManual": true,
+  "stay": {
+    "kind": "hotel",
+    "name": "Il Boscareto Resort & SPA",
+    "rooms": 49,
+    "url": "https://www.ilboscaretoresort.it/camere/",
+    "note": "A five-star resort in Serralunga d’Alba.",
+    "checked": "2026-10-23"
+  }
 }

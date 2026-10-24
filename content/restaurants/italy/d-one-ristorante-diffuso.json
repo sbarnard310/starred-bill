@@ -28,5 +28,12 @@
     "gluten-free"
   ],
   "chef": "Davide Pezzuto",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "hotel",
+    "name": "Montepagano 1137 Albergo Diffuso",
+    "url": "https://montepagano1137.it/",
+    "note": "The restaurant’s own site points guests to the suites of the Montepagano 1137 albergo diffuso, spread through the same medieval village.",
+    "checked": "2026-10-23"
+  }
 }

@@ -31,5 +31,13 @@
     "halal"
   ],
   "chef": "Alessandro Gilmozzi",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "rooms",
+    "name": "El Molin Apartments",
+    "rooms": 2,
+    "url": "https://alessandrogilmozzi.eu/el-molin-apartments/",
+    "note": "Chef Alessandro Gilmozzi lets two self-catering apartments (an open space for 4 and an apartment for 6) in a 16th-century building in Cavalese.",
+    "checked": "2026-10-23"
+  }
 }

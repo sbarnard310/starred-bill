@@ -28,5 +28,12 @@
     "gluten-free"
   ],
   "chef": "Riccardo Sculli",
-  "chefSource": "press"
+  "chefSource": "press",
+  "stay": {
+    "kind": "hotel",
+    "name": "Gambero Rosso Boutique Hotel",
+    "url": "https://www.gamberorosso.net/boutique-hotel/",
+    "note": "The restaurant’s own site now sells rooms in its Boutique Hotel in Marina di Gioiosa Ionica.",
+    "checked": "2026-10-23"
+  }
 }

@@ -29,5 +29,13 @@
     "gluten-free"
   ],
   "chef": "Leopoldo Elefante",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "hotel",
+    "name": "Casa Angelina",
+    "rooms": 36,
+    "url": "https://www.casangelina.com/en/rooms/",
+    "note": "On the top floor of the adults-only, 36-room Casa Angelina in Praiano; the hotel closes in winter (about November to March).",
+    "checked": "2026-10-23"
+  }
 }

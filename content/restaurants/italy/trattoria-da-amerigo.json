@@ -48,5 +48,13 @@
   "bookingUrl": "https://daamerigo.plateform.app",
   "bookingPhone": "+39 051 670 8326",
   "infoSource": "https://amerigo1934.com/prenota-2/",
-  "infoChecked": "2026-10-13"
+  "infoChecked": "2026-10-13",
+  "stay": {
+    "kind": "rooms",
+    "name": "Locanda da Amerigo",
+    "rooms": 5,
+    "url": "https://amerigo1934.com/la-locanda/",
+    "note": "Five design rooms in the old inn above and beside the trattoria in Savigno.",
+    "checked": "2026-10-23"
+  }
 }

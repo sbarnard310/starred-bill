@@ -34,5 +34,12 @@
     "kosher"
   ],
   "chef": "Ariel Hagen",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "hotel",
+    "name": "Borgo Santo Pietro",
+    "rooms": 22,
+    "url": "https://borgosantopietro.com/rooms-and-suites/",
+    "checked": "2026-10-23"
+  }
 }

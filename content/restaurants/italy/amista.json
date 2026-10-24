@@ -43,5 +43,19 @@
   "photoSourceType": "commons",
   "photoWidth": 1000,
   "photoHeight": 641,
-  "photoChecked": "2026-10-13"
+  "photoChecked": "2026-10-13",
+  "stay": {
+    "kind": "hotel",
+    "name": "Byblos Art Hotel Villa Amistà",
+    "rooms": 56,
+    "url": "https://www.byblosarthotel.com/en/rooms-suite/",
+    "packages": [
+      {
+        "name": "Valpolicella Gourmet Escape",
+        "includes": "A night in an Art&Design room with buffet breakfast, a bottle of Valpolicella wine and an aperitif for two, a four-course tasting dinner for two (lunch on Sunday) at the starred Amistà restaurant with wine pairing, and two hours in the spa",
+        "url": "https://www.byblosarthotel.com/en/experiences-packages/special-offers/valpolicella-gourmet-escape/"
+      }
+    ],
+    "checked": "2026-10-23"
+  }
 }

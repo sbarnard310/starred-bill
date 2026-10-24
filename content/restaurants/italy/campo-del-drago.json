@@ -32,5 +32,22 @@
   ],
   "chef": "Matteo Temperini",
   "chefSource": "site",
-  "dietsManual": true
+  "dietsManual": true,
+  "stay": {
+    "kind": "hotel",
+    "name": "Castiglion del Bosco, A Rosewood Hotel",
+    "url": "https://www.rosewoodhotels.com/en/castiglion-del-bosco/accommodation",
+    "packages": [
+      {
+        "name": "The Secret Cellar",
+        "includes": "Three nights in a suite for two, daily breakfast, dinner at Ristorante Campo del Drago or Osteria La Canonica, truffle hunt and truffle lunch, winery tour and Brunello tasting, dinner in the Members’ Cellar, winery visits with transport",
+        "per": "room",
+        "nights": 3,
+        "when": "15 October to 20 December 2026; minimum 3 nights, book 15 days ahead; city tax extra",
+        "url": "https://www.rosewoodhotels.com/en/castiglion-del-bosco/offers/the-secret-cellar"
+      }
+    ],
+    "note": "A Rosewood resort in a medieval estate near Montalcino; hotel suites and villas close for the winter in January to mid-March 2027.",
+    "checked": "2026-10-23"
+  }
 }

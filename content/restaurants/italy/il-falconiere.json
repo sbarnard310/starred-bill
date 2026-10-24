@@ -28,5 +28,45 @@
     "gluten-free"
   ],
   "chef": "Silvia Baracchi",
-  "chefSource": "site"
+  "chefSource": "site",
+  "stay": {
+    "kind": "hotel",
+    "name": "Il Falconiere Relais & Spa",
+    "rooms": 31,
+    "url": "https://www.ilfalconiere.it/camere-suite-hotel-5-stelle-toscana/",
+    "packages": [
+      {
+        "name": "Spa & Relaxation",
+        "includes": "Two nights in a Deluxe room with breakfast, welcome sparkling aperitif, a three-course dinner at the Michelin-starred restaurant (wine not included), 50-minute body massage, couples’ wine therapy, unlimited spa access",
+        "price": 970,
+        "from": true,
+        "per": "person",
+        "nights": 2,
+        "when": "October and November offers; tourist tax not mentioned",
+        "url": "https://www.ilfalconiere.it/offerte-hotel-5-stelle-toscana/"
+      },
+      {
+        "name": "Food and Wine lovers",
+        "includes": "Three nights in a double room, wine tour with three-course lunch and wine pairing, a tasting dinner with wine pairing at the Michelin-starred restaurant, dinner at Locanda del Molino with transfers, spa access",
+        "price": 1245,
+        "from": true,
+        "per": "person",
+        "nights": 3,
+        "when": "October and November offers",
+        "url": "https://www.ilfalconiere.it/offerte-hotel-5-stelle-toscana/"
+      },
+      {
+        "name": "Golf & Gastronomy",
+        "includes": "Three nights in a Deluxe room, welcome drink, a three-course gourmet dinner with selected wines (the hotel’s restaurant), two 18-hole green fees, Baracchi winery tour, spa access",
+        "price": 1270,
+        "from": true,
+        "per": "person",
+        "nights": 3,
+        "when": "October and November offers",
+        "url": "https://www.ilfalconiere.it/offerte-hotel-5-stelle-toscana/"
+      }
+    ],
+    "note": "A 31-room Relais & Spa on a Tuscan estate near Cortona; the starred restaurant is run by the owners’ family.",
+    "checked": "2026-10-23"
+  }
 }

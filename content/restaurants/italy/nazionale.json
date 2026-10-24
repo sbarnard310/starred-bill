@@ -25,5 +25,12 @@
   "placeId": "ChIJWyLeEV1xzRIRSG5PlgGcfMI",
   "michelinId": "157003",
   "chef": "Fabio Ingallinera",
-  "chefSource": "site"
+  "chefSource": "site",
+  "stay": {
+    "kind": "hotel",
+    "name": "Il Nazionale (Relais and Hotel)",
+    "url": "https://www.ilnazionale.com/en/relais/",
+    "note": "The restaurant sits in a family-run hotel and four-star relais with a spa in Vernante.",
+    "checked": "2026-10-23"
+  }
 }

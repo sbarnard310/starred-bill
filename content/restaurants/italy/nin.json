@@ -32,5 +32,12 @@
   "chef": "Andrea De Lillo",
   "chefSource": "michelin",
   "dinnerNote": "Tasting menu (others €150 and €160)",
-  "dinnerNoteIt": "Menu degustazione (altri €150 e €160)"
+  "dinnerNoteIt": "Menu degustazione (altri €150 e €160)",
+  "stay": {
+    "kind": "hotel",
+    "name": "Belfiore Park Hotel",
+    "url": "https://belfioreparkhotel.com/en/camere-suite/",
+    "note": "Nin is the gourmet restaurant on the pier of the adults-only (16+) Belfiore Park Hotel on Lake Garda.",
+    "checked": "2026-10-23"
+  }
 }

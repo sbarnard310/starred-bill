@@ -31,5 +31,20 @@
     "gluten-free"
   ],
   "chef": "Andrea Monesi",
-  "chefSource": "site"
+  "chefSource": "site",
+  "stay": {
+    "kind": "rooms",
+    "name": "B&B Lago di Orta",
+    "url": "https://www.andreamonesi.com/en/welcome/",
+    "packages": [
+      {
+        "name": "New Year’s Eve dinner with overnight stay",
+        "includes": "New Year’s Eve dinner at Locanda di Orta and a night at the B&B",
+        "when": "New Year’s Eve; price on request",
+        "url": "https://www.andreamonesi.com/en/welcome/"
+      }
+    ],
+    "note": "Charming B&B rooms on the same street in Orta San Giulio; restaurant and B&B close 3 November to 1 December 2026.",
+    "checked": "2026-10-23"
+  }
 }

@@ -25,5 +25,11 @@
     "vegetarian"
   ],
   "chef": "Michael Mayr",
-  "chefSource": "site"
+  "chefSource": "site",
+  "stay": {
+    "kind": "hotel",
+    "name": "Quellenhof Luxury Resort Passeier",
+    "url": "https://www.quellenhof.it/it/camere-suite-chalet",
+    "checked": "2026-10-23"
+  }
 }

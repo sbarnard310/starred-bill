@@ -26,5 +26,11 @@
   "placeId": "ChIJiXJnEtbihkcRFUwd52pPd-0",
   "michelinId": "157634",
   "chef": "Enrico Gerli",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "rooms",
+    "url": "https://www.ristoranteicastagni.com/camere/",
+    "note": "Elegant double rooms in the restaurant’s own guesthouse (foresteria) a few steps from the dining room, in three styles named after wine regions.",
+    "checked": "2026-10-23"
+  }
 }

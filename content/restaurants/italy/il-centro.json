@@ -28,5 +28,13 @@
     "kosher"
   ],
   "chef": "Elide Mollo",
-  "chefSource": "site"
+  "chefSource": "site",
+  "stay": {
+    "kind": "hotel",
+    "name": "Dimora Cordero",
+    "rooms": 6,
+    "url": "https://www.dimoracordero.com/en/the-rooms/",
+    "note": "Six rooms (4 junior suites, 2 suites) in a boutique relais right next to the restaurant; breakfast is served by the restaurant’s chefs.",
+    "checked": "2026-10-23"
+  }
 }

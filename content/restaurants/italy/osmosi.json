@@ -35,5 +35,13 @@
     "kosher"
   ],
   "chef": "Mirko Marcelli",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "hotel",
+    "name": "Villa Svetoni",
+    "rooms": 12,
+    "url": "https://www.villasvetoni.com/villa-svetoni",
+    "note": "The villa generally closes in February.",
+    "checked": "2026-10-23"
+  }
 }

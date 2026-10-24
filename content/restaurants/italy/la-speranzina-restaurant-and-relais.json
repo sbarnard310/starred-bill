@@ -24,5 +24,22 @@
   "lat": 45.493159,
   "lng": 10.608587,
   "placeId": "ChIJr1LCp1OTgUcRCxhLg95XG48",
-  "michelinId": "153139"
+  "michelinId": "153139",
+  "stay": {
+    "kind": "hotel",
+    "name": "Relais La Speranzina",
+    "url": "https://www.lasperanzina.it/en/luxury-relais-lake-of-garda",
+    "packages": [
+      {
+        "name": "Gourmet Stay",
+        "includes": "Breakfast served in the room, a bottle of Champagne with fresh fruit on arrival, and a dinner of the tasting menu ‘La Nostra Storia’ at the restaurant",
+        "per": "room",
+        "nights": 3,
+        "when": "Stays of three nights or more, subject to availability",
+        "url": "https://www.lasperanzina.it/en/relais-sirmione/gourmet-offer"
+      }
+    ],
+    "note": "Suite-only relais in Sirmione’s old town (Deluxe Kendra, Suite Spa Kristina, Royal Suite Spa Maria Luisa); closed 1 November to 7 December.",
+    "checked": "2026-10-23"
+  }
 }

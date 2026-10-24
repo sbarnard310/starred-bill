@@ -28,5 +28,11 @@
     "gluten-free"
   ],
   "chef": "Enrico Mazzaroni",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "rooms",
+    "url": "https://ristoranteiltiglio.it/la-struttura/",
+    "note": "Il Tiglio began as an agriturismo and shows guest rooms on its Struttura page.",
+    "checked": "2026-10-23"
+  }
 }

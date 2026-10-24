@@ -44,5 +44,41 @@
     }
   ],
   "rankingsChecked": "2026-10-13",
-  "dietsManual": true
+  "dietsManual": true,
+  "stay": {
+    "kind": "hotel",
+    "name": "Boutique Hotel Don Alfonso 1890",
+    "url": "https://www.donalfonso.com/en/luxury-boutique-hotel-sorrento-coast",
+    "packages": [
+      {
+        "name": "La Tradizione (3 nights)",
+        "includes": "Three nights with dinner at the restaurant from the ‘La Tradizione’ menu",
+        "nights": 3,
+        "url": "https://www.donalfonso.com/en/last-minute-hotel-deals-sorrento-coast"
+      },
+      {
+        "name": "La Tradizione (4 nights)",
+        "includes": "Four nights for two people with dinner at the restaurant from the ‘La Tradizione’ menu",
+        "per": "room",
+        "nights": 4,
+        "url": "https://www.donalfonso.com/en/last-minute-hotel-deals-sorrento-coast"
+      },
+      {
+        "name": "La Degustazione (3 nights)",
+        "includes": "Three nights for two people with dinner at the restaurant from the ‘La Degustazione’ tasting menu",
+        "per": "room",
+        "nights": 3,
+        "url": "https://www.donalfonso.com/en/last-minute-hotel-deals-sorrento-coast"
+      },
+      {
+        "name": "La Degustazione (4 nights)",
+        "includes": "Four nights for two people with dinner at the restaurant from the ‘La Degustazione’ tasting menu",
+        "per": "room",
+        "nights": 4,
+        "url": "https://www.donalfonso.com/en/last-minute-hotel-deals-sorrento-coast"
+      }
+    ],
+    "note": "Family-run boutique hotel with standard rooms, junior suites and suites.",
+    "checked": "2026-10-23"
+  }
 }

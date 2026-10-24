@@ -29,5 +29,13 @@
     "gluten-free"
   ],
   "chef": "Luciano Villani",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "hotel",
+    "name": "Aquapetra Resort & Spa",
+    "rooms": 42,
+    "url": "https://www.aquapetra.com/ospitalita/camere-suite/",
+    "note": "Resort hotel spread through a restored village in the Sannio hills; 42 rooms and suites.",
+    "checked": "2026-10-23"
+  }
 }

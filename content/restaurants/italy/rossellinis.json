@@ -24,5 +24,13 @@
     "vegan"
   ],
   "chef": "Gianni Vanacore",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "hotel",
+    "name": "Palazzo Avino",
+    "rooms": 43,
+    "url": "https://www.palazzoavino.com/#suites-and-rooms",
+    "note": "43 rooms including ten suites.",
+    "checked": "2026-10-23"
+  }
 }

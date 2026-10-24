@@ -28,5 +28,11 @@
     "kosher"
   ],
   "chef": "Crescenzo Scotti",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "hotel",
+    "name": "Borgo Santandrea",
+    "url": "https://borgosantandrea.it/en/rooms/",
+    "checked": "2026-10-23"
+  }
 }

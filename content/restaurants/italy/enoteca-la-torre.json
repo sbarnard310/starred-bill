@@ -26,5 +26,12 @@
   "placeId": "ChIJXSxaU_BgLxMRo5GX70m-__M",
   "michelinId": "402346",
   "chef": "Domenico Stile",
-  "chefSource": "site"
+  "chefSource": "site",
+  "stay": {
+    "kind": "hotel",
+    "name": "Villa Laetitia",
+    "url": "https://villalaetitia.com/camere/",
+    "note": "The restaurant is in Villa Laetitia, Anna Fendi’s boutique hotel on the Tiber, with rooms on the noble floor, in a villa apartment and in a garden house.",
+    "checked": "2026-10-23"
+  }
 }

@@ -28,5 +28,12 @@
     "gluten-free"
   ],
   "chef": "Giuseppe Torrisi",
-  "chefSource": "site"
+  "chefSource": "site",
+  "stay": {
+    "kind": "hotel",
+    "name": "Palazzo Salomone Luxury Suites",
+    "url": "https://www.palazzosalomone.com/en/home-2/",
+    "note": "Rooms from classic doubles to duplex suites.",
+    "checked": "2026-10-23"
+  }
 }

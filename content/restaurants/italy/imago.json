@@ -27,5 +27,12 @@
     "gluten-free"
   ],
   "chef": "Andrea Antonini",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "hotel",
+    "name": "Hotel Hassler Roma",
+    "rooms": 82,
+    "url": "https://www.hotelhasslerroma.com/stay/",
+    "checked": "2026-10-23"
+  }
 }

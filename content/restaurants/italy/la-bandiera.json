@@ -32,5 +32,30 @@
   "chef": "Marcello Spadone e Mattia Spadone",
   "chefSource": "michelin",
   "dinnerNote": "Campagna tasting menu (Mare e Campagna €100)",
-  "dinnerNoteIt": "Menu degustazione Campagna (Mare e Campagna €100)"
+  "dinnerNoteIt": "Menu degustazione Campagna (Mare e Campagna €100)",
+  "stay": {
+    "kind": "rooms",
+    "rooms": 4,
+    "url": "https://www.labandiera.it/en/hospitality/",
+    "packages": [
+      {
+        "name": "Full immersion",
+        "includes": "A night in a double room (or the garden annexe), the nine-course tasting menu for two (with matching wines in the dearer option, from €460), breakfast the next morning",
+        "price": 320,
+        "from": true,
+        "per": "room",
+        "url": "https://www.labandiera.it/prodotto/full-immersion/"
+      },
+      {
+        "name": "Benvenuto a La Bandiera",
+        "includes": "A night in a double room, the six-course tasting menu for two (with matching wines in the dearer option, up to €390), breakfast the next morning",
+        "price": 290,
+        "from": true,
+        "per": "room",
+        "url": "https://www.labandiera.it/prodotto/benvenuto-a-la-bandiera/"
+      }
+    ],
+    "note": "Four rooms at the restaurant (one in a garden annexe by the pool); the website ties a room booking to dinner, so stays come as the packages.",
+    "checked": "2026-10-23"
+  }
 }

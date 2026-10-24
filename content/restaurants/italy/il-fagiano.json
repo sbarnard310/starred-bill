@@ -27,5 +27,12 @@
     "vegetarian"
   ],
   "chef": "Maurizio Bufi",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "hotel",
+    "name": "Grand Hotel Fasano",
+    "url": "https://www.ghf.it/en/rooms-suites/",
+    "note": "Dinner-only restaurant inside the lakeside Grand Hotel Fasano and Villa Principe at Gardone Riviera.",
+    "checked": "2026-10-23"
+  }
 }

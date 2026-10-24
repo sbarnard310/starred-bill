@@ -26,5 +26,11 @@
     "gluten-free"
   ],
   "chef": "Andrea Impero",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "hotel",
+    "name": "Borgobrufa SPA Resort",
+    "url": "https://borgobrufa.it/suite-camere/",
+    "checked": "2026-10-23"
+  }
 }

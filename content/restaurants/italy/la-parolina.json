@@ -31,5 +31,30 @@
     "vegetarian"
   ],
   "chef": "Romano Gordini and Iside De Cesare",
-  "chefSource": "press"
+  "chefSource": "press",
+  "stay": {
+    "kind": "rooms",
+    "name": "Locanda La Letterina",
+    "url": "https://www.laparolina.it/ospitalita/",
+    "from": 110,
+    "packages": [
+      {
+        "name": "Pacchetto Tuscia",
+        "includes": "The Tuscia tasting menu with three wine pairings, water and coffee for two, and a night in a double room with breakfast",
+        "price": 500,
+        "per": "room",
+        "when": "Voucher valid for 6 months",
+        "url": "https://www.laparolina.it/ospitalita/"
+      },
+      {
+        "name": "Pacchetto Emozioni",
+        "includes": "The Emozioni tasting menu for two with a bottle of Champagne, water and coffee, and a night in a double room with breakfast",
+        "price": 650,
+        "per": "room",
+        "when": "Voucher valid for 6 months",
+        "url": "https://www.laparolina.it/ospitalita/"
+      }
+    ],
+    "checked": "2026-10-23"
+  }
 }

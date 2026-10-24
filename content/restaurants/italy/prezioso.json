@@ -26,5 +26,26 @@
     "gluten-free"
   ],
   "chef": "Egon Heiss",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "hotel",
+    "name": "Castel Fragsburg",
+    "url": "https://www.fragsburg.com/it/suite-offerte/suite/",
+    "from": 490,
+    "fromNote": "including breakfast",
+    "packages": [
+      {
+        "name": "Fragsburg esperienza culinaria",
+        "includes": "Three nights in a double room, welcome aperitif, breakfast, two five-course dinners at the Orangerie and one dinner at the Prezioso with wine pairing",
+        "price": 1129,
+        "from": true,
+        "per": "person",
+        "nights": 3,
+        "when": "All year",
+        "url": "https://www.fragsburg.com/it/suite-offerte/offerte/dettagli/fragsburg-esperienza-culinaria/"
+      }
+    ],
+    "note": "A five-star Relais & Châteaux castle hotel above Merano with a spa.",
+    "checked": "2026-10-23"
+  }
 }

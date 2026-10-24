@@ -28,5 +28,11 @@
     "gluten-free"
   ],
   "chef": "Ciro Sicignano",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "hotel",
+    "name": "Hotel Lorelei Londres",
+    "url": "https://www.loreleisorrento.com/hotel/",
+    "checked": "2026-10-23"
+  }
 }

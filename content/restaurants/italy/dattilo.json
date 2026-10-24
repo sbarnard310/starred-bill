@@ -24,5 +24,31 @@
     "gluten-free"
   ],
   "chef": "Caterina Ceraudo",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "hotel",
+    "name": "Relais Dattilo",
+    "rooms": 8,
+    "url": "https://www.dattilorelais.it/camere-suite/",
+    "packages": [
+      {
+        "name": "Regalati un’esperienza unica",
+        "includes": "A night in a double room with breakfast, a bottle of Ceraudo wine in the room, dinner for two at Ristorante Dattilo (nine courses, with an aperitif glass), a cellar visit",
+        "price": 590,
+        "per": "room",
+        "when": "Every day the restaurant is open except public holidays and August; by email booking only",
+        "url": "https://www.ceraudo.it/prodotto/vivere-dattilo-2/"
+      },
+      {
+        "name": "Scopri il mondo Ceraudo",
+        "includes": "A night in a double room with breakfast, a bottle of Ceraudo wine in the room, dinner for two at Ristorante Dattilo (five courses, with an aperitif glass), a visit to the estate",
+        "price": 500,
+        "per": "room",
+        "when": "Every day the restaurant is open except public holidays and August; by email booking only",
+        "url": "https://www.ceraudo.it/prodotto/scopri-il-mondo-ceraudo/"
+      }
+    ],
+    "note": "Relais Dattilo is a wine-estate relais with eight rooms beside the restaurant; the Ceraudo shop lists a third, dearer €790 package.",
+    "checked": "2026-10-23"
+  }
 }

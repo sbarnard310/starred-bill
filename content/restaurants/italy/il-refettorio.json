@@ -28,5 +28,12 @@
     "gluten-free"
   ],
   "chef": "Alfonso Crescenzo",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "hotel",
+    "name": "Monastero Santa Rosa Hotel & Spa",
+    "rooms": 20,
+    "url": "https://monasterosantarosa.com/rooms-suites/",
+    "checked": "2026-10-23"
+  }
 }

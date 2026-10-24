@@ -30,5 +30,12 @@
     "gluten-free"
   ],
   "chef": "Stefano Masanti",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "hotel",
+    "name": "Sport Hotel Alpina",
+    "url": "https://sporthotelalpina.it/camere/",
+    "note": "Suites only (junior suites, fireplace suites and a family room); the hotel and restaurant open for the winter season and the hotel again in summer with bed and breakfast.",
+    "checked": "2026-10-23"
+  }
 }

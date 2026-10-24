@@ -26,5 +26,38 @@
     "vegetarian"
   ],
   "chef": "Giorgio Bartolucci",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "hotel",
+    "name": "Hotel Eurossola",
+    "url": "https://www.eurossola.com/en/rooms/",
+    "packages": [
+      {
+        "name": "Call them (if you wish) emotions",
+        "includes": "Two nights in a Junior Suite with buffet breakfast, a Michelin-starred tasting menu dinner for two with wine pairing (5 glasses) and 2 hours in the Jacuzzi hot tub (replaced by an aperitif for two in bad weather)",
+        "price": 720,
+        "per": "room",
+        "nights": 2,
+        "when": "June to September only",
+        "url": "https://www.eurossola.com/en/packages/"
+      },
+      {
+        "name": "Why Not",
+        "includes": "Two nights in a Junior Suite with buffet breakfast and a Michelin-starred tasting menu dinner for two with wine pairing (4 glasses)",
+        "price": 680,
+        "per": "room",
+        "nights": 2,
+        "url": "https://www.eurossola.com/en/packages/"
+      },
+      {
+        "name": "Experience",
+        "includes": "Two nights in a standard double room with buffet breakfast and a Michelin-starred tasting menu dinner for two with wine pairing (4 glasses)",
+        "price": 580,
+        "per": "room",
+        "nights": 2,
+        "url": "https://www.eurossola.com/en/packages/"
+      }
+    ],
+    "checked": "2026-10-23"
+  }
 }

@@ -30,5 +30,15 @@
     "gluten-free"
   ],
   "chef": "Andrea Incerti Vezzani",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "rooms",
+    "name": "Locanda Ca’ Matilde",
+    "rooms": 4,
+    "url": "https://camatilde.it/locanda/",
+    "from": 110,
+    "fromNote": "double room for single use, including breakfast; double use from 140",
+    "note": "Four rooms in the farmhouse that houses the restaurant, near Quattro Castella; the restaurant is closed Monday and Tuesday.",
+    "checked": "2026-10-23"
+  }
 }

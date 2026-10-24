@@ -68,5 +68,13 @@
   "bookingPhone": "+39 0541 962295",
   "infoSource": "https://www.dallagioconda.it/contattaci/",
   "infoChecked": "2026-10-13",
-  "dietsManual": true
+  "dietsManual": true,
+  "stay": {
+    "kind": "hotel",
+    "name": "Hidden Albergo Diffuso",
+    "rooms": 8,
+    "url": "https://www.dallagioconda.it/hidden-albergo-diffuso/camere/",
+    "note": "The restaurant runs Hidden, a small albergo diffuso of eight rooms and suites in four houses nearby, with breakfast served in the common area, a pool and a path to a small beach.",
+    "checked": "2026-10-23"
+  }
 }

@@ -23,5 +23,23 @@
   "placeId": "ChIJQyiWndS5gkcRrKnpytgojmU",
   "michelinId": "164202",
   "chef": "Gerhard Wieser",
-  "chefSource": "press"
+  "chefSource": "press",
+  "stay": {
+    "kind": "hotel",
+    "name": "Hotel Castel",
+    "url": "https://www.hotel-castel.com/en/rooms-suites",
+    "packages": [
+      {
+        "name": "Gourmet Safari",
+        "includes": "Five nights with a champagne welcome, a six-course tasting menu at Castel fine dining, two tasting menus at two Michelin-starred restaurants nearby; taxi optional",
+        "price": 1838,
+        "from": true,
+        "per": "person",
+        "nights": 5,
+        "url": "https://www.hotel-castel.com/en/our-offers/gourmet-safari"
+      }
+    ],
+    "note": "The two-star restaurant is on the roof of a five-star hotel in Dorf Tirol, with rooms and suites from 31 to 93 square metres; the restaurant has only five tables.",
+    "checked": "2026-10-23"
+  }
 }

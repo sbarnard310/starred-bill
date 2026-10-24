@@ -21,5 +21,13 @@
   "placeId": "ChIJAYl2r917eUcR1mhggnwYhVA",
   "michelinId": "151300",
   "chef": "Andrea Canton",
-  "chefSource": "site"
+  "chefSource": "site",
+  "stay": {
+    "kind": "hotel",
+    "name": "Hotel La Primula",
+    "rooms": 6,
+    "url": "https://www.ristorantelaprimula.it/hotel",
+    "note": "A small family hotel with six double rooms in a garden beside the restaurant at San Quirino.",
+    "checked": "2026-10-23"
+  }
 }

@@ -24,5 +24,12 @@
     "vegetarian-menu"
   ],
   "chef": "Massimo Mantarro",
-  "chefSource": "site"
+  "chefSource": "site",
+  "stay": {
+    "kind": "hotel",
+    "name": "San Domenico Palace, A Four Seasons Hotel",
+    "url": "https://www.fourseasons.com/taormina/",
+    "note": "The restaurant’s website is branded Four Seasons and sits at the hotel’s address in Taormina.",
+    "checked": "2026-10-23"
+  }
 }

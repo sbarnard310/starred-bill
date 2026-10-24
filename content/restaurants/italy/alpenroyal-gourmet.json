@@ -25,5 +25,13 @@
     "vegetarian"
   ],
   "chef": "Mario Porcelli",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "hotel",
+    "name": "Alpenroyal Grand Hotel",
+    "rooms": 54,
+    "url": "https://www.alpenroyal.com/it/camere-suite.asp",
+    "note": "Half-board stays include dinner at the hotel’s Le Stuben restaurant, not the starred room.",
+    "checked": "2026-10-23"
+  }
 }

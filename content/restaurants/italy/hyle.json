@@ -29,5 +29,13 @@
     "gluten-free"
   ],
   "chef": "Antonio Biafora",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "hotel",
+    "name": "Biafora Resort & Spa",
+    "rooms": 14,
+    "url": "https://www.biafora.it/camere",
+    "note": "Hyle sits in Biafora Resort & Spa, a four-star hotel with 14 rooms and a spa in the Sila mountains.",
+    "checked": "2026-10-23"
+  }
 }

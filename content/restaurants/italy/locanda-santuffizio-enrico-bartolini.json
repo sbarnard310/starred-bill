@@ -21,5 +21,25 @@
   "placeId": "ChIJVVVlI06-h0cRwO7O81q2PYY",
   "michelinId": "163087",
   "chef": "Gabriele Boffa",
-  "chefSource": "site"
+  "chefSource": "site",
+  "stay": {
+    "kind": "hotel",
+    "name": "Relais Sant’Uffizio",
+    "rooms": 36,
+    "url": "https://www.ldchotelsitaly.com/en/relaissantuffizio-piedmont/rooms-suites",
+    "packages": [
+      {
+        "name": "Michelin Star Experience",
+        "includes": "A night in a double room, buffet breakfast, a six-course tasting dinner for two at the two-star restaurant (drinks not included) and an aperitif at the Morus lounge",
+        "url": "https://www.ldchotelsitaly.com/en/relaissantuffizio-piedmont/offers/"
+      },
+      {
+        "name": "Wellness & Gourmet Experience",
+        "includes": "Three nights in a double room with breakfast, spa entry, a three-course dinner at the hotel bistro and a five-course tasting dinner at the two-star restaurant (drinks not included), plus a 50-minute couples massage",
+        "nights": 3,
+        "url": "https://www.ldchotelsitaly.com/en/relaissantuffizio-piedmont/offers/"
+      }
+    ],
+    "checked": "2026-10-23"
+  }
 }

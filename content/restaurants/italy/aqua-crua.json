@@ -31,5 +31,13 @@
   "chef": "Giuliano Baldessari",
   "chefSource": "michelin",
   "rating": 4.7,
-  "reviews": 478
+  "reviews": 478,
+  "stay": {
+    "kind": "rooms",
+    "name": "Hotel Aqua Crua",
+    "rooms": 5,
+    "url": "https://www.hotelaquacrua.it/en/",
+    "note": "Four double rooms and one suite at Hotel Aqua Crua, run with the restaurant; breakfast is served on request.",
+    "checked": "2026-10-23"
+  }
 }

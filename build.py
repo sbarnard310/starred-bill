@@ -6462,6 +6462,21 @@ RATED_MIN = 1000   # reviews a restaurant needs for the "highest rated" lists, s
 VALUE_USD = 100    # the "under $100" list: the cheapest meal (dinner or lunch) at or below this, in US dollars
 VALUE_RATING = 4.5
 RATINGS_CHECKED = "October 2026"  # when the Google ratings and review counts were last fetched
+# Google's terms don't let us keep ratings (to-do item legal-google-ratings-terms), so restaurant pages here show Google's
+# own place card instead: a free Maps Embed API map (no charge, no limit) with the name, rating and review count drawn by
+# Google, live. A pilot on Le Bernardin first (24 Oct 2026); the key is the browser key in common.js, which needs the
+# Maps Embed API switched on and in its API restrictions.
+GOOGLE_EMBED_PAGES = {"le-bernardin"}
+GOOGLE_MAPS_KEY = (re.search(r'GOOGLE_MAPS_API_KEY = "([^"]+)"', (SRC / "assets" / "common.js").read_text()) or [None, ""])[1]
+
+
+def google_card_html(r):
+    """Google's place card for a restaurant (a lazy-loaded Maps Embed iframe), in place of a stored rating."""
+    src = ("https://www.google.com/maps/embed/v1/place?key=" + GOOGLE_MAPS_KEY + "&q=place_id:" + urllib.parse.quote(r["placeId"])
+           + "&zoom=16&language=en")
+    return (f'<iframe class="rp-gcard" src="{e(src)}" title="{e(r["name"])} on Google Maps, with its Google rating" loading="lazy" '
+            'referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>'
+            '<small>Live from Google Maps: the rating and number of reviews are in the card at the top left.</small>')
 
 
 def reviewed():
@@ -8393,7 +8408,8 @@ def build_restaurant_pages():
             facts.append(("Dietary needs", e("; ".join(x for x in (
                 "A vegetarian restaurant" if "vegetarian-only" in diets else "", "Has a vegetarian tasting menu" if "vegetarian-menu" in diets else "",
                 ("Can cater for " + and_list(plain_diets) + " diets") if plain_diets else "") if x)) + "<small>From " + ("the restaurant’s website" if r.get("dietsManual") else "the MICHELIN Guide") + "; say when you book</small>"))
-        if r.get("rating"):
+        gcard = r["id"] in GOOGLE_EMBED_PAGES and r.get("placeId") and GOOGLE_MAPS_KEY
+        if r.get("rating") and not gcard:
             facts.append(("Google rating", f'{r["rating"]:.1f} out of 5' + (f'<small>{r["reviews"]:,} reviews, checked {RATINGS_CHECKED}</small>' if r.get("reviews") else "")))
         if r.get("memberScore"):
             facts.append(("Members’ score", member_score_html(r)))
@@ -8402,10 +8418,12 @@ def build_restaurant_pages():
             links.append(f'<a href="{e(mg[r["id"]])}">MICHELIN Guide page</a>')
         if links:
             facts.append(("Links", " · ".join(links)))
+        if gcard:
+            facts.append(("Google rating", google_card_html(r)))
         facts_html = ('<section id="facts">\n  <div class="wrap">\n    <div class="section-head"><div><span class="eyebrow">At a glance</span>'
                       f'<h2 style="margin-top: 6px">{e(r["name"])}: stars, chef and address</h2></div></div>\n'
                       '    <div class="faq rp-qa">' + "".join(qa_block(q, glance_page.get(q) or f"<p>{e(a)}</p>") for q, a in glance_qa) + "</div>\n"
-                      '    <dl class="rp-facts">' + "".join(f"<div><dt>{e(k)}</dt><dd>{v}</dd></div>" for k, v in facts) + "</dl>\n  </div>\n</section>\n")
+                      '    <dl class="rp-facts">' + "".join(("<div class=\"rp-gwide\">" if v.startswith("<iframe") else "<div>") + f"<dt>{e(k)}</dt><dd>{v}</dd></div>" for k, v in facts) + "</dl>\n  </div>\n</section>\n")
 
         # What you'll pay, with the country's service note and the sources.
         service_text = inherited(city, "serviceText") or ""
@@ -8624,7 +8642,9 @@ def restaurant_sources_html(r, michelin_url):
                 seen.append((label, x["url"]))
         parts.append("Critics’ lists: " + ", ".join(a(u, label) for label, u in seen)
                      + (f", checked {e(nice_date(r['rankingsChecked']))}" if r.get("rankingsChecked") else ""))
-    if r.get("rating"):
+    if r["id"] in GOOGLE_EMBED_PAGES and r.get("placeId") and GOOGLE_MAPS_KEY:
+        parts.append("Rating: " + a("https://www.google.com/maps/place/?q=place_id:" + r["placeId"], "Google Maps") + ", shown live")
+    elif r.get("rating"):
         parts.append("Rating: " + a("https://www.google.com/maps", "Google Maps") + f", checked {RATINGS_CHECKED}")
     if r.get("memberScore"):
         parts.append("Members’ score: our signed-in members who have been there" + (f", updated {e(nice_date(MEMBER_SCORES['updated']))}" if MEMBER_SCORES.get("updated") else ""))

@@ -21,13 +21,8 @@
   "lng": -6.135958,
   "placeId": "ChIJneTu6ZXGDQ0RA3sqA_aWp9w",
   "michelinId": "563745",
-  "diets": [
-    "vegetarian",
-    "vegan",
-    "gluten-free"
-  ],
   "chef": "Israel Ramos",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "photo": "mantua.jpg",
   "photoAlt": "The building of Mantúa in Jerez de la Frontera, with its name by the door",
   "photoCredit": "El Pantera",

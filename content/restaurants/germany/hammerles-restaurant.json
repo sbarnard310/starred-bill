@@ -23,11 +23,11 @@
   "placeId": "ChIJQ3NOohfOlUcRdX1_a_taVNA",
   "michelinId": "234204",
   "diets": [
-    "vegetarian-menu",
     "vegetarian"
   ],
   "chef": "Cliff Hämmerle",
-  "chefSource": "michelin",
+  "chefSource": "press",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 49 €)",
-  "lunchNoteDe": "Mittagsmenü"
+  "lunchNoteDe": "Mittagsmenü",
+  "dietsManual": true
 }

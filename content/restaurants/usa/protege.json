@@ -19,11 +19,8 @@
   "lng": -122.14362,
   "placeId": "ChIJ14CVruW6j4ARoh-i6iIAe5g",
   "michelinId": "563788",
-  "diets": [
-    "vegetarian"
-  ],
   "chef": "Anthony Secviar",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "bookingWindow": {
     "type": "rolling",
     "days": 30,

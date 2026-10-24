@@ -26,9 +26,9 @@
   "placeId": "ChIJD6sCOVoABDQRpzM2ZLis8bs",
   "michelinId": "380364",
   "diets": [
-    "vegetarian-menu",
     "vegetarian"
   ],
   "chef": "Pan Jiulong",
-  "chefSource": "press"
+  "chefSource": "press",
+  "dietsManual": true
 }

@@ -21,7 +21,7 @@
     "vegan"
   ],
   "chef": "Philipp Stein",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "lunch": 117,
   "lunchType": "menu",
   "lunchNote": "Same menu at lunch · Thu–Sun",
@@ -31,5 +31,6 @@
   "wine": 57,
   "dinnerNote": "Menu (Auslese menu €180; also à la carte)",
   "dinnerNoteDe": "Menü (Menü „Auslese“ 180 €; auch à la carte)",
-  "lunchWine": 57
+  "lunchWine": 57,
+  "dietsManual": true
 }

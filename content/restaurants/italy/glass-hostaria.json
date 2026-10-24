@@ -26,12 +26,9 @@
   "placeId": "ChIJ5UjGdkdgLxMRzT7K8LNlcXU",
   "michelinId": "206107",
   "diets": [
-    "vegetarian-menu",
-    "vegetarian",
-    "vegan",
-    "gluten-free",
-    "kosher"
+    "vegetarian-menu"
   ],
   "chef": "Cristina Bowerman",
-  "chefSource": "michelin"
+  "chefSource": "site",
+  "dietsManual": true
 }

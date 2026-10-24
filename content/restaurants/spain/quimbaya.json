@@ -28,8 +28,9 @@
   "placeId": "ChIJRxnN-xspQg0Rw7yGicV9UGM",
   "michelinId": "1193573",
   "diets": [
-    "vegetarian"
+    "gluten-free"
   ],
   "chef": "Edwin Rodríguez",
-  "chefSource": "michelin"
+  "chefSource": "site",
+  "dietsManual": true
 }

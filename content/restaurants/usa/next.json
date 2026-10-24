@@ -24,5 +24,6 @@
     "vegetarian"
   ],
   "chef": "Alan Mileykovsky",
-  "chefSource": "press"
+  "chefSource": "press",
+  "dietsManual": true
 }

@@ -26,12 +26,8 @@
   "lng": 0.4450558,
   "placeId": "ChIJ0QZez3w6_UcRPInQlV2aOGQ",
   "michelinId": "200566",
-  "diets": [
-    "vegetarian",
-    "gluten-free"
-  ],
   "chef": "Bastien Gillet",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "stay": {
     "kind": "hotel",
     "name": "Auberge Pom’Poire",

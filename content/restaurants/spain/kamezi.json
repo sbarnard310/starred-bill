@@ -25,5 +25,6 @@
     "vegetarian"
   ],
   "chef": "Rubén Cuesta",
-  "chefSource": "michelin"
+  "chefSource": "press",
+  "dietsManual": true
 }

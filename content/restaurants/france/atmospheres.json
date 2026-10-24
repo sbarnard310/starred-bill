@@ -25,12 +25,8 @@
   "lng": 5.8522537,
   "placeId": "ChIJK0vGnp8Ji0cRzpjt6RBcivU",
   "michelinId": "1346",
-  "diets": [
-    "vegetarian",
-    "gluten-free"
-  ],
   "chef": "Alain Perrillat-Mercerot",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "stay": {
     "kind": "hotel",
     "name": "Atmosphères",

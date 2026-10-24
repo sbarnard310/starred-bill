@@ -20,11 +20,8 @@
   "lng": -1.5602059,
   "placeId": "ChIJfYWyUHW5XQ0RutRYFMVNCws",
   "michelinId": "223985",
-  "diets": [
-    "gluten-free"
-  ],
   "chef": "María José Meda",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "photo": "hospederia-el-batan.jpg",
   "photoAlt": "The stone and timber buildings of Hospedería El Batán in Tramacastilla",
   "photoCredit": "Pacopac",

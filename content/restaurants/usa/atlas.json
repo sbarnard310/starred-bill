@@ -19,9 +19,10 @@
   "placeId": "ChIJC1jB5Y4F9YgRSA2D0d6UDJc",
   "michelinId": "1195994",
   "diets": [
-    "vegetarian",
-    "gluten-free"
+    "vegetarian-menu",
+    "vegetarian"
   ],
   "chef": "Freddy Money",
-  "chefSource": "michelin"
+  "chefSource": "site",
+  "dietsManual": true
 }

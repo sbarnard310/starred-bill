@@ -19,15 +19,17 @@
   "michelinId": "1192030",
   "diets": [
     "vegetarian-menu",
+    "vegetarian",
     "vegan"
   ],
   "chef": "Zineb \"Zizi\" Hattab",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNoteDe": "Degustationsmenü",
   "dinnerNoteFr": "Menu dégustation",
   "dinnerNoteIt": "Menu degustazione",
   "noLunch": true,
   "lunchNoteDe": "Nur abends",
   "lunchNoteFr": "Uniquement le soir",
-  "lunchNoteIt": "Solo a cena"
+  "lunchNoteIt": "Solo a cena",
+  "dietsManual": true
 }

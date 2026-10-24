@@ -25,12 +25,8 @@
   "lng": 3.2436174,
   "placeId": "ChIJ_U5RIotX9kcRfrx1zox-DaQ",
   "michelinId": "1024413",
-  "diets": [
-    "vegetarian",
-    "gluten-free"
-  ],
   "chef": "Adrien Descouls",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "stay": {
     "kind": "hotel",
     "name": "Origines Hôtel",

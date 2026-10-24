@@ -26,9 +26,9 @@
   "michelinId": "471115",
   "diets": [
     "vegetarian-menu",
-    "vegetarian",
-    "vegan"
+    "vegetarian"
   ],
   "chef": "Gareth McCaughey",
-  "chefSource": "michelin"
+  "chefSource": "site",
+  "dietsManual": true
 }

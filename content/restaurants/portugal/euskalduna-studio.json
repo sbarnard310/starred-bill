@@ -17,11 +17,8 @@
   "lng": -8.600956,
   "placeId": "ChIJ03K2iu5kJA0RsUPYh2Oi5nc",
   "michelinId": "528188",
-  "diets": [
-    "vegetarian"
-  ],
   "chef": "Vasco Coelho Santos",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNotePt": "Menu de degustação (outros menus desde 150 €)",
   "lunch": 160,
   "lunchType": "menu",

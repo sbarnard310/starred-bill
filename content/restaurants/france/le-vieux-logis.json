@@ -29,12 +29,10 @@
   "michelinId": "13344",
   "diets": [
     "vegetarian-menu",
-    "vegetarian",
-    "vegan",
-    "gluten-free"
+    "vegetarian"
   ],
   "chef": "Vincent Arnould",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "stay": {
     "kind": "hotel",
     "name": "Le Vieux Logis",
@@ -53,5 +51,6 @@
     ],
     "note": "4-star hotel in Trémolat.",
     "checked": "2026-10-23"
-  }
+  },
+  "dietsManual": true
 }

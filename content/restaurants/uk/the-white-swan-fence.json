@@ -23,8 +23,7 @@
   "placeId": "ChIJ-5MZifqQe0gRs8own2MRFKI",
   "michelinId": "460346",
   "diets": [
-    "vegetarian",
-    "gluten-free"
+    "vegetarian"
   ],
   "chef": "Tom Parker",
   "chefSource": "site",
@@ -37,5 +36,6 @@
   "photoSourceType": "commons",
   "photoWidth": 1000,
   "photoHeight": 750,
-  "photoChecked": "2026-10-13"
+  "photoChecked": "2026-10-13",
+  "dietsManual": true
 }

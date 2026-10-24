@@ -24,9 +24,9 @@
   "michelinId": "501284",
   "diets": [
     "vegetarian-menu",
-    "vegetarian",
-    "vegan"
+    "vegetarian"
   ],
   "chef": "Hywel Griffith",
-  "chefSource": "michelin"
+  "chefSource": "site",
+  "dietsManual": true
 }

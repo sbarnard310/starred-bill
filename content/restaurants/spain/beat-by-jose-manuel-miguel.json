@@ -24,11 +24,8 @@
   "lng": 0.060922,
   "placeId": "ChIJq3gVhRv-nRIRGoxBecdcLlQ",
   "michelinId": "524978",
-  "diets": [
-    "vegetarian-menu"
-  ],
   "chef": "José Manuel Miguel",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "stay": {
     "kind": "hotel",
     "name": "The Cookbook Hotel & Spa",

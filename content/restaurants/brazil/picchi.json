@@ -17,11 +17,12 @@
   "placeId": "ChIJE5cyxftvVwEREVYAEV6Vul4",
   "michelinId": "479711",
   "diets": [
-    "gluten-free"
+    "vegetarian"
   ],
   "chef": "Pier Paolo Picchi",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNotePt": "Menu de degustação (outros menus desde R$427)",
   "lunchNote": "Open for lunch · Tue–Sun",
-  "lunchNotePt": "Aberto ao almoço · ter.–dom."
+  "lunchNotePt": "Aberto ao almoço · ter.–dom.",
+  "dietsManual": true
 }

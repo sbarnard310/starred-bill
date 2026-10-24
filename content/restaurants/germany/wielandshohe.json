@@ -17,11 +17,13 @@
   "placeId": "ChIJa_eB91XbmUcRJp2g6_BYWhE",
   "michelinId": "77962",
   "diets": [
+    "vegetarian-menu",
     "vegetarian"
   ],
   "chef": "Vincent Klink and Jörg Neth",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 135 €)",
   "lunchNote": "Open for lunch · Wed–Sat",
-  "lunchNoteDe": "Mittags geöffnet · Mi–Sa"
+  "lunchNoteDe": "Mittags geöffnet · Mi–Sa",
+  "dietsManual": true
 }

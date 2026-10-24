@@ -27,9 +27,9 @@
   "placeId": "ChIJl35ibktpiEcRl2_R2UG-c1Y",
   "michelinId": "234904",
   "diets": [
-    "vegetarian",
-    "gluten-free"
+    "vegetarian"
   ],
   "chef": "Alfredo Russo",
-  "chefSource": "press"
+  "chefSource": "press",
+  "dietsManual": true
 }

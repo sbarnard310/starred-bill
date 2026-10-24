@@ -26,11 +26,9 @@
   "placeId": "ChIJGblIsnCQORMR3Jg0iYQN2jo",
   "michelinId": "156002",
   "diets": [
-    "vegetarian-menu",
-    "vegetarian",
-    "vegan",
-    "gluten-free"
+    "vegetarian"
   ],
-  "chef": "Serena Falco e Michelina Fischetti",
-  "chefSource": "michelin"
+  "chef": "Michelina Fischetti",
+  "chefSource": "site",
+  "dietsManual": true
 }

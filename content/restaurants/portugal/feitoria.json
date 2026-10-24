@@ -22,9 +22,10 @@
     "vegetarian"
   ],
   "chef": "André Cruz",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNotePt": "Menu de degustação (outros menus desde 115 €)",
   "noLunch": true,
   "lunchNote": "Dinner only",
-  "lunchNotePt": "Só jantar"
+  "lunchNotePt": "Só jantar",
+  "dietsManual": true
 }

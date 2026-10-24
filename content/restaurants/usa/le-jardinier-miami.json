@@ -24,9 +24,10 @@
   "diets": [
     "vegetarian"
   ],
-  "chef": "Alain Verzeroli",
-  "chefSource": "michelin",
+  "chef": "Mario Da Silva",
+  "chefSource": "site",
   "wine": 150,
   "lunchWine": 150,
-  "dinnerNote": "Seasonal Expression menu, 5 courses (also à la carte)"
+  "dinnerNote": "Seasonal Expression menu, 5 courses (also à la carte)",
+  "dietsManual": true
 }

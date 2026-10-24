@@ -21,9 +21,9 @@
   "placeId": "ChIJz6tr4WttiEcRIcL8mxYWE1I",
   "michelinId": "533893",
   "diets": [
-    "vegetarian",
-    "gluten-free"
+    "vegan"
   ],
   "chef": "Federico Zanasi",
-  "chefSource": "michelin"
+  "chefSource": "site",
+  "dietsManual": true
 }

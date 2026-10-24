@@ -22,9 +22,10 @@
     "vegan"
   ],
   "chef": "Frank Rosin and Oliver Engelke",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNoteDe": "Schmackofatz-Menü mit Wein- oder alkoholfreier Begleitung (auch à la carte, Hauptgänge 51 €)",
   "noLunch": true,
   "lunchNote": "Dinner only",
-  "lunchNoteDe": "Nur abends"
+  "lunchNoteDe": "Nur abends",
+  "dietsManual": true
 }

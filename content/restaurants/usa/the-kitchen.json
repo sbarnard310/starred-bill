@@ -19,14 +19,8 @@
   "lng": -121.501422,
   "placeId": "ChIJxyCQgkfamoARaCjr8r-6xcM",
   "michelinId": "559371",
-  "diets": [
-    "vegetarian",
-    "vegan",
-    "halal",
-    "kosher"
-  ],
   "chef": "Kelly McCown",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "bookingWindow": {
     "type": "monthly",
     "day": 1,

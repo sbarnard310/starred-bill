@@ -18,11 +18,13 @@
   "placeId": "ChIJeU-U6jLPCUcRxJrBSPAOAdo",
   "michelinId": "488340",
   "diets": [
+    "vegetarian-menu",
     "vegetarian"
   ],
   "chef": "Marcus Blonkowski",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 68 €)",
   "lunchNote": "Open for lunch · Saturdays",
-  "lunchNoteDe": "Mittags geöffnet · Samstag"
+  "lunchNoteDe": "Mittags geöffnet · Samstag",
+  "dietsManual": true
 }

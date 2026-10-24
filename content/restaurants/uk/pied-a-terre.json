@@ -28,8 +28,8 @@
     "vegetarian",
     "vegan"
   ],
-  "chef": "David Moore",
-  "chefSource": "michelin",
+  "chef": "Aggelos Kassais",
+  "chefSource": "site",
   "photo": "pied-a-terre.jpg",
   "photoAlt": "The white townhouse of Pied à Terre with its black awning on Charlotte Street, London",
   "photoCredit": "Ewan Munro",
@@ -39,5 +39,6 @@
   "photoSourceType": "commons",
   "photoWidth": 562,
   "photoHeight": 1000,
-  "photoChecked": "2026-10-13"
+  "photoChecked": "2026-10-13",
+  "dietsManual": true
 }

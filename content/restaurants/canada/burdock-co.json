@@ -19,10 +19,6 @@
   "lng": -123.1006287,
   "placeId": "ChIJmzrgKOJzhlQRdCAkZGcyLv0",
   "michelinId": "1198908",
-  "diets": [
-    "vegetarian",
-    "vegan"
-  ],
   "chef": "Andrea Carlson",
-  "chefSource": "michelin"
+  "chefSource": "site"
 }

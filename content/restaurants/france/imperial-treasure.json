@@ -34,9 +34,9 @@
   "placeId": "ChIJtcwJ8sRv5kcRK1e1LOEyoHg",
   "michelinId": "1186891",
   "diets": [
-    "vegetarian",
-    "vegan"
+    "vegetarian"
   ],
   "chef": "Gao Xiaosheng",
-  "chefSource": "press"
+  "chefSource": "press",
+  "dietsManual": true
 }

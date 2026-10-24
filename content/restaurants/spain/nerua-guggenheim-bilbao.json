@@ -29,11 +29,6 @@
   "lng": -2.932337,
   "placeId": "ChIJ1TWrrCZQTg0REIRME28oDuA",
   "michelinId": "218659",
-  "diets": [
-    "vegetarian",
-    "vegan",
-    "gluten-free"
-  ],
   "chef": "Josean Alija",
-  "chefSource": "michelin"
+  "chefSource": "site"
 }

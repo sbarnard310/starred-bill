@@ -28,10 +28,11 @@
   "michelinId": "1196425",
   "diets": [
     "vegetarian",
-    "vegan"
+    "gluten-free"
   ],
   "chef": "Iñaki Aldrey",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNote": "Tasting menu, 15 courses",
-  "dinnerNoteEs": "Menú degustación, 15 pases"
+  "dinnerNoteEs": "Menú degustación, 15 pases",
+  "dietsManual": true
 }

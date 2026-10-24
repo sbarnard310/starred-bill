@@ -25,10 +25,6 @@
   "lng": 3.8827366,
   "placeId": "ChIJw_cXBlX69UcRYIFZWHUTzWI",
   "michelinId": "1209994",
-  "diets": [
-    "vegetarian",
-    "gluten-free"
-  ],
   "chef": "Yoan Delorme",
-  "chefSource": "michelin"
+  "chefSource": "press"
 }

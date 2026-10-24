@@ -27,8 +27,10 @@
   "placeId": "ChIJe_d6d0OZ4jARL0uQgNHQRPI",
   "michelinId": "1192382",
   "diets": [
+    "vegetarian-menu",
     "vegetarian"
   ],
   "chef": "Thitid Tassanakajohn",
-  "chefSource": "site"
+  "chefSource": "site",
+  "dietsManual": true
 }

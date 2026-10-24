@@ -25,12 +25,8 @@
   "lng": 2.4667838,
   "placeId": "ChIJIaPDBcpJ5kcR4fqDF-LY1ss",
   "michelinId": "1983",
-  "diets": [
-    "vegetarian",
-    "vegan"
-  ],
   "chef": "Guillaume Guibet",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "stay": {
     "kind": "hotel",
     "name": "Domaine Le Verbois",

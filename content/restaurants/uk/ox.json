@@ -25,9 +25,7 @@
   "michelinId": "399109",
   "diets": [
     "vegetarian-menu",
-    "vegetarian",
-    "vegan",
-    "gluten-free"
+    "vegetarian"
   ],
   "chef": "Stephen Toman",
   "chefSource": "press",
@@ -40,5 +38,6 @@
   "photoSourceType": "commons",
   "photoWidth": 667,
   "photoHeight": 1000,
-  "photoChecked": "2026-10-13"
+  "photoChecked": "2026-10-13",
+  "dietsManual": true
 }

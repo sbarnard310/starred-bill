@@ -25,11 +25,11 @@
   "diets": [
     "vegetarian-menu",
     "vegetarian",
-    "vegan",
-    "gluten-free"
+    "vegan"
   ],
   "chef": "Szilárd Tóth",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNoteHu": "Kóstolómenü",
-  "lunchNoteHu": "Ebédmenü"
+  "lunchNoteHu": "Ebédmenü",
+  "dietsManual": true
 }

@@ -26,12 +26,8 @@
   "lng": 1.960895,
   "placeId": "ChIJOR_iFiAOpRIR8lBob-9HLlE",
   "michelinId": "222768",
-  "diets": [
-    "vegetarian",
-    "gluten-free"
-  ],
-  "chef": "Oriol Rovira Prat",
-  "chefSource": "michelin",
+  "chef": "Oriol Rovira",
+  "chefSource": "site",
   "stay": {
     "kind": "rooms",
     "name": "Els Casals",

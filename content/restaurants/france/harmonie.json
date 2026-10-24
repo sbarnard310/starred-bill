@@ -32,9 +32,9 @@
   "placeId": "ChIJm7L39Gkpw0cRahkY97qla7k",
   "michelinId": "1245894",
   "diets": [
-    "vegetarian",
-    "vegan"
+    "vegetarian"
   ],
   "chef": "Mathieu Boutroy",
-  "chefSource": "michelin"
+  "chefSource": "site",
+  "dietsManual": true
 }

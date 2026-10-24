@@ -18,9 +18,8 @@
   "placeId": "ChIJO7pVFaDDSjARUI1CyPfDXwM",
   "michelinId": "1201632",
   "diets": [
-    "vegetarian",
-    "vegan",
-    "gluten-free"
+    "vegetarian-menu",
+    "vegetarian"
   ],
   "chef": "Su Kim Hock",
   "chefSource": "site",
@@ -34,5 +33,6 @@
     "via": "website",
     "source": "https://www.restaurant-aujardin.com",
     "checked": "2026-10-10"
-  }
+  },
+  "dietsManual": true
 }

@@ -26,7 +26,8 @@
     "vegetarian"
   ],
   "chef": "Egor Hopp",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 115 €)",
-  "lunchNoteDe": "Mittagsmenü"
+  "lunchNoteDe": "Mittagsmenü",
+  "dietsManual": true
 }

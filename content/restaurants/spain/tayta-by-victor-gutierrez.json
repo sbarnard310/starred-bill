@@ -31,5 +31,6 @@
     "gluten-free"
   ],
   "chef": "Víctor Gutiérrez and Paula Gutiérrez",
-  "chefSource": "michelin"
+  "chefSource": "site",
+  "dietsManual": true
 }

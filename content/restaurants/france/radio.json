@@ -26,14 +26,16 @@
   "placeId": "ChIJfSamIjUa90cRf4ZAWFAnKwM",
   "michelinId": "10778",
   "diets": [
-    "vegetarian"
+    "vegetarian",
+    "vegan"
   ],
   "chef": "Wilfrid Chaplain",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "stay": {
     "kind": "hotel",
     "name": "Hôtel Radio",
     "url": "https://www.hotel-radio.fr/pourquoi-le-radio/",
     "checked": "2026-10-23"
-  }
+  },
+  "dietsManual": true
 }

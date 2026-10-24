@@ -29,11 +29,10 @@
   "michelinId": "286100",
   "diets": [
     "vegetarian-menu",
-    "vegetarian",
-    "gluten-free"
+    "vegetarian"
   ],
   "chef": "Benjamin Reilhes",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "stay": {
     "kind": "hotel",
     "name": "Le Clair de la Plume",
@@ -41,5 +40,6 @@
     "url": "https://www.clairplume.com/dormir-hotel/",
     "note": "A four-star hotel with nine rooms and suites in Grignan; the owners’ other houses add more rooms.",
     "checked": "2026-10-23"
-  }
+  },
+  "dietsManual": true
 }

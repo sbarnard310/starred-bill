@@ -26,11 +26,6 @@
   "lng": 3.0600982,
   "placeId": "ChIJLTMS4jHVwkcRlug3jZAabNU",
   "michelinId": "1210708",
-  "diets": [
-    "vegetarian-menu",
-    "vegetarian",
-    "vegan"
-  ],
   "chef": "Valentina Giacobbe and Julien Ingaud-Jaubert",
-  "chefSource": "michelin"
+  "chefSource": "site"
 }

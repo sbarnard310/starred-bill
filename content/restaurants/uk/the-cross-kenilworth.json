@@ -26,12 +26,10 @@
   "diets": [
     "vegetarian-menu",
     "vegetarian",
-    "vegan",
-    "gluten-free",
-    "halal"
+    "vegan"
   ],
   "chef": "Adam Bennett",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "bookingWindow": {
     "type": "rolling",
     "months": 3,
@@ -49,5 +47,6 @@
   "photoSourceType": "commons",
   "photoWidth": 1000,
   "photoHeight": 750,
-  "photoChecked": "2026-10-13"
+  "photoChecked": "2026-10-13",
+  "dietsManual": true
 }

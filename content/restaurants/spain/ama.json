@@ -31,10 +31,6 @@
   "lng": -2.077632,
   "placeId": "ChIJAZQRmjNLUA0RgFFWA4d__jU",
   "michelinId": "1201841",
-  "diets": [
-    "vegetarian",
-    "gluten-free"
-  ],
-  "chef": "Gorka Rico / Javier Rivero",
-  "chefSource": "michelin"
+  "chef": "Javier Rivero and Gorka Rico",
+  "chefSource": "site"
 }

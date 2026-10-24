@@ -26,10 +26,11 @@
   "placeId": "ChIJKf8-B1IZ2jERKoqDakRkZy0",
   "michelinId": "570537",
   "diets": [
-    "vegetarian-menu",
     "vegetarian",
-    "vegan"
+    "vegan",
+    "gluten-free"
   ],
   "chef": "Laurence Tan",
-  "chefSource": "site"
+  "chefSource": "site",
+  "dietsManual": true
 }

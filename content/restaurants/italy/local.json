@@ -19,10 +19,6 @@
   "lng": 12.345893,
   "placeId": "ChIJdzcksyeufkcRKolpWat_x9M",
   "michelinId": "496366",
-  "diets": [
-    "vegetarian",
-    "gluten-free"
-  ],
   "chef": "Salvatore Sodano",
-  "chefSource": "michelin"
+  "chefSource": "site"
 }

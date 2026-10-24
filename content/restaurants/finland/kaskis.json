@@ -19,7 +19,6 @@
   "placeId": "ChIJQZaTtfx2jEYRWtEVeMZa6DA",
   "michelinId": "481859",
   "diets": [
-    "vegetarian-menu",
     "vegetarian",
     "vegan"
   ],
@@ -28,5 +27,6 @@
   "dinnerNoteFi": "Maistelumenu",
   "noLunch": true,
   "lunchNote": "Dinner only",
-  "lunchNoteFi": "Vain illallinen"
+  "lunchNoteFi": "Vain illallinen",
+  "dietsManual": true
 }

@@ -24,14 +24,11 @@
   "placeId": "ChIJbTkU-5obdkgR8MpRXunujW4",
   "michelinId": "1210872",
   "diets": [
-    "vegetarian-menu",
     "vegetarian",
-    "gluten-free",
-    "halal",
-    "kosher"
+    "gluten-free"
   ],
-  "chef": "Adejoké Bakare",
-  "chefSource": "michelin",
+  "chef": "Adejoké (Joké) Bakare",
+  "chefSource": "site",
   "bookingWindow": {
     "type": "rolling",
     "days": 60,
@@ -39,5 +36,6 @@
     "via": "website",
     "source": "https://www.chishuru.com/reservations",
     "checked": "2026-10-10"
-  }
+  },
+  "dietsManual": true
 }

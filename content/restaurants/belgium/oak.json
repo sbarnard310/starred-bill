@@ -18,10 +18,11 @@
   "placeId": "ChIJwfnUD2txw0cR0_9xO0hX36c",
   "michelinId": "450399",
   "diets": [
+    "vegetarian-menu",
     "vegetarian"
   ],
   "chef": "Marcelo Ballardin",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 75)",
   "dinnerNoteFr": "Menu dégustation (autres menus dès 75 €)",
   "lunch": 159,
@@ -30,5 +31,6 @@
   "lunchNoteNl": "Zelfde menu bij de lunch · di–vr",
   "lunchNoteFr": "Même menu le midi · mar.–ven.",
   "lunchSourceType": "site",
-  "lunchSource": "https://oakgent.be/menu/"
+  "lunchSource": "https://oakgent.be/menu/",
+  "dietsManual": true
 }

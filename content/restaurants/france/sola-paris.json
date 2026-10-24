@@ -27,9 +27,6 @@
   "lng": 2.3483585,
   "placeId": "ChIJZ3ZKSOFx5kcRJa7xR8aZU_g",
   "michelinId": "318144",
-  "diets": [
-    "vegetarian"
-  ],
   "chef": "Kosuke Nabeta",
-  "chefSource": "michelin"
+  "chefSource": "site"
 }

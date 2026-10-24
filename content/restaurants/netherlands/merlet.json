@@ -19,13 +19,10 @@
   "michelinId": "213917",
   "diets": [
     "vegetarian-menu",
-    "vegetarian",
-    "vegan",
-    "gluten-free",
-    "halal"
+    "vegetarian"
   ],
   "chef": "Marco Helsloot",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNoteNl": "Ontdek Merlet Menu, 4 gangen (5 gangen € 155, 6 gangen € 185)",
   "wine": 60,
   "lunch": 125,
@@ -70,5 +67,6 @@
     ],
     "note": "A 28-room hotel with a swimming pool beside the dunes in Schoorl.",
     "checked": "2026-10-23"
-  }
+  },
+  "dietsManual": true
 }

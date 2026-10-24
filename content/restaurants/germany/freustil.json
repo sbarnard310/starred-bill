@@ -26,5 +26,6 @@
   "lunchNote": "Dinner only",
   "lunchNoteDe": "Nur abends",
   "chef": "Ralf Haug",
-  "chefSource": "press"
+  "chefSource": "press",
+  "dietsManual": true
 }

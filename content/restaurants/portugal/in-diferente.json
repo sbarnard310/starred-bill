@@ -21,11 +21,8 @@
   "lng": -8.6769615,
   "placeId": "ChIJjYLThhNvJA0RQDzPq7l3Yd0",
   "michelinId": "1090774",
-  "diets": [
-    "vegetarian"
-  ],
   "chef": "Angélica Salvador",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNotePt": "Menu de degustação (outros menus desde 100 €)",
   "lunch": 130,
   "lunchType": "menu",

@@ -25,11 +25,6 @@
   "lng": 7.0956199,
   "placeId": "ChIJLasKjcrUzRIR0DrxgIX9Ga4",
   "michelinId": "1134",
-  "diets": [
-    "vegetarian",
-    "vegan",
-    "gluten-free"
-  ],
   "chef": "Michaël Fulci",
-  "chefSource": "michelin"
+  "chefSource": "site"
 }

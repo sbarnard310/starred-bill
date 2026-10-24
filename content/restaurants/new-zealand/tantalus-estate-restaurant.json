@@ -30,8 +30,9 @@
   "diets": [
     "vegetarian",
     "vegan",
-    "halal"
+    "gluten-free"
   ],
   "chef": "Axel Curtet-Latreille",
-  "chefSource": "michelin"
+  "chefSource": "site",
+  "dietsManual": true
 }

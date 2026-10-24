@@ -32,8 +32,9 @@
     "vegan"
   ],
   "chef": "Fabian Fuchs",
-  "chefSource": "michelin",
+  "chefSource": "press",
   "lunchNoteDe": "Mittagsmenü",
   "lunchNoteFr": "Menu déjeuner",
-  "lunchNoteIt": "Menu pranzo"
+  "lunchNoteIt": "Menu pranzo",
+  "dietsManual": true
 }

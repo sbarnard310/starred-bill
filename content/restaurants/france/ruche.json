@@ -32,8 +32,7 @@
   "michelinId": "1202267",
   "diets": [
     "vegetarian-menu",
-    "vegetarian",
-    "gluten-free"
+    "vegetarian"
   ],
   "chef": "Cybèle Idelot",
   "chefSource": "michelin",
@@ -46,5 +45,6 @@
     "fromNote": "including breakfast",
     "note": "Five country-style rooms (one suite) in the former post house beside the restaurant, bookable Thursday to Sunday; tourist tax is extra.",
     "checked": "2026-10-23"
-  }
+  },
+  "dietsManual": true
 }

@@ -20,9 +20,6 @@
   "lng": -4.417923,
   "placeId": "ChIJ26NsLJj3cg0R7M1qfOYrukA",
   "michelinId": "1190422",
-  "diets": [
-    "gluten-free"
-  ],
   "chef": "Dani Carnero",
-  "chefSource": "michelin"
+  "chefSource": "site"
 }

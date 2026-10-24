@@ -23,13 +23,8 @@
   "lng": 6.0383506,
   "placeId": "ChIJI2nckjJ9jEcRyEbVNo13ODI",
   "michelinId": "172004",
-  "diets": [
-    "vegetarian",
-    "vegan",
-    "gluten-free"
-  ],
   "chef": "Philippe Chevrier",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab CHF 210)",
   "dinnerNoteFr": "Menu dégustation (autres menus dès CHF 210)",
   "dinnerNoteIt": "Menu degustazione (altri menu da CHF 210)",

@@ -19,13 +19,15 @@
   "placeId": "ChIJA5Bcbqn-PEYRiN3lhF2jfvw",
   "michelinId": "479557",
   "diets": [
+    "vegetarian-menu",
     "vegetarian",
     "vegan"
   ],
   "chef": "Christopher Haatuft",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNoteNb": "Smaksmeny",
   "noLunch": true,
   "lunchNote": "Dinner only",
-  "lunchNoteNb": "Kun middag"
+  "lunchNoteNb": "Kun middag",
+  "dietsManual": true
 }

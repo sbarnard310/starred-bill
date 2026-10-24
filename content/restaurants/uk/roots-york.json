@@ -27,10 +27,7 @@
   "diets": [
     "vegetarian-menu",
     "vegetarian",
-    "vegan",
-    "gluten-free",
-    "halal",
-    "kosher"
+    "gluten-free"
   ],
   "chef": "Will Lockwood",
   "chefSource": "site",
@@ -43,5 +40,6 @@
   "photoSourceType": "commons",
   "photoWidth": 1000,
   "photoHeight": 750,
-  "photoChecked": "2026-10-13"
+  "photoChecked": "2026-10-13",
+  "dietsManual": true
 }

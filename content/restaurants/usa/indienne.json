@@ -24,10 +24,9 @@
   "diets": [
     "vegetarian-menu",
     "vegetarian",
-    "vegan",
-    "gluten-free",
-    "halal"
+    "vegan"
   ],
   "chef": "Sujan Sarkar",
-  "chefSource": "michelin"
+  "chefSource": "site",
+  "dietsManual": true
 }

@@ -32,9 +32,6 @@
   "lng": 2.155568,
   "placeId": "ChIJb8OJj6GjpBIR15m3GfR9CsY",
   "michelinId": "1207068",
-  "diets": [
-    "gluten-free"
-  ],
   "chef": "Enric Buendía",
-  "chefSource": "michelin"
+  "chefSource": "site"
 }

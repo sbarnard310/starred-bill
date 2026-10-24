@@ -28,12 +28,8 @@
   "lng": 2.508246,
   "placeId": "ChIJa5nqvesruxIRRhvP_PwzwFs",
   "michelinId": "217635",
-  "diets": [
-    "vegetarian",
-    "gluten-free"
-  ],
   "chef": "Víctor Torres",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "photo": "les-magnolies.jpg",
   "photoAlt": "The white villa of Les Magnòlies on Passeig Mossèn Anton Serres, Arbúcies",
   "photoCredit": "Enfo",

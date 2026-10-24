@@ -24,13 +24,8 @@
   "lng": 2.163593,
   "placeId": "ChIJ5c4QTsGipBIRaakXWVSPrSY",
   "michelinId": "506019",
-  "diets": [
-    "vegetarian",
-    "vegan",
-    "gluten-free"
-  ],
   "chef": "Jordi Vilà",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNote": "Tasting menu (also à la carte)",
   "dinnerNoteEs": "Menú degustación (también a la carta)",
   "photo": "alkimia.jpg",

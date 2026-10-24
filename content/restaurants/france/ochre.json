@@ -29,11 +29,9 @@
   "michelinId": "1184103",
   "diets": [
     "vegetarian-menu",
-    "vegetarian",
-    "vegan",
-    "halal",
-    "kosher"
+    "vegetarian"
   ],
   "chef": "Baptiste Renouard",
-  "chefSource": "michelin"
+  "chefSource": "press",
+  "dietsManual": true
 }

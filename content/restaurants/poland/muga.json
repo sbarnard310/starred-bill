@@ -19,13 +19,14 @@
   "placeId": "ChIJx52iXTlbBEcRzijuioddnik",
   "michelinId": "1191388",
   "diets": [
-    "vegetarian",
-    "gluten-free"
+    "vegetarian-menu",
+    "vegetarian"
   ],
   "dinnerNotePl": "Menu degustacyjne (inne menu od PLN 560)",
   "noLunch": true,
   "lunchNote": "Dinner only",
   "lunchNotePl": "Tylko kolacje",
   "chef": "Artur Skotarczyk",
-  "chefSource": "press"
+  "chefSource": "press",
+  "dietsManual": true
 }

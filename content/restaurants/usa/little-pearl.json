@@ -24,10 +24,9 @@
   "diets": [
     "vegetarian",
     "vegan",
-    "gluten-free",
-    "halal",
-    "kosher"
+    "gluten-free"
   ],
   "chef": "Aaron Silverman",
-  "chefSource": "press"
+  "chefSource": "press",
+  "dietsManual": true
 }

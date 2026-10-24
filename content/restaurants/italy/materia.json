@@ -26,10 +26,10 @@
   "placeId": "ChIJi4p5PJ2dhkcRLQk3JH4gRew",
   "michelinId": "519598",
   "diets": [
-    "vegetarian",
-    "vegan",
-    "gluten-free"
+    "vegetarian-menu",
+    "vegetarian"
   ],
   "chef": "Davide Caranchini",
-  "chefSource": "michelin"
+  "chefSource": "site",
+  "dietsManual": true
 }

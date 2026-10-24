@@ -20,14 +20,8 @@
   "lng": -99.1620626,
   "placeId": "ChIJ1bf3HX__0YURqxkTy1DKP9s",
   "michelinId": "1208187",
-  "diets": [
-    "vegetarian",
-    "vegan",
-    "gluten-free",
-    "kosher"
-  ],
-  "chef": "Lucho Martinez",
-  "chefSource": "michelin",
+  "chef": "Lucho Martínez",
+  "chefSource": "site",
   "photo": "em.jpg",
   "photoAlt": "The front of Em on Calle Tonalá, Roma Norte, Mexico City",
   "photoCredit": "Tbhotch",

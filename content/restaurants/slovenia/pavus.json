@@ -18,10 +18,11 @@
   "placeId": "ChIJ6XE1IKJzZUcRqlpjITuFfwc",
   "michelinId": "1164922",
   "diets": [
-    "vegetarian"
+    "vegetarian",
+    "gluten-free"
   ],
   "chef": "Marko Pavčnik",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNoteSl": "Degustacijski meni, 10 hodov (5 hodov od 100 €)",
   "lunch": 160,
   "lunchType": "menu",
@@ -31,5 +32,6 @@
   "lunchSource": "https://www.pavus.si/kulinarika/Menu",
   "areaSl": "Laško",
   "wine": 90,
-  "lunchWine": 90
+  "lunchWine": 90,
+  "dietsManual": true
 }

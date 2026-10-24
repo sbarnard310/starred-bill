@@ -22,9 +22,10 @@
     "vegetarian",
     "vegan"
   ],
-  "chef": "Nicolai Peter Wiedmer",
-  "chefSource": "michelin",
+  "chef": "Nicolai P. Wiedmer",
+  "chefSource": "site",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 119 €)",
   "lunchNote": "Open for lunch · Wed–Fri, Sun",
-  "lunchNoteDe": "Mittags geöffnet · Mi–Fr, So"
+  "lunchNoteDe": "Mittags geöffnet · Mi–Fr, So",
+  "dietsManual": true
 }

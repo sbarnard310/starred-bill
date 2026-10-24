@@ -26,11 +26,6 @@
   "lng": -1.8541648,
   "placeId": "ChIJAcjIi8FfZg0RjKDK4L3pG_4",
   "michelinId": "1200223",
-  "diets": [
-    "vegetarian",
-    "vegan",
-    "gluten-free"
-  ],
   "chef": "Juan Monteagudo",
-  "chefSource": "michelin"
+  "chefSource": "site"
 }

@@ -17,13 +17,8 @@
   "lng": 13.3676288,
   "placeId": "ChIJAQBUZrVRqEcRdYAZYRLFNbA",
   "michelinId": "527643",
-  "diets": [
-    "vegetarian-menu",
-    "vegetarian",
-    "halal"
-  ],
   "chef": "Nicholas Hahn",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 110 €)",
   "noLunch": true,
   "lunchNote": "Dinner only",

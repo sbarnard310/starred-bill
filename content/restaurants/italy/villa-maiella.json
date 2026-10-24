@@ -23,15 +23,8 @@
   "lng": 14.2047054,
   "placeId": "ChIJRflHgMhWMBMRDZUqNJXb6cE",
   "michelinId": "136659",
-  "diets": [
-    "vegetarian",
-    "vegan",
-    "gluten-free",
-    "halal",
-    "kosher"
-  ],
   "chef": "Arcangelo Tinari",
-  "chefSource": "michelin",
+  "chefSource": "press",
   "stay": {
     "kind": "hotel",
     "name": "Villa Maiella",

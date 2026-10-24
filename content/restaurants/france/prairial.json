@@ -27,11 +27,8 @@
   "lng": 4.8229022,
   "placeId": "ChIJmSs1dP_q9EcRwmrEzLAo5fg",
   "michelinId": "474220",
-  "diets": [
-    "gluten-free"
-  ],
   "chef": "Gaëtan Gentil",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "photo": "prairial.jpg",
   "photoAlt": "The shopfront of Prairial on rue Chavanne, Lyon",
   "photoCredit": "Romainbehar",

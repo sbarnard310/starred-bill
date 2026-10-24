@@ -21,11 +21,6 @@
   "lng": -73.602868,
   "placeId": "ChIJpUJKRhIZyUwRI58nhwYTWf0",
   "michelinId": "1215902",
-  "diets": [
-    "vegetarian",
-    "vegan",
-    "gluten-free"
-  ],
   "chef": "Simon Mathys",
-  "chefSource": "michelin"
+  "chefSource": "press"
 }

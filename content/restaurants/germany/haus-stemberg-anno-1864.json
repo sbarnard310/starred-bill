@@ -21,8 +21,9 @@
     "vegetarian"
   ],
   "chef": "Sascha Stemberg",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 119 €)",
   "lunchNote": "Open for lunch · Sat–Sun",
-  "lunchNoteDe": "Mittags geöffnet · Sa–So"
+  "lunchNoteDe": "Mittags geöffnet · Sa–So",
+  "dietsManual": true
 }

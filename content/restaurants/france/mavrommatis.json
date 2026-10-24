@@ -28,8 +28,9 @@
   "placeId": "ChIJBUtKLOxx5kcRddHIo2VDCew",
   "michelinId": "5916",
   "diets": [
-    "vegetarian-menu"
+    "vegetarian"
   ],
   "chef": "Andréas Mavrommatis",
-  "chefSource": "site"
+  "chefSource": "site",
+  "dietsManual": true
 }

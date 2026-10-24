@@ -33,11 +33,6 @@
   "lng": 2.165843,
   "placeId": "ChIJZ6c9NnyjpBIR1rxzO3DHze4",
   "michelinId": "1199746",
-  "diets": [
-    "vegetarian",
-    "vegan",
-    "gluten-free"
-  ],
   "chef": "Jordi Tarré",
-  "chefSource": "michelin"
+  "chefSource": "site"
 }

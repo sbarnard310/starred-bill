@@ -18,11 +18,10 @@
   "placeId": "ChIJIVXumiDPCUcR4Bsn7EjbqMw",
   "michelinId": "351459",
   "diets": [
-    "vegetarian",
-    "vegan"
+    "vegetarian"
   ],
   "chef": "Stephan Mießner",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 99 €)",
   "lunch": 125,
   "lunchType": "menu",
@@ -39,5 +38,6 @@
   "photoSourceType": "commons",
   "photoWidth": 1000,
   "photoHeight": 563,
-  "photoChecked": "2026-10-13"
+  "photoChecked": "2026-10-13",
+  "dietsManual": true
 }

@@ -22,12 +22,8 @@
   "lng": 15.9880697,
   "placeId": "ChIJ6YHB8FTWZUcRVtizzodGlhA",
   "michelinId": "547912",
-  "diets": [
-    "vegetarian",
-    "kosher"
-  ],
   "chef": "Bruno Vokal",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNoteHr": "Degustacijski meni (ostali meniji od 125 €)",
   "lunchNoteHr": "Meni za ručak"
 }

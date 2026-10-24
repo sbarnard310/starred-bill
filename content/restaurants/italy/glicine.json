@@ -21,7 +21,6 @@
   "placeId": "ChIJlWZ_kWiXOxMRbmB5HIkKCVg",
   "michelinId": "1179776",
   "diets": [
-    "vegetarian-menu",
     "vegetarian",
     "vegan",
     "gluten-free"
@@ -35,5 +34,6 @@
     "url": "https://www.hotelsantacaterina.it/en/rooms-and-suites/",
     "note": "Clifftop hotel above Amalfi; 66 rooms and suites plus 12 in the annexe Casa Marchesa.",
     "checked": "2026-10-23"
-  }
+  },
+  "dietsManual": true
 }

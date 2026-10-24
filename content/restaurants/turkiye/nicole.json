@@ -19,13 +19,13 @@
   "michelinId": "1195531",
   "diets": [
     "vegetarian-menu",
-    "vegetarian",
-    "gluten-free"
+    "vegetarian"
   ],
   "dinnerNoteTr": "Tadım menüsü (diğer menüler TRY 7,500 itibarıyla)",
   "noLunch": true,
   "lunchNote": "Dinner only",
   "lunchNoteTr": "Yalnızca akşam yemeği",
   "chef": "Serkan Aksoy",
-  "chefSource": "press"
+  "chefSource": "press",
+  "dietsManual": true
 }

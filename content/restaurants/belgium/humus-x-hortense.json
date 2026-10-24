@@ -24,16 +24,16 @@
   "placeId": "ChIJ08qMpn3Ew0cRnJofBbugJ1Y",
   "michelinId": "537346",
   "diets": [
+    "vegetarian-only",
     "vegetarian-menu",
     "vegetarian",
-    "vegan",
-    "halal",
-    "kosher"
+    "vegan"
   ],
   "chef": "Nicolas Decloedt",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNoteNl": "Proeverijmenu",
   "dinnerNoteFr": "Menu dégustation",
   "lunchNoteNl": "Lunchmenu",
-  "lunchNoteFr": "Menu déjeuner"
+  "lunchNoteFr": "Menu déjeuner",
+  "dietsManual": true
 }

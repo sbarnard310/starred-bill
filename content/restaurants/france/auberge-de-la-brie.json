@@ -25,10 +25,6 @@
   "lng": 2.8562352,
   "placeId": "ChIJndkN6qmn6EcRKI0VFt9m9uI",
   "michelinId": "2605",
-  "diets": [
-    "vegetarian",
-    "gluten-free"
-  ],
   "chef": "Alain Pavard",
-  "chefSource": "michelin"
+  "chefSource": "site"
 }

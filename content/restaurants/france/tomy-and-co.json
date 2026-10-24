@@ -28,10 +28,9 @@
   "placeId": "ChIJc-FTvNlv5kcRhrLo0P6xZIg",
   "michelinId": "515432",
   "diets": [
-    "vegetarian",
-    "vegan",
-    "gluten-free"
+    "vegetarian"
   ],
   "chef": "Tomy Gousset",
-  "chefSource": "michelin"
+  "chefSource": "site",
+  "dietsManual": true
 }

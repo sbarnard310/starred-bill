@@ -25,9 +25,6 @@
   "lng": -3.3650768,
   "placeId": "ChIJM8__UVFeEEgR3EW8jPJQRCE",
   "michelinId": "1000376",
-  "diets": [
-    "vegetarian"
-  ],
   "chef": "Julien Corderoch",
-  "chefSource": "michelin"
+  "chefSource": "site"
 }

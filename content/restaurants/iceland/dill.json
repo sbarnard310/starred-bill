@@ -21,9 +21,6 @@
   "lng": -21.922443,
   "placeId": "ChIJxeTXptJ01kgR4Dcvo45O5Cs",
   "michelinId": "1186101",
-  "diets": [
-    "vegetarian"
-  ],
   "chef": "Gunnar Karl Gíslason",
-  "chefSource": "michelin"
+  "chefSource": "site"
 }

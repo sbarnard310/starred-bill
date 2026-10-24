@@ -17,6 +17,7 @@
   "placeId": "ChIJoXuiqLzpwEcR4Mf1UIP4448",
   "michelinId": "1195888",
   "diets": [
+    "vegetarian-menu",
     "vegetarian"
   ],
   "dinnerNoteNl": "8-gangenmenu (dinermenu's vanaf € 125)",
@@ -27,5 +28,6 @@
   "lunchSourceType": "site",
   "lunchSource": "https://www.studio.restaurant/menu",
   "chef": "Gilbert von Berg",
-  "chefSource": "press"
+  "chefSource": "press",
+  "dietsManual": true
 }

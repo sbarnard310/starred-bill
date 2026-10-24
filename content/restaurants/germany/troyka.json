@@ -17,10 +17,12 @@
   "placeId": "ChIJi2WSBwCmwEcRwsG1yrMCJ9U",
   "michelinId": "1194999",
   "diets": [
-    "vegetarian"
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan"
   ],
   "chef": "Alexander Wulf and Marcel Kokot",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "lunch": 179,
   "lunchType": "menu",
   "lunchNote": "Same menu at lunch · Sundays",
@@ -28,5 +30,6 @@
   "lunchSourceType": "site",
   "lunchSource": "https://www.troyka.de/vegetarisches-menue",
   "dinnerNote": "Menu",
-  "dinnerNoteDe": "Menü"
+  "dinnerNoteDe": "Menü",
+  "dietsManual": true
 }

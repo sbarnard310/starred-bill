@@ -30,5 +30,6 @@
   "lunchSourceType": "site",
   "lunchSource": "https://www.carcasse.be/menu",
   "chef": "Timon Michiels",
-  "chefSource": "press"
+  "chefSource": "press",
+  "dietsManual": true
 }

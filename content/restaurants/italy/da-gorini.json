@@ -21,9 +21,9 @@
   "placeId": "ChIJm4ZgVPF7KxMRhWFgp9w2rPY",
   "michelinId": "548309",
   "diets": [
-    "vegetarian",
-    "vegan"
+    "vegetarian"
   ],
   "chef": "Gianluca Gorini",
-  "chefSource": "michelin"
+  "chefSource": "site",
+  "dietsManual": true
 }

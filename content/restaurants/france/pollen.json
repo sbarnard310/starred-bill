@@ -27,9 +27,6 @@
   "lng": 4.8035568,
   "placeId": "ChIJ__-IioXrtRIRlEJPMJWgcoA",
   "michelinId": "1000267",
-  "diets": [
-    "vegetarian"
-  ],
   "chef": "Mathieu Desmarest",
-  "chefSource": "michelin"
+  "chefSource": "site"
 }

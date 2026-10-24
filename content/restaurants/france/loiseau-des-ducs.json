@@ -23,13 +23,8 @@
   "lng": 5.0412609,
   "placeId": "ChIJR6vaU-id8kcRWcnBwy7TYHE",
   "michelinId": "414353",
-  "diets": [
-    "vegetarian",
-    "vegan",
-    "gluten-free"
-  ],
   "chef": "Iulian Fistos",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "photo": "loiseau-des-ducs.jpg",
   "photoAlt": "The front of Loiseau des Ducs in Dijon, with its name and red awnings",
   "photoCredit": "François de Dijon",

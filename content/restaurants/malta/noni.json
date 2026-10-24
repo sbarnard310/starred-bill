@@ -18,11 +18,8 @@
   "lng": 14.5160236,
   "placeId": "ChIJYTUJgilFDhMRGiVIvsQ7HyA",
   "michelinId": "1184172",
-  "diets": [
-    "vegetarian"
-  ],
   "chef": "Jonathan Brincat",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNoteMt": "Menu tad-degustazzjoni",
   "noLunch": true,
   "lunchNote": "Dinner only",

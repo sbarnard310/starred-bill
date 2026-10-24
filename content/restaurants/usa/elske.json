@@ -26,5 +26,6 @@
     "gluten-free"
   ],
   "chef": "David Posey and Anna Posey",
-  "chefSource": "michelin"
+  "chefSource": "site",
+  "dietsManual": true
 }

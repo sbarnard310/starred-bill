@@ -27,9 +27,7 @@
   "placeId": "ChIJwUpwgAaf4jARIi0DQx2JJ-4",
   "michelinId": "546908",
   "diets": [
-    "vegetarian-menu",
-    "vegetarian",
-    "vegan"
+    "vegetarian-menu"
   ],
   "chef": "Duangporn Songvisava and Dylan Jones",
   "chefSource": "press",
@@ -42,5 +40,6 @@
   "photoSourceType": "commons",
   "photoWidth": 747,
   "photoHeight": 1000,
-  "photoChecked": "2026-10-13"
+  "photoChecked": "2026-10-13",
+  "dietsManual": true
 }

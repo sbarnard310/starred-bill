@@ -26,8 +26,9 @@
   "placeId": "ChIJx3v2JzHwyRIRGIYbELz2_l4",
   "michelinId": "9400",
   "diets": [
-    "vegetarian"
+    "vegetarian-menu"
   ],
   "chef": "Dan Bessoudo",
-  "chefSource": "michelin"
+  "chefSource": "site",
+  "dietsManual": true
 }

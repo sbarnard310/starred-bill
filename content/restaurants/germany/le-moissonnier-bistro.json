@@ -16,11 +16,8 @@
   "lng": 6.9524362,
   "placeId": "ChIJw9dt7KElv0cRJZZpH5nyJpg",
   "michelinId": "74577",
-  "diets": [
-    "vegetarian"
-  ],
   "chef": "Eric Menchon",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 51 €)",
   "lunch": 113,
   "lunchType": "menu",

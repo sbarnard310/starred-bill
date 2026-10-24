@@ -18,11 +18,8 @@
   "lng": 12.2825454,
   "placeId": "ChIJrwsmEmoUdkcRZx538vGmTW4",
   "michelinId": "1196906",
-  "diets": [
-    "vegetarian"
-  ],
   "chef": "Hannes Fussel",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 140 €)",
   "lunchNote": "Open for lunch · Saturdays",
   "lunchNoteDe": "Mittags geöffnet · Samstag"

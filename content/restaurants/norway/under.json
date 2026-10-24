@@ -23,6 +23,7 @@
   "placeId": "ChIJfTdBe1KCN0YRVQwjWTcjyDU",
   "michelinId": "1186418",
   "diets": [
+    "vegetarian-menu",
     "vegetarian"
   ],
   "dinnerNoteNb": "Fast meny, 10–12 retter",
@@ -40,5 +41,6 @@
   "photoHeight": 721,
   "photoChecked": "2026-10-13",
   "dinner": 2750,
-  "source": "https://under.no/mat-og-drikke/"
+  "source": "https://under.no/mat-og-drikke/",
+  "dietsManual": true
 }

@@ -24,10 +24,11 @@
   "michelinId": "207627",
   "diets": [
     "vegetarian-menu",
-    "vegetarian"
+    "vegetarian",
+    "gluten-free"
   ],
   "chef": "Tommy Banks",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "photo": "black-swan-oldstead.jpg",
   "photoAlt": "The stone Black Swan at Oldstead in snow, with its name above the porch",
   "photoCredit": "Gordon Hatton",
@@ -61,5 +62,6 @@
     ],
     "note": "Rooms are in Ashberry House, across the road and in the garden.",
     "checked": "2026-10-23"
-  }
+  },
+  "dietsManual": true
 }

@@ -22,9 +22,7 @@
   "placeId": "ChIJ3XRbnfXDhkcRc_KG7r7ylF4",
   "michelinId": "69160",
   "diets": [
-    "vegetarian-menu",
-    "vegetarian",
-    "gluten-free"
+    "vegetarian"
   ],
   "chef": "Claudio Sadler",
   "chefSource": "site",
@@ -41,5 +39,6 @@
   "photoSourceType": "commons",
   "photoWidth": 750,
   "photoHeight": 1000,
-  "photoChecked": "2026-10-13"
+  "photoChecked": "2026-10-13",
+  "dietsManual": true
 }

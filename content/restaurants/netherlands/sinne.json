@@ -21,13 +21,8 @@
   "lng": 4.8942525,
   "placeId": "ChIJzwzS5owJxkcRDZfCjur-OPU",
   "michelinId": "423504",
-  "diets": [
-    "vegetarian",
-    "halal",
-    "kosher"
-  ],
   "chef": "Alexander Ioannou",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 85)",
   "lunchNoteNl": "Lunchmenu"
 }

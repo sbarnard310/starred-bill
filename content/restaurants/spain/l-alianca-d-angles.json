@@ -28,12 +28,8 @@
   "lng": 2.6391,
   "placeId": "ChIJfc2wK5PZuhIRIGFGGDFv-No",
   "michelinId": "217573",
-  "diets": [
-    "vegetarian",
-    "gluten-free"
-  ],
   "chef": "Àlex Carrera",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "photo": "l-alianca-d-angles.jpg",
   "photoAlt": "The orange facade and entrance of L'Aliança d'Anglès, with its name on the wall",
   "photoCredit": "Enric",

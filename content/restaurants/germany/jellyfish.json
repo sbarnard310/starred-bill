@@ -24,5 +24,6 @@
   "lunchNote": "Open for lunch · Sat–Sun",
   "lunchNoteDe": "Mittags geöffnet · Sa–So",
   "chef": "Stefan Fäth",
-  "chefSource": "site"
+  "chefSource": "site",
+  "dietsManual": true
 }

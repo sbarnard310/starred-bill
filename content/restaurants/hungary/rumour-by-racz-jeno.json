@@ -17,13 +17,13 @@
   "placeId": "ChIJd_7RAxXdQUcRoxz3MvqPlcQ",
   "michelinId": "570328",
   "diets": [
-    "vegetarian",
-    "gluten-free"
+    "vegetarian-menu"
   ],
   "chef": "Jenő Rácz",
   "chefSource": "site",
   "dinnerNoteHu": "Kóstolómenü (további menük: HUF 47,900-tól)",
   "noLunch": true,
   "lunchNote": "Dinner only",
-  "lunchNoteHu": "Csak vacsora"
+  "lunchNoteHu": "Csak vacsora",
+  "dietsManual": true
 }

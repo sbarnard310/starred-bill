@@ -25,10 +25,9 @@
   "placeId": "ChIJvTns8RgMZ0gRqZyo1qSy_FQ",
   "michelinId": "491371",
   "diets": [
-    "vegetarian-menu",
-    "vegetarian",
-    "vegan"
+    "vegetarian"
   ],
   "chef": "Killian Walsh",
-  "chefSource": "site"
+  "chefSource": "site",
+  "dietsManual": true
 }

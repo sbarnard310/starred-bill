@@ -26,10 +26,6 @@
   "lng": -2.8251327,
   "placeId": "ChIJ9SXKh9n9EUgRp3eRl9ycAcI",
   "michelinId": "1193728",
-  "diets": [
-    "vegetarian-menu",
-    "vegetarian"
-  ],
   "chef": "Samuel Selosse",
-  "chefSource": "michelin"
+  "chefSource": "site"
 }

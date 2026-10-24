@@ -23,14 +23,12 @@
   "placeId": "ChIJd3dWxU1lWkcRkI96X_C98Tg",
   "michelinId": "1186676",
   "diets": [
-    "vegetarian",
-    "vegan",
-    "gluten-free",
-    "kosher"
+    "vegetarian"
   ],
-  "chef": "Marko Derić",
-  "chefSource": "michelin",
+  "chef": "Marko Đerić",
+  "chefSource": "site",
   "dinnerNoteSr": "Дегустациони мени (остали менији од RSD 14,500)",
   "areaSr": "Београд",
-  "lunchNoteSr": "Мени за ручак"
+  "lunchNoteSr": "Мени за ручак",
+  "dietsManual": true
 }

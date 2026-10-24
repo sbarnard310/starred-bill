@@ -31,5 +31,6 @@
     "gluten-free"
   ],
   "chef": "Alessandro Marino",
-  "chefSource": "michelin"
+  "chefSource": "site",
+  "dietsManual": true
 }

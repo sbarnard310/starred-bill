@@ -29,5 +29,6 @@
   "lunchSourceType": "site",
   "lunchSource": "https://essenciarestaurant.hu/degusztacios-menu/",
   "chef": "Tiago Sabarigo",
-  "chefSource": "press"
+  "chefSource": "press",
+  "dietsManual": true
 }

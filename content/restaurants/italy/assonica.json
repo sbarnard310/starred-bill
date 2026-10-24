@@ -27,10 +27,9 @@
   "michelinId": "1194516",
   "diets": [
     "vegetarian-menu",
-    "vegetarian",
-    "vegan",
-    "gluten-free"
+    "vegetarian"
   ],
   "chef": "Alex Manzoni and Vittorio Manzoni",
-  "chefSource": "michelin"
+  "chefSource": "press",
+  "dietsManual": true
 }

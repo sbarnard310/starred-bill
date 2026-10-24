@@ -19,12 +19,12 @@
   "michelinId": "80462",
   "diets": [
     "vegetarian-menu",
-    "vegetarian",
-    "vegan"
+    "vegetarian"
   ],
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 59 €)",
   "lunchNote": "Open for lunch · Wed–Sat",
   "lunchNoteDe": "Mittags geöffnet · Mi–Sa",
   "chef": "Franz Feckl",
-  "chefSource": "press"
+  "chefSource": "press",
+  "dietsManual": true
 }

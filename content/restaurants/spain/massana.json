@@ -30,10 +30,6 @@
   "lng": 2.81958,
   "placeId": "ChIJ1WHjceDmuhIRgdW3srr16BA",
   "michelinId": "220306",
-  "diets": [
-    "vegetarian",
-    "vegan"
-  ],
-  "chef": "Pere Massana",
-  "chefSource": "michelin"
+  "chef": "Pere Massana Roger",
+  "chefSource": "site"
 }

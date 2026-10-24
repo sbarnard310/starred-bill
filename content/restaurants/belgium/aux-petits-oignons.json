@@ -18,12 +18,8 @@
   "lng": 4.8801357,
   "placeId": "ChIJ8SBAMuNxwUcRq_cazJGMljI",
   "michelinId": "254100",
-  "diets": [
-    "vegetarian",
-    "vegan"
-  ],
-  "chef": "Stéphane Lefebvre",
-  "chefSource": "michelin",
+  "chef": "Stéphane Lefèbvre",
+  "chefSource": "site",
   "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 75)",
   "dinnerNoteFr": "Menu dégustation (autres menus dès 75 €)",
   "lunch": 145,

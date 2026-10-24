@@ -20,11 +20,6 @@
   "lng": 15.28835,
   "placeId": "ChIJGc2KHqIRFBMRbkF6lgkhsAA",
   "michelinId": "1192627",
-  "diets": [
-    "vegetarian",
-    "vegan",
-    "gluten-free"
-  ],
   "chef": "Dalila Grillo",
-  "chefSource": "michelin"
+  "chefSource": "site"
 }

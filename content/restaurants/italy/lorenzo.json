@@ -26,10 +26,9 @@
   "placeId": "ChIJ50jKFh0K1RIRUbWjmFgZEmk",
   "michelinId": "135164",
   "diets": [
-    "vegetarian",
-    "vegan",
-    "gluten-free"
+    "vegetarian"
   ],
   "chef": "Gioacchino Pontrelli",
-  "chefSource": "press"
+  "chefSource": "press",
+  "dietsManual": true
 }

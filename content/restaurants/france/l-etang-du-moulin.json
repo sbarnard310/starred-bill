@@ -26,15 +26,17 @@
   "placeId": "ChIJrcQ7C_D2jUcRCeFW9woJs5s",
   "michelinId": "1185",
   "diets": [
+    "vegetarian-menu",
     "vegetarian"
   ],
   "chef": "Jacques Barnachon",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "stay": {
     "kind": "hotel",
     "name": "L’hôtel by Céline",
     "url": "https://www.etang-du-moulin.com/lhotel-by-celine/les-chambres-de-lhotel/",
     "note": "A 4-star hotel beside the restaurant, with six room categories and a Junior Suite.",
     "checked": "2026-10-23"
-  }
+  },
+  "dietsManual": true
 }

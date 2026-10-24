@@ -21,12 +21,8 @@
   "lng": -73.9828,
   "placeId": "ChIJU7iTdXhZwokR2n5XFHPVdAY",
   "michelinId": "468067",
-  "diets": [
-    "vegetarian",
-    "vegan"
-  ],
   "chef": "Thomas Chen",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "photo": "tuome.jpg",
   "photoAlt": "The dark front and Tuome sign at 536 East 5th Street, New York",
   "photoCredit": "Transpoman",

@@ -25,13 +25,8 @@
   "lng": 5.4950802,
   "placeId": "ChIJVeukgnJLjUcRk2YcKmik8yA",
   "michelinId": "11044",
-  "diets": [
-    "vegetarian-menu",
-    "vegetarian",
-    "vegan"
-  ],
   "chef": "Laurent Barberot",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "stay": {
     "kind": "hotel",
     "name": "La Chaumière",

@@ -23,8 +23,8 @@
   "placeId": "ChIJpeuc5VrcQUcRbYqJIm-xk4M",
   "michelinId": "262697",
   "diets": [
-    "vegetarian",
-    "gluten-free"
+    "vegetarian-menu",
+    "vegetarian"
   ],
   "chef": "Jenő Rácz",
   "chefSource": "site",
@@ -39,5 +39,6 @@
   "photoSourceType": "commons",
   "photoWidth": 1000,
   "photoHeight": 750,
-  "photoChecked": "2026-10-13"
+  "photoChecked": "2026-10-13",
+  "dietsManual": true
 }

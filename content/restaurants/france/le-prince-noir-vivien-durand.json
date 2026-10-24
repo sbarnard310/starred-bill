@@ -31,5 +31,6 @@
     "vegetarian"
   ],
   "chef": "Vivien Durand",
-  "chefSource": "michelin"
+  "chefSource": "site",
+  "dietsManual": true
 }

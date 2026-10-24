@@ -18,12 +18,13 @@
   "placeId": "ChIJ0xE_APoomUcR1otajztXXU4",
   "michelinId": "76081",
   "diets": [
-    "vegetarian-menu",
-    "vegetarian"
+    "vegetarian",
+    "vegan"
   ],
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 89 €)",
   "lunchNote": "Open for lunch · Thu–Sun",
   "lunchNoteDe": "Mittags geöffnet · Do–So",
   "chef": "Joachim Kaiser",
-  "chefSource": "press"
+  "chefSource": "press",
+  "dietsManual": true
 }

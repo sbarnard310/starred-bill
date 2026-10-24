@@ -18,12 +18,8 @@
   "lng": 15.8889282,
   "placeId": "ChIJs0fJFVgvNRMRAjWXBrw2jCU",
   "michelinId": "480078",
-  "diets": [
-    "vegetarian",
-    "vegan"
-  ],
   "chef": "Rudolf Štefan",
-  "chefSource": "michelin",
+  "chefSource": "press",
   "dinnerNoteHr": "Degustacijski meni (ostali meniji od 165 €)",
   "noLunch": true,
   "lunchNote": "Dinner only",

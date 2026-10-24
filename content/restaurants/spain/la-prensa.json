@@ -23,9 +23,6 @@
   "lng": -0.8746479,
   "placeId": "ChIJDx1wggMVWQ0RutblRxGThwk",
   "michelinId": "224684",
-  "diets": [
-    "gluten-free"
-  ],
   "chef": "Marisa Barberán",
-  "chefSource": "michelin"
+  "chefSource": "site"
 }

@@ -31,7 +31,7 @@
     "vegetarian"
   ],
   "chef": "Jérôme Gourmelen",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "stay": {
     "kind": "hotel",
     "name": "Ar Men Du",
@@ -39,5 +39,6 @@
     "url": "https://www.men-du.com/chambres-suites/",
     "note": "A 3-star seafront hotel with 15 rooms and 2 suites facing the ocean.",
     "checked": "2026-10-23"
-  }
+  },
+  "dietsManual": true
 }

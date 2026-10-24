@@ -24,11 +24,6 @@
   "lng": 11.1065928,
   "placeId": "ChIJuamR9fhzgkcRRU7Sa0Wwgqs",
   "michelinId": "199559",
-  "diets": [
-    "vegetarian",
-    "vegan",
-    "gluten-free"
-  ],
   "chef": "Edoardo Fumagalli",
-  "chefSource": "michelin"
+  "chefSource": "site"
 }

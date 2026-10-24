@@ -18,11 +18,7 @@
   "placeId": "ChIJs1GkErW3xUcRlVjcvv_4TXs",
   "michelinId": "460305",
   "diets": [
-    "vegetarian",
-    "vegan",
-    "gluten-free",
-    "halal",
-    "kosher"
+    "vegetarian"
   ],
   "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 119)",
   "lunchNote": "Open for lunch · Mon–Sat",
@@ -46,5 +42,6 @@
     "url": "https://www.centralparkvoorburg.com/en/hotel/",
     "note": "Boutique hotel in an 18th-century listed country house with 14 rooms and suites.",
     "checked": "2026-10-23"
-  }
+  },
+  "dietsManual": true
 }

@@ -28,11 +28,8 @@
   "lng": -3.841251,
   "placeId": "ChIJV8box5nxQQ0Rd1mn354IgBs",
   "michelinId": "1241234",
-  "diets": [
-    "vegetarian"
-  ],
   "chef": "Víctor Infantes and Saúl González",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNote": "Pardo tasting menu",
   "dinnerNoteEs": "Menú degustación Pardo"
 }

@@ -25,13 +25,8 @@
   "lng": 1.2913203,
   "placeId": "ChIJi7X11auErBIReZXIwTHVR7w",
   "michelinId": "8113",
-  "diets": [
-    "vegetarian",
-    "vegan",
-    "gluten-free"
-  ],
   "chef": "Pascal Bardet",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "stay": {
     "kind": "rooms",
     "name": "La Maison du Gindreau",

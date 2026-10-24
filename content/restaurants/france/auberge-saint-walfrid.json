@@ -25,13 +25,8 @@
   "lng": 7.044991,
   "placeId": "ChIJb3wI4ZlKlEcR7f3ARAqIoJw",
   "michelinId": "8472",
-  "diets": [
-    "vegetarian-menu",
-    "vegetarian",
-    "vegan"
-  ],
   "chef": "Stephan Schneider",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "stay": {
     "kind": "hotel",
     "name": "Auberge Saint-Walfrid",

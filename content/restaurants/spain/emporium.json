@@ -28,11 +28,8 @@
   "lng": 3.07609,
   "placeId": "ChIJQbdSuT-KuhIR1NRNYmLIzrk",
   "michelinId": "228280",
-  "diets": [
-    "gluten-free"
-  ],
-  "chef": "Marius Jordá i Giró / Joan Jordá i Giró",
-  "chefSource": "michelin",
+  "chef": "Màrius Jordà i Giró and Joan Jordà i Giró",
+  "chefSource": "site",
   "stay": {
     "kind": "hotel",
     "name": "Hotel Restaurant Empòrium",

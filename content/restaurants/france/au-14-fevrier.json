@@ -23,9 +23,6 @@
   "lng": 4.8263815,
   "placeId": "ChIJo5P-gavr9EcRCo1zWC9T0wU",
   "michelinId": "281900",
-  "diets": [
-    "vegetarian"
-  ],
   "chef": "Tsuyoshi Arai",
-  "chefSource": "michelin"
+  "chefSource": "site"
 }

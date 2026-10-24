@@ -26,12 +26,6 @@
   "lng": 2.3458979,
   "placeId": "ChIJ_WtRdqJx5kcRejxK758qNRs",
   "michelinId": "1186288",
-  "diets": [
-    "vegetarian",
-    "gluten-free",
-    "halal",
-    "kosher"
-  ],
   "chef": "Éric Trochon",
-  "chefSource": "michelin"
+  "chefSource": "site"
 }

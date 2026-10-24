@@ -17,13 +17,15 @@
   "placeId": "ChIJxeVHXKXNHkcRZUxdFx1GLEA",
   "michelinId": "1199252",
   "diets": [
+    "vegetarian-menu",
     "vegetarian"
   ],
   "chef": "Andrea Camastra",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNotePl": "Menu degustacyjne (inne menu od PLN 595)",
   "noLunch": true,
   "lunchNote": "Dinner only",
   "lunchNotePl": "Tylko kolacje",
-  "areaPl": "Warszawa"
+  "areaPl": "Warszawa",
+  "dietsManual": true
 }

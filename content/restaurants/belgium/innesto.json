@@ -15,11 +15,8 @@
   "lng": 5.3687051,
   "placeId": "ChIJRV2xBGcmwUcRAIzH_wY8Cbw",
   "michelinId": "209829",
-  "diets": [
-    "vegetarian"
-  ],
   "chef": "Koen Verjans",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "lunch": 60,
   "lunchType": "menu",
   "lunchWine": 25,

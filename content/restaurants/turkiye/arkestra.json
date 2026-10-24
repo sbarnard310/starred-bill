@@ -20,8 +20,9 @@
     "vegetarian"
   ],
   "chef": "Cenk Debensason",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNoteTr": "Tadım menüsü",
   "noLunch": true,
-  "lunchNoteTr": "Yalnızca akşam yemeği"
+  "lunchNoteTr": "Yalnızca akşam yemeği",
+  "dietsManual": true
 }

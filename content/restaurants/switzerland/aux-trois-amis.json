@@ -16,16 +16,16 @@
   "placeId": "ChIJcYl7jscajkcRbDOPJYK2Xrk",
   "michelinId": "510220",
   "diets": [
-    "vegetarian",
-    "gluten-free"
+    "vegetarian"
   ],
   "chef": "Marc Joshua Engel",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab CHF 130)",
   "dinnerNoteFr": "Menu dégustation (autres menus dès CHF 130)",
   "dinnerNoteIt": "Menu degustazione (altri menu da CHF 130)",
   "lunchNote": "Open for lunch · Tue–Sat",
   "lunchNoteDe": "Mittags geöffnet · Di–Sa",
   "lunchNoteFr": "Ouvert le midi · mar.–sam.",
-  "lunchNoteIt": "Aperto a pranzo · mar–sab"
+  "lunchNoteIt": "Aperto a pranzo · mar–sab",
+  "dietsManual": true
 }

@@ -23,11 +23,8 @@
   "lng": 5.2312885,
   "placeId": "ChIJ9Xb3E6oti0cRn1xDBxIjark",
   "michelinId": "327218",
-  "diets": [
-    "vegetarian"
-  ],
   "chef": "Romain Hubert",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "stay": {
     "kind": "rooms",
     "name": "La Chaumée",

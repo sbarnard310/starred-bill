@@ -23,10 +23,6 @@
   "lng": 0.9288137,
   "placeId": "ChIJ-X-crxA_qRIR9z99i1P3kQA",
   "michelinId": "1198153",
-  "diets": [
-    "vegetarian",
-    "gluten-free"
-  ],
   "chef": "Julien Razemon",
-  "chefSource": "michelin"
+  "chefSource": "site"
 }

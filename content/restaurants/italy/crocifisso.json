@@ -20,9 +20,10 @@
   "placeId": "ChIJ0Xc3Yq8pEhMRNPtfqeGJyXg",
   "michelinId": "393940",
   "diets": [
-    "vegetarian",
-    "gluten-free"
+    "vegetarian-menu",
+    "vegetarian"
   ],
   "chef": "Marco Baglieri",
-  "chefSource": "michelin"
+  "chefSource": "site",
+  "dietsManual": true
 }

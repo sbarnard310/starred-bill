@@ -24,12 +24,8 @@
   "lng": -0.1559683,
   "placeId": "ChIJK7-slC5OVQ0Rgi5WjPBTjPU",
   "michelinId": "255271",
-  "diets": [
-    "vegetarian",
-    "vegan"
-  ],
   "chef": "Thibaut Gamba",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "stay": {
     "kind": "hotel",
     "name": "Logis de la Cadène",

@@ -22,9 +22,8 @@
   "michelinId": "1241048",
   "diets": [
     "vegetarian",
-    "vegan",
-    "halal",
-    "kosher"
+    "gluten-free",
+    "halal"
   ],
   "chef": "Nick Honeyman and Zennon Wijlens",
   "chefSource": "press",
@@ -36,5 +35,6 @@
       "url": "https://www.laliste.com/places/paris-butter-auckland-nz"
     }
   ],
-  "rankingsChecked": "2026-10-24"
+  "rankingsChecked": "2026-10-24",
+  "dietsManual": true
 }

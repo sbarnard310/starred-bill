@@ -17,14 +17,14 @@
   "placeId": "ChIJBfhCHh7yuEcRXYd4LgjkcPs",
   "michelinId": "72112",
   "diets": [
-    "vegetarian",
-    "vegan",
-    "halal"
+    "vegetarian-menu",
+    "vegetarian"
   ],
   "chef": "Björn Freitag",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 125 €)",
   "noLunch": true,
   "lunchNote": "Dinner only",
-  "lunchNoteDe": "Nur abends"
+  "lunchNoteDe": "Nur abends",
+  "dietsManual": true
 }

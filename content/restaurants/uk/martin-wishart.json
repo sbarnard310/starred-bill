@@ -24,9 +24,7 @@
   "diets": [
     "vegetarian-menu",
     "vegetarian",
-    "vegan",
-    "halal",
-    "kosher"
+    "vegan"
   ],
   "chef": "Martin Wishart",
   "chefSource": "site",
@@ -38,5 +36,6 @@
       "url": "https://www.laliste.com/places/martin-wishart-edinburgh-gb"
     }
   ],
-  "rankingsChecked": "2026-10-24"
+  "rankingsChecked": "2026-10-24",
+  "dietsManual": true
 }

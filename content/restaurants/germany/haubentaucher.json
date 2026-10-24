@@ -15,11 +15,8 @@
   "lng": 11.766113,
   "placeId": "ChIJKfxrx7iOnUcRvszyPBP72Iw",
   "michelinId": "524996",
-  "diets": [
-    "vegetarian"
-  ],
   "chef": "Alois Neuschmid",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 115 €)",
   "lunchNote": "Open for lunch · Wed–Sat",
   "lunchNoteDe": "Mittags geöffnet · Mi–Sa"

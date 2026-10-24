@@ -15,16 +15,8 @@
   "lng": 5.0216548,
   "placeId": "ChIJc8feAl9yxkcRvHwtWQdAju8",
   "michelinId": "256343",
-  "diets": [
-    "vegetarian-menu",
-    "vegetarian",
-    "vegan",
-    "gluten-free",
-    "halal",
-    "kosher"
-  ],
   "chef": "André Gerrits",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 105)",
   "lunch": 165,
   "lunchType": "menu",

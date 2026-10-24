@@ -24,5 +24,6 @@
     "vegetarian"
   ],
   "chef": "Garrett Byrne",
-  "chefSource": "michelin"
+  "chefSource": "site",
+  "dietsManual": true
 }

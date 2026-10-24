@@ -25,9 +25,6 @@
   "lng": 2.2942663,
   "placeId": "ChIJR2puoJNv5kcRKwrZ40ztbfA",
   "michelinId": "280978",
-  "diets": [
-    "vegetarian"
-  ],
   "chef": "Frédéric Simonin",
-  "chefSource": "michelin"
+  "chefSource": "site"
 }

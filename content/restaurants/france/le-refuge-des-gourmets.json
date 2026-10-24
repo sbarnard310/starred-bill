@@ -23,10 +23,6 @@
   "lng": 6.3282703,
   "placeId": "ChIJJUD3ImJsjEcRYG6jY8dyT0U",
   "michelinId": "4486",
-  "diets": [
-    "vegetarian",
-    "gluten-free"
-  ],
   "chef": "Hubert Chanove",
-  "chefSource": "michelin"
+  "chefSource": "site"
 }

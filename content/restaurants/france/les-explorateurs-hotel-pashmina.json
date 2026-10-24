@@ -26,9 +26,8 @@
   "placeId": "ChIJowBiMmKGiUcRtHCsSbbOnso",
   "michelinId": "491764",
   "diets": [
-    "vegetarian",
-    "vegan",
-    "gluten-free"
+    "vegetarian-menu",
+    "vegetarian"
   ],
   "chef": "Josselin Jeanblanc",
   "chefSource": "press",
@@ -38,5 +37,6 @@
     "url": "https://www.hotelpashmina.com/fr/offres-speciales",
     "note": "A five-star hotel in Val Thorens with the starred restaurant inside.",
     "checked": "2026-10-23"
-  }
+  },
+  "dietsManual": true
 }

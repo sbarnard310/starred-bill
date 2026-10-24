@@ -15,11 +15,12 @@
   "placeId": "ChIJ5ysjNpyFsUcRPCWBm4c4T9U",
   "michelinId": "73539",
   "diets": [
+    "vegetarian-menu",
     "vegetarian",
     "vegan"
   ],
-  "chef": "Heinz Otto Wehmann",
-  "chefSource": "michelin",
+  "chef": "Heinz O. Wehmann",
+  "chefSource": "site",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 132 €)",
   "lunchNote": "Open for lunch · Mon–Sat",
   "lunchNoteDe": "Mittags geöffnet · Mo–Sa",
@@ -32,5 +33,6 @@
   "photoSourceType": "commons",
   "photoWidth": 1000,
   "photoHeight": 750,
-  "photoChecked": "2026-10-13"
+  "photoChecked": "2026-10-13",
+  "dietsManual": true
 }

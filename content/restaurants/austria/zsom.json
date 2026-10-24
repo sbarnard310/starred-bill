@@ -21,12 +21,8 @@
   "lng": 16.3718646,
   "placeId": "ChIJ6w5ZaIwHbUcR6ZoNnsCe_-k",
   "michelinId": "1204322",
-  "diets": [
-    "vegetarian",
-    "vegan"
-  ],
   "chef": "Diego Briones",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNoteDe": "Degustationsmenü",
   "lunchNoteDe": "Mittagsmenü"
 }

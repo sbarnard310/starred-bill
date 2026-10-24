@@ -25,10 +25,6 @@
   "lng": 7.246068,
   "placeId": "ChIJPdCsHnD9k0cRlD2A8wLKFDE",
   "michelinId": "487619",
-  "diets": [
-    "vegetarian",
-    "gluten-free"
-  ],
   "chef": "Yannick Guth",
-  "chefSource": "michelin"
+  "chefSource": "site"
 }

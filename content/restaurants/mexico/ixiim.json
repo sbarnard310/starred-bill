@@ -33,5 +33,6 @@
     "gluten-free"
   ],
   "chef": "Luis Ronzón",
-  "chefSource": "michelin"
+  "chefSource": "site",
+  "dietsManual": true
 }

@@ -22,11 +22,11 @@
   "lunchSource": "https://omakaseje.com/restaurants/ld156282",
   "michelinId": "1192936",
   "diets": [
+    "vegetarian-menu",
     "vegetarian",
-    "vegan",
-    "gluten-free",
     "halal"
   ],
   "chef": "Takuji Takahashi",
-  "chefSource": "press"
+  "chefSource": "press",
+  "dietsManual": true
 }

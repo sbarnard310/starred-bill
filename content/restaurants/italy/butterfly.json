@@ -24,9 +24,11 @@
   "placeId": "ChIJj1hkPsOD1RIRNLtpCdQWpqM",
   "michelinId": "138694",
   "diets": [
+    "vegetarian-menu",
     "vegetarian",
-    "gluten-free"
+    "vegan"
   ],
-  "chef": "Fabrizio Girasoli and Andrea Girasoli",
-  "chefSource": "michelin"
+  "chef": "Fabrizio Girasoli",
+  "chefSource": "site",
+  "dietsManual": true
 }

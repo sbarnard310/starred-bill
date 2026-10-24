@@ -19,12 +19,10 @@
   "placeId": "ChIJCf9p82aBhYARQolIoRsK6fE",
   "michelinId": "1185781",
   "diets": [
-    "vegetarian",
-    "vegan",
-    "gluten-free"
+    "vegetarian"
   ],
   "chef": "Pim Techamuanvivit",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "rankings": [
     {
       "list": "oad-north-america",
@@ -40,5 +38,6 @@
     "url": "https://www.hotelkabuki.com/",
     "note": "Nari is in Hotel Kabuki in Japantown.",
     "checked": "2026-10-23"
-  }
+  },
+  "dietsManual": true
 }

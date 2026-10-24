@@ -19,14 +19,8 @@
   "lng": -122.44614,
   "placeId": "ChIJSUqmKoyAhYARHqx0N3gnl8o",
   "michelinId": "562943",
-  "diets": [
-    "vegetarian",
-    "vegan",
-    "halal",
-    "kosher"
-  ],
-  "chef": "Alexander Hong",
-  "chefSource": "michelin",
+  "chef": "Alex Hong",
+  "chefSource": "site",
   "rankings": [
     {
       "list": "oad-north-america",

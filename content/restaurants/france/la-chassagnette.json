@@ -27,8 +27,10 @@
   "michelinId": "466",
   "diets": [
     "vegetarian-menu",
-    "vegetarian"
+    "vegetarian",
+    "gluten-free"
   ],
   "chef": "Armand Arnal",
-  "chefSource": "michelin"
+  "chefSource": "site",
+  "dietsManual": true
 }

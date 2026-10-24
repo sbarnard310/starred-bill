@@ -23,11 +23,8 @@
   "lng": 2.3303786,
   "placeId": "ChIJlVvipTFu5kcR6VwB1PiwKv8",
   "michelinId": "69298",
-  "diets": [
-    "vegetarian"
-  ],
   "chef": "Jean-François Rouquette",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "stay": {
     "kind": "hotel",
     "name": "Park Hyatt Paris-Vendôme",

@@ -25,11 +25,10 @@
   "michelinId": "10931",
   "diets": [
     "vegetarian-menu",
-    "vegetarian",
-    "gluten-free"
+    "vegetarian"
   ],
   "chef": "Massimiliano Sena",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "stay": {
     "kind": "hotel",
     "name": "Château de Courcelles",
@@ -76,5 +75,6 @@
     ],
     "note": "A 20-room family-owned château hotel.",
     "checked": "2026-10-23"
-  }
+  },
+  "dietsManual": true
 }

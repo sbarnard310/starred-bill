@@ -21,13 +21,8 @@
   "lng": 2.1233414,
   "placeId": "ChIJAQAAAMd95kcR6ik1eTjIUJE",
   "michelinId": "472663",
-  "diets": [
-    "vegetarian",
-    "vegan",
-    "gluten-free"
-  ],
   "chef": "Jean-Baptiste Lavergne-Morazzani",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNote": "Tasting menu, 7 courses",
   "dinnerNoteFr": "Menu dégustation, 7 séquences",
   "lunchNote": "Tasting menu, 4 courses, Friday lunch only",

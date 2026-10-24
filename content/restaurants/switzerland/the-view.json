@@ -16,9 +16,8 @@
   "placeId": "ChIJDWSVcasthEcRFWKMQZva4pA",
   "michelinId": "473933",
   "diets": [
-    "vegetarian",
-    "vegan",
-    "gluten-free"
+    "vegetarian-menu",
+    "vegetarian"
   ],
   "chef": "Diego Della Schiava",
   "chefSource": "site",
@@ -29,5 +28,6 @@
   "lunchNote": "Dinner only",
   "lunchNoteDe": "Nur abends",
   "lunchNoteFr": "Uniquement le soir",
-  "lunchNoteIt": "Solo a cena"
+  "lunchNoteIt": "Solo a cena",
+  "dietsManual": true
 }

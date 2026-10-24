@@ -18,10 +18,11 @@
     "vegetarian-menu",
     "vegetarian"
   ],
-  "chef": "Yannick Spielmann & Nicolai Heuer",
-  "chefSource": "michelin",
+  "chef": "Nicolai Heuer and Yannik Spielmann",
+  "chefSource": "press",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 65 €)",
   "noLunch": true,
   "lunchNote": "Dinner only",
-  "lunchNoteDe": "Nur abends"
+  "lunchNoteDe": "Nur abends",
+  "dietsManual": true
 }

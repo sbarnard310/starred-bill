@@ -29,10 +29,10 @@
   "placeId": "ChIJc5x5tg7HhkcRtmGvx_h4zf8",
   "michelinId": "1154535",
   "diets": [
-    "vegetarian",
-    "vegan",
-    "gluten-free"
+    "vegetarian-menu",
+    "vegetarian"
   ],
   "chef": "Roberto Di Pinto",
-  "chefSource": "press"
+  "chefSource": "press",
+  "dietsManual": true
 }

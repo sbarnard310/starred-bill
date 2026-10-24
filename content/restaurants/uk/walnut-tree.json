@@ -15,7 +15,7 @@
   "lunchNote": "Set menu, 2 courses",
   "lunchSourceType": "press",
   "lunchSource": "https://the-walnut-tree.vouchercart.com/35131/set-lunch-menu-2-courses",
-  "website": "https://www.thewalnuttreeinn.com/",
+  "website": "https://www.houseofcaradog.com/eat-drink/the-walnut-tree/",
   "lat": 51.843504,
   "lng": -2.963228,
   "placeId": "ChIJSTdo4DfQcUgRR56RDvRexiM",
@@ -24,7 +24,7 @@
     "vegetarian"
   ],
   "chef": "Shaun Hill",
-  "chefSource": "michelin",
+  "chefSource": "press",
   "photo": "walnut-tree.jpg",
   "photoAlt": "The white buildings of the Walnut Tree at Llanddewi Skirrid, near Abergavenny",
   "photoCredit": "Philip Halling",
@@ -34,5 +34,6 @@
   "photoSourceType": "commons",
   "photoWidth": 640,
   "photoHeight": 480,
-  "photoChecked": "2026-10-13"
+  "photoChecked": "2026-10-13",
+  "dietsManual": true
 }

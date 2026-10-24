@@ -18,12 +18,10 @@
   "michelinId": "1157260",
   "diets": [
     "vegetarian-menu",
-    "vegetarian",
-    "vegan",
-    "gluten-free"
+    "vegetarian"
   ],
   "chef": "Manuel Steigmeier",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab CHF 150)",
   "dinnerNoteFr": "Menu dégustation (autres menus dès CHF 150)",
   "dinnerNoteIt": "Menu degustazione (altri menu da CHF 150)",
@@ -35,5 +33,6 @@
   "lunchNoteIt": "Stesso menu a pranzo · gio–dom",
   "lunchWine": 60,
   "lunchSourceType": "site",
-  "lunchSource": "https://fahr-sulz.ch/wp-content/uploads/Abend-Online-1.pdf"
+  "lunchSource": "https://fahr-sulz.ch/wp-content/uploads/Abend-Online-1.pdf",
+  "dietsManual": true
 }

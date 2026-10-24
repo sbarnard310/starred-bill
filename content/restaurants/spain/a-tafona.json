@@ -22,11 +22,6 @@
   "lng": -8.5402512,
   "placeId": "ChIJOzpH5kX-Lg0RlK-Jr1AOgAs",
   "michelinId": "264824",
-  "diets": [
-    "vegetarian",
-    "vegan",
-    "gluten-free"
-  ],
   "chef": "Lucía Freitas",
-  "chefSource": "michelin"
+  "chefSource": "site"
 }

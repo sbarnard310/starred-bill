@@ -24,11 +24,6 @@
   "lng": 2.3560682,
   "placeId": "ChIJe6_hufxx5kcRLJ9Ej7s19UM",
   "michelinId": "380623",
-  "diets": [
-    "vegetarian",
-    "vegan",
-    "gluten-free"
-  ],
   "chef": "Alain Pégouret",
-  "chefSource": "michelin"
+  "chefSource": "site"
 }

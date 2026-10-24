@@ -18,12 +18,8 @@
   "lng": -84.5509835,
   "placeId": "ChIJF4nE3yQU9YgRQYpaRDibsts",
   "michelinId": "1210096",
-  "diets": [
-    "vegetarian",
-    "gluten-free"
-  ],
   "chef": "Brian So",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "photo": "spring.jpg",
   "photoAlt": "The brick building and patio of Spring in Marietta, Georgia, at dusk",
   "photoCredit": "John Phelan",

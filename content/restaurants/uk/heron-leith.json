@@ -21,9 +21,11 @@
   "placeId": "ChIJaRvnGI65h0gROVFLlt-wr64",
   "michelinId": "1197434",
   "diets": [
+    "vegetarian-menu",
     "vegetarian",
     "vegan"
   ],
   "chef": "Tomás Gormley",
-  "chefSource": "press"
+  "chefSource": "press",
+  "dietsManual": true
 }

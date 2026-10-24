@@ -25,11 +25,10 @@
   "michelinId": "433",
   "diets": [
     "vegetarian-menu",
-    "vegetarian",
-    "gluten-free"
+    "vegetarian"
   ],
   "chef": "Arnaud Viel",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "stay": {
     "kind": "hotel",
     "name": "Hostellerie de La Renaissance",
@@ -47,5 +46,6 @@
     ],
     "note": "Chef Arnaud Viel’s hotel in Argentan, with a spa and pool.",
     "checked": "2026-10-23"
-  }
+  },
+  "dietsManual": true
 }

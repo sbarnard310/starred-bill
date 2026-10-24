@@ -21,9 +21,7 @@
   "michelinId": "1210531",
   "diets": [
     "vegetarian-menu",
-    "vegetarian",
-    "vegan",
-    "halal"
+    "vegetarian"
   ],
   "dinnerNoteAr": "قائمة تذوق (قوائم أخرى بدءًا من AED 375)",
   "lunch": 99,
@@ -33,5 +31,6 @@
   "lunchSourceType": "site",
   "lunchSource": "https://cdn.jamavarrestaurants.com/wp-content/uploads/2026/09/Lunch-Early-Evening-Menu-WEB.pdf",
   "chef": "Purushottam Naidu",
-  "chefSource": "press"
+  "chefSource": "press",
+  "dietsManual": true
 }

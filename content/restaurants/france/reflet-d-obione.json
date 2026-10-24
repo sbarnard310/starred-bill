@@ -23,10 +23,12 @@
   "placeId": "ChIJufchzNSvthIRRb9n9K_MKoY",
   "michelinId": "1186512",
   "diets": [
+    "vegetarian-menu",
     "vegetarian",
     "vegan",
     "gluten-free"
   ],
   "chef": "Laurent Cherchi",
-  "chefSource": "michelin"
+  "chefSource": "site",
+  "dietsManual": true
 }

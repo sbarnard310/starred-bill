@@ -20,12 +20,8 @@
   "lng": -86.778879,
   "placeId": "ChIJq3tfSZJmZIgRLkkEXv4QxkQ",
   "michelinId": "1214983",
-  "diets": [
-    "vegetarian",
-    "gluten-free"
-  ],
   "chef": "Andy Doubrava and Tiffani Ortiz",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "rankings": [
     {
       "list": "oad-north-america",

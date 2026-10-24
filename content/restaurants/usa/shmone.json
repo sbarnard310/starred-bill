@@ -23,5 +23,6 @@
     "vegan"
   ],
   "chef": "Eyal Shani",
-  "chefSource": "michelin"
+  "chefSource": "site",
+  "dietsManual": true
 }

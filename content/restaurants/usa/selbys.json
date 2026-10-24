@@ -21,5 +21,6 @@
     "vegetarian"
   ],
   "chef": "Mark Sullivan",
-  "chefSource": "press"
+  "chefSource": "press",
+  "dietsManual": true
 }

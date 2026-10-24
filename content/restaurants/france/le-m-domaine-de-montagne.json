@@ -21,15 +21,17 @@
   "placeId": "ChIJ1ZfaqGrNk0cR6Wd-_wmIN14",
   "michelinId": "1241731",
   "diets": [
+    "vegetarian-menu",
     "vegetarian"
   ],
-  "chef": "Maximilian Troebs",
-  "chefSource": "michelin",
+  "chef": "Benoît Potdevin and Maximilian Troebs",
+  "chefSource": "site",
   "stay": {
     "kind": "hotel",
     "name": "Domaine de Montagne",
     "rooms": 27,
     "url": "https://domainedemontagne.com/fr/reservation.html",
     "checked": "2026-10-23"
-  }
+  },
+  "dietsManual": true
 }

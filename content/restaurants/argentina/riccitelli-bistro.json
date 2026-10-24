@@ -23,10 +23,6 @@
   "lng": -68.959131,
   "placeId": "ChIJM0cASSrefZYRGsl8S18rrec",
   "michelinId": "1209837",
-  "diets": [
-    "vegetarian",
-    "vegan"
-  ],
   "chef": "Juan Ventureyra",
-  "chefSource": "michelin"
+  "chefSource": "press"
 }

@@ -19,14 +19,13 @@
   "placeId": "ChIJxUyUAoTHyhQRvHcXuQDSu14",
   "michelinId": "1213077",
   "diets": [
-    "vegetarian",
-    "vegan",
-    "gluten-free"
+    "vegetarian"
   ],
   "dinnerNoteTr": "Tipik ana yemek",
   "noLunch": true,
   "lunchNote": "Dinner only",
   "lunchNoteTr": "Yalnızca akşam yemeği",
   "chef": "Kenan Çetinkaya and Pınar Korgan Çetinkaya",
-  "chefSource": "press"
+  "chefSource": "press",
+  "dietsManual": true
 }

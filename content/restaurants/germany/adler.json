@@ -16,11 +16,8 @@
   "lng": 7.9249354,
   "placeId": "ChIJw87e4dkukUcRX1CYzxaUu_0",
   "michelinId": "82171",
-  "diets": [
-    "vegetarian"
-  ],
   "chef": "Daniel Fehrenbacher",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 58 €)",
   "noLunch": true,
   "lunchNote": "Dinner only",

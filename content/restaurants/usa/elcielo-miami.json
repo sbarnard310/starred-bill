@@ -14,19 +14,13 @@
   "source": "https://elcielomiami.com/menu",
   "noLunch": true,
   "lunchNote": "Dinner only",
-  "website": "https://elcielomiami.com/",
+  "website": "https://elcielo.com.co/miami/",
   "lat": 25.769521,
   "lng": -80.191524,
   "placeId": "ChIJ6VVxuZy22YgRlpY7iByTz_Q",
   "michelinId": "1194427",
-  "diets": [
-    "vegetarian",
-    "vegan",
-    "gluten-free",
-    "kosher"
-  ],
   "chef": "Juan Manuel Barrientos",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "rankings": [
     {
       "list": "oad-north-america",

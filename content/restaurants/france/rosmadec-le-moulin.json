@@ -24,11 +24,10 @@
   "placeId": "ChIJAaQX6HvoEEgRQhWJvGqGf9c",
   "michelinId": "7051",
   "diets": [
-    "vegetarian-menu",
     "vegetarian"
   ],
   "chef": "Sébastien Martinez",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "photo": "rosmadec-le-moulin.jpg",
   "photoAlt": "The Moulin de Rosmadec, a stone watermill on the river in Pont-Aven, Brittany",
   "photoCredit": "PIERRE ANDRE LECLERCQ",
@@ -38,5 +37,6 @@
   "photoSourceType": "commons",
   "photoWidth": 1000,
   "photoHeight": 735,
-  "photoChecked": "2026-10-13"
+  "photoChecked": "2026-10-13",
+  "dietsManual": true
 }

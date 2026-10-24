@@ -32,5 +32,6 @@
     "vegetarian"
   ],
   "chef": "Fei Wong",
-  "chefSource": "site"
+  "chefSource": "site",
+  "dietsManual": true
 }

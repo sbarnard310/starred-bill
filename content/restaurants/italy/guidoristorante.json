@@ -22,10 +22,9 @@
   "placeId": "ChIJt14uf2es0hIRf8y7fpB6hMI",
   "michelinId": "361561",
   "diets": [
-    "vegetarian",
-    "vegan",
-    "gluten-free"
+    "vegetarian"
   ],
   "chef": "Ugo Alciati",
-  "chefSource": "site"
+  "chefSource": "site",
+  "dietsManual": true
 }

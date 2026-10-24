@@ -16,13 +16,8 @@
   "lng": -4.8806499,
   "placeId": "ChIJVWH3NvYncw0RYd7C6ytZxrc",
   "michelinId": "221474",
-  "diets": [
-    "vegetarian",
-    "gluten-free",
-    "kosher"
-  ],
   "chef": "Mauricio Giovanini",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNoteEs": "Menú degustación",
   "lunchNote": "Open for lunch · Mon, Thu",
   "lunchNoteEs": "Abre a mediodía · lun, jue"

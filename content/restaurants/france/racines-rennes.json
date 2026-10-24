@@ -28,7 +28,7 @@
     "vegetarian"
   ],
   "chef": "Virginie Giboire",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "photo": "racines-rennes.jpg",
   "photoAlt": "The shopfront of Racines on Rue de l'Arsenal, Rennes",
   "photoCredit": "Pymouss",
@@ -38,5 +38,6 @@
   "photoSourceType": "commons",
   "photoWidth": 1000,
   "photoHeight": 750,
-  "photoChecked": "2026-10-13"
+  "photoChecked": "2026-10-13",
+  "dietsManual": true
 }

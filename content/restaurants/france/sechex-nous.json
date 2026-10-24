@@ -23,13 +23,8 @@
   "lng": 6.4021869,
   "placeId": "ChIJJ3D3DmQ_jEcRX9Z55xe4vSM",
   "michelinId": "1212105",
-  "diets": [
-    "vegetarian",
-    "vegan",
-    "gluten-free"
-  ],
   "chef": "Lucas Dumelie",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "stay": {
     "kind": "rooms",
     "name": "Séchex Nous",

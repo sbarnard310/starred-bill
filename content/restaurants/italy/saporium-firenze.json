@@ -25,11 +25,10 @@
   "placeId": "ChIJ65G8pvdTKhMR0GWt3eTB5To",
   "michelinId": "462528",
   "diets": [
-    "vegetarian",
-    "vegan",
-    "gluten-free",
-    "kosher"
+    "vegetarian-menu",
+    "vegetarian"
   ],
   "chef": "Ariel Hagen",
-  "chefSource": "michelin"
+  "chefSource": "site",
+  "dietsManual": true
 }

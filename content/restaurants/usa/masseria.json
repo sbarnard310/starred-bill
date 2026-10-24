@@ -18,13 +18,8 @@
   "lng": -76.99908,
   "placeId": "ChIJp1AcfBq4t4kR8L1hnsBhxtE",
   "michelinId": "499964",
-  "diets": [
-    "vegetarian",
-    "vegan",
-    "gluten-free"
-  ],
   "chef": "Nicholas Stefanelli",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "rankings": [
     {
       "list": "oad-north-america",

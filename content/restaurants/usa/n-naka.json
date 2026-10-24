@@ -19,14 +19,8 @@
   "lng": -118.41206,
   "placeId": "ChIJb7GeyDS6woAROVvLEUiLZEk",
   "michelinId": "560073",
-  "diets": [
-    "vegetarian-menu",
-    "vegetarian",
-    "halal",
-    "kosher"
-  ],
-  "chef": "Niki Nakayama",
-  "chefSource": "michelin",
+  "chef": "Niki Nakayama and Carole Iida-Nakayama",
+  "chefSource": "site",
   "rankings": [
     {
       "list": "la-liste",

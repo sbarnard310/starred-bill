@@ -25,12 +25,8 @@
   "lng": 4.0170014,
   "placeId": "ChIJ5SYOhqoF9EcRCR8v-qofksw",
   "michelinId": "1204708",
-  "diets": [
-    "vegetarian",
-    "vegan"
-  ],
   "chef": "Julien Laval",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "stay": {
     "kind": "hotel",
     "name": "Château d’Origny",

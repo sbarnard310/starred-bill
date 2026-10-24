@@ -23,9 +23,6 @@
   "lng": 0.0770849,
   "placeId": "ChIJexlUFq7U4UcR0InPj699d9I",
   "michelinId": "495886",
-  "diets": [
-    "vegetarian"
-  ],
   "chef": "Maximin Hellio",
-  "chefSource": "michelin"
+  "chefSource": "site"
 }

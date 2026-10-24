@@ -23,10 +23,6 @@
   "lng": -1.127942,
   "placeId": "ChIJQ0hZrBqCYw0RzAifjPj4lFQ",
   "michelinId": "1197921",
-  "diets": [
-    "vegetarian",
-    "gluten-free"
-  ],
-  "chef": "Marco Antonio Iniesta",
-  "chefSource": "michelin"
+  "chef": "Marco Antonio Iniesta Nicolás",
+  "chefSource": "site"
 }

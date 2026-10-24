@@ -26,5 +26,6 @@
     "vegan"
   ],
   "chef": "Sam Carter",
-  "chefSource": "press"
+  "chefSource": "press",
+  "dietsManual": true
 }

@@ -25,11 +25,6 @@
   "lng": 4.5651805,
   "placeId": "ChIJtaRRiBc7tRIRqpXx3ZaGdvw",
   "michelinId": "1200901",
-  "diets": [
-    "vegetarian",
-    "vegan",
-    "gluten-free"
-  ],
   "chef": "Florian Descours",
-  "chefSource": "michelin"
+  "chefSource": "site"
 }

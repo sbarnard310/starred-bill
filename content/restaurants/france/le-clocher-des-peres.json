@@ -23,11 +23,8 @@
   "lng": 6.3168158,
   "placeId": "ChIJrfiKPjQyikcRJzJwHycyaB4",
   "michelinId": "340828",
-  "diets": [
-    "vegetarian"
-  ],
   "chef": "Pierre Troccaz",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "stay": {
     "kind": "rooms",
     "name": "Le Clocher des Pères",

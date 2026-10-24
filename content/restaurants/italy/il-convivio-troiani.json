@@ -21,10 +21,10 @@
   "placeId": "ChIJ-aRG9FBgLxMRslFkAD02DNo",
   "michelinId": "68949",
   "diets": [
-    "vegetarian",
-    "vegan",
-    "gluten-free"
+    "vegetarian-menu",
+    "vegetarian"
   ],
   "chef": "Angelo Troiani",
-  "chefSource": "press"
+  "chefSource": "press",
+  "dietsManual": true
 }

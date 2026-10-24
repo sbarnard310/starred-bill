@@ -23,11 +23,6 @@
   "lng": 7.7678043,
   "placeId": "ChIJLXMEGvrIlkcRSDeOlLOA6Gg",
   "michelinId": "900051",
-  "diets": [
-    "vegetarian",
-    "vegan",
-    "gluten-free"
-  ],
   "chef": "Guillaume Besson",
-  "chefSource": "michelin"
+  "chefSource": "site"
 }

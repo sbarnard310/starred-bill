@@ -18,11 +18,10 @@
   "diets": [
     "vegetarian-menu",
     "vegetarian",
-    "vegan",
-    "gluten-free"
+    "vegan"
   ],
   "chef": "Luís Brito",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "lunch": 145,
   "lunchType": "menu",
   "lunchWine": 85,
@@ -31,5 +30,6 @@
   "dinnerNote": "Tasting menu, 6 courses (9 courses €225; vegetarian €160)",
   "dinnerNotePt": "Menu de degustação, 6 momentos (9 momentos 225 €; vegetariano 160 €)",
   "lunchNote": "Lunch menu, 5 courses (6 courses €170)",
-  "lunchNotePt": "Menu de almoço, 5 momentos (6 momentos 170 €)"
+  "lunchNotePt": "Menu de almoço, 5 momentos (6 momentos 170 €)",
+  "dietsManual": true
 }

@@ -15,12 +15,8 @@
   "lng": 9.4918454,
   "placeId": "ChIJ5SUAx3QZm0cRfcJXT1qIkng",
   "michelinId": "179910",
-  "diets": [
-    "vegetarian-menu",
-    "vegetarian"
-  ],
   "chef": "Walter Klose",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab CHF 135)",
   "dinnerNoteFr": "Menu dégustation (autres menus dès CHF 135)",
   "dinnerNoteIt": "Menu degustazione (altri menu da CHF 135)",

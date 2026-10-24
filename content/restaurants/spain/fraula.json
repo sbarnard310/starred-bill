@@ -20,11 +20,10 @@
   "placeId": "ChIJV_Gxa5lJYA0Rrf9WixkE_no",
   "michelinId": "1194656",
   "diets": [
-    "vegetarian",
-    "gluten-free"
+    "vegetarian"
   ],
   "chef": "Roseta Félix and Daniel Malavía",
-  "chefSource": "michelin",
+  "chefSource": "press",
   "dinnerNote": "Alfàbega tasting menu, 4 courses (6 courses €99, 9 courses €135)",
   "dinnerNoteEs": "Menú degustación Alfàbega, 4 pases (6 pases 99 €, 9 pases 135 €)",
   "bookingWindow": {
@@ -35,5 +34,6 @@
     "via": "website",
     "source": "https://fraula.es/reservar/",
     "checked": "2026-10-10"
-  }
+  },
+  "dietsManual": true
 }

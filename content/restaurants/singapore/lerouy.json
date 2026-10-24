@@ -25,11 +25,8 @@
   "lng": 103.841922,
   "placeId": "ChIJbSjVgQ0Z2jER4D6B04Wg9tY",
   "michelinId": "1195638",
-  "diets": [
-    "vegetarian"
-  ],
   "chef": "Christophe Lerouy",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "rankings": [
     {
       "list": "oad-asia",

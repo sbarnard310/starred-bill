@@ -20,12 +20,8 @@
   "lng": -2.8465842,
   "placeId": "ChIJvWlR24WLTw0RiaiPZRJF8c0",
   "michelinId": "1195671",
-  "diets": [
-    "vegetarian",
-    "vegan"
-  ],
   "chef": "Miguel Caño",
-  "chefSource": "michelin",
+  "chefSource": "press",
   "rankings": [
     {
       "list": "oad-europe",

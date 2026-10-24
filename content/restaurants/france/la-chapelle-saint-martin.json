@@ -23,12 +23,8 @@
   "lng": 1.1784757,
   "placeId": "ChIJYStFsQDK_kcRdrZdrf9FFX4",
   "michelinId": "11602",
-  "diets": [
-    "vegetarian-menu",
-    "vegetarian"
-  ],
   "chef": "Gilles Dudognon and Henri Dudognon",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "stay": {
     "kind": "hotel",
     "name": "La Chapelle Saint-Martin",

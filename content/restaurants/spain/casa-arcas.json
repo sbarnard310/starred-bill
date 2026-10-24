@@ -21,13 +21,8 @@
   "lng": 0.4645155,
   "placeId": "ChIJ3yqMDuHXpxIRA2hRj18CL1Y",
   "michelinId": "1189239",
-  "diets": [
-    "vegetarian",
-    "vegan",
-    "gluten-free"
-  ],
   "chef": "Víctor Manuel Ovalles",
-  "chefSource": "michelin",
+  "chefSource": "press",
   "stay": {
     "kind": "hotel",
     "name": "Hotel Restaurante Casa Arcas",

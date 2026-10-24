@@ -20,10 +20,11 @@
   "placeId": "ChIJXVvsirKBhYARfWD1MEpT_Uw",
   "michelinId": "1211881",
   "diets": [
-    "vegetarian"
+    "vegetarian",
+    "gluten-free"
   ],
-  "chef": "Serena Fisher and David Fisher",
-  "chefSource": "michelin",
+  "chef": "David Fisher and Serena Chow Fisher",
+  "chefSource": "site",
   "rankings": [
     {
       "list": "oad-north-america",
@@ -32,5 +33,6 @@
       "url": "https://www.oadguides.com/lists/north-america/top-restaurants/2026"
     }
   ],
-  "rankingsChecked": "2026-10-24"
+  "rankingsChecked": "2026-10-24",
+  "dietsManual": true
 }

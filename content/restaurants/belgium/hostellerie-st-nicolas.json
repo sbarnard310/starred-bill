@@ -16,12 +16,8 @@
   "lng": 2.818281,
   "placeId": "ChIJ5eB5cOXF3EcRYvtXKTGXL90",
   "michelinId": "209852",
-  "diets": [
-    "vegetarian",
-    "gluten-free"
-  ],
-  "chef": "Michael Vanderhaeghe",
-  "chefSource": "michelin",
+  "chef": "Franky Vanderhaeghe and Michael Vanderhaeghe",
+  "chefSource": "site",
   "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 60)",
   "dinnerNoteFr": "Menu dégustation (autres menus dès 60 €)",
   "lunch": 250,

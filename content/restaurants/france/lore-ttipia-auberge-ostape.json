@@ -26,10 +26,10 @@
   "michelinId": "63762",
   "diets": [
     "vegetarian",
-    "gluten-free"
+    "vegan"
   ],
   "chef": "John Argaud",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "stay": {
     "kind": "hotel",
     "name": "Auberge Ostape",
@@ -37,5 +37,6 @@
     "url": "https://www.ostape.com/fr/hotellerie/",
     "note": "26 rooms and suites spread over five country houses.",
     "checked": "2026-10-23"
-  }
+  },
+  "dietsManual": true
 }

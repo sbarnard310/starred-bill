@@ -14,12 +14,8 @@
   "lng": 5.52895,
   "placeId": "ChIJZYQ-T7tPwEcRxkxSxwmJUyU",
   "michelinId": "371937",
-  "diets": [
-    "vegetarian",
-    "vegan"
-  ],
   "chef": "Mario Elias",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "lunch": 95,
   "lunchType": "menu",
   "lunchNote": "Same menu at lunch · Fri–Sun",

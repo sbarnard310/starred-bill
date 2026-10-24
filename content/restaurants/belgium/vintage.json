@@ -29,9 +29,10 @@
     "vegetarian"
   ],
   "chef": "Cyril Moulin",
-  "chefSource": "michelin",
+  "chefSource": "press",
   "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 105)",
   "dinnerNoteFr": "Menu dégustation (autres menus dès 105 €)",
   "lunchNoteNl": "Lunchmenu",
-  "lunchNoteFr": "Menu déjeuner"
+  "lunchNoteFr": "Menu déjeuner",
+  "dietsManual": true
 }

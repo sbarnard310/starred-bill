@@ -5,7 +5,7 @@
   "areaZh": "查姆貝里",
   "address": "Ponzano 85, Madrid, 28003",
   "stars": 1,
-  "cuisine": "Vegetarian",
+  "cuisine": "Creative",
   "dinner": 158,
   "dinnerType": "menu",
   "dinnerNote": "Vegetalia menu, 15+ courses (Experience versions with drinks €218–€228)",
@@ -28,14 +28,12 @@
   "placeId": "ChIJF2e3OHopQg0RM2CPwRwgE2Y",
   "michelinId": "562125",
   "diets": [
-    "vegetarian-only",
     "vegetarian-menu",
     "vegetarian",
-    "vegan",
-    "gluten-free"
+    "vegan"
   ],
-  "chef": "Rodrigo De la Calle",
-  "chefSource": "michelin",
+  "chef": "Rodrigo de la Calle",
+  "chefSource": "site",
   "rankings": [
     {
       "list": "oad-europe",
@@ -44,5 +42,6 @@
       "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
     }
   ],
-  "rankingsChecked": "2026-10-24"
+  "rankingsChecked": "2026-10-24",
+  "dietsManual": true
 }

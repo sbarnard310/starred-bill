@@ -19,10 +19,11 @@
   "placeId": "ChIJXZNZYcuv0hIRX0QszdZOtZo",
   "michelinId": "431176",
   "diets": [
+    "vegetarian-menu",
     "vegetarian"
   ],
   "chef": "Massimo Camia",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "stay": {
     "kind": "rooms",
     "name": "Locanda Camia",
@@ -30,5 +31,6 @@
     "url": "https://www.massimocamia.it/en/apartments-and-rooms-in-novello/",
     "note": "Six double rooms and two apartments overlooking the Langhe vineyards.",
     "checked": "2026-10-23"
-  }
+  },
+  "dietsManual": true
 }

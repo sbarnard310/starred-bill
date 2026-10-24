@@ -20,7 +20,7 @@
     "vegetarian"
   ],
   "chef": "Danijel Đekić",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNoteHr": "Degustacijski meni (ostali meniji od 129 €)",
   "noLunch": true,
   "lunchNote": "Dinner only",
@@ -39,5 +39,6 @@
       "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
     }
   ],
-  "rankingsChecked": "2026-10-24"
+  "rankingsChecked": "2026-10-24",
+  "dietsManual": true
 }

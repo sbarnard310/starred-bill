@@ -23,11 +23,6 @@
   "lng": 4.0109723,
   "placeId": "ChIJX3Zb1fdy6UcRP1cULfAsq6E",
   "michelinId": "7297",
-  "diets": [
-    "vegetarian-menu",
-    "vegetarian",
-    "vegan"
-  ],
   "chef": "Dominique Giraudeau and Pascal Champion",
-  "chefSource": "michelin"
+  "chefSource": "site"
 }

@@ -15,12 +15,8 @@
   "lng": -9.1338667,
   "placeId": "ChIJm89J3cU1GQ0R2jwq9BnxatA",
   "michelinId": "1154759",
-  "diets": [
-    "vegetarian",
-    "gluten-free"
-  ],
   "chef": "João Sá",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNotePt": "Menu de degustação (outros menus desde 155 €)",
   "lunch": 185,
   "lunchType": "menu",

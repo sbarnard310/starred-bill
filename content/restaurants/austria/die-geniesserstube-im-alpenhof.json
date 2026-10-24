@@ -15,11 +15,8 @@
   "lng": 11.6841259,
   "placeId": "ChIJq2hnvrrhd0cRQTE6s8rp6lU",
   "michelinId": "1212420",
-  "diets": [
-    "vegetarian"
-  ],
   "chef": "Maximilian Stock",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 195 €)",
   "noLunch": true,
   "lunchNote": "Dinner only",

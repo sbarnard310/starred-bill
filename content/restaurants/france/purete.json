@@ -23,12 +23,6 @@
   "lng": 3.0618585,
   "placeId": "ChIJ2Q3B1eMrw0cRmWZ7B197raA",
   "michelinId": "1197647",
-  "diets": [
-    "vegetarian",
-    "vegan",
-    "halal",
-    "kosher"
-  ],
   "chef": "Gérald Guille",
-  "chefSource": "michelin"
+  "chefSource": "site"
 }

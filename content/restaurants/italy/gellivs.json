@@ -18,10 +18,6 @@
   "lng": 12.4946107,
   "placeId": "ChIJi8g1aC1DeUcR8LIpOuQ_ucM",
   "michelinId": "143624",
-  "diets": [
-    "vegetarian",
-    "gluten-free"
-  ],
   "chef": "Alessandro Breda",
-  "chefSource": "michelin"
+  "chefSource": "site"
 }

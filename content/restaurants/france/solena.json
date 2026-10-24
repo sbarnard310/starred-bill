@@ -21,9 +21,6 @@
   "lng": -0.5903561,
   "placeId": "ChIJ4UU8buUnVQ0RVPlOvTqP_Qw",
   "michelinId": "325232",
-  "diets": [
-    "vegetarian"
-  ],
   "chef": "Victor Ostronzec",
-  "chefSource": "michelin"
+  "chefSource": "site"
 }

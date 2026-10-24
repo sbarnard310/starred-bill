@@ -17,10 +17,11 @@
   "placeId": "ChIJ8_RkhpwxbUYRl5pLbMUeCdM",
   "michelinId": "554228",
   "diets": [
+    "vegetarian-menu",
     "vegetarian"
   ],
   "chef": "Ådne Børseth Helgetun",
-  "chefSource": "michelin",
+  "chefSource": "press",
   "dinnerNoteNb": "Smaksmeny (andre menyer fra 1 275 kr)",
   "lunch": 2675,
   "lunchType": "menu",
@@ -37,5 +38,6 @@
       "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
     }
   ],
-  "rankingsChecked": "2026-10-24"
+  "rankingsChecked": "2026-10-24",
+  "dietsManual": true
 }

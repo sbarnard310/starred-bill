@@ -23,11 +23,8 @@
   "lng": 0.7348884,
   "placeId": "ChIJlc1GcCf44EcRXhLaoz1iUtg",
   "michelinId": "47160",
-  "diets": [
-    "vegetarian"
-  ],
   "chef": "David Goerne",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "stay": {
     "kind": "rooms",
     "name": "Manoir de Rétival",

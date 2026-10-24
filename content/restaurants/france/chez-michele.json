@@ -23,11 +23,6 @@
   "lng": 6.858981,
   "placeId": "ChIJScX0O6ZulEcRBC1a0g30Y_c",
   "michelinId": "4020",
-  "diets": [
-    "vegetarian-menu",
-    "vegetarian",
-    "vegan"
-  ],
   "chef": "Bruno Poiré",
-  "chefSource": "michelin"
+  "chefSource": "site"
 }

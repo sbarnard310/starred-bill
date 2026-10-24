@@ -22,9 +22,10 @@
   "placeId": "ChIJT9uxTigQbUgR9PFD_a9gKM8",
   "michelinId": "189401",
   "diets": [
-    "vegetarian",
-    "gluten-free"
+    "vegetarian-menu",
+    "vegetarian"
   ],
   "chef": "Simon Hulstone",
-  "chefSource": "michelin"
+  "chefSource": "site",
+  "dietsManual": true
 }

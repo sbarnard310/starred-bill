@@ -24,11 +24,10 @@
   "placeId": "ChIJ103NJF_4lEcR58UJAL7XCz4",
   "michelinId": "325678",
   "diets": [
-    "vegetarian",
-    "vegan",
-    "halal",
-    "kosher"
+    "vegetarian-menu",
+    "vegetarian"
   ],
   "chef": "Loïc Villemin",
-  "chefSource": "michelin"
+  "chefSource": "site",
+  "dietsManual": true
 }

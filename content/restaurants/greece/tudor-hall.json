@@ -15,13 +15,8 @@
   "lng": 23.7349168,
   "placeId": "ChIJYdVsvz69oRQRiiL1z2qIbw8",
   "michelinId": "1185923",
-  "diets": [
-    "vegetarian",
-    "vegan",
-    "gluten-free"
-  ],
   "chef": "Nikos Livadias",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNoteEl": "Μενού γευσιγνωσίας (άλλα μενού από 110 €)",
   "noLunch": true,
   "lunchNote": "Dinner only",

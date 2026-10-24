@@ -18,11 +18,10 @@
   "michelinId": "372756",
   "diets": [
     "vegetarian-menu",
-    "vegetarian",
-    "vegan"
+    "vegetarian"
   ],
   "chef": "Arabelle Meirlaen",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 130)",
   "dinnerNoteFr": "Menu dégustation (autres menus dès 130 €)",
   "lunch": 160,
@@ -41,5 +40,6 @@
       "url": "https://www.laliste.com/places/arabelle-meirlaen-marchin-be"
     }
   ],
-  "rankingsChecked": "2026-10-24"
+  "rankingsChecked": "2026-10-24",
+  "dietsManual": true
 }

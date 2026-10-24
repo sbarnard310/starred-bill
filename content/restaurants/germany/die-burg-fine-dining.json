@@ -20,8 +20,9 @@
     "vegetarian"
   ],
   "chef": "Jason Grom",
-  "chefSource": "michelin",
+  "chefSource": "press",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 100 €)",
   "lunchNote": "Open for lunch · Sundays",
-  "lunchNoteDe": "Mittags geöffnet · Sonntag"
+  "lunchNoteDe": "Mittags geöffnet · Sonntag",
+  "dietsManual": true
 }

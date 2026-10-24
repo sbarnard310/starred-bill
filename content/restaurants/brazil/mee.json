@@ -20,9 +20,10 @@
     "vegan"
   ],
   "chef": "Alberto Morisawa",
-  "chefSource": "michelin",
+  "chefSource": "press",
   "dinnerNotePt": "Menu de degustação",
   "noLunch": true,
   "lunchNote": "Dinner only",
-  "lunchNotePt": "Só jantar"
+  "lunchNotePt": "Só jantar",
+  "dietsManual": true
 }

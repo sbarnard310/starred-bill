@@ -26,6 +26,7 @@
   "placeId": "ChIJGZbt11dv5kcRxGUcs6VnlSc",
   "michelinId": "1000362",
   "diets": [
+    "vegetarian-menu",
     "vegetarian"
   ],
   "chef": "Thibault Sombardier",
@@ -35,5 +36,6 @@
     "name": "Pavillon de la Reine",
     "url": "https://www.pavillon-de-la-reine.com/chambres",
     "checked": "2026-10-23"
-  }
+  },
+  "dietsManual": true
 }

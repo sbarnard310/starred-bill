@@ -20,11 +20,8 @@
   "lng": 6.069238,
   "placeId": "ChIJ9eVxliqawEcRxNSKQrQ-EeA",
   "michelinId": "70660",
-  "diets": [
-    "vegetarian"
-  ],
   "chef": "Andreas Schaffrath",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 119 €)",
   "lunchNoteDe": "Mittagsmenü"
 }

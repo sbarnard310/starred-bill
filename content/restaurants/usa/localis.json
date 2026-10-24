@@ -17,10 +17,11 @@
   "placeId": "ChIJYUnm_ubQmoARMQ2616W5Yi8",
   "michelinId": "559372",
   "diets": [
-    "vegetarian"
+    "vegetarian",
+    "gluten-free"
   ],
-  "chef": "Christopher Barnum-Dann",
-  "chefSource": "michelin",
+  "chef": "Chris Barnum-Dann",
+  "chefSource": "site",
   "rankings": [
     {
       "list": "oad-north-america",
@@ -29,5 +30,6 @@
       "url": "https://www.oadguides.com/lists/north-america/top-restaurants/2026"
     }
   ],
-  "rankingsChecked": "2026-10-24"
+  "rankingsChecked": "2026-10-24",
+  "dietsManual": true
 }

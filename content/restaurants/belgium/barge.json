@@ -22,10 +22,11 @@
   "placeId": "ChIJlS0j6pvDw0cR2DWORKF5U-g",
   "michelinId": "1188703",
   "diets": [
+    "vegetarian-menu",
     "vegetarian"
   ],
   "chef": "Grégoire Gillard",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 110)",
   "dinnerNoteFr": "Menu dégustation (autres menus dès 110 €)",
   "lunchNoteNl": "Lunchmenu",
@@ -38,5 +39,6 @@
       "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
     }
   ],
-  "rankingsChecked": "2026-10-24"
+  "rankingsChecked": "2026-10-24",
+  "dietsManual": true
 }

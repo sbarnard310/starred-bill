@@ -12,17 +12,13 @@
   "source": "https://www.opentable.ca/r/danico-toronto",
   "noLunch": true,
   "lunchNote": "Dinner only",
-  "website": "https://www.danicotoronto.com/",
+  "website": "https://www.libertygroup.com/venue/danico",
   "lat": 43.6566586,
   "lng": -79.4075777,
   "placeId": "ChIJLxOGU8s1K4gRgdxAIsLtxB8",
   "michelinId": "1210611",
-  "diets": [
-    "vegetarian",
-    "gluten-free"
-  ],
   "chef": "Daniele Corona",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "rankings": [
     {
       "list": "oad-north-america",

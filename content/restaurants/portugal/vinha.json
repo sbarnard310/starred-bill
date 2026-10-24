@@ -19,9 +19,10 @@
     "gluten-free"
   ],
   "chef": "Jonathan Seiller",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNotePt": "Menu de degustação",
   "noLunch": true,
   "lunchNote": "Dinner only",
-  "lunchNotePt": "Só jantar"
+  "lunchNotePt": "Só jantar",
+  "dietsManual": true
 }

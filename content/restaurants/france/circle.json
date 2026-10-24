@@ -29,10 +29,6 @@
   "lng": 4.8324022,
   "placeId": "ChIJc13tB_Lr9EcR76IsZYw9Wss",
   "michelinId": "1211286",
-  "diets": [
-    "vegetarian",
-    "halal"
-  ],
   "chef": "Bastian Ruga",
-  "chefSource": "michelin"
+  "chefSource": "site"
 }

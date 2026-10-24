@@ -27,9 +27,9 @@
   "michelinId": "271421",
   "diets": [
     "vegetarian-menu",
-    "vegetarian",
-    "gluten-free"
+    "vegetarian"
   ],
   "chef": "Vincenzo Manicone",
-  "chefSource": "michelin"
+  "chefSource": "site",
+  "dietsManual": true
 }

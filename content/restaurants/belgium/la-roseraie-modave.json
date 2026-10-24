@@ -16,11 +16,8 @@
   "lng": 5.2866657,
   "placeId": "ChIJkYP82l2swUcRw1CVbx37FMc",
   "michelinId": "211087",
-  "diets": [
-    "vegetarian"
-  ],
   "chef": "Marie Trignon",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 50)",
   "dinnerNoteFr": "Menu dégustation (autres menus dès 50 €)",
   "lunch": 135,

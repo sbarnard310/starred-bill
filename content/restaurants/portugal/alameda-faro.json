@@ -19,12 +19,8 @@
   "lng": -7.9285331,
   "placeId": "ChIJufG0J2VTBQ0RsWJhdz2Gqmc",
   "michelinId": "1198788",
-  "diets": [
-    "vegetarian",
-    "gluten-free"
-  ],
   "chef": "Rui Sequeira",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNotePt": "Menu de degustação (outros menus desde 89 €)",
   "noLunch": true,
   "lunchNote": "Dinner only",

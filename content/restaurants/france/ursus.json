@@ -20,12 +20,8 @@
   "lng": 6.9011983,
   "placeId": "ChIJgzF5yKoMiUcRenRwPGvdqek",
   "michelinId": "266168",
-  "diets": [
-    "vegetarian-menu",
-    "vegetarian"
-  ],
   "chef": "Clément Bouvier",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "stay": {
     "kind": "hotel",
     "name": "Hôtel Les Suites",

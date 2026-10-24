@@ -24,12 +24,8 @@
   "lng": 11.55369,
   "placeId": "ChIJYzXB9ks7f0cRIMZlIWSNbSo",
   "michelinId": "440535",
-  "diets": [
-    "vegetarian",
-    "vegan"
-  ],
   "chef": "Giuliano Baldessari",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "stay": {
     "kind": "rooms",
     "name": "Hotel Aqua Crua",

@@ -23,12 +23,8 @@
   "lng": 2.6049801,
   "placeId": "ChIJjfEkxQ-p8EcRpzuVYxpdRLs",
   "michelinId": "1184892",
-  "diets": [
-    "vegetarian",
-    "gluten-free"
-  ],
   "chef": "Olivier Valade",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "stay": {
     "kind": "hotel",
     "name": "Château Saint-Jean",

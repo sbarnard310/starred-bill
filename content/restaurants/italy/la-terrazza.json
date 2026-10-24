@@ -24,13 +24,8 @@
   "lng": 12.486031,
   "placeId": "ChIJpduOjKphLxMR4AJb2V3VE5U",
   "michelinId": "68963",
-  "diets": [
-    "vegetarian-menu",
-    "vegetarian",
-    "vegan"
-  ],
   "chef": "Salvatore Bianco",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "stay": {
     "kind": "hotel",
     "name": "Hotel Eden",

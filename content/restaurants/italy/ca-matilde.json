@@ -24,11 +24,10 @@
   "michelinId": "173881",
   "diets": [
     "vegetarian-menu",
-    "vegetarian",
-    "gluten-free"
+    "vegetarian"
   ],
   "chef": "Andrea Incerti Vezzani",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "stay": {
     "kind": "rooms",
     "name": "Locanda Ca’ Matilde",
@@ -38,5 +37,6 @@
     "fromNote": "double room for single use, including breakfast; double use from 140",
     "note": "Four rooms in the farmhouse that houses the restaurant, near Quattro Castella; the restaurant is closed Monday and Tuesday.",
     "checked": "2026-10-23"
-  }
+  },
+  "dietsManual": true
 }

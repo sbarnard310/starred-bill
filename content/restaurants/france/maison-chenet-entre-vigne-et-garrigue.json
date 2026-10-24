@@ -28,16 +28,18 @@
   "placeId": "ChIJa0G4Zy7rtRIRz9pp0PHGvZM",
   "michelinId": "236497",
   "diets": [
+    "vegetarian-menu",
     "vegetarian",
     "gluten-free"
   ],
   "chef": "Maxime Chenet",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "stay": {
     "kind": "rooms",
     "name": "Maison Chenet",
     "url": "https://maison-chenet.com/fr/les-chambres.html",
     "note": "Guest rooms upstairs in the 1610 farmhouse, plus a private mazet with a jacuzzi; the chef can vary the menu for multi-night stays.",
     "checked": "2026-10-23"
-  }
+  },
+  "dietsManual": true
 }

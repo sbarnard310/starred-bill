@@ -16,14 +16,10 @@
   "michelinId": "555495",
   "diets": [
     "vegetarian-menu",
-    "vegetarian",
-    "vegan",
-    "gluten-free",
-    "halal",
-    "kosher"
+    "vegetarian"
   ],
   "chef": "Tim Golsteijn",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 179)",
   "noLunch": true,
   "lunchNote": "Dinner only",
@@ -42,5 +38,6 @@
     ],
     "note": "Packages are booked by phone or email.",
     "checked": "2026-10-23"
-  }
+  },
+  "dietsManual": true
 }

@@ -21,10 +21,11 @@
   "michelinId": "10110",
   "diets": [
     "vegetarian-menu",
-    "vegetarian"
+    "vegetarian",
+    "vegan"
   ],
   "chef": "Franck Quinton",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "stay": {
     "kind": "hotel",
     "name": "Le Manoir du Lys",
@@ -49,5 +50,6 @@
     ],
     "note": "A 4-star manor hotel in the forest park at Bagnoles-de-l’Orne; the restaurant is closed Monday and Tuesday.",
     "checked": "2026-10-23"
-  }
+  },
+  "dietsManual": true
 }

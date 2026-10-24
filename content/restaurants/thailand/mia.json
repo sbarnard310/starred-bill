@@ -22,9 +22,9 @@
   "diets": [
     "vegetarian-menu",
     "vegetarian",
-    "vegan",
-    "gluten-free"
+    "vegan"
   ],
   "chef": "Pongcharn Russell and Michelle Goh",
-  "chefSource": "press"
+  "chefSource": "press",
+  "dietsManual": true
 }

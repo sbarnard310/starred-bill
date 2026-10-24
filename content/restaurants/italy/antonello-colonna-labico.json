@@ -25,12 +25,7 @@
   "placeId": "ChIJxVH5zWJ-JRMR0ChUhYsqjb8",
   "michelinId": "365827",
   "diets": [
-    "vegetarian-menu",
-    "vegetarian",
-    "vegan",
-    "gluten-free",
-    "halal",
-    "kosher"
+    "vegetarian"
   ],
   "chef": "Antonello Colonna",
   "chefSource": "site",
@@ -77,5 +72,6 @@
     ],
     "note": "Twelve rooms and suites in a resort with spa and park near Rome; the stay packages run midweek only.",
     "checked": "2026-10-23"
-  }
+  },
+  "dietsManual": true
 }

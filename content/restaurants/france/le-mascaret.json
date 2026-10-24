@@ -25,14 +25,8 @@
   "lng": -1.583558,
   "placeId": "ChIJ19JzDqeGDEgRw7YKSSK5iWU",
   "michelinId": "196302",
-  "diets": [
-    "vegetarian-menu",
-    "vegetarian",
-    "vegan",
-    "gluten-free"
-  ],
   "chef": "Philippe Hardy",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "stay": {
     "kind": "rooms",
     "rooms": 5,

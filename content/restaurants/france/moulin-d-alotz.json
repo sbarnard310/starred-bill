@@ -29,5 +29,6 @@
     "vegetarian"
   ],
   "chef": "Fabrice Idiart",
-  "chefSource": "michelin"
+  "chefSource": "site",
+  "dietsManual": true
 }

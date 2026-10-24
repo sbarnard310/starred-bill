@@ -19,9 +19,6 @@
   "lng": 0.1925837,
   "placeId": "ChIJweqhqPsOnhIRNCqMNYXKU7M",
   "michelinId": "1090883",
-  "diets": [
-    "gluten-free"
-  ],
-  "chef": "Borja Susilla and Clara Puig",
-  "chefSource": "michelin"
+  "chef": "Borja Susilla",
+  "chefSource": "site"
 }

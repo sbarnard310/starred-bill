@@ -19,12 +19,8 @@
   "lng": 11.7242537,
   "placeId": "ChIJY9CFqYXgd0cRYNZaDhtlOC8",
   "michelinId": "1212418",
-  "diets": [
-    "vegetarian",
-    "vegan"
-  ],
   "chef": "Sebastian Stock",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNoteDe": "Degustationsmenü",
   "noLunch": true,
   "lunchNote": "Dinner only",

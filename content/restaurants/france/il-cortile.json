@@ -23,10 +23,6 @@
   "lng": 7.3340648,
   "placeId": "ChIJn5BgSHObkUcRbwexHCarHpo",
   "michelinId": "40020",
-  "diets": [
-    "vegetarian",
-    "gluten-free"
-  ],
   "chef": "Jean-Michel Feger",
-  "chefSource": "michelin"
+  "chefSource": "press"
 }

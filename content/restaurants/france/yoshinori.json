@@ -24,12 +24,8 @@
   "lng": 2.3377712,
   "placeId": "ChIJtUlMOtlx5kcRJS7U0OQIPYc",
   "michelinId": "543108",
-  "diets": [
-    "vegetarian",
-    "gluten-free"
-  ],
   "chef": "Yoshinori Morié",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "rankings": [
     {
       "list": "oad-europe",

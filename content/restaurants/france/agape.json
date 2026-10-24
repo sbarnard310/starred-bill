@@ -25,11 +25,6 @@
   "lng": 2.30697,
   "placeId": "ChIJQ3-giLxv5kcRgYmfvT0hy6I",
   "michelinId": "231324",
-  "diets": [
-    "vegetarian",
-    "vegan",
-    "kosher"
-  ],
   "chef": "Yoshi Nagato",
-  "chefSource": "michelin"
+  "chefSource": "site"
 }

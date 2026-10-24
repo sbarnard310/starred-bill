@@ -21,17 +21,16 @@
   "michelinId": "1208507",
   "diets": [
     "vegetarian-menu",
-    "vegetarian",
-    "vegan",
-    "gluten-free"
+    "vegetarian"
   ],
-  "chef": "Andreu Genestra Garcia",
-  "chefSource": "michelin",
+  "chef": "Andreu Genestra",
+  "chefSource": "site",
   "stay": {
     "kind": "hotel",
     "name": "Hotel Zoëtry Mallorca",
     "url": "https://www.hyattinclusivecollection.com/es/resorts-y-hoteles/zoetry/espana/mallorca-balearic-islands/",
     "note": "Dinner-only restaurant (Wednesday to Sunday) now run inside the Zoëtry Mallorca hotel in Llucmajor.",
     "checked": "2026-10-23"
-  }
+  },
+  "dietsManual": true
 }

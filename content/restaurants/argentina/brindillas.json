@@ -21,8 +21,9 @@
   "michelinId": "532744",
   "diets": [
     "vegetarian",
-    "vegan"
+    "gluten-free"
   ],
   "chef": "Mariano Gallego",
-  "chefSource": "michelin"
+  "chefSource": "site",
+  "dietsManual": true
 }

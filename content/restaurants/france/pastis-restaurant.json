@@ -23,10 +23,6 @@
   "lng": 3.8738324,
   "placeId": "ChIJRTORL6ivthIRzSZZAvQWXac",
   "michelinId": "376152",
-  "diets": [
-    "vegetarian-menu",
-    "vegetarian"
-  ],
   "chef": "Daniel Lutrand",
-  "chefSource": "michelin"
+  "chefSource": "site"
 }

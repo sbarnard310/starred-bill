@@ -16,9 +16,7 @@
   "placeId": "ChIJZdE37P3YxkcR7Aj4GavWs-8",
   "michelinId": "417270",
   "diets": [
-    "vegetarian-menu",
-    "vegetarian",
-    "gluten-free"
+    "vegetarian"
   ],
   "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 130)",
   "lunchNote": "Open for lunch · Thu–Sun",
@@ -33,5 +31,6 @@
       "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
     }
   ],
-  "rankingsChecked": "2026-10-24"
+  "rankingsChecked": "2026-10-24",
+  "dietsManual": true
 }

@@ -16,11 +16,11 @@
   "placeId": "ChIJ9dYy8xUNm0cR1uU22sDSb5Y",
   "michelinId": "105301",
   "diets": [
-    "vegetarian",
-    "vegan"
+    "vegetarian-menu",
+    "vegetarian"
   ],
   "chef": "Michael Schwarzenbacher",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 102 €)",
   "lunchNote": "Open for lunch · Thu–Sun",
   "lunchNoteDe": "Mittags geöffnet · Do–So",
@@ -33,5 +33,6 @@
   "photoSourceType": "commons",
   "photoWidth": 1000,
   "photoHeight": 578,
-  "photoChecked": "2026-10-13"
+  "photoChecked": "2026-10-13",
+  "dietsManual": true
 }

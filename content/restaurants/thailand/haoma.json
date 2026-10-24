@@ -21,13 +21,10 @@
   "michelinId": "1200081",
   "diets": [
     "vegetarian-menu",
-    "vegetarian",
-    "vegan",
-    "gluten-free",
-    "halal"
+    "vegetarian"
   ],
   "chef": "Deepanker Khosla",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "rankings": [
     {
       "list": "asias-50-best",
@@ -48,5 +45,6 @@
       "url": "https://www.oadguides.com/lists/asia/top-restaurants/2026"
     }
   ],
-  "rankingsChecked": "2026-10-24"
+  "rankingsChecked": "2026-10-24",
+  "dietsManual": true
 }

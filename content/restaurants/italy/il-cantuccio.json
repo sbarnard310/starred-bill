@@ -25,9 +25,9 @@
   "michelinId": "124197",
   "diets": [
     "vegetarian",
-    "vegan",
     "gluten-free"
   ],
   "chef": "Mauro Elli",
-  "chefSource": "michelin"
+  "chefSource": "site",
+  "dietsManual": true
 }

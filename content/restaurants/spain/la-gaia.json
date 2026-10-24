@@ -1,8 +1,9 @@
 {
-  "name": "La Gaia",
+  "name": "Brula",
   "city": "balearic-islands",
   "area": "Eivissa",
   "address": "Paseo Juan Carlos I 17, 07800, Eivissa",
+  "hotel": "the Ibiza Gran Hotel",
   "stars": 1,
   "cuisine": "International",
   "rating": 4.8,
@@ -17,7 +18,7 @@
   "lunchNote": "Dinner only",
   "lunchNoteEs": "Solo cenas",
   "noLunch": true,
-  "website": "https://lagaiaibiza.com/",
+  "website": "https://brulaibiza.com/",
   "lat": 38.9174239,
   "lng": 1.4415572,
   "placeId": "ChIJVym_jcpGmRIRFvCjB_YOo6U",
@@ -27,8 +28,10 @@
   "stay": {
     "kind": "hotel",
     "name": "Ibiza Gran Hotel",
-    "url": "https://ibizagranhotel.com/en/rooms",
-    "note": "The restaurant is now called Brula, run by the same chef Óscar Molina inside the five-star Ibiza Gran Hotel.",
-    "checked": "2026-10-23"
-  }
+    "url": "https://www.ibizagranhotel.com/en/rooms",
+    "note": "La Gaia is being renamed Brula for 2027 (same chef, Óscar Molina, same dining room inside the five-star Ibiza Gran Hotel).",
+    "checked": "2026-10-24"
+  },
+  "notice": "Closed for the season; reopens in April 2027 under the new name Brula, with the same chef and star (its website, October 2026)",
+  "noticeEs": "Cerrado por temporada; reabre en abril de 2027 con el nuevo nombre de Brula, con el mismo chef y la misma estrella (su web, octubre de 2026)"
 }

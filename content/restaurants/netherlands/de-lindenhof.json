@@ -25,5 +25,52 @@
   "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 160)",
   "lunchNote": "Open for lunch · Wed–Sun",
   "lunchNoteNl": "Open voor lunch · wo–zo",
-  "dietsManual": true
+  "dietsManual": true,
+  "stay": {
+    "kind": "rooms",
+    "rooms": 13,
+    "url": "https://restaurantdelindenhof.nl/en/stay-the-night/",
+    "from": 250,
+    "packages": [
+      {
+        "name": "Lazy Sunday",
+        "includes": "A 4-course dinner, a night in a suite or room for two sharing and Martin’s breakfast",
+        "price": 262.5,
+        "from": true,
+        "per": "person",
+        "when": "Sundays except public holidays",
+        "url": "https://restaurantdelindenhof.nl/en/arrangements/"
+      },
+      {
+        "name": "Chefs Special",
+        "includes": "A 6-course dinner with house cocktail, wines and coffee or tea with friandises, a night for two sharing and Martin’s breakfast",
+        "price": 425,
+        "from": true,
+        "per": "person",
+        "when": "EUR 50 per person per night extra on Fridays, Saturdays and public holidays",
+        "url": "https://restaurantdelindenhof.nl/en/arrangements/"
+      },
+      {
+        "name": "Midweekarrangement",
+        "includes": "Two dinners (4 courses the first evening, 5 the second), two nights for two sharing and Martin’s breakfast",
+        "price": 550,
+        "from": true,
+        "per": "person",
+        "nights": 2,
+        "when": "Arrive on a Wednesday; EUR 50 per person per night extra on public holidays",
+        "url": "https://restaurantdelindenhof.nl/en/arrangements/"
+      },
+      {
+        "name": "24 uur Martin",
+        "includes": "Reception with aperitif, a light lunch, a boat trip through Giethoorn with bike use, an 8-course dinner with aperitif and wines, a night for two sharing and breakfast",
+        "price": 637.5,
+        "from": true,
+        "per": "person",
+        "when": "EUR 50 per person weekend supplement on Fridays, Saturdays and public holidays",
+        "url": "https://restaurantdelindenhof.nl/en/arrangements/"
+      }
+    ],
+    "note": "Four senior and four junior suites, four lodge rooms and a chef’s cottage beside the restaurant and kitchen garden; prices are per night.",
+    "checked": "2026-10-23"
+  }
 }

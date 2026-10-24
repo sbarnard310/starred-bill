@@ -33,5 +33,40 @@
   "lunchNote": "Same menu at lunch · Thu–Fri",
   "lunchNoteNl": "Zelfde menu bij de lunch · do–vr",
   "lunchSourceType": "site",
-  "lunchSource": "https://www.restaurantamsterdammertje.nl/wp-content/uploads/2026/09/10.-Menukaart-Oktober-2026-NL.pdf"
+  "lunchSource": "https://www.restaurantamsterdammertje.nl/wp-content/uploads/2026/09/10.-Menukaart-Oktober-2026-NL.pdf",
+  "stay": {
+    "kind": "rooms",
+    "name": "Bistrotel ‘t Amsterdammertje",
+    "rooms": 11,
+    "url": "https://bistrotelamsterdammertje.nl/en/hotel-bistrotel/",
+    "packages": [
+      {
+        "name": "World Trip inclusief overnachting en transfer (5 courses)",
+        "includes": "A night for two at Bistrotel ‘t Amsterdammertje with breakfast, the 5-course World Trip menu with matching wines for two at the restaurant, and taxi transfer there and back (6 courses EUR 664, 7 courses EUR 704 for two)",
+        "price": 619,
+        "per": "room",
+        "when": "Not available Friday and Saturday for the 5-course version; subject to room availability; tourist tax of EUR 3.60 per person per night and EUR 5 parking per room extra",
+        "url": "https://www.restaurantamsterdammertje.nl/arrangementen/"
+      },
+      {
+        "name": "Triple XXX Arrangement",
+        "includes": "The 7-course World Trip menu with matching wines, water and coffee, transfer, and a free night at the Bistrotel (breakfast and tourist tax extra)",
+        "price": 242.5,
+        "per": "person",
+        "when": "Sundays only, limited availability, not on public holidays; book by email",
+        "url": "https://www.restaurantamsterdammertje.nl/arrangementen/"
+      },
+      {
+        "name": "Sterren aan de Vecht",
+        "includes": "Two nights over three days: one at Bistrotel ‘t Amsterdammertje with a 6-course all-in dinner at the restaurant and transfer, one at Hotel de Nederlanden in Vreeland with a 6-course all-in dinner there, breakfasts and bicycles",
+        "price": 807.95,
+        "per": "person",
+        "nights": 2,
+        "when": "Subject to availability; tourist tax of EUR 3.60 per person per night and EUR 5 parking per room extra",
+        "url": "https://www.restaurantamsterdammertje.nl/arrangementen/"
+      }
+    ],
+    "note": "Its rooms are at the owner’s own Bistrotel ’t Amsterdammertje in Nieuwersluis, a few kilometres away; the packages include a taxi there and back.",
+    "checked": "2026-10-23"
+  }
 }

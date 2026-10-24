@@ -25,5 +25,25 @@
   "dinnerNoteNl": "Proeverijmenu",
   "lunchNoteNl": "Lunchmenu",
   "chef": "Tom Schoonus",
-  "chefSource": "press"
+  "chefSource": "press",
+  "stay": {
+    "kind": "hotel",
+    "name": "Bernardus Lodge (Bernardus Golf)",
+    "rooms": 8,
+    "url": "https://bernardusgolf.com/lodge/",
+    "from": 290,
+    "packages": [
+      {
+        "name": "Bernardus Experience",
+        "includes": "A night in the Lodge for two with breakfast, a day of golf, lunch and a bento snack at Bernardus Cafe, and the six-course dinner at Nami for two (drinks extra)",
+        "price": 1035,
+        "from": true,
+        "per": "room",
+        "when": "Wednesday to Sunday; EUR 1,155 from April to October; tourist tax extra",
+        "url": "https://bernardusgolf.com/bernardus-experience/"
+      }
+    ],
+    "note": "Nami is on the Bernardus Golf estate; the eight-room Bernardus Lodge sits beside the course.",
+    "checked": "2026-10-23"
+  }
 }

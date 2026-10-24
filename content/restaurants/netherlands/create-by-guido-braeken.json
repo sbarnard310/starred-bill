@@ -21,5 +21,25 @@
   "lunchNote": "Open for lunch · Wed–Sat",
   "lunchNoteNl": "Open voor lunch · wo–za",
   "chef": "Guido Braeken",
-  "chefSource": "press"
+  "chefSource": "press",
+  "stay": {
+    "kind": "hotel",
+    "name": "Van Oys Maastricht Retreat",
+    "rooms": 81,
+    "url": "https://www.vanoys.com/rooms-suites/",
+    "from": 150,
+    "packages": [
+      {
+        "name": "A Feast for the Senses",
+        "includes": "Two nights in a luxury room or suite, a sparkling welcome, a 5-course dinner at Maes, Cuisine du Terroir, a 7-course dinner at Create by Guido Braeken (drinks extra), a surprise from Guido Braeken in the room and the Early Bird breakfast",
+        "price": 632,
+        "from": true,
+        "per": "person",
+        "nights": 2,
+        "when": "Arrive Tuesday to Friday; based on two guests sharing; service charge extra",
+        "url": "https://www.vanoys.com/a-feast-of-the-senses/"
+      }
+    ],
+    "checked": "2026-10-23"
+  }
 }

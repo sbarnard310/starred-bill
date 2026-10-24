@@ -32,5 +32,22 @@
   "lunchSource": "https://restaurantflore.com/",
   "dinnerNote": "Seasonal menu",
   "dinnerNoteNl": "Seizoensmenu",
-  "dietsManual": true
+  "dietsManual": true,
+  "stay": {
+    "kind": "hotel",
+    "name": "De L’Europe Amsterdam",
+    "rooms": 107,
+    "url": "https://www.deleurope.com/stay/",
+    "packages": [
+      {
+        "name": "A Culinary Journey",
+        "includes": "A night in a Premium Deluxe Room with breakfast at Brasserie Marie, a EUR 100 dine and drink credit to use at the hotel’s restaurants (Flore among them), a signature cocktail or mocktail, and a free upgrade to the next room category when available",
+        "price": 700,
+        "from": true,
+        "per": "room",
+        "url": "https://www.deleurope.com/offers-packages/culinarycapitaldeleurope/"
+      }
+    ],
+    "checked": "2026-10-23"
+  }
 }

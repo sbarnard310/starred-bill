@@ -41,5 +41,14 @@
   "photoSourceType": "commons",
   "photoWidth": 1000,
   "photoHeight": 750,
-  "photoChecked": "2026-10-13"
+  "photoChecked": "2026-10-13",
+  "stay": {
+    "kind": "rooms",
+    "name": "Herberg Onder de Linden",
+    "rooms": 6,
+    "url": "https://www.herbergonderdelinden.com/overnachten",
+    "from": 175,
+    "note": "Restaurant with four guest rooms upstairs and two suites in the former house behind; rooms from EUR 175 per night, breakfast EUR 30 per person extra.",
+    "checked": "2026-10-23"
+  }
 }

@@ -34,5 +34,23 @@
   "chef": "Remco Kuijpers",
   "chefSource": "site",
   "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 105)",
-  "lunchNoteNl": "Lunchmenu"
+  "lunchNoteNl": "Lunchmenu",
+  "stay": {
+    "kind": "hotel",
+    "name": "Weeshuis Gouda (WSHS)",
+    "url": "https://wshs.nl/en/stay/",
+    "packages": [
+      {
+        "name": "Culinair Genieten",
+        "includes": "A night for two in a room, a welcome drink, the 5-course dinner for two at LIZZ with wine pairing, coffee or tea with friandises, and breakfast in the Regentenkamer",
+        "price": 595.5,
+        "from": true,
+        "per": "room",
+        "when": "Arrival Wednesday to Saturday; city tax and energy surcharge extra",
+        "url": "https://wshs.nl/culinair-genieten/"
+      }
+    ],
+    "note": "The dinner package is Wednesday to Saturday only.",
+    "checked": "2026-10-23"
+  }
 }

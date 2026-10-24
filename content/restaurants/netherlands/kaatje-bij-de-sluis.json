@@ -51,5 +51,23 @@
   "bookingPhone": "+31 527 291 833",
   "groups": "Groups of 9 or more book through the group reservation option in the online booking form.",
   "infoSource": "https://www.kaatje.nl/",
-  "infoChecked": "2026-10-12"
+  "infoChecked": "2026-10-12",
+  "stay": {
+    "kind": "rooms",
+    "name": "Kaatjes Résidence",
+    "url": "https://www.kaatje.nl/",
+    "from": 145,
+    "fromNote": "double room without breakfast; €205 with breakfast",
+    "packages": [
+      {
+        "name": "Kaatje Arrangement Royaal",
+        "includes": "A night in a luxury double room, a breakfast of 15 organic items and a 6-course surprise dinner at the restaurant",
+        "price": 225,
+        "per": "person",
+        "url": "https://www.kaatje.nl/"
+      }
+    ],
+    "note": "A small hotel in an 1860 house in Blokzijl; rooms can only be booked by phone or through the contact form.",
+    "checked": "2026-10-23"
+  }
 }

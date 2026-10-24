@@ -27,5 +27,22 @@
   "noLunch": true,
   "lunchNote": "Dinner only",
   "lunchNoteNl": "Alleen diner",
-  "dietsManual": true
+  "dietsManual": true,
+  "stay": {
+    "kind": "hotel",
+    "name": "The Dylan Amsterdam",
+    "url": "https://www.dylanamsterdam.com/rooms-suites/",
+    "packages": [
+      {
+        "name": "Fine Dining Experience",
+        "includes": "A night for two in a Luxury Double Room, the Chef’s Signature Menu at Vinkeles with aperitif, wine pairing, coffee or tea and water, and breakfast at Bar Brasserie OCCO",
+        "price": 1545,
+        "from": true,
+        "per": "room",
+        "when": "Tuesday to Saturday only; bookable up to three months ahead",
+        "url": "https://www.dylanamsterdam.com/book-special-offer-fine-dining-experience/"
+      }
+    ],
+    "checked": "2026-10-23"
+  }
 }

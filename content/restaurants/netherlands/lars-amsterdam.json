@@ -66,5 +66,11 @@
   "groups": "On days the restaurant is normally closed, it takes groups of 20 or more on request; private dining and events by enquiry.",
   "infoSource": "https://larsamsterdam.nl/",
   "infoChecked": "2026-10-13",
-  "dietsManual": true
+  "dietsManual": true,
+  "stay": {
+    "kind": "hotel",
+    "name": "Moxy / Residence Inn Amsterdam",
+    "url": "https://larsamsterdam.nl/",
+    "checked": "2026-10-23"
+  }
 }

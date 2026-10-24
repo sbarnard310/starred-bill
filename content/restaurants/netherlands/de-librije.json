@@ -85,5 +85,42 @@
   "photoWidth": 1000,
   "photoHeight": 667,
   "photoChecked": "2026-10-13",
-  "dietsManual": true
+  "dietsManual": true,
+  "stay": {
+    "kind": "hotel",
+    "name": "Librije’s Hotel",
+    "rooms": 19,
+    "url": "https://www.librije.com/slapen/",
+    "packages": [
+      {
+        "name": "Kus van Thérèse arrangement",
+        "includes": "A night in a royal room for two sharing, the 7-course menu with champagne aperitif and five wines, breakfast and two bottles of Thérèse’s own wine to take home",
+        "price": 715,
+        "from": true,
+        "per": "person",
+        "when": "Wednesday and Thursday only; suite upgrades from +€55 for two",
+        "url": "https://www.librije.com/arrangementen/kus-van-therese-arrangement/"
+      },
+      {
+        "name": "Librije arrangement",
+        "includes": "A night in a royal room for two sharing, the 8-course menu with champagne aperitif, six selected wines, water and coffee or tea, and breakfast",
+        "price": 765,
+        "from": true,
+        "per": "person",
+        "when": "Wednesday and Thursday with dinner; Friday and Saturday with lunch or dinner; suite upgrades from +€55 for two",
+        "url": "https://www.librije.com/arrangementen/librije-arrangement/"
+      },
+      {
+        "name": "Backstage arrangement",
+        "includes": "A night in the hotel, breakfast, and the 8-course Backstage menu with champagne aperitif and five wines at a private table where guests watch and join in the cooking",
+        "price": 795,
+        "from": true,
+        "per": "person",
+        "when": "Bookings of four to twelve guests; Wednesday and Thursday with dinner, Friday and Saturday with lunch or dinner",
+        "url": "https://www.librije.com/arrangementen/backstage/"
+      }
+    ],
+    "note": "Librije’s Hotel has 19 rooms and suites in a former prison next to the restaurant.",
+    "checked": "2026-10-23"
+  }
 }

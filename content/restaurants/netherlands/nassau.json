@@ -32,5 +32,35 @@
   "dinnerNoteNl": "Belevingsmenu, 6 gangen (vanaf € 65 voor 3 gangen, dinsdag tot en met donderdag)",
   "noLunch": true,
   "lunchNote": "Dinner only",
-  "lunchNoteNl": "Alleen diner"
+  "lunchNoteNl": "Alleen diner",
+  "stay": {
+    "kind": "hotel",
+    "name": "Hotel Prinsenhof",
+    "rooms": 34,
+    "url": "https://prinsenhof.nl/nl/hotel/",
+    "packages": [
+      {
+        "name": "Fine Dining Experience (5-gangen)",
+        "includes": "A night at Hotel Prinsenhof, a glass of Champagne, a 5-course Experience menu at Restaurant Nassau (drinks extra) and breakfast the next morning; 10% off the package, 15% on Tuesday to Thursday",
+        "per": "person",
+        "when": "Tuesday to Saturday",
+        "url": "https://prinsenhof.nl/nl/arrangementen/"
+      },
+      {
+        "name": "Fine Dining Experience (3-gangen)",
+        "includes": "A night at Hotel Prinsenhof, a glass of Champagne, a 3-course Experience menu at Restaurant Nassau (drinks extra) and breakfast the next morning; 10% off the package",
+        "per": "person",
+        "when": "Tuesday, Wednesday and Thursday",
+        "url": "https://prinsenhof.nl/nl/arrangementen/"
+      },
+      {
+        "name": "Fine Dining Experience Complete (6-gangen)",
+        "includes": "A night at Hotel Prinsenhof, a glass of Champagne, a 6-course Experience menu at Restaurant Nassau with matching wines, coffee or tea with petits fours, and breakfast; 10% off, 15% on Tuesday to Thursday",
+        "per": "person",
+        "when": "Tuesday to Saturday, bookable from Christmas 2026",
+        "url": "https://prinsenhof.nl/nl/arrangementen/"
+      }
+    ],
+    "checked": "2026-10-23"
+  }
 }

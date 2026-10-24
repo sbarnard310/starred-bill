@@ -29,5 +29,20 @@
   "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 179)",
   "noLunch": true,
   "lunchNote": "Dinner only",
-  "lunchNoteNl": "Alleen diner"
+  "lunchNoteNl": "Alleen diner",
+  "stay": {
+    "kind": "hotel",
+    "name": "Hotel TwentySeven",
+    "rooms": 16,
+    "url": "https://www.hoteltwentyseven.com/twenty-seven-suites",
+    "packages": [
+      {
+        "name": "Dinner & overnight stay",
+        "includes": "Dinner at Restaurant Bougainville combined with a night in a suite at Hotel TwentySeven; packages and availability are given by the hotel’s reservations team",
+        "url": "https://www.restaurantbougainville.com/blijf-overnachten"
+      }
+    ],
+    "note": "Packages are booked by phone or email.",
+    "checked": "2026-10-23"
+  }
 }

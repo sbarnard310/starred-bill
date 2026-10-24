@@ -28,5 +28,37 @@
   "noLunch": true,
   "lunchNote": "Dinner only",
   "lunchNoteNl": "Alleen diner",
-  "dietsManual": true
+  "dietsManual": true,
+  "stay": {
+    "kind": "rooms",
+    "name": "Kasteel Gemert",
+    "rooms": 2,
+    "url": "https://restaurantgem.com/stay/",
+    "packages": [
+      {
+        "name": "Dine & Stay",
+        "includes": "A night in the Garden Suite, the six-course menu for two, a bottle of champagne or minibar refreshments on arrival, breakfast the next morning (drinks at dinner extra)",
+        "price": 950,
+        "per": "room",
+        "when": "Wednesday and Thursday evenings",
+        "url": "https://restaurantgem.com/stay/"
+      },
+      {
+        "name": "The Garden Suite",
+        "includes": "A night in the Garden Suite for two, a glass of champagne, the six-course Journey Menu for two (drinks extra), breakfast, valet parking inside the castle gates",
+        "price": 1150,
+        "per": "room",
+        "url": "https://restaurantgem.com/room/the-garden-suite/"
+      },
+      {
+        "name": "The Donjon Tower Suite",
+        "includes": "A night in the Donjon Tower Suite for two, welcome bite and champagne, the six-course Journey Menu for two (drinks extra), breakfast, valet parking",
+        "price": 1400,
+        "per": "room",
+        "url": "https://restaurantgem.com/room/the-donjon-tower-suite/"
+      }
+    ],
+    "note": "Two suites inside the 14th-century Kasteel Gemert (a Donjon tower suite and a Garden suite); rooms are sold together with a dinner reservation.",
+    "checked": "2026-10-23"
+  }
 }

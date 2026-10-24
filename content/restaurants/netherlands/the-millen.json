@@ -28,5 +28,11 @@
   "dinnerNoteNl": "Chef's menu, 5 gangen (6 gangen €105, 8 gangen €125)",
   "lunchNoteNl": "Lunchmenu, 3 gangen (4 gangen €75)",
   "dinner": 95,
-  "source": "https://restaurantthemillen.nl/wp-content/uploads/2026/10/ALC-EN-MENU-OKT-2026-NL.png"
+  "source": "https://restaurantthemillen.nl/wp-content/uploads/2026/10/ALC-EN-MENU-OKT-2026-NL.png",
+  "stay": {
+    "kind": "hotel",
+    "name": "Rotterdam Marriott Hotel",
+    "url": "https://restaurantthemillen.nl/",
+    "checked": "2026-10-23"
+  }
 }

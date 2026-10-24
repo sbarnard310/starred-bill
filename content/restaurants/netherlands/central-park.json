@@ -38,5 +38,13 @@
   "photoSourceType": "commons",
   "photoWidth": 1000,
   "photoHeight": 750,
-  "photoChecked": "2026-10-13"
+  "photoChecked": "2026-10-13",
+  "stay": {
+    "kind": "hotel",
+    "name": "Central Park Voorburg",
+    "rooms": 14,
+    "url": "https://www.centralparkvoorburg.com/en/hotel/",
+    "note": "Boutique hotel in an 18th-century listed country house with 14 rooms and suites.",
+    "checked": "2026-10-23"
+  }
 }

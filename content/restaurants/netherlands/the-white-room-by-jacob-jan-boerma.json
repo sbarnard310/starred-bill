@@ -25,5 +25,11 @@
   "chefSource": "michelin",
   "dinnerNoteNl": "Proeverijmenu",
   "lunchNote": "Open for lunch · Saturdays",
-  "lunchNoteNl": "Open voor lunch · zaterdag"
+  "lunchNoteNl": "Open voor lunch · zaterdag",
+  "stay": {
+    "kind": "hotel",
+    "name": "Anantara Grand Hotel Krasnapolsky Amsterdam",
+    "url": "https://www.nh-hotels.nl/hotel/nh-collection-amsterdam-grand-hotel-krasnapolsky",
+    "checked": "2026-10-23"
+  }
 }

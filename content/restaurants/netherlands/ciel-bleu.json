@@ -77,5 +77,23 @@
       "url": "https://www.laliste.com/places/ciel-bleu-amsterdam-nl"
     }
   ],
-  "rankingsChecked": "2026-10-13"
+  "rankingsChecked": "2026-10-13",
+  "stay": {
+    "kind": "hotel",
+    "name": "Hotel Okura Amsterdam",
+    "url": "https://www.okura.nl/rooms-suites",
+    "packages": [
+      {
+        "name": "Ciel Bleu Experience",
+        "includes": "A night for two in a Panorama Room, Executive Room or Junior Suite, the surprise dinner at Ciel Bleu with a champagne aperitif, wine and coffee or tea, a room upgrade when available, parking, and access to the Panorama Lounge and Nagomi gym and wellness",
+        "price": 1503,
+        "from": true,
+        "per": "room",
+        "when": "Price includes 9% VAT; city tax is extra. Subject to availability",
+        "url": "https://www.okura.nl/ciel-bleu-experience"
+      }
+    ],
+    "note": "Ciel Bleu is on the 23rd floor of Hotel Okura Amsterdam.",
+    "checked": "2026-10-23"
+  }
 }

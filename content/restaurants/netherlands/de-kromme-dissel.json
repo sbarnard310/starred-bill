@@ -72,5 +72,40 @@
   "bookingPhone": "+31 317 313 118",
   "infoSource": "https://www.krommedissel.nl/reserveren/",
   "infoChecked": "2026-10-13",
-  "dietsManual": true
+  "dietsManual": true,
+  "stay": {
+    "kind": "hotel",
+    "name": "Fletcher Boutique Hotel De Kromme Dissel",
+    "rooms": 18,
+    "url": "https://www.hoteldekrommedissel.nl/nl/kamers",
+    "packages": [
+      {
+        "name": "De Kromme Dissel Diner Arrangement",
+        "includes": "A night in a Kromme Dissel room, a 5-course dinner at the starred restaurant, breakfast and a goodie bag; content differs between weekend and midweek",
+        "price": 212.15,
+        "from": true,
+        "per": "person",
+        "url": "https://www.hoteldekrommedissel.nl/nl/arrangementen"
+      },
+      {
+        "name": "De Kromme Dissel Lunch Arrangement",
+        "includes": "Early check-in, a night in a Kromme Dissel room, a 4-course lunch at the starred restaurant on arrival day, breakfast, host and turndown service",
+        "price": 222.25,
+        "from": true,
+        "per": "person",
+        "url": "https://www.hoteldekrommedissel.nl/nl/arrangementen"
+      },
+      {
+        "name": "Jubileum Arrangement (55 years of a Michelin star)",
+        "includes": "A night in a Kromme Dissel room, the 5-course Signature Classics anniversary menu with amuses, breakfast and a goodie bag",
+        "price": 297.15,
+        "from": true,
+        "per": "person",
+        "when": "Midweek (Tuesday to Thursday) and weekend (Friday and Saturday) versions",
+        "url": "https://www.krommedissel.nl/jubileum/"
+      }
+    ],
+    "note": "A boutique hotel next door to the restaurant with 18 rooms, a pool and a sauna; the weekend breakfast is served in the restaurant.",
+    "checked": "2026-10-23"
+  }
 }

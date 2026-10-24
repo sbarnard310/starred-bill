@@ -1,0 +1,61 @@
+{
+  "id": "michelin-star-restaurants-with-rooms-netherlands",
+  "title": "Michelin Star Restaurants With Rooms in the Netherlands",
+  "description": "All {{rooms_netherlands}} Dutch Michelin star restaurants with rooms or in a hotel, from De Librije to Amsterdam’s hotels, with dinner and room prices.",
+  "h1": "Michelin Star Restaurants With Rooms and Hotels in the Netherlands",
+  "summary": "Where you can eat at a starred table in the Netherlands and stay the night: every restaurant with rooms or a hotel, with what dinner and a room cost.",
+  "section": "where",
+  "places": [
+    "netherlands"
+  ],
+  "figure": "{{rooms_netherlands}} you can stay at, dinner and a room from {{roomsCheapPrice_netherlands}}",
+  "published": "2026-10-24",
+  "updated": "2026-10-24",
+  "lang": "en-GB",
+  "faqFromHeadings": true,
+  "keywords": [
+    "michelin star restaurants with rooms netherlands",
+    "hotels with michelin star restaurants netherlands",
+    "michelin star hotels amsterdam"
+  ],
+  "body": "<p class=\"lede\">You can stay the night at {{rooms_netherlands}} of the Netherlands’ Michelin-starred restaurants: {{roomsHotel_netherlands}} are inside a hotel and {{roomsOwn_netherlands}} have rooms of their own, among them the country’s only three-star, De Librije in Zwolle. Dinner, bed and breakfast for two starts at {{roomsCheapPrice_netherlands}} (about {{roomsCheapUsd_netherlands}}) at {{roomsCheapName_netherlands}}. Checked {{checked}}.</p>\n<p>Dutch starred restaurants sell dinner and a room together as an “arrangement”, and most of those with rooms publish their prices: a night, the tasting menu and breakfast for two, often with a glass of champagne, sometimes with the wine pairing. Many are on country estates (“landgoederen”) in the east and south, in Overijssel, Gelderland and Limburg, where a long dinner and a train home don’t mix. The tables below give, for each restaurant, its hotel or rooms, the lowest room price it publishes and its cheapest stay with dinner, all from its own or its hotel’s website. Prices include VAT and change with the date; packages priced per person are shown that way, and the local tourist tax is usually added on top. For prices at every starred restaurant in the country, rooms or not, see our page of <a href=\"/netherlands/\">Michelin star restaurants in the Netherlands</a>, where “Show › With rooms” picks out these {{rooms_netherlands}}.</p>\n\n<h2 id=\"hotels\">Which Dutch hotels have a Michelin star restaurant?</h2>\n<p>These are the hotels with Michelin star restaurants in the Netherlands: {{roomsHotel_netherlands}} starred restaurants inside a hotel you can book. Of the Michelin star hotels, Amsterdam has the most, {{rooms_amsterdam}}: the two-star Ciel Bleu sits on the 23rd floor of Hotel Okura, Vinkeles is at The Dylan on the Keizersgracht and Flore at De L’Europe on the Amstel. De Librije’s own hotel is in a former prison in Zwolle, next to the restaurant, with 19 rooms and suites. In the country they are estate hotels, from Landgoed Lauswolt in Friesland and De Bloemenbeek in Twente to De Echoput in the Veluwe forest and Château Neercanne, built into the hillside above Maastricht.</p>\n{{table:rooms-hotel-netherlands}}\n\n<h2 id=\"rooms\">Which Dutch Michelin star restaurants have rooms?</h2>\n<p>{{roomsOwn_netherlands}} Dutch starred restaurants have rooms of their own rather than a hotel. The two-star De Lindenhof in Giethoorn has suites, lodge rooms and a chef’s cottage beside its kitchen garden; GEM. lets two suites inside the 14th-century castle at Gemert, sold only with dinner; De Kromme Watergang in Zeeland has two suites, one beside the restaurant and one at the Breskens marina. Kaatje bij de Sluis in Blokzijl and Herberg Onder de Linden in Aduard, near Groningen, have small hotels in old village houses.</p>\n{{table:rooms-netherlands}}\n\n<h2 id=\"cost\">How much is a stay with dinner at a Michelin star restaurant in the Netherlands?</h2>\n<p>{{roomsPack_netherlands}} of the {{rooms_netherlands}} publish a price for a stay with dinner. For one night for two, half of them cost between €450 and €950 (about $510 to $1,075). The least expensive are midweek arrangements at one-star estates near Utrecht: {{roomsCheapName_netherlands}} at Leersum from {{roomsCheapPrice_netherlands}} with a three-course dinner, and De Nederlanden on the Vecht in Vreeland from €379. At the top, De Librije’s arrangements start at €1,430 for two with the tasting menu and five wines, and the Amsterdam hotels’ Ciel Bleu and Vinkeles packages at about €1,500.</p>\n<p>Check three things before you book. First, the nights: many arrangements are sold only from Wednesday to Saturday, when the kitchen is open, and midweek is usually cheaper. Second, what is included: some are all-in with the wine pairing, others list drinks as extra. Third, how the price is given: Dutch packages are often per person, for two sharing a room, so double the figure for the bill.</p>\n\n<h2 id=\"cheapest\">What is the cheapest Michelin star restaurant with rooms in the Netherlands?</h2>\n<p>For a night with dinner included, {{roomsCheapName_netherlands}} on the Parc Broekhuizen estate at Leersum, at {{roomsCheapPrice_netherlands}} for two on Wednesdays and Thursdays. For the room alone, {{roomsFromName_netherlands}} in Blokzijl starts at {{roomsFromPrice_netherlands}} a night without breakfast, and Create at the Van Oys hotel near Maastricht at €150. A set lunch is the other cheap way in: see our <a data-guide=\"cheapest-michelin-star-restaurants\">cheapest Michelin star meals</a>.</p>\n\n<h2 id=\"booking\">How to book a stay at a Michelin star restaurant in the Netherlands</h2>\n<p>Book the arrangement on the hotel’s or restaurant’s own website, or by phone or email where it says so: several small places, Kaatje bij de Sluis and De Kromme Watergang among them, don’t take online bookings for their rooms. A few let rooms only to diners, such as GEM. and Inter Scaldes in Zeeland, so a room is also the surest way to a table. Book well ahead for weekends, and expect to add the tourist tax, a few euros a person a night.</p>",
+  "imageAlt": "Illustration of a Dutch brick country house by a canal at dusk, lit bedroom windows reflected in the water, a table for two in the dining room window and one gold star in the sky.",
+  "sources": [
+    {
+      "title": "Kus van Thérèse arrangement",
+      "publisher": "De Librije",
+      "url": "https://www.librije.com/arrangementen/kus-van-therese-arrangement/",
+      "checked": "2026-10-24",
+      "note": "De Librije’s hotel arrangements"
+    },
+    {
+      "title": "Dream & Dine Weekdays",
+      "publisher": "Culinair Landgoed Parc Broekhuizen",
+      "url": "https://parcbroekhuizen.nl/arrangementen/dream-dine-weekdays/",
+      "checked": "2026-10-24",
+      "note": "Voltaire’s midweek dinner and stay"
+    },
+    {
+      "title": "Ciel Bleu Experience",
+      "publisher": "Hotel Okura Amsterdam",
+      "url": "https://www.okura.nl/ciel-bleu-experience",
+      "checked": "2026-10-24",
+      "note": "Ciel Bleu’s stay with dinner"
+    },
+    {
+      "title": "Arrangements",
+      "publisher": "De Lindenhof, Giethoorn",
+      "url": "https://restaurantdelindenhof.nl/en/arrangements/",
+      "checked": "2026-10-24",
+      "note": "De Lindenhof’s suites and arrangements"
+    },
+    {
+      "title": "Stay",
+      "publisher": "GEM. by Soenil Bahadoer",
+      "url": "https://restaurantgem.com/stay/",
+      "checked": "2026-10-24",
+      "note": "GEM.’s castle suites"
+    }
+  ],
+  "sourcesNote": "The tables’ rooms, room prices and stay packages come from each restaurant’s or hotel’s own website, checked 24 October 2026; each restaurant’s page on The Starred Bill links to its source."
+}

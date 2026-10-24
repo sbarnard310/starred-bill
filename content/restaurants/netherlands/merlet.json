@@ -44,5 +44,31 @@
   "photoSourceType": "commons",
   "photoWidth": 1000,
   "photoHeight": 750,
-  "photoChecked": "2026-10-13"
+  "photoChecked": "2026-10-13",
+  "stay": {
+    "kind": "hotel",
+    "name": "Restaurant Hotel Merlet",
+    "rooms": 28,
+    "url": "https://www.merlet.nl/hotel",
+    "packages": [
+      {
+        "name": "Gastronomisch arrangement",
+        "includes": "A night, the six-course Signatuur menu at Restaurant Merlet, breakfast, use of the pool, sauna, steam cabin and gym, free hotel bikes",
+        "url": "https://www.merlet.nl/hotel/arrangementen/1-nacht"
+      },
+      {
+        "name": "Smaak van Merlet Arrangement",
+        "includes": "A night, a glass of champagne, the six-course Signatuur menu at Restaurant Merlet with wine pairing, coffee or tea with petits fours, breakfast, use of the pool, sauna and gym",
+        "url": "https://www.merlet.nl/hotel/arrangementen/1-nacht"
+      },
+      {
+        "name": "Culinair arrangement",
+        "includes": "Two nights, the four-course Ontdek Merlet menu on the first evening and the five-course Alliance menu on the second, both at Restaurant Merlet, breakfast, use of the pool, sauna and gym",
+        "nights": 2,
+        "url": "https://www.merlet.nl/hotel/arrangementen/2-nachten"
+      }
+    ],
+    "note": "A 28-room hotel with a swimming pool beside the dunes in Schoorl.",
+    "checked": "2026-10-23"
+  }
 }

@@ -29,5 +29,29 @@
   "chef": "Erik Tas",
   "chefSource": "michelin",
   "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 60)",
-  "lunchNoteNl": "Lunchmenu"
+  "lunchNoteNl": "Lunchmenu",
+  "stay": {
+    "kind": "rooms",
+    "url": "https://ganzenest.nl/en/hotel",
+    "packages": [
+      {
+        "name": "Arrangement ‘t Ganzenest",
+        "includes": "An aperitif in the room, a 5-course dinner for two at the restaurant, a night in a room and a full breakfast (EUR 525 for arrival Friday to Sunday)",
+        "price": 475,
+        "per": "room",
+        "when": "Arrival Wednesday or Thursday; not on public holidays",
+        "url": "https://ganzenest.nl/nl/hotel"
+      },
+      {
+        "name": "Arrangement Prestige",
+        "includes": "A champagne aperitif and oyster tasting in the suite, a 5-course dinner for two at the restaurant, a night in a suite and a full champagne breakfast (EUR 750 for arrival Friday to Sunday)",
+        "price": 700,
+        "per": "room",
+        "when": "Arrival Wednesday or Thursday; not on public holidays",
+        "url": "https://ganzenest.nl/nl/hotel"
+      }
+    ],
+    "note": "A restaurant with a small hotel: suites with their own terraces behind the restaurant, overlooking the golf course.",
+    "checked": "2026-10-23"
+  }
 }

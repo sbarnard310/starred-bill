@@ -36,5 +36,52 @@
   "photoSourceType": "commons",
   "photoWidth": 1000,
   "photoHeight": 662,
-  "photoChecked": "2026-10-13"
+  "photoChecked": "2026-10-13",
+  "stay": {
+    "kind": "hotel",
+    "name": "Landhuishotel & Restaurant De Bloemenbeek",
+    "rooms": 58,
+    "url": "https://www.bloemenbeek.nl/en/hotel/rooms/",
+    "packages": [
+      {
+        "name": "Rust, Ruimte & Allure",
+        "includes": "A night in a room or suite for two sharing, a sparkling aperitif with bites, a 4- or 5-course ‘Saison’ dinner, espresso with friandises and a regional breakfast",
+        "price": 210,
+        "from": true,
+        "per": "person",
+        "when": "Subject to availability in 2026 except public holidays; price based on two sharing, excluding tourist tax",
+        "url": "https://www.bloemenbeek.nl/en/hotel/packages/"
+      },
+      {
+        "name": "Wie jarig is trakteert",
+        "includes": "A night in a room or suite, a Champagne aperitif with bites, a 6-course ‘Jubileum’ dinner, friandises, a regional breakfast and use of the spa",
+        "price": 249,
+        "from": true,
+        "per": "person",
+        "when": "Subject to availability in 2026 except public holidays; price based on two sharing, excluding tourist tax",
+        "url": "https://www.bloemenbeek.nl/en/hotel/packages/"
+      },
+      {
+        "name": "Bloemenbeek Grand Luxe",
+        "includes": "A night in a Superior DeLuxe room or suite, a Grande Champagne aperitif with bites, a 6-course ‘Bloemenbeek’ dinner, friandises and breakfast with bubbles",
+        "price": 290,
+        "from": true,
+        "per": "person",
+        "when": "Subject to availability in 2026 except public holidays; price based on two sharing, excluding tourist tax",
+        "url": "https://www.bloemenbeek.nl/en/hotel/packages/"
+      },
+      {
+        "name": "Landgoed Twente",
+        "includes": "Two nights in a room or suite, a 6-course and a 4-course ‘Saison’ dinner and a regional breakfast",
+        "price": 400,
+        "from": true,
+        "per": "person",
+        "nights": 2,
+        "when": "Subject to availability in 2026 except public holidays; price based on two sharing, excluding tourist tax",
+        "url": "https://www.bloemenbeek.nl/en/hotel/packages/"
+      }
+    ],
+    "note": "A country-house hotel with a spa on a Twente estate.",
+    "checked": "2026-10-23"
+  }
 }

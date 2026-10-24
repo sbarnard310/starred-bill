@@ -42,5 +42,12 @@
   "photoSourceType": "commons",
   "photoWidth": 1000,
   "photoHeight": 750,
-  "photoChecked": "2026-10-13"
+  "photoChecked": "2026-10-13",
+  "stay": {
+    "kind": "hotel",
+    "name": "Hilton Rotterdam",
+    "url": "https://www.hilton.com/en/hotels/rtmhitw-hilton-rotterdam/",
+    "note": "Its website offers guests 20% off a room there.",
+    "checked": "2026-10-23"
+  }
 }

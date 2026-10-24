@@ -34,5 +34,22 @@
   "photoSourceType": "commons",
   "photoWidth": 1000,
   "photoHeight": 750,
-  "photoChecked": "2026-10-13"
+  "photoChecked": "2026-10-13",
+  "stay": {
+    "kind": "hotel",
+    "name": "Grand Hotel Karel V",
+    "url": "https://www.karelv.nl/kamers",
+    "packages": [
+      {
+        "name": "Gastronomic dinner experience",
+        "includes": "A night in a room or suite for two, a 5-course dinner at Restaurant Karel 5 for two, a breakfast buffet and access to the wellness and fitness facilities",
+        "price": 655,
+        "from": true,
+        "per": "room",
+        "when": "Subject to availability; parking not included",
+        "url": "https://www.karelv.nl/arrangementen-karel-v/gastronomic-dinner-arrangement"
+      }
+    ],
+    "checked": "2026-10-23"
+  }
 }

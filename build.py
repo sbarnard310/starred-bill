@@ -680,6 +680,15 @@ GUIDE_WORDS = {
                          "Switzerland": "スイス", "Belgium": "ベルギー", "South Korea": "韓国", "Netherlands": "オランダ"}},
     # French (23 Oct 2026): numbers grouped with a no-break space, "$ US" and "$ CA" after the amount as France and Québec
     # write them, and "1er" for the first of a month (`first`).
+    "nl": {"name": "Nederlands", "sources": "Bronnen", "sourceChecked": "(geraadpleegd in {month})",
+           "ownData": "Prijzen en aantallen zijn eigen gegevens van The Starred Bill over {total} sterrenrestaurants: sterren uit de nieuwste editie van de MICHELIN Gids van elk land, menuprijzen van de website van elk restaurant of, als die er geen noemt, uit een recente recensie, gecontroleerd in {checked}. Bedragen in dollars gebruiken wisselkoersen van {rates} ({day}).",
+           "updated": "Bijgewerkt op {date}", "checked": "Sterren en prijzen gecontroleerd in {month}",
+           "faq": "Veelgestelde vragen", "inEnglish": "in het Engels", "related": "Gerelateerde gidsen", "usd": "US$ {n}", "thousands": ".",
+           "date": "{d} {m} {y}", "monthYear": "{m} {y}", "money": {"EUR": "€ {n}"},
+           "months": ["januari", "februari", "maart", "april", "mei", "juni", "juli", "augustus", "september", "oktober", "november", "december"],
+           "countries": {"France": "Frankrijk", "Japan": "Japan", "Italy": "Italië", "Germany": "Duitsland", "Spain": "Spanje",
+                         "United States": "Verenigde Staten", "China": "China", "United Kingdom": "Verenigd Koninkrijk", "Hong Kong": "Hongkong",
+                         "Switzerland": "Zwitserland", "Belgium": "België", "South Korea": "Zuid-Korea", "Netherlands": "Nederland"}},
     "fr": {"name": "Français", "sources": "Sources", "sourceChecked": "(consulté en {month})",
            "ownData": "Les prix et les décomptes sont des données propres à The Starred Bill sur {total} restaurants étoilés : étoiles de la dernière édition du Guide MICHELIN de chaque pays, prix des menus relevés sur le site de chaque restaurant ou, à défaut, dans une critique récente, vérifiés en {checked}. Les montants en dollars utilisent les taux de change d’{rates} ({day}).",
            "updated": "Mis à jour le {date}", "checked": "Étoiles et prix vérifiés en {month}",
@@ -4824,7 +4833,7 @@ VEG_SERVES = {"oyster-oyster": "Vegetarian or vegan, oysters optional", "fields-
               "mita": "Plant-based", "daigo": "Shōjin ryōri (Buddhist vegetarian)", "avatara": "Vegetarian (Indian)"}
 # The restaurants-with-rooms guides (23 Oct 2026): {{table:rooms-<place>}} (restaurants with rooms of their own) and
 # {{table:rooms-hotel-<place>}} (restaurants inside a hotel) for each place here, from each restaurant's `stay`.
-ROOMS_LISTS = ("uk", "france")
+ROOMS_LISTS = ("uk", "france", "netherlands")
 # Their wording in the translated guides (a translation's {{table:rooms-…}} needs its language here; rooms_blocks_in()).
 ROOMS_WORDS = {
     "fr": {"heads": ("Restaurant", "Étoiles", "Où", "Chambres", "Chambre dès, la nuit", "Séjour avec dîner", "Menu dégustation, par personne"),
@@ -4837,6 +4846,16 @@ ROOMS_WORDS = {
                         "restaurant sur The Starred Bill, celui de l’hôtel sa page des chambres.",
            "noteEnd": " Le prix de la chambre est le plus bas affiché pour une nuit, le séjour le forfait le moins cher avec dîner et nuit, "
                       "relevés sur le site du restaurant ou de l’hôtel et variables selon la date. Menus par personne, hors boissons. Vérifié en {month}."},
+    "nl": {"heads": ("Restaurant", "Sterren", "Waar", "Kamers", "Kamer vanaf, per nacht", "Arrangement met diner", "Proeverijmenu, per persoon"),
+           "hotelHead": "Hotel", "seeRooms": "Bekijk", "from": "vanaf ", "per": {"person": " p.p.", "room": " per kamer"},
+           "nights": " voor {n} nachten", "stars": ("1 ster", "2 sterren", "3 sterren"), "notPublished": "Niet gepubliceerd",
+           "main": "hoofdgerecht à la carte", "spend": "gemiddelde besteding", "onGuide": "{name} in de MICHELIN Gids",
+           "noteRooms": "Sterrenrestaurants met eigen kamers, van de meeste naar de minste sterren. De naam opent het restaurant op "
+                        "The Starred Bill, het aantal kamers de kamerpagina op de eigen website.",
+           "noteHotel": "Sterrenrestaurants in een hotel waar je kunt overnachten, van de meeste naar de minste sterren. De naam opent het "
+                        "restaurant op The Starred Bill, de naam van het hotel de kamerpagina.",
+           "noteEnd": " De kamerprijs is de laagste die voor een nacht wordt genoemd, het arrangement het goedkoopste met diner en overnachting, "
+                      "beide van de eigen website van het restaurant of hotel en afhankelijk van de datum. Menu’s per persoon, zonder drankjes. Gecontroleerd in {month}."},
 }
 
 
@@ -6760,7 +6779,7 @@ def foot_guide(lang="en"):
             + ('<a href="/news/" class="foot-guide" lang="en">Michelin star news</a>' if news and lang == "en" else ""))
 
 
-GUIDE_CRUMB = {"de": "Ratgeber", "es": "Guías", "it": "Guide", "pt": "Guias", "pl": "Poradniki", "ja": "ガイド", "fr": "Guides"}  # navGuides in each language
+GUIDE_CRUMB = {"de": "Ratgeber", "es": "Guías", "it": "Guide", "pt": "Guias", "pl": "Poradniki", "ja": "ガイド", "fr": "Guides", "nl": "Gidsen"}  # navGuides in each language
 
 
 def guide_lang_values(gid, lang):

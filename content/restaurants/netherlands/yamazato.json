@@ -21,5 +21,22 @@
   "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 175)",
   "noLunch": true,
   "lunchNote": "Dinner only",
-  "lunchNoteNl": "Alleen diner"
+  "lunchNoteNl": "Alleen diner",
+  "stay": {
+    "kind": "hotel",
+    "name": "Hotel Okura Amsterdam",
+    "url": "https://www.okura.nl/rooms-suites",
+    "packages": [
+      {
+        "name": "Yamazato Experience",
+        "includes": "A night for two, the ICHO menu at Yamazato, breakfast, a welcome gift of Okura chopsticks, parking, and access to Nagomi gym and wellness",
+        "price": 809,
+        "from": true,
+        "per": "room",
+        "when": "Price includes 9% VAT; city tax is extra. Subject to availability",
+        "url": "https://www.okura.nl/yamazato-experience"
+      }
+    ],
+    "checked": "2026-10-23"
+  }
 }

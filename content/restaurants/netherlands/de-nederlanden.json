@@ -28,5 +28,42 @@
   "chefSource": "michelin",
   "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 150)",
   "lunchNote": "Open for lunch · Thu–Sun",
-  "lunchNoteNl": "Open voor lunch · do–zo"
+  "lunchNoteNl": "Open voor lunch · do–zo",
+  "stay": {
+    "kind": "hotel",
+    "name": "Boutique hotel De Nederlanden",
+    "rooms": 11,
+    "url": "https://www.nederlanden.nl/boutiquehotel/",
+    "packages": [
+      {
+        "name": "Vreeland arrangement",
+        "includes": "A 3-course menu du chef, a night in a standard room for two sharing, a full breakfast at the table, bathrobes and slippers, and a walk around Loenen aan de Vecht",
+        "price": 189.5,
+        "from": true,
+        "per": "person",
+        "when": "Wednesday to Saturday; luxury room from €214.50 and suite from €264.50 per person; tourist tax €3.60 per person per night extra",
+        "url": "https://www.nederlanden.nl/boutiquehotel/"
+      },
+      {
+        "name": "Dineren & Logeren",
+        "includes": "An 8-course prestige menu, a night in a standard room for two sharing, a full breakfast at the table, bathrobes and slippers",
+        "price": 289.5,
+        "from": true,
+        "per": "person",
+        "when": "Wednesday to Saturday; luxury room from €314.50 and suite from €389.50 per person; tourist tax €3.60 per person per night extra",
+        "url": "https://www.nederlanden.nl/boutiquehotel/"
+      },
+      {
+        "name": "Eten, drinken & slapen",
+        "includes": "A glass of champagne, a 6-course menu du chef with a wine pairing, water, coffee or tea with friandises, a night in a standard room for two sharing and a full breakfast",
+        "price": 394.5,
+        "from": true,
+        "per": "person",
+        "when": "Wednesday to Saturday; luxury room from €419.50 and suite from €494.50 per person; tourist tax €3.60 per person per night extra",
+        "url": "https://www.nederlanden.nl/boutiquehotel/"
+      }
+    ],
+    "note": "Eleven rooms and a suite beside the restaurant on the Vecht; the hotel is open Wednesday to Saturday nights only.",
+    "checked": "2026-10-23"
+  }
 }

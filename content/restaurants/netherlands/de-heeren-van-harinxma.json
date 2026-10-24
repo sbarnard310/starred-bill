@@ -31,5 +31,20 @@
   "lunchNoteNl": "Zelfde menu bij de lunch · ma–vr",
   "lunchWine": 73.5,
   "lunchSourceType": "site",
-  "lunchSource": "https://www.lauswolt.nl/eten-drinken/de-heeren-van-harinxma"
+  "lunchSource": "https://www.lauswolt.nl/eten-drinken/de-heeren-van-harinxma",
+  "stay": {
+    "kind": "hotel",
+    "name": "Landgoed Lauswolt",
+    "rooms": 59,
+    "url": "https://www.lauswolt.nl/kamers-suites",
+    "packages": [
+      {
+        "name": "2-daags Culinair Lauswolt Arrangement",
+        "includes": "A night in a room or suite, a champagne aperitif and five-course dinner with wine pairing at De Heeren van Harinxma, champagne breakfast, and free use of the pool, sauna and steam bath",
+        "url": "https://www.lauswolt.nl/2-daags-culinair-lauswolt-arrangement"
+      }
+    ],
+    "note": "The restaurant is on the Lauswolt country estate, a hotel with 59 rooms and suites.",
+    "checked": "2026-10-23"
+  }
 }

@@ -27,5 +27,12 @@
   "chefSource": "michelin",
   "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 130)",
   "lunchNote": "Open for lunch · Thu–Sat",
-  "lunchNoteNl": "Open voor lunch · do–za"
+  "lunchNoteNl": "Open voor lunch · do–za",
+  "stay": {
+    "kind": "hotel",
+    "name": "Grand Hotel Huis ter Duin",
+    "rooms": 255,
+    "url": "https://huisterduin.com/rooms-suites/?lang=en",
+    "checked": "2026-10-23"
+  }
 }

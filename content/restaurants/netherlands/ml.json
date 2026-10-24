@@ -37,5 +37,28 @@
   "photoWidth": 1000,
   "photoHeight": 666,
   "photoChecked": "2026-10-13",
-  "dietsManual": true
+  "dietsManual": true,
+  "stay": {
+    "kind": "hotel",
+    "name": "Hotel ML",
+    "rooms": 17,
+    "url": "https://www.mlinhaarlem.nl/en-gb/onze-kamers",
+    "packages": [
+      {
+        "name": "Dream & Dine",
+        "includes": "A night in a historic building, breakfast and a 6-course dinner with amuses for two in the Michelin-star restaurant",
+        "per": "room",
+        "when": "Not Sunday or Monday; not during the Formula 1 weekend, Christmas or New Year",
+        "url": "https://www.mlinhaarlem.nl/en-gb/dream-and-dine-arrangement"
+      },
+      {
+        "name": "Mini Escape",
+        "includes": "A night in the hotel and a 5-course dinner in the Michelin-star restaurant",
+        "when": "Tuesday to Thursday; not during the Formula 1 weekend, Christmas or New Year",
+        "url": "https://www.mlinhaarlem.nl/en-gb/package"
+      }
+    ],
+    "note": "A small four-star hotel of 17 rooms and suites in the same historic building as the restaurant.",
+    "checked": "2026-10-23"
+  }
 }

@@ -37,5 +37,13 @@
   "photoWidth": 1000,
   "photoHeight": 796,
   "photoChecked": "2026-10-13",
-  "dietsManual": true
+  "dietsManual": true,
+  "stay": {
+    "kind": "hotel",
+    "name": "Chateau Neercanne",
+    "rooms": 7,
+    "url": "https://www.oostwegelcollection.nl/chateau-neercanne/suites",
+    "note": "A 17th-century estate hotel (Oostwegel Collection) with seven suites above Maastricht, next to the restaurant.",
+    "checked": "2026-10-23"
+  }
 }

@@ -26,5 +26,12 @@
   "lunchNoteNl": "Open voor lunch · do–za",
   "chef": "Hans van Wolde",
   "chefSource": "press",
-  "dietsManual": true
+  "dietsManual": true,
+  "stay": {
+    "kind": "rooms",
+    "name": "Brute Lodges",
+    "url": "https://www.brut172.com/stay",
+    "note": "11 lodges and a six-person mansion (rented as a whole) stand 300 m from the restaurant; midweek and holiday packages are offered on request via lodges@brut172.com.",
+    "checked": "2026-10-23"
+  }
 }

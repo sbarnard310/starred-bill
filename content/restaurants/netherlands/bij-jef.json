@@ -30,5 +30,39 @@
   "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 155)",
   "lunchNoteNl": "Lunchmenu",
   "chef": "Jef Schuur",
-  "chefSource": "press"
+  "chefSource": "press",
+  "stay": {
+    "kind": "hotel",
+    "name": "Bij Jef",
+    "rooms": 12,
+    "url": "https://www.bijjef.nl/en/hotel",
+    "packages": [
+      {
+        "name": "Nachtje Texel",
+        "includes": "Champagne on arrival, the seven-course Local meets Cosmopolitan menu with wine pairing, water, coffee with petits fours, a night in a luxury suite and breakfast",
+        "url": "https://www.bijjef.nl/nl/arrangementen/nachtje-texel"
+      },
+      {
+        "name": "Midweek Arrangement",
+        "includes": "Champagne on arrival, two nights in a luxury suite with breakfast, and a five-course or seven-course dinner",
+        "nights": 2,
+        "when": "Arrival on Tuesday or Wednesday",
+        "url": "https://www.bijjef.nl/nl/arrangementen/midweek-arrangement"
+      },
+      {
+        "name": "Weekend Arrangement",
+        "includes": "Champagne on arrival, two nights in a luxury suite with breakfast, and a five-course or seven-course dinner",
+        "nights": 2,
+        "url": "https://www.bijjef.nl/nl/arrangementen/weekend-arrangement"
+      },
+      {
+        "name": "Vierdaags Culinair Arrangement",
+        "includes": "Three nights in a luxury suite with cycling along the coast and a culinary programme",
+        "nights": 3,
+        "url": "https://www.bijjef.nl/nl/arrangementen/vierdaags-culinair-arrangement"
+      }
+    ],
+    "note": "A Relais & Chateaux hotel of 8 junior suites and 4 suites in a former rectory in Den Hoorn on Texel.",
+    "checked": "2026-10-23"
+  }
 }

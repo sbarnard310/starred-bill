@@ -71,5 +71,35 @@
       "url": "https://www.laliste.com/places/inter-scaldes-kruiningen-nl"
     }
   ],
-  "rankingsChecked": "2026-10-13"
+  "rankingsChecked": "2026-10-13",
+  "stay": {
+    "kind": "hotel",
+    "name": "Pillows Luxury Boutique Hotel Inter Scaldes",
+    "url": "https://www.interscaldes.nl/eng/hotel",
+    "packages": [
+      {
+        "name": "Hoogtij Experience",
+        "includes": "One night in a suite with breakfast and the Hoogtij menu (12 impressions) at the 2-star restaurant",
+        "url": "https://www.interscaldes.nl/hotel"
+      },
+      {
+        "name": "Springtij Experience",
+        "includes": "One night in a suite with breakfast and the Springtij menu (18 impressions) at the 2-star restaurant",
+        "url": "https://www.interscaldes.nl/hotel"
+      },
+      {
+        "name": "Oesterij Experience",
+        "includes": "A tour and tasting at the oyster farm, the Hoogtij menu (12 impressions) at the restaurant, and a night with breakfast",
+        "url": "https://www.interscaldes.nl/hotel"
+      },
+      {
+        "name": "2-night Culinary Experience",
+        "includes": "Two nights with breakfast, the Hoogtij menu (12 impressions) and an à la carte lunch or dinner at the restaurant",
+        "nights": 2,
+        "url": "https://www.interscaldes.nl/hotel"
+      }
+    ],
+    "note": "Suites are bookable only together with a restaurant reservation.",
+    "checked": "2026-10-23"
+  }
 }

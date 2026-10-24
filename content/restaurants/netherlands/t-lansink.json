@@ -28,5 +28,40 @@
   "lunchNote": "Dinner only",
   "lunchNoteNl": "Alleen diner",
   "chef": "Lars van Galen",
-  "chefSource": "press"
+  "chefSource": "press",
+  "stay": {
+    "kind": "hotel",
+    "name": "Hotel-Restaurant ‘t Lansink",
+    "rooms": 25,
+    "url": "https://hotellansink.nl/kamers-suites/",
+    "packages": [
+      {
+        "name": "Deluxe arrangement (8 courses)",
+        "includes": "A night with breakfast, a champagne aperitif, an 8-course dinner and coffee or tea with sweets",
+        "per": "person",
+        "url": "https://hotellansink.nl/arrangementen/"
+      },
+      {
+        "name": "Culinair all-in arrangement",
+        "includes": "A night with breakfast, a champagne aperitif, a 6-course dinner with matching wines and mineral waters, and coffee or tea with sweets",
+        "per": "person",
+        "url": "https://hotellansink.nl/arrangementen/"
+      },
+      {
+        "name": "Ontspannen Genieten",
+        "includes": "A night in a room or suite, a 5-course dinner and breakfast the next morning",
+        "per": "person",
+        "url": "https://hotellansink.nl/arrangementen/"
+      },
+      {
+        "name": "Sunday Special",
+        "includes": "A night with breakfast and a 3-course dinner",
+        "per": "person",
+        "when": "Arrival on a Sunday only",
+        "url": "https://hotellansink.nl/arrangementen/"
+      }
+    ],
+    "note": "A listed 1916 tea house in Hengelo’s Tuindorp with 14 rooms in the main building and 11 in the Residence across the street.",
+    "checked": "2026-10-23"
+  }
 }

@@ -28,5 +28,13 @@
   "lunchSourceType": "site",
   "lunchSource": "https://www.restaurantspetters.nl/menu",
   "chef": "Laurent Smallegange",
-  "chefSource": "press"
+  "chefSource": "press",
+  "stay": {
+    "kind": "rooms",
+    "rooms": 2,
+    "url": "https://www.restaurantspetters.nl/suites",
+    "from": 190,
+    "note": "Two suites close by: Suite Sea Breeze (75 m2, 500 m from the restaurant) at EUR 275 a night and the harbour hut ‘t Boothuis (100 m away) at EUR 190.",
+    "checked": "2026-10-23"
+  }
 }

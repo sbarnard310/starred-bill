@@ -30,5 +30,24 @@
   "chef": "Tom Vinke",
   "chefSource": "michelin",
   "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 160)",
-  "lunchNoteNl": "Lunchmenu"
+  "lunchNoteNl": "Lunchmenu",
+  "stay": {
+    "kind": "rooms",
+    "rooms": 2,
+    "url": "https://krommewatergang.nl/suites/",
+    "from": 295,
+    "packages": [
+      {
+        "name": "Arrangement",
+        "includes": "Two nights in a suite with breakfast, a 5-course all-in dinner at the restaurant (house champagne, matching wines, water, coffee with friandises) and a tapas menu in the bistro (house aperitif, bottle of house wine, water, coffee)",
+        "price": 750,
+        "per": "person",
+        "nights": 2,
+        "when": "Book by email, subject to availability; tourist tax extra",
+        "url": "https://krommewatergang.nl/suites/"
+      }
+    ],
+    "note": "Only two guest suites: Suite Blanche beside the restaurant, and Suite 11 at the Breskens marina (high season only, with pick-up service).",
+    "checked": "2026-10-23"
+  }
 }

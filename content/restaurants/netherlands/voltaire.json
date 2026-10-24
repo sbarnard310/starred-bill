@@ -41,5 +41,51 @@
   "photoSourceType": "commons",
   "photoWidth": 750,
   "photoHeight": 1000,
-  "photoChecked": "2026-10-13"
+  "photoChecked": "2026-10-13",
+  "stay": {
+    "kind": "hotel",
+    "name": "Culinair Landgoed Parc Broekhuizen",
+    "url": "https://parcbroekhuizen.nl/en/rooms-suites/",
+    "packages": [
+      {
+        "name": "Dream & Dine Weekdays",
+        "includes": "A night in a room or suite for two and a 3-course dinner for two at Voltaire (can be extended to 5 or 6 courses if requested in advance)",
+        "price": 350,
+        "from": true,
+        "per": "room",
+        "when": "Wednesday and Thursday; local taxes extra",
+        "url": "https://parcbroekhuizen.nl/arrangementen/dream-dine-weekdays/"
+      },
+      {
+        "name": "Dream & Dine Delight",
+        "includes": "A night in a room or suite for two, a champagne aperitif, a 5-course dinner for two at Voltaire, water, coffee or tea with friandises, and à la carte breakfast",
+        "price": 605,
+        "from": true,
+        "per": "room",
+        "when": "Wednesday to Saturday; local taxes extra",
+        "url": "https://parcbroekhuizen.nl/arrangementen/dream-dine-delight/"
+      },
+      {
+        "name": "Dream & Dine Deluxe",
+        "includes": "A night in a room or suite for two, a champagne aperitif, a 6-course dinner for two at Voltaire, water, coffee or tea with friandises, and à la carte breakfast",
+        "price": 645,
+        "from": true,
+        "per": "room",
+        "when": "Wednesday to Saturday; local taxes extra",
+        "url": "https://parcbroekhuizen.nl/arrangementen/dream-dine-deluxe/"
+      },
+      {
+        "name": "Culinary Escape",
+        "includes": "Two nights in a room or suite for two, a 6-course dinner with sommelier selection at Voltaire, a 3-course dinner with wine pairing at the estate’s Bistro LOF, aperitifs, and à la carte breakfast both mornings",
+        "price": 1270,
+        "from": true,
+        "per": "room",
+        "nights": 2,
+        "when": "Monday, Wednesday, Thursday, Friday and Saturday; local taxes extra",
+        "url": "https://parcbroekhuizen.nl/arrangementen/culinary-escape/"
+      }
+    ],
+    "note": "Boutique hotel on the estate in the Utrechtse Heuvelrug: suites and lofts in the main house and rooms in the Coach House, a short walk from the restaurant.",
+    "checked": "2026-10-23"
+  }
 }

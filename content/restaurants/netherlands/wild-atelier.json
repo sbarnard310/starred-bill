@@ -33,5 +33,27 @@
   "lunchNote": "Same menu at lunch · Saturdays",
   "lunchNoteNl": "Zelfde menu bij de lunch · zaterdag",
   "lunchSourceType": "site",
-  "lunchSource": "https://echoput.nl/wild-atelier/"
+  "lunchSource": "https://echoput.nl/wild-atelier/",
+  "stay": {
+    "kind": "hotel",
+    "name": "Hotel Gastronomique De Echoput",
+    "rooms": 42,
+    "url": "https://echoput.nl/hotel/kamers-suites",
+    "packages": [
+      {
+        "name": "Wild Atelier Arrangement",
+        "includes": "A night in an Echoput room or suite, the 7-course wild-game menu at Wild Atelier, breakfast buffet with sparkling wine, and use of the pool, sauna and fitness",
+        "per": "room",
+        "url": "https://echoput.nl/arrangementen/wild-atelier-arrangement"
+      },
+      {
+        "name": "Culinair Echoput Arrangement (2 nachten)",
+        "includes": "Two nights in an Echoput room or suite, the 7-course menu at Wild Atelier one evening and a 4-course menu at Grand Bistro Echo the other, two breakfast buffets with sparkling wine, and use of the pool, sauna and fitness",
+        "nights": 2,
+        "url": "https://echoput.nl/arrangementen/culinair-echoput-arrangement-2-nachten"
+      }
+    ],
+    "note": "A 5-star hotel of 42 rooms and suites in the Veluwe forest; Wild Atelier is its fine-dining restaurant.",
+    "checked": "2026-10-23"
+  }
 }

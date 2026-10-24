@@ -27,5 +27,12 @@
   "placeId": "ChIJc8CxqytaoRIRWa4yjZ0X8lk",
   "michelinId": "527947",
   "chef": "Josep Moreno",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "hotel",
+    "name": "Num Hotel",
+    "url": "https://deliranto.com/en/numhotel/",
+    "note": "The restaurant’s site offers ‘gastronomic rooms’ that guarantee a Deliranto table more than three months ahead.",
+    "checked": "2026-10-23"
+  }
 }

@@ -29,5 +29,15 @@
     "gluten-free"
   ],
   "chef": "Víctor Manuel Ovalles",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "hotel",
+    "name": "Hotel Restaurante Casa Arcas",
+    "rooms": 12,
+    "url": "https://hotelvalledebenasque.com/hotel-casa-arcas/",
+    "from": 124,
+    "fromNote": "double Superior for two, including breakfast",
+    "note": "Twelve rooms (eight Double Superior, four duplex suites) above the restaurant; the hotel says a room booking does not guarantee a table.",
+    "checked": "2026-10-23"
+  }
 }

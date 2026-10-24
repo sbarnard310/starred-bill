@@ -29,5 +29,12 @@
   "placeId": "ChIJJQAGN_XKuhIRj4fev4m_6FI",
   "michelinId": "221957",
   "chef": "Fina Puigdevall",
-  "chefSource": "site"
+  "chefSource": "site",
+  "stay": {
+    "kind": "rooms",
+    "name": "Les Cols Pavellons",
+    "url": "https://lescolspavellons.com/eng/",
+    "note": "Sleep in the estate’s Pavellons (pavilion rooms) at Mas Les Cols; the minimum stay is one night, with a pavilion for two and breakfasts.",
+    "checked": "2026-10-23"
+  }
 }

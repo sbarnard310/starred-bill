@@ -31,5 +31,53 @@
     "gluten-free"
   ],
   "chef": "Samuel Moreno",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "hotel",
+    "name": "Molino de Alcuneza",
+    "rooms": 17,
+    "url": "https://www.molinodealcuneza.com/room-suites/",
+    "packages": [
+      {
+        "name": "Escapada Gourmet (1 noche)",
+        "includes": "A night for two in a Classic room (suites cost more), breakfast and the Esencias tasting menu for two at the starred restaurant with a bottle of wine, water and coffee",
+        "price": 605,
+        "from": true,
+        "per": "room",
+        "when": "From Thursday dinner to Sunday lunch; VAT included, sold also as a gift voucher",
+        "url": "https://www.molinodealcuneza.com/tienda/index.php/producto/experiencia-gourmet-1-noche/"
+      },
+      {
+        "name": "Escapada Gourmet + SPA (1 noche)",
+        "includes": "A night for two in a Classic room (suites cost more), breakfast, the Esencias tasting menu for two with a bottle of wine, and a 55-minute private spa circuit for two",
+        "price": 670,
+        "from": true,
+        "per": "room",
+        "when": "Thursday to Sunday; VAT included",
+        "url": "https://www.molinodealcuneza.com/tienda/index.php/producto/escapada-gourmet-spa/"
+      },
+      {
+        "name": "Escapada Gastronomía & Spa (2 noches)",
+        "includes": "Two nights for two in a Classic room (suites cost more), breakfasts, the Molienda tasting menu for two with a bottle of wine, and a 55-minute spa circuit",
+        "price": 871,
+        "from": true,
+        "per": "room",
+        "nights": 2,
+        "when": "Thursday to Sunday; VAT included",
+        "url": "https://www.molinodealcuneza.com/tienda/index.php/producto/escapada-gastronomia-spa-2-noches/"
+      },
+      {
+        "name": "Escapada Romántica (2 noches)",
+        "includes": "Two nights for two, breakfasts, the Molienda tasting menu for two with a bottle of wine, a spa circuit and a couples’ massage, and a bottle of cava in the room",
+        "price": 1041,
+        "from": true,
+        "per": "room",
+        "nights": 2,
+        "when": "Thursday to Sunday; VAT included",
+        "url": "https://www.molinodealcuneza.com/tienda/index.php/producto/escapada-romantica-2-noches/"
+      }
+    ],
+    "note": "A restored flour mill with 17 rooms; the gourmet restaurant opens from Thursday dinner to Sunday lunch.",
+    "checked": "2026-10-23"
+  }
 }

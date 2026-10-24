@@ -23,5 +23,12 @@
   "placeId": "ChIJVym_jcpGmRIRFvCjB_YOo6U",
   "michelinId": "535945",
   "chef": "Óscar Molina",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "hotel",
+    "name": "Ibiza Gran Hotel",
+    "url": "https://ibizagranhotel.com/en/rooms",
+    "note": "The restaurant is now called Brula, run by the same chef Óscar Molina inside the five-star Ibiza Gran Hotel.",
+    "checked": "2026-10-23"
+  }
 }

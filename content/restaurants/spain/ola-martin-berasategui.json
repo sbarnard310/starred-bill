@@ -29,5 +29,19 @@
   "placeId": "ChIJ1VbeTENPTg0Ri7NGFhyFCi4",
   "michelinId": "1154384",
   "chef": "Raúl Cabrera",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "hotel",
+    "name": "Tayko Bilbao",
+    "rooms": 61,
+    "url": "https://taykohotels.com/bilbao/habitaciones/",
+    "packages": [
+      {
+        "name": "Escapada con Estrella",
+        "includes": "A hotel stay with a meal at Ola Martín Berasategui, the starred restaurant in the hotel (details and price shown when booking)",
+        "url": "https://taykohotels.com/bilbao/promociones/"
+      }
+    ],
+    "checked": "2026-10-23"
+  }
 }

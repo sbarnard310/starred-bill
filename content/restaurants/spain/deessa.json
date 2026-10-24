@@ -28,5 +28,11 @@
   "placeId": "ChIJScMpJv4pQg0R9suDAQ4Lx-I",
   "michelinId": "1196919",
   "chef": "Quique Dacosta",
-  "chefSource": "site"
+  "chefSource": "site",
+  "stay": {
+    "kind": "hotel",
+    "name": "Mandarin Oriental Ritz, Madrid",
+    "url": "https://www.mandarinoriental.com/en/madrid/hotel-ritz/stay",
+    "checked": "2026-10-23"
+  }
 }

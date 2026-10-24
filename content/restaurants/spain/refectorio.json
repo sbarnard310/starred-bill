@@ -24,5 +24,33 @@
   "placeId": "ChIJ8YIynzodRw0RN04ny7TuCKg",
   "michelinId": "368160",
   "chef": "Marc Segarra Sauné",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "hotel",
+    "name": "Abadía Retuerta LeDomaine",
+    "rooms": 30,
+    "url": "https://abadia-retuerta.com/hotel/habitaciones/",
+    "packages": [
+      {
+        "name": "Escapada Gourmet",
+        "includes": "A night in a double room for two, gourmet dinner at Refectorio (drinks not included), lunch at the Vinoteca restaurant, à la carte breakfast, spa access, butler service and late check-out subject to availability",
+        "price": 1025,
+        "from": true,
+        "per": "room",
+        "when": "Wednesday to Friday; taxes included",
+        "url": "https://abadia-retuerta.com/hotel/escapada-gourmet/"
+      },
+      {
+        "name": "Retiro romántico en pareja",
+        "includes": "A night in a double room for two, breakfast in the room, a couples’ massage, a romantic dinner at Refectorio (drinks not included), lunch at the Vinoteca restaurant, a bottle of cava in the spa and a historic tour of the abbey",
+        "price": 1565,
+        "from": true,
+        "per": "room",
+        "when": "Wednesday to Friday; taxes included",
+        "url": "https://abadia-retuerta.com/hotel/escapadas/retiro-romantico-en-pareja/"
+      }
+    ],
+    "note": "A 12th-century abbey turned five-star hotel with 27 doubles and 3 suites among the vineyards.",
+    "checked": "2026-10-23"
+  }
 }

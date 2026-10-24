@@ -26,5 +26,11 @@
   "placeId": "ChIJcWTe2S2jpBIRJuBzwStkSGI",
   "michelinId": "1196989",
   "chef": "Víctor Torres",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "hotel",
+    "name": "InterContinental Barcelona",
+    "url": "https://barcelona.intercontinental.com/en/rooms-suites/",
+    "checked": "2026-10-23"
+  }
 }

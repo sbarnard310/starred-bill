@@ -31,5 +31,20 @@
   ],
   "chef": "Marc Fosh",
   "chefSource": "site",
-  "dietsManual": true
+  "dietsManual": true,
+  "stay": {
+    "kind": "hotel",
+    "name": "Hotel Convent de la Missió",
+    "url": "http://www.conventdelamissio.com/en/hotel/",
+    "packages": [
+      {
+        "name": "Michelin Experience Marc Fosh",
+        "includes": "A stay of at least two nights at the hotel with 10% off the regular Marc Fosh tasting menu price",
+        "nights": 2,
+        "when": "1 November to 30 April any day (not Christmas or New Year’s Eve); 1 May to 31 October Monday to Thursday; restaurant closed Sunday and Monday",
+        "url": "http://www.conventdelamissio.com/en/offers/1/gourmet-experience/"
+      }
+    ],
+    "checked": "2026-10-23"
+  }
 }

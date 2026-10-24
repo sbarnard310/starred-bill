@@ -21,5 +21,11 @@
   "placeId": "ChIJL_TNs9eXagwRb8d9BJ1RFTU",
   "michelinId": "1186563",
   "chef": "Jesús Camacho",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "hotel",
+    "name": "Hotel GF Victoria",
+    "url": "https://www.gfvictoria.com/",
+    "checked": "2026-10-23"
+  }
 }

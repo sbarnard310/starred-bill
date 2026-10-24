@@ -31,5 +31,39 @@
     "gluten-free"
   ],
   "chef": "Oriol Rovira Prat",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "rooms",
+    "name": "Els Casals",
+    "rooms": 9,
+    "url": "https://elscasals.cat/en/#hotel",
+    "packages": [
+      {
+        "name": "1 night + La Terra",
+        "includes": "A night in a room with breakfast and the La Terra tasting menu (three starters, seven mains, two desserts), wines not included",
+        "price": 230.99,
+        "per": "person",
+        "when": "Sold as a gift package with a minimum purchase of two",
+        "url": "https://elscasals.cat/en/"
+      },
+      {
+        "name": "1 night + Petit Menú",
+        "includes": "A night in a room with breakfast and the Petit Menú (two starters, four mains, two desserts), wines not included",
+        "price": 200.99,
+        "per": "person",
+        "when": "Sold as a gift package with a minimum purchase of two",
+        "url": "https://elscasals.cat/en/"
+      },
+      {
+        "name": "1 night + La Terra, wines included",
+        "includes": "A night in a room with breakfast and the La Terra menu with wines",
+        "price": 293.99,
+        "per": "person",
+        "when": "Sold as a gift package with a minimum purchase of two",
+        "url": "https://elscasals.cat/en/"
+      }
+    ],
+    "note": "Nine rooms in an 18th-century farmhouse beside the restaurant.",
+    "checked": "2026-10-23"
+  }
 }

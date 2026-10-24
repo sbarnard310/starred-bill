@@ -28,5 +28,12 @@
   "placeId": "ChIJaZxVboEoQg0R2Xyk4VBN6QA",
   "michelinId": "1203091",
   "chef": "Javier Sanz and Juan Sahuquillo",
-  "chefSource": "site"
+  "chefSource": "site",
+  "stay": {
+    "kind": "hotel",
+    "name": "Hotel Urban Madrid",
+    "rooms": 96,
+    "url": "https://www.derbyhotels.com/en/hotel-urban/",
+    "checked": "2026-10-23"
+  }
 }

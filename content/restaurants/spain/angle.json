@@ -30,5 +30,24 @@
   "placeId": "ChIJecv7K4yipBIRs8mIO7ud1vY",
   "michelinId": "118398",
   "chef": "Jordi Cruz and Elena Cerezo",
-  "chefSource": "site"
+  "chefSource": "site",
+  "stay": {
+    "kind": "hotel",
+    "name": "Hotel Cram",
+    "url": "https://hotelcram.com/en",
+    "packages": [
+      {
+        "name": "Pack Angle",
+        "includes": "A night in a room of your choice at Hotel Cram, a tasting menu at Angle (wine not included) and breakfast on the hotel terrace",
+        "url": "https://anglebarcelona.com/es/experiencias/"
+      },
+      {
+        "name": "Ruta Gourmet",
+        "includes": "Two nights at Hotel Cram, two breakfasts on the terrace, a tasting menu at ABaC and one at Angle (wine not included)",
+        "nights": 2,
+        "url": "https://anglebarcelona.com/es/experiencias/"
+      }
+    ],
+    "checked": "2026-10-23"
+  }
 }

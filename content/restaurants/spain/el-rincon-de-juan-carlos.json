@@ -21,5 +21,12 @@
   "placeId": "ChIJG61GKRWMagwRQjBhxSfEtwg",
   "michelinId": "1194880",
   "chef": "Juan Carlos Padrón and Jonathan Padrón",
-  "chefSource": "site"
+  "chefSource": "site",
+  "stay": {
+    "kind": "hotel",
+    "name": "Royal Hideaway Corales Resort",
+    "url": "https://www.barcelo.com/en-us/royal-hideaway-corales-resort-2/",
+    "note": "Part of the Royal Hideaway Corales resort in Costa Adeje, in its Corales Beach hotel.",
+    "checked": "2026-10-23"
+  }
 }

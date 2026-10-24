@@ -34,5 +34,32 @@
   "photoSourceType": "commons",
   "photoWidth": 1000,
   "photoHeight": 750,
-  "photoChecked": "2026-10-13"
+  "photoChecked": "2026-10-13",
+  "stay": {
+    "kind": "hotel",
+    "name": "Hospedería El Batán",
+    "url": "https://www.elbatan.es/hotel/",
+    "from": 129,
+    "fromNote": "double Estándar, VAT included",
+    "packages": [
+      {
+        "name": "Media pensión Gourmet (Doble Estándar)",
+        "includes": "A night in a standard double for two, lunch or dinner from the gourmet tasting menu at the Michelin-starred El Batán restaurant, and breakfast",
+        "price": 455,
+        "per": "room",
+        "when": "VAT included",
+        "url": "https://www.elbatan.es/hotel/"
+      },
+      {
+        "name": "Media pensión Gourmet (Doble Superior)",
+        "includes": "A night in a superior double for two, lunch or dinner from the gourmet tasting menu at the Michelin-starred El Batán restaurant, and breakfast",
+        "price": 485,
+        "per": "room",
+        "when": "VAT included",
+        "url": "https://www.elbatan.es/hotel/"
+      }
+    ],
+    "note": "A mountain hospedería in Teruel with its own starred restaurant and a second, simpler restaurant, Alba del Sur.",
+    "checked": "2026-10-23"
+  }
 }

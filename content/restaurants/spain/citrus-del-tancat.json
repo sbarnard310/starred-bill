@@ -39,5 +39,11 @@
     "kosher"
   ],
   "chef": "Aitor López",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "hotel",
+    "name": "Hotel Tancat de Codorniu",
+    "url": "https://www.tancatdecodorniu.com/es/hotel/habitaciones/",
+    "checked": "2026-10-23"
+  }
 }

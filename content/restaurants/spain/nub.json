@@ -27,5 +27,13 @@
     "gluten-free"
   ],
   "chef": "Andrea Bernardi and Fernanda Fuentes Cárdenas",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "hotel",
+    "name": "Hotel Bahía del Duque",
+    "rooms": 444,
+    "url": "https://thetaishotels.com/bahia-del-duque/accommodation/",
+    "note": "In the Bahía del Duque resort in Costa Adeje, which also has 40 private villas.",
+    "checked": "2026-10-23"
+  }
 }

@@ -1,0 +1,68 @@
+{
+  "id": "michelin-star-restaurants-with-rooms-spain",
+  "title": "Michelin Star Restaurants With Rooms in Spain: All {{rooms_spain}}",
+  "description": "Every Spanish Michelin star restaurant with rooms or in a hotel, from Akelaŕe and Atrio to Barcelona’s hotels and Mallorca, with dinner and room prices.",
+  "h1": "Michelin Star Restaurants With Rooms and Hotels in Spain",
+  "summary": "Where you can eat at a starred table in Spain and stay the night: every restaurant with rooms or a hotel, with what dinner and a room cost.",
+  "section": "where",
+  "places": [
+    "spain"
+  ],
+  "figure": "{{rooms_spain}} you can stay at, dinner and a room from {{roomsCheapPrice_spain}}",
+  "published": "2026-10-24",
+  "updated": "2026-10-24",
+  "lang": "en-GB",
+  "faqFromHeadings": true,
+  "keywords": [
+    "michelin star restaurants with rooms spain",
+    "hotels with michelin star restaurants spain",
+    "michelin star hotels barcelona"
+  ],
+  "body": "<p class=\"lede\">You can stay the night at {{rooms_spain}} of Spain’s Michelin-starred restaurants: {{roomsHotel_spain}} are inside a hotel and {{roomsOwn_spain}} have rooms of their own. {{rooms3_spain}} hold three stars: Akelaŕe in San Sebastián, Atrio in Cáceres, and ABaC and Lasarte in Barcelona. Dinner, bed and breakfast for two starts at {{roomsCheapPrice_spain}} (about {{roomsCheapUsd_spain}}) at {{roomsCheapName_spain}}. Checked {{checked}}.</p>\n<p>Spain’s starred restaurants with rooms come in two kinds. In the cities and on the islands they are mostly in big hotels, from Barcelona’s design hotels to the resorts of Costa Adeje in Tenerife, where six of them are. In the country they are family houses: farmhouse inns in Catalonia, a mountain hospedería in Teruel, a converted mill in Guadalajara, wine-estate hotels in the Duero valley. Fewer of them publish a price for dinner and a room together than in France or the Netherlands, but those that do sell it as an “escapada gastronómica”. The tables below give, for each restaurant, its hotel or rooms, the lowest room price it publishes and its cheapest stay with dinner, all from its own or its hotel’s website. Prices include VAT and change with the date; the tourist tax in Catalonia, the Balearics and the Basque Country is added on top. For prices at every starred restaurant in the country, rooms or not, see our page of <a href=\"/spain/\">Michelin star restaurants in Spain</a>, where “Show › With rooms” picks out these {{rooms_spain}}.</p>\n\n<h2 id=\"hotels\">Which Spanish hotels have a Michelin star restaurant?</h2>\n<p>These are the hotels with Michelin star restaurants in Spain: {{roomsHotel_spain}} starred restaurants inside a hotel you can book. Of the Michelin star hotels, Barcelona has {{rooms_barcelona}}, among them the three-star Lasarte at the Monument Hotel on the Passeig de Gràcia and ABaC in its own 15-room hotel in Sant Gervasi. Akelaŕe has a 22-room hotel on the cliff of Monte Igueldo beside the restaurant, and Atrio has 14 rooms and suites in the same building as its dining room in Cáceres’ old town. In the country there are wine-estate and monastery hotels: Abadía Retuerta’s 12th-century abbey, whose Refectorio holds a star, the Arzuaga winery in Ribera del Duero and Món Sant Benet outside Barcelona. Canfranc Express serves its menu in a restored railway carriage at the hotel in the old Canfranc station in the Pyrenees.</p>\n{{table:rooms-hotel-spain}}\n\n<h2 id=\"rooms\">Which Spanish Michelin star restaurants have rooms?</h2>\n<p>{{roomsOwn_spain}} Spanish starred restaurants have rooms of their own rather than a hotel, most of them in Catalonia: Els Casals has nine rooms in its 18th-century farmhouse at Sagàs, La Fonda Xesc fourteen in a 1730 village inn at Gombrèn, Fonda Sala six at Olost, and Miramar five seafront suites above the restaurant at Llançà. Regueiro in Asturias has six rooms upstairs, and La Revelía in the Basque Country runs a five-room agroturismo.</p>\n{{table:rooms-spain}}\n\n<h2 id=\"cost\">How much is a gastronomic getaway at a Michelin star restaurant in Spain?</h2>\n<p>{{roomsPack_spain}} of the {{rooms_spain}} publish a price for a stay with dinner. For one night for two, with the tasting menu and breakfast, most cost between €400 and €800 (about $450 to $905). The least expensive are the Catalan country inns: {{roomsCheapName_spain}} at {{roomsCheapPrice_spain}} for two and Els Casals from about €400. Hospedería El Batán in Teruel sells half board with its tasting menu from €455 for two, El Molino de Alcuneza near Sigüenza from €605 with a bottle of wine, and El Portal de Echaurren in La Rioja from €590. At the top, Abadía Retuerta’s Escapada Gourmet starts at €1,025 for two with dinner at Refectorio and lunch the next day.</p>\n<p>Check three things before you book. First, the days: many restaurants open only from Thursday or Wednesday to Sunday, and the packages follow. Second, how the price is given: some Catalan inns price per person, so double it for the bill. Third, the table: at a few hotels, such as Casa Arcas in Villanova in the Pyrenees, a room doesn’t come with a table, so book both.</p>\n\n<h2 id=\"cheapest\">What is the cheapest Michelin star restaurant with rooms in Spain?</h2>\n<p>For a night with dinner included, {{roomsCheapName_spain}} in the Pyrenean foothills of Girona, at {{roomsCheapPrice_spain}} for two with the tasting menu and breakfast. For the room alone, {{roomsFromName_spain}}’s rural apartments near Tella in Huesca start at {{roomsFromPrice_spain}} a night, and Versátil’s apartments next to the restaurant in Zarza de Granadilla at €75. A set lunch is the other cheap way in: see our <a data-guide=\"cheapest-michelin-star-restaurants\">cheapest Michelin star meals</a>.</p>\n\n<h2 id=\"booking\">How to book a stay at a Michelin star restaurant in Spain</h2>\n<p>Book the room on the hotel’s or restaurant’s own website, or by email or phone where it says so: several small inns, Regueiro and La Revelía among them, take room bookings only that way. Deliranto in Salou sells “gastronomic rooms” at its hotel that guarantee a table more than three months ahead, a useful way in when the restaurant itself is full. In summer, book the island and coast hotels well ahead, and check the seasons: some close for the winter.</p>",
+  "imageAlt": "Illustration of a whitewashed Spanish country house among vineyards and olive trees at dusk, lit bedroom windows, a table for two on the terrace and two gold stars in the sky.",
+  "sources": [
+    {
+      "title": "Breu escapada",
+      "publisher": "Fonda Xesc",
+      "url": "https://www.fondaxesc.com/?c=allotjament",
+      "checked": "2026-10-24",
+      "note": "La Fonda Xesc’s rooms and stay with dinner"
+    },
+    {
+      "title": "Escapada Gourmet",
+      "publisher": "Abadía Retuerta LeDomaine",
+      "url": "https://abadia-retuerta.com/hotel/escapada-gourmet/",
+      "checked": "2026-10-24",
+      "note": "Refectorio’s stay with dinner"
+    },
+    {
+      "title": "Experiencia gourmet, 1 noche",
+      "publisher": "Molino de Alcuneza",
+      "url": "https://www.molinodealcuneza.com/tienda/index.php/producto/experiencia-gourmet-1-noche/",
+      "checked": "2026-10-24",
+      "note": "El Molino de Alcuneza’s stay with dinner"
+    },
+    {
+      "title": "Hotel",
+      "publisher": "Hospedería El Batán",
+      "url": "https://www.elbatan.es/hotel/",
+      "checked": "2026-10-24",
+      "note": "El Batán’s half board"
+    },
+    {
+      "title": "Habitaciones",
+      "publisher": "Akelaŕe",
+      "url": "https://akelarre.net/habitaciones/",
+      "checked": "2026-10-24",
+      "note": "Akelaŕe’s hotel"
+    },
+    {
+      "title": "The hotel",
+      "publisher": "Atrio",
+      "url": "https://atriocaceres.com/en/the-hotel/",
+      "checked": "2026-10-24",
+      "note": "Atrio’s rooms in Cáceres"
+    }
+  ],
+  "sourcesNote": "The tables’ rooms, room prices and stay packages come from each restaurant’s or hotel’s own website, checked 24 October 2026; each restaurant’s page on The Starred Bill links to its source."
+}

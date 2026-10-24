@@ -39,5 +39,12 @@
     "gluten-free"
   ],
   "chef": "Andrés Torres",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "rooms",
+    "rooms": 3,
+    "url": "https://www.casanovarest.com/",
+    "note": "Three suites with private indoor jacuzzi on the estate, breakfast and free bike use included.",
+    "checked": "2026-10-23"
+  }
 }

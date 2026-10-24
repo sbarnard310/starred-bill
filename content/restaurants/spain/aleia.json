@@ -35,5 +35,12 @@
   "placeId": "ChIJuQRMUWmjpBIRoCWVQoLeCj4",
   "michelinId": "1198558",
   "chef": "Rafa de Bedoya",
-  "chefSource": "site"
+  "chefSource": "site",
+  "stay": {
+    "kind": "hotel",
+    "name": "Hotel Casa Fuster",
+    "rooms": 105,
+    "url": "https://www.hotelcasafuster.com/en",
+    "checked": "2026-10-23"
+  }
 }

@@ -31,5 +31,32 @@
     "gluten-free"
   ],
   "chef": "Francesc Rovira",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "rooms",
+    "name": "Fonda Xesc",
+    "rooms": 14,
+    "url": "https://www.fondaxesc.com/?c=allotjament",
+    "packages": [
+      {
+        "name": "Breu escapada",
+        "includes": "One night, breakfast and the tasting menu at dinner (drinks extra)",
+        "price": 150,
+        "per": "person",
+        "when": "Tourist tax of €0.90 per person per day for ages 16 and over; VAT included",
+        "url": "https://www.fondaxesc.com/?c=allotjament"
+      },
+      {
+        "name": "Cap de setmana gastronòmic",
+        "includes": "Two nights with breakfast, the Fonda menu on Friday dinner and the tasting menu on Saturday dinner (drinks extra)",
+        "price": 260,
+        "per": "person",
+        "nights": 2,
+        "when": "Friday and Saturday; tourist tax €0.90 per person per day for ages 16 and over; VAT included",
+        "url": "https://www.fondaxesc.com/?c=allotjament"
+      }
+    ],
+    "note": "A village inn dating from 1730 with 14 rooms above the restaurant.",
+    "checked": "2026-10-23"
+  }
 }

@@ -70,5 +70,13 @@
   "duration": "About three and a half hours for Descuberta, two and a half for Marexada and an hour and a half for Ronsel.",
   "infoSource": "https://www.cullerdepau.com/reserva-ga/",
   "infoChecked": "2026-10-13",
-  "dietsManual": true
+  "dietsManual": true,
+  "stay": {
+    "kind": "rooms",
+    "name": "Dormideira",
+    "url": "https://dormideira.com/ofertas/",
+    "from": 190,
+    "fromNote": "loft suite for 2, Monday to Thursday, room only",
+    "checked": "2026-10-23"
+  }
 }

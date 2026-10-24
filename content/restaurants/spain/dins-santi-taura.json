@@ -59,5 +59,13 @@
   "children": "No one under 16, including babies: the hotel is adults only.",
   "infoSource": "https://www.grupsantitaura.com/es/faqs/",
   "infoChecked": "2026-10-13",
-  "dietsManual": true
+  "dietsManual": true,
+  "stay": {
+    "kind": "hotel",
+    "name": "El Llorenç Parc de la Mar",
+    "rooms": 33,
+    "url": "https://www.elllorenc.com/en/hotel/rooms-list/",
+    "note": "Inside a 33-room adults-only (16+) design hotel in Palma’s old town; no children under 16 at the restaurant either.",
+    "checked": "2026-10-23"
+  }
 }

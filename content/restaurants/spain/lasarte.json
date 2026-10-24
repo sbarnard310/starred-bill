@@ -38,5 +38,12 @@
   "photoSourceType": "commons",
   "photoWidth": 1000,
   "photoHeight": 750,
-  "photoChecked": "2026-10-13"
+  "photoChecked": "2026-10-13",
+  "stay": {
+    "kind": "hotel",
+    "name": "Monument Hotel",
+    "rooms": 84,
+    "url": "https://www.monumenthotel.com/en/rooms/",
+    "checked": "2026-10-23"
+  }
 }

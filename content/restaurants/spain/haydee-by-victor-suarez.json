@@ -24,5 +24,12 @@
   "chef": "Víctor Suárez",
   "chefSource": "michelin",
   "dinnerNote": "Tasting menu (another €165)",
-  "dinnerNoteEs": "Menú degustación (otro de 165 €)"
+  "dinnerNoteEs": "Menú degustación (otro de 165 €)",
+  "stay": {
+    "kind": "hotel",
+    "name": "Hotel Gran Tacande Wellness & Relax Costa Adeje",
+    "url": "https://www.restaurantehaydee.rest/es/inicio/",
+    "note": "In the main building of the Gran Tacande hotel in Costa Adeje.",
+    "checked": "2026-10-23"
+  }
 }

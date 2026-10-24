@@ -27,5 +27,13 @@
   "placeId": "ChIJi84FowUrbw0ROdz9cB3ePWM",
   "michelinId": "1077227",
   "chef": "José Antonio Medina",
-  "chefSource": "site"
+  "chefSource": "site",
+  "stay": {
+    "kind": "hotel",
+    "name": "Hotel Rural El Coto de Quevedo",
+    "rooms": 12,
+    "url": "https://cotodequevedo.com/hotel/presentacion/",
+    "note": "A four-star rural hotel with 12 rooms beside the restaurant; the restaurant is closed Monday and Tuesday, when only the rooms are open.",
+    "checked": "2026-10-23"
+  }
 }

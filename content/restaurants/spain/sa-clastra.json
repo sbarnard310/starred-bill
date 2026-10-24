@@ -25,5 +25,22 @@
     "gluten-free"
   ],
   "chef": "Jordi Cantó",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "hotel",
+    "name": "Castell Son Claret",
+    "rooms": 43,
+    "url": "https://www.castellsonclaret.com/en/suites-rooms",
+    "packages": [
+      {
+        "name": "1 Night Getaway with Michelin Star Experience for Two",
+        "includes": "A night for two plus the Michelin-star dining experience at Sa Clastra",
+        "price": 775,
+        "from": true,
+        "per": "room",
+        "url": "https://www.castellsonclaret.com/en/hotel/special-offers"
+      }
+    ],
+    "checked": "2026-10-23"
+  }
 }

@@ -22,5 +22,13 @@
   "placeId": "ChIJeX4lHyHNQQwRROLp-p8Ktoo",
   "michelinId": "228154",
   "chef": "Erlantz Gorostiza",
-  "chefSource": "site"
+  "chefSource": "site",
+  "stay": {
+    "kind": "hotel",
+    "name": "The Ritz-Carlton Tenerife, Abama",
+    "rooms": 459,
+    "url": "https://www.ritzcarlton.com/en/hotels/tfsrz-the-ritz-carlton-abama/rooms/",
+    "note": "The hotel counts rooms, suites and penthouses together.",
+    "checked": "2026-10-23"
+  }
 }

@@ -38,5 +38,11 @@
     "gluten-free"
   ],
   "chef": "Raül Balam",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "hotel",
+    "name": "Mandarin Oriental, Barcelona",
+    "url": "https://www.mandarinoriental.com/en/barcelona/passeig-de-gracia/stay",
+    "checked": "2026-10-23"
+  }
 }

@@ -21,5 +21,18 @@
   "placeId": "ChIJXW2Tuu4xaQ0RiX1sKglNCow",
   "michelinId": "1154481",
   "chef": "Miguel Ángel Expósito",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "hotel",
+    "name": "Hotel La Caminera Club de Campo",
+    "url": "https://www.hotellacaminera.com/habitaciones",
+    "packages": [
+      {
+        "name": "Experiencia Retama",
+        "includes": "Accommodation, buffet breakfast, the Retama tasting menu and access to the Elaiwa spa circuit",
+        "url": "https://www.hotellacaminera.com/experiencias/experiencia-retama"
+      }
+    ],
+    "checked": "2026-10-23"
+  }
 }

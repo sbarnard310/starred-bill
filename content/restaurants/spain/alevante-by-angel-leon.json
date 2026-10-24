@@ -27,5 +27,12 @@
   "placeId": "ChIJEctnb0YxDA0RQgstYS-K1Mo",
   "michelinId": "504009",
   "chef": "Ángel León",
-  "chefSource": "site"
+  "chefSource": "site",
+  "stay": {
+    "kind": "hotel",
+    "name": "Gran Meliá Palacio de Sancti Petri",
+    "url": "https://alevanteangelleon.com/experiences/",
+    "note": "Guests on half board pay a supplement to dine here.",
+    "checked": "2026-10-23"
+  }
 }

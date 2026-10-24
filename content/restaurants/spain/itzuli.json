@@ -38,5 +38,20 @@
     "vegetarian"
   ],
   "chef": "Iñigo Lavado",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "hotel",
+    "name": "Hotel Luze San Sebastián",
+    "url": "https://www.luzehoteles.com/luze-san-sebastian/habitaciones/",
+    "from": 109,
+    "packages": [
+      {
+        "name": "Escapada Relax & Gastro Deluxe",
+        "includes": "A night for two in an Executive room, a spa session, à la carte breakfast and the Luis Irizar tasting menu with wine pairing at Itzuli",
+        "per": "room",
+        "url": "https://www.restauranteitzuli.com/experiencias"
+      }
+    ],
+    "checked": "2026-10-23"
+  }
 }

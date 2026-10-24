@@ -86,5 +86,21 @@
   "groups": "Events, weddings and company dinners are arranged through eventos@hotelvillaretiro.com.",
   "groupsUrl": "https://hotelvillaretiro.com/eventos/",
   "infoSource": "https://hotelvillaretiro.com/restaurante/",
-  "infoChecked": "2026-10-12"
+  "infoChecked": "2026-10-12",
+  "stay": {
+    "kind": "hotel",
+    "name": "Hotel Villa Retiro",
+    "rooms": 19,
+    "url": "https://hotelvillaretiro.com/habitaciones/",
+    "packages": [
+      {
+        "name": "Escapada Gastronómica",
+        "includes": "A night in a double room, the ‘Más que un Homenaje’ tasting menu at the one-star Villa Retiro (drinks not included), breakfast in the room and a welcome gift",
+        "when": "Price shown when booking",
+        "url": "https://hotelvillaretiro.com/escapada-gastronomica/"
+      }
+    ],
+    "note": "A five-star boutique hotel in an 1890 villa with one Grand Suite, nine suites and nine double rooms.",
+    "checked": "2026-10-23"
+  }
 }

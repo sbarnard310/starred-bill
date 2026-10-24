@@ -25,5 +25,12 @@
   "placeId": "ChIJ90du2h1ZMQ0RI4hhC_j0giM",
   "michelinId": "421178",
   "chef": "Diego Fernández",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "rooms",
+    "rooms": 6,
+    "url": "https://restauranteregueiro.es/#alojamiento",
+    "note": "Six rooms above the restaurant, including a suite with a private terrace; availability by email or phone only.",
+    "checked": "2026-10-23"
+  }
 }

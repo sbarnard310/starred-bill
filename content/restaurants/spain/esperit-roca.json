@@ -78,5 +78,13 @@
   "groups": "Online bookings are for 2 to 8 guests. Changes to a confirmed booking are handled by email at restaurant@esperitroca.com.",
   "dressCode": "No dress code is required, though the restaurant suggests dressing formally.",
   "infoSource": "https://esperitroca.com/en/faqs/",
-  "infoChecked": "2026-10-13"
+  "infoChecked": "2026-10-13",
+  "stay": {
+    "kind": "hotel",
+    "name": "Hotel Esperit Roca",
+    "rooms": 15,
+    "url": "https://hotelesperitroca.com/en/rooms/",
+    "note": "The hotel sits on the same hilltop as the Roca brothers’ castle project that houses the starred restaurant.",
+    "checked": "2026-10-23"
+  }
 }

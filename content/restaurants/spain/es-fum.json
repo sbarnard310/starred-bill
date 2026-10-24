@@ -26,5 +26,11 @@
     "gluten-free"
   ],
   "chef": "Miguel Navarro",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "hotel",
+    "name": "The St. Regis Mardavall Mallorca Resort",
+    "url": "https://www.restaurant-esfum.com/contact-location",
+    "checked": "2026-10-23"
+  }
 }

@@ -29,5 +29,13 @@
   "placeId": "ChIJ6bKJc5V8uhIRfhqasoyh5Tw",
   "michelinId": "220890",
   "chef": "Paco Pérez",
-  "chefSource": "site"
+  "chefSource": "site",
+  "stay": {
+    "kind": "rooms",
+    "name": "Miramar Suites",
+    "rooms": 5,
+    "url": "https://www.restaurantmiramar.com/miramar-suites",
+    "note": "Five seafront suites above the restaurant, next to the chef’s own house; gastronomic breakfast included.",
+    "checked": "2026-10-23"
+  }
 }

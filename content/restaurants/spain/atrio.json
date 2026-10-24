@@ -25,5 +25,13 @@
   "placeId": "ChIJm1JTpdbfFQ0Rv2Lf-opFjX0",
   "michelinId": "218843",
   "chef": "Toño Pérez",
-  "chefSource": "site"
+  "chefSource": "site",
+  "stay": {
+    "kind": "hotel",
+    "name": "Hotel Atrio Cáceres",
+    "rooms": 14,
+    "url": "https://atriocaceres.com/en/the-hotel/",
+    "note": "Five-star hotel of 14 rooms and suites in the same building as the three-star restaurant, with more suites in Palacio Paredes Saavedra nearby.",
+    "checked": "2026-10-23"
+  }
 }

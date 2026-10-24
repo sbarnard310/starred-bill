@@ -72,5 +72,13 @@
   "groupsUrl": "https://pepevieira.com/en/eventos",
   "infoSource": "https://pepevieira.com/en/reservas",
   "infoChecked": "2026-10-13",
-  "dietsManual": true
+  "dietsManual": true,
+  "stay": {
+    "kind": "hotel",
+    "name": "Pepe Vieira Landscape Hotel",
+    "rooms": 14,
+    "url": "https://pepevieira.com/en/hotel-paisaje",
+    "note": "Relais & Châteaux landscape hotel of 14 sheds (double rooms) on the same estate, with a pool; booked through the restaurant site.",
+    "checked": "2026-10-23"
+  }
 }

@@ -25,5 +25,13 @@
   "placeId": "ChIJeULZtLVFWA0Rodzf0GPKlso",
   "michelinId": "1199939",
   "chef": "Rubén Coronas",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "rooms",
+    "name": "Apartamentos Casa Rubén",
+    "url": "https://apartamentosordesatella.com/tarifas-y-packs/",
+    "from": 60,
+    "note": "The family also runs five rural apartments and three rooms nearby at Hospital de Tella, linked from the restaurant’s own site.",
+    "checked": "2026-10-23"
+  }
 }

@@ -27,5 +27,11 @@
     "gluten-free"
   ],
   "chef": "Fernando Pérez Arellano",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "hotel",
+    "name": "Es Princep",
+    "url": "https://www.esprincep.com/en/rooms",
+    "checked": "2026-10-23"
+  }
 }

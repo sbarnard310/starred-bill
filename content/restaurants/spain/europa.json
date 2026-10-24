@@ -19,5 +19,12 @@
   "placeId": "ChIJvfbazf6SUA0R7pqn1nTfpaM",
   "michelinId": "222149",
   "chef": "Pilar Idoate",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "hotel",
+    "name": "Hotel Europa",
+    "rooms": 25,
+    "url": "https://www.hoteleuropapamplona.com/en/",
+    "checked": "2026-10-23"
+  }
 }

@@ -37,5 +37,15 @@
     "gluten-free"
   ],
   "chef": "Fernando González",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "rooms",
+    "name": "Agroturismo Azkarraga",
+    "rooms": 5,
+    "url": "https://larevelia.com/en/accommodation/",
+    "from": 115,
+    "fromNote": "double room, room only; breakfast for two is 28 EUR extra",
+    "note": "Five-room agroturismo run by La Revelía; book by email or phone.",
+    "checked": "2026-10-23"
+  }
 }

@@ -32,5 +32,33 @@
     "gluten-free"
   ],
   "chef": "Marius Jordá i Giró / Joan Jordá i Giró",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "hotel",
+    "name": "Hotel Restaurant Empòrium",
+    "url": "https://www.emporiumhotel.com/es/hotel-castello-dempuries-girona/habitaciones",
+    "packages": [
+      {
+        "name": "Escapada Gastronómica con Estrella MICHELIN - 1 noche",
+        "includes": "A night in a Confort, Confort Plus or Junior Suite double room for two, breakfast, the Mar y Montaña tasting menu with wine pairing at Empòrium and a welcome gift",
+        "price": 275,
+        "from": true,
+        "per": "person",
+        "when": "Tourist tax not included",
+        "url": "https://www.emporiumhotel.com/es/experiencias/escapada-gastronomica-estrella-michelin-1-noche"
+      },
+      {
+        "name": "Escapada Gastronómica con Estrella MICHELIN - 2 noches",
+        "includes": "Two nights in a Confort double room for two, breakfast, a Bistrot 1965 à la carte menu with a glass of wine, the Mar y Montaña tasting menu with wine pairing at Empòrium and a welcome gift",
+        "price": 403,
+        "from": true,
+        "per": "person",
+        "nights": 2,
+        "when": "Tourist tax not included",
+        "url": "https://www.emporiumhotel.com/es/experiencias/escapada-gastronomica-2-noches"
+      }
+    ],
+    "note": "A three-star hotel with the restaurant and its Bib Gourmand bistro in the same building.",
+    "checked": "2026-10-23"
+  }
 }

@@ -18,5 +18,13 @@
   "placeId": "ChIJ_YWmcTubVw0ROwvHVP0MA24",
   "michelinId": "1209862",
   "chef": "Eduardo Salanova",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "hotel",
+    "name": "Canfranc Estación, a Royal Hideaway Hotel",
+    "url": "https://www.barcelo.com/en-es/canfranc-estacion-a-royal-hideaway-hotel/rooms/",
+    "from": 199,
+    "note": "The restaurant is in a restored railway carriage at the Barceló group’s five-star hotel in the old Canfranc station.",
+    "checked": "2026-10-23"
+  }
 }

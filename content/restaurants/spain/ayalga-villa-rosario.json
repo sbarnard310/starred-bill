@@ -27,5 +27,18 @@
   "placeId": "ChIJEaqeUFUdNg0RjbGlUNGygdM",
   "michelinId": "1189510",
   "chef": "Israel Moreno",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "hotel",
+    "name": "Hotel Villa Rosario",
+    "url": "http://www.hotelvillarosario.com/es/villa-rosario-palace",
+    "packages": [
+      {
+        "name": "Alojamiento y gastronomía",
+        "includes": "A stay at the hotel combined with a meal at the Michelin-starred Ayalga restaurant",
+        "url": "http://www.hotelvillarosario.com/es/villa-rosario-palace"
+      }
+    ],
+    "checked": "2026-10-23"
+  }
 }

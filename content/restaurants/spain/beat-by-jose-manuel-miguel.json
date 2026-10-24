@@ -28,5 +28,11 @@
     "vegetarian-menu"
   ],
   "chef": "José Manuel Miguel",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "hotel",
+    "name": "The Cookbook Hotel & Spa",
+    "url": "https://www.ar-hotels.com/hotel-the-cookbook/",
+    "checked": "2026-10-23"
+  }
 }

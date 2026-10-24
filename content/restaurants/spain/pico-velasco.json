@@ -56,5 +56,13 @@
   "groups": "Events have their own team: +34 633 53 23 24 or eventos@picovelasco.com.",
   "groupsUrl": "https://picovelasco.com/eventos/",
   "infoSource": "https://picovelasco.com/terminos-condiciones/",
-  "infoChecked": "2026-10-13"
+  "infoChecked": "2026-10-13",
+  "stay": {
+    "kind": "hotel",
+    "name": "Pico Velasco Hotel Boutique",
+    "rooms": 11,
+    "url": "https://picovelasco.com/hotel-boutique/",
+    "note": "A 17th-century Cantabrian manor turned boutique hotel with 11 rooms, in the Santoña marshes natural park.",
+    "checked": "2026-10-23"
+  }
 }

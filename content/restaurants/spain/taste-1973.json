@@ -27,5 +27,12 @@
     "kosher"
   ],
   "chef": "Diego Schattenhofer",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "hotel",
+    "name": "Europe Villa Cortés",
+    "rooms": 151,
+    "url": "https://www.europe-hotels.org/villa-cortes/habitaciones/",
+    "checked": "2026-10-23"
+  }
 }

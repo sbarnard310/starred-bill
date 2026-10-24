@@ -21,5 +21,12 @@
   "placeId": "ChIJ7_h0vyiRagwRDhWEY9t0ML0",
   "michelinId": "1199950",
   "chef": "Adrián Bosch and Eduardo Domínguez",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "hotel",
+    "name": "Royal Hideaway Corales Resort",
+    "url": "https://www.barcelo.com/en-us/royal-hideaway-corales-resort-2/",
+    "note": "In the Royal Hideaway Corales Beach hotel, part of the Corales resort in Costa Adeje.",
+    "checked": "2026-10-23"
+  }
 }

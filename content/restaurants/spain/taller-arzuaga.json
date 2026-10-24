@@ -31,5 +31,38 @@
     "gluten-free"
   ],
   "chef": "Sara Ferreres",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "hotel",
+    "name": "Hotel & Spa Arzuaga",
+    "rooms": 96,
+    "url": "https://hotelarzuaga.com/hotel",
+    "packages": [
+      {
+        "name": "Gastro Week",
+        "includes": "A night in a double room with breakfast, an eight-course paired lunch at Taller Arzuaga, wine-tasting workshop, winery and estate visits and the spa circuit; two nights are €795",
+        "price": 695,
+        "per": "room",
+        "when": "Sunday to Thursday",
+        "url": "https://hotelarzuaga.com/ofertas/tarifas/gastro-week"
+      },
+      {
+        "name": "Gastro Weekend",
+        "includes": "A night in a double room with breakfast, an eight-course paired lunch at Taller Arzuaga, wine-tasting workshop, winery and estate visits and the spa circuit; two nights are €995",
+        "price": 845,
+        "per": "room",
+        "when": "Friday to Sunday",
+        "url": "https://hotelarzuaga.com/ofertas/tarifas/gastro-weekend"
+      },
+      {
+        "name": "Puente de diciembre Gastro",
+        "includes": "A night in a double room with breakfast, a Gran Reserva wine tasting with five tapas from Taller, winery and estate visits and a seven-course lunch or dinner with wine pairing at Taller Arzuaga; two nights are €1,095",
+        "price": 895,
+        "per": "room",
+        "when": "4 to 9 December 2026",
+        "url": "https://hotelarzuaga.com/ofertas/tarifas/puente-de-diciembre-2026-gastro"
+      }
+    ],
+    "checked": "2026-10-23"
+  }
 }

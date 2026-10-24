@@ -27,5 +27,13 @@
   "placeId": "ChIJhUDJHy4ZpRIRDFBJ5M32r2Y",
   "michelinId": "221951",
   "chef": "Toni Sala",
-  "chefSource": "site"
+  "chefSource": "site",
+  "stay": {
+    "kind": "rooms",
+    "name": "Fonda Sala",
+    "rooms": 6,
+    "url": "https://www.fondasala.com/en",
+    "note": "A family inn with six double rooms, breakfast included, in the village of Olost.",
+    "checked": "2026-10-23"
+  }
 }

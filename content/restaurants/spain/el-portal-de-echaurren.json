@@ -27,5 +27,34 @@
   "placeId": "ChIJD_OcNQBxRQ0RNV5klgMm-sA",
   "michelinId": "228550",
   "chef": "Francis Paniego",
-  "chefSource": "site"
+  "chefSource": "site",
+  "stay": {
+    "kind": "hotel",
+    "name": "Hotel Echaurren Relais & Châteaux",
+    "url": "https://echaurren.com/en/rooms/",
+    "from": 190,
+    "packages": [
+      {
+        "name": "Experiencia Escapada El Portal de Echaurren",
+        "includes": "A night for two in the hotel with breakfast, and the tasting menu for two at El Portal de Echaurren, lunch or dinner; a 7-wine pairing is an option at a higher price (up to 820 EUR)",
+        "price": 590,
+        "from": true,
+        "per": "room",
+        "when": "Valid all year, or cheaper midweek (Sunday, Wednesday or Thursday arrival; not holidays, Easter, Christmas or August)",
+        "url": "https://echaurren.com/producto/experiencia-escapada-el-portal-de-echaurren/"
+      },
+      {
+        "name": "Experiencia Dos Días Gastronómicos",
+        "includes": "Two nights for two in the hotel with breakfast, a tasting menu for two at Echaurren Tradición and another at El Portal de Echaurren, late check-out; a 7-wine pairing is an option at a higher price (up to 1,360 EUR)",
+        "price": 990,
+        "from": true,
+        "per": "room",
+        "nights": 2,
+        "when": "Valid all year, or cheaper midweek (Monday to Wednesday arrival; not holidays, Easter, Christmas or August)",
+        "url": "https://echaurren.com/producto/experiencia-dos-dias-gastronomicos/"
+      }
+    ],
+    "note": "The packages are sold as vouchers valid for a year.",
+    "checked": "2026-10-23"
+  }
 }

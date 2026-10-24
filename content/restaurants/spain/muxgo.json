@@ -27,5 +27,12 @@
     "gluten-free"
   ],
   "chef": "Borja Marrero",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "hotel",
+    "name": "Hotel Santa Catalina, a Royal Hideaway Hotel",
+    "rooms": 204,
+    "url": "https://www.barcelo.com/es-es/santa-catalina-a-royal-hideaway-hotel/",
+    "checked": "2026-10-23"
+  }
 }

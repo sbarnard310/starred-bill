@@ -23,5 +23,11 @@
   "placeId": "ChIJGWe1G_MVlhIRi3JLd51CDVQ",
   "michelinId": "1154852",
   "chef": "Álvaro Salazar",
-  "chefSource": "site"
+  "chefSource": "site",
+  "stay": {
+    "kind": "hotel",
+    "name": "Cap Vermell Grand Hotel",
+    "url": "https://www.capvermellgrandhotel.com/habitaciones-suites",
+    "checked": "2026-10-23"
+  }
 }

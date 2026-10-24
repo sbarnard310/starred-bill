@@ -27,5 +27,13 @@
   "placeId": "ChIJ8QmRTx9CPg0R--Vd5o9iGAE",
   "michelinId": "1154693",
   "chef": "Álex Hernández Talaván",
-  "chefSource": "site"
+  "chefSource": "site",
+  "stay": {
+    "kind": "rooms",
+    "name": "Apartamentos Versátil",
+    "url": "https://versatilrural.com/apartamentos-rurales/",
+    "from": 75,
+    "note": "Rural apartments in a restored building next to the restaurant in Zarza de Granadilla.",
+    "checked": "2026-10-23"
+  }
 }

@@ -28,5 +28,13 @@
   "placeId": "ChIJXdMPlZ6wUQ0RgkKFNtNEFXE",
   "michelinId": "219922",
   "chef": "Pedro Subijana",
-  "chefSource": "site"
+  "chefSource": "site",
+  "stay": {
+    "kind": "hotel",
+    "name": "AKELARRE Hotel",
+    "rooms": 22,
+    "url": "https://akelarre.net/habitaciones/",
+    "note": "A five-star boutique hotel of 22 rooms and suites on Monte Igueldo, sharing the clifftop site with the restaurant.",
+    "checked": "2026-10-23"
+  }
 }

@@ -25,5 +25,13 @@
   "placeId": "ChIJjwaw-D1FQw0Rd-9WYPw7Wjk",
   "michelinId": "223530",
   "chef": "Enrique Pérez",
-  "chefSource": "site"
+  "chefSource": "site",
+  "stay": {
+    "kind": "hotel",
+    "name": "Hotel El Doncel",
+    "rooms": 14,
+    "url": "https://eldoncel.com/hotel-2",
+    "note": "A three-star hotel of 14 rooms in a stone town house in Sigüenza, with four separate studio suites at La Alacena Suites.",
+    "checked": "2026-10-23"
+  }
 }

@@ -40,5 +40,26 @@
   "photoSourceType": "commons",
   "photoWidth": 1000,
   "photoHeight": 750,
-  "photoChecked": "2026-10-13"
+  "photoChecked": "2026-10-13",
+  "stay": {
+    "kind": "hotel",
+    "name": "ABaC Hotel Barcelona",
+    "rooms": 15,
+    "url": "https://abacbarcelona.com/en/rooms",
+    "packages": [
+      {
+        "name": "ABaC Pack",
+        "includes": "One night in a room of your choice at the five-star ABaC Hotel, gourmet welcome gift, gourmet breakfast, a tasting menu at lunch or dinner at ABaC (wine not included) and spa access",
+        "url": "https://abacbarcelona.com/en/experiences"
+      },
+      {
+        "name": "Gourmet Tour (Ruta Gourmet)",
+        "includes": "Two nights in a room of your choice, two gourmet breakfasts, a tasting menu at ABaC and a tasting menu at Angle (wine not included), spa access",
+        "nights": 2,
+        "url": "https://abacbarcelona.com/en/experiences"
+      }
+    ],
+    "note": "A 15-room boutique hotel in a century-old house in Sant Gervasi, next to the restaurant.",
+    "checked": "2026-10-23"
+  }
 }

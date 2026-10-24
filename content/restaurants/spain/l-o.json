@@ -33,5 +33,25 @@
     "halal"
   ],
   "chef": "Ivan Margalef",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "hotel",
+    "name": "Hotel Món Sant Benet",
+    "url": "https://monsantbenet.com/es/hotel-mon/habitaciones/",
+    "packages": [
+      {
+        "name": "Escapada l’Ó",
+        "includes": "A night in the 4-star-superior Hotel Món, breakfast, the 10-course tasting menu at L’Ó (dinner or lunch) and a visit to the Sant Benet monastery",
+        "when": "Fridays, Saturdays and public holidays; price shown when booking",
+        "url": "https://monsantbenet.com/es/promociones/escapada-o/"
+      },
+      {
+        "name": "Escapada degustación L’Ó - Viernes",
+        "includes": "A night in a double room with a view (early check-in/out subject to availability) and the ‘Un paseo por Sant Benet’ tasting menu at L’Ó",
+        "when": "Fridays only; price shown when booking",
+        "url": "https://monsantbenet.com/es/promociones/escapada-degustacion-lo-viernes/"
+      }
+    ],
+    "checked": "2026-10-23"
+  }
 }

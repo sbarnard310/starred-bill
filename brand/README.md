@@ -19,7 +19,7 @@ Every file here is drawn from one source, `make.html`. To change the logo, edit 
 | Square spaces (posters, merch) | `png/lockup-stacked-on-light-2400.png` / `-on-dark-` |
 | One colour (stamps, embossing, print) | `svg/mark-mono-green.svg`, `svg/mark-mono-white.svg` |
 | Designers and printers | the matching file in `svg/` |
-| The website's favicon and app icon (not used yet) | `site-icons/` |
+| The website's favicon and app icon (copied to `src/favicon.svg` and `src/icons/`) | `site-icons/`; `favicon.ico` there is made from its PNGs by `scripts/favicon_ico.py` (also copied to `src/favicon.ico`) |
 | Emails' header (sign-in and star emails) | `src/img/email/receipt-mark.png`, a 81 × 120 copy of `png/mark-on-dark-1000.png` beside the name in live text |
 | Link-preview pictures (`src/og/`) | `png/lockup-horizontal-on-dark-2400.png`, drawn in by `scripts/og_images.py` and `scripts/restaurant_images.py` |
 

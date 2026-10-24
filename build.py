@@ -8778,6 +8778,11 @@ def sitemap_dates():
 
 def build_extras():
     shutil.copy2(SRC / "favicon.svg", OUT / "favicon.svg")
+    # Browsers and robots ask for these at the root by habit, whatever the page links (Cloudflare counted about
+    # 1,000 a week going unanswered, 24 Oct 2026). scripts/favicon_ico.py makes favicon.ico from the brand's icons.
+    shutil.copy2(SRC / "favicon.ico", OUT / "favicon.ico")
+    for name in ("apple-touch-icon.png", "apple-touch-icon-precomposed.png"):
+        shutil.copy2(SRC / "icons" / "apple-touch-icon.png", OUT / name)
     # The stylesheet carries its version, like every other page's (versioned()).
     (OUT / "404.html").write_text((SRC / "404.html").read_text("utf-8").replace('"/assets/site.css"', f'"{assets["site.css"]}"'), "utf-8")
     shutil.copy2(SRC / "manifest.webmanifest", OUT / "manifest.webmanifest")

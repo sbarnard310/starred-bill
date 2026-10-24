@@ -22,6 +22,11 @@ report can say what changed. A source that isn't set up yet is reported as "not 
     page's live title, description and heading and the search words they lack, so they can be tuned.
   - Sites linking to us, from Bing Webmaster Tools (Search Console's Links report has no API). Needs the Bing
     Webmaster API key in the Keychain as "starredbill-bing".
+  - Cloudflare (every request, robots included, so never a visitor count): pages Googlebot, Bingbot and the
+    other search crawlers fetched, which AI crawlers (OAI-SearchBot, ChatGPT-User, Applebot, GPTBot, ClaudeBot…)
+    read the site and its most-read pages, all as verified by Cloudflare, whether robots.txt or Cloudflare turns
+    any away, the most-hit missing addresses (404) and server errors (5xx) by hour with the push before any spike;
+    the last 7 UTC days against the 7 before. Needs a read-only API token in the Keychain as "starredbill-cloudflare".
   - The SEO plan's seven measures against their aims for 31 Jan 2027 (SEO_AIMS), put together from the above.
   - Google Analytics 4 (visitors, sessions, page views, top pages and countries, sign-ups). It only counts
     visitors who accepted the cookie banner. Google settles a day's bounce and engagement rates a day or two
@@ -39,7 +44,7 @@ JWT is signed with the Mac's own openssl, so no extra libraries are needed. Umam
 through the website's share link ("umami_share": the code after /share/, sharing Overview and Events), as
 Umami's free plan has no API keys; with a paid plan, an API key in the Keychain ("starredbill-umami") works too.
 Where there's no Keychain (the cloud routines), environment variables stand in for the Keychain items (KEYCHAIN_ENV:
-STARREDBILL_GOOGLE_REFRESH_TOKEN, STARREDBILL_BING_KEY, STARREDBILL_UMAMI_KEY), STARREDBILL_GOOGLE_CLIENT_ID and
+STARREDBILL_GOOGLE_REFRESH_TOKEN, STARREDBILL_BING_KEY, STARREDBILL_UMAMI_KEY, STARREDBILL_CLOUDFLARE_TOKEN), STARREDBILL_GOOGLE_CLIENT_ID and
 STARREDBILL_GOOGLE_CLIENT_SECRET for the Desktop client file, and STARREDBILL_RESEARCH for ~/starred-bill-research
 (the cloud routines point it at their checkout of the private records repository).
 Standard library only, Python 3.9.
@@ -156,7 +161,7 @@ def b64(raw):
 
 # The environment variable that stands in for each Keychain item where there's no Keychain (the cloud routines).
 KEYCHAIN_ENV = {"starredbill-google": "STARREDBILL_GOOGLE_REFRESH_TOKEN", "starredbill-bing": "STARREDBILL_BING_KEY",
-                "starredbill-umami": "STARREDBILL_UMAMI_KEY"}
+                "starredbill-umami": "STARREDBILL_UMAMI_KEY", "starredbill-cloudflare": "STARREDBILL_CLOUDFLARE_TOKEN"}
 
 
 def keychain(service):
@@ -672,6 +677,282 @@ def analytics(cfg):
             "events_last_7_days": top("eventName", "eventCount", "7daysAgo", 25)}
 
 
+# Crawlers counted from Cloudflare. Cloudflare checks which requests really come from a known crawler (by its
+# addresses, not just the name it gives) and sorts them into kinds (verifiedBotCategory: "Search Engine Crawler",
+# "AI Crawler", "AI Search", "AI Assistant", "Search Engine Optimization", "Page Preview"…), on the free plan too.
+# Only those verified requests are counted; requests that only claim a crawler's name are counted apart as impostors.
+# Known crawlers by name (name, a piece of its user agent, whose it is, what it reads for):
+CF_SEARCH = [("Googlebot", "Googlebot", "Google", "Google search"),
+             ("Bingbot", "bingbot", "Microsoft", "Bing search, also behind ChatGPT search, Copilot and DuckDuckGo"),
+             ("YandexBot", "YandexBot", "Yandex", "Yandex search"), ("DuckDuckBot", "DuckDuckBot", "DuckDuckGo", "DuckDuckGo search"),
+             ("Baiduspider", "Baiduspider", "Baidu", "Baidu search"), ("SeznamBot", "SeznamBot", "Seznam", "Seznam search"),
+             ("Yeti", "Yeti/", "Naver", "Naver search")]
+CF_AI = [("GPTBot", "GPTBot", "OpenAI", "training"), ("OAI-SearchBot", "OAI-SearchBot", "OpenAI", "ChatGPT search"),
+         ("ChatGPT-User", "ChatGPT-User", "OpenAI", "a ChatGPT user asking about a page"),
+         ("ClaudeBot", "ClaudeBot", "Anthropic", "training"), ("Claude-SearchBot", "Claude-SearchBot", "Anthropic", "Claude search"),
+         ("Claude-User", "Claude-User", "Anthropic", "a Claude user asking about a page"),
+         ("PerplexityBot", "PerplexityBot", "Perplexity", "Perplexity search"),
+         ("Perplexity-User", "Perplexity-User", "Perplexity", "a Perplexity user asking about a page"),
+         ("Applebot", "Applebot", "Apple", "Siri, Spotlight and Apple Intelligence"),
+         ("Meta-ExternalAgent", "meta-externalagent", "Meta", "training"),
+         ("Meta-ExternalFetcher", "meta-externalfetcher", "Meta", "a Meta AI user asking about a page"),
+         ("Amazonbot", "Amazonbot", "Amazon", "Alexa and Rufus answers"),
+         ("DuckAssistBot", "DuckAssistBot", "DuckDuckGo", "DuckDuckGo's AI answers"),
+         ("MistralAI-User", "MistralAI-User", "Mistral", "a Le Chat user asking about a page"),
+         ("Google-CloudVertexBot", "Google-CloudVertexBot", "Google", "AI agents built on Google Cloud"),
+         ("Bytespider", "Bytespider", "ByteDance", "training"), ("CCBot", "CCBot", "Common Crawl", "an open archive many AIs train on"),
+         ("PetalBot", "PetalBot", "Huawei", "Petal search and its AI"), ("ExaSearchBot", "ExaSearchBot", "Exa", "an AI search engine"),
+         ("cohere-ai", "cohere-ai", "Cohere", "training"), ("Diffbot", "Diffbot", "Diffbot", "training data for others")]
+CF_KNOWN = CF_SEARCH + CF_AI
+# Names that exist only in robots.txt, never as a crawler: Google and Apple crawl with Googlebot and Applebot, and these
+# say whether what they read may also train their AI. Only robots.txt can show them.
+CF_ROBOTS_ONLY = [("Google-Extended", "Google", "Gemini training"), ("Applebot-Extended", "Apple", "Apple Intelligence training")]
+CF_CLAIMED = ["Googlebot", "bingbot", "GPTBot", "OAI-SearchBot", "ChatGPT-User", "ClaudeBot", "PerplexityBot", "Applebot"]
+CF_ZONE = "2c9a4e0f1d3a1d8f76019ae477f3d286"   # starredbill.com's zone id (not secret); "cloudflare_zone" in config.json wins
+CF_DAYS = 14          # two weeks of UTC days, a query each: this week and the week before
+CF_TOP = 5            # top pages listed per crawler
+CF_SEARCH_LIST = 8    # search crawlers listed (Googlebot and Bingbot always)
+CF_404_TOP = 15       # most-hit missing addresses listed
+CF_SPIKE = 20         # 5xx answers in one hour that count as a spike
+CF_ROWS = 10000       # most rows one query returns (the free plan's maxPageSize)
+CF_LET_THROUGH = {"", "unknown", "allow", "skip", "log"}   # securityAction values that didn't stop the request
+# Addresses robots try on every site, looking for a weakness (WordPress, PHP, keys and settings files, hidden
+# folders): counted, not listed. Cloudflare's own /cdn-cgi/ addresses are left out too.
+CF_PROBE = re.compile(r"(\.php|phpinfo|_profiler|wp-|wordpress|xmlrpc|\.asp|\.jsp|cgi-bin|phpmyadmin|/admin|\.sql|\.bak|"
+                      r"\.zip|\.tar|\.gz$|\.ya?ml$|\.ini$|\.conf$|\.log$|credentials|secret|appsettings|aws-exports|"
+                      r"^/config\.|^/env\.|^/settings\.|/\.(?!well-known/security\.txt)|^/cdn-cgi/|\.env$|dockerfile|composer\.|"
+                      r"service-account|^/auth\.json|^/debug/|^/azure/|^/bedrock/)", re.I)
+
+
+def is_page(path):
+    """A page rather than a script, style, picture or data file."""
+    path = path.split("?")[0]
+    last = path.rstrip("/").rsplit("/", 1)[-1]
+    return not path.startswith(("/assets/", "/data/", "/img/", "/icons/", "/og/", "/cdn-cgi/")) and \
+        (path.endswith("/") or path.endswith(".html") or "." not in last)
+
+
+def bot_name(ua):
+    """A crawler's short name from its user agent: a known one, else the name it gives itself, else None."""
+    ua = ua or ""
+    for name, piece, _, _ in CF_KNOWN:
+        if piece in ua:
+            return name
+    if ua.startswith("Mozilla/"):
+        m = re.search(r"compatible; ?([A-Za-z][\w.\-]*)", ua)
+    else:                       # "facebookexternalhit/1.1 (…)"
+        m = re.match(r"([A-Za-z][\w.\-]*)/", ua)
+    if not m:
+        m = re.search(r"\b([A-Za-z][\w\-]*(?:bot|Bot|BOT|crawler|Crawler|spider|Spider|fetcher|Fetcher))\b", ua)
+    return m.group(1) if m else None
+
+
+def cloudflare(cfg, prev=None):
+    """Crawlers, AI crawlers and errors for the last 14 UTC days, from Cloudflare's GraphQL Analytics API (free
+    plan: the httpRequestsAdaptiveGroups dataset, 31 days kept, one day a query here). Needs a read-only API token
+    (Zone Analytics: Read) in the Keychain as "starredbill-cloudflare" (STARREDBILL_CLOUDFLARE_TOKEN in the cloud).
+    Cloudflare counts every request, robots included, so its totals are not a visitor count. Its counts
+    come from a sample of requests, so small ones are rough."""
+    token = keychain("starredbill-cloudflare")
+    zone = cfg.get("cloudflare_zone") or CF_ZONE
+    auth = {"Authorization": f"Bearer {token}"}
+    claimed = ", ".join("{userAgent_like: %s}" % json.dumps(f"%{c}%") for c in CF_CLAIMED)
+    query = """{ viewer { zones(filter: {zoneTag: %(zone)s}) {
+      all: httpRequestsAdaptiveGroups(limit: 1, filter: {%(when)s}) { count }
+      bots: httpRequestsAdaptiveGroups(limit: %(rows)d, orderBy: [count_DESC], filter: {%(when)s, verifiedBotCategory_neq: ""})
+        { count dimensions { verifiedBotCategory userAgent clientRequestPath edgeResponseStatus securityAction } }
+      fake: httpRequestsAdaptiveGroups(limit: 100, orderBy: [count_DESC], filter: {%(when)s, verifiedBotCategory: "", OR: [%(claimed)s]})
+        { count dimensions { userAgent } }
+      missing: httpRequestsAdaptiveGroups(limit: 1000, orderBy: [count_DESC], filter: {%(when)s, edgeResponseStatus: 404})
+        { count dimensions { clientRequestPath } }
+      errors: httpRequestsAdaptiveGroups(limit: 1000, orderBy: [count_DESC], filter: {%(when)s, edgeResponseStatus_geq: 500})
+        { count dimensions { datetimeHour edgeResponseStatus clientRequestPath } }
+    } } }"""
+
+    def day_figures(day):
+        # Real requests only: Cloudflare's own (its Early Hints cache asks for pages and logs thousands of 504s) left out.
+        when = (f'datetime_geq: "{day}T00:00:00Z", datetime_lt: "{day + dt.timedelta(days=1)}T00:00:00Z", '
+                f'requestSource: "eyeball"')
+        res = http("https://api.cloudflare.com/client/v4/graphql",
+                   {"query": query % {"zone": json.dumps(zone), "when": when, "rows": CF_ROWS, "claimed": claimed}}, auth)
+        if res.get("errors"):
+            raise RuntimeError("; ".join(e.get("message", "") for e in res["errors"])[:300])
+        return res["data"]["viewer"]["zones"][0]
+
+    yesterday = dt.date.today() - dt.timedelta(days=1)
+    days = [yesterday - dt.timedelta(days=i) for i in range(CF_DAYS)]
+    figures, unavailable = {}, []
+    with ThreadPoolExecutor(4) as pool:
+        for day, res in zip(days, pool.map(lambda d: _try(day_figures, d), days)):
+            if isinstance(res, Exception):
+                if day == yesterday:
+                    raise res
+                unavailable.append(str(day))
+            else:
+                figures[day] = res
+    week_of = {d: ("week" if d > yesterday - dt.timedelta(days=7) else "before") for d in figures}
+    info = {n: (c, p) for n, _, c, p in CF_KNOWN}
+    ai_names = {n for n, _, _, _ in CF_AI}
+
+    def blank():
+        return {"requests": 0, "pages": 0, "paths": {}, "restaurant_pages": set(), "stopped": 0, "not_found": 0}
+
+    # Every verified crawler's requests, pages and answers, by week, and each kind's totals.
+    seen, kinds, kind_of = {}, {}, {}
+    for day, res in figures.items():
+        w = week_of[day]
+        for g in res["bots"]:
+            d, n = g["dimensions"], g["count"]
+            kind = d["verifiedBotCategory"] or "Other"
+            name = bot_name(d["userAgent"]) or f"Unnamed ({kind})"
+            kind_of.setdefault(name, kind)
+            kinds.setdefault(kind, {"week": 0, "before": 0})[w] += n
+            s = seen.setdefault(name, {"week": blank(), "before": blank()})[w]
+            s["requests"] += n
+            if (d.get("securityAction") or "") not in CF_LET_THROUGH or d["edgeResponseStatus"] in (403, 429):
+                s["stopped"] += n
+            if d["edgeResponseStatus"] == 404:
+                s["not_found"] += n
+            path = d["clientRequestPath"]
+            if is_page(path) and d["edgeResponseStatus"] < 400:
+                s["pages"] += n
+                s["paths"][path] = s["paths"].get(path, 0) + n
+                if path.startswith("/restaurants/"):
+                    s["restaurant_pages"].add(path)
+    capped = sorted(str(d) for d, res in figures.items() if len(res["bots"]) >= CF_ROWS)
+
+    def crawler(name):
+        s = seen.get(name) or {}
+        company, purpose = info.get(name, (None, None))
+        out = {"name": name, "company": company, "for": purpose, "cloudflare_kind": kind_of.get(name)}
+        for w in ("week", "before"):
+            x = s.get(w) or blank()
+            out[w] = {"requests": x["requests"], "pages": x["pages"], "different_pages": len(x["paths"]),
+                      "restaurant_pages": len(x["restaurant_pages"]), "stopped": x["stopped"], "not_found": x["not_found"]}
+        top = sorted((s.get("week") or blank())["paths"].items(), key=lambda kv: -kv[1])[:CF_TOP]
+        out["top_pages"] = [{"page": p, "fetches": n} for p, n in top]
+        return out
+
+    def busiest(names):
+        return sorted(names, key=lambda n: -(seen[n]["week"]["requests"] + seen[n]["before"]["requests"] / 1000))
+
+    ai = busiest([n for n in seen if n in ai_names or (kind_of.get(n) or "").startswith("AI")])
+    search = busiest([n for n in seen if kind_of.get(n) == "Search Engine Crawler" and n not in ai])
+    search = ["Googlebot", "Bingbot"] + [n for n in search if n not in ("Googlebot", "Bingbot")][:CF_SEARCH_LIST - 2]
+
+    # Requests that give a known crawler's name but don't come from it.
+    fakes = {"week": {}, "before": {}}
+    for day, res in figures.items():
+        for g in res["fake"]:
+            name = bot_name(g["dimensions"]["userAgent"]) or "other"
+            fakes[week_of[day]][name] = fakes[week_of[day]].get(name, 0) + g["count"]
+
+    # robots.txt: which crawlers it turns away (Cloudflare's "Block AI bots" and managed robots.txt write to it too).
+    robots = {}
+    try:
+        req = urllib.request.Request(SITE + "/robots.txt", headers={"User-Agent": "Mozilla/5.0 starredbill-morning-figures"})
+        with urllib.request.urlopen(req, timeout=30) as r:
+            text = r.read().decode("utf-8", "replace")
+        groups, cur = [], None
+        for line in text.splitlines():
+            key, _, val = line.split("#")[0].partition(":")
+            key, val = key.strip().lower(), val.strip()
+            if key == "user-agent":
+                if cur is None or cur[1]:      # a rule ended the last group's list of names
+                    cur = ([], [])
+                    groups.append(cur)
+                cur[0].append(val.lower())
+            elif key in ("disallow", "allow") and cur is not None:
+                cur[1].append((key, val))
+        for name in [n for n, _, _, _ in CF_KNOWN] + [n for n, _, _ in CF_ROBOTS_ONLY]:
+            rules = next((g[1] for g in groups if name.lower() in g[0]), None)
+            if rules is None:
+                rules = next((g[1] for g in groups if "*" in g[0]), [])
+            robots[name] = "blocked" if ("disallow", "/") in rules else "allowed"
+    except Exception as e:
+        robots = {"error": str(e)[:200]}
+
+    # Missing addresses (404), apart from robots' probes, with how many of the hits were verified crawlers.
+    missing = {"week": {}, "before": {}}
+    for day, res in figures.items():
+        for g in res["missing"]:
+            p = g["dimensions"]["clientRequestPath"]
+            missing[week_of[day]][p] = missing[week_of[day]].get(p, 0) + g["count"]
+    by_crawlers = {}
+    for day, res in figures.items():
+        if week_of[day] == "week":
+            for g in res["bots"]:
+                if g["dimensions"]["edgeResponseStatus"] == 404:
+                    p = g["dimensions"]["clientRequestPath"]
+                    by_crawlers[p] = by_crawlers.get(p, 0) + g["count"]
+
+    def total(d, probes):
+        return sum(n for p, n in d.items() if bool(CF_PROBE.search(p)) == probes)
+
+    # Missing pages are the ones worth fixing (a broken link or an old address); missing files are mostly icons
+    # browsers ask for by habit, plus probes the pattern doesn't know.
+    top404 = sorted(((p, n) for p, n in missing["week"].items() if not CF_PROBE.search(p)), key=lambda kv: -kv[1])
+    not_found = {"week": total(missing["week"], False), "before": total(missing["before"], False),
+                 "probes_week": total(missing["week"], True), "probes_before": total(missing["before"], True),
+                 "top_pages": [{"path": p, "hits": n, "from_crawlers": by_crawlers.get(p, 0)}
+                               for p, n in top404 if is_page(p)][:CF_404_TOP],
+                 "top_files": [{"path": p, "hits": n, "from_crawlers": by_crawlers.get(p, 0)}
+                               for p, n in top404 if not is_page(p)][:5]}
+
+    # Server errors (5xx) by hour, with the last push to main before any spike.
+    hours, codes = {}, {"week": {}, "before": {}}
+    for day, res in figures.items():
+        for g in res["errors"]:
+            h, code = g["dimensions"]["datetimeHour"], str(g["dimensions"]["edgeResponseStatus"])
+            hours[h] = hours.get(h, 0) + g["count"]
+            codes[week_of[day]][code] = codes[week_of[day]].get(code, 0) + g["count"]
+    pushes = []
+    try:
+        repo = Path(__file__).resolve().parent.parent
+        log = subprocess.run(["git", "-C", str(repo), "log", "origin/main", "--first-parent", f"--since={days[-1]}",
+                              "--format=%ct %h %s"], capture_output=True, text=True, timeout=30).stdout
+        pushes = [(int(t), h, s) for t, h, s in (line.split(" ", 2) for line in log.splitlines() if line.count(" ") >= 2)]
+    except Exception:
+        pass
+    spikes = []
+    for h, n in sorted(hours.items()):
+        if n < CF_SPIKE:
+            continue
+        start = dt.datetime.strptime(h, "%Y-%m-%dT%H:%M:%SZ").replace(tzinfo=dt.timezone.utc).timestamp()
+        near = [p for p in pushes if start - 7200 <= p[0] < start + 3600]
+        spikes.append({"hour": h, "errors": n,
+                       "push": {"commit": near[-1][1], "subject": near[-1][2][:100]} if near else None})
+    error_paths = {}
+    for day, res in figures.items():
+        if week_of[day] == "week":
+            for g in res["errors"]:
+                p = g["dimensions"]["clientRequestPath"]
+                error_paths[p] = error_paths.get(p, 0) + g["count"]
+    errors = {"week": sum(codes["week"].values()), "before": sum(codes["before"].values()), "codes_week": codes["week"],
+              "spikes": spikes[-10:],
+              "top_paths_week": [{"path": p, "errors": n} for p, n in sorted(error_paths.items(), key=lambda kv: -kv[1])[:5]]}
+
+    def requests(w):
+        return sum(r["all"][0]["count"] for d, r in figures.items() if week_of[d] == w and r["all"])
+
+    return {"period": f"{days[6]} to {yesterday}", "before_period": f"{days[-1]} to {days[7]}",
+            "days_unavailable": sorted(unavailable), "days_capped": capped,
+            "all_requests": {"week": requests("week"), "before": requests("before")},
+            "by_kind": [dict(kind=k, **v) for k, v in sorted(kinds.items(), key=lambda kv: -kv[1]["week"])],
+            "search_crawlers": [crawler(n) for n in search], "ai_crawlers": [crawler(n) for n in ai],
+            "ai_not_seen": [n for n, _, _, _ in CF_AI if n not in seen],
+            "impostors": {w: dict(sorted(v.items(), key=lambda kv: -kv[1])) for w, v in fakes.items()},
+            "robots_txt": robots, "robots_only": [{"name": n, "company": c, "for": p} for n, c, p in CF_ROBOTS_ONLY],
+            "not_found": not_found, "server_errors": errors}
+
+
+def _try(fn, *args):
+    try:
+        return fn(*args)
+    except Exception as e:
+        return e
+
+
 def umami_client(cfg):
     """Umami's API address for the website, its sign-in headers and its name for page addresses. Reads through the
     website's share link ("umami_share" in config.json: the code after /share/), which works on Umami's free plan,
@@ -753,9 +1034,11 @@ def main(out, prev=None):
                             ("page_one", lambda c: page_one(c, prev), ["google sign-in"]),
                             ("page_two", lambda c: page_two(c, prev), ["google sign-in"]),
                             ("links", lambda c: bing_links(c, prev), ["Bing API key"]),
+                            ("cloudflare", lambda c: cloudflare(c, prev), ["Cloudflare API token"]),
                             ("umami", umami, [])):
         missing = [k for k in needs if not (google_ready(cfg) if k == "google sign-in" else
                                             keychain("starredbill-bing") if k == "Bing API key" else
+                                            keychain("starredbill-cloudflare") if k == "Cloudflare API token" else
                                             (CONFIG.parent / k).exists() if k.endswith(".txt") else cfg.get(k))]
         if missing:
             result["sources"][name] = {"status": "not set up", "missing": missing}

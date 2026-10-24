@@ -40,5 +40,12 @@
       "url": "https://www.laliste.com/places/victoria-and-alberts-orlando-us"
     }
   ],
-  "rankingsChecked": "2026-10-24"
+  "rankingsChecked": "2026-10-24",
+  "stay": {
+    "kind": "hotel",
+    "name": "Disney’s Grand Floridian Resort & Spa",
+    "url": "https://disneyworld.disney.go.com/resorts/grand-floridian-resort-and-spa/",
+    "note": "Inside Disney’s Grand Floridian Resort & Spa at Walt Disney World.",
+    "checked": "2026-10-23"
+  }
 }

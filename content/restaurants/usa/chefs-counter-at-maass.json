@@ -30,5 +30,12 @@
       "url": "https://www.oadguides.com/lists/north-america/top-restaurants/2026"
     }
   ],
-  "rankingsChecked": "2026-10-24"
+  "rankingsChecked": "2026-10-24",
+  "stay": {
+    "kind": "hotel",
+    "name": "Four Seasons Hotel and Residences Fort Lauderdale",
+    "url": "https://www.fourseasons.com/fortlauderdale/",
+    "note": "On the lobby level of the Four Seasons Fort Lauderdale, with ocean views.",
+    "checked": "2026-10-23"
+  }
 }

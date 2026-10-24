@@ -32,5 +32,12 @@
       "url": "https://www.laliste.com/places/carusos-montecito-us"
     }
   ],
-  "rankingsChecked": "2026-10-24"
+  "rankingsChecked": "2026-10-24",
+  "stay": {
+    "kind": "hotel",
+    "name": "Rosewood Miramar Beach",
+    "url": "https://www.rosewoodhotels.com/en/miramar-beach-montecito/accommodation",
+    "note": "Caruso’s is the Michelin-starred restaurant at Rosewood Miramar Beach in Montecito.",
+    "checked": "2026-10-23"
+  }
 }

@@ -93,5 +93,29 @@
       "url": "https://www.oadguides.com/lists/north-america/top-restaurants/2026"
     }
   ],
-  "rankingsChecked": "2026-10-24"
+  "rankingsChecked": "2026-10-24",
+  "stay": {
+    "kind": "hotel",
+    "name": "Auberge du Soleil",
+    "rooms": 50,
+    "url": "https://auberge.com/auberge-du-soleil/stay/",
+    "packages": [
+      {
+        "name": "The Art of Romance",
+        "includes": "Two or more nights in a Deluxe Suite or Private Maison, a six-course tasting menu for two at The Restaurant, Krug Champagne and caviar on arrival, roses, a couples’ massage and gifts",
+        "nights": 2,
+        "when": "Minimum two nights; book at least 72 hours ahead by phone or email",
+        "url": "https://auberge.com/auberge-du-soleil/special-offers/"
+      },
+      {
+        "name": "Deluxe stay with $150 dining credit",
+        "includes": "A Deluxe Room or Suite for two nights or more, a $150 credit towards lunch or dinner in The Restaurant and 20% off spa services",
+        "nights": 2,
+        "when": "Sunday to Thursday, stays through 31 December 2026, excluding holidays",
+        "url": "https://auberge.com/auberge-du-soleil/special-offers/"
+      }
+    ],
+    "note": "A 50-room hillside resort in Napa Valley with the restaurant on site.",
+    "checked": "2026-10-23"
+  }
 }

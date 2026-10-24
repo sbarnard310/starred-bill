@@ -93,5 +93,11 @@
   "photoWidth": 1000,
   "photoHeight": 750,
   "photoChecked": "2026-10-13",
-  "dietsManual": true
+  "dietsManual": true,
+  "stay": {
+    "kind": "hotel",
+    "name": "11 Howard",
+    "url": "https://www.11howard.com/rooms-nav",
+    "checked": "2026-10-23"
+  }
 }

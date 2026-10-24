@@ -23,5 +23,12 @@
     "gluten-free"
   ],
   "chef": "Haru Kishi and Gohei Kishi",
-  "chefSource": "site"
+  "chefSource": "site",
+  "stay": {
+    "kind": "hotel",
+    "name": "Austin Proper Hotel",
+    "rooms": 232,
+    "url": "https://www.properhotel.com/austin/rooms/",
+    "checked": "2026-10-23"
+  }
 }

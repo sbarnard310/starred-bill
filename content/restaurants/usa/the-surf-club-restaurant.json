@@ -43,5 +43,12 @@
     }
   ],
   "rankingsChecked": "2026-10-24",
-  "dietsManual": true
+  "dietsManual": true,
+  "stay": {
+    "kind": "hotel",
+    "name": "Four Seasons Hotel at The Surf Club",
+    "url": "https://www.fourseasons.com/surfside/",
+    "note": "The restaurant’s own site says it sits at The Surf Club next to the Four Seasons hotel.",
+    "checked": "2026-10-23"
+  }
 }

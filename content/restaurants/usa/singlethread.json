@@ -71,5 +71,13 @@
       "url": "https://www.oadguides.com/lists/north-america/top-restaurants/2026"
     }
   ],
-  "rankingsChecked": "2026-10-24"
+  "rankingsChecked": "2026-10-24",
+  "stay": {
+    "kind": "rooms",
+    "name": "SingleThread Inn",
+    "rooms": 5,
+    "url": "https://singlethreadfarms.com/inn/",
+    "note": "Five rooms above the restaurant, including a 700 sq ft suite, with breakfast included and dinner in the restaurant guaranteed to inn guests.",
+    "checked": "2026-10-23"
+  }
 }

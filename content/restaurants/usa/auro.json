@@ -19,5 +19,11 @@
   "placeId": "ChIJMaW7PHlDhIARZcaR5KPGG8g",
   "michelinId": "1186306",
   "chef": "Evan Neumann",
-  "chefSource": "site"
+  "chefSource": "site",
+  "stay": {
+    "kind": "hotel",
+    "name": "Four Seasons Resort and Residences Napa Valley",
+    "url": "https://www.fourseasons.com/napavalley/",
+    "checked": "2026-10-23"
+  }
 }

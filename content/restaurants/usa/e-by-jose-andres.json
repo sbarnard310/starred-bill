@@ -51,5 +51,12 @@
       "url": "https://www.oadguides.com/lists/north-america/top-restaurants/2026"
     }
   ],
-  "rankingsChecked": "2026-10-24"
+  "rankingsChecked": "2026-10-24",
+  "stay": {
+    "kind": "hotel",
+    "name": "The Cosmopolitan of Las Vegas",
+    "url": "https://cosmopolitanlasvegas.mgmresorts.com/en.html",
+    "note": "A nine-seat counter inside The Cosmopolitan, next to Jaleo.",
+    "checked": "2026-10-23"
+  }
 }

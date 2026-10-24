@@ -31,5 +31,13 @@
       "url": "https://www.laliste.com/places/atlas-atlanta-us"
     }
   ],
-  "rankingsChecked": "2026-10-24"
+  "rankingsChecked": "2026-10-24",
+  "stay": {
+    "kind": "hotel",
+    "name": "The St. Regis Atlanta",
+    "rooms": 182,
+    "url": "https://www.marriott.com/en-us/hotels/atlxr-the-st-regis-atlanta/rooms/",
+    "note": "The hotel has 151 rooms and 31 suites.",
+    "checked": "2026-10-23"
+  }
 }

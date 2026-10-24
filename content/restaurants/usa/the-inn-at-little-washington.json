@@ -90,5 +90,35 @@
   "photoWidth": 1000,
   "photoHeight": 793,
   "photoChecked": "2026-10-13",
-  "dietsManual": true
+  "dietsManual": true,
+  "stay": {
+    "kind": "hotel",
+    "name": "The Inn at Little Washington",
+    "rooms": 24,
+    "url": "https://www.theinnatlittlewashington.com/rooms",
+    "packages": [
+      {
+        "name": "Far From The Madding Crowd Package",
+        "includes": "A night in one of the Inn’s rooms, dinner in the Michelin-starred restaurant (drinks not included), a full hot breakfast on top of the house breakfast, and all taxes and service",
+        "per": "room",
+        "when": "Wednesday to Sunday nights",
+        "url": "https://www.theinnatlittlewashington.com/exclusive-offers/far-from-the-madding-crowd-package"
+      },
+      {
+        "name": "Just One More Night...",
+        "includes": "Two nights, guaranteed dinner in the Michelin-starred dining room on the Sunday, a reduced room rate on the Monday, dinner at Patty O’s Café on the Monday, late checkout on the Tuesday and a welcome and departure gift",
+        "nights": 2,
+        "when": "Sunday arrivals, subject to availability",
+        "url": "https://www.theinnatlittlewashington.com/exclusive-offers/just-one-more-night-2025-26"
+      },
+      {
+        "name": "Our Winter Offer",
+        "includes": "A weeknight stay with a $200 food and beverage credit, welcome cocktail, afternoon tea, continental breakfast and a guaranteed dinner reservation (on Mondays and Tuesdays, at Patty O’s Café, as the starred dining room is closed)",
+        "when": "Select weeknights in winter, subject to availability",
+        "url": "https://www.theinnatlittlewashington.com/exclusive-offers/our-winter-offer"
+      }
+    ],
+    "note": "24 rooms and suites across the main building and nearby historic houses, plus whole-house rentals; the starred dining room is closed on Mondays and Tuesdays.",
+    "checked": "2026-10-23"
+  }
 }

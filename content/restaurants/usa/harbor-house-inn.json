@@ -79,5 +79,13 @@
       "url": "https://www.oadguides.com/lists/north-america/top-restaurants/2026"
     }
   ],
-  "rankingsChecked": "2026-10-24"
+  "rankingsChecked": "2026-10-24",
+  "stay": {
+    "kind": "hotel",
+    "name": "Harbor House Inn",
+    "rooms": 11,
+    "url": "https://www.theharborhouseinn.com/accommodation",
+    "note": "Six rooms in the main house and five cottages on the Mendocino coast, each stay with breakfast; the inn holds a few dinner tables for guests who book rooms.",
+    "checked": "2026-10-23"
+  }
 }

@@ -39,5 +39,11 @@
       "url": "https://www.oadguides.com/lists/north-america/top-restaurants/2026"
     }
   ],
-  "rankingsChecked": "2026-10-24"
+  "rankingsChecked": "2026-10-24",
+  "stay": {
+    "kind": "hotel",
+    "name": "MGM Grand",
+    "url": "https://mgmgrand.mgmresorts.com/en.html",
+    "checked": "2026-10-23"
+  }
 }

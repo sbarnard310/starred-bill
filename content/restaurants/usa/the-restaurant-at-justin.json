@@ -38,5 +38,12 @@
       "url": "https://www.laliste.com/places/the-restaurant-at-justin-paso-robles-us"
     }
   ],
-  "rankingsChecked": "2026-10-24"
+  "rankingsChecked": "2026-10-24",
+  "stay": {
+    "kind": "hotel",
+    "name": "JUST Inn",
+    "url": "https://www.justinwine.com/visit/just-inn",
+    "note": "Suites, a villa and a chateau on the winery estate; stays include a daily farm-to-table breakfast, premium tastings and preferred access to the restaurant.",
+    "checked": "2026-10-23"
+  }
 }

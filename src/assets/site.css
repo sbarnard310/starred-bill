@@ -769,6 +769,9 @@ button.crow-from { background: none; border: 0; padding: 0; font: inherit; font-
 .br-list .stars { color: var(--gold); }
 .br-list .stars svg { width: 11px; height: 11px; }
 .br-list .count { margin-inline-start: auto; color: var(--muted); font-size: .82rem; white-space: nowrap; }
+.br-toggle { margin-top: 10px; padding: 0; border: 0; background: none; color: var(--green); font: inherit; font-size: .9rem; font-weight: 600; cursor: pointer; }
+.br-toggle:hover { text-decoration: underline; text-underline-offset: 3px; }
+@media (min-width: 721px) { .br-list:not(.is-open) .br-fold { display: none; } }
 /* The line above the footer: where the figures come from (home_trust_html()). */
 .home-trust { padding-block: 32px; background: var(--surface); }
 .trust { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 20px; font-size: .88rem; color: var(--muted); line-height: 1.5; }
@@ -802,6 +805,7 @@ button.crow-from { background: none; border: 0; padding: 0; font: inherit; font-
   .br-list { display: flex; gap: 8px; overflow-x: auto; margin-inline: -16px; padding: 0 16px 4px; scrollbar-width: none; }
   .br-list li, .br-list li:first-child { flex: none; padding: 6px 12px; border: 1px solid var(--line); border-radius: 999px; background: var(--surface); font-size: .88rem; }
   .br-list .count { margin-inline-start: 4px; }
+  .br-toggle { display: none; }
   .trust { grid-template-columns: minmax(0, 1fr); gap: 16px; }
 }
 /* An empty wishlist shrinks to a line or two (home.js sets .is-empty). */

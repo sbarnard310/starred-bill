@@ -3523,6 +3523,7 @@ HOME_SAMPLES = 6       # till receipts in the hero, one shown at a time (home.js
 HOME_RESULTS = 4       # the latest results pages in "What's new"
 HOME_COMING = 4        # the next ceremonies in "What's new"
 HOME_RESTAURANTS = 12  # restaurant pages in "Browse", most-searched first (RESTAURANT_PAGES' order)
+HOME_BROWSE_SHOW = 6   # rows each "Browse" column shows on computers before its "Show all" button (the rest stay in the page)
 
 
 def star_icons(n):
@@ -3711,7 +3712,16 @@ def home_browse_html():
     rests = "".join(f'<li><a href="{e(r["page"])}" data-home="restaurant">{e(r["name"])}</a> {star_icons(r["stars"])}'
                     f'<span class="sr-only">{STAR_WORDS[r["stars"]]} stars</span><span class="count">{e(home_where(r))}</span></li>' for r in own)
     lists = "".join(f'<li><a href="/guides/{gid}/" data-home="list">{e(label)}</a></li>' for gid, label in HOME_LISTS if gid in guides)
-    col = lambda title, items: f'<div class="br-col"><h3 class="nw-head">{title}</h3><ul class="br-list">{items}</ul></div>' if items else ""
+    def col(title, items):
+        # Rows after the first HOME_BROWSE_SHOW are folded on computers (.br-fold) until "Show all" opens them (home.js);
+        # on phones each list swipes sideways, so they all show.
+        if not items:
+            return ""
+        rows = items.split("</li>")[:-1]
+        rows = [r.replace("<li>", '<li class="br-fold">', 1) if i >= HOME_BROWSE_SHOW else r for i, r in enumerate(rows)]
+        more = (f'<button type="button" class="br-toggle" aria-expanded="false" data-all="Show all {len(rows)}">Show all {len(rows)}</button>'
+                if len(rows) > HOME_BROWSE_SHOW else "")
+        return f'<div class="br-col"><h3 class="nw-head">{title}</h3><ul class="br-list">{"</li>".join(rows)}</li></ul>{more}</div>'
     return (f'<div class="br-grid">{col("By cuisine", cuisines)}{col("Restaurants people search for", rests)}'
             f'{col("Lists and rankings", lists)}</div>')
 
@@ -4829,7 +4839,7 @@ VEG_SERVES = {"oyster-oyster": "Vegetarian or vegan, oysters optional", "fields-
               "mita": "Plant-based", "daigo": "Shōjin ryōri (Buddhist vegetarian)", "avatara": "Vegetarian (Indian)"}
 # The restaurants-with-rooms guides (23 Oct 2026): {{table:rooms-<place>}} (restaurants with rooms of their own) and
 # {{table:rooms-hotel-<place>}} (restaurants inside a hotel) for each place here, from each restaurant's `stay`.
-ROOMS_LISTS = ("uk", "france", "netherlands", "spain", "italy")
+ROOMS_LISTS = ("uk", "france", "netherlands", "spain", "italy", "usa")
 # Their wording in the translated guides (a translation's {{table:rooms-…}} needs its language here; rooms_blocks_in()).
 ROOMS_WORDS = {
     "fr": {"heads": ("Restaurant", "Étoiles", "Où", "Chambres", "Chambre dès, la nuit", "Séjour avec dîner", "Menu dégustation, par personne"),

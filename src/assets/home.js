@@ -127,6 +127,15 @@ document.addEventListener("click", (e) => {
   const a = e.target.closest("a[data-home]");
   if (a) track("home-link", { to: a.dataset.home });
 });
+// "Browse" shows six rows a column on computers; "Show all" opens the rest (home_browse_html() in build.py).
+document.addEventListener("click", (e) => {
+  const b = e.target.closest(".br-toggle");
+  if (!b) return;
+  const open = b.previousElementSibling.classList.toggle("is-open");
+  b.setAttribute("aria-expanded", open);
+  b.textContent = open ? "Show fewer" : b.dataset.all;
+  track("list-more", { open: open ? "all" : "fewer", where: "home-browse" });
+});
 
 // ---------- Currency ----------
 // Every price on the page shows in one currency, picked with "Prices in" in the hero: the visitor's own choice (prefs

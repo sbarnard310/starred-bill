@@ -1362,6 +1362,14 @@ footer .foot-legal { flex-basis: 100%; font-size: .78rem; }
 .guide-table.data td:first-child { white-space: normal; }
 .guide-table.data td.num { font-family: var(--font-num); white-space: nowrap; }
 .guide-table.data td.num .muted { font-family: var(--font-body); }
+/* a figure with a note under it ("from £1,900 a room for 2 nights" / Stay & Indulge) wraps, so wide tables still fit */
+.guide-table.data td.num:has(> .muted) { white-space: normal; }
+@media (min-width: 721px) and (max-width: 960px) {
+  /* tablets: tighter cells, and figures may wrap, so seven-column tables (restaurants with rooms) fit without a sideways scroll */
+  .guide-table th, .guide-table td { padding: 10px 8px; }
+  .guide-table th { letter-spacing: .04em; }
+  .guide-table.data:has(th:nth-child(7)) td.num { white-space: normal; }
+}
 .guide-table.three-list td:first-child { min-width: 12ch; }
 .guide-table.most-table td:first-child { min-width: 15ch; }
 .guide-table th button { all: inherit; cursor: pointer; display: inline-flex; gap: 4px; align-items: center; }

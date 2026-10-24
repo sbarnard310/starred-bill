@@ -1,0 +1,20 @@
+{
+  "name": "Sungchuyuan",
+  "nameZh": "松竹園",
+  "city": "taipei",
+  "area": "Shilin, Taipei",
+  "areaZh": "台北士林區",
+  "address": "No. 546, Yonggong Rd., Shilin Dist., Taipei",
+  "addressZh": "台北市士林區永公路546號",
+  "serves": "Hakka-style chicken, salted pork and stir-fries",
+  "servesZh": "客家白斬雞、鹹豬肉、小炒",
+  "priceLow": 280,
+  "priceHigh": 558,
+  "priceNote": "À la carte dishes NT$280–558 to share; half chicken NT$500; +10% service",
+  "priceNoteZh": "單點約 NT$280–558，半隻雞 NT$500，另加一成服務費",
+  "sourceType": "site",
+  "source": "https://www.28616261.com.tw/private-menu/",
+  "sourceDate": "2026-10",
+  "website": "https://www.28616261.com.tw/",
+  "priceType": "dish"
+}

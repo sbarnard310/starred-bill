@@ -1,0 +1,18 @@
+{
+  "name": "Cai Jia Niu Rou Mian",
+  "nameZh": "蔡家牛肉麵",
+  "city": "new-taipei",
+  "area": "Zhonghe, New Taipei",
+  "areaZh": "新北中和區",
+  "address": "No. 12, Aly. 16, Ln. 153, Sec. 3, Xiulang Rd., Zhonghe Dist., New Taipei City",
+  "addressZh": "新北市中和區秀朗路三段153巷16弄12號",
+  "serves": "Clear-simmered and red-braised beef noodles",
+  "servesZh": "清燉牛肉麵、紅燒牛肉麵",
+  "priceLow": 220,
+  "priceHigh": 250,
+  "priceNote": "Beef noodle soup NT$220; with a side NT$30 about NT$250",
+  "priceNoteZh": "牛肉麵 NT$220，加小菜 NT$30 約 NT$250",
+  "sourceType": "press",
+  "source": "https://blake.com.tw/blog/post/cai-jia-2610",
+  "sourceDate": "2026-10"
+}

@@ -1,0 +1,18 @@
+{
+  "name": "Xie Zhang Gui",
+  "nameZh": "謝掌櫃",
+  "city": "tainan",
+  "area": "Anping, Tainan",
+  "areaZh": "台南安平區",
+  "address": "No. 5, Ln. 23, Yunhe Rd., Anping District, Tainan",
+  "addressZh": "台南市安平區運河路23巷5號",
+  "serves": "Milkfish congee and seafood",
+  "servesZh": "虱目魚海鮮粥",
+  "priceLow": 140,
+  "priceHigh": 150,
+  "priceNote": "Milkfish congee NT$140-150 a bowl",
+  "priceNoteZh": "虱目魚粥 NT$140-150",
+  "sourceType": "press",
+  "source": "https://lifeintainan.com/shopkeeperthan-milkfish/",
+  "sourceDate": "2024-12"
+}

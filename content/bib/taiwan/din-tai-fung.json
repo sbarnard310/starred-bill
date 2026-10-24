@@ -1,0 +1,19 @@
+{
+  "name": "Din Tai Fung",
+  "nameZh": "鼎泰豐",
+  "city": "taipei",
+  "area": "Da'an, Taipei",
+  "areaZh": "台北大安區",
+  "address": "No. 277, Section 2, Xinyi Road, Da'an District, Taipei",
+  "addressZh": "台北市大安區信義路二段277號",
+  "serves": "Xiaolongbao and fried rice",
+  "servesZh": "小籠包、炒飯",
+  "priceLow": 290,
+  "priceHigh": 610,
+  "priceNote": "10 xiaolongbao about NT$290; with shrimp fried rice NT$320",
+  "priceNoteZh": "小籠包十顆約 NT$290；加蝦仁蛋炒飯 NT$320",
+  "sourceType": "press",
+  "source": "https://udn.com/news/story/7270/9573307",
+  "sourceDate": "2026-06",
+  "website": "https://www.dintaifung.com.tw"
+}

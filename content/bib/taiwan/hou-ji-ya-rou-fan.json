@@ -1,0 +1,18 @@
+{
+  "name": "Hou Ji Ya Rou Fan",
+  "nameZh": "侯記鴨肉飯",
+  "city": "kaohsiung",
+  "area": "Sanmin, Kaohsiung",
+  "areaZh": "高雄三民區",
+  "address": "No. 201, Ziqiang 1st Rd., Sanmin Dist., Kaohsiung City",
+  "addressZh": "高雄市三民區自強一路201號",
+  "serves": "Duck rice and angelica duck noodles",
+  "servesZh": "鴨肉飯、當歸鴨麵線",
+  "priceLow": 40,
+  "priceHigh": 70,
+  "priceNote": "Duck rice NT$40–70, angelica duck noodles NT$70",
+  "priceNoteZh": "鴨肉飯 NT$40–70，當歸鴨麵線 NT$70",
+  "sourceType": "press",
+  "source": "https://supertaste.tvbs.com.tw/food/352298",
+  "sourceDate": "2024-11"
+}

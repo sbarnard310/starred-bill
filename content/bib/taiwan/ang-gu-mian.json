@@ -1,0 +1,18 @@
+{
+  "name": "Ang Gu Mian",
+  "nameZh": "ㄤ咕麵",
+  "city": "hsinchu",
+  "area": "Guanxi, Hsinchu County",
+  "areaZh": "新竹縣關西鎮",
+  "address": "No. 35, Guangfu Rd., Guanxi Township, Hsinchu County",
+  "addressZh": "新竹縣關西鎮光復路35號",
+  "serves": "Dry noodles with scallion oil, wonton soup",
+  "servesZh": "香蔥油乾麵、芋角餛飩湯",
+  "priceLow": 58,
+  "priceHigh": 123,
+  "priceNote": "Dry noodles NT$58; with a side such as peanut tofu (NT$65) about NT$123",
+  "priceNoteZh": "ㄤ咕麵 NT$58;加一份花生豆腐（NT$65）約 NT$123",
+  "sourceType": "press",
+  "source": "https://supertaste.tvbs.com.tw/food/345194",
+  "sourceDate": "2023-09"
+}

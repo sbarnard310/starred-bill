@@ -1,0 +1,18 @@
+{
+  "name": "Shang Hao Ji Rou",
+  "nameZh": "上好雞肉",
+  "city": "new-taipei",
+  "area": "Zhonghe, New Taipei",
+  "areaZh": "新北中和區",
+  "address": "No. 1, Lane 8, Minzhi St., Zhonghe Dist., New Taipei City",
+  "addressZh": "新北市中和區民治街8巷1號",
+  "serves": "Boneless chicken-thigh rice",
+  "servesZh": "雞肉飯、雞扒蛋飯",
+  "priceLow": 70,
+  "priceHigh": 95,
+  "priceNote": "Chicken rice NT$70-75; chicken by itself NT$95",
+  "priceNoteZh": "雞肉飯 NT$70–75、單點雞肉 NT$95",
+  "sourceType": "press",
+  "source": "https://www.saydigi.com/2026/06/1454082.html",
+  "sourceDate": "2026-06"
+}

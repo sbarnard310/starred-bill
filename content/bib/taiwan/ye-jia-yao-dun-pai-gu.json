@@ -1,0 +1,18 @@
+{
+  "name": "Ye Jia Yao Dun Pai Gu",
+  "nameZh": "葉家藥燉排骨",
+  "city": "new-taipei",
+  "area": "Banqiao, New Taipei",
+  "areaZh": "新北板橋區",
+  "address": "No. 441, Sec. 2, Zhongshan Rd., Banqiao Dist., New Taipei City",
+  "addressZh": "新北市板橋區中山路二段441號",
+  "serves": "Herbal stewed pork ribs, braised pork rice",
+  "servesZh": "藥燉排骨、滷肉飯、當歸羊肉",
+  "priceLow": 100,
+  "priceHigh": 130,
+  "priceNote": "Herbal pork ribs NT$100; with small braised pork rice NT$30 about NT$130",
+  "priceNoteZh": "藥燉排骨 NT$100，加滷肉飯小碗 NT$30 約 NT$130",
+  "sourceType": "press",
+  "source": "https://travel.ettoday.net/article/3184588.htm",
+  "sourceDate": "2026-06"
+}

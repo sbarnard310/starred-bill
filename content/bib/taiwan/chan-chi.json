@@ -1,0 +1,19 @@
+{
+  "name": "Chan Chi",
+  "nameZh": "詹記",
+  "city": "tainan",
+  "area": "East, Tainan",
+  "areaZh": "台南東區",
+  "address": "No. 59, Dong'an Road, East District, Tainan",
+  "addressZh": "台南市東區東安路59號",
+  "serves": "Home-style fish soup and fish dishes",
+  "servesZh": "家常鮮魚湯、飯桌仔小菜",
+  "change": "new",
+  "priceLow": 285,
+  "priceHigh": 495,
+  "priceNote": "Mixed fish soup NT$285; with milkfish belly NT$180 and rice NT$30 about NT$495",
+  "priceNoteZh": "綜合魚湯 NT$285;加虱目魚肚 NT$180、肉燥飯 NT$30 約 NT$495",
+  "sourceType": "press",
+  "source": "https://supertaste.tvbs.com.tw/food/361136",
+  "sourceDate": "2026-07"
+}

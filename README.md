@@ -224,6 +224,41 @@ Short, dated stories about Michelin-starred restaurants at `/news/<file name>/`,
 | `sources` | Required, as for guides: Michelin's press releases (not the MICHELIN Guide's website, which the build refuses), news coverage and restaurants' own announcements. |
 | `sourcesNote` | Optional sentence under the sources, e.g. that the counts are our own. |
 
+## Bib Gourmand
+
+The MICHELIN Guide's Bib Gourmands (good food at a moderate price), starting with Taiwan (24 Oct 2026). They are kept apart from the starred restaurants: one file each in `content/bib/<country>/` (Pages CMS "Bib Gourmand"), never in `content/restaurants/`, so no star count, map, Near me, Help me pick or email includes them. Each country with a list gets a page at `/<country>/bib-gourmand/` (every city's list, in short, with full tables for cities without a destination page, e.g. New Taipei) and one per city that has a destination page (`/taiwan/taichung/bib-gourmand/`), in each language its destination pages offer, linked from those destination pages under their intro. The list comes from Michelin's press release or news coverage, never the MICHELIN Guide's website; recheck it after each year's announcement (Taiwan's: July or August, a week before the stars).
+
+`content/bib-gourmand.json` holds each country's list:
+
+| Field | What it is |
+|---|---|
+| `guide` / `guideZh` | The guide's name, e.g. MICHELIN Guide Taiwan. |
+| `edition` | The year of the list, e.g. 2026. |
+| `announced` | The day the list came out, like 2026-07-14. |
+| `checked` | The month the prices were checked, like 2026-10. |
+| `new` | How many are new this year; the build checks it against the files marked `change: "new"`. |
+| `whatIs` / `whatIsZh` | The country page's answer to "What is a Bib Gourmand?" (the local price level). |
+| `next` / `nextZh` | When the next list is due. |
+| `cities` | Each list city: `id`, `name`/`nameZh`, `place` (its destination page's id, if it has one), `count` (how many the list gives it; the build checks the files add up) and an optional `note`. |
+| `sources` | The list's sources (`title`, `publisher`, `url`, `date`), as for guides. |
+
+Each restaurant's file (the file name is its id, so don't rename one once published):
+
+| Field | What it is |
+|---|---|
+| `name` / `nameZh` | Its name: the English one it or English-language press uses, else Hanyu Pinyin; and the local name. |
+| `city` | One of the list's city ids in bib-gourmand.json. |
+| `area` / `areaZh` | District and city, e.g. "Da'an, Taipei" / "台北大安區". |
+| `address` / `addressZh` | Its address, for the Google Maps link and the structured data. |
+| `serves` / `servesZh` | What it's known for, in a few words of our own. |
+| `change` | `"new"` if first listed this edition. |
+| `priceLow` / `priceHigh` | Its prices in local currency: a dish or meal from the cheapest to a fuller one (both the same if there's one figure). Leave both out if no price has been found. |
+| `priceType` | `"dish"` where the figures are prices of dishes to share, not a meal (shown as "Dishes NT$…"). |
+| `priceNote` / `priceNoteZh` | What the figures are, e.g. "Beef noodle soup NT$220; with a side NT$255". |
+| `sourceType`, `source`, `sourceDate` | Where the price came from: `site` (its own website or page) or `press`, the link and the month (shown beside the link, so an old price shows its age). `none` with no price. Never the MICHELIN Guide's website, Google or delivery apps (the build refuses them). |
+| `website` | Its own website or Facebook page, if any. |
+| `notice` / `noticeZh` | Only if it's closed for now or has moved. |
+
 ## Saved searches
 
 Members' saved searches live in Supabase (`saved_searches`, set up by `supabase/saved-searches.sql`), not in `content/`. Each row's `query` holds only the keys it uses:

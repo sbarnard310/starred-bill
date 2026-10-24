@@ -1,0 +1,18 @@
+{
+  "name": "Wu Wang Zai Ji",
+  "nameZh": "吾旺再季",
+  "city": "taipei",
+  "area": "Zhongzheng, Taipei",
+  "areaZh": "台北中正區",
+  "address": "1F, No. 29, Lane 313, Sec. 2, Zhonghua Rd., Zhongzheng Dist., Taipei (Nanjichang Night Market)",
+  "addressZh": "台北市中正區中華路二段313巷29號1樓（南機場夜市）",
+  "serves": "Taiwanese spring rolls (runbing) with shredded radish",
+  "servesZh": "潤餅（蘿蔔絲餡）",
+  "priceLow": 70,
+  "priceHigh": 70,
+  "priceNote": "Spring roll NT$70 each",
+  "priceNoteZh": "潤餅每捲 NT$70",
+  "sourceType": "press",
+  "source": "https://news.tvbs.com.tw/travel/2821633",
+  "sourceDate": "2025-03"
+}

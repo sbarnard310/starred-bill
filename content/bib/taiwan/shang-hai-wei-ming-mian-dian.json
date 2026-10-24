@@ -1,0 +1,18 @@
+{
+  "name": "Shang Hai Wei Ming Mian Dian",
+  "nameZh": "上海未名麵點",
+  "city": "taichung",
+  "area": "Central, Taichung",
+  "areaZh": "台中中區",
+  "address": "No. 69, Shifu Rd., Central District, Taichung City",
+  "addressZh": "台中市中區市府路69號",
+  "serves": "Shanghai noodles with pork chop, and plum drink",
+  "servesZh": "上海麵點、豬排麵",
+  "priceLow": 90,
+  "priceHigh": 110,
+  "priceNote": "Pickled-mustard pork noodles NT$90; pork-chop noodles NT$110",
+  "priceNoteZh": "榨菜肉絲麵（小） NT$90；豬排麵 NT$110",
+  "sourceType": "press",
+  "source": "https://bigsharkgogogo.tw/noname-noodlesaa/",
+  "sourceDate": "2025-04"
+}

@@ -1,0 +1,18 @@
+{
+  "name": "Huang Ji Lu Rou Fan",
+  "nameZh": "黃記魯肉飯",
+  "city": "taipei",
+  "area": "Zhongshan, Taipei",
+  "areaZh": "台北中山區",
+  "address": "No. 28, Lane 183, Section 2, Zhongshan North Road, Zhongshan District, Taipei (near Shuangcheng Street Night Market)",
+  "addressZh": "台北市中山區中山北路二段183巷28號（雙城街夜市旁）",
+  "serves": "Braised pork rice with side dishes",
+  "servesZh": "魯肉飯與小菜",
+  "priceLow": 35,
+  "priceHigh": 115,
+  "priceNote": "Braised pork rice NT$35 small, NT$50 large; sides up to NT$115",
+  "priceNoteZh": "魯肉飯小碗 NT$35、大碗 NT$50；小菜最高 NT$115",
+  "sourceType": "press",
+  "source": "https://supertaste.tvbs.com.tw/esg/348726",
+  "sourceDate": "2024-07"
+}

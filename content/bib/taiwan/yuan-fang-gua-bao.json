@@ -1,0 +1,18 @@
+{
+  "name": "Yuan Fang Gua Bao",
+  "nameZh": "源芳刈包",
+  "city": "taipei",
+  "area": "Wanhua, Taipei",
+  "areaZh": "台北萬華區",
+  "address": "No. 17-2, Huaxi St., Wanhua Dist., Taipei (stall 161)",
+  "addressZh": "台北市萬華區華西街17之2號（161號攤位）",
+  "serves": "Gua bao (pork belly bun)",
+  "servesZh": "刈包",
+  "priceLow": 70,
+  "priceHigh": 70,
+  "priceNote": "Gua bao NT$70 each",
+  "priceNoteZh": "刈包每個 NT$70",
+  "sourceType": "press",
+  "source": "https://www.edh.tw/lohas/article/32251",
+  "sourceDate": "2025-11"
+}

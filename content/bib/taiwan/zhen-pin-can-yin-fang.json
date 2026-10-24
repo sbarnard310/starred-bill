@@ -1,0 +1,18 @@
+{
+  "name": "Zhen Pin Can Yin Fang",
+  "nameZh": "珍品餐飲坊",
+  "city": "new-taipei",
+  "area": "Xinzhuang, New Taipei",
+  "areaZh": "新北新莊區",
+  "address": "No. 97, Sec. 1, Fuxing Rd., Xinzhuang Dist., New Taipei City",
+  "addressZh": "新北市新莊區復興路一段97號",
+  "serves": "Duck braised-rice, duck soup, stir-fried duck thick soup",
+  "servesZh": "鴨滷飯、薑絲鴨肉湯、生炒鴨肉羹",
+  "priceLow": 45,
+  "priceHigh": 125,
+  "priceNote": "Small duck braised rice NT$45; with ginger duck soup NT$80, about NT$125",
+  "priceNoteZh": "鴨滷飯小份 NT$45，加薑絲鴨肉湯 NT$80，約 NT$125",
+  "sourceType": "press",
+  "source": "https://lemonicetraveling.com/4ducks/",
+  "sourceDate": "2024-10"
+}

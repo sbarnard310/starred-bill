@@ -1,0 +1,18 @@
+{
+  "name": "Dong Men Mi Fen Tan",
+  "nameZh": "東門米粉攤",
+  "city": "hsinchu",
+  "area": "East District, Hsinchu City",
+  "areaZh": "新竹市東區",
+  "address": "Stalls 1116-1117, Dongmen Market, No. 86, Datong Rd., East District, Hsinchu City",
+  "addressZh": "新竹市東區大同路86號（東門市場1116、1117攤）",
+  "serves": "Taro rice-vermicelli soup with seafood or wontons",
+  "servesZh": "海鮮芋頭米粉湯、鮮蝦餛飩米粉湯",
+  "priceLow": 85,
+  "priceHigh": 160,
+  "priceNote": "Taro vermicelli soup NT$85-160 (small to large bowl)",
+  "priceNoteZh": "芋頭米粉湯 小碗至大碗 NT$85-160",
+  "sourceType": "press",
+  "source": "https://supertaste.tvbs.com.tw/food/340220",
+  "sourceDate": "2022-12"
+}

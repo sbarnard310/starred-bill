@@ -1,0 +1,18 @@
+{
+  "name": "Tian Xia San Jue",
+  "nameZh": "天下三絕",
+  "city": "taipei",
+  "area": "Da'an, Taipei",
+  "areaZh": "台北大安區",
+  "address": "No. 3, Alley 27, Sec. 4, Ren'ai Rd., Da'an Dist., Taipei",
+  "addressZh": "台北市大安區仁愛路四段27巷3號",
+  "serves": "Beef noodle soup",
+  "servesZh": "牛肉麵",
+  "priceLow": 290,
+  "priceHigh": 530,
+  "priceNote": "Beef noodle soup NT$290–530",
+  "priceNoteZh": "牛肉麵 NT$290–530",
+  "sourceType": "press",
+  "source": "https://www.marieclaire.com.tw/lifestyle/taste/89577",
+  "sourceDate": "2025-11"
+}

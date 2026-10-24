@@ -1,0 +1,18 @@
+{
+  "name": "Lian Wu Jiao Yang Rou Tang",
+  "nameZh": "蓮霧腳羊肉湯",
+  "city": "tainan",
+  "area": "Xinhua, Tainan",
+  "areaZh": "台南新化區",
+  "address": "No. 361, Zhongzheng Rd., Xinhua District, Tainan",
+  "addressZh": "台南市新化區中正路361號",
+  "serves": "Lamb soup and offal, Xinhua",
+  "servesZh": "羊肉湯、羊雜、羊皮卷",
+  "priceLow": 120,
+  "priceHigh": 220,
+  "priceNote": "Lamb soup NT$120 small, 170 medium, 220 large",
+  "priceNoteZh": "羊肉湯 小 NT$120、中 NT$170、大 NT$220",
+  "sourceType": "press",
+  "source": "https://supertaste.tvbs.com.tw/food/352312",
+  "sourceDate": "2024-11"
+}

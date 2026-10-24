@@ -1,0 +1,19 @@
+{
+  "name": "Open Smile",
+  "nameZh": "開囍",
+  "city": "taipei",
+  "area": "Xinyi, Taipei",
+  "areaZh": "台北信義區",
+  "address": "No. 441, Zhuangjing Road, Xinyi District, Taipei",
+  "addressZh": "台北市信義區莊敬路441號",
+  "serves": "Braised pork rice, red-braised pork belly",
+  "servesZh": "滷肉飯、紅燒控肉",
+  "change": "new",
+  "priceLow": 40,
+  "priceHigh": 250,
+  "priceNote": "Braised pork rice from NT$40; red-braised pork belly rice NT$250",
+  "priceNoteZh": "滷肉飯 NT$40 起；紅燒控肉飯 NT$250",
+  "sourceType": "press",
+  "source": "https://threethree.tw/202607251300/",
+  "sourceDate": "2026-07"
+}

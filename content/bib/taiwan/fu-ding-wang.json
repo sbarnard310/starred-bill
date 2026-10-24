@@ -1,0 +1,18 @@
+{
+  "name": "Fu Ding Wang",
+  "nameZh": "富鼎旺",
+  "city": "taichung",
+  "area": "Central, Taichung",
+  "areaZh": "台中中區",
+  "address": "No. 560, Sec. 1, Taiwan Blvd., Central District, Taichung City",
+  "addressZh": "台中市中區臺灣大道一段560號",
+  "serves": "Braised pork trotter and braised pork rice",
+  "servesZh": "滷豬腳、魯肉飯",
+  "priceLow": 30,
+  "priceHigh": 120,
+  "priceNote": "Braised pork rice NT$30; trotter portion NT$90",
+  "priceNoteZh": "魯肉飯 NT$30；鼎旺豬腳 NT$90",
+  "sourceType": "press",
+  "source": "https://bigsharkgogogo.tw/fudinwangcc/",
+  "sourceDate": "2026-05"
+}

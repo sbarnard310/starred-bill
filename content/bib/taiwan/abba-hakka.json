@@ -1,0 +1,18 @@
+{
+  "name": "Abba Hakka",
+  "nameZh": "阿爸的客家菜",
+  "city": "new-taipei",
+  "area": "Sanxia, New Taipei",
+  "areaZh": "新北三峽區",
+  "address": "No. 118, Zhongshan Rd., Sanxia Dist., New Taipei City",
+  "addressZh": "新北市三峽區中山路118號",
+  "serves": "Hakka dishes; steamed fish in pineapple sauce",
+  "servesZh": "客家菜、鳳梨醬清蒸魚、梅干扣肉",
+  "change": "new",
+  "priceLow": 370,
+  "priceHigh": 370,
+  "priceNote": "Average spend about NT$370 a head for shared dishes",
+  "priceNoteZh": "合菜均消約 NT$370",
+  "sourceType": "press",
+  "source": "https://ifoodie.tw/restaurant/559c1bedc03a101f6d8b86cd-%E9%98%BF%E7%88%B8%E7%9A%84%E5%AE%A2%E5%AE%B6%E8%8F%9C"
+}

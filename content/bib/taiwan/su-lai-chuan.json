@@ -1,0 +1,18 @@
+{
+  "name": "Su Lai Chuan",
+  "nameZh": "蘇來傳",
+  "city": "taipei",
+  "area": "Wanhua, Taipei",
+  "areaZh": "台北萬華區",
+  "address": "No. 4, Lane 176, Sec. 3, Heping W. Rd., Wanhua Dist., Taipei",
+  "addressZh": "台北市萬華區和平西路三段176巷4號",
+  "serves": "Meatballs (rouyuan) and taro cake",
+  "servesZh": "肉圓、芋粿",
+  "priceLow": 40,
+  "priceHigh": 50,
+  "priceNote": "Meatball NT$50, taro cake NT$40 each",
+  "priceNoteZh": "肉圓每粒 NT$50、芋粿每粒 NT$40",
+  "sourceType": "press",
+  "source": "https://www.mirrormedia.mg/story/20250821bus001",
+  "sourceDate": "2025-08"
+}

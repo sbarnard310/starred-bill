@@ -1,0 +1,18 @@
+{
+  "name": "Lai Gang Shan Yang Rou",
+  "nameZh": "賴岡山羊肉",
+  "city": "new-taipei",
+  "area": "Xindian, New Taipei",
+  "areaZh": "新北新店區",
+  "address": "1F, No. 244-4, Zhongzheng Rd., Xindian Dist., New Taipei City",
+  "addressZh": "新北市新店區中正路244-4號1樓",
+  "serves": "Skin-on lamb soup and braised pork rice",
+  "servesZh": "帶皮羊肉湯、滷肉飯",
+  "priceLow": 140,
+  "priceHigh": 215,
+  "priceNote": "Lamb soups NT$140-180; small braised pork rice NT$35",
+  "priceNoteZh": "羊肉湯 NT$140–180、滷肉飯小碗 NT$35",
+  "sourceType": "press",
+  "source": "https://blake.com.tw/blog/post/laigangshan",
+  "sourceDate": "2025-10"
+}

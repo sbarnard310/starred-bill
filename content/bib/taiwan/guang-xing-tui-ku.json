@@ -1,0 +1,18 @@
+{
+  "name": "Guang Xing Tui Ku",
+  "nameZh": "光興腿庫",
+  "city": "new-taipei",
+  "area": "Sanchong, New Taipei",
+  "areaZh": "新北三重區",
+  "address": "1F, No. 124, Renai St., Sanchong Dist., New Taipei City",
+  "addressZh": "新北市三重區仁愛街124號1樓",
+  "serves": "Pork knuckle and braised pork-intestine bento",
+  "servesZh": "腿庫便當、豬腳便當、滷大腸",
+  "priceLow": 110,
+  "priceHigh": 150,
+  "priceNote": "Bento NT$110-150 (pork knuckle bento NT$150)",
+  "priceNoteZh": "便當 NT$110–150（豬腳便當 NT$150）",
+  "sourceType": "press",
+  "source": "https://blake.com.tw/blog/post/guan-gxing",
+  "sourceDate": "2026-08"
+}

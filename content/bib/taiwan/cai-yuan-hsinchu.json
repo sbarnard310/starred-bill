@@ -1,0 +1,18 @@
+{
+  "name": "Cai Yuan",
+  "nameZh": "菜園",
+  "city": "hsinchu",
+  "area": "East District, Hsinchu City",
+  "areaZh": "新竹市東區",
+  "address": "No. 136, Sec. 1, Dongda Rd., East District, Hsinchu City",
+  "addressZh": "新竹市東區東大路一段136號",
+  "serves": "Shanghainese dishes (reservation advised)",
+  "servesZh": "上海菜（建議訂位）",
+  "priceLow": 500,
+  "priceHigh": 900,
+  "priceNote": "About NT$500-900 a head for shared dishes, plus 10% service",
+  "priceNoteZh": "合菜人均約 NT$500-900,另加一成服務費",
+  "sourceType": "press",
+  "source": "https://ifoodie.tw/restaurant/55a5b199c03a10241de67b63-%E8%8F%9C%E5%9C%92%E4%B8%8A%E6%B5%B7%E9%A4%90%E5%BB%B3",
+  "sourceDate": "2026-06"
+}

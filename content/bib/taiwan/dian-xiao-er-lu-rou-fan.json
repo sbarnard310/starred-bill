@@ -1,0 +1,18 @@
+{
+  "name": "Dian Xiao Er Lu Rou Fan",
+  "nameZh": "店小二",
+  "city": "new-taipei",
+  "area": "Sanchong, New Taipei",
+  "areaZh": "新北三重區",
+  "address": "No. 27, Datong N. Rd., Sanchong Dist., New Taipei City",
+  "addressZh": "新北市三重區大同北路27號",
+  "serves": "Braised pork rice and shrimp soup",
+  "servesZh": "魯肉飯、蝦仁羹",
+  "priceLow": 35,
+  "priceHigh": 85,
+  "priceNote": "Small braised pork rice NT$35; with shrimp soup NT$50, about NT$85",
+  "priceNoteZh": "魯肉飯小碗 NT$35，加蝦仁羹 NT$50，約 NT$85",
+  "sourceType": "press",
+  "source": "https://www.mirrormedia.mg/story/20260506food001",
+  "sourceDate": "2026-05"
+}

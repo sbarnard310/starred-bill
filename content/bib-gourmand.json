@@ -1,0 +1,86 @@
+{
+  "taiwan": {
+    "guide": "MICHELIN Guide Taiwan",
+    "guideZh": "台灣米其林指南",
+    "edition": 2026,
+    "announced": "2026-07-14",
+    "checked": "2026-10",
+    "new": 13,
+    "whatIs": "A Bib Gourmand is the MICHELIN Guide's pick of places serving good food at a moderate price: in Taiwan, three good courses for under NT$1,000 (about US$31), drinks not included. It isn't a star; Bib Gourmand restaurants are chosen by the same inspectors but listed apart from the starred ones, and they range from street stalls to small bistros.",
+    "whatIsZh": "必比登推介是米其林指南推薦「物有所值」美食的評選：在台灣，代表以新台幣 1,000 元以下（不含飲料）就能吃到三道好料理。必比登不是星級，由同一批評審選出，但和星級餐廳分開列出，從路邊小吃攤到小酒館都有。",
+    "next": "Michelin names Taiwan's Bib Gourmands about a week before its star ceremony, usually in July or August: the 2026 list came out on 14 July, a week before the stars on 21 July. We'll update this page when the 2027 list is out.",
+    "nextZh": "米其林通常在星級頒獎典禮前約一週公布台灣的必比登名單，多在 7 月或 8 月：2026 年名單於 7 月 14 日公布，比 7 月 21 日的星級名單早一週。2027 年名單公布後，我們會更新這一頁。",
+    "cities": [
+      {
+        "id": "taipei",
+        "name": "Taipei",
+        "nameZh": "台北",
+        "place": "taipei",
+        "count": 37
+      },
+      {
+        "id": "new-taipei",
+        "name": "New Taipei",
+        "nameZh": "新北",
+        "count": 18
+      },
+      {
+        "id": "taichung",
+        "name": "Taichung",
+        "nameZh": "台中",
+        "place": "taichung",
+        "count": 23
+      },
+      {
+        "id": "tainan",
+        "name": "Tainan",
+        "nameZh": "台南",
+        "place": "tainan",
+        "count": 30
+      },
+      {
+        "id": "kaohsiung",
+        "name": "Kaohsiung",
+        "nameZh": "高雄",
+        "place": "kaohsiung",
+        "count": 21
+      },
+      {
+        "id": "hsinchu",
+        "name": "Hsinchu",
+        "nameZh": "新竹",
+        "place": "hsinchu",
+        "count": 17,
+        "note": "Hsinchu City (7) and Hsinchu County (10), which the guide lists apart.",
+        "noteZh": "包含新竹市（7 家）與新竹縣（10 家），指南分開列出。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "2026臺灣米其林必比登推介完整名單！146間餐廳、13家新入選一次看",
+        "publisher": "TVBS",
+        "url": "https://news.tvbs.com.tw/life/3256871",
+        "date": "2026-07-14"
+      },
+      {
+        "title": "2026必比登／146 間餐廳完整名單一次看",
+        "publisher": "三立新聞網 SETN (Mirror Media)",
+        "url": "https://www.mirrormedia.mg/external/setn_1872137",
+        "date": "2026-07-14"
+      },
+      {
+        "title": "Michelin Guide Taiwan 2026 Bib Gourmand list adds 13 restaurants",
+        "publisher": "Focus Taiwan (CNA)",
+        "url": "https://focustaiwan.tw/society/202607140017",
+        "date": "2026-07-14"
+      },
+      {
+        "title": "2023年米其林必比登推介 139間入選台南最多新進榜【完整名單】",
+        "publisher": "中央社 CNA",
+        "url": "https://www.cna.com.tw/news/ahel/202308230064.aspx",
+        "date": "2023-08-23",
+        "note": "what a Bib Gourmand is"
+      }
+    ]
+  }
+}

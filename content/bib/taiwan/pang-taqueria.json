@@ -1,0 +1,18 @@
+{
+  "name": "Pang Taqueria",
+  "nameZh": "胖塔可",
+  "city": "taipei",
+  "area": "Da'an, Taipei",
+  "areaZh": "台北大安區",
+  "address": "1F, No. 181, Wenchang St., Da'an Dist., Taipei",
+  "addressZh": "台北市大安區文昌街181號1樓",
+  "serves": "Tacos with Taiwanese fillings, handmade tortillas",
+  "servesZh": "台式餡料墨西哥塔可",
+  "priceLow": 140,
+  "priceHigh": 150,
+  "priceNote": "Tacos NT$140–150 each (two or three make a meal)",
+  "priceNoteZh": "塔可每個 NT$140–150",
+  "sourceType": "press",
+  "source": "https://taipeitimes.com/News/feat/archives/2024/09/19/2003824003",
+  "sourceDate": "2024-09"
+}

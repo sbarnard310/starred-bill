@@ -1,0 +1,18 @@
+{
+  "name": "Hudong Niu Rou Guan",
+  "nameZh": "湖東牛肉館",
+  "city": "kaohsiung",
+  "area": "Hunei, Kaohsiung",
+  "areaZh": "高雄湖內區",
+  "address": "No. 107, Sec. 1, Zhongshan Rd., Hunei Dist., Kaohsiung City",
+  "addressZh": "高雄市湖內區中山路一段107號",
+  "serves": "Fresh beef hot-pot style dishes, reservation only",
+  "servesZh": "溫體牛肉、牛肉鍋",
+  "priceLow": 250,
+  "priceHigh": 550,
+  "priceNote": "One beef plate NT$250–550 (minimum per person); soup pot NT$100",
+  "priceNoteZh": "每人低消一盤牛肉 NT$250–550，鍋底 NT$100",
+  "sourceType": "press",
+  "source": "https://www.mirrormedia.mg/story/20251125food002",
+  "sourceDate": "2025-11"
+}

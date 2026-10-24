@@ -1,0 +1,18 @@
+{
+  "name": "Feng Ji E Rou Lao Dian",
+  "nameZh": "鳳記鵝肉老店",
+  "city": "taichung",
+  "area": "Shalu, Taichung",
+  "areaZh": "台中沙鹿區",
+  "address": "No. 170, Pingxi Rd., Shalu District, Taichung City",
+  "addressZh": "台中市沙鹿區屏西路170號",
+  "serves": "Sliced goose, noodles and offal soup",
+  "servesZh": "鵝肉、乾麵、下水湯",
+  "priceLow": 40,
+  "priceHigh": 200,
+  "priceNote": "Dry noodles NT$40; with offal soup NT$200; goose by weight",
+  "priceNoteZh": "乾麵 NT$40；加下水湯 NT$200；鵝肉依時價",
+  "sourceType": "press",
+  "source": "https://bigsharkgogogo.tw/fonggicc/",
+  "sourceDate": "2026-03"
+}

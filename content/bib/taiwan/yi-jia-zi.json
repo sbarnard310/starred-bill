@@ -1,0 +1,18 @@
+{
+  "name": "Yi Jia Zi",
+  "nameZh": "一甲子餐飲",
+  "city": "taipei",
+  "area": "Wanhua, Taipei",
+  "areaZh": "台北萬華區",
+  "address": "No. 79, Kangding Rd., Wanhua Dist., Taipei",
+  "addressZh": "台北市萬華區康定路79號",
+  "serves": "Braised pork rice and gua bao",
+  "servesZh": "爌肉飯、刈包",
+  "priceLow": 60,
+  "priceHigh": 110,
+  "priceNote": "Gua bao NT$60, braised pork rice NT$110, fish-ball soup NT$40",
+  "priceNoteZh": "刈包 NT$60、爌肉飯 NT$110、魚丸油條湯 NT$40",
+  "sourceType": "press",
+  "source": "https://supertaste.tvbs.com.tw/food/344392",
+  "sourceDate": "2023-08"
+}

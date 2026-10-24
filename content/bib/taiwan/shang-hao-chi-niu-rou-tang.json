@@ -1,0 +1,17 @@
+{
+  "name": "Shang Hao Chi Niu Rou Tang",
+  "nameZh": "尚好吃牛肉湯",
+  "city": "tainan",
+  "area": "North, Tainan",
+  "areaZh": "台南北區",
+  "address": "No. 6, Sec. 1, Bei'an Rd., North District, Tainan",
+  "addressZh": "台南市北區北安路一段6號",
+  "serves": "Beef soup with free braised pork rice",
+  "servesZh": "牛肉湯、附肉燥飯",
+  "priceLow": 150,
+  "priceHigh": 200,
+  "priceNote": "Beef soup NT$150 small, NT$200 large, with a bowl of pork rice",
+  "priceNoteZh": "牛肉湯 小碗 NT$150、大碗 NT$200，附肉燥飯",
+  "sourceType": "press",
+  "source": "https://supertaste.tvbs.com.tw/food/340352"
+}

@@ -1,0 +1,19 @@
+{
+  "name": "Don Moo",
+  "nameZh": "東沐。食在",
+  "city": "taichung",
+  "area": "North, Taichung",
+  "areaZh": "台中北區",
+  "address": "No. 317, Yingcai Rd., North District, Taichung City",
+  "addressZh": "台中市北區英才路317號",
+  "serves": "Duck rice and duck noodles",
+  "servesZh": "鴨肉飯、鴨肉麵",
+  "change": "new",
+  "priceLow": 75,
+  "priceHigh": 120,
+  "priceNote": "Duck rice or dry noodles NT$75; with soup NT$120",
+  "priceNoteZh": "鴨肉飯、鴨肉乾拌麵 NT$75；加湯共 NT$120",
+  "sourceType": "press",
+  "source": "https://travel.yam.com/article/120140",
+  "sourceDate": "2020-08"
+}

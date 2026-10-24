@@ -1,0 +1,18 @@
+{
+  "name": "Fu Gui Ting",
+  "nameZh": "富貴亭",
+  "city": "taichung",
+  "area": "Central, Taichung",
+  "areaZh": "台中中區",
+  "address": "No. 31, Ln. 18, Sec. 2, Sanmin Rd., Central District, Taichung City",
+  "addressZh": "台中市中區三民路二段18巷31號",
+  "serves": "Angelica goose and duck noodles, sticky rice",
+  "servesZh": "當歸鵝肉麵線、當歸鴨肉冬粉",
+  "priceLow": 65,
+  "priceHigh": 130,
+  "priceNote": "Angelica duck vermicelli NT$65, goose noodles NT$130",
+  "priceNoteZh": "當歸鴨肉冬粉 NT$65、當歸鵝肉麵線 NT$130",
+  "sourceType": "press",
+  "source": "https://www.mirrormedia.mg/story/amp/20260420food001",
+  "sourceDate": "2026-04"
+}

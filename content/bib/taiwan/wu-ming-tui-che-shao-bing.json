@@ -1,0 +1,18 @@
+{
+  "name": "Wu Ming Tui Che Shao Bing",
+  "nameZh": "無名推車燒餅",
+  "city": "taipei",
+  "area": "Wanhua, Taipei",
+  "areaZh": "台北萬華區",
+  "address": "Lane 315, Alley 5, Sec. 2, Zhonghua Rd., Wanhua Dist., Taipei (Nanjichang Night Market, stall 072)",
+  "addressZh": "台北市萬華區中華路二段315巷5弄（南機場夜市）",
+  "serves": "Sesame flatbread and crisp pastries from a cart",
+  "servesZh": "燒餅、酥餅（推車攤）",
+  "priceLow": 12,
+  "priceHigh": 15,
+  "priceNote": "Sweet pastry NT$12, long flatbread or savoury pastry NT$15",
+  "priceNoteZh": "甜酥餅 NT$12，長燒餅、鹹酥餅 NT$15",
+  "sourceType": "press",
+  "source": "https://supertaste.tvbs.com.tw/hot/320923",
+  "sourceDate": "2020-01"
+}

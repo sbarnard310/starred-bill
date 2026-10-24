@@ -1,0 +1,19 @@
+{
+  "name": "Bei Ya Duck Thick Soup",
+  "nameZh": "北鴨鴨肉羹",
+  "city": "new-taipei",
+  "area": "Xindian, New Taipei",
+  "areaZh": "新北新店區",
+  "address": "No. 169, Guangming St., Xindian Dist., New Taipei City",
+  "addressZh": "新北市新店區光明街169號",
+  "serves": "Duck thick soup and duck rice",
+  "servesZh": "鴨肉羹、鴨肉飯",
+  "change": "new",
+  "priceLow": 55,
+  "priceHigh": 140,
+  "priceNote": "Duck soup, duck rice and noodle bowls NT$55-140",
+  "priceNoteZh": "鴨肉羹、鴨肉飯、麵類 NT$55–140",
+  "sourceType": "press",
+  "source": "https://bunnyann.tw/new-duck-soup/",
+  "sourceDate": "2026-01"
+}

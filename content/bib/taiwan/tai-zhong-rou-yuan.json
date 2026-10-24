@@ -1,0 +1,18 @@
+{
+  "name": "Tai Zhong Rou Yuan",
+  "nameZh": "台中肉員",
+  "city": "taichung",
+  "area": "South, Taichung",
+  "areaZh": "台中南區",
+  "address": "No. 529, Sec. 3, Fuxing Rd., South District, Taichung City",
+  "addressZh": "台中市南區復興路三段529號",
+  "serves": "Steamed meatballs (rou yuan) and fish-ball soup",
+  "servesZh": "肉圓、魚丸湯",
+  "priceLow": 50,
+  "priceHigh": 85,
+  "priceNote": "Meatball NT$50; with fish-ball soup NT$85",
+  "priceNoteZh": "肉圓 NT$50；加魚丸湯 NT$85",
+  "sourceType": "press",
+  "source": "https://bigsharkgogogo.tw/taichungmeatballdd/",
+  "sourceDate": "2026-07"
+}

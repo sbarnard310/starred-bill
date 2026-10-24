@@ -1,0 +1,18 @@
+{
+  "name": "Sinchao Rice Shoppe",
+  "nameZh": "心潮飯店",
+  "city": "taipei",
+  "area": "Xinyi, Taipei",
+  "areaZh": "台北信義區",
+  "address": "2F, No. 68, Sec. 5, Zhongxiao E. Rd., Xinyi Dist., Taipei (Breeze Xinyi)",
+  "addressZh": "台北市信義區忠孝東路五段68號2樓（微風信義2樓）",
+  "serves": "Creative fried rice",
+  "servesZh": "創意炒飯",
+  "priceLow": 420,
+  "priceHigh": 520,
+  "priceNote": "Fried rice about NT$420–520 a plate (2020 figures)",
+  "priceNoteZh": "炒飯約 NT$420–520（2020年價格）",
+  "sourceType": "press",
+  "source": "https://www.mirrormedia.mg/story/20200323food001",
+  "sourceDate": "2023-09"
+}

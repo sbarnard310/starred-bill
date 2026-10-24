@@ -416,7 +416,7 @@ def clash_checks(site):
     # Destination pages listing the same restaurants as a page above or below them.
     lists = {}
     for u, s in pages.items():
-        if lang[u] != "en" or u.startswith(("/guides/", "/restaurants/")):
+        if lang[u] != "en" or u.startswith(("/guides/", "/restaurants/")) or u.endswith("/bib-gourmand/"):  # Bib Gourmand lists aren't destination pages
             continue
         for j in re.findall(r'<script type="application/ld\+json">(.*?)</script>', s, re.S):
             m = re.search(r'"numberOfItems":\s*(\d+)', j)
@@ -426,7 +426,7 @@ def clash_checks(site):
                 def walk(x):
                     if isinstance(x, dict):
                         if x.get("@type") == "ItemList":
-                            items.update((i["item"]["name"], i["item"].get("address", "")) for i in x.get("itemListElement", []))
+                            items.update((i["item"]["name"], json.dumps(i["item"].get("address", ""), sort_keys=True)) for i in x.get("itemListElement", []))
                         for v in x.values():
                             walk(v)
                     elif isinstance(x, list):

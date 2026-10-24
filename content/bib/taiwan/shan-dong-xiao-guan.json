@@ -1,0 +1,18 @@
+{
+  "name": "Shan Dong Xiao Guan",
+  "nameZh": "山東小館",
+  "city": "new-taipei",
+  "area": "Xindian, New Taipei",
+  "areaZh": "新北新店區",
+  "address": "1F, No. 19, Lane 133, Zhongyang Rd., Xindian Dist., New Taipei City",
+  "addressZh": "新北市新店區中央路133巷19號1樓",
+  "serves": "Sauerkraut and pork hotpot, steamed dumplings",
+  "servesZh": "酸菜白肉鍋、蒸餃、山東燒雞",
+  "priceLow": 500,
+  "priceHigh": 600,
+  "priceNote": "About NT$500-600 a head when four share dishes",
+  "priceNoteZh": "四人合菜人均約 NT$500–600",
+  "sourceType": "press",
+  "source": "https://lordcat.net/archives/147687",
+  "sourceDate": "2024-10"
+}

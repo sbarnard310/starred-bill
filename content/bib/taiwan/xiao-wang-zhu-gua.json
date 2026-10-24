@@ -1,0 +1,18 @@
+{
+  "name": "Xiao Wang Zhu Gua",
+  "nameZh": "小王煮瓜",
+  "city": "taipei",
+  "area": "Wanhua, Taipei",
+  "areaZh": "台北萬華區",
+  "address": "No. 17-4, Huaxi St., Wanhua Dist., Taipei (stall 153)",
+  "addressZh": "台北市萬華區華西街17之4號（153號攤位）",
+  "serves": "Braised pork rice and clear pork-and-pickled-melon soup",
+  "servesZh": "滷肉飯、清湯瓜仔肉",
+  "priceLow": 40,
+  "priceHigh": 80,
+  "priceNote": "Braised pork rice NT$40 (small) / 70 (large); clear soup NT$80",
+  "priceNoteZh": "滷肉飯 NT$40（小）/ 70（大），清湯瓜仔肉 NT$80",
+  "sourceType": "press",
+  "source": "https://www.edh.tw/lohas/article/32251",
+  "sourceDate": "2025-11"
+}

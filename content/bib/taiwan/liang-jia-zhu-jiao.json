@@ -1,0 +1,18 @@
+{
+  "name": "Liang Jia Zhu Jiao",
+  "nameZh": "良佳豬腳",
+  "city": "kaohsiung",
+  "area": "Sanmin, Kaohsiung",
+  "areaZh": "高雄三民區",
+  "address": "No. 229, Yangming Rd., Sanmin Dist., Kaohsiung City",
+  "addressZh": "高雄市三民區陽明路229號",
+  "serves": "Pork-knuckle rice",
+  "servesZh": "腿庫飯、豬腳飯",
+  "priceLow": 45,
+  "priceHigh": 65,
+  "priceNote": "Pork knuckle rice NT$45 small, NT$65 large",
+  "priceNoteZh": "腿庫飯 小 NT$45、大 NT$65",
+  "sourceType": "press",
+  "source": "https://supertaste.tvbs.com.tw/food/352335",
+  "sourceDate": "2024-11"
+}

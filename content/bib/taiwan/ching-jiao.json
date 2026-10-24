@@ -1,0 +1,19 @@
+{
+  "name": "Ching Jiao",
+  "nameZh": "青嬌",
+  "city": "taipei",
+  "area": "Zhongzheng, Taipei",
+  "areaZh": "台北中正區",
+  "address": "1F, No. 9, Section 2, Jinan Road, Zhongzheng District, Taipei",
+  "addressZh": "台北市中正區濟南路二段9號1樓",
+  "serves": "Golden chicken stew and Jiangzhe-style dishes",
+  "servesZh": "黃金雞燉湯、江浙小菜",
+  "change": "new",
+  "priceLow": 260,
+  "priceHigh": 260,
+  "priceNote": "Golden chicken stew NT$260; cold side dishes NT$50 a plate",
+  "priceNoteZh": "黃金雞燉湯 NT$260；涼菜每盤 NT$50",
+  "sourceType": "press",
+  "source": "https://www.marieclaire.com.tw/lifestyle/taste/85399",
+  "sourceDate": "2025-04"
+}

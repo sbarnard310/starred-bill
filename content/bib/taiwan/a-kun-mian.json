@@ -1,0 +1,18 @@
+{
+  "name": "A Kun Mian",
+  "nameZh": "阿坤麵",
+  "city": "taichung",
+  "area": "Central, Taichung",
+  "areaZh": "台中中區",
+  "address": "No. 142, Pingdeng St., Central District, Taichung City",
+  "addressZh": "台中市中區平等街142號",
+  "serves": "Dry noodles with minced pork and mixed soup",
+  "servesZh": "乾麵、綜合湯",
+  "priceLow": 40,
+  "priceHigh": 85,
+  "priceNote": "Small dry noodles NT$40, mixed soup NT$45",
+  "priceNoteZh": "乾麵（小） NT$40、綜合湯 NT$45",
+  "sourceType": "press",
+  "source": "https://bigsharkgogogo.tw/akunnoodlesee/",
+  "sourceDate": "2026-06"
+}

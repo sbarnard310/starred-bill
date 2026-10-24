@@ -1,0 +1,18 @@
+{
+  "name": "Xian Zheng Xia Ren Rou Yuan",
+  "nameZh": "鮮蒸蝦仁肉圓",
+  "city": "tainan",
+  "area": "East, Tainan",
+  "areaZh": "台南東區",
+  "address": "No. 609, Yunong Rd., East District, Tainan",
+  "addressZh": "台南市東區裕農路609號",
+  "serves": "Steamed shrimp meatballs",
+  "servesZh": "蒸蝦仁肉圓、四神湯",
+  "priceLow": 25,
+  "priceHigh": 45,
+  "priceNote": "Shrimp meatballs NT$25 small, NT$45 large",
+  "priceNoteZh": "蝦仁肉圓 小 NT$25、大 NT$45",
+  "sourceType": "press",
+  "source": "https://supertaste.tvbs.com.tw/amp/food/350918",
+  "sourceDate": "2024-08"
+}

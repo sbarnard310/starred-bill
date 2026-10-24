@@ -1,0 +1,18 @@
+{
+  "name": "Luo Cheng Mi Gao",
+  "nameZh": "落成米糕",
+  "city": "tainan",
+  "area": "West Central, Tainan",
+  "areaZh": "台南中西區",
+  "address": "No. 241, Sec. 2, Minzu Rd., West Central District, Tainan",
+  "addressZh": "台南市中西區民族路二段241號",
+  "serves": "Sticky rice with shallot and pork",
+  "servesZh": "米糕、四神湯",
+  "priceLow": 45,
+  "priceHigh": 55,
+  "priceNote": "Mi gao NT$45 small, NT$55 large",
+  "priceNoteZh": "米糕 小碗 NT$45、大碗 NT$55",
+  "sourceType": "press",
+  "source": "https://supertaste.tvbs.com.tw/amp/food/350918",
+  "sourceDate": "2024-08"
+}

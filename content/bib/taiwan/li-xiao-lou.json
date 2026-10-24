@@ -1,0 +1,18 @@
+{
+  "name": "Li Xiao Lou",
+  "nameZh": "裡小樓",
+  "city": "taichung",
+  "area": "Xitun, Taichung",
+  "areaZh": "台中西屯區",
+  "address": "No. 50, Ln. 293, Sec. 2, Xitun Rd., Xitun District, Taichung City",
+  "addressZh": "台中市西屯區西屯路二段293巷50號",
+  "serves": "Taiwanese tavern dishes and braised pork rice",
+  "servesZh": "台式酒家菜、滷肉飯",
+  "priceLow": 350,
+  "priceHigh": 350,
+  "priceNote": "Minimum NT$350 a head; dishes NT$80-250, plus 10% service",
+  "priceNoteZh": "每人低消 NT$350；單品 NT$80-250，另加一成服務費",
+  "sourceType": "press",
+  "source": "https://bigsharkgogogo.tw/lixiaolouryoridd/",
+  "sourceDate": "2026-08"
+}

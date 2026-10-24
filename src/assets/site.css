@@ -1280,6 +1280,9 @@ dialog.report-box { width: min(480px, calc(100vw - 32px)); max-height: calc(100d
 .guide-feature .guide-meta { margin-top: 4px; padding-top: 0; }
 .guide-langs { position: relative; z-index: 1; font-size: .9rem; color: var(--muted); }
 /* Translated guides: a link to a guide that's only in English carries a small EN tag */
+/* Bib Gourmand pages (build_bib_pages()): the "New" tag on this year's newcomers */
+.bib-new { display: inline-block; margin-inline-start: .35em; padding: 1px 6px; border-radius: 3px; background: var(--gold); color: var(--green-deep, #10362A); font-size: .68rem; font-weight: 700; letter-spacing: .04em; vertical-align: .1em; white-space: nowrap; }
+.bib-list td:last-child a { white-space: nowrap; }
 .lang-tag { display: inline-block; margin-inline-start: .3em; padding: 0 .3em; border: 1px solid currentColor; border-radius: 3px; font-size: .62em; font-weight: 600; line-height: 1.4; vertical-align: .15em; opacity: .75; }
 .guide-fig { position: relative; padding: 4px 10px 4px 16px; border-radius: 3px; background: var(--rc-paper); color: var(--rc-ink); font-family: var(--font-num); font-size: .76rem; }
 .guide-fig::before { content: ""; position: absolute; left: 6px; top: 5px; bottom: 5px; border-left: 2px dotted var(--rc-dots); }

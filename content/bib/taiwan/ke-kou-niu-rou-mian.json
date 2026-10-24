@@ -1,0 +1,18 @@
+{
+  "name": "Ke Kou Niu Rou Mian",
+  "nameZh": "可口牛肉麵",
+  "city": "taichung",
+  "area": "Xitun, Taichung",
+  "areaZh": "台中西屯區",
+  "address": "No. 911, Dadun Rd., Xitun District, Taichung City",
+  "addressZh": "台中市西屯區大墩路911號",
+  "serves": "Braised beef noodle soup with tendon",
+  "servesZh": "紅燒半筋半肉牛肉麵",
+  "priceLow": 220,
+  "priceHigh": 255,
+  "priceNote": "Beef noodles NT$220; with a NT$35 side",
+  "priceNoteZh": "半筋半肉牛肉麵 NT$220；加小菜 NT$255",
+  "sourceType": "press",
+  "source": "https://bigsharkgogogo.tw/goodbeefnoodledd/",
+  "sourceDate": "2026-02"
+}

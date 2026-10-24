@@ -1,0 +1,18 @@
+{
+  "name": "Xiao Dun Shi Shi",
+  "nameZh": "小燉食室",
+  "city": "kaohsiung",
+  "area": "Qianzhen, Kaohsiung",
+  "areaZh": "高雄前鎮區",
+  "address": "No. 226, Guangxi Rd., Qianzhen Dist., Kaohsiung City",
+  "addressZh": "高雄市前鎮區廣西路226號",
+  "serves": "Chinese stewed soups with rice and sides",
+  "servesZh": "燉湯套餐",
+  "priceLow": 200,
+  "priceHigh": 260,
+  "priceNote": "Set meals NT$200–260",
+  "priceNoteZh": "套餐 NT$200–260",
+  "sourceType": "press",
+  "source": "https://news.tvbs.com.tw/travel/2455566",
+  "sourceDate": "2024-04"
+}

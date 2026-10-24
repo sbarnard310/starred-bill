@@ -2208,6 +2208,139 @@ content:
           - name: a
             label: Answer
             type: text
+  - name: bib
+    label: Bib Gourmand
+    description: The MICHELIN Guide's Bib Gourmands, one file per restaurant in a folder per country, shown on /taiwan/bib-gourmand/ and each city's Bib Gourmand page. Kept apart from the starred restaurants. README ("Bib Gourmand") lists the fields.
+    type: collection
+    path: content/bib
+    format: json
+    subfolders: true
+    filename: "{primary}.json"
+    operations:
+      rename: false   # the file name is the restaurant's id
+    view:
+      primary: name
+      fields: [name, nameZh, city, priceLow]
+      search: [name, nameZh, area, serves]
+      sort: [name, priceLow]
+      default:
+        sort: name
+        order: asc
+    fields:
+      - name: name
+        label: Name
+        description: The English name it or English-language press uses, else Hanyu Pinyin.
+        type: string
+        required: true
+      - name: nameZh
+        label: Name in Chinese
+        type: string
+      - name: city
+        label: City
+        description: One of the list's city ids in "Bib Gourmand lists", e.g. taipei, new-taipei, hsinchu.
+        type: string
+        required: true
+      - name: area
+        label: Area
+        description: District and city, e.g. Da'an, Taipei.
+        type: string
+        required: true
+      - name: areaZh
+        label: Area in Chinese
+        type: string
+      - name: address
+        label: Address
+        type: string
+      - name: addressZh
+        label: Address in Chinese
+        type: string
+      - name: serves
+        label: Known for
+        description: A few words of our own, e.g. Braised pork rice and pork-ball soup.
+        type: string
+      - name: servesZh
+        label: Known for, in Chinese
+        type: string
+      - name: change
+        label: New this year
+        type: select
+        options:
+          values: ["", "new"]
+      - name: priceLow
+        label: Lowest price
+        description: In local currency. Leave both prices empty if none has been found.
+        type: number
+      - name: priceHigh
+        label: Highest price
+        type: number
+      - name: priceType
+        label: Kind of price
+        description: "dish" where the prices are of dishes to share rather than a meal.
+        type: select
+        options:
+          values: ["", "meal", "dish"]
+      - name: priceNote
+        label: Price note
+        description: What the figures are, e.g. Beef noodle soup NT$220; with a side NT$255.
+        type: string
+      - name: priceNoteZh
+        label: Price note in Chinese
+        type: string
+      - name: sourceType
+        label: Price source type
+        type: select
+        options:
+          values: ["site", "press", "none"]
+      - name: source
+        label: Price source link
+        description: Never the MICHELIN Guide's website, Google or a delivery app.
+        type: string
+      - name: sourceDate
+        label: Price source month
+        description: Year and month, e.g. 2026-05.
+        type: string
+      - name: website
+        label: Website or Facebook page
+        type: string
+      - name: notice
+        label: Notice
+        description: Only if it's closed for now or has moved.
+        type: string
+      - name: noticeZh
+        label: Notice in Chinese
+        type: string
+
+  - name: bib-lists
+    label: Bib Gourmand lists
+    description: Each country's Bib Gourmand list (edition, date, cities and their counts, sources). README ("Bib Gourmand") explains each field.
+    type: file
+    path: content/bib-gourmand.json
+    format: json
+    fields:
+      - name: taiwan
+        label: Taiwan
+        type: object
+        fields:
+          - name: edition
+            label: Edition (year)
+            type: number
+          - name: announced
+            label: Day the list came out
+            type: string
+            pattern: { regex: '^\d{4}-\d{2}-\d{2}$', message: "Use year-month-day, e.g. 2026-07-14" }
+          - name: checked
+            label: Prices checked (year-month)
+            type: string
+          - name: new
+            label: How many are new this year
+            type: number
+          - name: next
+            label: When the next list is due
+            type: text
+          - name: nextZh
+            label: When the next list is due, in Chinese
+            type: text
+
   - name: currencies
     label: Currencies
     description: Symbols and fallback exchange rates. Live rates are used when available; these only apply if they can't be fetched.

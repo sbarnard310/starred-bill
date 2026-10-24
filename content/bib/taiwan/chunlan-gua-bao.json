@@ -1,0 +1,18 @@
+{
+  "name": "Chunlan Gua Bao",
+  "nameZh": "春蘭割包",
+  "city": "kaohsiung",
+  "area": "Xinxing, Kaohsiung",
+  "areaZh": "高雄新興區",
+  "address": "No. 5, Fuxing 1st Rd., Xinxing Dist., Kaohsiung City",
+  "addressZh": "高雄市新興區復興一路5號",
+  "serves": "Taiwanese pork belly buns (gua bao)",
+  "servesZh": "割包（刈包）",
+  "priceLow": 80,
+  "priceHigh": 80,
+  "priceNote": "Mixed gua bao NT$80",
+  "priceNoteZh": "綜合割包 NT$80",
+  "sourceType": "press",
+  "source": "https://supertaste.tvbs.com.tw/food/350863",
+  "sourceDate": "2024-08"
+}

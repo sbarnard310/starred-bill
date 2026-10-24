@@ -1,0 +1,17 @@
+{
+  "name": "Zhong Jia Yuan Shanghai Sheng Jian Bao",
+  "nameZh": "鍾家原上海生煎包",
+  "city": "taipei",
+  "area": "Shilin, Taipei",
+  "areaZh": "台北士林區",
+  "address": "No. 38, Xiaodong Street, Shilin District, Taipei (Shilin Night Market)",
+  "addressZh": "台北市士林區小東街38號（士林夜市）",
+  "serves": "Shanghai pan-fried buns, cabbage or pork",
+  "servesZh": "上海生煎包（高麗菜、鮮肉）",
+  "priceLow": 16,
+  "priceHigh": 16,
+  "priceNote": "Pan-fried bun NT$16 each (cabbage or pork)",
+  "priceNoteZh": "生煎包每顆 NT$16（高麗菜、鮮肉）",
+  "sourceType": "press",
+  "source": "https://supertaste.tvbs.com.tw/food/333815"
+}

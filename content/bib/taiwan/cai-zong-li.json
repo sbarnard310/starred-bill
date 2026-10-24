@@ -1,0 +1,18 @@
+{
+  "name": "Cai Zong Li",
+  "nameZh": "菜粽李",
+  "city": "kaohsiung",
+  "area": "Lingya, Kaohsiung",
+  "areaZh": "高雄苓雅區",
+  "address": "No. 159, Chenggong 1st Rd., Lingya Dist., Kaohsiung City",
+  "addressZh": "高雄市苓雅區成功一路159號",
+  "serves": "Vegetable rice dumpling (cai zong) with peanuts",
+  "servesZh": "菜粽（糯米花生）",
+  "priceLow": 40,
+  "priceHigh": 40,
+  "priceNote": "One cai zong NT$40",
+  "priceNoteZh": "菜粽一顆 NT$40",
+  "sourceType": "press",
+  "source": "https://appletrees.tw/blog/post/caizongli",
+  "sourceDate": "2025-05"
+}

@@ -910,6 +910,73 @@ for sid, s in news.items():
         if i not in news:
             problem(f"news/{sid}.json", f"links data-news=\"{i}\", which isn't a story's file name")
 
+# Bib Gourmand (24 Oct 2026, to-do item feature-bib-gourmand): the MICHELIN Guide's good food at a moderate price, starting
+# with Taiwan, where 必比登 searches are most of the demand. They live apart from the starred restaurants, one file each in
+# content/bib/<country>/, and never join `restaurants`, so no star count, map, Near me, Help me pick, homepage figure,
+# saved search or email ever sees them. content/bib-gourmand.json holds each country's list: its edition, the day it was
+# announced, how many it has in each city (the build checks the files add up), the wording that's the country's own and the
+# list's sources, which must be Michelin's press release or news coverage, never the guide's website (build_bib_pages()).
+BIB = read_json(CONTENT / "bib-gourmand.json") or {}
+BIB_SOURCE_TYPES = ("site", "press", "none")
+BIB_NOT_HOSTS = ("guide.michelin.com", "google.", "goo.gl", "foodpanda.", "ubereats.")
+bibs = {}  # country id -> its Bib Gourmand rows
+for _country, _cfg in BIB.items():
+    _where = f"bib-gourmand.json ({_country})"
+    if places.get(_country, {}).get("type") != "country":
+        problem(_where, "each key must be a country's id, e.g. taiwan")
+        continue
+    for _field in ("edition", "announced", "checked", "guide", "cities", "sources"):
+        if not _cfg.get(_field):
+            problem(_where, f"needs {_field}")
+    _cities = {c.get("id"): c for c in _cfg.get("cities", [])}
+    for _c in _cfg.get("cities", []):
+        if _c.get("place") and _country not in chain(_c["place"]):
+            problem(_where, f"city {_c.get('id')}: place must be a place id inside {_country}")
+        if not isinstance(_c.get("count"), int):
+            problem(_where, f"city {_c.get('id')}: count must be how many Bib Gourmands the list gives it")
+    for _s in _cfg.get("sources", []):
+        _bad = source_problem(_s) or ("never the MICHELIN Guide's website (its terms forbid copying from it); use Michelin's press release or news coverage"
+                                     if "guide.michelin.com" in _s.get("url", "") else None)
+        if _bad:
+            problem(_where, f"sources entry {_s.get('title') or _s.get('url')}: {_bad}")
+    _rows = []
+    for f in sorted((CONTENT / "bib" / _country).glob("*.json")):
+        b = tidy(read_json(f))
+        bid = f.stem
+        where = f"bib/{_country}/{f.name}"
+        source_files["bib:" + bid] = f.relative_to(ROOT).as_posix()
+        if not isinstance(b, dict):
+            continue
+        if not ID_PATTERN.fullmatch(bid):
+            problem(where, "the file name must be lower-case letters, numbers and hyphens")
+        if not b.get("name") or not b.get("area"):
+            problem(where, "needs a name and an area")
+        if b.get("city") not in _cities:
+            problem(where, f"city must be one of the list's cities in bib-gourmand.json: {', '.join(_cities)}")
+        lo, hi = b.get("priceLow"), b.get("priceHigh")
+        if (lo is None) != (hi is None) or any(v is not None and (not isinstance(v, (int, float)) or v <= 0) for v in (lo, hi)) or (lo and hi and lo > hi):
+            problem(where, "priceLow and priceHigh must both be numbers (the low one first), or both left out")
+        if b.get("sourceType", "none") not in BIB_SOURCE_TYPES:
+            problem(where, f"sourceType must be one of {', '.join(BIB_SOURCE_TYPES)}")
+        if lo is not None and (b.get("sourceType") in (None, "none") or not b.get("source")):
+            problem(where, "a price needs its source (sourceType site or press, and the link)")
+        for _f in ("source", "website"):
+            if any(h in b.get(_f, "") for h in BIB_NOT_HOSTS):
+                problem(where, f"{_f} can't be the MICHELIN Guide's website, Google or a delivery app (their terms, or marked-up prices)")
+        if b.get("priceType", "meal") not in ("meal", "dish"):
+            problem(where, 'priceType must be "meal" (what one person pays for a meal) or "dish" (dish prices, for places where dishes are shared)')
+        if b.get("change") not in (None, "new"):
+            problem(where, 'change can only be "new" (first listed in this edition)')
+        b["id"], b["country"], b["cur"] = bid, _country, places[_country]["currency"]
+        _rows.append(b)
+    for cid, c in _cities.items():
+        n = sum(1 for b in _rows if b.get("city") == cid)
+        if n != c.get("count"):
+            problem(_where, f"the {_cfg.get('edition')} list gives {c.get('name')} {c.get('count')} Bib Gourmands, but content/bib/{_country}/ has {n}")
+    if _cfg.get("new") is not None and sum(1 for b in _rows if b.get("change") == "new") != _cfg["new"]:
+        problem(_where, f"new says {_cfg['new']}, but {sum(1 for b in _rows if b.get('change') == 'new')} files are marked change: new")
+    bibs[_country] = _rows
+
 if problems:
     print("The site wasn't built because of these problems in the data:\n  - " + "\n  - ".join(problems))
     sys.exit(1)
@@ -1492,7 +1559,7 @@ def build_place(p):
             "langScripts": lang_scripts, "htmlAttrs": html_attrs(lang), "alternates": alternates,
             "title": e(titles[lang]), "description": e(texts["description"]), "canonical": canonical[lang],
             "eyebrow": e(texts["eyebrow"]), "h1": texts["h1"], "heroText": e(texts["heroText"]),
-            "crumbs": crumb_html, "explore": explore_html, "nearLine": near_line if lang == "en" else "",
+            "crumbs": crumb_html, "explore": explore_html, "nearLine": (near_line if lang == "en" else "") + bib_line(p, lang),
             # The language buttons, written in as links to each version so search engines reach them (common.js redraws them).
             "langLinks": "".join(f'<span aria-current="page">{e(LANG_LABELS.get(c, c.upper()))}</span>' if c == lang else
                                  f'<a href="{lang_paths[c]}" hreflang="{HREFLANG.get(c, c)}" lang="{HTML_LANG.get(c, ("en-GB",))[0]}">{e(LANG_LABELS.get(c, c.upper()))}</a>'
@@ -8547,8 +8614,8 @@ def build_extras():
     if (SRC / "img").exists():
         # Featured pictures; the full-size originals (<id>-src.*) stay out of the site.
         shutil.copytree(SRC / "img", OUT / "img", ignore=shutil.ignore_patterns("*-src.*"))
-    urls = ["/", "/near-me/", "/pick/"] + [lang_path(p["path"], lang) for p in by_size(pages) if p["id"] not in canonical_to for lang in place_langs(p)] + (["/guides/"] + [guide_path(g, lang) for g in guides for lang in guide_langs(g)] if guides else []) + [r["page"] for r in restaurants if r.get("page")] + (["/news/"] + [f"/news/{s['id']}/" for s in news_order()] if news else []) + ["/privacy/"]
-    dates = sitemap_dates()
+    urls = ["/", "/near-me/", "/pick/"] + [lang_path(p["path"], lang) for p in by_size(pages) if p["id"] not in canonical_to for lang in place_langs(p)] + (["/guides/"] + [guide_path(g, lang) for g in guides for lang in guide_langs(g)] if guides else []) + [r["page"] for r in restaurants if r.get("page")] + [u for u, _ in BIB_BUILT] + (["/news/"] + [f"/news/{s['id']}/" for s in news_order()] if news else []) + ["/privacy/"]
+    dates = dict(sitemap_dates(), **{u: d for u, d in BIB_BUILT})
     (OUT / "sitemap.xml").write_text(
         '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
         + "".join(f"  <url><loc>{SITE_URL}{u}</loc>" + (f"<lastmod>{dates[u]}</lastmod>" if dates.get(u) else "") + "</url>\n" for u in urls)
@@ -8636,6 +8703,326 @@ def build_service_worker():
     (OUT / "sw.js").write_text(sw, "utf-8")
 
 
+# ---------- Bib Gourmand pages (24 Oct 2026, to-do item feature-bib-gourmand) ----------
+# A page per city with a list (/taiwan/taichung/bib-gourmand/, for "台中必比登") and one for the country (/taiwan/bib-gourmand/,
+# for "必比登 2026"), in each language the country's pages offer, built with guide.html. The answer first, then the list,
+# cheapest first, what a meal costs at each (NT$ with US dollars), what to order, the area and a Google Maps link, the year's
+# newcomers, the city's starred restaurants, the next list and the sources. The country page carries every city's list in
+# short, with full tables for cities without a page of their own (New Taipei). Data: content/bib-gourmand.json and
+# content/bib/<country>/ (see the loading code above; README, "Bib Gourmand"). Destination pages link theirs (bib_line()).
+BIB_SLUG = "bib-gourmand"
+BIB_BUILT = []  # (address, last-changed day) of every Bib Gourmand page, for the sitemap
+BIB_WORDS = {
+    "en": {
+        "crumb": "Bib Gourmand", "titleCity": "Michelin Bib Gourmand {city} {year}: All {n}, With Prices",
+        "titleHub": "Michelin Bib Gourmand {country} {year}: All {n}, With Prices",
+        "h1City": "Bib Gourmand restaurants in {city}: all {n}, with prices",
+        "h1Hub": "Michelin Bib Gourmand {country} {year}: all {n} restaurants, with prices",
+        "descCity": "All {n} Michelin Bib Gourmand restaurants in {city} ({guide} {year}), cheapest first: what each costs (from {min}), what to order and where.",
+        "descHub": "All {n} Michelin Bib Gourmand restaurants in {country} ({guide} {year}), city by city: what each costs (from {min}) and the {k} new this year.",
+        "answerCity": "The {guide} {year}, announced on {date}, lists {n} Bib Gourmand restaurants in {city}{newPart}. Prices start at {min}, and half of them have dishes from {median} or less; at the dearest, a meal comes to about {max} a person.",
+        "answerHub": "The {guide} {year}, announced on {date}, lists {n} Bib Gourmand restaurants: {cities}. {k} are new this year. Prices start at {min}, and half of them have dishes from {median} or less; at the dearest, a meal comes to about {max} a person.",
+        "newPart": ", {k} of them new this year ({names})", "newPartOne": ", one of them new this year ({names})",
+        "cityCount": "{n} in {city}", "updated": "Updated {date} · Prices checked {month}",
+        "listTitle": "Every Bib Gourmand in {city}, cheapest first", "listTitleHub": "Bib Gourmand in {city}: {n} restaurants",
+        "seeAll": "See all {n} in {city}, with their areas and maps", "newTitle": "New Bib Gourmands in {year}",
+        "newTitleCity": "New Bib Gourmands in {city} in {year}",
+        "thName": "Restaurant", "thServes": "Known for", "thArea": "Area", "thPrice": "Price", "thMap": "Map", "thCity": "City",
+        "new": "New", "map": "Map", "source": "source", "noPrice": "No price found yet", "about": "about {usd}", "underOne": "under US$1", "dishes": "Dishes",
+        "whatShort": "A Bib Gourmand is the MICHELIN Guide's pick for good food at a moderate price; it isn't a star.",
+        "whatLink": "What is a Bib Gourmand?", "whatTitle": "What is a Bib Gourmand?",
+        "vsLink": "how a Bib Gourmand differs from a Michelin star", "vsLine": "Our guide explains {link}.",
+        "starsTitle": "Michelin star restaurants in {city}",
+        "starsText": "{city} also has {n} restaurants with Michelin stars, with dinner menus from {from}: see {link}.",
+        "starsLink": "what each of them costs", "nextTitle": "When is the next Bib Gourmand list for {country}?",
+        "otherTitle": "Bib Gourmand in other cities in {country}", "allLink": "All {n} in {country}",
+        "sources": "Sources",
+        "ownData": "Prices are The Starred Bill's own: from each restaurant's website or page where it publishes them, else from recent news and food writing, checked {month}; each row links its source. US dollar figures use exchange rates from {rates}{day}.",
+        "inEnglish": "in English", "ogAlt": "What a meal costs at the Bib Gourmand restaurants in {city}",
+        "bibLine": "Eating for less? See {city}'s {link}.", "bibLink": "{n} Bib Gourmand restaurants",
+    },
+    "zh": {
+        "crumb": "必比登推介", "titleCity": "{city}必比登 {year}：米其林必比登推介 {n} 家與價格",
+        "titleHub": "必比登 {year}：{country}全部 {n} 家米其林必比登名單與價格",
+        "h1City": "{city}必比登推介：{year} 年 {n} 家名單與價格", "h1Hub": "{year} 必比登名單：{country}全部 {n} 家與價格",
+        "descCity": "{guide} {year} 年{city}全部 {n} 家米其林必比登推介，由平價排起：每家價位（{min} 起）、招牌菜、地區與地圖，每個價格都附上來源與查核日期。",
+        "descHub": "{guide} {year} 年{country}全部 {n} 家米其林必比登推介，依城市整理：每家價位（{min} 起）與招牌菜，以及今年新入選的 {k} 家，每個價格都附上來源與查核日期。",
+        "answerCity": "{guide} {year} 年版於 {date}公布，{city}共有 {n} 家必比登推介{newPart}。價位從 {min} 起，半數店家 {median} 以內就吃得到；最高的一餐每人約 {max}。",
+        "answerHub": "{guide} {year} 年版於 {date}公布，共有 {n} 家必比登推介：{cities}，其中 {k} 家為今年新入選。價位從 {min} 起，半數店家 {median} 以內就吃得到；最高的一餐每人約 {max}。",
+        "newPart": "，其中 {k} 家為今年新入選（{names}）", "newPartOne": "，其中 1 家為今年新入選（{names}）",
+        "cityCount": "{city} {n} 家", "updated": "更新於 {date}・價格查核於 {month}",
+        "listTitle": "{city}必比登名單（由平價排起）", "listTitleHub": "{city}必比登：{n} 家",
+        "seeAll": "看{city}全部 {n} 家的地區與地圖", "newTitle": "{year} 年新入選必比登", "newTitleCity": "{year} 年{city}新入選必比登",
+        "thName": "店名", "thServes": "招牌", "thArea": "地區", "thPrice": "價位", "thMap": "地圖", "thCity": "城市",
+        "new": "新入選", "map": "地圖", "source": "來源", "noPrice": "尚未查到價格", "about": "約 {usd}", "underOne": "不到 US$1", "dishes": "每道",
+        "whatShort": "必比登推介是米其林指南推薦「物有所值」美食的評選，不是星級。",
+        "whatLink": "必比登是什麼？", "whatTitle": "必比登是什麼？",
+        "vsLink": "必比登與米其林星星有什麼不同", "vsLine": "延伸閱讀：{link}。",
+        "starsTitle": "{city}米其林星級餐廳",
+        "starsText": "{city}另有 {n} 家米其林星級餐廳，晚餐套餐 {from} 起：{link}。",
+        "starsLink": "看每一家的價格", "nextTitle": "下一次{country}必比登名單什麼時候公布？",
+        "otherTitle": "{country}其他城市的必比登", "allLink": "{country}全部 {n} 家",
+        "sources": "資料來源",
+        "ownData": "價格為 The Starred Bill 自行整理：有公布價格的以餐廳官網或粉絲專頁為準，否則參考近期新聞與美食報導，於 {month}查核；每一列都附上來源。美元金額依 {rates} 的匯率換算{day}。",
+        "inEnglish": "英文", "ogAlt": "{city}必比登推介餐廳一餐多少錢",
+        "bibLine": "想吃得平價一點？看{city}的{link}。", "bibLink": "{n} 家必比登推介",
+    },
+}
+
+
+def bib_say(lang, key, **values):
+    w = BIB_WORDS.get(lang) or BIB_WORDS["en"]
+    return re.sub(r"\{(\w+)\}", lambda m: str(values.get(m.group(1), m.group(0))), w.get(key) or BIB_WORDS["en"][key])
+
+
+def bib_langs(country):
+    return [lang for lang in place_langs(places[country]) if lang in BIB_WORDS]
+
+
+def bib_city_path(country, c):
+    """A list city's Bib Gourmand page (its destination page's address plus bib-gourmand/), or None for a city without a
+    destination page, whose list is on the country's page instead (#<city id>)."""
+    return places[c["place"]]["path"] + BIB_SLUG + "/" if c.get("place") else None
+
+
+def bib_hub_path(country):
+    return places[country]["path"] + BIB_SLUG + "/"
+
+
+def bib_usd(n, cur):
+    return n / CURRENCIES[cur]["perUSD"]
+
+
+def bib_range(b, usd=False):
+    lo, hi = b["priceLow"], b["priceHigh"]
+    if usd:
+        a, z = (usd_text(max(1, bib_usd(v, b["cur"]))) for v in (lo, hi))
+        return "US" + a if a == z else f"US{a}–{z[1:]}"
+    return money(lo, b["cur"]) if lo == hi else f"{money(lo, b['cur'])}–{hi:,.0f}"
+
+
+def bib_order(rows):
+    """Cheapest meal first; then places with dish prices only (shared dishes), cheapest first; then those with no price."""
+    priced = sorted((b for b in rows if b.get("priceLow") is not None), key=lambda b: (b.get("priceType") == "dish", b["priceLow"], b["priceHigh"], b["name"].lower()))
+    return priced + sorted((b for b in rows if b.get("priceLow") is None), key=lambda b: b["name"].lower())
+
+
+def bib_name(b, lang):
+    """The name in the page's language, with the other under it (the Chinese name on English pages, and the other way round)."""
+    first, second = (pick_lang(b, "name", lang), b["name"]) if lang != "en" else (b["name"], pick_lang(b, "name", "zh"))
+    return first, (second if second and second != first else "")
+
+
+def bib_figures(rows, cur):
+    priced = [b for b in rows if b.get("priceLow") is not None and b.get("priceType") != "dish"]  # dish prices aren't a meal's
+    if not priced:
+        return {}
+    low = sorted(b["priceLow"] for b in priced)
+    median = low[(len(low) - 1) // 2]
+    return {"min": money(min(low), cur), "max": money(max(b["priceHigh"] for b in priced), cur), "median": money(median, cur)}
+
+
+def bib_table(rows, lang, short=False, city_col=None):
+    """The list as a table, cheapest first: the name (and the other script's, a New tag), what it's known for, its area, what
+    a meal costs one person (with US dollars, the note and its source) and a Google Maps link (a plain search link, which
+    Google's terms allow). short: just the name, what it's known for and the price (the country page's city lists)."""
+    say = lambda key, **v: bib_say(lang, key, **v)
+    body = ""
+    for i, b in enumerate(bib_order(rows)):
+        first, second = bib_name(b, lang)
+        name = (f'<span class="rank">{i + 1}</span> <strong>{e(first)}</strong>'
+                + (f' <span class="bib-new">{e(say("new"))}</span>' if b.get("change") == "new" else "")
+                + (f'<br><span class="muted" lang="{"en" if lang != "en" else "zh-Hant"}">{e(second)}</span>' if second else ""))
+        if b.get("notice"):
+            name += f'<br><span class="muted">{e(pick_lang(b, "notice", lang))}</span>'
+        if b.get("priceLow") is not None:
+            note = pick_lang(b, "priceNote", lang)
+            when = month_words(b["sourceDate"], lang) if re.fullmatch(r"\d{4}-\d{2}", b.get("sourceDate") or "") else ""
+            src = f'<a href="{e(b["source"])}" target="_blank" rel="noopener">{e(say("source"))}</a>' + ((("，" if lang in CJK_NAMES else ", ") + e(when)) if when else "")
+            price = ((f'{e(say("dishes"))} ' if b.get("priceType") == "dish" else "") + f'{e(bib_range(b))}' + (f'<br><span class="muted">{e(say("underOne") if bib_usd(b["priceHigh"], b["cur"]) < 1 else say("about", usd=bib_range(b, usd=True)))}</span>' if b["cur"] != "USD" else "")
+                     + f'<br><span class="muted">{e(note) + ("。" if lang in CJK_NAMES else " · ") if note and not short else ""}{src}</span>')
+        else:
+            price = f'<span class="muted">{e(say("noPrice"))}</span>'
+        area = pick_lang(b, "area", lang)
+        query = " ".join(filter(None, (pick_lang(b, "name", "zh") or b["name"], pick_lang(b, "address", "zh") or b.get("address") or area)))
+        maps = "https://www.google.com/maps/search/?api=1&query=" + urllib.parse.quote(query)
+        body += (f'<tr id="b-{b["id"]}"><td data-label="{e(say("thName"))}">{name}</td>'
+                 f'<td data-label="{e(say("thServes"))}">{e(pick_lang(b, "serves", lang))}</td>'
+                 + (f'<td data-label="{e(say("thCity"))}">{city_col(b)}</td>' if city_col else "")
+                 + ("" if short else f'<td data-label="{e(say("thArea"))}">{e(area)}</td>')
+                 + f'<td class="num" data-label="{e(say("thPrice"))}">{price}</td>'
+                 + ("" if short else f'<td data-label="{e(say("thMap"))}"><a href="{e(maps)}" target="_blank" rel="noopener">{e(say("map"))} ↗</a></td>')
+                 + "</tr>")
+    heads = ["thName", "thServes"] + (["thCity"] if city_col else []) + ([] if short else ["thArea"]) + ["thPrice"] + ([] if short else ["thMap"])
+    head = "".join(f'<th scope="col">{e(say(h))}</th>' for h in heads)
+    return (f'<div class="table-wrap"><table class="guide-table data rank-list bib-list"><thead><tr>{head}</tr></thead>'
+            f'<tbody>{body}</tbody></table></div>')
+
+
+def bib_day(rows, country):
+    days = last_changed()
+    files = ["content/bib-gourmand.json"] + [source_files.get("bib:" + b["id"]) for b in rows]
+    return max((days[f] for f in files if f in days), default=None)
+
+
+def bib_line(p, lang):
+    """The line under a destination page's intro linking its Bib Gourmand page ("Eating for less? See Taichung's 23 Bib
+    Gourmand restaurants."), on the country's page and every list city's, in the languages the Bib pages have."""
+    for country, cfg in BIB.items():
+        if lang not in bib_langs(country):
+            continue
+        if p["id"] == country:
+            n, path = len(bibs[country]), bib_hub_path(country)
+        else:
+            c = next((c for c in cfg["cities"] if c.get("place") == p["id"]), None)
+            if not c:
+                continue
+            n, path = c["count"], bib_city_path(country, c)
+        link = f'<a href="{lang_path(path, lang)}">{e(bib_say(lang, "bibLink", n=n))}</a>'
+        return f'<p class="hero-near hero-bib">{e(bib_say(lang, "bibLine", city=pick_lang(p, "name", lang), link="{link}")).replace("{link}", link)}</p>'
+    return ""
+
+
+def build_bib_pages():
+    for country, cfg in BIB.items():
+        rows, cur, langs = bibs[country], places[country]["currency"], bib_langs(country)
+        day = bib_day(rows, country)
+        cities = [dict(c, rows=[b for b in rows if b.get("city") == c["id"]]) for c in cfg["cities"]]
+        stems = [(None, bib_hub_path(country))] + [(c, bib_city_path(country, c)) for c in cities if c.get("place")]
+        for c, path in stems:
+            for lang in langs:
+                build_bib_page(country, cfg, cities, c, path, lang, langs, cur, day)
+            BIB_BUILT.extend((lang_path(path, lang), day) for lang in langs)
+
+
+def build_bib_page(country, cfg, cities, c, path, lang, langs, cur, day):
+    say = lambda key, **v: bib_say(lang, key, **v)
+    own = lambda field: pick_lang(cfg, field, lang)
+    k = type("K", (), {"lang": lang, "w": {"inEnglish": say("inEnglish")}})
+    rows = c["rows"] if c else bibs[country]
+    cplace = places[c["place"]] if c else places[country]
+    city = pick_lang(c, "name", lang) if c else ""
+    country_name = pick_lang(places[country], "name", lang)
+    year, guide = cfg["edition"], own("guide")
+    fig = bib_figures(rows, cur)
+    new = bib_order([b for b in rows if b.get("change") == "new"])
+    join = (lambda xs: "、".join(xs)) if lang in CJK_NAMES else and_list
+    vals = dict(city=city, country=country_name, n=len(rows), year=year, guide=guide, k=len(new),
+                date=date_words(cfg["announced"], lang), month=month_words(cfg["checked"], lang), **fig)
+    if c:
+        names = join([bib_name(b, lang)[0] for b in new]) if new else ""
+        vals["newPart"] = say("newPartOne" if len(new) == 1 else "newPart", k=len(new), names=names) if new else ""
+        title, h1, desc, answer = (say(x, **vals) for x in ("titleCity", "h1City", "descCity", "answerCity"))
+    else:
+        vals["cities"] = join([say("cityCount", city=pick_lang(x, "name", lang), n=len(x["rows"])) for x in cities])
+        title, h1, desc, answer = (say(x, **vals) for x in ("titleHub", "h1Hub", "descHub", "answerHub"))
+    hub, page_path = bib_hub_path(country), lang_path(path, lang)
+    href = lambda p: lang_path(p, lang)
+    vs = ""
+    if "bib-gourmand-vs-michelin-star" in guides:
+        vs = " " + e(say("vsLine")).replace("{link}", english_link(guide_path("bib-gourmand-vs-michelin-star"), say("vsLink"), k))
+    parts = [f'<p class="lede">{e(answer)}</p>']
+    if c:  # one line on what a Bib Gourmand is, linking the country page's answer
+        parts.append(f'<p>{e(say("whatShort"))} <a href="{href(hub)}#what">{e(say("whatLink"))}</a></p>')
+        parts.append(f'<h2 id="list">{e(say("listTitle", **vals))}</h2>' + bib_table(rows, lang))
+        if new:
+            parts.append(f'<h2 id="new">{e(say("newTitleCity", **vals))}</h2><p>'
+                         + e(join([bib_name(b, lang)[0] + "（" + pick_lang(b, "serves", lang) + "）" if lang in CJK_NAMES
+                                   else f'{bib_name(b, lang)[0]} ({pick_lang(b, "serves", lang).lower()})' for b in new])) + ("。" if lang in CJK_NAMES else ".") + "</p>")
+    else:
+        what = own("whatIs")
+        parts.append(f'<h2 id="what">{e(say("whatTitle"))}</h2><p>{e(what)}{vs}</p>' if what else "")
+        if new:
+            place_of = {x["id"]: x for x in cities}
+            city_col = lambda b: e(pick_lang(place_of[b["city"]], "name", lang))
+            parts.append(f'<h2 id="new">{e(say("newTitle", **vals))}</h2>' + bib_table(new, lang, short=True, city_col=city_col))
+        for x in cities:
+            xpath = bib_city_path(country, x)
+            xv = dict(vals, city=pick_lang(x, "name", lang), n=len(x["rows"]))
+            parts.append(f'<h2 id="{x["id"]}">{e(say("listTitleHub", **xv))}</h2>'
+                         + (f'<p class="muted">{e(pick_lang(x, "note", lang))}</p>' if x.get("note") else "")
+                         + bib_table(x["rows"], lang, short=bool(xpath))
+                         + (f'<p><a href="{href(xpath)}">{e(say("seeAll", **xv))} →</a></p>' if xpath else ""))
+    # The starred restaurants on the city's (or country's) own page.
+    starred = [r for r in members(cplace) if not r.get("status")]
+    menus = [r["dinner"] for r in starred if r.get("dinnerType") == "menu" and r.get("dinner") is not None]
+    if starred:
+        where = pick_lang(cplace, "name", lang)
+        link = f'<a href="{href(cplace["path"])}">{e(say("starsLink"))}</a>'
+        text = say("starsText", city=where, n=len(starred), **{"from": money(min(menus), cur) if menus else "–", "link": "{link}"})
+        parts.append(f'<h2 id="stars">{e(say("starsTitle", city=where))}</h2><p>{e(text).replace("{link}", link)}</p>')
+    if own("next"):
+        parts.append(f'<h2 id="next">{e(say("nextTitle", **vals))}</h2><p>{e(own("next"))}</p>')
+    if c:
+        others = [x for x in cities if x is not c]
+        count = (lambda n: f"（{n}）") if lang in CJK_NAMES else (lambda n: f" ({n})")
+        links = [f'<a href="{href(bib_city_path(country, x) if x.get("place") else hub + "#" + x["id"])}">{e(pick_lang(x, "name", lang))}</a>{count(len(x["rows"]))}'
+                 for x in others]
+        parts.append(f'<h2 id="other">{e(say("otherTitle", **vals))}</h2><p>' + ("、" if lang in CJK_NAMES else " · ").join(links)
+                     + f'</p><p><a href="{href(hub)}">{e(say("allLink", country=country_name, n=len(bibs[country])))} →</a></p>')
+        if vs:
+            parts.append(f"<p>{vs.strip()}</p>")
+    # Sources: the list's (news coverage, never the guide's website), then where our prices come from.
+    comma, stop = ("，", "。") if lang in CJK_NAMES else (", ", ".")
+    items = "".join(f'<li><a href="{e(s["url"])}" target="_blank" rel="noopener">{e(pick_lang(s, "title", lang))}</a>{comma}{e(pick_lang(s, "publisher", lang))}'
+                    + (f'{comma}{e(date_words(s["date"], lang) if len(str(s["date"])) == 10 else month_words(str(s["date"]), lang))}' if s.get("date") else "") + f"{stop}</li>"
+                    for s in cfg["sources"])
+    name, url = EXCHANGE_RATES
+    d = currency_data.get("rateDate") or ""
+    rates_on = (f"（{date_words(d, lang)}）" if lang in CJK_NAMES else f" ({date_words(d, lang)})") if re.fullmatch(r"\d{4}-\d{2}-\d{2}", d) else ""
+    own_data = e(say("ownData", month=month_words(cfg["checked"], lang), rates="{rates}", day=rates_on)).replace(
+        "{rates}", f'<a href="{url}" target="_blank" rel="noopener">{name}</a>')
+    parts.append(f'<section class="guide-sources" id="sources"><h2>{e(say("sources"))}</h2><ul>{items}</ul><p class="guide-sources-own">{own_data}</p></section>')
+    updated = (f'<p class="prose-date">{e(say("updated", date=date_words(day, lang), month=month_words(cfg["checked"], lang)))}</p>' if day else "")
+    locale = HTML_LANG.get(lang, (lang,))[0]
+    main = f'<article lang="{e(locale)}">\n<h1>{e(h1)}</h1>\n{updated}\n' + "\n".join(p for p in parts if p) + "\n</article>"
+    # Breadcrumbs: home, the country (and city), then this page.
+    trail = [places[x] for x in reversed(chain(cplace["id"]))]
+    crumb_items = [(word(lang, "crumbHome", {}), "/")] + [(pick_lang(x, "name", lang), lang_path(x["path"], lang) if lang in place_langs(x) else x["path"]) for x in trail]
+    crumbs = "".join(f'<a href="{u}">{e(t)}</a>' for t, u in crumb_items) + f'<span aria-current="page">{e(say("crumb"))}</span>'
+    body_html = "\n".join(parts)
+    # The question headings (Chinese ones end in a full-width "？") with the paragraph under each, for the FAQPage data.
+    faqs = [{"q": q, "a": a} for q, a in re.findall(r"<h2[^>]*>([^<]*[?？])\s*</h2>\s*<p[^>]*>(.*?)</p>", body_html, re.S)][:FAQ_MAX]
+    strip = lambda s: html.unescape(re.sub(r"<[^>]+>", "", s))
+    listed = bib_order(rows)[:LD_LIST_MAX]
+    award = f"Bib Gourmand, {cfg['guide']} {year}"
+    graph = [
+        {"@type": "BreadcrumbList", "itemListElement": [
+            {"@type": "ListItem", "position": i + 1, "name": t, "item": SITE_URL + u} for i, (t, u) in enumerate(crumb_items + [(say("crumb"), page_path)])]},
+        {"@type": "WebPage", "@id": SITE_URL + page_path, "url": SITE_URL + page_path, "name": title, "description": desc, "inLanguage": locale,
+         **({"dateModified": day} if day else {}), "isPartOf": {"@id": WEBSITE["@id"]}, "publisher": ORGANIZATION,
+         "mainEntity": {"@type": "ItemList", "numberOfItems": len(rows), "itemListElement": [
+             {"@type": "ListItem", "position": i + 1, "item": {
+                 "@type": "Restaurant", "name": pick_lang(b, "name", lang) or b["name"],
+                 **({"alternateName": bib_name(b, lang)[1]} if bib_name(b, lang)[1] else {}),
+                 **({"address": {"@type": "PostalAddress", "streetAddress": pick_lang(b, "address", lang), "addressCountry": places[country].get("code", "TW")}}
+                    if pick_lang(b, "address", lang) else {}),
+                 **({"priceRange": bib_range(b)} if b.get("priceLow") is not None else {}),
+                 **({"servesCuisine": pick_lang(b, "serves", lang)} if b.get("serves") else {}),
+                 **({"url": b["website"]} if b.get("website") else {}), "award": award}}
+             for i, b in enumerate(listed)]}},
+    ]
+    if faqs:
+        graph.append({"@type": "FAQPage", "mainEntity": [
+            {"@type": "Question", "name": strip(f["q"]), "acceptedAnswer": {"@type": "Answer", "text": strip(f["a"])}} for f in faqs]})
+    paths_by_lang = {x: lang_path(path, x) for x in langs}
+    alternates = ("".join(f'<link rel="alternate" hreflang="{HREFLANG.get(x, x)}" href="{SITE_URL}{paths_by_lang[x]}">\n' for x in langs)
+                  + f'<link rel="alternate" hreflang="x-default" href="{SITE_URL}{path}">\n') if len(langs) > 1 else ""
+    lang_links = "".join(f'<span aria-current="page">{e(LANG_LABELS.get(x, x.upper()))}</span>' if x == lang else
+                         f'<a href="{paths_by_lang[x]}" hreflang="{HREFLANG.get(x, x)}" lang="{HTML_LANG.get(x, ("en-GB",))[0]}">{e(LANG_LABELS.get(x, x.upper()))}</a>'
+                         for x in langs) if len(langs) > 1 else ""
+    data = {"currencies": CURRENCIES, "languages": langs, **({"lang": lang, "langPaths": paths_by_lang} if len(langs) > 1 else {})}
+    write(page_path, render("guide.html", {
+        "footGuide": foot_guide(lang), "alternates": alternates, "langLinks": lang_links,
+        "langScripts": "".join(f'<script src="{assets[f"lang-{x}.js"]}"></script>\n' for x in langs if x in LANG_FILES),
+        "data": as_json(data), "title": e(title), "description": e(desc), "canonical": SITE_URL + page_path,
+        "htmlLang": e(locale), "ogType": "website", "ogImage": og_image(cplace),
+        "ogAlt": e(say("ogAlt", city=city or country_name)), "keywordsMeta": "",
+        "jsonld": '<script type="application/ld+json">' + as_json({"@context": "https://schema.org", "@graph": graph}) + "</script>",
+        "crumbs": crumbs, "main": main, "mainClass": "wrap prose guide bib-page", "footPlaces": foot_places_html(lang),
+    }))
+
+
 if "--freeze" in sys.argv:
     # python3 build.py --freeze [guide id …]: save results pages' editions before a ceremony's changes go in (see above).
     freeze_results([a for a in sys.argv[1:] if not a.startswith("--")])
@@ -8657,6 +9044,7 @@ build_trips(compare_urls, build_account_pages())
 build_guides()
 build_news()
 build_restaurant_pages()
+build_bib_pages()
 build_redirects()
 build_extras()
 build_cloudflare()

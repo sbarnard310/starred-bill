@@ -1,0 +1,18 @@
+{
+  "name": "Hao Cai Küisine",
+  "nameZh": "好菜",
+  "city": "taichung",
+  "area": "West, Taichung",
+  "areaZh": "台中西區",
+  "address": "No. 1, Ln. 24, Mofan St., West District, Taichung City",
+  "addressZh": "台中市西區模範街24巷1號",
+  "serves": "Taiwanese stir-fry and Asian dishes, one main each",
+  "servesZh": "台式熱炒、亞洲料理",
+  "priceLow": 290,
+  "priceHigh": 350,
+  "priceNote": "One main per person NT$290-350, rice and soup/drink included",
+  "priceNoteZh": "每人一道主菜 NT$290-350，含白飯與湯或飲料",
+  "sourceType": "press",
+  "source": "https://bigsharkgogogo.tw/kuisinmofancc/",
+  "sourceDate": "2026-04"
+}

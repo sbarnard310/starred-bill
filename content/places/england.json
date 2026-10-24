@@ -3,5 +3,6 @@
   "type": "region",
   "parent": "uk",
   "name": "England",
-  "nameZh": "英格蘭"
+  "nameZh": "英格蘭",
+  "areasNote": "London has its own page of {p:london|Michelin star restaurants in London}; outside it, the most are in the north of England, in {p:cumbria|Cumbria} and {p:yorkshire|Yorkshire}."
 }

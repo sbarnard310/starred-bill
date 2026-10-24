@@ -8,5 +8,11 @@
   "addressZh": "台北市大同區安西街106號",
   "serves": "Noodles",
   "servesZh": "麵食",
-  "sourceType": "none"
+  "sourceType": "press",
+  "priceLow": 20,
+  "priceHigh": 120,
+  "priceNote": "Noodle bowl NT$20; sides from NT$30 (braised pork NT$100)",
+  "priceNoteZh": "麵 NT$20；小菜 NT$30 起（燒肉 NT$100）",
+  "source": "https://www.mirrormedia.mg/story/amp/20250804food001",
+  "sourceDate": "2025-08"
 }

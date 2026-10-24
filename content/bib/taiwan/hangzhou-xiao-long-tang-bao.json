@@ -8,5 +8,11 @@
   "addressZh": "台北市大安區杭州南路二段19號",
   "serves": "Soup dumplings, pot-stickers and turnip cake",
   "servesZh": "小籠湯包、豆沙鍋餅、蘿蔔糕",
-  "sourceType": "none"
+  "sourceType": "press",
+  "priceLow": 90,
+  "priceHigh": 250,
+  "priceNote": "Xiaolong tangbao NT$90 for 4; with a red-bean pancake (NT$160) about NT$250 (prices from its Minsheng branch)",
+  "priceNoteZh": "小籠湯包4顆 NT$90；加豆沙鍋餅 NT$160 約 NT$250（民生店價格）",
+  "source": "https://nash.tw/herewegohangzhou202604/",
+  "sourceDate": "2026-10"
 }

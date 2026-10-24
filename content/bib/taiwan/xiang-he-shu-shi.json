@@ -8,5 +8,12 @@
   "addressZh": "台北市中正區鎮江街1巷1號",
   "serves": "Sichuan-style vegetarian dishes",
   "servesZh": "川味素食",
-  "sourceType": "none"
+  "sourceType": "press",
+  "priceType": "dish",
+  "priceLow": 260,
+  "priceHigh": 360,
+  "priceNote": "Shared vegetarian dishes from about NT$260 (small size) to NT$360",
+  "priceNoteZh": "蔬食菜色（小份）約 NT$260–360",
+  "source": "https://bigsharkgogogo.tw/serenitychengaa/",
+  "sourceDate": "2025-05"
 }

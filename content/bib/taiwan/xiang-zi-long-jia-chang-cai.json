@@ -8,5 +8,12 @@
   "addressZh": "台北市大安區四維路25號",
   "serves": "Hunan and Jiangnan home cooking",
   "servesZh": "湖南、江浙家常菜",
-  "sourceType": "none"
+  "sourceType": "press",
+  "priceType": "dish",
+  "priceLow": 220,
+  "priceHigh": 520,
+  "priceNote": "Shared dishes about NT$220–520 (medium size mostly NT$280–330); no service charge",
+  "priceNoteZh": "單點菜約 NT$220–520（中份多為 NT$280–330）；不收服務費",
+  "source": "https://hedonistjun.com/talking-heads/",
+  "sourceDate": "2023-09"
 }

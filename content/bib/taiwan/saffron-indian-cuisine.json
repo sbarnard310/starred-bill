@@ -8,5 +8,12 @@
   "addressZh": "台北市士林區天母東路38之6號",
   "serves": "North Indian curries, tandoori and naan",
   "servesZh": "北印度咖哩、坦都里烤肉",
-  "sourceType": "none"
+  "sourceType": "press",
+  "priceType": "dish",
+  "priceLow": 610,
+  "priceHigh": 630,
+  "priceNote": "Curries about NT$610–630; naan NT$120–160; diners report about NT$800 a head",
+  "priceNoteZh": "咖哩約 NT$610–630；烤餅 NT$120–160；食客約人均 NT$800",
+  "source": "https://hedonistjun.com/saffron-fine-indian-cuisine/",
+  "sourceDate": "2024-03"
 }

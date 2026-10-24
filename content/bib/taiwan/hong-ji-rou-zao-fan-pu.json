@@ -9,10 +9,10 @@
   "serves": "Braised pork rice and pig-tendon rice",
   "servesZh": "肉燥飯、豬腳筋飯",
   "priceLow": 35,
-  "priceHigh": 60,
-  "priceNote": "Braised pork rice NT$35, pig-tendon rice NT$60",
-  "priceNoteZh": "肉燥飯 NT$35，豬腳筋飯 NT$60",
+  "priceHigh": 80,
   "sourceType": "press",
-  "source": "https://supertaste.tvbs.com.tw/food/338503",
-  "sourceDate": "2022-08"
+  "priceNote": "Minced pork rice NT$35 (spicy NT$45); add a soup NT$45-65",
+  "priceNoteZh": "肉燥飯 NT$35（辣味 NT$45），加湯 NT$45-65",
+  "source": "https://travelintaiwan.net/2023/01/tainan-kaohsiung-michelin/",
+  "sourceDate": "2023-01"
 }

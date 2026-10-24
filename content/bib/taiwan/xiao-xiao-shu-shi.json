@@ -8,5 +8,12 @@
   "addressZh": "台北市大安區大安路一段116巷17號",
   "serves": "Vegetarian set meals",
   "servesZh": "蔬食套餐",
-  "sourceType": "none"
+  "sourceType": "press",
+  "priceType": "dish",
+  "priceLow": 180,
+  "priceHigh": 420,
+  "priceNote": "Vegetarian dishes and bowls about NT$180–420 each (prices from its Dunnan branch)",
+  "priceNoteZh": "蔬食單品與佛陀碗約 NT$180–420（敦南店價格）",
+  "source": "https://supertaste.tvbs.com.tw/amp/pack/347436",
+  "sourceDate": "2026-02"
 }

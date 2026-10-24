@@ -8,5 +8,11 @@
   "addressZh": "台北市中山區雙城街28巷8號",
   "serves": "Taiwanese home-style and seafood dishes",
   "servesZh": "台式家常菜、海鮮",
-  "sourceType": "none"
+  "sourceType": "press",
+  "priceLow": 886,
+  "priceHigh": 886,
+  "priceNote": "About NT$890 a head for shared dishes (dishes NT$150–420)",
+  "priceNoteZh": "合菜人均約 NT$890（單點 NT$150–420）",
+  "source": "https://anise.tw/282447",
+  "sourceDate": "2025-11"
 }

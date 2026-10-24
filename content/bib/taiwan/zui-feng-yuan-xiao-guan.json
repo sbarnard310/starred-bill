@@ -2,7 +2,17 @@
   "name": "Zui Feng Yuan Xiao Guan",
   "nameZh": "醉楓園小館",
   "city": "taipei",
-  "area": "Taipei",
-  "areaZh": "台北",
-  "sourceType": "none"
+  "area": "Songshan, Taipei",
+  "areaZh": "台北松山區",
+  "address": "No. 5, Ln. 8, Sec. 3, Bade Rd., Songshan Dist., Taipei City",
+  "addressZh": "台北市松山區八德路三段8巷5號",
+  "serves": "Cantonese dishes, taro crispy duck, fried chicken",
+  "servesZh": "粵菜、芋泥香酥鴨、當紅炸子雞",
+  "sourceType": "press",
+  "priceLow": 520,
+  "priceHigh": 520,
+  "priceNote": "About NT$520 a head for shared dishes (dishes NT$140–430)",
+  "priceNoteZh": "合菜人均約 NT$520（單點 NT$140–430）",
+  "source": "https://nash.tw/herewegosuifengyuan2026/",
+  "sourceDate": "2026-09"
 }

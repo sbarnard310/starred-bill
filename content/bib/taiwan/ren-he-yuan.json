@@ -8,5 +8,12 @@
   "addressZh": "台北市中山區中山北路二段112號2樓",
   "serves": "Yunnan cooking",
   "servesZh": "雲南菜",
-  "sourceType": "none"
+  "sourceType": "press",
+  "priceType": "dish",
+  "priceLow": 128,
+  "priceHigh": 408,
+  "priceNote": "Shared dishes NT$128–408 each, plus 10% service (clay-pot chicken soup NT$1,280 to order ahead)",
+  "priceNoteZh": "單點菜 NT$128–408，另加一成服務費（汽鍋雞湯 NT$1,280 須預訂）",
+  "source": "https://www.mecocute.com/ren-he-yuan-yunnan-restaurant/",
+  "sourceDate": "2025-11"
 }

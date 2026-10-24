@@ -8,10 +8,11 @@
   "addressZh": "台北市中正區羅斯福路四段108巷（公館夜市）",
   "serves": "Scallion pancake with egg and cheese",
   "servesZh": "蔥抓餅加蛋加起司",
-  "priceLow": 45,
+  "priceLow": 50,
   "priceHigh": 50,
-  "priceNote": "Scallion pancake with egg and cheese NT$45–50",
-  "priceNoteZh": "蔥抓餅加蛋加起司 NT$45–50",
   "sourceType": "press",
-  "source": "https://supertaste.tvbs.com.tw/food/337124"
+  "priceNote": "Scallion pancake with egg and cheese NT$50",
+  "priceNoteZh": "蔥抓餅加蛋加起司 NT$50",
+  "source": "https://today.line.me/tw/v3/article/LXrl3jz",
+  "sourceDate": "2025-08"
 }

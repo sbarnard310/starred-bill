@@ -9,5 +9,12 @@
   "serves": "Goat hotpot, since 1962",
   "servesZh": "山羊鍋、羊肉熱炒（1962年創立）",
   "change": "new",
-  "sourceType": "none"
+  "sourceType": "press",
+  "priceLow": 50,
+  "priceHigh": 350,
+  "priceType": "dish",
+  "priceNote": "Goat-sauce rice NT$50, goat soup NT$200, bitter melon stir-fried goat NT$350",
+  "priceNoteZh": "羊燥飯 NT$50、羊肉湯 NT$200、苦瓜炒羊肉 NT$350",
+  "source": "https://travel.yam.com/article/137267",
+  "sourceDate": "2025-04"
 }

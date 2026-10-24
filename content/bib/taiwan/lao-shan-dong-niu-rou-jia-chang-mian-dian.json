@@ -8,5 +8,11 @@
   "addressZh": "台北市萬華區西寧南路70號B1之15室",
   "serves": "Beef noodle soup and home-style noodles",
   "servesZh": "牛肉麵、家常麵",
-  "sourceType": "none"
+  "sourceType": "press",
+  "priceLow": 200,
+  "priceHigh": 260,
+  "priceNote": "Beef rice NT$200, beef noodles NT$230–260; ten dumplings NT$90",
+  "priceNoteZh": "牛肉飯 NT$200、牛肉麵 NT$230–260；水餃10顆 NT$90",
+  "source": "https://www.ptt.cc/bbs/Food/M.1739866242.A.DE4.html",
+  "sourceDate": "2025-02"
 }

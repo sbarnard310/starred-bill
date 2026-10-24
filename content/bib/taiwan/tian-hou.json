@@ -8,5 +8,12 @@
   "addressZh": "台南市中西區新美街125巷3號",
   "serves": "Taiwanese home-style dishes to share",
   "servesZh": "台式家常菜",
-  "sourceType": "none"
+  "sourceType": "press",
+  "priceLow": 100,
+  "priceHigh": 300,
+  "priceType": "dish",
+  "priceNote": "Most dishes about NT$100-300 each",
+  "priceNoteZh": "每道菜均價約 NT$100～300",
+  "source": "https://supertaste.tvbs.com.tw/food/350855",
+  "sourceDate": "2024-08"
 }

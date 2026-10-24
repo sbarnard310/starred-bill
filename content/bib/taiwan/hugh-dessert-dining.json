@@ -8,6 +8,12 @@
   "addressZh": "台北市大同區重慶北路三段136巷56號1樓",
   "serves": "Dessert tasting menu of 6-7 courses",
   "servesZh": "甜點套餐（六至七道）",
-  "sourceType": "none",
-  "website": "https://hughdessert.com"
+  "sourceType": "press",
+  "website": "https://hughdessert.com",
+  "priceLow": 1500,
+  "priceHigh": 1800,
+  "priceNote": "Dessert set NT$1,500; with the chef's extra dessert NT$1,800; drinks extra",
+  "priceNoteZh": "甜點套餐 NT$1,500；加主廚加點甜點 NT$1,800；飲品另計",
+  "source": "https://blog.aifian.com/2023/09/02/michelin-guide-hugh-dessert-dining/",
+  "sourceDate": "2023-09"
 }

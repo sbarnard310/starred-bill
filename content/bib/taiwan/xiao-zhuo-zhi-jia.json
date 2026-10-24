@@ -8,5 +8,11 @@
   "addressZh": "台北市中山區吉林路420號",
   "serves": "Taiwanese seafood and chicken soup",
   "servesZh": "台菜海鮮、雞湯",
-  "sourceType": "none"
+  "sourceType": "press",
+  "priceLow": 800,
+  "priceHigh": 1000,
+  "priceNote": "About NT$800–1,000 a head for shared dishes",
+  "priceNoteZh": "合菜人均約 NT$800–1,000",
+  "source": "https://ifoodie.tw/restaurant/559d9dfac03a103ee86c9105-%E5%B0%8F%E9%85%8C%E4%B9%8B%E5%AE%B6",
+  "sourceDate": "2025-05"
 }

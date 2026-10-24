@@ -8,11 +8,11 @@
   "addressZh": "新竹市東區大同路86號（東門市場1116、1117攤）",
   "serves": "Taro rice-vermicelli soup with seafood or wontons",
   "servesZh": "海鮮芋頭米粉湯、鮮蝦餛飩米粉湯",
-  "priceLow": 85,
-  "priceHigh": 160,
-  "priceNote": "Taro vermicelli soup NT$85-160 (small to large bowl)",
-  "priceNoteZh": "芋頭米粉湯 小碗至大碗 NT$85-160",
+  "priceLow": 120,
+  "priceHigh": 180,
   "sourceType": "press",
-  "source": "https://supertaste.tvbs.com.tw/food/340220",
-  "sourceDate": "2022-12"
+  "priceNote": "Seafood taro rice-noodle soup NT$120 (small) to NT$180 (large)",
+  "priceNoteZh": "海鮮芋頭米粉湯 小碗 NT$120、大碗 NT$180",
+  "source": "https://supertaste.tvbs.com.tw/food/338727",
+  "sourceDate": "2023-10"
 }

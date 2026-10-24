@@ -8,5 +8,11 @@
   "addressZh": "台北市中正區青島東路6之2號",
   "serves": "Nourishing chicken soup",
   "servesZh": "養生雞湯",
-  "sourceType": "none"
+  "sourceType": "press",
+  "priceLow": 230,
+  "priceHigh": 340,
+  "priceNote": "Chicken soup NT$230–260; oil rice NT$35, pepper noodles NT$80",
+  "priceNoteZh": "雞湯 NT$230–260；油飯 NT$35、愛恨椒芝麵 NT$80",
+  "source": "https://jzhappylifeday.com/moonmoonfood/",
+  "sourceDate": "2026-07"
 }

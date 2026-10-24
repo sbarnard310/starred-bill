@@ -8,5 +8,11 @@
   "addressZh": "台北市松山區敦化北路155巷111號",
   "serves": "Taiwanese cooking",
   "servesZh": "台菜",
-  "sourceType": "none"
+  "sourceType": "press",
+  "priceLow": 1000,
+  "priceHigh": 1500,
+  "priceNote": "About NT$1,000–1,500 a head for shared dishes (booking needed)",
+  "priceNoteZh": "合菜人均約 NT$1,000–1,500（需訂位）",
+  "source": "https://ifoodie.tw/restaurant/5afb9686f5246810820afa85-%E9%87%91%E8%B3%9E%E8%BB%92-%E7%B2%BE%E7%B7%BB%E6%B5%B7%E9%AE%AE%E5%8F%B0%E8%8F%9C",
+  "sourceDate": "2026-06"
 }

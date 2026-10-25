@@ -26,10 +26,11 @@
   "placeId": "ChIJzdd3Rdxy2IAR0lNrx4Qo_KA",
   "michelinId": "1208368",
   "diets": [
+    "vegetarian-menu",
     "vegetarian",
-    "vegan",
-    "gluten-free"
+    "vegan"
   ],
   "chef": "Javier Plascencia",
-  "chefSource": "michelin"
+  "chefSource": "site",
+  "dietsManual": true
 }

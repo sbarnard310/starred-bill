@@ -21,8 +21,7 @@
   "placeId": "ChIJJW09EfKWGQ0R1xGaZSVeWEQ",
   "michelinId": "1213147",
   "diets": [
-    "vegetarian",
-    "vegan"
+    "vegetarian"
   ],
   "chef": "Miguel Laffan",
   "chefSource": "site",
@@ -42,5 +41,6 @@
       "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
     }
   ],
-  "rankingsChecked": "2026-10-24"
+  "rankingsChecked": "2026-10-24",
+  "dietsManual": true
 }

@@ -18,12 +18,10 @@
   "diets": [
     "vegetarian-menu",
     "vegetarian",
-    "gluten-free",
-    "halal",
-    "kosher"
+    "gluten-free"
   ],
   "chef": "Wilco Berends",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 150)",
   "lunchNote": "Open for lunch · Thu–Sun",
   "lunchNoteNl": "Open voor lunch · do–zo",
@@ -63,5 +61,6 @@
     ],
     "note": "Eleven rooms and a suite beside the restaurant on the Vecht; the hotel is open Wednesday to Saturday nights only.",
     "checked": "2026-10-23"
-  }
+  },
+  "dietsManual": true
 }

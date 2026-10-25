@@ -18,13 +18,8 @@
   "lng": -87.1121284,
   "placeId": "ChIJOao-d2hFTo8RaZq5OBlvlRE",
   "michelinId": "1208266",
-  "diets": [
-    "vegetarian",
-    "vegan",
-    "gluten-free"
-  ],
   "chef": "Carlos Gaytán",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "photo": "ha.jpg",
   "photoAlt": "The entrance of HA' at Hotel Xcaret, with its name on the wall",
   "photoCredit": "Kline",

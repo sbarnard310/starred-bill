@@ -26,6 +26,7 @@
   "placeId": "ChIJSTHbhggBBDQRUkh7fJaBA7o",
   "michelinId": "1192501",
   "diets": [
+    "vegetarian-menu",
     "vegetarian",
     "vegan"
   ],
@@ -49,5 +50,6 @@
       "url": "https://www.oadguides.com/lists/asia/top-restaurants/2026"
     }
   ],
-  "rankingsChecked": "2026-10-24"
+  "rankingsChecked": "2026-10-24",
+  "dietsManual": true
 }

@@ -26,6 +26,7 @@
   "placeId": "ChIJzXySeMk5KRMR5715M7EhEbI",
   "michelinId": "123877",
   "diets": [
+    "vegetarian-menu",
     "vegetarian"
   ],
   "chef": "Romano Gordini and Iside De Cesare",
@@ -54,5 +55,6 @@
       }
     ],
     "checked": "2026-10-23"
-  }
+  },
+  "dietsManual": true
 }

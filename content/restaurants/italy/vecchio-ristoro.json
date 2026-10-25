@@ -20,9 +20,9 @@
   "michelinId": "124965",
   "diets": [
     "vegetarian-menu",
-    "vegetarian",
-    "gluten-free"
+    "vegetarian"
   ],
   "chef": "Tommaso Lupo and Filippo Oggioni",
-  "chefSource": "michelin"
+  "chefSource": "site",
+  "dietsManual": true
 }

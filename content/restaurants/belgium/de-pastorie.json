@@ -15,15 +15,8 @@
   "lng": 4.9240299,
   "placeId": "ChIJ46NFAyFNwUcR6NoZxYarYfU",
   "michelinId": "209876",
-  "diets": [
-    "vegetarian",
-    "vegan",
-    "gluten-free",
-    "halal",
-    "kosher"
-  ],
-  "chef": "Carl Wens",
-  "chefSource": "michelin",
+  "chef": "Carl Wens and Wout Wens",
+  "chefSource": "site",
   "dinnerNoteNl": "Proeverijmenu",
   "dinnerNoteFr": "Menu dégustation",
   "lunchNote": "Open for lunch · Sundays",

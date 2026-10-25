@@ -15,13 +15,8 @@
   "lng": 3.2351421,
   "placeId": "ChIJ4TKZUEolw0cRREo1HOB3h7Q",
   "michelinId": "446549",
-  "diets": [
-    "vegetarian",
-    "vegan",
-    "gluten-free"
-  ],
-  "chef": "Sébastien Verveken",
-  "chefSource": "michelin",
+  "chef": "Sébastien Ververken",
+  "chefSource": "site",
   "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 54)",
   "dinnerNoteFr": "Menu dégustation (autres menus dès 54 €)",
   "lunch": 135,

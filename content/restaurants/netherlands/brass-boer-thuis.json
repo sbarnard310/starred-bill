@@ -22,11 +22,12 @@
     "vegetarian-menu",
     "vegetarian"
   ],
-  "chef": "Jonnie Boer",
-  "chefSource": "michelin",
+  "chef": "Noah Wynants",
+  "chefSource": "site",
   "dinnerNoteNl": "Verrassingsmenu, 6 gangen (7 gangen €130; groentemenu €105)",
   "lunchNoteNl": "Lunchmenu",
   "dinner": 115,
   "source": "https://indd.adobe.com/view/3f9193ed-c17b-4248-ac83-5ea8c4bab1b7",
-  "wine": 65
+  "wine": 65,
+  "dietsManual": true
 }

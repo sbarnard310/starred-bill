@@ -20,9 +20,10 @@
     "vegetarian"
   ],
   "chef": "Lisa Angermann",
-  "chefSource": "michelin",
+  "chefSource": "press",
   "dinnerNoteDe": "Degustationsmenü",
   "noLunch": true,
   "lunchNote": "Dinner only",
-  "lunchNoteDe": "Nur abends"
+  "lunchNoteDe": "Nur abends",
+  "dietsManual": true
 }

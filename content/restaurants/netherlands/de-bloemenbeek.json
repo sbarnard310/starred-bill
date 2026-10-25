@@ -16,14 +16,11 @@
   "placeId": "ChIJKYzZQvQXuEcRCLnglJqempA",
   "michelinId": "213794",
   "diets": [
-    "vegetarian",
-    "vegan",
-    "gluten-free",
-    "halal",
-    "kosher"
+    "vegetarian-menu",
+    "vegetarian"
   ],
   "chef": "Michel van Riswijk and Vincent Goris",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNoteNl": "Menu Jubileum, 6 gangen (vegetarisch menu Greenhouse vanaf € 77,50)",
   "photo": "de-bloemenbeek.jpg",
   "photoAlt": "The restaurant wing of Hotel De Bloemenbeek in De Lutte",
@@ -81,5 +78,6 @@
     ],
     "note": "A country-house hotel with a spa on a Twente estate.",
     "checked": "2026-10-23"
-  }
+  },
+  "dietsManual": true
 }

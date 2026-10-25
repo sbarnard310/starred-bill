@@ -22,10 +22,7 @@
   "placeId": "ChIJpYnCw78FdkgRoVHfIfSrTas",
   "michelinId": "1200582",
   "diets": [
-    "vegetarian",
-    "vegan",
-    "halal",
-    "kosher"
+    "vegetarian"
   ],
   "chef": "James Sharp",
   "chefSource": "press",
@@ -34,5 +31,6 @@
     "name": "The Savoy",
     "url": "https://www.thesavoylondon.com/rooms",
     "checked": "2026-10-23"
-  }
+  },
+  "dietsManual": true
 }

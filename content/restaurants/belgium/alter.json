@@ -30,5 +30,6 @@
   "lunchSource": "https://restaurant-alter.be/",
   "dinnerNote": "Experience menu, 4 courses (5 courses €150; Saturday evenings 5 courses only)",
   "dinnerNoteNl": "Experience-menu, 4 gangen (5 gangen € 150; zaterdagavond enkel 5 gangen)",
-  "dinnerNoteFr": "Menu Experience, 4 services (5 services 150 € ; le samedi soir, 5 services uniquement)"
+  "dinnerNoteFr": "Menu Experience, 4 services (5 services 150 € ; le samedi soir, 5 services uniquement)",
+  "dietsManual": true
 }

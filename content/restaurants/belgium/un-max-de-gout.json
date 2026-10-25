@@ -20,11 +20,8 @@
   "lng": 5.5785763,
   "placeId": "ChIJkamNxyxfwEcRvJCwxs-BJf4",
   "michelinId": "1154465",
-  "diets": [
-    "vegetarian"
-  ],
   "chef": "Maxime Zimmer",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 40)",
   "dinnerNoteFr": "Menu dégustation (autres menus dès 40 €)",
   "lunchNoteNl": "Lunchmenu",

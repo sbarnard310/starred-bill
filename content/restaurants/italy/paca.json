@@ -1,9 +1,9 @@
 {
   "name": "Paca",
   "city": "tuscany",
-  "area": "Prato, Prato",
+  "area": "Carmignano, Prato",
   "areaIt": "Prato, Prato",
-  "address": "Via Fra' Bartolomeo 13, Prato, 59100",
+  "address": "Via delle Ginestre 45, Carmignano, 59015",
   "stars": 1,
   "cuisine": "Italian",
   "dinner": 110,
@@ -18,15 +18,11 @@
   "lunchNoteIt": "Stesso menu a pranzo · il sabato",
   "lunchSourceType": "site",
   "lunchSource": "https://www.tenutaceri.it/paca/paca-menu.pdf",
-  "website": "https://www.pacaristorante.it/",
-  "lat": 43.87718,
-  "lng": 11.102182,
+  "website": "https://tenutaceri.it/ristorante-paca/",
+  "lat": 43.7998705,
+  "lng": 11.0208838,
   "placeId": "ChIJpVS32Ob3KhMRzHXHBA90UWw",
   "michelinId": "1192021",
-  "diets": [
-    "vegetarian",
-    "gluten-free"
-  ],
   "chef": "Niccolò Palumbo",
   "chefSource": "press"
 }

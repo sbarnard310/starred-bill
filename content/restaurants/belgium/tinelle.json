@@ -19,8 +19,7 @@
   "placeId": "ChIJxRJSYB3lw0cRilR6q9eF2sU",
   "michelinId": "1154749",
   "diets": [
-    "vegetarian",
-    "gluten-free"
+    "vegetarian"
   ],
   "chef": "Ken Verschueren",
   "chefSource": "michelin",
@@ -30,5 +29,6 @@
   "lunchNoteNl": "Lunchmenu, 3 gangen, dagelijks wisselend",
   "lunchNoteFr": "Menu déjeuner en 3 services, change chaque jour",
   "dinner": 44,
-  "source": "https://tinelle.be/home/"
+  "source": "https://tinelle.be/home/",
+  "dietsManual": true
 }

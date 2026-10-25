@@ -19,7 +19,7 @@
     "vegetarian"
   ],
   "chef": "Leon Hofmockel",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 49 €)",
   "lunch": 350,
   "lunchType": "menu",
@@ -36,5 +36,6 @@
       "url": "https://www.laliste.com/places/la-societe-koln-de"
     }
   ],
-  "rankingsChecked": "2026-10-24"
+  "rankingsChecked": "2026-10-24",
+  "dietsManual": true
 }

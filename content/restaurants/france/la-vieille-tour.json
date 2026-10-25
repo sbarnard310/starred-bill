@@ -23,9 +23,6 @@
   "lng": -2.7261477,
   "placeId": "ChIJyRLy7zMDDkgRqEcLdHdr8gY",
   "michelinId": "7741",
-  "diets": [
-    "vegetarian"
-  ],
   "chef": "Nicolas Adam",
-  "chefSource": "michelin"
+  "chefSource": "site"
 }

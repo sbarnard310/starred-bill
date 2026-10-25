@@ -23,11 +23,6 @@
   "lng": -1.5504091,
   "placeId": "ChIJUQJHNttqUQ0RT2X90ilZV6o",
   "michelinId": "367790",
-  "diets": [
-    "vegetarian",
-    "vegan",
-    "gluten-free"
-  ],
   "chef": "Fabian Feldmann",
-  "chefSource": "michelin"
+  "chefSource": "press"
 }

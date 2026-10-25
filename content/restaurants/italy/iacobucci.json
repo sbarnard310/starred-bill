@@ -22,10 +22,11 @@
   "placeId": "ChIJUW18eD_Tf0cRdpSMNiNlnjo",
   "michelinId": "1183678",
   "diets": [
+    "vegetarian-menu",
     "vegetarian"
   ],
   "chef": "Agostino Iacobucci",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "rankings": [
     {
       "list": "oad-europe",
@@ -34,5 +35,6 @@
       "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
     }
   ],
-  "rankingsChecked": "2026-10-24"
+  "rankingsChecked": "2026-10-24",
+  "dietsManual": true
 }

@@ -23,12 +23,8 @@
   "lng": 4.133207,
   "placeId": "ChIJ02pfifTztBIR0j5HH-jpqzg",
   "michelinId": "402223",
-  "diets": [
-    "vegetarian",
-    "gluten-free"
-  ],
-  "chef": "Guido Alfredo Niño Torres",
-  "chefSource": "michelin",
+  "chef": "Guido Niño Torres",
+  "chefSource": "site",
   "rankings": [
     {
       "list": "oad-europe",

@@ -22,11 +22,11 @@
   "placeId": "ChIJr6nSkYLtdEcR1xQnMCu6NYo",
   "michelinId": "426123",
   "diets": [
-    "vegetarian",
-    "vegan"
+    "vegetarian"
   ],
   "chef": "Michael Simon Reis",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 129 €)",
-  "lunchNoteDe": "Mittagsmenü"
+  "lunchNoteDe": "Mittagsmenü",
+  "dietsManual": true
 }

@@ -23,11 +23,8 @@
   "lng": -74.010584,
   "placeId": "ChIJJy7oGqZZwokReiM-H1qtHYs",
   "michelinId": "1218089",
-  "diets": [
-    "gluten-free"
-  ],
   "chef": "Buddha Lo",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "photo": "huso.jpg",
   "photoAlt": "The arched windows of Huso with its name at 323 Greenwich Street, New York",
   "photoCredit": "Transpoman",

@@ -23,10 +23,6 @@
   "lng": 9.49741,
   "placeId": "ChIJXzJsE0RkhEcRFDstf89oWwo",
   "michelinId": "157754",
-  "diets": [
-    "vegetarian",
-    "gluten-free"
-  ],
   "chef": "Roberto Tonola",
-  "chefSource": "michelin"
+  "chefSource": "site"
 }

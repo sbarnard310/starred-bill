@@ -23,10 +23,10 @@
   "placeId": "ChIJW5sW3BMHFBMRneAf_1UaToI",
   "michelinId": "491395",
   "diets": [
-    "vegetarian"
+    "vegetarian-menu"
   ],
   "chef": "Giuseppe Raciti",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "stay": {
     "kind": "hotel",
     "name": "Zash Country Boutique Hotel",
@@ -34,5 +34,6 @@
     "url": "https://www.zash.it/en/rooms-suite",
     "note": "Sixteen rooms and suites in a restored palmento at the foot of Etna, with a spa.",
     "checked": "2026-10-23"
-  }
+  },
+  "dietsManual": true
 }

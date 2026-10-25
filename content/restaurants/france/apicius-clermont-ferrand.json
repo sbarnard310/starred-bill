@@ -21,11 +21,6 @@
   "lng": 3.0827699,
   "placeId": "ChIJ-4Xwz-Yb90cRf5nWw_vWHbg",
   "michelinId": "205570",
-  "diets": [
-    "vegetarian",
-    "vegan",
-    "gluten-free"
-  ],
   "chef": "Arkadiusz Zuchmanski",
-  "chefSource": "michelin"
+  "chefSource": "site"
 }

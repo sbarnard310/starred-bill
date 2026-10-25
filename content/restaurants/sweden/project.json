@@ -15,11 +15,8 @@
   "lng": 11.9825147,
   "placeId": "ChIJyQ4a73bzT0YRTeSmWq6ijeA",
   "michelinId": "523342",
-  "diets": [
-    "vegetarian"
-  ],
   "chef": "Cameron Irving",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNoteSv": "Avsmakningsmeny (andra menyer från 1 095 kr)",
   "noLunch": true,
   "lunchNote": "Dinner only",

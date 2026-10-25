@@ -15,11 +15,12 @@
   "placeId": "ChIJVWJPJUHhxUcR4eHuJtj8zMc",
   "michelinId": "1186539",
   "diets": [
+    "vegetarian-menu",
     "vegetarian",
     "vegan"
   ],
   "chef": "Joris Bijdendijk",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNoteNl": "Proeverijmenu",
   "lunchNote": "Open for lunch · Fri–Sat",
   "lunchNoteNl": "Open voor lunch · vr–za",
@@ -41,5 +42,6 @@
       "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
     }
   ],
-  "rankingsChecked": "2026-10-24"
+  "rankingsChecked": "2026-10-24",
+  "dietsManual": true
 }

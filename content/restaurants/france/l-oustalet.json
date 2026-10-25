@@ -24,14 +24,8 @@
   "lng": 5.0044798,
   "placeId": "ChIJG3YJRkSGtRIRpCfozaW-d_o",
   "michelinId": "51028",
-  "diets": [
-    "vegetarian-menu",
-    "vegetarian",
-    "vegan",
-    "gluten-free"
-  ],
   "chef": "Thomas Boirel",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "stay": {
     "kind": "rooms",
     "name": "Les chambres de L’Oustalet",

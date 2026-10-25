@@ -22,11 +22,9 @@
   "placeId": "ChIJBZGWxU1VKhMRDdBZosnDJ9E",
   "michelinId": "1201542",
   "diets": [
-    "vegetarian",
-    "vegan",
-    "gluten-free",
-    "kosher"
+    "vegetarian"
   ],
   "chef": "Vito Mollica",
-  "chefSource": "michelin"
+  "chefSource": "site",
+  "dietsManual": true
 }

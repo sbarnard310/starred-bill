@@ -25,8 +25,7 @@
   "placeId": "ChIJ15aB1t3ZDkgRkhxM_hKhTD0",
   "michelinId": "7335",
   "diets": [
-    "vegetarian",
-    "vegan"
+    "vegetarian"
   ],
   "chef": "Sylvain Guillemot",
   "chefSource": "site",
@@ -39,5 +38,6 @@
   "photoSourceType": "commons",
   "photoWidth": 1000,
   "photoHeight": 750,
-  "photoChecked": "2026-10-13"
+  "photoChecked": "2026-10-13",
+  "dietsManual": true
 }

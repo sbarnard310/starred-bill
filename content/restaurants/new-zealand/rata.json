@@ -22,8 +22,11 @@
   "placeId": "ChIJE9eUIk0d1akR9YDM21CnGMo",
   "michelinId": "1241042",
   "diets": [
-    "vegan"
+    "vegetarian",
+    "vegan",
+    "gluten-free"
   ],
   "chef": "Dan Matto",
-  "chefSource": "press"
+  "chefSource": "press",
+  "dietsManual": true
 }

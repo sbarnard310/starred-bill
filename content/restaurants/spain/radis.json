@@ -20,11 +20,8 @@
   "lng": -3.7863389,
   "placeId": "ChIJ52xcUq_XbQ0RSxdk_rxjpSU",
   "michelinId": "1203547",
-  "diets": [
-    "gluten-free"
-  ],
-  "chef": "Juanjo Mesa",
-  "chefSource": "michelin",
+  "chef": "Juanjo Mesa León",
+  "chefSource": "site",
   "dinnerNote": "Tasting menu, 15 courses",
   "dinnerNoteEs": "Menú degustación, 15 pases"
 }

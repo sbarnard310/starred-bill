@@ -23,9 +23,6 @@
   "lng": 6.859452,
   "placeId": "ChIJL-Bz3sA8kkcRERrqMzoA6a4",
   "michelinId": "968",
-  "diets": [
-    "vegetarian"
-  ],
   "chef": "Philippe Zeiger",
-  "chefSource": "michelin"
+  "chefSource": "site"
 }

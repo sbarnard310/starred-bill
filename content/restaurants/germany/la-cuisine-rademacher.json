@@ -15,12 +15,14 @@
   "placeId": "ChIJYzk4Cv0pv0cR74e35cayQzU",
   "michelinId": "1160085",
   "diets": [
+    "vegetarian-menu",
     "vegetarian",
     "vegan"
   ],
   "chef": "Marlon Rademacher",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 85 €)",
   "lunchNote": "Open for lunch · Wed–Fri",
-  "lunchNoteDe": "Mittags geöffnet · Mi–Fr"
+  "lunchNoteDe": "Mittags geöffnet · Mi–Fr",
+  "dietsManual": true
 }

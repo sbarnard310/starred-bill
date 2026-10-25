@@ -19,11 +19,6 @@
   "lng": 12.6948157,
   "placeId": "ChIJU18heoroeUcRZv-ldVd3FXI",
   "michelinId": "151908",
-  "diets": [
-    "vegetarian",
-    "vegan",
-    "gluten-free"
-  ],
   "chef": "Fabrizia Meroi",
-  "chefSource": "michelin"
+  "chefSource": "site"
 }

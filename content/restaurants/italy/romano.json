@@ -24,11 +24,10 @@
   "placeId": "ChIJzQEonPKh1RIRK-92qGp80qA",
   "michelinId": "157362",
   "diets": [
-    "vegetarian",
-    "gluten-free"
+    "vegetarian"
   ],
   "chef": "Nicola Gronchi",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "rankings": [
     {
       "list": "la-liste",
@@ -37,5 +36,6 @@
       "url": "https://www.laliste.com/places/romano-viareggio-it"
     }
   ],
-  "rankingsChecked": "2026-10-24"
+  "rankingsChecked": "2026-10-24",
+  "dietsManual": true
 }

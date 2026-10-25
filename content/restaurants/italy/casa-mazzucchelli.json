@@ -23,8 +23,10 @@
   "placeId": "ChIJWZ4VZmHVKhMRN__a2NL0eyc",
   "michelinId": "152043",
   "diets": [
+    "vegetarian-menu",
     "vegetarian"
   ],
   "chef": "Aurora Mazzucchelli",
-  "chefSource": "site"
+  "chefSource": "site",
+  "dietsManual": true
 }

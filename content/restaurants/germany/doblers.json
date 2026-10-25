@@ -22,9 +22,10 @@
     "vegetarian"
   ],
   "chef": "Eric Schumacher",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNoteDe": "Viergängiges Abendmenü zur Jahreszeit, bis 20 Uhr (5 Gänge 158 €)",
   "lunchNoteDe": "Mittagsmenü",
   "dinner": 138,
-  "source": "https://doblers-restaurant.de/wp-content/uploads/2026/06/A-Menue-zur-Jahreszeit-Abend-24.pdf"
+  "source": "https://doblers-restaurant.de/wp-content/uploads/2026/06/A-Menue-zur-Jahreszeit-Abend-24.pdf",
+  "dietsManual": true
 }

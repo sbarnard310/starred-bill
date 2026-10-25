@@ -17,7 +17,6 @@
   "placeId": "ChIJ3Yte_hLGoUcRLEW2pHLQR9s",
   "michelinId": "399689",
   "diets": [
-    "vegetarian-menu",
     "vegetarian"
   ],
   "chef": "Michael Laus",
@@ -29,5 +28,6 @@
   "lunchNoteDe": "Gleiches Menü am Mittag · Fr–So",
   "lunchWine": 130,
   "lunchSourceType": "site",
-  "lunchSource": "https://www.restaurant-soulfood.com/"
+  "lunchSource": "https://www.restaurant-soulfood.com/",
+  "dietsManual": true
 }

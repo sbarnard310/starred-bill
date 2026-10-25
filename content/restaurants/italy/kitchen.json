@@ -26,9 +26,7 @@
   "diets": [
     "vegetarian-menu",
     "vegetarian",
-    "vegan",
-    "gluten-free",
-    "halal"
+    "vegan"
   ],
   "chef": "Andrea Casali",
   "chefSource": "site",
@@ -46,5 +44,6 @@
       "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
     }
   ],
-  "rankingsChecked": "2026-10-24"
+  "rankingsChecked": "2026-10-24",
+  "dietsManual": true
 }

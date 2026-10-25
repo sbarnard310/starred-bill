@@ -18,11 +18,10 @@
   "placeId": "ChIJz5pdBBk1xEcRWiG_v3hSEUY",
   "michelinId": "550138",
   "diets": [
-    "vegetarian",
-    "vegan"
+    "vegetarian"
   ],
   "chef": "Wim Severein",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNoteNl": "Chef's menu, 5 gangen (6 gangen €105, 8 gangen €125)",
   "lunchNoteNl": "Lunchmenu, 3 gangen (4 gangen €75)",
   "dinner": 95,
@@ -32,5 +31,6 @@
     "name": "Rotterdam Marriott Hotel",
     "url": "https://restaurantthemillen.nl/",
     "checked": "2026-10-23"
-  }
+  },
+  "dietsManual": true
 }

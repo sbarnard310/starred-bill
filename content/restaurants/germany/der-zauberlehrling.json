@@ -16,10 +16,11 @@
   "placeId": "ChIJsycMBLXEmUcRk3baJ3n-vw0",
   "michelinId": "84426",
   "diets": [
+    "vegetarian-menu",
     "vegetarian"
   ],
   "chef": "Fabian Heldmann",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 175 €)",
   "lunch": 182,
   "lunchType": "menu",
@@ -27,5 +28,6 @@
   "lunchNoteDe": "Gleiches Menü am Mittag · Mo–Sa",
   "lunchWine": 189,
   "lunchSourceType": "site",
-  "lunchSource": "https://www.zauberlehrling.de/Restaurant/Restaurant/Themenabend_Samstag/"
+  "lunchSource": "https://www.zauberlehrling.de/Restaurant/Restaurant/Themenabend_Samstag/",
+  "dietsManual": true
 }

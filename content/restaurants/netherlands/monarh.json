@@ -15,9 +15,7 @@
   "placeId": "ChIJdyP2Kj--xkcR05ZXmD9foGA",
   "michelinId": "467779",
   "diets": [
-    "vegetarian-menu",
-    "vegetarian",
-    "gluten-free"
+    "vegetarian"
   ],
   "lunch": 69,
   "lunchType": "menu",
@@ -38,5 +36,6 @@
   "photoSourceType": "commons",
   "photoWidth": 1000,
   "photoHeight": 665,
-  "photoChecked": "2026-10-13"
+  "photoChecked": "2026-10-13",
+  "dietsManual": true
 }

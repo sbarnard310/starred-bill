@@ -23,9 +23,10 @@
   "placeId": "ChIJ6cjilqj3Xw0RoOAV0cto5v8",
   "michelinId": "224157",
   "diets": [
-    "vegetarian",
-    "gluten-free"
+    "vegetarian-menu",
+    "vegetarian"
   ],
   "chef": "Miguel Barrera",
-  "chefSource": "michelin"
+  "chefSource": "site",
+  "dietsManual": true
 }

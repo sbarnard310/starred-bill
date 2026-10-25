@@ -19,7 +19,7 @@
     "vegetarian"
   ],
   "chef": "Axel Colonna-Cesari",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "lunch": 62,
   "lunchType": "menu",
   "lunchWine": 22,
@@ -30,5 +30,6 @@
   "dinnerNoteFr": "Menu Proeven, 4 services, sauf vendredi et samedi soir (5 services 115 €, 6 services 134 €)",
   "lunchNote": "Ontdekken market menu, 3 courses, lunch only",
   "lunchNoteNl": "Marktmenu Ontdekken, 3 gangen, enkel 's middags",
-  "lunchNoteFr": "Menu du marché Ontdekken, 3 services, uniquement le midi"
+  "lunchNoteFr": "Menu du marché Ontdekken, 3 services, uniquement le midi",
+  "dietsManual": true
 }

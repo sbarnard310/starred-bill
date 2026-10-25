@@ -21,8 +21,9 @@
     "vegan"
   ],
   "chef": "Michael Quendler",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 64 €)",
   "lunchNote": "Open for lunch · Sundays",
-  "lunchNoteDe": "Mittags geöffnet · Sonntag"
+  "lunchNoteDe": "Mittags geöffnet · Sonntag",
+  "dietsManual": true
 }

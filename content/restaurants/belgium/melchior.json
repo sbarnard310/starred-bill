@@ -17,8 +17,8 @@
   "placeId": "ChIJewjNTWhswUcRKOUYMQ5kRAo",
   "michelinId": "526280",
   "diets": [
-    "vegetarian",
-    "gluten-free"
+    "vegetarian-menu",
+    "vegetarian"
   ],
   "chef": "Gilles Melchior",
   "chefSource": "site",
@@ -31,5 +31,6 @@
   "lunchNoteFr": "Menu lunch, 3 services (4 services 88 €) · mar.–ven.",
   "lunchWine": 24,
   "lunchSourceType": "site",
-  "lunchSource": "https://www.melchi-or.be/nl/menu"
+  "lunchSource": "https://www.melchi-or.be/nl/menu",
+  "dietsManual": true
 }

@@ -20,12 +20,9 @@
   "placeId": "ChIJV-YmSQCZToYRFXUxw3gwL-A",
   "michelinId": "1243341",
   "diets": [
-    "vegetarian",
-    "vegan",
-    "gluten-free",
-    "halal",
-    "kosher"
+    "vegetarian"
   ],
   "chef": "Christophe De Lellis",
-  "chefSource": "michelin"
+  "chefSource": "site",
+  "dietsManual": true
 }

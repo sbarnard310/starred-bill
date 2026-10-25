@@ -23,13 +23,8 @@
   "lng": 7.2972837,
   "placeId": "ChIJbf5f7KlgkUcROD27CKVK8gE",
   "michelinId": "7380",
-  "diets": [
-    "vegetarian-menu",
-    "vegetarian",
-    "vegan"
-  ],
   "chef": "Jean-Luc Brendel",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "stay": {
     "kind": "hotel",
     "name": "Maison J.L. Brendel (B. Suites, B. Cottage, B. Vintage)",

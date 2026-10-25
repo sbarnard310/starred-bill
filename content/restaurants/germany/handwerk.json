@@ -15,11 +15,8 @@
   "lng": 9.763843,
   "placeId": "ChIJQb0zyDsLsEcRGQgrYcNdy74",
   "michelinId": "552200",
-  "diets": [
-    "vegetarian"
-  ],
   "chef": "Thomas Wohlfeld",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 139 €)",
   "noLunch": true,
   "lunchNote": "Dinner only",

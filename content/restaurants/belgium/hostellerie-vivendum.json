@@ -17,11 +17,11 @@
   "placeId": "ChIJc79Bg4zFwEcRHeAJ8z5xAQY",
   "michelinId": "209598",
   "diets": [
-    "vegetarian",
-    "halal"
+    "vegetarian-menu",
+    "vegetarian"
   ],
   "chef": "Alex Clevers",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 80)",
   "dinnerNoteFr": "Menu dégustation (autres menus dès 80 €)",
   "lunch": 400,
@@ -41,5 +41,6 @@
   "photoSourceType": "commons",
   "photoWidth": 1000,
   "photoHeight": 667,
-  "photoChecked": "2026-10-13"
+  "photoChecked": "2026-10-13",
+  "dietsManual": true
 }

@@ -25,10 +25,6 @@
   "lng": -68.9176047,
   "placeId": "ChIJkZaj1GrZfZYR2rbrX1KIEg8",
   "michelinId": "1209742",
-  "diets": [
-    "vegetarian",
-    "vegan"
-  ],
-  "chef": "Josefina Diana/Juan Manuel Feijoo",
-  "chefSource": "michelin"
+  "chef": "Josefina Diana and Juan Manuel Feijoo",
+  "chefSource": "press"
 }

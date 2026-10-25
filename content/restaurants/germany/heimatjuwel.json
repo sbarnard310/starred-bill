@@ -15,11 +15,8 @@
   "lng": 9.9476808,
   "placeId": "ChIJpQWjEP-FsUcRh2m6rzxrJiE",
   "michelinId": "502073",
-  "diets": [
-    "vegetarian"
-  ],
   "chef": "Marcel Görke",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 87 €)",
   "noLunch": true,
   "lunchNote": "Dinner only",

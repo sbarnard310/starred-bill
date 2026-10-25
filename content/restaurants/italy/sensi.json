@@ -27,9 +27,9 @@
   "diets": [
     "vegetarian-menu",
     "vegetarian",
-    "vegan",
-    "gluten-free"
+    "vegan"
   ],
   "chef": "Alessandro Tormolino",
-  "chefSource": "site"
+  "chefSource": "site",
+  "dietsManual": true
 }

@@ -21,14 +21,13 @@
   "placeId": "ChIJdx8_Ow-BLhMR7ThcMbQMvkQ",
   "michelinId": "1199912",
   "diets": [
-    "vegetarian",
-    "vegan",
-    "gluten-free"
+    "vegetarian"
   ],
   "chef": "Giulio Gigli",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "wine": 35,
   "lunchWine": 35,
   "dinnerNote": "Tasting menu, 8 courses (Orto e Conserve or Relazioni)",
-  "dinnerNoteIt": "Menu degustazione, 8 portate (Orto e Conserve o Relazioni)"
+  "dinnerNoteIt": "Menu degustazione, 8 portate (Orto e Conserve o Relazioni)",
+  "dietsManual": true
 }

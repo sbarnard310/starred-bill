@@ -16,10 +16,11 @@
   "placeId": "ChIJAdvaajcUkUcR4CEWYIuSxb8",
   "michelinId": "78491",
   "diets": [
+    "vegetarian-menu",
     "vegetarian"
   ],
-  "chef": "Christian Baur and Konstantin Keller",
-  "chefSource": "michelin",
+  "chef": "Konstantin Keller",
+  "chefSource": "site",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 158 €)",
   "lunchNote": "Open for lunch · Sundays",
   "lunchNoteDe": "Mittags geöffnet · Sonntag",
@@ -32,5 +33,6 @@
   "photoSourceType": "commons",
   "photoWidth": 1000,
   "photoHeight": 750,
-  "photoChecked": "2026-10-13"
+  "photoChecked": "2026-10-13",
+  "dietsManual": true
 }

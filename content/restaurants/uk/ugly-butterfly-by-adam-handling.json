@@ -25,12 +25,10 @@
   "placeId": "ChIJn_Zm_ZjdakgRZlegtSF8Q_s",
   "michelinId": "1241870",
   "diets": [
-    "vegetarian-menu",
-    "vegetarian",
-    "vegan"
+    "vegetarian"
   ],
   "chef": "Adam Handling",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "stay": {
     "kind": "hotel",
     "name": "The Headland",
@@ -46,5 +44,6 @@
       }
     ],
     "checked": "2026-10-23"
-  }
+  },
+  "dietsManual": true
 }

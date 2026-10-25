@@ -19,7 +19,7 @@
     "vegetarian"
   ],
   "chef": "Alexander Huber",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "lunch": 159,
   "lunchType": "menu",
   "lunchNote": "Same menu at lunch · Fri–Sat",
@@ -29,5 +29,6 @@
   "wine": 80,
   "lunchWine": 80,
   "dinnerNote": "Genussvoll menu, 5 courses (7 courses €195)",
-  "dinnerNoteDe": "Menü Genussvoll, 5 Gänge (7 Gänge 195 €)"
+  "dinnerNoteDe": "Menü Genussvoll, 5 Gänge (7 Gänge 195 €)",
+  "dietsManual": true
 }

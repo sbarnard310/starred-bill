@@ -15,11 +15,8 @@
   "lng": 7.6704922,
   "placeId": "ChIJRw5_RhkBlkcRq8f3iwOm-yI",
   "michelinId": "417650",
-  "diets": [
-    "vegetarian"
-  ],
   "chef": "Markus Pape",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 90 €)",
   "lunchNote": "Open for lunch · Wed–Sun",
   "lunchNoteDe": "Mittags geöffnet · Mi–So"

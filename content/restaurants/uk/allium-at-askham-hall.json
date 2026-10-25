@@ -20,8 +20,7 @@
   "michelinId": "437882",
   "diets": [
     "vegetarian-menu",
-    "vegetarian",
-    "vegan"
+    "vegetarian"
   ],
   "chef": "Richard Swale",
   "chefSource": "site",
@@ -51,5 +50,6 @@
       "url": "https://www.laliste.com/places/allium-askham-hall-penrith-gb"
     }
   ],
-  "rankingsChecked": "2026-10-24"
+  "rankingsChecked": "2026-10-24",
+  "dietsManual": true
 }

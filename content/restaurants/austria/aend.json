@@ -21,11 +21,8 @@
   "lng": 16.3411265,
   "placeId": "ChIJyzxtjCGobUcRrzm4UjNaO7w",
   "michelinId": "550678",
-  "diets": [
-    "vegetarian"
-  ],
   "chef": "Fabian Günzel",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 210 €)",
   "lunchNoteDe": "Mittagsmenü",
   "rankings": [

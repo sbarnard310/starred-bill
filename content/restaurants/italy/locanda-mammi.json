@@ -15,13 +15,8 @@
   "lng": 14.3839118,
   "placeId": "ChIJE-Ycki2PMBMRWomWOcINGs4",
   "michelinId": "538056",
-  "diets": [
-    "vegetarian",
-    "vegan",
-    "gluten-free"
-  ],
   "chef": "Stefania Di Pasquo",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "lunch": 60,
   "lunchType": "menu",
   "lunchNote": "Same menu at lunch · Wed–Sun",

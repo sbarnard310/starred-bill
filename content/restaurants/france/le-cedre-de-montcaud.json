@@ -21,11 +21,8 @@
   "lng": 4.5709434,
   "placeId": "ChIJvztTryha-EcRTp0Q7Rglqdk",
   "michelinId": "701",
-  "diets": [
-    "vegetarian"
-  ],
   "chef": "Matthieu Hervé",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "stay": {
     "kind": "hotel",
     "name": "Château de Montcaud",

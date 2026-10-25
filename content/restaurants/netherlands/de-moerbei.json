@@ -20,7 +20,7 @@
     "vegetarian"
   ],
   "chef": "Michael Corpel",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 65)",
   "lunch": 79,
   "lunchType": "menu",
@@ -37,5 +37,6 @@
   "photoSourceType": "commons",
   "photoWidth": 1000,
   "photoHeight": 740,
-  "photoChecked": "2026-10-13"
+  "photoChecked": "2026-10-13",
+  "dietsManual": true
 }

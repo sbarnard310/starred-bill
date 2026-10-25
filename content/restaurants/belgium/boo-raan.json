@@ -19,11 +19,12 @@
     "vegetarian"
   ],
   "chef": "Dokkoon Kapueak",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 70)",
   "dinnerNoteFr": "Menu dégustation (autres menus dès 70 €)",
   "noLunch": true,
   "lunchNote": "Dinner only",
   "lunchNoteNl": "Alleen diner",
-  "lunchNoteFr": "Uniquement le soir"
+  "lunchNoteFr": "Uniquement le soir",
+  "dietsManual": true
 }

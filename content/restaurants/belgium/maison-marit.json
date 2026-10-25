@@ -16,11 +16,8 @@
   "lng": 4.3797168,
   "placeId": "ChIJ-XAh8grSw0cRfPqNNCqsUr4",
   "michelinId": "209267",
-  "diets": [
-    "vegetarian-menu"
-  ],
   "chef": "Dimitri Marit",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 55)",
   "dinnerNoteFr": "Menu dégustation (autres menus dès 55 €)",
   "lunch": 130,

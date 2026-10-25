@@ -13,16 +13,17 @@
   "source": "https://www.gamberorosso.it/luoghi/locali/ristorante/antica-osteria-nonna-rosa/",
   "lunchNote": "Open for lunch · Sat–Sun",
   "lunchNoteIt": "Aperto a pranzo · sab–dom",
-  "website": "https://www.peppeguida.com/",
+  "website": "https://osteria.peppeguida.com/",
   "lat": 40.66156,
   "lng": 14.43397,
   "placeId": "ChIJtTEEBViYOxMRlw8y_ouNH10",
   "michelinId": "157536",
   "diets": [
+    "vegetarian-menu",
     "vegetarian",
-    "vegan",
-    "gluten-free"
+    "vegan"
   ],
-  "chef": "Giuseppe Guida",
-  "chefSource": "michelin"
+  "chef": "Peppe Guida",
+  "chefSource": "site",
+  "dietsManual": true
 }

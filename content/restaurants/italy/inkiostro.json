@@ -23,9 +23,6 @@
   "lng": 10.3368267,
   "placeId": "ChIJd-HC6SBAgEcRdRlHl8OD144",
   "michelinId": "350982",
-  "diets": [
-    "gluten-free"
-  ],
   "chef": "Salvatore Morello",
-  "chefSource": "michelin"
+  "chefSource": "site"
 }

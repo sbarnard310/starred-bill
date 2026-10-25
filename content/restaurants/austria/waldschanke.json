@@ -20,8 +20,8 @@
     "vegetarian-menu",
     "vegetarian"
   ],
-  "chef": "Clemens Grabmer",
-  "chefSource": "michelin",
+  "chef": "Elisabeth and Clemens Grabmer",
+  "chefSource": "site",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 110 €)",
   "lunch": 120,
   "lunchType": "menu",
@@ -29,5 +29,6 @@
   "lunchWine": 78,
   "lunchNoteDe": "Gleiches Menü am Mittag · Di–Sa",
   "lunchSourceType": "site",
-  "lunchSource": "https://www.waldschaenke.at/uploads/AkYLWWOn/Abendkarte_August2026.pdf"
+  "lunchSource": "https://www.waldschaenke.at/uploads/AkYLWWOn/Abendkarte_August2026.pdf",
+  "dietsManual": true
 }

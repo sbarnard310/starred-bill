@@ -27,9 +27,9 @@
   "diets": [
     "vegetarian",
     "vegan",
-    "halal",
-    "kosher"
+    "gluten-free"
   ],
   "chef": "Adam Harrison",
-  "chefSource": "site"
+  "chefSource": "site",
+  "dietsManual": true
 }

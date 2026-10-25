@@ -23,11 +23,8 @@
   "lng": 2.4857285,
   "placeId": "ChIJ09iSFnXl3EcRhH14YKXFdn0",
   "michelinId": "178397",
-  "diets": [
-    "vegetarian"
-  ],
   "chef": "Eugène Hobraiche",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "stay": {
     "kind": "rooms",
     "name": "La Maison de Marie",

@@ -19,8 +19,8 @@
     "vegetarian-menu",
     "vegetarian"
   ],
-  "chef": "Philippe Giar",
-  "chefSource": "michelin",
+  "chef": "Philippe Giar and René Postel",
+  "chefSource": "site",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 53 €)",
   "lunch": 289,
   "lunchType": "menu",
@@ -28,5 +28,6 @@
   "lunchNoteDe": "Gleiches Menü am Mittag · Mo–Fr",
   "lunchWine": 65,
   "lunchSourceType": "site",
-  "lunchSource": "https://restaurant-villa-merton.de/"
+  "lunchSource": "https://restaurant-villa-merton.de/",
+  "dietsManual": true
 }

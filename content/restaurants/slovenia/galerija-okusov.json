@@ -24,11 +24,8 @@
   "lng": 15.1784594,
   "placeId": "ChIJG0-fHLdvZUcRFo_NxHMZoq8",
   "michelinId": "1164925",
-  "diets": [
-    "vegetarian"
-  ],
   "chef": "Marko Magajne",
-  "chefSource": "michelin",
+  "chefSource": "press",
   "dinnerNoteSl": "Degustacijski meni (drugi meniji od 69 €)",
   "lunchNoteSl": "Meni za kosilo"
 }

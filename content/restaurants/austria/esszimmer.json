@@ -21,10 +21,12 @@
   "placeId": "ChIJtabfwHGQdkcR0hwnIZ_OY6g",
   "michelinId": "105701",
   "diets": [
+    "vegetarian-menu",
     "vegetarian"
   ],
   "chef": "Andreas Kaiblinger",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 165 €)",
-  "lunchNoteDe": "Mittagsmenü"
+  "lunchNoteDe": "Mittagsmenü",
+  "dietsManual": true
 }

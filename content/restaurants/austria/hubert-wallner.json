@@ -16,11 +16,11 @@
   "placeId": "ChIJ10NXPqV5cEcRU-yZwMNkleA",
   "michelinId": "1212806",
   "diets": [
-    "vegetarian",
-    "vegan"
+    "vegetarian-menu",
+    "vegetarian"
   ],
   "chef": "Hubert Wallner",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 230 €)",
   "lunch": 270,
   "lunchType": "menu",
@@ -36,5 +36,6 @@
       "url": "https://www.laliste.com/places/hubert-wallner-dellach-at"
     }
   ],
-  "rankingsChecked": "2026-10-24"
+  "rankingsChecked": "2026-10-24",
+  "dietsManual": true
 }

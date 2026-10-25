@@ -25,8 +25,8 @@
   "placeId": "ChIJf1zYBOYbdkgRpisa6lDN5es",
   "michelinId": "1216638",
   "diets": [
-    "vegetarian",
-    "vegan"
+    "vegetarian-menu",
+    "vegetarian"
   ],
   "chef": "John Chantarasak",
   "chefSource": "press",
@@ -38,5 +38,6 @@
       "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
     }
   ],
-  "rankingsChecked": "2026-10-24"
+  "rankingsChecked": "2026-10-24",
+  "dietsManual": true
 }

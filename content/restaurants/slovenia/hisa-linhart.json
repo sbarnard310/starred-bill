@@ -16,11 +16,13 @@
   "placeId": "ChIJHZPEkRKWekcRoGpnkGIQKyI",
   "michelinId": "1199431",
   "diets": [
+    "vegetarian-menu",
     "vegetarian",
-    "vegan"
+    "vegan",
+    "gluten-free"
   ],
   "chef": "Uroš Štefelin",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "lunch": 36,
   "lunchType": "menu",
   "lunchSourceType": "site",
@@ -28,5 +30,6 @@
   "dinnerNote": "Chef's tasting menu, 5 courses (7 courses €140, 9 courses €160)",
   "dinnerNoteSl": "Chefov degustacijski meni, 5 hodov (7 hodov 140 €, 9 hodov 160 €)",
   "lunchNote": "Lunch menu, 3 courses: soup, main, dessert · Tue–Fri",
-  "lunchNoteSl": "Kosilo, 3 hodi: juha, glavna jed, sladica · tor.–pet."
+  "lunchNoteSl": "Kosilo, 3 hodi: juha, glavna jed, sladica · tor.–pet.",
+  "dietsManual": true
 }

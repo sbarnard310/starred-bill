@@ -24,11 +24,8 @@
   "lng": -3.0782748,
   "placeId": "ChIJj9yyk3FtEEgRZ55BkT8gkCE",
   "michelinId": "376833",
-  "diets": [
-    "vegetarian"
-  ],
-  "chef": "Stéphane Cosnier",
-  "chefSource": "michelin",
+  "chef": "Stéphane and Laëtitia Cosnier",
+  "chefSource": "site",
   "stay": {
     "kind": "hotel",
     "name": "Hôtel Lann Roz",

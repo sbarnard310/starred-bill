@@ -23,5 +23,6 @@
     "vegetarian"
   ],
   "chef": "René Fieger",
-  "chefSource": "michelin"
+  "chefSource": "site",
+  "dietsManual": true
 }

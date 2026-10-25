@@ -20,12 +20,8 @@
   "lng": 12.483659,
   "placeId": "ChIJW6tyLVVgLxMRULTMKJiciGU",
   "michelinId": "163546",
-  "diets": [
-    "vegetarian",
-    "gluten-free"
-  ],
   "chef": "Andrea Antonini",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "stay": {
     "kind": "hotel",
     "name": "Hotel Hassler Roma",

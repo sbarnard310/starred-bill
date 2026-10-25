@@ -20,13 +20,14 @@
   "placeId": "ChIJUzk2Jo2UC0cRfXNiQEekSYk",
   "michelinId": "1208342",
   "diets": [
-    "vegetarian",
-    "gluten-free"
+    "vegetarian-menu",
+    "vegetarian"
   ],
   "dinnerNoteCs": "Degustační menu (další menu od CZK 4,200)",
   "noLunch": true,
   "lunchNote": "Dinner only",
   "lunchNoteCs": "Pouze večeře",
   "chef": "Christian Chu",
-  "chefSource": "press"
+  "chefSource": "press",
+  "dietsManual": true
 }

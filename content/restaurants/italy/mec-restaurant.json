@@ -25,5 +25,6 @@
     "vegetarian"
   ],
   "chef": "Carmelo Trentacosti",
-  "chefSource": "michelin"
+  "chefSource": "site",
+  "dietsManual": true
 }

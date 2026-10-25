@@ -25,12 +25,8 @@
   "lng": 5.52001,
   "placeId": "ChIJuXS6RrqQikcRSiJnM_nFNug",
   "michelinId": "1208982",
-  "diets": [
-    "vegetarian",
-    "gluten-free"
-  ],
   "chef": "Ludovic Nardozza",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "stay": {
     "kind": "hotel",
     "name": "Hôtel du Golf",

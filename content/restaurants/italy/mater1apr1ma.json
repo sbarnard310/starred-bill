@@ -26,12 +26,10 @@
   "placeId": "ChIJ9eG4TnwRJRMRqa1IbxVaTJk",
   "michelinId": "1154802",
   "diets": [
-    "vegetarian",
-    "vegan",
-    "gluten-free",
-    "halal",
-    "kosher"
+    "vegetarian-menu",
+    "vegetarian"
   ],
   "chef": "Fabio Verrelli D'Amico",
-  "chefSource": "site"
+  "chefSource": "site",
+  "dietsManual": true
 }

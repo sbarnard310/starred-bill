@@ -18,13 +18,8 @@
   "lng": 12.1565176,
   "placeId": "ChIJnfBx_UA0eEcRUgc0IMvOrk0",
   "michelinId": "1102814",
-  "diets": [
-    "vegetarian",
-    "vegan",
-    "gluten-free"
-  ],
   "chef": "Riccardo Gaspari",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "rankings": [
     {
       "list": "oad-europe",

@@ -23,8 +23,10 @@
   "placeId": "ChIJM6Mdw9YPZ0gRHO2fzbIjM-g",
   "michelinId": "1206270",
   "diets": [
+    "vegetarian-menu",
     "vegetarian"
   ],
   "chef": "James Moore",
-  "chefSource": "site"
+  "chefSource": "site",
+  "dietsManual": true
 }

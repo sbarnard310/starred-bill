@@ -14,11 +14,10 @@
   "placeId": "ChIJFSXo9yJljEcRJ9pU5VO6_AY",
   "michelinId": "114390",
   "diets": [
-    "vegetarian-menu",
     "vegetarian"
   ],
   "chef": "Danny Khezzar",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "lunch": 195,
   "lunchType": "menu",
   "lunchNote": "Same menu at lunch · Wed–Sat",
@@ -39,5 +38,6 @@
       "url": "https://www.laliste.com/places/bayview-geneve-ch"
     }
   ],
-  "rankingsChecked": "2026-10-24"
+  "rankingsChecked": "2026-10-24",
+  "dietsManual": true
 }

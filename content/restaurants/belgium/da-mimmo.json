@@ -17,11 +17,11 @@
   "placeId": "ChIJja1dpVfbw0cRkQQNN2ApMsc",
   "michelinId": "209466",
   "diets": [
-    "vegetarian",
-    "vegan"
+    "vegetarian-menu",
+    "vegetarian"
   ],
   "chef": "Louis Verstrepen",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 140)",
   "dinnerNoteFr": "Menu dégustation (autres menus dès 140 €)",
   "lunch": 155,
@@ -41,5 +41,6 @@
   "photoSourceType": "commons",
   "photoWidth": 750,
   "photoHeight": 1000,
-  "photoChecked": "2026-10-13"
+  "photoChecked": "2026-10-13",
+  "dietsManual": true
 }

@@ -18,12 +18,12 @@
   "michelinId": "212229",
   "diets": [
     "vegetarian-menu",
-    "vegetarian",
-    "gluten-free"
+    "vegetarian"
   ],
   "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 85)",
   "lunchNote": "Open for lunch · Wed–Fri, Sun",
   "lunchNoteNl": "Open voor lunch · wo–vr, zo",
   "chef": "Tom Lamers and Hans den Engelsen",
-  "chefSource": "press"
+  "chefSource": "press",
+  "dietsManual": true
 }

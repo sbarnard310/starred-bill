@@ -21,14 +21,11 @@
   "placeId": "ChIJrYEcdixDXz4Rb2ixZc7wp18",
   "michelinId": "1218011",
   "diets": [
-    "vegetarian",
-    "vegan",
-    "gluten-free",
-    "halal",
-    "kosher"
+    "vegetarian-menu",
+    "vegetarian"
   ],
   "chef": "Arslan Berdiev",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "changeNoteAr": "حصل على نجمته الأولى",
   "dinnerNoteAr": "قائمة التذوق Birch Grand (قوائم أخرى من AED 590)",
   "lunchNoteAr": "العشاء فقط · من الثلاثاء إلى الأحد",
@@ -40,5 +37,6 @@
     "via": "website",
     "source": "https://birchrestaurants.com/dubai",
     "checked": "2026-10-10"
-  }
+  },
+  "dietsManual": true
 }

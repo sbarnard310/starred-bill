@@ -15,12 +15,8 @@
   "lng": -9.13165,
   "placeId": "ChIJRRUDRjU1GQ0RMctgCBoUAao",
   "michelinId": "1184214",
-  "diets": [
-    "vegetarian",
-    "gluten-free"
-  ],
   "chef": "Philippe Gelfi",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNotePt": "Menu de degustação (outros menus desde 135 €)",
   "noLunch": true,
   "lunchNote": "Dinner only",

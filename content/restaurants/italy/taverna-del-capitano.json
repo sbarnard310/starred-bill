@@ -20,7 +20,7 @@
     "vegetarian"
   ],
   "chef": "Matteo Caputo",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNoteIt": "Menu degustazione",
   "lunch": 150,
   "lunchType": "menu",
@@ -35,5 +35,6 @@
     "url": "https://www.tavernadelcapitano.com/locanda",
     "note": "Has a small locanda of eleven rooms with terraces or balconies in Marina del Cantone (Nerano).",
     "checked": "2026-10-23"
-  }
+  },
+  "dietsManual": true
 }

@@ -24,10 +24,10 @@
   "placeId": "ChIJpf6Nhsoj90cRr4zmHUBk6dk",
   "michelinId": "1204016",
   "diets": [
-    "vegetarian",
-    "gluten-free",
-    "halal"
+    "vegetarian-menu",
+    "vegetarian"
   ],
   "chef": "Rémi Laroque",
-  "chefSource": "michelin"
+  "chefSource": "site",
+  "dietsManual": true
 }

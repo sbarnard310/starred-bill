@@ -20,12 +20,8 @@
   "lng": 8.8188114,
   "placeId": "ChIJ2xTSROK5mkcRyodnqdmWGcc",
   "michelinId": "178934",
-  "diets": [
-    "vegetarian",
-    "gluten-free"
-  ],
   "chef": "Domenico Miggiano",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab CHF 49)",
   "lunchNoteDe": "Mittagsmenü",
   "dinnerNoteFr": "Menu dégustation (autres menus dès CHF 49)",

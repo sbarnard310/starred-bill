@@ -23,11 +23,7 @@
   "placeId": "ChIJzSpDnt-NcUgREyNmjiEKMWI",
   "michelinId": "489200",
   "diets": [
-    "vegetarian-menu",
-    "vegetarian",
-    "vegan",
-    "gluten-free",
-    "halal"
+    "vegetarian"
   ],
   "chef": "George Livesey",
   "chefSource": "site",
@@ -38,5 +34,6 @@
     "via": "Tock",
     "source": "https://www.exploretock.com/bulrush/faq",
     "checked": "2026-10-10"
-  }
+  },
+  "dietsManual": true
 }

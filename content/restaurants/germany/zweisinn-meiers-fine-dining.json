@@ -20,7 +20,7 @@
     "vegetarian"
   ],
   "chef": "Stefan Meier",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNoteDe": "Degustationsmenü, 5 Gänge (4 Gänge 145 €; Mi–Do Business-Dinner 110 €)",
   "lunch": 165,
   "lunchType": "menu",
@@ -28,5 +28,6 @@
   "lunchWine": 80,
   "lunchNoteDe": "Gleiches Menü am Mittag · Di–Fr",
   "lunchSourceType": "site",
-  "lunchSource": "https://www.meierszweisinn.de/speisekarten-zweisinn/fine-dining-nuernberg/"
+  "lunchSource": "https://www.meierszweisinn.de/speisekarten-zweisinn/fine-dining-nuernberg/",
+  "dietsManual": true
 }

@@ -22,10 +22,12 @@
   "placeId": "ChIJB5b9InSHxkcRJ9Q3glPUDTk",
   "michelinId": "212865",
   "diets": [
-    "vegetarian"
+    "vegetarian",
+    "gluten-free"
   ],
   "chef": "Marco van der Wijngaard",
   "chefSource": "site",
   "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 50)",
-  "lunchNoteNl": "Lunchmenu"
+  "lunchNoteNl": "Lunchmenu",
+  "dietsManual": true
 }

@@ -22,5 +22,6 @@
     "gluten-free"
   ],
   "chef": "Diego Galicia and Rico Torres",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "dietsManual": true
 }

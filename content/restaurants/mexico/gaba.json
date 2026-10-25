@@ -28,12 +28,10 @@
   "placeId": "ChIJ1WZ53iX_0YURMkdgcdGY2kw",
   "michelinId": "1211150",
   "diets": [
-    "vegetarian",
-    "vegan",
-    "gluten-free"
+    "vegetarian"
   ],
   "chef": "Victor Toriz",
-  "chefSource": "michelin",
+  "chefSource": "press",
   "photo": "gaba.jpg",
   "photoAlt": "The entrance of Gaba in Condesa, Mexico City, with its name above the door",
   "photoCredit": "Tbhotch",
@@ -43,5 +41,6 @@
   "photoSourceType": "commons",
   "photoWidth": 750,
   "photoHeight": 1000,
-  "photoChecked": "2026-10-13"
+  "photoChecked": "2026-10-13",
+  "dietsManual": true
 }

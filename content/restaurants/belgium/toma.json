@@ -14,11 +14,8 @@
   "lng": 5.5660312,
   "placeId": "ChIJMTEeSH37wEcRe2JRaTfEdPg",
   "michelinId": "1194375",
-  "diets": [
-    "vegetarian"
-  ],
   "chef": "Thomas Troupin",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "lunch": 130,
   "lunchType": "menu",
   "lunchNote": "Same menu at lunch · Tue–Fri",

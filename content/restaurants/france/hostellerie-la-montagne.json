@@ -24,10 +24,11 @@
   "placeId": "ChIJ9c6_Adde7EcRhE8cqwsJdcU",
   "michelinId": "2342",
   "diets": [
+    "vegetarian-menu",
     "vegetarian"
   ],
   "chef": "Jean-Baptiste Natali",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "stay": {
     "kind": "hotel",
     "name": "Hostellerie la Montagne",
@@ -35,5 +36,6 @@
     "url": "https://www.hostellerielamontagne.com/nos-chambres/",
     "note": "An inn with eight rooms and one suite above the restaurant in Colombey-les-Deux-Églises.",
     "checked": "2026-10-23"
-  }
+  },
+  "dietsManual": true
 }

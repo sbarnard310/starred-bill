@@ -19,8 +19,8 @@
     "vegetarian-menu",
     "vegetarian"
   ],
-  "chef": "Jacob Jan Boerma",
-  "chefSource": "michelin",
+  "chef": "Tristan de Boer",
+  "chefSource": "site",
   "dinnerNoteNl": "Proeverijmenu",
   "lunchNote": "Open for lunch · Saturdays",
   "lunchNoteNl": "Open voor lunch · zaterdag",
@@ -29,5 +29,6 @@
     "name": "Anantara Grand Hotel Krasnapolsky Amsterdam",
     "url": "https://www.nh-hotels.nl/hotel/nh-collection-amsterdam-grand-hotel-krasnapolsky",
     "checked": "2026-10-23"
-  }
+  },
+  "dietsManual": true
 }

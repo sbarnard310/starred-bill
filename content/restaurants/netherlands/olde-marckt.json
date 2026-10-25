@@ -19,8 +19,9 @@
     "vegetarian"
   ],
   "chef": "Bram Stoverink",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 60)",
   "lunchNote": "Open for lunch · Thu–Sun",
-  "lunchNoteNl": "Open voor lunch · do–zo"
+  "lunchNoteNl": "Open voor lunch · do–zo",
+  "dietsManual": true
 }

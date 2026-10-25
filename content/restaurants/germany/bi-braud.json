@@ -17,10 +17,11 @@
   "placeId": "ChIJr5yPDIZmmUcRLKr_mJSiZFI",
   "michelinId": "1196406",
   "diets": [
+    "vegetarian-menu",
     "vegetarian"
   ],
   "chef": "Alina Meissner-Bebrout and Tim Ostertag",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 149 €)",
   "lunch": 159,
   "lunchType": "menu",
@@ -28,5 +29,6 @@
   "lunchNoteDe": "Gleiches Menü am Mittag · Samstag",
   "lunchWine": 89,
   "lunchSourceType": "site",
-  "lunchSource": "https://bebrout.com/assets/img/speisekarte/Menu.pdf"
+  "lunchSource": "https://bebrout.com/assets/img/speisekarte/Menu.pdf",
+  "dietsManual": true
 }

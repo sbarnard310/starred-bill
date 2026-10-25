@@ -25,11 +25,10 @@
   "placeId": "ChIJEbr-hcMRdkgR-hV6o35EUno",
   "michelinId": "1077295",
   "diets": [
-    "vegetarian",
-    "vegan",
-    "gluten-free"
+    "vegetarian"
   ],
   "chef": "Diego Ferrari",
   "chefSource": "site",
-  "dinner": 125
+  "dinner": 125,
+  "dietsManual": true
 }

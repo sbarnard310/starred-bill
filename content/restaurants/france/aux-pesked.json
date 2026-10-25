@@ -27,11 +27,9 @@
   "michelinId": "7738",
   "diets": [
     "vegetarian-menu",
-    "vegetarian",
-    "vegan",
-    "halal",
-    "kosher"
+    "vegetarian"
   ],
   "chef": "Mathieu Aumont",
-  "chefSource": "site"
+  "chefSource": "site",
+  "dietsManual": true
 }

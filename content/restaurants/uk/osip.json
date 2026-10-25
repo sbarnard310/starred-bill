@@ -23,7 +23,7 @@
     "vegetarian"
   ],
   "chef": "Merlin Labron-Johnson",
-  "chefSource": "michelin",
+  "chefSource": "press",
   "dinnerNote": "Table d'hôte, 3 courses (tasting menu £175)",
   "lunchNote": "Lunch menu, 5 courses (tasting menu £175)",
   "bookingWindow": {
@@ -55,5 +55,6 @@
       "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
     }
   ],
-  "rankingsChecked": "2026-10-24"
+  "rankingsChecked": "2026-10-24",
+  "dietsManual": true
 }

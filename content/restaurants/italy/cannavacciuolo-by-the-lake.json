@@ -25,10 +25,11 @@
   "placeId": "ChIJy8ktN0sNhkcRPGt6sJvNRcw",
   "michelinId": "1210228",
   "diets": [
-    "vegetarian-menu"
+    "vegetarian-menu",
+    "vegetarian"
   ],
   "chef": "Gianni Bertone",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "stay": {
     "kind": "hotel",
     "name": "Laqua by the Lake",
@@ -55,5 +56,6 @@
     ],
     "note": "A lake resort of 14 suites, 5 comfort rooms, 2 penthouses and a separate boathouse suite.",
     "checked": "2026-10-23"
-  }
+  },
+  "dietsManual": true
 }

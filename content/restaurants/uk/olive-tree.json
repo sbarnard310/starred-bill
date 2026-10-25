@@ -24,10 +24,11 @@
   "diets": [
     "vegetarian-menu",
     "vegetarian",
-    "vegan"
+    "vegan",
+    "gluten-free"
   ],
   "chef": "Chris Cleghorn",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "stay": {
     "kind": "hotel",
     "name": "The Queensberry",
@@ -40,5 +41,6 @@
       }
     ],
     "checked": "2026-10-23"
-  }
+  },
+  "dietsManual": true
 }

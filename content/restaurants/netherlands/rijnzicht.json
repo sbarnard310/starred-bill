@@ -21,13 +21,12 @@
   "placeId": "ChIJSUHKNUCgx0cRJ-9nYFTfYMk",
   "michelinId": "544250",
   "diets": [
-    "vegetarian",
-    "gluten-free",
-    "halal",
-    "kosher"
+    "vegetarian-menu",
+    "vegetarian"
   ],
   "chef": "Mike Cornelissen",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 120)",
-  "lunchNoteNl": "Lunchmenu"
+  "lunchNoteNl": "Lunchmenu",
+  "dietsManual": true
 }

@@ -10,7 +10,7 @@
   "dinnerNote": "Tasting menu (other menus from €79)",
   "sourceType": "press",
   "source": "https://www.gaultmillau.be/en/restaurants/t-korennaer-nieuwkerken-waas",
-  "website": "https://www.korennaer.be/nl/",
+  "website": "https://korennaer.be/",
   "lat": 51.1929598,
   "lng": 4.1782208,
   "placeId": "ChIJ98ftvPaLw0cRWTo1bmivL2c",
@@ -24,5 +24,6 @@
   "lunchNoteNl": "Open voor lunch · do–vr, zo",
   "lunchNoteFr": "Ouvert le midi · jeu.–ven., dim.",
   "chef": "Edwin Van Goethem",
-  "chefSource": "press"
+  "chefSource": "press",
+  "dietsManual": true
 }

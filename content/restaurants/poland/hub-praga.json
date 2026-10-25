@@ -16,14 +16,15 @@
   "placeId": "ChIJbW87lUrNHkcRGVFtjBJ8aYw",
   "michelinId": "1204297",
   "diets": [
-    "vegetarian",
-    "gluten-free"
+    "vegetarian-menu",
+    "vegetarian"
   ],
   "chef": "Witek Iwański",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNotePl": "Menu degustacyjne (inne menu od PLN 640)",
   "noLunch": true,
   "lunchNote": "Dinner only",
   "lunchNotePl": "Tylko kolacje",
-  "areaPl": "Warszawa"
+  "areaPl": "Warszawa",
+  "dietsManual": true
 }

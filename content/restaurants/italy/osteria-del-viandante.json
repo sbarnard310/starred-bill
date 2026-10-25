@@ -24,9 +24,11 @@
   "placeId": "ChIJN_v-Grrwf0cROkFXZtrmkNo",
   "michelinId": "150122",
   "diets": [
+    "vegetarian-menu",
     "vegetarian"
   ],
   "chef": "Jacopo Malpeli",
-  "chefSource": "michelin",
-  "dinnerNoteIt": "Menu Il Cammino del Viandante (Ortodossia anche 130 €)"
+  "chefSource": "site",
+  "dinnerNoteIt": "Menu Il Cammino del Viandante (Ortodossia anche 130 €)",
+  "dietsManual": true
 }

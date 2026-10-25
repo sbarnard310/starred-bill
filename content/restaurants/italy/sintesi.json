@@ -26,10 +26,10 @@
   "placeId": "ChIJr8PEsGuFJRMRkrr90_LIUEY",
   "michelinId": "1199115",
   "diets": [
-    "vegetarian",
-    "vegan",
-    "gluten-free"
+    "vegetarian-menu",
+    "vegetarian"
   ],
   "chef": "Matteo Compagnucci and Sara Scarsella",
-  "chefSource": "michelin"
+  "chefSource": "site",
+  "dietsManual": true
 }

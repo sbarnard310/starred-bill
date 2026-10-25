@@ -10,12 +10,13 @@
   "dinnerNote": "Tasting menu (other menus from €58)",
   "sourceType": "site",
   "source": "https://www.benoitdewitte.be/nl/menu",
-  "website": "https://www.restaurantdewitte.be",
+  "website": "https://benoitdewitte.be/",
   "lat": 50.9133244,
   "lng": 3.606346,
   "placeId": "ChIJ52wMS2ISw0cRt2axufKrsfQ",
   "michelinId": "210598",
   "diets": [
+    "vegetarian-menu",
     "vegetarian"
   ],
   "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 58)",
@@ -37,5 +38,6 @@
       "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
     }
   ],
-  "rankingsChecked": "2026-10-24"
+  "rankingsChecked": "2026-10-24",
+  "dietsManual": true
 }

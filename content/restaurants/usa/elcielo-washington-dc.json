@@ -14,18 +14,16 @@
   "source": "https://elcielowashington.com/menu",
   "noLunch": true,
   "lunchNote": "Dinner only",
-  "website": "https://elcielowashington.com/",
+  "website": "https://elcielo.com.co/washington/",
   "lat": 38.909014,
   "lng": -76.999479,
   "placeId": "ChIJw43KgEy5t4kRarwZlIG4yg0",
   "michelinId": "1191941",
   "diets": [
-    "vegetarian",
-    "vegan",
-    "gluten-free"
+    "vegetarian"
   ],
   "chef": "Juan Manuel Barrientos",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "rankings": [
     {
       "list": "oad-north-america",
@@ -34,5 +32,6 @@
       "url": "https://www.oadguides.com/lists/north-america/top-restaurants/2026"
     }
   ],
-  "rankingsChecked": "2026-10-24"
+  "rankingsChecked": "2026-10-24",
+  "dietsManual": true
 }

@@ -19,12 +19,8 @@
   "lng": 7.28284,
   "placeId": "ChIJmWsd9cPbzRIRnxwhAZWw_yQ",
   "michelinId": "1207866",
-  "diets": [
-    "vegetarian",
-    "gluten-free"
-  ],
-  "chef": "Lorenzo Ragni and Florencia Montes",
-  "chefSource": "michelin",
+  "chef": "Florencia Montes and Lorenzo Ragni",
+  "chefSource": "site",
   "rankings": [
     {
       "list": "oad-europe",

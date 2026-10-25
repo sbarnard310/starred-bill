@@ -18,12 +18,6 @@
   "lng": 9.0067135,
   "placeId": "ChIJ37mrbeQn5xIRPB0SOKNX1Nw",
   "michelinId": "500275",
-  "diets": [
-    "vegetarian-menu",
-    "vegetarian",
-    "vegan",
-    "gluten-free"
-  ],
   "chef": "Francesco Stara",
-  "chefSource": "michelin"
+  "chefSource": "site"
 }

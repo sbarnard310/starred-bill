@@ -16,12 +16,14 @@
   "placeId": "ChIJz_gBHs0HbUcR8sc3K6dfT7c",
   "michelinId": "1205026",
   "diets": [
+    "vegetarian-menu",
     "vegetarian"
   ],
   "chef": "Alexander Kumptner",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNoteDe": "Degustationsmenü",
   "noLunch": true,
   "lunchNote": "Dinner only",
-  "lunchNoteDe": "Nur abends"
+  "lunchNoteDe": "Nur abends",
+  "dietsManual": true
 }

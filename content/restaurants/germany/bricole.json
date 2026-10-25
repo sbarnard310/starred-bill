@@ -16,13 +16,13 @@
   "placeId": "ChIJQUACIP5NqEcRUZbYNUUL1DU",
   "michelinId": "1191770",
   "diets": [
-    "vegetarian-menu",
     "vegetarian"
   ],
   "chef": "Steven Zeidler",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNoteDe": "Degustationsmenü",
   "noLunch": true,
   "lunchNote": "Dinner only",
-  "lunchNoteDe": "Nur abends"
+  "lunchNoteDe": "Nur abends",
+  "dietsManual": true
 }

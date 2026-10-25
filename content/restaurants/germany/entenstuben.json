@@ -9,7 +9,7 @@
   "dinnerNote": "Tasting menu (other menus from €139)",
   "sourceType": "site",
   "source": "https://entenstuben.de/",
-  "website": "https://www.entenstuben.de/",
+  "website": "https://entenstuben.de/",
   "lat": 49.4535946,
   "lng": 11.0939143,
   "placeId": "ChIJb-Q5SphXn0cRRDbZd-d4xQI",
@@ -19,9 +19,10 @@
     "vegetarian"
   ],
   "chef": "Fabian Denninger",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 139 €)",
   "noLunch": true,
   "lunchNote": "Dinner only",
-  "lunchNoteDe": "Nur abends"
+  "lunchNoteDe": "Nur abends",
+  "dietsManual": true
 }

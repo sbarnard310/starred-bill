@@ -25,9 +25,10 @@
     "vegetarian"
   ],
   "chef": "Daniel Antuna",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 95)",
   "dinnerNoteFr": "Menu dégustation (autres menus dès 95 €)",
   "lunchNoteNl": "Lunchmenu",
-  "lunchNoteFr": "Menu déjeuner"
+  "lunchNoteFr": "Menu déjeuner",
+  "dietsManual": true
 }

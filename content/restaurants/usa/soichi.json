@@ -17,10 +17,10 @@
   "placeId": "ChIJfQEdreJV2YARnieTJoa2pGQ",
   "michelinId": "1183570",
   "diets": [
-    "kosher"
+    "vegetarian"
   ],
   "chef": "Soichi Kadoya",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "photo": "soichi.jpg",
   "photoAlt": "The bamboo-screened entrance of Soichi in San Diego",
   "photoCredit": "Bartonlynch",
@@ -39,5 +39,6 @@
       "url": "https://www.oadguides.com/lists/north-america/top-restaurants/2026"
     }
   ],
-  "rankingsChecked": "2026-10-24"
+  "rankingsChecked": "2026-10-24",
+  "dietsManual": true
 }

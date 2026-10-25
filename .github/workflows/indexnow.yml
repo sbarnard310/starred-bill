@@ -1,53 +1,60 @@
-# After each push to main, once Cloudflare Pages has published it, tells Bing and the other IndexNow search engines
-# (Yandex, Naver, Seznam…) which pages changed, so they recrawl them within minutes instead of weeks.
-# It builds the site as it was before the push and as it is now, and sends the sitemap pages that differ (scripts/indexnow.py).
-# If Cloudflare's build fails, this waits 20 minutes, sends nothing and shows as failed; the next good push sends both.
+# Once a day (owner's choice, 25 Oct 2026: the repository went private, where GitHub Actions has 2,000 free minutes a
+# month, and building the site twice after every push used about 1,000 of them), tells Bing and the other IndexNow
+# search engines (Yandex, Naver, Seznam…) which pages changed since its last successful run, so they recrawl them.
+# It waits until Cloudflare has published the latest commit, builds the site as it was at the last run's commit and as
+# it is now, and sends the sitemap pages that differ (scripts/indexnow.py). If Cloudflare's build fails, this waits 20
+# minutes, sends nothing and shows as failed; the next run sends everything since the last good one.
+# Friday's restaurant-page waves are sent by their own workflow (restaurant-waves.yml).
 name: Tell search engines about changed pages
 
 on:
-  push:
-    branches: [main]
+  schedule:
+    - cron: "0 22 * * *"   # 22:00 UTC, after the day's work in the UK
   workflow_dispatch:
 
 permissions:
   contents: read
+  actions: read   # to find the last successful run's commit
 
 jobs:
   indexnow:
     runs-on: ubuntu-latest
     timeout-minutes: 30
     steps:
-      - name: Note which commit is live now
-        id: before
-        run: echo "live=$(curl -sfA 'StarredBill-IndexNow/1.0' "https://starredbill.com/version.txt?t=$(date +%s)" || true)" >> "$GITHUB_OUTPUT"
-      - uses: actions/checkout@v7
+      - uses: actions/checkout@v4
         with:
           fetch-depth: 0  # the whole history: the old build and the sitemap dates need it
+      - name: Find the commit the last successful run sent
+        id: last
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          old=$(gh api "repos/${{ github.repository }}/actions/workflows/indexnow.yml/runs?status=success&per_page=1" --jq '.workflow_runs[0].head_sha // empty' || true)
+          if [ -z "$old" ] || ! git cat-file -e "$old^{commit}" 2>/dev/null || ! git merge-base --is-ancestor "$old" "$GITHUB_SHA"; then
+            old=$(git rev-list -1 --before="25 hours ago" "$GITHUB_SHA")
+          fi
+          echo "old=$old" >> "$GITHUB_OUTPUT"
+          if [ "$old" = "$GITHUB_SHA" ]; then echo "Nothing pushed since the last run."; fi
       - name: Wait until Cloudflare has published this commit
+        if: steps.last.outputs.old != github.sha
         run: |
           for i in $(seq 1 80); do
             live=$(curl -sfA 'StarredBill-IndexNow/1.0' "https://starredbill.com/version.txt?t=$(date +%s)" || true)
             if [ "$live" = "$GITHUB_SHA" ]; then echo "Live."; exit 0; fi
-            # A later push may already be live, which includes this one.
-            if [ -n "$live" ]; then
-              git cat-file -e "$live^{commit}" 2>/dev/null || git fetch -q origin main
-              if git merge-base --is-ancestor "$GITHUB_SHA" "$live" 2>/dev/null; then echo "Live (in $live)."; exit 0; fi
-            fi
+            if [ -n "$live" ] && git merge-base --is-ancestor "$GITHUB_SHA" "$live" 2>/dev/null; then echo "Live (in $live)."; exit 0; fi
             sleep 15
           done
           echo "Cloudflare hasn't published $GITHUB_SHA after 20 minutes; see Workers & Pages › starred-bill › Deployments."
           exit 1
-      - name: Build the site before and after the push
+      - name: Build the site as it was at the last run and as it is now
+        if: steps.last.outputs.old != github.sha
         run: |
-          old="${{ github.event.before }}"
-          git cat-file -e "$old^{commit}" 2>/dev/null || old=$(git rev-parse HEAD~1)
-          # If earlier pushes never went live (a failed Cloudflare build), go back to the one that was live.
-          live="${{ steps.before.outputs.live }}"
-          if [ -n "$live" ] && [ "$live" != "$old" ] && git cat-file -e "$live^{commit}" 2>/dev/null && git merge-base --is-ancestor "$live" "$old"; then old="$live"; fi
+          old="${{ steps.last.outputs.old }}"
           echo "Comparing $old with $GITHUB_SHA"
           echo "OLD_DAY=$(git show -s --format=%cs "$old")" >> "$GITHUB_ENV"
           git worktree add -q ../old "$old"
           (cd ../old && python3 build.py > /dev/null) || { rm -rf ../old/_site; echo "The old commit didn't build; using sitemap dates instead."; }
           python3 build.py > /dev/null
       - name: Send the changed pages to IndexNow
+        if: steps.last.outputs.old != github.sha
         run: python3 scripts/indexnow.py ../old/_site _site --since=$OLD_DAY --send

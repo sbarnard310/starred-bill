@@ -1,14 +1,12 @@
-# Saved-search emails: after a push to main that changes restaurants (and once a day, for anything held back by the
-# one-email-a-day rule or Resend's daily allowance), this waits until Cloudflare has published the commit, builds the
-# site and emails members whose saved searches have a new match (scripts/saved_searches.py). Each check is recorded in
+# Saved-search emails: once a day (it ran after every push that changed restaurants until 25 Oct 2026, when the
+# repository went private and GitHub Actions minutes became limited; members get one email a day at most anyway), this
+# waits until Cloudflare has published the latest commit, builds the site and emails members whose saved searches have
+# a new match since their last check (scripts/saved_searches.py). Each check is recorded in
 # Supabase, so nothing is sent twice. Needs the same repository secrets as the star emails: SUPABASE_SERVICE_KEY and
 # RESEND_API_KEY; without them it sends nothing and says so.
 name: Saved-search emails
 
 on:
-  push:
-    branches: [main]
-    paths: [content/restaurants/**, content/currencies.json]
   schedule:
     - cron: "40 7 * * *"   # 07:40 UTC, after the morning's first pushes have usually gone live
   workflow_dispatch:

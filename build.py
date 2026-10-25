@@ -8263,6 +8263,11 @@ def page_name(r, shared=()):
     return f"{r['name']} ({most_city(r)[1]})" if r["name"].lower() in shared else r["name"]
 
 
+def the_name(name):
+    """"the Le Bernardin" for "How much does the Le Bernardin menu cost?", but "The Fat Duck" as it is."""
+    return name if name.lower().startswith("the ") else "the " + name
+
+
 def page_words(r, field):
     """A restaurant page's hand-tuned wording (pageTitle, pageHeading, pageDescription, pageLead: 23 Oct 2026, to-do item
     seo-tatsu-dallas-page-two, for a page Google shows on page two for its own name), with {dinner} and {lunch} filled
@@ -8409,7 +8414,7 @@ def build_restaurant_pages():
         hero = (f'<div class="hero rp-hero" id="top">\n  <div class="wrap">\n    <div>\n'
                 f'      <span class="eyebrow" style="color: var(--band-muted)">{stars_html} {e(stars_label)} · {e(r.get("cuisine", ""))}</span>\n'
                 f'      <h1 style="margin-top: 12px">'
-                + (re.sub(r"&lt;(/?)em&gt;", r"<\1em>", e(page_words(r, "pageHeading"))) if r.get("pageHeading") else f"{e(page_name(r, shared))} prices: what it <em>costs</em>")
+                + (re.sub(r"&lt;(/?)em&gt;", r"<\1em>", e(page_words(r, "pageHeading"))) if r.get("pageHeading") else f"{e(page_name(r, shared))} menu and <em>prices</em>")
                 + '</h1>\n'
                 f'      <p class="rp-where">{e(where)}' + (f' · In {e(stay_name(r))}' if stay_name(r) else ' · Has rooms' if r.get("stay") and not r.get("status") else "") + (f' · Chef {e(r["chef"])}' if r.get("chef") else "") + '</p>\n'
                 f'      <p class="rp-answer">{e(answer)}' + (f' {e(page_words(r, "pageLead"))}' if r.get("pageLead") else "") + '</p>\n'
@@ -8512,7 +8517,9 @@ def build_restaurant_pages():
                 sources.append((label, url, typ))
         if r.get("menusSource"):
             sources = [("Menus", r["menusSource"], "site")]
-        cost_q = f"How much does {r['name']} cost?"
+        # "Menu" in the heading and the first question (25 Oct 2026, to-do item seo-restaurant-pages-menu-wording), as
+        # "<restaurant> menu" and "… menu price" are searched as often as "<restaurant> price".
+        cost_q = f"How much does {the_name(r['name'])} menu cost?"
         main_m = main_menu(r)
         priced = sorted(r.get("menus") or [m for m in ({"name": "lunch", "price": lunch} if lunch is not None and not r.get("noLunch") and r.get("lunchType", "menu") == "menu" else None,
                                                        {"name": "dinner menu", "price": d} if d is not None and r.get("dinnerType", "menu") == "menu" else None) if m],

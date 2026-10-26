@@ -76,12 +76,37 @@ STAY_KINDS = {"hotel": "In a hotel", "rooms": "Has its own rooms"}
 STAY_PER = ("room", "person")
 STAY_NOT_HOSTS = ("booking.com", "expedia.", "hotels.com", "tripadvisor.", "guide.michelin.com", "secretescapes.", "mrandmrssmith.",
                   "groupon.", "redletterdays.", "buyagift.", "trivago.", "kayak.", "agoda.")
-# A hotel-booking partner for "Stay the night" (to-do items Money 3 and 4): None until a programme accepts the site and the
-# "How we make money" page (Money 1) is up. Then e.g. {"name": "Booking.com", "url": "https://www.awin1.com/cread.php?awinmid=…&awinaffid=…&ued={url}"}:
-# stay_links() adds a second button, a Booking.com search for the hotel's name and town wrapped in the partner's tracking
-# link, marked rel="sponsored" with a commission label, as UK advertising rules ask. The hotel's own page always stays first.
-STAY_PARTNER = None
-STAY_PARTNER_SEARCH = "https://www.booking.com/searchresults.html?ss={q}"
+# Partners (26 Oct 2026, to-do items Money 3 and 4): where the "Compare prices on Booking.com", "Hotels in …" and
+# "Food tours" buttons go (`partner_a()`). `link` is a plain search or page on the partner's site. Until a partner's
+# `affiliate` is set its buttons are ordinary unpaid links, there to count who clicks (the `partner` event in
+# common.js), so we know which programmes to join first. Setting it makes that partner's buttons paid, with
+# rel="sponsored" and a commission line beside them as UK advertising rules ask, so only once the "How we make money"
+# page (Money 1) is up: either the programme's tracking link with {url} where the page goes (Awin's
+# "https://www.awin1.com/cread.php?awinmid=…&awinaffid=…&ued={url}"), or query parameters to add ("partner_id=…").
+# The restaurant's or hotel's own link always comes first.
+PARTNERS = {
+    "booking": {"name": "Booking.com", "link": "https://www.booking.com/searchresults.html?ss={q}", "affiliate": None},
+    "viator": {"name": "Viator", "link": "https://www.viator.com/searchResults/all?text={q}", "affiliate": None},
+    "getyourguide": {"name": "GetYourGuide", "link": "https://www.getyourguide.com/{q}/food-drinks-tc103/", "affiliate": None},
+}
+# GetYourGuide's search ignores the place it's given, so it gets a link only where we know its city page (each checked
+# by hand on 26 Oct 2026: our place id -> its location slug); its food-and-drink tours sit beside Viator's there.
+GYG_CITIES = {
+    "london": "london-l57", "paris": "paris-l16", "rome": "rome-l33", "barcelona": "barcelona-l45", "amsterdam": "amsterdam-l36",
+    "vienna": "vienna-l7", "milan": "milan-l139", "kyoto": "kyoto-l96826", "osaka": "osaka-l1204", "istanbul": "istanbul-l56",
+    "lisbon": "lisbon-l42", "new-york": "new-york-city-l59", "berlin": "berlin-l17", "venice": "venice-l35", "hamburg": "hamburg-l23",
+    "porto": "porto-l151", "tokyo": "tokyo-l193", "bangkok": "bangkok-l169", "seoul": "seoul-l197", "los-angeles": "los-angeles-l179",
+    "prague": "prague-l10", "budapest": "budapest-l29", "malaga": "malaga-l402", "krakow": "krakow-l40", "hanoi": "hanoi-l205",
+}
+# The cheap-eats guides' food-tour box (`guide_tours_html()`): guide id -> (our place id, what to search Viator for).
+GUIDE_TOURS = {
+    "michelin-star-street-food-bangkok": ("bangkok", "Bangkok street food tour"),
+    "michelin-star-hawker-singapore": ("singapore", "Singapore hawker food tour"),
+    "michelin-star-tacos-mexico-city": ("mexico-city", "Mexico City taco tour"),
+    "michelin-star-ramen-tokyo": ("tokyo", "Tokyo ramen tour"),
+    "cheap-michelin-star-restaurants-london": ("london", "London food tour"),
+    "cheap-michelin-star-restaurants-seoul": ("seoul", "Seoul food tour"),
+}
 # Critics' lists a restaurant's `rankings` can name (13 Oct 2026, to-do item feature-critics-rankings), each rank taken by
 # hand from the list's own website: id -> (its name before the year, how it's scored). "rank" lists number their places
 # ("No. 12 on The World's 50 Best Restaurants 2025"); La Liste gives a score out of 100 instead. Shown on restaurant pages
@@ -1583,6 +1608,7 @@ def build_place(p):
             "faq": faq_html(faq, lang, say_in(pilot_words(lang), "hFaq", page) if pilot else None),
             "answer": answer, "quick": quick_html(quick, page, lang), "pilot": pilot_sections(p, page, starred, lang) if pilot else "",
             "newStars": new_stars_html(p, page, lang) if not cuisine else "", "localNote": local_note_html(p, note),
+            "trip": trip_box_html(p, lang, starred) if not cuisine else "",
             "guides": related_guides_html(p, starred) if lang == "en" else related_guides_in(p, starred, lang) if starred else "", "jsonld": json_ld(p, crumbs, starred, texts["description"], lang, texts, faq_ld, SITE_URL + lang_paths[lang], titles[lang], day),
             "updated": updated, "sources": place_sources_html(p, lang) if starred else "",
             "tiers": tiers_html(starred, currency, lang), "lunchDeals": lunch_deals_html(p, page, starred, lang) if not cuisine else "",
@@ -2628,6 +2654,41 @@ def local_note_html(p, note):
             f'<span class="eyebrow">Before you book</span><h2 style="margin-top: 6px">{e(q0)}</h2><p>{a0}</p></div></div>\n'
             + (f'      <div class="method local-note">' + "".join(f"<div><h3>{e(q)}</h3><p>{a}</p></div>" for q, a in rest) + "</div>\n" if rest else "")
             + f'      <p class="ld-note">{e(checked)}</p>\n    </div>\n  </section>\n')
+
+
+def trip_place(p):
+    """The city a destination page's "Planning a trip" box is for (26 Oct 2026, to-do item Money 4): the page itself for a
+    city, a city-state or a region that is a city (BROWSE_CITY_STATES, GYG_CITIES), the city above a district; else None."""
+    if p["type"] == "district":
+        return places.get(p.get("parent"))
+    return p if p["type"] == "city" or p["id"] in BROWSE_CITY_STATES or p["id"] in GYG_CITIES else None
+
+
+def trip_box_html(p, lang, starred):
+    """"Planning a trip to London?": a Booking.com hotel search for the page's city (or neighbourhood), its food tours on
+    Viator and, where we know its city page, GetYourGuide, and a link to Trips. English pages with starred restaurants
+    only. The partner links are unpaid until PARTNERS has their tracking links; clicks count as `partner` events."""
+    city = trip_place(p)
+    if lang != "en" or not starred or not city:
+        return ""
+    country = p
+    while country.get("parent") in places:
+        country = places[country["parent"]]
+    near = p["name"] if p is city else f'{p["name"]}, {city["name"]}'
+    stay_q = near if p is not city else ", ".join(x for x in (city["name"], country["name"] if country is not city else "") if x)
+    buttons = [partner_a("booking", stay_q, "city-hotels", f"Hotels in {near} on Booking.com", "rp-cta"),
+               partner_a("viator", f'{city["name"]} food tour', "city-tours", "Food tours on Viator", "rp-cta rp-cta-line")]
+    pids = ["booking", "viator"]
+    if city["id"] in GYG_CITIES:
+        buttons.append(partner_a("getyourguide", GYG_CITIES[city["id"]], "city-tours", "Food tours on GetYourGuide", "rp-cta rp-cta-line"))
+        pids.append("getyourguide")
+    return ('<section id="trip">\n    <div class="wrap">\n      <div class="section-head"><div><span class="eyebrow">Planning a trip</span>'
+            f'<h2 style="margin-top: 6px">Planning a trip to {e(near)}?</h2>'
+            f'<p>Somewhere to stay near the restaurants, food tours for the hours between meals, and a plan for the lot: '
+            f'<a href="/trips/">put your restaurants into a trip</a> with dates, bookings and the whole bill.</p></div></div>\n'
+            f'      <p class="rp-stay-links">{" ".join(buttons)}</p>\n'
+            + (f'      <p class="ld-note">{e(partner_note(pids).strip())}</p>\n' if partner_note(pids) else "")
+            + "    </div>\n  </section>\n")
 
 
 # Big cities' "By cuisine" and "By neighbourhood" sections (browse_html(), 9 Oct 2026, to-do item seo-cuisine-area-sections,
@@ -4253,7 +4314,9 @@ def build_trips(compare_urls, account_url):
         "crumbs": '<a href="/">All destinations</a><span aria-current="page">Trips</span>',
         "data": as_json({"currencies": CURRENCIES, "languages": DEFAULT_LANGUAGES, "switchable": currency_data.get("switchable", []),
                          "rateDate": currency_data.get("rateDate"), "compareParts": compare_urls, "accountUrl": account_url,
-                         "bookingUrl": write_booking_data()}),
+                         "bookingUrl": write_booking_data(),
+                         # The trip's "Find a hotel" button (stayHtml() in trips.js), built from PARTNERS as partner_url() does.
+                         "partners": {"booking": {k: PARTNERS["booking"][k] for k in ("name", "link", "affiliate")}}}),
     }))
 
 
@@ -6993,6 +7056,22 @@ def source_date(d, lang):
     return f"{MONTH_NAMES[int(d[5:7]) - 1]} {d[:4]}" if len(d) == 7 else d
 
 
+def guide_tours_html(g):
+    """The cheap-eats guides' "Food tours in Bangkok" box (GUIDE_TOURS, 26 Oct 2026, to-do item Money 4): Viator's search
+    and, where we know its city page, GetYourGuide's food tours, unpaid until PARTNERS has their tracking links."""
+    if g["id"] not in GUIDE_TOURS:
+        return ""
+    pid, q = GUIDE_TOURS[g["id"]]
+    city = places[pid]["name"]
+    buttons = [partner_a("viator", q, "guide-tours", "Food tours on Viator", "rp-cta")]
+    if pid in GYG_CITIES:
+        buttons.append(partner_a("getyourguide", GYG_CITIES[pid], "guide-tours", "Food tours on GetYourGuide", "rp-cta"))
+    note = partner_note(["viator", "getyourguide"]).strip()
+    return (f'<aside class="guide-tours" id="tours"><h2>Food tours in {e(city)}</h2>'
+            f"<p>Want a local to walk you between the stalls and counters? Guided food tours, to book on the tour sites:</p>"
+            f'<p class="rp-stay-links">{" ".join(buttons)}</p>' + (f'<p class="ld-note">{e(note)}</p>' if note else "") + "</aside>\n")
+
+
 def guide_sources_html(g, stats):
     """The "Sources" list at the end of a guide: each outside source, dated, then where the figures drawn from our own
     data come from (guides whose figures and tables are filled in by the build)."""
@@ -7084,7 +7163,7 @@ def build_guides():
                 f'fetchpriority="high" decoding="async"></figure>\n') if img else ""
         main = (f'<article lang="{e(g.get("lang", "en-US"))}">\n<h1>{e(g["h1"])}</h1>\n'
                 f'<p class="prose-date">Updated {(uk_date if g.get("lang") == "en-GB" else us_date)(g["updated"])} · Star counts and prices checked {stats["checked"]}</p>\n'
-                f'{hero}{body}\n{faq_html}\n{guide_sources_html(g, stats)}\n</article>')
+                f'{hero}{body}\n{guide_tours_html(g)}{faq_html}\n{guide_sources_html(g, stats)}\n</article>')
         if not g.get("sources"):
             print(f"  Guide {g['id']}: lists no sources; add the outside sources its facts come from (see README)")
         strip = lambda t: re.sub(r"<[^>]+>", "", t)
@@ -7918,7 +7997,7 @@ def book_html(r):
         steps.append(("When tables are released", e(timing) + (f" {e(bw['note'])}" if bw and bw.get("note") and r.get("bookingOpens") is None and bw["type"] != "announced" else "") + check))
     if r.get("bookingUrl") or r.get("bookingPhone"):
         steps.append(("Where to book", " ".join(x for x in (
-            f'<a class="rp-cta" href="{e(r["bookingUrl"])}">Book on {e(via or "their website")}</a>' if r.get("bookingUrl") else "",
+            f'<a class="rp-cta" href="{e(r["bookingUrl"])}" data-out="booking">Book on {e(via or "their website")}</a>' if r.get("bookingUrl") else "",
             f"Or call {e(r['bookingPhone'])}." if r.get("bookingPhone") else "") if x)))
     if r.get("waitlist"):
         steps.append(("If it’s full", e(r["waitlist"])))
@@ -7979,15 +8058,46 @@ def stay_price(p, cur):
     return ("from " if p.get("from") else "") + money(p["price"], cur) + per + (f" for {nights} nights" if nights > 1 else "")
 
 
+def partner_url(pid, q, extra=None):
+    """A partner's page for `q` (a search, or GetYourGuide's city slug), with `extra` query parameters (dates, guests),
+    wrapped in its tracking link once its `affiliate` is set (PARTNERS)."""
+    p = PARTNERS[pid]
+    url = p["link"].format(q=q if pid == "getyourguide" else urllib.parse.quote_plus(q))
+    if extra:
+        url += ("&" if "?" in url else "?") + urllib.parse.urlencode(extra)
+    aff = p.get("affiliate")
+    if aff:
+        url = aff.format(url=urllib.parse.quote(url, safe="")) if "{url}" in aff else url + ("&" if "?" in url else "?") + aff
+    return url
+
+
+def partner_paid(pid):
+    return bool(PARTNERS[pid].get("affiliate"))
+
+
+def partner_a(pid, q, where, label, cls=""):
+    """A button or link to a partner (PARTNERS): unpaid ones are plain nofollow links, paid ones rel="sponsored". Both
+    carry data-partner and data-where (which page and spot: "restaurant-stay", "city-hotels"…) for the `partner`
+    click event in common.js."""
+    rel = "sponsored noopener" if partner_paid(pid) else "nofollow noopener"
+    return (f'<a{f" class={chr(34)}{cls}{chr(34)}" if cls else ""} href="{e(partner_url(pid, q))}" rel="{rel}" '
+            f'data-partner="{pid}" data-where="{where}">{e(label)}</a>')
+
+
+def partner_note(pids):
+    """The commission line UK advertising rules ask for beside paid links, or "" while none of them is paid."""
+    paid = [PARTNERS[p]["name"] for p in dict.fromkeys(pids) if partner_paid(p)]
+    return (f" We may earn a commission if you book through {and_list(paid)}, at no extra cost to you; it never changes what we list."
+            if paid else "")
+
+
 def stay_links(r):
-    """The "Stay the night" buttons: the rooms page on the hotel's or restaurant's own website, then, once STAY_PARTNER is
-    set, a paid search for it on the partner's site. Each is (label, url, paid)."""
+    """The "Stay the night" buttons: the rooms page on the hotel's or restaurant's own website first, then a search for
+    it on Booking.com (PARTNERS). Each is HTML."""
     s = r["stay"]
-    out = [("See rooms on the " + ("hotel’s" if s["kind"] == "hotel" else "restaurant’s") + " website", s["url"], False)]
-    if STAY_PARTNER:
-        q = urllib.parse.quote_plus(", ".join(x for x in (s.get("name") or stay_name(r) or r["name"], r.get("area") or r["cityName"]) if x))
-        out.append((f"Compare prices on {STAY_PARTNER['name']}", STAY_PARTNER["url"].format(url=urllib.parse.quote(STAY_PARTNER_SEARCH.format(q=q), safe="")), True))
-    return out
+    q = ", ".join(x for x in (s.get("name") or stay_name(r) or r["name"], near_where(r)) if x)
+    return [f'<a class="rp-cta" href="{e(s["url"])}" rel="noopener">See rooms on the ' + ("hotel’s" if s["kind"] == "hotel" else "restaurant’s") + " website</a>",
+            partner_a("booking", q, "restaurant-stay", "Compare prices on Booking.com", "rp-cta rp-cta-line")]
 
 
 def stay_html(r):
@@ -8024,10 +8134,8 @@ def stay_html(r):
         f'<td class="num">{e(stay_price(p, cur)) or "–"}</td></tr>' for p in packs)
     table = (f'    <div class="table-scroll"><table class="rp-table rp-stay"><thead><tr><th>Package</th><th>What’s included</th><th class="num">Price</th></tr></thead>'
              f"<tbody>{rows}</tbody></table></div>\n") if packs else ""
-    links = stay_links(r)
-    buttons = " ".join(f'<a class="rp-cta" href="{e(u)}" rel="{"sponsored noopener" if paid else "noopener"}">{e(label)}</a>' for label, u, paid in links)
-    paid_note = (" We may earn a commission if you book through the " + e(STAY_PARTNER["name"]) + " link, at no extra cost to you; it never changes what we list."
-                 if any(paid for _, _, paid in links) else "")
+    buttons = " ".join(stay_links(r))
+    paid_note = e(partner_note(["booking"]))
     html_ = ('<section id="stay">\n  <div class="wrap">\n    <div class="section-head"><div><span class="eyebrow">Stay the night</span>'
              f'<h2 style="margin-top: 6px">{e(q)}</h2><p>{e(a)}</p>' + (f'<p>{e(s["note"])}</p>' if s.get("note") else "") + "</div></div>\n"
              + table + f'    <p class="rp-stay-links">{buttons}</p>\n'
@@ -8421,7 +8529,7 @@ def build_restaurant_pages():
                 + (f'      <p class="rp-acclaim">{e(acclaim)}</p>\n' if acclaim else "")
                 + f'      <div class="rp-actions"><button type="button" class="rp-wish" id="rpWish" data-wish="{e(r["id"])}" aria-pressed="false">'
                 f'<svg aria-hidden="true"><use href="#heart"/></svg><span>Save to wishlist</span></button>'
-                + (f'<a class="rp-btn" href="{e(r["bookingUrl"])}">Book on {e(booking_site(r["bookingUrl"]) or "their website")}</a>' if r.get("bookingUrl") else "")
+                + (f'<a class="rp-btn" href="{e(r["bookingUrl"])}" data-out="booking">Book on {e(booking_site(r["bookingUrl"]) or "their website")}</a>' if r.get("bookingUrl") else "")
                 + (f'<a class="rp-btn" href="{e(r["website"])}">Restaurant’s website</a>' if r.get("website") else "")
                 + ('<a class="rp-btn" href="#stay">Stay the night</a>' if r.get("stay") else "")
                 + f'<a class="rp-btn" href="{e(maps)}">Google Maps</a>'
@@ -8574,7 +8682,12 @@ def build_restaurant_pages():
                      '    <div class="rp-near"><div class="rp-map" id="rpMap" hidden></div>'
                      + (f'<ul class="rp-near-list">{near_items}</ul>' if near else "") + "</div>\n"
                      f'    <p class="rp-more"><a href="{home["path"]}">All {starred_n[home["id"]]} starred restaurants in {e(in_sentence(home))}, with prices</a> · '
-                     '<a href="/near-me/">Starred restaurants near you</a></p>\n  </div>\n</section>\n')
+                     '<a href="/near-me/">Starred restaurants near you</a></p>\n'
+                     # Restaurants with rooms have their own "Stay the night" section; the rest get a hotel search nearby.
+                     + ("" if r.get("stay") or r.get("status") else
+                        f'    <p class="rp-more rp-hotels">Staying the night? {partner_a("booking", near_where(r), "restaurant-hotels", "Hotels in " + near_where(r) + " on Booking.com")}'
+                        f'{e(partner_note(["booking"]))}</p>\n')
+                     + "  </div>\n</section>\n")
 
         cheaper, cheaper_qa = cheaper_html(r, peers_place, peers, live)
         history_qa = [(f"Has {r['name']} got more expensive?", history_sentence(r))] if history_sentence(r) else []

@@ -410,12 +410,50 @@ function renderTrip() {
     '<section class="trip-sec trip-danger"><div id="tDelete"></div></section>' + rulesHtml();
   renderItems(); renderAdd(); renderBill(); renderShare(); renderDelete();
 }
+// "Find a hotel" (26 Oct 2026, to-do item Money 4): a Booking.com search for where the trip's restaurants are (the part of
+// their places they share, "London" for Mayfair and Soho, else the commonest one), for its dates and party. Unpaid until
+// PARTNERS in build.py has Booking.com's tracking link; clicks count as `partner` events (common.js).
+function tripTown(t) {
+  const wheres = t.items.map((x) => (infoOf(x.r) || {}).where).filter(Boolean);
+  if (!wheres.length) return "";
+  const parts = wheres.map((w) => w.split(", ").reverse());
+  const shared = [];
+  for (let i = 0; parts.every((p) => p[i] && p[i] === parts[0][i]); i++) shared.push(parts[0][i]);
+  // A shared nation or county alone ("England") is too broad to search: then the commonest place wins.
+  if (shared.length && !(shared.length === 1 && parts.some((p) => p.length >= 3))) return shared.reverse().join(", ");
+  const count = new Map();
+  wheres.forEach((w) => count.set(w, (count.get(w) || 0) + 1));
+  return [...count].sort((a, b) => b[1] - a[1])[0][0];
+}
+function partnerUrl(p, q, extra) {
+  let url = p.link.replace("{q}", encodeURIComponent(q).replace(/%20/g, "+"));
+  const qs = new URLSearchParams(extra || {}).toString();
+  if (qs) url += (url.includes("?") ? "&" : "?") + qs;
+  if (p.affiliate) url = p.affiliate.includes("{url}") ? p.affiliate.replace("{url}", encodeURIComponent(url)) : url + (url.includes("?") ? "&" : "?") + p.affiliate;
+  return url;
+}
+function stayHtml(t) {
+  const p = DATA.partners && DATA.partners.booking, town = tripTown(t);
+  if (!p || !town || !isTrip(t)) return "";
+  const extra = {};
+  if (t.starts_on) {
+    let out = t.ends_on && t.ends_on > t.starts_on ? t.ends_on : "";
+    if (!out) { const d = new Date(t.starts_on + "T12:00:00Z"); d.setUTCDate(d.getUTCDate() + 1); out = d.toISOString().slice(0, 10); }
+    Object.assign(extra, { checkin: t.starts_on, checkout: out });
+  }
+  Object.assign(extra, { group_adults: t.people || 2, no_rooms: 1 });
+  const paid = !!p.affiliate;
+  return '<p class="trip-stay"><a class="btn-line" href="' + esc(partnerUrl(p, town, extra)) + '" target="_blank" rel="' + (paid ? "sponsored noopener" : "nofollow noopener") +
+    '" data-partner="booking" data-where="trip-hotels">Find a hotel in ' + esc(town) + " on " + esc(p.name) + "</a> <span>" +
+    (t.starts_on ? "For the trip's dates and " + plural(t.people || 2, "person", "people") + "." : "Add the trip's dates to search for them.") +
+    (paid ? " We may earn a commission if you book through " + esc(p.name) + ", at no extra cost to you." : "") + "</span></p>";
+}
 function renderItems() {
   const t = cur();
   if (!$("tItems")) return;
   $("tItems").innerHTML = itemsHtml(t, !editing());
   if ($("tCount")) $("tCount").textContent = t.items.length;
-  if ($("tCalBox")) $("tCalBox").innerHTML = isTrip(t) ? allCalHtml(t) : "";
+  if ($("tCalBox")) $("tCalBox").innerHTML = isTrip(t) ? allCalHtml(t) + stayHtml(t) : "";
 }
 function renderAdd() { if ($("tAdd")) $("tAdd").innerHTML = addHtml(TP.trip); }
 function renderFound() {

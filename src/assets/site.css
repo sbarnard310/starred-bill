@@ -374,7 +374,7 @@ a.stay-badge:hover { border-color: var(--gold); }
 .method div { display: grid; gap: 8px; align-content: start; }
 .method h3 { font-size: 1.15rem; }
 .method p { color: var(--muted); font-size: .95rem; }
-.method p a { color: var(--green); font-weight: 600; text-underline-offset: 3px; }
+.method p a, #trip .section-head p a { color: var(--green); font-weight: 600; text-underline-offset: 3px; }
 /* The "Sources" line under the three method cards (place_sources_html() in build.py). */
 .method-sources { margin: 26px 0 0; padding-top: 16px; border-top: 1px solid var(--line); color: var(--muted); font-size: .9rem; line-height: 1.6; max-width: 90ch; }
 .method-sources strong { color: var(--ink); margin-right: 6px; }
@@ -446,7 +446,7 @@ a.stay-badge:hover { border-color: var(--gold); }
 .lunch-table a.vt-name { color: var(--ink); text-decoration: underline; text-decoration-color: var(--line); text-underline-offset: 3px; }
 .lunch-table a.vt-name:hover { color: var(--green); text-decoration-color: currentColor; }
 .lunch-table td.num small { color: var(--muted); }
-#lunch-deals .ld-note, #book .ld-note { margin-top: 14px; color: var(--muted); font-size: .85rem; max-width: 760px; }
+#lunch-deals .ld-note, #book .ld-note, #trip .ld-note, .guide-tours .ld-note { margin-top: 14px; color: var(--muted); font-size: .85rem; max-width: 760px; }
 /* A place's local note on booking, dress code and tipping (localNote, local_note_html() in build.py). */
 #book .section-head p { max-width: 72ch; }
 #book .section-head p a { color: var(--green); font-weight: 600; text-underline-offset: 3px; }
@@ -1981,6 +1981,10 @@ button.near-card:hover { border-color: var(--green); }
 .rp-steps a { color: var(--ink); font-weight: 600; text-underline-offset: 3px; }
 .rp-steps .rp-cta, .rp-stay-links .rp-cta { display: inline-block; margin: 4px 8px 4px 0; padding: 7px 14px; border-radius: 999px; background: var(--green); color: var(--surface); text-decoration: none; }
 .rp-steps .rp-cta:hover, .rp-stay-links .rp-cta:hover { filter: brightness(1.1); }
+/* A partner's button beside the restaurant's or hotel's own (26 Oct 2026, PARTNERS in build.py): outlined, so the own link leads. */
+.rp-stay-links .rp-cta-line { background: none; color: var(--ink); border: 1px solid var(--line); padding: 6px 13px; }
+.rp-stay-links .rp-cta-line:hover { filter: none; border-color: var(--green); color: var(--green); }
+.rp-hotels a { color: var(--ink); font-weight: 600; text-underline-offset: 3px; }
 /* When bookings open (10 Oct 2026): the date box under "When tables are released" on restaurant pages, and the short
    line on destination rows (notes column on computers, the opened row on phones). */
 .rp-steps .bw-check { display: block; margin-top: 12px; padding: 12px 14px; border: 1px solid var(--line); border-radius: 10px; background: var(--surface); color: var(--ink); }
@@ -2083,6 +2087,8 @@ a.ti-name:hover { color: var(--green); }
 .ti-cal a { color: var(--green); font-weight: 600; }
 .trip-allcal { margin: 14px 0 0; display: flex; flex-wrap: wrap; gap: 6px 12px; align-items: center; }
 .trip-allcal span { color: var(--muted); font-size: .86rem; }
+.trip-stay { margin: 12px 0 0; display: flex; flex-wrap: wrap; gap: 6px 12px; align-items: center; }
+.trip-stay span { color: var(--muted); font-size: .86rem; }
 .trip-chip { font: inherit; color: var(--ink); text-align: start; }
 .tc-plus { margin-inline-start: 4px; font-size: 1.2rem; color: var(--green); font-weight: 700; }
 .trip-add .sub-head { margin-top: 14px; font-size: 1rem; }
@@ -2113,3 +2119,7 @@ a.ti-name:hover { color: var(--green); }
 .ta-new label { font-size: .85rem; font-weight: 600; margin-bottom: -4px; }
 .ta-open { text-align: center; text-decoration: none; }
 .trip-btn { margin-inline-end: 10px; }
+/* The cheap-eats guides' food-tour box (guide_tours_html() in build.py, 26 Oct 2026). */
+.guide-tours { margin: 32px 0; padding: 18px 20px; border: 1px solid var(--line); border-radius: 12px; background: var(--surface); }
+.guide-tours h2 { margin-top: 0; }
+.guide-tours .ld-note { margin-bottom: 0; }

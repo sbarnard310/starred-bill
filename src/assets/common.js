@@ -2592,7 +2592,9 @@ document.addEventListener("click", (e) => {
   if (!el) return;
   if (el.tagName === "A" && /^https?:/.test(el.href) && new URL(el.href).host !== location.host) {
     const host = new URL(el.href).host.replace(/^www\./, "");
-    const kind = el.closest("#sharePanel") ? "share" : el.classList.contains("src") ? "price-source" : el.classList.contains("map") || /google\.[a-z.]+\/maps/.test(el.href) ? "google-maps" : "other";
+    // Partner buttons (PARTNERS in build.py): which partner, from which page and spot, and whether it's a paid link yet.
+    if (el.dataset.partner) { track("partner", { partner: el.dataset.partner, where: el.dataset.where || "", paid: /sponsored/.test(el.rel) ? "yes" : "no" }); return; }
+    const kind = el.closest("#sharePanel") ? "share" : el.dataset.out || (el.classList.contains("src") ? "price-source" : el.classList.contains("map") || /google\.[a-z.]+\/maps/.test(el.href) ? "google-maps" : "other");
     if (kind === "share") track("share", { via: el.textContent.trim() });
     else track("outbound", { kind, to: host, restaurant: rowName(el) });
     return;

@@ -2593,10 +2593,15 @@ document.addEventListener("click", (e) => {
   if (el.tagName === "A" && /^https?:/.test(el.href) && new URL(el.href).host !== location.host) {
     const host = new URL(el.href).host.replace(/^www\./, "");
     // Partner buttons (PARTNERS in build.py): which partner, from which page and spot, and whether it's a paid link yet.
-    if (el.dataset.partner) { track("partner", { partner: el.dataset.partner, where: el.dataset.where || "", paid: /sponsored/.test(el.rel) ? "yes" : "no" }); return; }
+    // `link` joins the two, and `page` is the page's address, as Umami can't group a click's details together or by page.
+    if (el.dataset.partner) {
+      const where = el.dataset.where || "";
+      track("partner", { partner: el.dataset.partner, where, link: el.dataset.partner + " · " + where, paid: /sponsored/.test(el.rel) ? "yes" : "no", page: location.pathname });
+      return;
+    }
     const kind = el.closest("#sharePanel") ? "share" : el.dataset.out || (el.classList.contains("src") ? "price-source" : el.classList.contains("map") || /google\.[a-z.]+\/maps/.test(el.href) ? "google-maps" : "other");
     if (kind === "share") track("share", { via: el.textContent.trim() });
-    else track("outbound", { kind, to: host, restaurant: rowName(el) });
+    else track("outbound", { kind, to: host, restaurant: rowName(el), page: location.pathname, spot: kind + " " + location.pathname });
     return;
   }
   if (el.dataset.lang) track("language", { lang: el.dataset.lang });

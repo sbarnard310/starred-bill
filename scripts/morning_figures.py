@@ -33,6 +33,9 @@ report can say what changed. A source that isn't set up yet is reported as "not 
     later, so yesterday's are left out (engagementPending) until then; the day before's are settled.
   - Umami (every visit, no cookies: visitors, page views, bounce rate, time per visit, the last 7 days, top and
     entry pages, referrers, countries, devices, click events).
+  - Clicks (Umami's event details): the partner buttons (Booking.com, Viator, GetYourGuide) by partner, spot and page,
+    restaurants' own booking buttons by page, and links out by kind, for yesterday, the last 7 days and since the
+    buttons went live (26 Oct 2026), with clicks per 100 visitors.
 
 Settings live in ~/starred-bill-research/figures/config.json (nothing secret in it):
   {"gsc_site": "sc-domain:starredbill.com", "ga4_property": "123456789",
@@ -1022,6 +1025,63 @@ def umami(cfg):
             "countries": metric("country", 10), "devices": metric("device", 5), "events": metric("event", 25)}
 
 
+# The partner buttons went live with commit 3480381b (26 Oct 2026, to-do item Money 4): Booking.com, Viator and
+# GetYourGuide links, unpaid until PARTNERS in build.py has their tracking links. clicks() counts them from then on.
+PARTNERS_LIVE = dt.datetime(2026, 10, 26, 22, 40, tzinfo=dt.timezone.utc)
+
+
+def clicks(cfg):
+    """Clicks on the partner buttons (the `partner` event: which partner, which spot, `link` the two together, the page,
+    paid or not) and on links out of the site (the `outbound` event by kind: price sources, Google Maps, restaurants'
+    own booking buttons and the rest, with `spot` = kind and page), for yesterday, the last 7 days and since the
+    buttons went live, with clicks per 100 visitors. Read from Umami's event details through the share link, which
+    gives each detail's totals separately, hence the joined `link` and `spot` details sent by common.js."""
+    base, auth, _ = umami_client(cfg)
+    today = dt.datetime.combine(dt.date.today(), dt.time())
+    end = int(today.timestamp() * 1000) - 1
+    periods = {"yesterday": int((today - dt.timedelta(days=1)).timestamp() * 1000),
+               "last_7_days": int((today - dt.timedelta(days=7)).timestamp() * 1000),
+               "since_launch": int(PARTNERS_LIVE.timestamp() * 1000)}
+
+    def get(path, start, **q):
+        q.update(startAt=start, endAt=end)
+        return http(f"{base}/{path}?{urllib.parse.urlencode(q)}", headers=auth, method="GET")
+
+    def details(event, start):
+        out = {}
+        for row in get("event-data/events", start, event=event) or []:
+            if row.get("propertyValue") not in (None, ""):
+                out.setdefault(row["propertyName"], {})[row["propertyValue"]] = row.get("total") or 0
+        return out
+
+    def ranked(d, limit=None, strip=""):
+        rows = sorted(((k[len(strip):] if strip else k, v) for k, v in d.items() if k.startswith(strip)), key=lambda kv: -kv[1])
+        return [{"item": k, "count": v} for k, v in (rows[:limit] if limit else rows)]
+
+    result = {"live_since": PARTNERS_LIVE.isoformat()}
+    for name, start in periods.items():
+        if start >= end:
+            continue
+        stats = get("stats", start)
+        visitors = stats.get("visitors")
+        visitors = visitors.get("value") if isinstance(visitors, dict) else visitors
+        p, o = details("partner", start), details("outbound", start)
+        total = sum((p.get("partner") or {}).values())
+        booking = (o.get("kind") or {}).get("booking", 0)
+        per100 = lambda n: round(100 * n / visitors, 1) if visitors else None
+        result[name] = {
+            "visitors": visitors,
+            "partner_clicks": total, "partner_per_100_visitors": per100(total),
+            "by_partner": ranked(p.get("partner") or {}), "by_spot": ranked(p.get("where") or {}),
+            "by_partner_and_spot": ranked(p.get("link") or {}), "paid": p.get("paid") or {},
+            "partner_pages": ranked(p.get("page") or {}, 10),
+            "booking_clicks": booking, "booking_per_100_visitors": per100(booking),
+            "booking_pages": ranked(o.get("spot") or {}, 10, "booking "),
+            "outbound_by_kind": ranked(o.get("kind") or {}),
+        }
+    return result
+
+
 def main(out, prev=None):
     cfg = json.loads(CONFIG.read_text()) if CONFIG.exists() else {}
     result = {"date": str(dt.date.today()), "sources": {}}
@@ -1035,7 +1095,8 @@ def main(out, prev=None):
                             ("page_two", lambda c: page_two(c, prev), ["google sign-in"]),
                             ("links", lambda c: bing_links(c, prev), ["Bing API key"]),
                             ("cloudflare", lambda c: cloudflare(c, prev), ["Cloudflare API token"]),
-                            ("umami", umami, [])):
+                            ("umami", umami, []),
+                            ("clicks", clicks, [])):
         missing = [k for k in needs if not (google_ready(cfg) if k == "google sign-in" else
                                             keychain("starredbill-bing") if k == "Bing API key" else
                                             keychain("starredbill-cloudflare") if k == "Cloudflare API token" else

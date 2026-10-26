@@ -25,10 +25,6 @@
   "lng": 2.747708,
   "placeId": "ChIJuxdEvTyhuhIR-FcTN_fmyvg",
   "michelinId": "1215907",
-  "diets": [
-    "vegetarian",
-    "gluten-free"
-  ],
   "chef": "Kevin de Porre",
-  "chefSource": "michelin"
+  "chefSource": "site"
 }

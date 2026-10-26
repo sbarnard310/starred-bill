@@ -20,12 +20,8 @@
   "lng": 2.6554437,
   "placeId": "ChIJ96dh0IwoQg0RVQTtUBZwfOs",
   "michelinId": "1191909",
-  "diets": [
-    "vegetarian",
-    "gluten-free"
-  ],
   "chef": "Fernando Pérez Arellano",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "stay": {
     "kind": "hotel",
     "name": "Es Princep",

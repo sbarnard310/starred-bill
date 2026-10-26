@@ -24,9 +24,11 @@
   "placeId": "ChIJX7HCfAWGCUgR0IgD37ZNX_4",
   "michelinId": "3206",
   "diets": [
+    "vegetarian-menu",
     "vegetarian"
   ],
   "chef": "Hubert Nobis",
   "chefSource": "press",
-  "wine": 33
+  "wine": 33,
+  "dietsManual": true
 }

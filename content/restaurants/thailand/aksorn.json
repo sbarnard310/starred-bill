@@ -22,12 +22,11 @@
   "placeId": "ChIJERWr0WuZ4jARXtohpCb5n1E",
   "michelinId": "1194928",
   "diets": [
-    "vegetarian",
-    "vegan",
-    "gluten-free"
+    "vegetarian-menu",
+    "vegetarian"
   ],
   "chef": "David Thompson",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "rankings": [
     {
       "list": "la-liste",
@@ -42,5 +41,6 @@
       "url": "https://www.oadguides.com/lists/asia/top-restaurants/2026"
     }
   ],
-  "rankingsChecked": "2026-10-24"
+  "rankingsChecked": "2026-10-24",
+  "dietsManual": true
 }

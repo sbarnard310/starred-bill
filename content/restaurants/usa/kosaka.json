@@ -18,12 +18,8 @@
   "lng": -74.00137,
   "placeId": "ChIJZY2-HL5ZwokRnIcy5aBG-o0",
   "michelinId": "510090",
-  "diets": [
-    "gluten-free",
-    "kosher"
-  ],
   "chef": "Masatomo Soma",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "photo": "kosaka.jpg",
   "photoAlt": "The shopfront of Kosaka at 220 West 13th Street, New York",
   "photoCredit": "Transpoman",

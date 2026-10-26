@@ -18,14 +18,13 @@
   "diets": [
     "vegetarian-menu",
     "vegetarian",
-    "vegan",
-    "halal",
-    "kosher"
+    "vegan"
   ],
   "chef": "Emiel Kwekkeboom",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 94)",
   "noLunch": true,
   "lunchNote": "Dinner only",
-  "lunchNoteNl": "Alleen diner"
+  "lunchNoteNl": "Alleen diner",
+  "dietsManual": true
 }

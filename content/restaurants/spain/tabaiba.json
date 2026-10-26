@@ -19,10 +19,6 @@
   "lng": -15.4397592,
   "placeId": "ChIJ93sdTHWVQAwRyETTKEH56KQ",
   "michelinId": "1195419",
-  "diets": [
-    "vegetarian",
-    "gluten-free"
-  ],
   "chef": "Abraham Ortega",
-  "chefSource": "michelin"
+  "chefSource": "site"
 }

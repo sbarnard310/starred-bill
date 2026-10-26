@@ -15,9 +15,7 @@
   "placeId": "ChIJjx-6QaK9jkcRI9h7nzX11Pw",
   "michelinId": "179826",
   "diets": [
-    "vegetarian-menu",
-    "vegetarian",
-    "gluten-free"
+    "vegetarian"
   ],
   "chef": "Grégory Halgand",
   "chefSource": "site",
@@ -32,5 +30,6 @@
   "lunchNote": "Business lunch",
   "lunchNoteDe": "Business-Lunch",
   "lunchNoteFr": "Business lunch",
-  "lunchNoteIt": "Business lunch"
+  "lunchNoteIt": "Business lunch",
+  "dietsManual": true
 }

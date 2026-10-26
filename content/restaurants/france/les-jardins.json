@@ -28,8 +28,10 @@
   "placeId": "ChIJm5Gq_kSErBIRM1Xj-vpGGx4",
   "michelinId": "1192474",
   "diets": [
+    "vegetarian-menu",
     "vegetarian"
   ],
   "chef": "Marius Halter",
-  "chefSource": "michelin"
+  "chefSource": "site",
+  "dietsManual": true
 }

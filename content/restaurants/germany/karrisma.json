@@ -16,12 +16,14 @@
   "placeId": "ChIJH4Q859UNm0cRps5IM02vUQc",
   "michelinId": "552203",
   "diets": [
+    "vegetarian-menu",
     "vegetarian"
   ],
   "chef": "Julian Karr",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 85 €)",
   "noLunch": true,
   "lunchNote": "Dinner only",
-  "lunchNoteDe": "Nur abends"
+  "lunchNoteDe": "Nur abends",
+  "dietsManual": true
 }

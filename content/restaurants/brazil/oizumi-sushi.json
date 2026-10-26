@@ -14,12 +14,8 @@
   "lng": -46.6837962,
   "placeId": "ChIJeULgXSVRzpQRuw7GVNI-QO0",
   "michelinId": "1210333",
-  "diets": [
-    "gluten-free",
-    "kosher"
-  ],
   "chef": "Danilo Maciel",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNotePt": "Menu de degustação",
   "lunchNote": "Open for lunch · Tue–Sat",
   "lunchNotePt": "Aberto ao almoço · ter.–sáb."

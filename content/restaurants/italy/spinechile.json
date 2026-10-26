@@ -24,9 +24,10 @@
   "placeId": "ChIJ1d7QkKaxeEcRHMIjpLsaNdc",
   "michelinId": "376776",
   "diets": [
-    "vegetarian",
-    "gluten-free"
+    "vegetarian-menu",
+    "vegetarian"
   ],
   "chef": "Corrado Fasolato",
-  "chefSource": "michelin"
+  "chefSource": "site",
+  "dietsManual": true
 }

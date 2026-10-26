@@ -17,8 +17,7 @@
   "michelinId": "210384",
   "diets": [
     "vegetarian-menu",
-    "vegetarian",
-    "vegan"
+    "vegetarian"
   ],
   "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 130)",
   "dinnerNoteFr": "Menu dégustation (autres menus dès 130 €)",
@@ -30,5 +29,6 @@
   "lunchSourceType": "site",
   "lunchSource": "https://philippefauchet.be/le-menu/",
   "chef": "Philippe Fauchet",
-  "chefSource": "press"
+  "chefSource": "press",
+  "dietsManual": true
 }

@@ -20,15 +20,8 @@
   "lng": -80.8739371,
   "placeId": "ChIJP7Nwj_6hVogRLjZmi8ZIIio",
   "michelinId": "1214995",
-  "diets": [
-    "vegetarian",
-    "vegan",
-    "gluten-free",
-    "halal",
-    "kosher"
-  ],
   "chef": "Sam Hart",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "rankings": [
     {
       "list": "oad-north-america",

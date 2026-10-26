@@ -18,13 +18,8 @@
   "lng": 12.3601001,
   "placeId": "ChIJpem2AkqneUcRwyh4ej8cNOI",
   "michelinId": "145511",
-  "diets": [
-    "vegetarian",
-    "vegan",
-    "gluten-free"
-  ],
   "chef": "Riccardo De Pra",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "stay": {
     "kind": "hotel",
     "name": "Dolada Boutique Hotel",

@@ -24,15 +24,12 @@
   "placeId": "ChIJBU6Bzs8YyhIRkoH8etilhaI",
   "michelinId": "4313",
   "diets": [
-    "vegetarian-menu",
     "vegetarian",
     "vegan",
-    "gluten-free",
-    "halal",
-    "kosher"
+    "gluten-free"
   ],
   "chef": "Nadia Sammut",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "stay": {
     "kind": "rooms",
     "name": "Auberge La Fenière",
@@ -40,5 +37,6 @@
     "url": "https://www.aubergelafeniere.com/sejours-immersifs",
     "note": "The inn has eleven rooms and also sells immersive stays that include two nights.",
     "checked": "2026-10-23"
-  }
+  },
+  "dietsManual": true
 }

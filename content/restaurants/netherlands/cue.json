@@ -16,10 +16,11 @@
   "placeId": "ChIJmQn4sSwJxkcRlfgr7QtbEyA",
   "michelinId": "1217372",
   "diets": [
+    "vegetarian-menu",
     "vegetarian"
   ],
   "chef": "George Kataras",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNoteNl": "Signature-menu, Volume 2 (Volume 1 € 84, wo–do)",
   "lunch": 84,
   "lunchType": "menu",
@@ -27,5 +28,6 @@
   "lunchWine": 46,
   "lunchNoteNl": "Zondagslunchmenu",
   "lunchSourceType": "site",
-  "lunchSource": "https://cdn.prod.website-files.com/6841a4beb5cabb956f197ea1/6ac7905caac80e4b16fbcd22_All%20menus%20October_2026%20Web.pdf"
+  "lunchSource": "https://cdn.prod.website-files.com/6841a4beb5cabb956f197ea1/6ac7905caac80e4b16fbcd22_All%20menus%20October_2026%20Web.pdf",
+  "dietsManual": true
 }

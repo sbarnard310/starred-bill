@@ -16,13 +16,15 @@
   "placeId": "ChIJKyxCKFoiw0cReymePe9p9Lk",
   "michelinId": "485040",
   "diets": [
-    "vegetarian"
+    "vegetarian",
+    "gluten-free"
   ],
   "chef": "David Grosdent",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 65)",
   "dinnerNoteFr": "Menu dégustation (autres menus dès 65 €)",
   "lunchNote": "Open for lunch · Fri, Sun–Tue",
   "lunchNoteNl": "Open voor lunch · vr, zo–di",
-  "lunchNoteFr": "Ouvert le midi · ven., dim.–mar."
+  "lunchNoteFr": "Ouvert le midi · ven., dim.–mar.",
+  "dietsManual": true
 }

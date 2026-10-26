@@ -14,12 +14,8 @@
   "lng": -46.6634795,
   "placeId": "ChIJtVl600tZzpQR_ime0PfBk4A",
   "michelinId": "1186326",
-  "diets": [
-    "vegetarian",
-    "vegan"
-  ],
   "chef": "Tsuyoshi Murakami",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNotePt": "Menu de degustação (outros menus desde R$530)",
   "lunchNote": "Open for lunch · Mon–Sat",
   "lunchNotePt": "Aberto ao almoço · seg.–sáb."

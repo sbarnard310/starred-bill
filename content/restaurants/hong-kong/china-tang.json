@@ -20,13 +20,13 @@
   "lunchNoteZh": "有供應午餐",
   "lunchNoteYue": "有午市",
   "lunchType": "spend",
-  "website": "https://chinatang.hk/",
+  "website": "https://chinatang.com/landmark-hongkong/",
   "lat": 22.2804857,
   "lng": 114.1579105,
   "placeId": "ChIJT-ll42QABDQRUBFAn4n-2pk",
   "michelinId": "446675",
   "diets": [
-    "vegetarian-menu"
+    "vegetarian"
   ],
   "chef": "Menex Cheung",
   "chefSource": "press",
@@ -40,5 +40,6 @@
       "url": "https://www.oadguides.com/lists/asia/top-restaurants/2026"
     }
   ],
-  "rankingsChecked": "2026-10-24"
+  "rankingsChecked": "2026-10-24",
+  "dietsManual": true
 }

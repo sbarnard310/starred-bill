@@ -25,9 +25,9 @@
   "placeId": "ChIJ9_dn12o9KhMRETNuJsCF-yQ",
   "michelinId": "1192183",
   "diets": [
-    "vegetarian",
-    "gluten-free"
+    "vegetarian"
   ],
   "chef": "Giovanni Cerroni",
-  "chefSource": "michelin"
+  "chefSource": "site",
+  "dietsManual": true
 }

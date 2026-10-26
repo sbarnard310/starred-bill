@@ -16,10 +16,11 @@
   "placeId": "ChIJS_BVNwBtdkcRTkNwal3UYTM",
   "michelinId": "1213481",
   "diets": [
+    "vegetarian-menu",
     "vegetarian"
   ],
   "chef": "Rico Birndt",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 90 €)",
   "noLunch": true,
   "lunchNote": "Dinner only",
@@ -31,5 +32,6 @@
     "via": "website",
     "source": "https://www.june.restaurant",
     "checked": "2026-10-10"
-  }
+  },
+  "dietsManual": true
 }

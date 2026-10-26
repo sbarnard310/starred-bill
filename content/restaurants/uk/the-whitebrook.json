@@ -25,7 +25,7 @@
     "vegetarian"
   ],
   "chef": "Chris Harrod",
-  "chefSource": "michelin",
+  "chefSource": "press",
   "photo": "the-whitebrook.jpg",
   "photoAlt": "The white inn of The Whitebrook in the Wye Valley, under its former name, The Crown at Whitebrook",
   "photoCredit": "Roger Davies",
@@ -62,5 +62,6 @@
       "url": "https://www.laliste.com/places/the-whitebrook-monmouth-gb"
     }
   ],
-  "rankingsChecked": "2026-10-24"
+  "rankingsChecked": "2026-10-24",
+  "dietsManual": true
 }

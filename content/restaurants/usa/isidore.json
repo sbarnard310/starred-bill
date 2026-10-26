@@ -23,6 +23,7 @@
   "diets": [
     "vegetarian"
   ],
-  "chef": "Danny Parada / Ian Lanphear",
-  "chefSource": "michelin"
+  "chef": "Danny Parada and Ian Lanphear",
+  "chefSource": "site",
+  "dietsManual": true
 }

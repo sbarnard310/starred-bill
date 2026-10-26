@@ -25,15 +25,15 @@
   "michelinId": "10665",
   "diets": [
     "vegetarian-menu",
-    "vegetarian",
-    "vegan"
+    "vegetarian"
   ],
   "chef": "Thomas Parnaud",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "stay": {
     "kind": "hotel",
     "name": "Le Grand Monarque",
     "url": "https://www.grand-monarque.com/fr/offres-speciales.html",
     "checked": "2026-10-23"
-  }
+  },
+  "dietsManual": true
 }

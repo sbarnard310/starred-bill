@@ -16,11 +16,8 @@
   "lng": 12.9449636,
   "placeId": "ChIJ045zbZ7zqEcRrsItoc6VoLY",
   "michelinId": "511580",
-  "diets": [
-    "vegetarian"
-  ],
   "chef": "Thomas Hübner",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 130 €)",
   "lunchNote": "Open for lunch · Sat–Sun",
   "lunchNoteDe": "Mittags geöffnet · Sa–So"

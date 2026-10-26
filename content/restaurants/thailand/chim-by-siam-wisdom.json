@@ -19,11 +19,6 @@
   "lng": 100.5185611,
   "placeId": "ChIJg3htxvue4jARtGnzcjPrWnU",
   "michelinId": "546913",
-  "diets": [
-    "vegetarian",
-    "vegan",
-    "gluten-free"
-  ],
-  "chef": "Thanintorn Chantharawan",
-  "chefSource": "michelin"
+  "chef": "Thaninthorn Chantarawan",
+  "chefSource": "site"
 }

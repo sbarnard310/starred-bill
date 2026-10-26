@@ -16,8 +16,8 @@
   "placeId": "ChIJ9V48sC8sjEcRPXrTRG2wu3g",
   "michelinId": "179509",
   "diets": [
-    "vegetarian",
-    "gluten-free"
+    "vegetarian-menu",
+    "vegetarian"
   ],
   "chef": "Christophe Schmitt",
   "chefSource": "site",
@@ -32,5 +32,6 @@
   "lunchNoteIt": "Stesso menu a pranzo · lun–ven",
   "lunchSourceType": "site",
   "lunchSource": "https://www.berceau-des-sens.ch/menu",
-  "areaIt": "Losanna"
+  "areaIt": "Losanna",
+  "dietsManual": true
 }

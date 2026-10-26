@@ -22,12 +22,12 @@
   "placeId": "ChIJ6zjm6HfLyUcRmApb5iJmnKM",
   "michelinId": "212514",
   "diets": [
+    "vegetarian-menu",
     "vegetarian",
-    "vegan",
-    "gluten-free"
+    "vegan"
   ],
   "chef": "Steven Klein Nijenhuis",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 79)",
   "lunchNoteNl": "Lunchmenu",
   "photo": "herberg-onder-de-linden.jpg",
@@ -48,5 +48,6 @@
     "from": 175,
     "note": "Restaurant with four guest rooms upstairs and two suites in the former house behind; rooms from EUR 175 per night, breakfast EUR 30 per person extra.",
     "checked": "2026-10-23"
-  }
+  },
+  "dietsManual": true
 }

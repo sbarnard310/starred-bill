@@ -21,9 +21,9 @@
   "placeId": "ChIJqwdOjOzyJBMRCMd33NixVgo",
   "michelinId": "1192022",
   "diets": [
-    "vegetarian",
-    "vegan"
+    "vegetarian"
   ],
   "chef": "Patrizia Ronca",
-  "chefSource": "press"
+  "chefSource": "press",
+  "dietsManual": true
 }

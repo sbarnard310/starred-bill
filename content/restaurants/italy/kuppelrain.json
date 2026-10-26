@@ -24,8 +24,8 @@
   "placeId": "ChIJ34GhxmLCgkcRYYswNt5UhQM",
   "michelinId": "129608",
   "diets": [
-    "vegetarian",
-    "gluten-free"
+    "vegetarian-menu",
+    "vegetarian"
   ],
   "chef": "Kevin Trafoier",
   "chefSource": "press",
@@ -50,5 +50,6 @@
     ],
     "note": "Three rooms in the same historic building as the restaurant in Castelbello.",
     "checked": "2026-10-23"
-  }
+  },
+  "dietsManual": true
 }

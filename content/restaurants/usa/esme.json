@@ -21,11 +21,10 @@
   "michelinId": "1196918",
   "diets": [
     "vegetarian",
-    "gluten-free",
-    "kosher"
+    "gluten-free"
   ],
   "chef": "Jenner Tomaska",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "rankings": [
     {
       "list": "oad-north-america",
@@ -34,5 +33,6 @@
       "url": "https://www.oadguides.com/lists/north-america/top-restaurants/2026"
     }
   ],
-  "rankingsChecked": "2026-10-24"
+  "rankingsChecked": "2026-10-24",
+  "dietsManual": true
 }

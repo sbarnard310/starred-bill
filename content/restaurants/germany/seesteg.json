@@ -21,10 +21,12 @@
   "placeId": "ChIJdVN7v08FtkcROqcuWm_SFJg",
   "michelinId": "258253",
   "diets": [
+    "vegetarian-menu",
     "vegetarian"
   ],
   "chef": "Markus Kebschull",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 95 €)",
-  "lunchNoteDe": "Mittagsmenü"
+  "lunchNoteDe": "Mittagsmenü",
+  "dietsManual": true
 }

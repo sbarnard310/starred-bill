@@ -23,11 +23,6 @@
   "lng": 6.3139725,
   "placeId": "ChIJ0TT3XMxrjEcRdhDfQzwBeQI",
   "michelinId": "69941",
-  "diets": [
-    "vegetarian-menu",
-    "vegetarian",
-    "gluten-free"
-  ],
   "chef": "Jérôme Mamet",
-  "chefSource": "michelin"
+  "chefSource": "site"
 }

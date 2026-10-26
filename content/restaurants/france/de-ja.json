@@ -22,9 +22,10 @@
   "placeId": "ChIJQ2-x7-vJlkcR3oLzlVBIUss",
   "michelinId": "1201380",
   "diets": [
-    "vegetarian",
-    "vegan"
+    "vegetarian-menu",
+    "vegetarian"
   ],
-  "chef": "Jeanne Satori + David Degoursy",
-  "chefSource": "michelin"
+  "chef": "Jeanne Satori and David Degoursy",
+  "chefSource": "site",
+  "dietsManual": true
 }

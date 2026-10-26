@@ -16,12 +16,15 @@
   "placeId": "ChIJhx36L7EHbUcRgtI0wP_b_Vw",
   "michelinId": "1181264",
   "diets": [
-    "vegetarian"
+    "vegetarian-menu",
+    "vegetarian",
+    "gluten-free"
   ],
   "chef": "Sören Herzig",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 170 €)",
   "noLunch": true,
   "lunchNote": "Dinner only",
-  "lunchNoteDe": "Nur abends"
+  "lunchNoteDe": "Nur abends",
+  "dietsManual": true
 }

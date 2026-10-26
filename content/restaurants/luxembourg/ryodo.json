@@ -17,11 +17,10 @@
   "michelinId": "1192197",
   "diets": [
     "vegetarian-menu",
-    "vegetarian",
-    "vegan"
+    "vegetarian"
   ],
   "chef": "Ryôdô Kajiwara",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "lunch": 85,
   "lunchType": "menu",
   "lunchSourceType": "site",
@@ -32,5 +31,6 @@
   "dinnerNoteDe": "Omakase-Menü (vegetarisches Shôjin-Menü 150 €)",
   "lunchNote": "Bento lunch menu",
   "lunchNoteFr": "Menu Bento du midi",
-  "lunchNoteDe": "Bento-Mittagsmenü"
+  "lunchNoteDe": "Bento-Mittagsmenü",
+  "dietsManual": true
 }

@@ -23,9 +23,6 @@
   "lng": 5.3065565,
   "placeId": "ChIJTUu9auoRyhIRyWCmh2ioPsw",
   "michelinId": "1214377",
-  "diets": [
-    "vegetarian"
-  ],
   "chef": "Julien Allano",
-  "chefSource": "michelin"
+  "chefSource": "site"
 }

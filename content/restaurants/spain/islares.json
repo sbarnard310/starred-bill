@@ -30,11 +30,8 @@
   "lng": -2.935332,
   "placeId": "ChIJ8dkn475PTg0RId5X2UZIrEM",
   "michelinId": "1204750",
-  "diets": [
-    "gluten-free"
-  ],
   "chef": "Julen Bergantiños",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "rankings": [
     {
       "list": "oad-europe",

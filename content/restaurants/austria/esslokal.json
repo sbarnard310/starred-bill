@@ -14,11 +14,8 @@
   "lng": 15.7208653,
   "placeId": "ChIJu--XagSdckcR9iErI4bicfo",
   "michelinId": "1212821",
-  "diets": [
-    "vegetarian"
-  ],
   "chef": "Roland Huber",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "lunch": 178,
   "lunchType": "menu",
   "lunchNote": "Same menu at lunch · Fri–Sat",

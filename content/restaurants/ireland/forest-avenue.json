@@ -26,9 +26,9 @@
   "placeId": "ChIJ08KIUaMOZ0gRsWR5zZlb95U",
   "michelinId": "1198717",
   "diets": [
-    "vegetarian",
-    "gluten-free"
+    "vegetarian"
   ],
   "chef": "John Wyer",
-  "chefSource": "michelin"
+  "chefSource": "press",
+  "dietsManual": true
 }

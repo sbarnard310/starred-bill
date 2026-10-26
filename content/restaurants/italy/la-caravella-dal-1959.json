@@ -22,9 +22,11 @@
   "placeId": "ChIJfxPP562VOxMRQs2xFFccBuI",
   "michelinId": "124596",
   "diets": [
+    "vegetarian-menu",
     "vegetarian",
     "gluten-free"
   ],
   "chef": "Antonio Dipino",
-  "chefSource": "press"
+  "chefSource": "press",
+  "dietsManual": true
 }

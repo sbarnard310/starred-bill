@@ -26,11 +26,11 @@
   "placeId": "ChIJ-ZdibcELKhMRF7Qt3wnuI9w",
   "michelinId": "1203075",
   "diets": [
-    "vegetarian",
-    "gluten-free"
+    "vegetarian-menu",
+    "vegetarian"
   ],
   "chef": "Lodovico Eulogio",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "stay": {
     "kind": "hotel",
     "name": "Laqua Vineyard",
@@ -38,5 +38,6 @@
     "url": "https://laquavineyard.it/resort-in-toscana-terricciola-pisa/suite-nelle-campagne-toscane-tra-vigne-e-borghi/",
     "note": "A boutique hotel of six suites among the vineyards, with the restaurant on site.",
     "checked": "2026-10-23"
-  }
+  },
+  "dietsManual": true
 }

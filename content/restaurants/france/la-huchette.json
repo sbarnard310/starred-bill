@@ -26,7 +26,7 @@
   "michelinId": "1184873",
   "diets": [
     "vegetarian",
-    "vegan"
+    "gluten-free"
   ],
   "chef": "Didier Goiffon",
   "chefSource": "site",
@@ -36,5 +36,6 @@
     "url": "https://la-huchette.com/fr/hotel.html",
     "note": "Three-star hotel of character.",
     "checked": "2026-10-23"
-  }
+  },
+  "dietsManual": true
 }

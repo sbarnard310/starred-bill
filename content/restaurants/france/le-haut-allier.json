@@ -25,13 +25,8 @@
   "lng": 3.6743081,
   "placeId": "ChIJo1xVXZdUsxIRBdtki8QokTY",
   "michelinId": "9872",
-  "diets": [
-    "vegetarian-menu",
-    "vegetarian",
-    "gluten-free"
-  ],
-  "chef": "Clément Brun",
-  "chefSource": "michelin",
+  "chef": "Philippe and Clément Brun",
+  "chefSource": "site",
   "photo": "le-haut-allier.jpg",
   "photoAlt": "The hotel-restaurant Le Haut-Allier in Alleyras, with its sign",
   "photoCredit": "Graeme Churchard from Bristol, UK",

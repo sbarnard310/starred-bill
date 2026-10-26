@@ -15,13 +15,8 @@
   "lng": 9.5195393,
   "placeId": "ChIJpUeErmkxm0cRjhOXx0JeJ6o",
   "michelinId": "180520",
-  "diets": [
-    "vegetarian",
-    "vegan",
-    "gluten-free"
-  ],
   "chef": "Ivo Berger",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab CHF 48)",
   "lunch": 163,
   "lunchType": "menu",

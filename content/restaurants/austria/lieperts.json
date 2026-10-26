@@ -17,10 +17,11 @@
   "placeId": "ChIJtcHEcMqZb0cRfN15RImk2UE",
   "michelinId": "1213586",
   "diets": [
-    "vegetarian"
+    "vegetarian",
+    "gluten-free"
   ],
-  "chef": "Manuel Liepert",
-  "chefSource": "michelin",
+  "chef": "Manuel and Lisa Liepert",
+  "chefSource": "site",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 159 €)",
   "lunch": 179,
   "lunchType": "menu",
@@ -28,5 +29,6 @@
   "lunchNoteDe": "Gleiches Menü am Mittag · Fr–Sa",
   "lunchWine": 59,
   "lunchSourceType": "site",
-  "lunchSource": "https://www.lieperts.at/fine-dining-suedsteiermark/"
+  "lunchSource": "https://www.lieperts.at/fine-dining-suedsteiermark/",
+  "dietsManual": true
 }

@@ -25,9 +25,9 @@
   "placeId": "ChIJlxMqbIkPsRIRhoZ5GjVX4nk",
   "michelinId": "1211277",
   "diets": [
-    "vegetarian",
-    "vegan"
+    "vegetarian-menu"
   ],
   "chef": "Fabien Lefebvre",
-  "chefSource": "press"
+  "chefSource": "press",
+  "dietsManual": true
 }

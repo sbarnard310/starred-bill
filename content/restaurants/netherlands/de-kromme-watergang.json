@@ -22,11 +22,10 @@
   "placeId": "ChIJW_2yvvWbxEcRtxDobLPsVwk",
   "michelinId": "212318",
   "diets": [
-    "vegetarian",
-    "gluten-free"
+    "vegetarian"
   ],
   "chef": "Tom Vinke",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 160)",
   "lunchNoteNl": "Lunchmenu",
   "stay": {
@@ -47,5 +46,6 @@
     ],
     "note": "Only two guest suites: Suite Blanche beside the restaurant, and Suite 11 at the Breskens marina (high season only, with pick-up service).",
     "checked": "2026-10-23"
-  }
+  },
+  "dietsManual": true
 }

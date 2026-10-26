@@ -24,12 +24,11 @@
     "vegetarian-menu",
     "vegetarian",
     "vegan",
-    "gluten-free",
-    "halal",
-    "kosher"
+    "gluten-free"
   ],
   "chef": "Graeme Cheevers",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNote": "Tasting menu (à la carte, 3 courses, £120)",
-  "lunchNote": "Lunch menu"
+  "lunchNote": "Lunch menu",
+  "dietsManual": true
 }

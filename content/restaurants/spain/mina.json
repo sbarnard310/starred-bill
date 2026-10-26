@@ -27,11 +27,8 @@
   "lng": -2.938556,
   "placeId": "ChIJff6iXMlPTg0RLNkfMmjmaZA",
   "michelinId": "226975",
-  "diets": [
-    "gluten-free"
-  ],
   "chef": "Álvaro Garrido",
-  "chefSource": "michelin",
+  "chefSource": "press",
   "rankings": [
     {
       "list": "oad-europe",

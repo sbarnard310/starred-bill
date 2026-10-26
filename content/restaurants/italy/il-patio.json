@@ -13,14 +13,11 @@
   "source": "https://guide.michelin.com/it/it/notizia/dining-out/i-ristoranti-stellati-meno-cari-d-italia-guida-michelin-2026",
   "lunchNote": "Open for lunch · Wed–Sun",
   "lunchNoteIt": "Aperto a pranzo · mer–dom",
-  "website": "https://www.ristoranteilpatio.it/",
+  "website": "https://famigliavineis.it/it/il-patio",
   "lat": 45.5652115,
   "lng": 8.0526276,
   "placeId": "ChIJHdWJbTSeiEcRNnUlOH9oKq0",
   "michelinId": "146030",
-  "diets": [
-    "vegetarian"
-  ],
-  "chef": "Simone Vineis",
-  "chefSource": "michelin"
+  "chef": "Sergio and Simone Vineis",
+  "chefSource": "site"
 }

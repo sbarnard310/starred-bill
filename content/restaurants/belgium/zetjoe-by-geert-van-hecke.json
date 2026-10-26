@@ -16,11 +16,8 @@
   "lng": 3.2321611,
   "placeId": "ChIJzbceychQw0cRAX_4EtGWiRE",
   "michelinId": "527137",
-  "diets": [
-    "vegetarian"
-  ],
   "chef": "Geert Van Hecke",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 53)",
   "dinnerNoteFr": "Menu dégustation (autres menus dès 53 €)",
   "lunch": 107,

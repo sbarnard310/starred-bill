@@ -18,12 +18,12 @@
   "michelinId": "368581",
   "diets": [
     "vegetarian-menu",
-    "vegetarian",
-    "gluten-free"
+    "vegetarian"
   ],
   "chef": "Edwin Soumang",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 140)",
   "lunchNote": "Open for lunch · Fri–Sat",
-  "lunchNoteNl": "Open voor lunch · vr–za"
+  "lunchNoteNl": "Open voor lunch · vr–za",
+  "dietsManual": true
 }

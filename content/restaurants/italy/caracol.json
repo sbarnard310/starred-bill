@@ -18,9 +18,6 @@
   "lng": 14.0834126,
   "placeId": "ChIJRQPu5m8SOxMRARv2Ij92Qtg",
   "michelinId": "160848",
-  "diets": [
-    "gluten-free"
-  ],
   "chef": "Angelo Carannante",
-  "chefSource": "michelin"
+  "chefSource": "site"
 }

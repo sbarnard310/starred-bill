@@ -16,13 +16,10 @@
   "michelinId": "179640",
   "diets": [
     "vegetarian-menu",
-    "vegetarian",
-    "vegan",
-    "gluten-free",
-    "halal"
+    "vegetarian"
   ],
   "chef": "Maximilian Huber",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab CHF 120)",
   "dinnerNoteFr": "Menu dégustation (autres menus dès CHF 120)",
   "dinnerNoteIt": "Menu degustazione (altri menu da CHF 120)",
@@ -30,5 +27,6 @@
   "lunchNote": "Dinner only",
   "lunchNoteDe": "Nur abends",
   "lunchNoteFr": "Uniquement le soir",
-  "lunchNoteIt": "Solo a cena"
+  "lunchNoteIt": "Solo a cena",
+  "dietsManual": true
 }

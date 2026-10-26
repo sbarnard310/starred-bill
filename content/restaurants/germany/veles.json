@@ -15,12 +15,12 @@
   "placeId": "ChIJgb9zEFZWn0cRsnDUeYV0aJ8",
   "michelinId": "1196950",
   "diets": [
+    "vegetarian-menu",
     "vegetarian"
   ],
-  "chef": "Vadim Karasev",
-  "chefSource": "michelin",
   "dinnerNoteDe": "Degustationsmenü",
   "noLunch": true,
   "lunchNote": "Dinner only",
-  "lunchNoteDe": "Nur abends"
+  "lunchNoteDe": "Nur abends",
+  "dietsManual": true
 }

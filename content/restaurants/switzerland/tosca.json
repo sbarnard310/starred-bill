@@ -21,9 +21,7 @@
   "michelinId": "525872",
   "diets": [
     "vegetarian-menu",
-    "vegetarian",
-    "vegan",
-    "gluten-free"
+    "vegetarian"
   ],
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab CHF 135)",
   "dinnerNoteFr": "Menu dégustation (autres menus dès CHF 135)",
@@ -32,5 +30,6 @@
   "lunchNoteFr": "Menu déjeuner",
   "lunchNoteIt": "Menu pranzo",
   "chef": "Ivan Baretti",
-  "chefSource": "michelin"
+  "chefSource": "site",
+  "dietsManual": true
 }

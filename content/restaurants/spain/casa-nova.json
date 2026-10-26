@@ -31,13 +31,8 @@
   "lng": 1.641892,
   "placeId": "ChIJU8IhtNZwpBIRHxpoxUdvUhE",
   "michelinId": "1200978",
-  "diets": [
-    "vegetarian",
-    "vegan",
-    "gluten-free"
-  ],
   "chef": "Andrés Torres",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "stay": {
     "kind": "rooms",
     "rooms": 3,

@@ -25,9 +25,10 @@
   "placeId": "ChIJ5SYaSVdTkUcRqh9LV7rx9IE",
   "michelinId": "1201779",
   "diets": [
-    "vegetarian",
-    "gluten-free"
+    "vegetarian-menu",
+    "vegetarian"
   ],
   "chef": "Carole Eckert",
-  "chefSource": "michelin"
+  "chefSource": "press",
+  "dietsManual": true
 }

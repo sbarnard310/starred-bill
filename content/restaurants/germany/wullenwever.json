@@ -20,8 +20,8 @@
     "vegetarian-menu",
     "vegetarian"
   ],
-  "chef": "Roy Petermann and Jean-Luc Petermann",
-  "chefSource": "michelin",
+  "chef": "Roy Petermann",
+  "chefSource": "site",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 95 €)",
   "noLunch": true,
   "lunchNote": "Dinner only",
@@ -35,5 +35,6 @@
   "photoSourceType": "commons",
   "photoWidth": 556,
   "photoHeight": 1000,
-  "photoChecked": "2026-10-13"
+  "photoChecked": "2026-10-13",
+  "dietsManual": true
 }

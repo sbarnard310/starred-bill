@@ -21,8 +21,8 @@
   "placeId": "ChIJkfYRUQPNExMRwdyZfcqRlS8",
   "michelinId": "1197135",
   "diets": [
+    "vegetarian-menu",
     "vegetarian",
-    "vegan",
     "gluten-free"
   ],
   "chef": "Giuseppe Torrisi",
@@ -33,5 +33,6 @@
     "url": "https://www.palazzosalomone.com/en/home-2/",
     "note": "Rooms from classic doubles to duplex suites.",
     "checked": "2026-10-23"
-  }
+  },
+  "dietsManual": true
 }

@@ -20,8 +20,9 @@
     "vegetarian"
   ],
   "chef": "Maximilian Kreus",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 185 €)",
   "lunchNote": "Open for lunch · Tue–Sat",
-  "lunchNoteDe": "Mittags geöffnet · Di–Sa"
+  "lunchNoteDe": "Mittags geöffnet · Di–Sa",
+  "dietsManual": true
 }

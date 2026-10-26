@@ -23,5 +23,6 @@
   "lunchNote": "Dinner only",
   "lunchNoteDe": "Nur abends",
   "chef": "Marcel Förster",
-  "chefSource": "press"
+  "chefSource": "press",
+  "dietsManual": true
 }

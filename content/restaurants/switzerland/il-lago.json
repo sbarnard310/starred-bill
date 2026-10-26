@@ -20,9 +20,7 @@
   "placeId": "ChIJE7P2qShljEcRZUc-PjvxJpg",
   "michelinId": "171989",
   "diets": [
-    "vegetarian",
-    "vegan",
-    "gluten-free"
+    "vegetarian"
   ],
   "dinnerNoteDe": "Degustationsmenü",
   "dinnerNoteFr": "Menu dégustation",
@@ -31,5 +29,6 @@
   "lunchNoteFr": "Menu déjeuner",
   "lunchNoteIt": "Menu pranzo",
   "chef": "Andrea Messina",
-  "chefSource": "press"
+  "chefSource": "press",
+  "dietsManual": true
 }

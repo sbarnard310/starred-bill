@@ -16,15 +16,17 @@
   "placeId": "ChIJv5_Lc_DIlUcRRN--PcEw4nw",
   "michelinId": "1207008",
   "diets": [
+    "vegetarian-menu",
     "vegetarian"
   ],
-  "chef": "Peter Wirbel",
-  "chefSource": "michelin",
+  "chef": "Marcus Langer",
+  "chefSource": "site",
   "dinnerNoteDe": "Fünf-Gänge-Menü (jeder weitere Gang 10 €)",
   "lunch": 69,
   "lunchType": "menu",
   "lunchNote": "Lunch menu · Sundays",
   "lunchNoteDe": "Mittagsmenü · Sonntag",
   "lunchSourceType": "site",
-  "lunchSource": "https://www.midi-restaurant.de/karte"
+  "lunchSource": "https://www.midi-restaurant.de/karte",
+  "dietsManual": true
 }

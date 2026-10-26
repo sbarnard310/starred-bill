@@ -25,11 +25,10 @@
   "placeId": "ChIJ5V5_NULrRg0RnMryopZ3LUI",
   "michelinId": "532964",
   "diets": [
-    "vegetarian",
     "gluten-free"
   ],
-  "chef": "Cristobal Muñoz",
-  "chefSource": "michelin",
+  "chef": "Cristóbal Muñoz",
+  "chefSource": "site",
   "rankings": [
     {
       "list": "oad-europe",
@@ -38,5 +37,6 @@
       "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
     }
   ],
-  "rankingsChecked": "2026-10-24"
+  "rankingsChecked": "2026-10-24",
+  "dietsManual": true
 }

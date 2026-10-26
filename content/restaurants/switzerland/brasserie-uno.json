@@ -16,11 +16,10 @@
   "placeId": "ChIJ4Ztpyqc1j0cRDQTgzN3KwXg",
   "michelinId": "1154675",
   "diets": [
-    "vegetarian",
-    "gluten-free"
+    "vegetarian"
   ],
-  "chef": "Luis Romo, Andreas Alm",
-  "chefSource": "michelin",
+  "chef": "Tommaso Guardascione",
+  "chefSource": "site",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab CHF 135)",
   "dinnerNoteFr": "Menu dégustation (autres menus dès CHF 135)",
   "dinnerNoteIt": "Menu degustazione (altri menu da CHF 135)",
@@ -28,5 +27,6 @@
   "lunchNote": "Dinner only",
   "lunchNoteDe": "Nur abends",
   "lunchNoteFr": "Uniquement le soir",
-  "lunchNoteIt": "Solo a cena"
+  "lunchNoteIt": "Solo a cena",
+  "dietsManual": true
 }

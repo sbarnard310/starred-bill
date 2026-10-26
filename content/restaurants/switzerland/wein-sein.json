@@ -16,11 +16,10 @@
   "michelinId": "566413",
   "diets": [
     "vegetarian-menu",
-    "vegetarian",
-    "gluten-free"
+    "vegetarian"
   ],
   "chef": "Pascal Melliger",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab CHF 170)",
   "dinnerNoteFr": "Menu dégustation (autres menus dès CHF 170)",
   "dinnerNoteIt": "Menu degustazione (altri menu da CHF 170)",
@@ -28,5 +27,6 @@
   "lunchNote": "Dinner only",
   "lunchNoteDe": "Nur abends",
   "lunchNoteFr": "Uniquement le soir",
-  "lunchNoteIt": "Solo a cena"
+  "lunchNoteIt": "Solo a cena",
+  "dietsManual": true
 }

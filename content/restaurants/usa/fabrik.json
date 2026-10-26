@@ -23,9 +23,9 @@
   "diets": [
     "vegetarian-only",
     "vegetarian",
-    "vegan",
-    "gluten-free"
+    "vegan"
   ],
   "chef": "Je Wallerstein",
-  "chefSource": "michelin"
+  "chefSource": "site",
+  "dietsManual": true
 }

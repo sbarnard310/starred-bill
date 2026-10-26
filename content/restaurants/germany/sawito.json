@@ -16,11 +16,8 @@
   "lng": 13.112693,
   "placeId": "ChIJFd9afFb5qEcRakoeV-QFluY",
   "michelinId": "1194313",
-  "diets": [
-    "vegetarian"
-  ],
   "chef": "Marco Wahl",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 90 €)",
   "noLunch": true,
   "lunchNote": "Dinner only",

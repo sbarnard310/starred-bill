@@ -24,8 +24,10 @@
   "placeId": "ChIJb3rxtrmmCUgR3MbV3WLLotw",
   "michelinId": "274697",
   "diets": [
+    "vegetarian-menu",
     "vegetarian"
   ],
   "chef": "Nicolas Nobis",
-  "chefSource": "michelin"
+  "chefSource": "site",
+  "dietsManual": true
 }

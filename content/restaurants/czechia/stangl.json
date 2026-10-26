@@ -19,13 +19,8 @@
   "lng": 14.4546772,
   "placeId": "ChIJ_7EAWgGVC0cRCWr7pUQ4Y20",
   "michelinId": "1217876",
-  "diets": [
-    "vegetarian",
-    "vegan",
-    "gluten-free"
-  ],
   "chef": "Martin Štangl",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNoteCs": "Degustační menu (další menu od CZK 1,958)",
   "lunchNote": "Open for lunch · Saturdays",
   "lunchNoteCs": "Otevřeno v poledne · sobota"

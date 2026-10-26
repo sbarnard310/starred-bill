@@ -16,7 +16,6 @@
   "placeId": "ChIJJwA5pRLfnUcR37q5yOMXZlA",
   "michelinId": "533505",
   "diets": [
-    "vegetarian-menu",
     "vegetarian"
   ],
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 85 €)",
@@ -24,5 +23,6 @@
   "lunchNote": "Dinner only",
   "lunchNoteDe": "Nur abends",
   "chef": "Florian Berger",
-  "chefSource": "press"
+  "chefSource": "press",
+  "dietsManual": true
 }

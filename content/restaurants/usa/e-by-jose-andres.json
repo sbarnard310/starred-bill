@@ -19,12 +19,8 @@
   "lng": -115.1743902,
   "placeId": "ChIJFbD_qDHEyIARB2AQf9-Ff3Q",
   "michelinId": "1245955",
-  "diets": [
-    "vegetarian",
-    "gluten-free"
-  ],
   "chef": "José Andrés",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "bookingWindow": {
     "type": "announced",
     "tz": "America/Los_Angeles",

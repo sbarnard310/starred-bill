@@ -25,5 +25,6 @@
   "dinnerNoteDe": "Degustationsmenü",
   "lunchNoteDe": "Mittagsmenü",
   "chef": "Julia Komp",
-  "chefSource": "press"
+  "chefSource": "press",
+  "dietsManual": true
 }

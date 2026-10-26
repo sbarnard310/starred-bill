@@ -17,7 +17,8 @@
   "placeId": "ChIJE3ehGIIhwUcR5ozVcID-wOA",
   "michelinId": "209795",
   "diets": [
-    "vegetarian"
+    "vegetarian",
+    "gluten-free"
   ],
   "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 78)",
   "dinnerNoteFr": "Menu dégustation (autres menus dès 78 €)",
@@ -30,5 +31,6 @@
   "lunchSourceType": "site",
   "lunchSource": "https://www.jer.be/menu/",
   "chef": "Jeroen Schildermans",
-  "chefSource": "press"
+  "chefSource": "press",
+  "dietsManual": true
 }

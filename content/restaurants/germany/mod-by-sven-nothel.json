@@ -23,11 +23,11 @@
   "michelinId": "1194558",
   "diets": [
     "vegetarian-menu",
-    "vegetarian",
-    "vegan"
+    "vegetarian"
   ],
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 75 €)",
   "lunchNoteDe": "Mittagsmenü",
   "chef": "Sven Nöthel",
-  "chefSource": "press"
+  "chefSource": "press",
+  "dietsManual": true
 }

@@ -23,8 +23,8 @@
   "placeId": "ChIJ95QdaO5AOxMRpFSUdZ9J9Dg",
   "michelinId": "136937",
   "diets": [
-    "vegetarian",
-    "gluten-free"
+    "vegetarian-menu",
+    "vegetarian"
   ],
   "chef": "Vincenzo Pietroluongo",
   "chefSource": "press",
@@ -33,5 +33,6 @@
     "url": "https://www.umbertoamare.it/en/hotel-umberto-a-mare/",
     "note": "Has Classic (about 16 sq m) and Superior sea-view rooms with terraces above the restaurant in Forio, Ischia; breakfast is served on the sea terrace.",
     "checked": "2026-10-23"
-  }
+  },
+  "dietsManual": true
 }

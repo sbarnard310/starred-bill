@@ -15,12 +15,8 @@
   "lng": 15.6256799,
   "placeId": "ChIJGT_XlxWhb0cRgjz_P6HkInA",
   "michelinId": "105868",
-  "diets": [
-    "vegetarian-menu",
-    "vegetarian"
-  ],
   "chef": "Norbert Thaller",
-  "chefSource": "michelin",
+  "chefSource": "press",
   "lunch": 36,
   "lunchType": "main",
   "lunchSourceType": "site",

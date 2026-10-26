@@ -23,11 +23,6 @@
   "lng": -0.5772326,
   "placeId": "ChIJxf9BWQAnVQ0RgotSBym_ZvA",
   "michelinId": "1214338",
-  "diets": [
-    "vegetarian",
-    "vegan",
-    "gluten-free"
-  ],
   "chef": "Alexandre Baumard",
-  "chefSource": "michelin"
+  "chefSource": "site"
 }

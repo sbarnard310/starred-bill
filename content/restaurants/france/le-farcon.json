@@ -21,10 +21,6 @@
   "lng": 6.5938711,
   "placeId": "ChIJkahIowt_iUcRqv35pM-e9MY",
   "michelinId": "42466",
-  "diets": [
-    "vegetarian",
-    "vegan"
-  ],
   "chef": "Julien Machet",
-  "chefSource": "michelin"
+  "chefSource": "site"
 }

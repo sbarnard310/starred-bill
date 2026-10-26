@@ -17,19 +17,16 @@
   "michelinId": "212829",
   "diets": [
     "vegetarian-menu",
-    "vegetarian",
-    "vegan",
-    "gluten-free",
-    "halal",
-    "kosher"
+    "vegetarian"
   ],
   "chef": "Sander Spruijt",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 70)",
   "lunch": 165,
   "lunchType": "menu",
   "lunchNote": "Same menu at lunch · Wed–Sat",
   "lunchNoteNl": "Zelfde menu bij de lunch · wo–za",
   "lunchSourceType": "site",
-  "lunchSource": "https://www.deburgemeester.nl/menu/"
+  "lunchSource": "https://www.deburgemeester.nl/menu/",
+  "dietsManual": true
 }

@@ -16,12 +16,8 @@
   "lng": 14.5368869,
   "placeId": "ChIJ8QUA1OLSc0cR5S0emdDaKBI",
   "michelinId": "1212939",
-  "diets": [
-    "vegetarian",
-    "vegan"
-  ],
   "chef": "Klemens Gold",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 135 €)",
   "noLunch": true,
   "lunchNote": "Dinner only",

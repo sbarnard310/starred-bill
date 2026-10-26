@@ -21,10 +21,7 @@
   "placeId": "ChIJd3qCP4rafEgRQ8C53E5NppU",
   "michelinId": "193171",
   "diets": [
-    "vegetarian-menu",
-    "vegetarian",
-    "vegan",
-    "gluten-free"
+    "vegetarian"
   ],
   "chef": "Jack Bond",
   "chefSource": "press",
@@ -52,5 +49,6 @@
       "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
     }
   ],
-  "rankingsChecked": "2026-10-24"
+  "rankingsChecked": "2026-10-24",
+  "dietsManual": true
 }

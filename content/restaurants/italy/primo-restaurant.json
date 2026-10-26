@@ -19,9 +19,10 @@
   "placeId": "ChIJQYEsWeMuRBMRFWgAR-W62oY",
   "michelinId": "500269",
   "diets": [
-    "vegetarian",
-    "gluten-free"
+    "vegetarian-menu",
+    "vegetarian"
   ],
   "chef": "Solaika Marrocco",
-  "chefSource": "press"
+  "chefSource": "press",
+  "dietsManual": true
 }

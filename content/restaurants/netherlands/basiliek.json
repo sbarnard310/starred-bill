@@ -24,11 +24,11 @@
     "vegetarian-menu",
     "vegetarian",
     "vegan",
-    "halal",
-    "kosher"
+    "halal"
   ],
   "chef": "Yornie van Dijk",
   "chefSource": "site",
   "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 95)",
-  "lunchNoteNl": "Lunchmenu"
+  "lunchNoteNl": "Lunchmenu",
+  "dietsManual": true
 }

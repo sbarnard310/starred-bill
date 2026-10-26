@@ -16,11 +16,8 @@
   "lng": 13.4301299,
   "placeId": "ChIJq82uwWJcdEcRy9yFITgbzqU",
   "michelinId": "1212930",
-  "diets": [
-    "vegetarian"
-  ],
   "chef": "Lukas Kienbauer",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 49 €)",
   "noLunch": true,
   "lunchNote": "Dinner only",

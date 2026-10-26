@@ -22,9 +22,9 @@
   "placeId": "ChIJw0T3eA-bgkcR2Nlt0MHbOH4",
   "michelinId": "1190481",
   "diets": [
-    "vegetarian",
-    "gluten-free"
+    "vegetarian"
   ],
   "chef": "Alessandro Bellingeri",
-  "chefSource": "michelin"
+  "chefSource": "press",
+  "dietsManual": true
 }

@@ -21,8 +21,7 @@
   "placeId": "ChIJR1ap776hxkcRf8wJWsHSejE",
   "michelinId": "212308",
   "diets": [
-    "vegetarian",
-    "gluten-free"
+    "vegetarian"
   ],
   "chef": "Maarten Camps",
   "chefSource": "site",
@@ -37,5 +36,6 @@
   "photoSourceType": "commons",
   "photoWidth": 1000,
   "photoHeight": 665,
-  "photoChecked": "2026-10-13"
+  "photoChecked": "2026-10-13",
+  "dietsManual": true
 }

@@ -21,7 +21,7 @@
   "placeId": "ChIJqQVK2dBvjEcR8W7vGC2rNmI",
   "michelinId": "179243",
   "diets": [
-    "vegetarian"
+    "gluten-free"
   ],
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab CHF 80)",
   "dinnerNoteFr": "Menu dégustation (autres menus dès CHF 80)",
@@ -30,5 +30,6 @@
   "lunchNoteFr": "Menu déjeuner",
   "lunchNoteIt": "Menu pranzo",
   "chef": "Jean-Marc Bessire",
-  "chefSource": "press"
+  "chefSource": "press",
+  "dietsManual": true
 }

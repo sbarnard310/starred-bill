@@ -25,11 +25,12 @@
     "gluten-free"
   ],
   "chef": "Frank Xu",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab CHF 158)",
   "dinnerNoteFr": "Menu dégustation (autres menus dès CHF 158)",
   "dinnerNoteIt": "Menu degustazione (altri menu da CHF 158)",
   "lunchNoteDe": "Mittagsmenü",
   "lunchNoteFr": "Menu déjeuner",
-  "lunchNoteIt": "Menu pranzo"
+  "lunchNoteIt": "Menu pranzo",
+  "dietsManual": true
 }

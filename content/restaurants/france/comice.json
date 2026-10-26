@@ -24,10 +24,9 @@
   "michelinId": "542769",
   "diets": [
     "vegetarian",
-    "gluten-free",
-    "halal",
-    "kosher"
+    "gluten-free"
   ],
   "chef": "Noam Gedalof",
-  "chefSource": "michelin"
+  "chefSource": "site",
+  "dietsManual": true
 }

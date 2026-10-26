@@ -27,12 +27,10 @@
   "michelinId": "1200012",
   "diets": [
     "vegetarian-menu",
-    "vegetarian",
-    "vegan",
-    "gluten-free"
+    "vegetarian"
   ],
   "chef": "Giacomo Devoto",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "stay": {
     "kind": "hotel",
     "name": "Locanda de’ Banchieri",
@@ -46,5 +44,6 @@
       }
     ],
     "checked": "2026-10-23"
-  }
+  },
+  "dietsManual": true
 }

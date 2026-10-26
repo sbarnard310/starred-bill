@@ -16,11 +16,10 @@
   "placeId": "ChIJSZbwJQ8jjkcRx2Ay7rGyRZk",
   "michelinId": "180069",
   "diets": [
-    "vegetarian",
-    "vegan"
+    "vegetarian"
   ],
   "chef": "Kurt Mösching",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab CHF 185)",
   "dinnerNoteFr": "Menu dégustation (autres menus dès CHF 185)",
   "dinnerNoteIt": "Menu degustazione (altri menu da CHF 185)",
@@ -31,5 +30,6 @@
   "lunchNoteFr": "Même menu le midi · mer.–dim.",
   "lunchNoteIt": "Stesso menu a pranzo · mer–dom",
   "lunchSourceType": "site",
-  "lunchSource": "https://www.sonne-scheunenberg.ch/hubfs/Sonne%20Menu%20September%202026-1.pdf?hsLang=de"
+  "lunchSource": "https://www.sonne-scheunenberg.ch/hubfs/Sonne%20Menu%20September%202026-1.pdf?hsLang=de",
+  "dietsManual": true
 }

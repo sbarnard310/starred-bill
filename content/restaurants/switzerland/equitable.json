@@ -16,10 +16,11 @@
   "placeId": "ChIJHYncIBgKkEcRYw8pOjUBaO0",
   "michelinId": "196006",
   "diets": [
-    "vegetarian"
+    "vegetarian",
+    "vegan"
   ],
-  "chef": "Julian Martin",
-  "chefSource": "michelin",
+  "chef": "Julian Marti",
+  "chefSource": "site",
   "dinnerNoteDe": "Degustationsmenü",
   "dinnerNoteFr": "Menu dégustation",
   "dinnerNoteIt": "Menu degustazione",
@@ -36,5 +37,6 @@
       "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
     }
   ],
-  "rankingsChecked": "2026-10-24"
+  "rankingsChecked": "2026-10-24",
+  "dietsManual": true
 }

@@ -29,5 +29,6 @@
   "lunchNote": "Dinner only",
   "lunchNoteDe": "Nur abends",
   "chef": "Joris Hogervorst",
-  "chefSource": "press"
+  "chefSource": "press",
+  "dietsManual": true
 }

@@ -23,12 +23,12 @@
   "placeId": "ChIJaxW7iAwWkEcRmUlyuaBoXL8",
   "michelinId": "1207137",
   "diets": [
+    "vegetarian-menu",
     "vegetarian",
-    "vegan",
-    "gluten-free"
+    "vegan"
   ],
   "chef": "Philipp Audolensky",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab CHF 90)",
   "dinnerNoteFr": "Menu dégustation (autres menus dès CHF 90)",
   "dinnerNoteIt": "Menu degustazione (altri menu da CHF 90)",
@@ -36,5 +36,6 @@
   "lunchNote": "Dinner only",
   "lunchNoteDe": "Nur abends",
   "lunchNoteFr": "Uniquement le soir",
-  "lunchNoteIt": "Solo a cena"
+  "lunchNoteIt": "Solo a cena",
+  "dietsManual": true
 }

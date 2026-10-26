@@ -17,12 +17,14 @@
   "placeId": "ChIJsZPD3agOnUcRqOy9i36atHg",
   "michelinId": "304644",
   "diets": [
+    "vegetarian-menu",
     "vegetarian"
   ],
   "chef": "Andreas Hillejan",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 85 €)",
   "noLunch": true,
   "lunchNote": "Dinner only",
-  "lunchNoteDe": "Nur abends"
+  "lunchNoteDe": "Nur abends",
+  "dietsManual": true
 }

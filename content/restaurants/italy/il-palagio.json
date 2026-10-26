@@ -21,8 +21,7 @@
   "placeId": "ChIJeQnHJxBUKhMRX5S3veq0ZXw",
   "michelinId": "234519",
   "diets": [
-    "vegetarian-menu",
-    "vegetarian"
+    "vegetarian-menu"
   ],
   "chef": "Paolo Lavezzini",
   "chefSource": "site",
@@ -31,5 +30,6 @@
     "name": "Four Seasons Hotel Firenze",
     "url": "https://www.fourseasons.com/florence/",
     "checked": "2026-10-23"
-  }
+  },
+  "dietsManual": true
 }

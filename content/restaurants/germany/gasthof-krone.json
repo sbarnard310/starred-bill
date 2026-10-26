@@ -17,11 +17,13 @@
   "placeId": "ChIJV0a3Jw3EmUcRO2K6FZEpoT8",
   "michelinId": "78548",
   "diets": [
+    "vegetarian-menu",
     "vegetarian"
   ],
   "chef": "Erik Metzger",
   "chefSource": "site",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 90 €)",
   "lunchNote": "Open for lunch · Fri, Sun",
-  "lunchNoteDe": "Mittags geöffnet · Fr, So"
+  "lunchNoteDe": "Mittags geöffnet · Fr, So",
+  "dietsManual": true
 }

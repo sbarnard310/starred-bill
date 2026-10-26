@@ -17,12 +17,13 @@
   "placeId": "ChIJ2dXM8k6UwEcRhO4qxjeHuRc",
   "michelinId": "212517",
   "diets": [
-    "vegetarian",
-    "gluten-free"
+    "vegetarian-menu",
+    "vegetarian"
   ],
   "chef": "Hans Kinkartz",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 135)",
   "lunchNote": "Open for lunch · Fri–Sat",
-  "lunchNoteNl": "Open voor lunch · vr–za"
+  "lunchNoteNl": "Open voor lunch · vr–za",
+  "dietsManual": true
 }

@@ -22,9 +22,6 @@
   "lng": 0.1078286,
   "placeId": "ChIJq73m-6gFoBIR7jCqftx8tBs",
   "michelinId": "1214690",
-  "diets": [
-    "vegetarian"
-  ],
   "chef": "Jorge Lengua and Adrián Peralta",
-  "chefSource": "michelin"
+  "chefSource": "site"
 }

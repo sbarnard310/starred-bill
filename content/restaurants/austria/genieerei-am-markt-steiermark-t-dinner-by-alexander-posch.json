@@ -19,13 +19,8 @@
   "lng": 15.447078,
   "placeId": "ChIJm8H6T4BKbkcR5hwr_j6LICc",
   "michelinId": "1240876",
-  "diets": [
-    "vegetarian",
-    "vegan",
-    "gluten-free"
-  ],
   "chef": "Alexander Posch",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 55 €)",
   "lunchNote": "Open for lunch · Tue–Sat",
   "lunchNoteDe": "Mittags geöffnet · Di–Sa"

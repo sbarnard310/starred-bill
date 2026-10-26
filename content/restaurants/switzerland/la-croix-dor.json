@@ -16,22 +16,22 @@
   "dinnerNote": "Tasting menu (other menus from CHF 125)",
   "sourceType": "press",
   "source": "https://www.schlemmer-atlas.de/restaurants/schweiz/ballaigues/restaurant-la-croix-dor/",
-  "website": "https://lacroixdor.ch/fr/home",
+  "website": "https://lacroixdor.ch/",
   "lat": 46.7296519,
   "lng": 6.4158748,
   "placeId": "ChIJO9VMmJi2jUcR3U8IiUcx1QA",
   "michelinId": "1202971",
   "diets": [
-    "vegetarian",
-    "gluten-free"
+    "vegetarian"
   ],
   "chef": "David Sauvignet and Damien Lanza",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab CHF 125)",
   "dinnerNoteFr": "Menu dégustation (autres menus dès CHF 125)",
   "dinnerNoteIt": "Menu degustazione (altri menu da CHF 125)",
   "lunchNote": "Open for lunch · Tue–Sat",
   "lunchNoteDe": "Mittags geöffnet · Di–Sa",
   "lunchNoteFr": "Ouvert le midi · mar.–sam.",
-  "lunchNoteIt": "Aperto a pranzo · mar–sab"
+  "lunchNoteIt": "Aperto a pranzo · mar–sab",
+  "dietsManual": true
 }

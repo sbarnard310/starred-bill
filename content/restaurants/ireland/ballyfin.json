@@ -21,9 +21,10 @@
   "placeId": "ChIJ6WU0-CsMXUgRab9bbRMw2fo",
   "michelinId": "1211586",
   "diets": [
-    "vegetarian",
-    "vegan"
+    "vegetarian-menu",
+    "vegetarian"
   ],
   "chef": "Richard Picard-Edwards",
-  "chefSource": "site"
+  "chefSource": "site",
+  "dietsManual": true
 }

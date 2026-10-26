@@ -27,7 +27,7 @@
     "gluten-free"
   ],
   "chef": "Antonio Biafora",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "stay": {
     "kind": "hotel",
     "name": "Biafora Resort & Spa",
@@ -50,5 +50,6 @@
       "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
     }
   ],
-  "rankingsChecked": "2026-10-24"
+  "rankingsChecked": "2026-10-24",
+  "dietsManual": true
 }

@@ -9,24 +9,23 @@
   "dinnerNote": "Tasting menu (other menus from €85)",
   "sourceType": "site",
   "source": "https://kanazawa.com.pt/jantar/",
-  "website": "https://www.kanazawa.com.pt",
+  "website": "https://kanazawa.com.pt/",
   "lat": 38.6979595,
   "lng": -9.2256498,
   "placeId": "ChIJsVqK_HrLHg0RIks_llCFqB0",
   "michelinId": "500442",
   "diets": [
     "vegetarian-menu",
-    "vegetarian",
-    "vegan",
-    "gluten-free"
+    "vegetarian"
   ],
   "chef": "Paulo Morais",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNotePt": "Menu de degustação (outros menus desde 85 €)",
   "lunch": 210,
   "lunchType": "menu",
   "lunchNote": "Same menu at lunch · Wed–Sat",
   "lunchNotePt": "O mesmo menu ao almoço · qua.–sáb.",
   "lunchSourceType": "site",
-  "lunchSource": "https://kanazawa.com.pt/jantar/"
+  "lunchSource": "https://kanazawa.com.pt/jantar/",
+  "dietsManual": true
 }

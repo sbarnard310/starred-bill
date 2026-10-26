@@ -16,11 +16,8 @@
   "lng": 15.206804,
   "placeId": "ChIJr-YIIObNb0cRdxY5zQqtLiQ",
   "michelinId": "1213587",
-  "diets": [
-    "vegetarian"
-  ],
   "chef": "Florian Wörgötter",
-  "chefSource": "michelin",
+  "chefSource": "press",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 95 €)",
   "lunch": 120,
   "lunchType": "menu",

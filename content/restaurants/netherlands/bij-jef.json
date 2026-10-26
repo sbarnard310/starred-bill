@@ -21,9 +21,7 @@
   "placeId": "ChIJWdF0Qu45z0cRlfiYb_UsJk0",
   "michelinId": "213181",
   "diets": [
-    "vegetarian-menu",
-    "vegetarian",
-    "gluten-free"
+    "vegetarian"
   ],
   "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 155)",
   "lunchNoteNl": "Lunchmenu",
@@ -62,5 +60,6 @@
     ],
     "note": "A Relais & Chateaux hotel of 8 junior suites and 4 suites in a former rectory in Den Hoorn on Texel.",
     "checked": "2026-10-23"
-  }
+  },
+  "dietsManual": true
 }

@@ -24,11 +24,6 @@
   "lng": 10.8079125,
   "placeId": "ChIJDa1UuKcegkcRQg5UGSXZ7R4",
   "michelinId": "139040",
-  "diets": [
-    "vegetarian-menu",
-    "vegetarian",
-    "gluten-free"
-  ],
   "chef": "Leandro Luppi",
-  "chefSource": "michelin"
+  "chefSource": "site"
 }

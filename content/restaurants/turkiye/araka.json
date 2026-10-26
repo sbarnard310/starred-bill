@@ -18,12 +18,13 @@
     "vegetarian-menu",
     "vegetarian",
     "vegan",
-    "halal"
+    "gluten-free"
   ],
   "chef": "Zeynep Pınar Taşdemir",
   "chefSource": "site",
   "dinnerNoteTr": "Tadım menüsü",
   "noLunch": true,
   "lunchNote": "Dinner only",
-  "lunchNoteTr": "Yalnızca akşam yemeği"
+  "lunchNoteTr": "Yalnızca akşam yemeği",
+  "dietsManual": true
 }

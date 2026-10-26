@@ -27,11 +27,12 @@
   "placeId": "ChIJEfDtg9TrwEcR2JylGFdSJFQ",
   "michelinId": "1200024",
   "diets": [
-    "vegetarian",
-    "gluten-free"
+    "vegetarian-menu",
+    "vegetarian"
   ],
   "chef": "Sven Nijenhuis",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNoteNl": "Chef's menu, 6 gangen (5 gangen € 109, woensdag en donderdag)",
-  "lunchNoteNl": "Chef's menu, 4 gangen; vrijdag en zaterdag"
+  "lunchNoteNl": "Chef's menu, 4 gangen; vrijdag en zaterdag",
+  "dietsManual": true
 }

@@ -21,14 +21,8 @@
   "lng": 14.4046065,
   "placeId": "ChIJWfvfuL9RDhMRqrd76ypybmI",
   "michelinId": "1184167",
-  "diets": [
-    "vegetarian-menu",
-    "vegetarian",
-    "vegan",
-    "halal"
-  ],
   "chef": "Clint Grech",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNoteMt": "Menu tad-degustazzjoni (menu itwal €145)",
   "areaMt": "L-Imdina",
   "lunchNoteMt": "Menu ta' nofsinhar",

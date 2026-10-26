@@ -18,12 +18,10 @@
   "michelinId": "1206773",
   "diets": [
     "vegetarian-menu",
-    "vegetarian",
-    "vegan",
-    "gluten-free"
+    "vegetarian"
   ],
   "chef": "Stefan Wiesner",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNoteDe": "Nur mittags: 9-Gang-Gourmet-Menü, Mi–Sa",
   "dinnerNoteFr": "Uniquement le midi : menu gastronomique en 9 plats, mer.–sam.",
   "dinnerNoteIt": "Solo a pranzo: menu gourmet di 9 portate, mer–sab",
@@ -44,5 +42,6 @@
       "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
     }
   ],
-  "rankingsChecked": "2026-10-24"
+  "rankingsChecked": "2026-10-24",
+  "dietsManual": true
 }

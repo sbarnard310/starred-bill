@@ -16,12 +16,14 @@
   "placeId": "ChIJ97jGdFUlv0cRweaWDO8SQg4",
   "michelinId": "1185731",
   "diets": [
+    "vegetarian-menu",
     "vegetarian"
   ],
-  "chef": "Enrico Sablotny and Lukas Winkelmann",
-  "chefSource": "michelin",
+  "chef": "Enrico Sablotny",
+  "chefSource": "site",
   "dinnerNoteDe": "Degustationsmenü",
   "noLunch": true,
   "lunchNote": "Dinner only",
-  "lunchNoteDe": "Nur abends"
+  "lunchNoteDe": "Nur abends",
+  "dietsManual": true
 }

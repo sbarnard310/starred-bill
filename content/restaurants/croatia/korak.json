@@ -20,8 +20,9 @@
     "vegetarian"
   ],
   "chef": "Bernard Korak",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNoteHr": "Degustacijski meni (ostali meniji od 118 €)",
   "lunchNote": "Open for lunch · Sat–Sun",
-  "lunchNoteHr": "Otvoreno za ručak · sub–ned"
+  "lunchNoteHr": "Otvoreno za ručak · sub–ned",
+  "dietsManual": true
 }

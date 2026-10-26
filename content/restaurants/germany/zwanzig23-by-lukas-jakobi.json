@@ -15,12 +15,15 @@
   "placeId": "ChIJg4UYn-_LuEcRekxlL9IVIsc",
   "michelinId": "1208435",
   "diets": [
+    "vegetarian-menu",
+    "vegetarian",
     "vegan"
   ],
   "chef": "Lukas Jakobi",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 189 €)",
   "noLunch": true,
   "lunchNote": "Dinner only",
-  "lunchNoteDe": "Nur abends"
+  "lunchNoteDe": "Nur abends",
+  "dietsManual": true
 }

@@ -21,11 +21,11 @@
   "placeId": "ChIJoXKlUIvrxkcRgzALON9wHH0",
   "michelinId": "1188023",
   "diets": [
-    "vegetarian",
-    "gluten-free"
+    "vegetarian"
   ],
   "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 135)",
   "lunchNoteNl": "Lunchmenu",
   "chef": "Cas Spijkers",
-  "chefSource": "press"
+  "chefSource": "press",
+  "dietsManual": true
 }

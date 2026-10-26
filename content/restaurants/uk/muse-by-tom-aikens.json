@@ -21,11 +21,8 @@
   "lng": -0.1509184,
   "placeId": "ChIJp65UQTAFdkgREFotZ21mwPs",
   "michelinId": "1188132",
-  "diets": [
-    "vegetarian"
-  ],
   "chef": "Tom Aikens",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "rankings": [
     {
       "list": "la-liste",

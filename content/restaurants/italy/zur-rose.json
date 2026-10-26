@@ -23,9 +23,9 @@
   "michelinId": "125034",
   "diets": [
     "vegetarian-menu",
-    "vegetarian",
-    "gluten-free"
+    "vegetarian"
   ],
-  "chef": "Herbert Hintner and Daniel Hintner",
-  "chefSource": "michelin"
+  "chef": "Herbert Hintner",
+  "chefSource": "site",
+  "dietsManual": true
 }

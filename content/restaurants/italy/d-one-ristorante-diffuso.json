@@ -21,17 +21,16 @@
   "michelinId": "507312",
   "diets": [
     "vegetarian-menu",
-    "vegetarian",
-    "vegan",
-    "gluten-free"
+    "vegetarian"
   ],
   "chef": "Davide Pezzuto",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "stay": {
     "kind": "hotel",
     "name": "Montepagano 1137 Albergo Diffuso",
     "url": "https://montepagano1137.it/",
     "note": "The restaurant’s own site points guests to the suites of the Montepagano 1137 albergo diffuso, spread through the same medieval village.",
     "checked": "2026-10-23"
-  }
+  },
+  "dietsManual": true
 }

@@ -21,10 +21,11 @@
   "placeId": "ChIJlf69Mk8XlUcRbmbTELNfBOk",
   "michelinId": "528031",
   "diets": [
+    "vegetarian-menu",
     "vegetarian"
   ],
-  "chef": "Benoit Potdevin",
-  "chefSource": "michelin",
+  "chef": "Benoît Potdevin",
+  "chefSource": "site",
   "stay": {
     "kind": "hotel",
     "name": "Domaine de la Klauss",
@@ -47,5 +48,6 @@
       }
     ],
     "checked": "2026-10-23"
-  }
+  },
+  "dietsManual": true
 }

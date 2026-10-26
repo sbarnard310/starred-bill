@@ -24,12 +24,12 @@
   "michelinId": "1200235",
   "diets": [
     "vegetarian",
-    "vegan",
-    "gluten-free"
+    "vegan"
   ],
   "chef": "Marco Ortolani",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "lunchNoteDe": "Mittagsmenü",
   "lunchNoteFr": "Menu déjeuner",
-  "lunchNoteIt": "Menu pranzo"
+  "lunchNoteIt": "Menu pranzo",
+  "dietsManual": true
 }

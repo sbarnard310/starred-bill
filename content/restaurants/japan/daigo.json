@@ -30,15 +30,11 @@
   "placeId": "ChIJLXYlT5SLGGARR1b1ARFUUmw",
   "michelinId": "1194034",
   "diets": [
-    "vegetarian-menu",
     "vegetarian",
-    "vegan",
-    "gluten-free",
-    "halal",
-    "kosher"
+    "vegan"
   ],
   "chef": "Yusuke Nomura",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "rankings": [
     {
       "list": "oad-japan",
@@ -47,5 +43,6 @@
       "url": "https://www.oadguides.com/lists/japan/top-restaurants/2026"
     }
   ],
-  "rankingsChecked": "2026-10-24"
+  "rankingsChecked": "2026-10-24",
+  "dietsManual": true
 }

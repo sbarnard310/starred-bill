@@ -19,13 +19,8 @@
   "lng": 15.9488692,
   "placeId": "ChIJIW1XRT4DFRMRKF37ZrxQSoY",
   "michelinId": "529760",
-  "diets": [
-    "vegetarian-menu",
-    "vegetarian",
-    "gluten-free"
-  ],
   "chef": "Nino Rossi",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "stay": {
     "kind": "rooms",
     "name": "Casa Qafiz",

@@ -26,9 +26,10 @@
   "placeId": "ChIJMb2OWv8ntBIRmNxkF7DiwJE",
   "michelinId": "1213895",
   "diets": [
-    "vegetarian",
-    "gluten-free"
+    "vegetarian-menu",
+    "vegetarian"
   ],
   "chef": "Julien Caligo",
-  "chefSource": "site"
+  "chefSource": "site",
+  "dietsManual": true
 }

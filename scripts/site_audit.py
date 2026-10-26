@@ -127,6 +127,7 @@ VAGUE = re.compile(r"^(?:here|click here|this|this page|this guide|this link|pag
 # places we have no page for whose names hold one we do ("New Mexico", "New South Wales").
 NOT_PLACES = re.compile(r"MICHELIN Guide [A-Z][\w’]*(?:(?: | & | and )[A-Z][\w’]*)*|Great Britain (?:&|and) Ireland|New Mexico|New South Wales")
 HOURS_RECHECK_DAYS = 120  # restaurants found to have no usable hours (opening-hours-sites.json "none") count as gaps again after this
+PLACE_RECHECK_DAYS = 180  # restaurants with no Google listing of their own (content/no-place-ids.json) count as gaps again after this
 FEW_LINKS_IN = 3       # an indexed English page with fewer links to it than this is hard for Google to find
 FEW_CONTENT_LINKS = 2  # a page with fewer links of its own (beyond the menu and footer every page has) is a dead end
 LISTS = re.compile(r'<p class="table-note">.*?</p>|<section class="guide-sources".*?</section>|<table.*?</table>|<(ol|nav) class="(?:rank-cards|jump-links)[^"]*".*?</\1>|<div class="change-lists">(?:.*?</ul></div>){2}</div>|<h3 id="(?:three|two)-[^"]*">.*?</h3>|<div class="results-top">.*?</div>', re.S)  # built from the data
@@ -254,6 +255,11 @@ def data_checks(site):
     sites_file = C / "opening-hours-sites.json"
     no_hours_known = {rid for rid, why in (json.loads(sites_file.read_text("utf-8")).get("none", {}) if sites_file.exists() else {}).items()
                       if (datetime.date.today() - datetime.date.fromisoformat(why["checked"])).days <= HOURS_RECHECK_DAYS}
+    # Restaurants looked up on Google and found to have no listing of their own (content/no-place-ids.json, 26 Oct 2026):
+    # counted apart, as the hours ones are, until PLACE_RECHECK_DAYS after their "checked" day.
+    place_file = C / "no-place-ids.json"
+    no_place_known = {rid for rid, why in (json.loads(place_file.read_text("utf-8")).get("none", {}) if place_file.exists() else {}).items()
+                      if (datetime.date.today() - datetime.date.fromisoformat(why["checked"])).days <= PLACE_RECHECK_DAYS}
     # Data still resting on the MICHELIN Guide's website (to-do item michelin-data-resource, stage 3): stars without a
     # starSource or a press-release selection for their guide's latest ceremony, chefs and dietary options from its search
     # index, and opening hours that are only the guide's.
@@ -286,7 +292,8 @@ def data_checks(site):
         g["starred"] += 1
         g["no_price"] += r.get("dinner") is None and r.get("lunch") is None  # no price at all, as page titles count it
         g["no_dinner_price"] += r.get("dinner") is None and r.get("lunch") is not None and not LUNCH_ONLY_RE.match(r.get("dinnerNote") or "")
-        g["no_place_id"] += not r.get("placeId")  # no Google place ID, so no Google card or Reviews link to the right place
+        g["no_place_id"] += not r.get("placeId") and r["_id"] not in no_place_known  # no Google place ID, so no Google card or Reviews link to the right place
+        g["no_place_id_anywhere"] += not r.get("placeId") and r["_id"] in no_place_known  # looked up recently, Google has no listing of its own
         g["stored_google_rating"] += r.get("rating") is not None or r.get("reviews") is not None  # Google's terms don't allow keeping them (24 Oct 2026)
         g["critics_pick"] += bool(r.get("rankings"))
         g["no_chef"] += not r.get("chef")

@@ -1,0 +1,269 @@
+{
+  "about": "Starred restaurants we looked up on Google (its free IDs-only place search, then each match checked on Google Maps) and found no listing of their own for, so they have no placeId. scripts/site_audit.py counts them apart (no_place_id_anywhere) until PLACE_RECHECK_DAYS have passed. To-do item fixes-google-place-ids-82, 26 Oct 2026.",
+  "none": {
+    "ambre-ciel": {
+      "checked": "2026-10-26",
+      "note": "Not found on Google Maps by its English or Chinese name near its address"
+    },
+    "bao-li-xuan": {
+      "checked": "2026-10-26",
+      "note": "Google lists only its hotel, not the restaurant on its own"
+    },
+    "blackswan": {
+      "checked": "2026-10-26",
+      "note": "Not found on Google Maps by its English or Chinese name near its address"
+    },
+    "carved-dragons-jiaojiang": {
+      "checked": "2026-10-26",
+      "note": "Not found on Google Maps by its English or Chinese name near its address"
+    },
+    "chaimen-hui": {
+      "checked": "2026-10-26",
+      "note": "Google lists this restaurant (or its group) only at another address, an older or other branch, so its card would show the wrong place"
+    },
+    "chao-shang-chao-chaoyang": {
+      "checked": "2026-10-26",
+      "note": "Not found on Google Maps by its English or Chinese name near its address"
+    },
+    "chao-shang-chao-xicheng": {
+      "checked": "2026-10-26",
+      "note": "Not found on Google Maps by its English or Chinese name near its address"
+    },
+    "chao-shang-chao": {
+      "checked": "2026-10-26",
+      "note": "Not found on Google Maps by its English or Chinese name near its address"
+    },
+    "chowa": {
+      "checked": "2026-10-26",
+      "note": "Not found on Google Maps by its English or Chinese name near its address"
+    },
+    "co": {
+      "checked": "2026-10-26",
+      "note": "Not found on Google Maps by its English or Chinese name near its address"
+    },
+    "da-dong-xuhui": {
+      "checked": "2026-10-26",
+      "note": "Not found on Google Maps by its English or Chinese name near its address"
+    },
+    "dai-yuet-heen": {
+      "checked": "2026-10-26",
+      "note": "Google lists only its hotel, not the restaurant on its own"
+    },
+    "dingshan-jiangyan": {
+      "checked": "2026-10-26",
+      "note": "Google lists this restaurant (or its group) only at another address, an older or other branch, so its card would show the wrong place"
+    },
+    "fabula": {
+      "checked": "2026-10-26",
+      "note": "Not found on Google Maps by its English or Chinese name near its address"
+    },
+    "fleurs-et-festin": {
+      "checked": "2026-10-26",
+      "note": "Not found on Google Maps by its English or Chinese name near its address"
+    },
+    "focus-by-bill-yue": {
+      "checked": "2026-10-26",
+      "note": "Not found on Google Maps by its English or Chinese name near its address"
+    },
+    "fumee": {
+      "checked": "2026-10-26",
+      "note": "Not found on Google Maps by its English or Chinese name near its address"
+    },
+    "gastro-esthetics-at-dadong": {
+      "checked": "2026-10-26",
+      "note": "Not found on Google Maps by its English or Chinese name near its address"
+    },
+    "giada-garden": {
+      "checked": "2026-10-26",
+      "note": "Google lists only its hotel, not the restaurant on its own"
+    },
+    "hatter": {
+      "checked": "2026-10-26",
+      "note": "Not found on Google Maps by its English or Chinese name near its address"
+    },
+    "hokkien-cuisine": {
+      "checked": "2026-10-26",
+      "note": "Not found on Google Maps by its English or Chinese name near its address"
+    },
+    "hokklo": {
+      "checked": "2026-10-26",
+      "note": "Google lists only its hotel, not the restaurant on its own"
+    },
+    "huaiyang-delights-jingan": {
+      "checked": "2026-10-26",
+      "note": "Not found on Google Maps by its English or Chinese name near its address"
+    },
+    "imperial-treasure-fine-teochew-cuisine": {
+      "checked": "2026-10-26",
+      "note": "Not found on Google Maps by its English or Chinese name near its address"
+    },
+    "ji-pin-court": {
+      "checked": "2026-10-26",
+      "note": "Google lists this restaurant (or its group) only at another address, an older or other branch, so its card would show the wrong place"
+    },
+    "jiangnan-wok-rong": {
+      "checked": "2026-10-26",
+      "note": "Google lists only its hotel, not the restaurant on its own"
+    },
+    "jiangnan-wok-yun": {
+      "checked": "2026-10-26",
+      "note": "Google lists only its hotel, not the restaurant on its own"
+    },
+    "jingji": {
+      "checked": "2026-10-26",
+      "note": "Google lists only its hotel, not the restaurant on its own"
+    },
+    "lamdre": {
+      "checked": "2026-10-26",
+      "note": "Not found on Google Maps by its English or Chinese name near its address"
+    },
+    "lao-bian-jiu-jia-jindai-road": {
+      "checked": "2026-10-26",
+      "note": "Google lists this restaurant (or its group) only at another address, an older or other branch, so its card would show the wrong place"
+    },
+    "lingnan-house": {
+      "checked": "2026-10-26",
+      "note": "Google lists only its hotel, not the restaurant on its own"
+    },
+    "lu-shang-lu": {
+      "checked": "2026-10-26",
+      "note": "Not found on Google Maps by its English or Chinese name near its address"
+    },
+    "lu-style-anding-road": {
+      "checked": "2026-10-26",
+      "note": "Not found on Google Maps by its English or Chinese name near its address"
+    },
+    "meet-the-bund-zhongshan-dong-er-road": {
+      "checked": "2026-10-26",
+      "note": "Not found on Google Maps by its English or Chinese name near its address"
+    },
+    "mo-jasmine": {
+      "checked": "2026-10-26",
+      "note": "Not found on Google Maps by its English or Chinese name near its address"
+    },
+    "narisawa-shanghai": {
+      "checked": "2026-10-26",
+      "note": "Not found on Google Maps by its English or Chinese name near its address"
+    },
+    "obscura": {
+      "checked": "2026-10-26",
+      "note": "Not found on Google Maps by its English or Chinese name near its address"
+    },
+    "oriental-sense-palate": {
+      "checked": "2026-10-26",
+      "note": "Not found on Google Maps by its English or Chinese name near its address"
+    },
+    "pin-ning-fu": {
+      "checked": "2026-10-26",
+      "note": "Google lists only its hotel, not the restaurant on its own"
+    },
+    "pingjiangsong": {
+      "checked": "2026-10-26",
+      "note": "Not found on Google Maps by its English or Chinese name near its address"
+    },
+    "qing-you-yu": {
+      "checked": "2026-10-26",
+      "note": "Google lists this restaurant (or its group) only at another address, an older or other branch, so its card would show the wrong place"
+    },
+    "rong-pao": {
+      "checked": "2026-10-26",
+      "note": "Google lists only its hotel, not the restaurant on its own"
+    },
+    "ru-yuan": {
+      "checked": "2026-10-26",
+      "note": "Not found on Google Maps by its English or Chinese name near its address"
+    },
+    "sense": {
+      "checked": "2026-10-26",
+      "note": "Google lists only its hotel, not the restaurant on its own"
+    },
+    "seventh-son-beijing": {
+      "checked": "2026-10-26",
+      "note": "Not found on Google Maps by its English or Chinese name near its address"
+    },
+    "silver-pot": {
+      "checked": "2026-10-26",
+      "note": "Not found on Google Maps by its English or Chinese name near its address"
+    },
+    "sole": {
+      "checked": "2026-10-26",
+      "note": "Not found on Google Maps by its English or Chinese name near its address"
+    },
+    "song-hangzhou": {
+      "checked": "2026-10-26",
+      "note": "Google lists only its hotel, not the restaurant on its own"
+    },
+    "stiller": {
+      "checked": "2026-10-26",
+      "note": "Google lists only its hotel, not the restaurant on its own"
+    },
+    "suyab-courtyardpickmoon-gourmet": {
+      "checked": "2026-10-26",
+      "note": "Not found on Google Maps by its English or Chinese name near its address"
+    },
+    "taian-table-guangzhou": {
+      "checked": "2026-10-26",
+      "note": "Google lists only its hotel, not the restaurant on its own"
+    },
+    "the-bay-by-chef-fei": {
+      "checked": "2026-10-26",
+      "note": "Google lists only its hotel, not the restaurant on its own"
+    },
+    "the-georg": {
+      "checked": "2026-10-26",
+      "note": "Google lists this restaurant (or its group) only at another address, an older or other branch, so its card would show the wrong place"
+    },
+    "tou-zao": {
+      "checked": "2026-10-26",
+      "note": "Not found on Google Maps by its English or Chinese name near its address"
+    },
+    "vivant-by-johnny-pham": {
+      "checked": "2026-10-26",
+      "note": "Not found on Google Maps by its English or Chinese name near its address"
+    },
+    "wild-yeast": {
+      "checked": "2026-10-26",
+      "note": "Not found on Google Maps by its English or Chinese name near its address"
+    },
+    "xi-ding-jia-yan": {
+      "checked": "2026-10-26",
+      "note": "Not found on Google Maps by its English or Chinese name near its address"
+    },
+    "xin-rong-ji-chengdu": {
+      "checked": "2026-10-26",
+      "note": "Not found on Google Maps by its English or Chinese name near its address"
+    },
+    "xin-rong-ji-hangzhou": {
+      "checked": "2026-10-26",
+      "note": "Google lists this restaurant (or its group) only at another address, an older or other branch, so its card would show the wrong place"
+    },
+    "xin-rong-ji-shenzhen": {
+      "checked": "2026-10-26",
+      "note": "Not found on Google Maps by its English or Chinese name near its address"
+    },
+    "yong-fu-hongkou": {
+      "checked": "2026-10-26",
+      "note": "Google lists this restaurant (or its group) only at another address, an older or other branch, so its card would show the wrong place"
+    },
+    "yong": {
+      "checked": "2026-10-26",
+      "note": "Not found on Google Maps by its English or Chinese name near its address"
+    },
+    "yu-garden": {
+      "checked": "2026-10-26",
+      "note": "Not found on Google Maps by its English or Chinese name near its address"
+    },
+    "yu-zhi-lan": {
+      "checked": "2026-10-26",
+      "note": "Not found on Google Maps by its English or Chinese name near its address"
+    },
+    "yun-jing": {
+      "checked": "2026-10-26",
+      "note": "Google lists only its hotel, not the restaurant on its own"
+    },
+    "masa": {
+      "checked": "2026-10-26",
+      "note": "Google's searches give only Bar Masa, its sister bar next door, which has its own listing"
+    }
+  }
+}

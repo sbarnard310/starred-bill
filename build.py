@@ -8,6 +8,7 @@ Cloudflare Pages runs the same build on every push to main and publishes _site/.
 It uses only the Python standard library, so there is nothing to install.
 """
 import hashlib
+import heapq
 import html
 import json
 import math
@@ -1048,8 +1049,20 @@ if problems:
     sys.exit(1)
 
 
+_members = {}
+
+
 def members(p):
-    """Restaurants that belong on a place's page: those in it or anywhere below it."""
+    """Restaurants that belong on a place's page: those in it or anywhere below it. Worked out once per place (the build
+    asks thousands of times), as a new list each time so callers may sort it."""
+    if places.get(p["id"]) is p:
+        if p["id"] not in _members:
+            _members[p["id"]] = find_members(p)
+        return list(_members[p["id"]])
+    return find_members(p)
+
+
+def find_members(p):
     if p["type"] == "cuisine":  # its city's restaurants in one of its cuisine categories
         return [r for r in members(places[p["parent"]]) if r.get("cuisine") in p["cuisines"]]
     wanted = set(p["includes"]) if p["type"] == "group" else {p["id"]}
@@ -7430,10 +7443,14 @@ def news_links(text):
     return NEWS_LINK.sub(link, text)
 
 
+_news_rs = {}
+
+
 def news_restaurants(s):
-    """The restaurants a story names with a link, in order."""
-    by_id = {r["id"]: r for r in restaurants}
-    return [by_id[i] for i in dict.fromkeys(re.findall(r'data-r="([\w-]+)"', s["body"]))]
+    """The restaurants a story names with a link, in order (read once per story text)."""
+    if s["body"] not in _news_rs:
+        _news_rs[s["body"]] = [_by_id[i] for i in dict.fromkeys(re.findall(r'data-r="([\w-]+)"', s["body"]))]
+    return list(_news_rs[s["body"]])
 
 
 def news_about(s):
@@ -7451,7 +7468,7 @@ def news_for_place(p, n=NEWS_PLACE):
 
 
 def news_for_restaurant(r, n=NEWS_PLACE):
-    return [s for s in news_order() if r in news_restaurants(s)][:n]
+    return [s for s in news_order() if any(x is r for x in news_restaurants(s))][:n]
 
 
 def news_image(s):
@@ -8458,7 +8475,7 @@ def may_like(r, live, skip):
     same stars in the same city, our other restaurant pages with the same stars, then the next nearest. Restaurants with their own page come
     first, so these pages link to each other; ones already listed on the page (`skip`: the nearby list and the comparison
     table) are left out. At most three for any one reason, so the list stays varied."""
-    chefs = set(chef_names(r.get("chef")))
+    chefs = chef_set(r)
     kind = (r.get("cuisine") or "").lower()
     home = r["_chain"][1] if r["cityType"] == "district" else r["_chain"][0]
     s_ = r["stars"]
@@ -8468,7 +8485,7 @@ def may_like(r, live, skip):
             continue
         qkind = (q.get("cuisine") or "").lower()
         page = 30 if q.get("page") else 0
-        if chefs & set(chef_names(q.get("chef"))):
+        if chefs and chefs & chef_set(q):
             found.append((100 + page, "chef", f"Also {r['chef']}", q))
         elif kind and qkind == kind and q["stars"] >= max(1, s_ - 1):
             found.append((40 + (10 if q["stars"] == s_ else 0) + page, "cuisine", f"{q['cuisine']}, {STAR_WORDS[q['stars']]} star{'s' if q['stars'] > 1 else ''}", q))
@@ -8480,13 +8497,36 @@ def may_like(r, live, skip):
             km = metres(r["lat"], r["lng"], q["lat"], q["lng"]) / 1000
             if km <= MAY_LIKE_NEAR_KM:
                 found.append((20 + page - km, "near", dist_text(km, r["country"]).split(" (")[0] + " away", q))
-    found.sort(key=lambda f: (-f[0], -acclaim(f[3]), f[3]["name"].lower()))
+    # Each reason gives at most three, so only its best three need sorting with the rest (a one-star can have
+    # thousands of "Also one star" candidates).
+    order = lambda n: (-found[n][0], like_rank(found[n][3]), n)
+    by_why = {}
+    for n, f in enumerate(found):
+        by_why.setdefault(f[1], []).append(n)
+    found = [found[n] for n in sorted((n for ns in by_why.values() for n in heapq.nsmallest(3, ns, key=order)), key=order)]
     picked, per = [], {}
     for score, why, label, q in found:
         if per.get(why, 0) < (2 if why == "page" else 3) and len(picked) < MAY_LIKE_MAX:
             per[why] = per.get(why, 0) + 1
             picked.append((label, q))
     return picked
+
+
+_chef_sets, _like_ranks = {}, {}
+
+
+def chef_set(r):
+    """A restaurant's chefs as a set (chef_names(), read once per restaurant)."""
+    if r["id"] not in _chef_sets:
+        _chef_sets[r["id"]] = frozenset(chef_names(r.get("chef")))
+    return _chef_sets[r["id"]]
+
+
+def like_rank(r):
+    """How may_like() orders suggestions with the same score: most acclaimed, then by name (worked out once per restaurant)."""
+    if r["id"] not in _like_ranks:
+        _like_ranks[r["id"]] = (-acclaim(r), r["name"].lower())
+    return _like_ranks[r["id"]]
 
 
 def may_like_html(r, live, skip):
@@ -9152,9 +9192,9 @@ def restaurant_guides(r):
     name = re.compile(r"(?<![\w-])" + re.escape(r["name"]) + r"(?![\w-])")
     scores = {}
     for g in guides.values():
-        body = guide_bodies()[g["id"]]
+        body, text = guide_bodies()[g["id"]], guide_texts()[g["id"]]
         hits = [above.index(i) for i in g.get("places", []) if i in above]
-        if f"#r={r['id']}\"" in body or f'href="{r.get("page")}"' in body or name.search(re.sub(r"<[^>]+>", " ", body)):
+        if f"#r={r['id']}\"" in body or f'href="{r.get("page")}"' in body or (r["name"] in text and name.search(text)):
             scores[g["id"]] = (3, 0)
         elif g["id"] == "three-michelin-star-restaurants" and r["stars"] == 3:
             scores[g["id"]] = (2, 0)
@@ -9165,6 +9205,16 @@ def restaurant_guides(r):
         if len(picked) < 3 and i in guides and i not in picked:
             picked.append(i)
     return [guides[i] for i in picked]
+
+
+_guide_texts = {}
+
+
+def guide_texts():
+    """Each guide's published article as plain text (tags taken out), for finding the restaurants it names."""
+    if not _guide_texts:
+        _guide_texts.update({gid: re.sub(r"<[^>]+>", " ", body) for gid, body in guide_bodies().items() if gid in guides})
+    return _guide_texts
 
 
 def guide_stats_checked():

@@ -1632,7 +1632,7 @@ def build_place(p):
             "langScripts": lang_scripts, "htmlAttrs": html_attrs(lang), "alternates": alternates,
             "title": e(titles[lang]), "description": e(texts["description"]), "canonical": canonical[lang],
             "eyebrow": e(texts["eyebrow"]), "h1": texts["h1"], "heroText": e(texts["heroText"]),
-            "crumbs": crumb_html, "explore": explore_html, "nearLine": (near_line if lang == "en" else "") + bib_line(p, lang),
+            "crumbs": crumb_html, "explore": explore_html, "nearLine": (re.sub(r"</p>$", (trip_top_html(p, lang, starred) if not cuisine else "") + "</p>", near_line) if lang == "en" else "") + bib_line(p, lang),
             # The language buttons, written in as links to each version so search engines reach them (common.js redraws them).
             "langLinks": "".join(f'<span aria-current="page">{e(LANG_LABELS.get(c, c.upper()))}</span>' if c == lang else
                                  f'<a href="{lang_paths[c]}" hreflang="{HREFLANG.get(c, c)}" lang="{HTML_LANG.get(c, ("en-GB",))[0]}">{e(LANG_LABELS.get(c, c.upper()))}</a>'
@@ -2698,6 +2698,29 @@ def trip_place(p):
     return p if p["type"] == "city" or p["id"] in BROWSE_CITY_STATES or p["id"] in GYG_CITIES else None
 
 
+def trip_names(p, city):
+    """The place a city page's partner links name ("London", or "Mayfair, London" on a district) and the hotel search
+    for it, with the country after a city ("London, United Kingdom") so Booking.com picks the right one."""
+    country = p
+    while country.get("parent") in places:
+        country = places[country["parent"]]
+    near = p["name"] if p is city else f'{p["name"]}, {city["name"]}'
+    return near, near if p is not city else ", ".join(x for x in (city["name"], country["name"] if country is not city else "") if x)
+
+
+def trip_top_html(p, lang, starred):
+    """The same partners in one line under the intro of an English city page (owner's request, 27 Oct 2026, as the box
+    further down is seen by few): "Planning a trip? Hotels in London · Food tours", counted apart as "city-top"."""
+    city = trip_place(p)
+    if lang != "en" or not starred or not city:
+        return ""
+    near, stay_q = trip_names(p, city)
+    note = partner_note(["booking", "viator"])
+    # A line inside the Near me paragraph, not a paragraph of its own: the hero is a grid, and a new row would stretch.
+    return (f'<span class="hero-trip">Planning a trip? {partner_a("booking", stay_q, "city-top", f"Hotels in {near}")} · '
+            f'{partner_a("viator", city["name"] + " food tour", "city-top", "Food tours")}' + (f"<small>{e(note.strip())}</small>" if note else "") + "</span>")
+
+
 def trip_box_html(p, lang, starred):
     """"Planning a trip to London?": a Booking.com hotel search for the page's city (or neighbourhood), its food tours on
     Viator and, where we know its city page, GetYourGuide, and a link to Trips. English pages with starred restaurants
@@ -2705,11 +2728,7 @@ def trip_box_html(p, lang, starred):
     city = trip_place(p)
     if lang != "en" or not starred or not city:
         return ""
-    country = p
-    while country.get("parent") in places:
-        country = places[country["parent"]]
-    near = p["name"] if p is city else f'{p["name"]}, {city["name"]}'
-    stay_q = near if p is not city else ", ".join(x for x in (city["name"], country["name"] if country is not city else "") if x)
+    near, stay_q = trip_names(p, city)
     buttons = [partner_a("booking", stay_q, "city-hotels", f"Hotels in {near} on Booking.com", "rp-cta"),
                partner_a("viator", f'{city["name"]} food tour', "city-tours", "Food tours on Viator", "rp-cta rp-cta-line")]
     pids = ["booking", "viator"]
@@ -8811,6 +8830,9 @@ def build_restaurant_pages():
                 + (out_a(r["website"], "Restaurant’s website", "website", "restaurant-hero", r["id"], "rp-btn") if r.get("website") and r.get("bookingUrl") else "")
                 + ('<a class="rp-btn" href="#stay">Stay the night</a>' if r.get("stay") else "")
                 + f'<a class="rp-btn" href="{e(maps)}">Google Maps</a>'
+                # Hotels near it, up top as well as under the nearby restaurants (owner's request, 27 Oct 2026), counted
+                # apart ("restaurant-top"); restaurants with rooms have "Stay the night" here instead.
+                + (partner_a("booking", near_where(r), "restaurant-top", "Hotels nearby", "rp-btn") if not r.get("stay") and not r.get("status") else "")
                 + f'<button type="button" class="rp-btn" {trip_attrs(r)}>Add to a trip</button>'
                 + f'<button type="button" class="rp-btn" {report_attrs(r)}>Report a price or change</button></div>\n'
                 '      <div class="rp-cur" id="rpCur" role="group" aria-label="Show prices in" hidden></div>\n'

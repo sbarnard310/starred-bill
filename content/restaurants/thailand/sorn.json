@@ -12,7 +12,7 @@
   "wine": 6200,
   "dinnerNoteTh": "เมนูชิมอาหารใต้ ยังไม่รวมค่าบริการและภาษี (++)",
   "sourceType": "press",
-  "source": "https://thailandaddict.com/en/bangkok-michelin-fine-dining",
+  "source": "https://www.tablecheck.com/en/sorn-fine-southern-cuisine/reserve/experiences",
   "noLunch": true,
   "lunchNote": "Dinner only",
   "lunchNoteTh": "เฉพาะมื้อค่ำ",
@@ -60,5 +60,7 @@
     }
   ],
   "rankingsChecked": "2026-10-24",
-  "priceChangedAt": "2026-10-06"
+  "priceChangedAt": "2026-10-06",
+  "priceVerifiedAt": "2026-10-27",
+  "bookingUrl": "https://www.tablecheck.com/en/sorn-fine-southern-cuisine/reserve/experiences"
 }

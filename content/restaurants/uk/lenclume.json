@@ -13,7 +13,7 @@
   "source": "https://www.lenclume.co.uk/",
   "lunch": 125,
   "lunchType": "menu",
-  "lunchNote": "Lunch menu, Wed–Sat (April–October)",
+  "lunchNote": "Lunch menu, Wed–Sat April–October, Fri–Sat November–April",
   "lunchWine": 50,
   "lunchSourceType": "site",
   "lunchSource": "https://www.lenclume.co.uk/lunch-menu",
@@ -56,5 +56,6 @@
   ],
   "rankingsChecked": "2026-10-24",
   "priceChangedAt": "2026-10-03",
-  "lunchChangedAt": "2026-10-03"
+  "lunchChangedAt": "2026-10-03",
+  "bookingUrl": "https://www.lenclume.co.uk/reservations"
 }

@@ -12,14 +12,14 @@
   "dinnerType": "menu",
   "dinnerNote": "Set menus from",
   "dinnerNoteZh": "套餐（起）",
-  "sourceType": "press",
-  "source": "https://roo.cash/blog/le-palais-article/",
+  "sourceType": "site",
+  "source": "https://drive.google.com/file/d/1_t8zzoP2tOjRjWVl1uzBpfFADPuOeG-s/view",
   "lunch": 4980,
   "lunchType": "menu",
   "lunchNote": "Same menus at lunch",
   "lunchNoteZh": "午餐供應相同菜單",
-  "lunchSourceType": "press",
-  "lunchSource": "https://roo.cash/blog/le-palais-article/",
+  "lunchSourceType": "site",
+  "lunchSource": "https://drive.google.com/file/d/1_t8zzoP2tOjRjWVl1uzBpfFADPuOeG-s/view",
   "website": "https://www.palaisdechinehotel.com/pdc-en/pages/26/0/66",
   "lat": 25.0491625,
   "lng": 121.5168892,
@@ -48,5 +48,8 @@
   ],
   "rankingsChecked": "2026-10-24",
   "priceChangedAt": "2026-10-02",
-  "lunchChangedAt": "2026-10-02"
+  "lunchChangedAt": "2026-10-02",
+  "priceVerifiedAt": "2026-10-27",
+  "lunchVerifiedAt": "2026-10-27",
+  "bookingUrl": "https://inline.app/booking/lepalais/lepalais?language=en"
 }

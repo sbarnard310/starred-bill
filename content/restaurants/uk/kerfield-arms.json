@@ -13,7 +13,7 @@
   "dinnerNote": "À la carte pub menu, mains £28–£32",
   "noPairing": true,
   "sourceType": "site",
-  "source": "https://www.thekerfieldarms.co.uk/s/Menu-081026.pdf",
+  "source": "https://www.thekerfieldarms.co.uk/s/Current-Menu-ynhr.pdf",
   "lunch": 12,
   "lunchType": "menu",
   "lunchNote": "Midweek lunch special (à la carte also served)",
@@ -39,5 +39,6 @@
   "infoChecked": "2026-10-12",
   "dietsManual": true,
   "priceChangedAt": "2026-10-12",
-  "lunchChangedAt": "2026-10-02"
+  "lunchChangedAt": "2026-10-02",
+  "priceVerifiedAt": "2026-10-27"
 }

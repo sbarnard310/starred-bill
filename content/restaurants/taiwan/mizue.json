@@ -16,13 +16,13 @@
   "dinnerNote": "Omakase",
   "dinnerNoteZh": "無菜單料理",
   "sourceType": "press",
-  "source": "https://www.gvm.com.tw/article/132565",
+  "source": "https://www.tablecheck.com/en/capella-taipei-mizue/reserve/landing",
   "lunch": 9000,
   "lunchType": "menu",
   "lunchNote": "Same omakase · Fri–Sun",
   "lunchNoteZh": "同晚餐無菜單・週五至週日",
   "lunchSourceType": "press",
-  "lunchSource": "https://www.bella.tw/articles/travel&foodies/52293/mizue-taipei-omakase-capella",
+  "lunchSource": "https://www.tablecheck.com/en/capella-taipei-mizue/reserve/landing",
   "website": "https://capellahotels.com/zh-tc/capella-taipei/dining",
   "lat": 25.05364,
   "lng": 121.549228,
@@ -31,5 +31,8 @@
   "chef": "Katsunori Hara",
   "chefSource": "press",
   "priceChangedAt": "2026-10-02",
-  "lunchChangedAt": "2026-10-02"
+  "lunchChangedAt": "2026-10-02",
+  "priceVerifiedAt": "2026-10-27",
+  "lunchVerifiedAt": "2026-10-27",
+  "bookingUrl": "https://www.tablecheck.com/en/capella-taipei-mizue/reserve/landing"
 }

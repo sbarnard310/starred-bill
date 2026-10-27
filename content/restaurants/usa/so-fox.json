@@ -1,0 +1,23 @@
+{
+  "name": "So. Fox",
+  "city": "atlanta",
+  "area": "Virginia-Highland",
+  "address": "1017 N Highland Ave. NE, Atlanta, GA 30306",
+  "stars": 1,
+  "cuisine": "Modern American",
+  "dinnerNote": "À la carte; no prices published",
+  "sourceType": "none",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "website": "https://www.sofoxatl.com/",
+  "lat": 33.78228,
+  "lng": -84.354202,
+  "chef": "Myles Moody",
+  "chefSource": "press",
+  "change": "new",
+  "changeNote": "New in the 2026 MICHELIN Guide American South",
+  "changeDate": "2026-10",
+  "starSource": "https://michelinmedia.com/pages/blog/detail/article/c0/a1491/",
+  "starSourceType": "michelin-press",
+  "starSourceDate": "2026-10-22"
+}

@@ -3,7 +3,7 @@
   "city": "salzburg",
   "area": "Werfen",
   "address": "Markt 46, 5450, Werfen",
-  "stars": 2,
+  "stars": 0,
   "cuisine": "Classic",
   "dinnerType": "menu",
   "dinner": 248,
@@ -30,9 +30,6 @@
   "lunchWine": 161,
   "lunchSource": "https://obauer.com/de/speisekarte",
   "lunchSourceType": "site",
-  "notice": "Closing for good on 26 October 2026 (Salzburg24, July 2026)",
-  "noticeDe": "Schließt endgültig am 26. Oktober 2026 (Salzburg24, Juli 2026)",
-  "closes": "2026-10-26",
   "dietsManual": true,
   "rankings": [
     {
@@ -44,5 +41,10 @@
   ],
   "rankingsChecked": "2026-10-24",
   "priceChangedAt": "2026-10-12",
-  "lunchChangedAt": "2026-10-12"
+  "lunchChangedAt": "2026-10-12",
+  "status": "closed",
+  "formerStars": 2,
+  "statusDate": "2026-10",
+  "statusNote": "Closed for good on 26 October 2026, when Karl, Rudi and Angelika Obauer retired after 47 years (Salzburg24, July 2026)",
+  "statusNoteDe": "Am 26. Oktober 2026 endgültig geschlossen: Karl, Rudi und Angelika Obauer gehen nach 47 Jahren in den Ruhestand (Salzburg24, Juli 2026)"
 }

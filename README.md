@@ -159,6 +159,28 @@ checked days and keeps the old dinner price in `priceHistory`. `price_records()`
 in one shape with all of this, for any later export. Quarterly snapshots (`python3 build.py --snapshot 2027-Q1`, into
 `content/price-snapshots/`) freeze them for like-for-like comparisons: see `docs/price-index-method.md`.
 
+### The Price Index
+
+`/guides/michelin-price-index/` is The Starred Bill Michelin Price Index: a guide whose figures all come from one frozen
+quarterly snapshot, never from the live restaurant files. An edition is two files:
+
+- `content/price-snapshots/<quarter>.json`, the snapshot (`python3 build.py --snapshot 2027-Q1`);
+- `content/price-index/<quarter>.json`, what the snapshot doesn't hold, saved the same day by
+  `python3 build.py --index-edition 2027-Q1`: `rates` (each currency's `perUSD` on the snapshot's `rateDate`, read from
+  `currencies.json` at the snapshot's commit), `service` (each country's usual service rule then) and `cities` (which
+  restaurants count under each city with 10 or more, as the most-stars guide groups them). Neither is ever rewritten,
+  except `confirmed`: ids of set lunches under a quarter of dinner that have been checked and may be ranked, added before
+  the edition is published.
+
+The guide's `priceIndex` field names the edition it shows (`"2026-Q4"`). Its body is ordinary guide text with figures
+(`{{piMedian1}}`, `{{piCitiesN}}`, `{{piCheapCity}}`, `{{piVerifiedShare}}`…) and blocks (`{{table:pi-headlines}}`,
+`pi-strip`, `pi-stars`, `pi-city-chart`, `pi-cheap-city`, `pi-dear-city`, `pi-cities`, `pi-four`, `pi-countries`,
+`pi-cheap-1/2/3`, `pi-cheap-3-line`, `pi-lunch-line`, `pi-lunch`, `pi-savings`, `pi-data`, `pi-method`, `pi-cite`) from
+`price_index_stats()`/`price_index_blocks()` in build.py. Settings: `PI_MIN` (10 menus before a median is published),
+`PI_TOP`, `PI_ODD_LUNCH`, `PI_CITIES`. The page also carries Dataset structured data and its own link-preview picture
+(`src/og/michelin-price-index.png`, `python3 scripts/og_images.py michelin-price-index`). A new edition: take the snapshot,
+make the edition file, change `priceIndex` (and `published`/`updated`, and the picture's quarter), reread the page's prose.
+
 ## Guides
 
 Each file in `content/guides/` is one article at `/guides/<file name>/`, listed on `/guides/`. They're in English, in US or UK spelling as the content brief says; some also have translations (see "Translated guides" below).

@@ -1422,6 +1422,68 @@ footer .foot-legal { flex-basis: 100%; font-size: .78rem; }
 .change-lists { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr)); gap: 16px; margin: 14px 0; }
 .change-lists > div { border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface); padding: 4px 18px 10px; }
 .change-lists ul { padding-left: 18px; margin: 6px 0; }
+/* The Price Index (/guides/michelin-price-index/, price_index_blocks() in build.py): headline figures as cards, each with its own
+   #link; a strip of what the data is; bar charts drawn in HTML (bars from zero, the four big cities in gold; by star level the
+   middle half as a bar and the median as a mark); the London/Paris/New York/Tokyo table; and the method. English only, so its
+   inline left positions need no rtl.css mirror. */
+.pi-edition { font-weight: 600; color: var(--ink); }
+.pi-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr)); gap: 12px; margin: 22px 0 10px; }
+.pi-card { position: relative; border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface); padding: 14px 16px 12px; scroll-margin-top: 140px; }
+.pi-card:target { border-color: var(--gold); box-shadow: 0 0 0 2px color-mix(in srgb, var(--gold) 35%, transparent); }
+.pi-card .pi-fig { font-family: var(--font-display); font-size: 1.7rem; line-height: 1.15; margin: 0 1.4em 4px 0; color: var(--ink); }
+.pi-card .pi-fig a { color: inherit; }
+.guide .pi-card h3 { margin: 0 0 6px; font-size: .78rem; letter-spacing: .08em; text-transform: uppercase; color: var(--gold); }
+.pi-card p:last-of-type { margin: 0; font-size: .9rem; color: var(--muted); line-height: 1.45; }
+.pi-card .muted { color: var(--muted); }
+.pi-anchor { position: absolute; top: 10px; inset-inline-end: 12px; color: var(--muted); text-decoration: none; font-family: var(--font-num); padding: 2px 4px; }
+.pi-anchor:hover, .pi-anchor:focus-visible { color: var(--green); }
+.pi-strip { display: flex; flex-wrap: wrap; gap: 6px 18px; align-items: baseline; font-size: .86rem; color: var(--muted); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); padding: 10px 0; margin: 4px 0 18px; }
+.pi-strip strong { color: var(--ink); font-family: var(--font-num); }
+.pi-chart { margin: 18px 0 8px; padding: 14px 16px 10px; border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface); }
+.pi-chart figcaption { color: var(--muted); font-size: .82rem; margin-top: 8px; }
+.pi-bars { list-style: none; padding: 0; margin: 0; display: grid; gap: 3px; }
+.guide .pi-bars li { display: grid; grid-template-columns: minmax(0, 11rem) minmax(0, 1fr) 4.2rem; gap: 10px; align-items: center; margin: 0; font-size: .88rem; }
+.pi-bl { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.pi-bl a { color: var(--ink); text-decoration: none; }
+.pi-bl a:hover { text-decoration: underline; }
+.pi-bt { position: relative; height: 12px; }
+.pi-b { position: absolute; inset-block: 0; left: 0; background: var(--green); border-radius: 0 4px 4px 0; min-width: 2px; }
+.pi-key .pi-b { background: var(--gold); }
+.pi-key .pi-bl { font-weight: 600; }
+.pi-bv { font-family: var(--font-num); font-size: .84rem; text-align: end; white-space: nowrap; }
+.guide .pi-ranges li { grid-template-columns: minmax(0, 9rem) minmax(0, 1fr) 9.5rem; padding: 6px 0; }
+.pi-ranges .pi-bt { height: 16px; background: linear-gradient(var(--line), var(--line)) 0 50% / 100% 1px no-repeat; }
+.pi-range { position: absolute; inset-block: 2px; background: color-mix(in srgb, var(--green) 30%, transparent); border-radius: 4px; }
+.pi-med { position: absolute; inset-block: -2px; width: 3px; margin-left: -1.5px; background: var(--green); border-radius: 2px; }
+.pi-ranges .pi-bv .muted { color: var(--muted); font-size: .78rem; }
+.pi-more { margin: 10px 0 18px; }
+.pi-more > summary { cursor: pointer; color: var(--green); font-weight: 600; padding: 6px 0; }
+.pi-src { display: inline-block; font-size: .78rem; padding: 1px 8px; border-radius: 999px; border: 1px solid var(--line); white-space: nowrap; }
+.pi-src-restaurant { border-color: color-mix(in srgb, var(--green) 45%, transparent); }
+.pi-ok { font-size: .78rem; color: var(--green); font-weight: 600; white-space: nowrap; }
+.pi-ok::before { content: "✓ "; }
+.guide-table.pi-four th[scope="row"] { text-transform: none; letter-spacing: 0; font-size: .88rem; color: var(--ink); font-weight: 600; min-width: 12ch; }
+.guide-table.pi-four td.num { white-space: normal; }
+.guide-table.pi-four td:first-child, .guide-table.pi-four thead th a { font-weight: 600; }
+.guide-table tr.pi-total td { font-weight: 600; }
+.pi-cta { margin: 30px 0; padding: 16px 20px; border: 1px solid var(--line); border-radius: 12px; background: var(--green-soft); }
+.pi-cta p { margin: 0 0 10px; }
+.pi-cta-links { display: flex; flex-wrap: wrap; gap: 10px 18px; align-items: center; }
+.pi-cta .rp-cta { display: inline-block; padding: 8px 16px; border-radius: 999px; background: var(--green); color: var(--surface); text-decoration: none; font-weight: 600; }
+:root[data-theme="dark"] .pi-cta .rp-cta { color: var(--bg); }
+.pi-method { padding-left: 20px; }
+.pi-method li { margin-bottom: 10px; }
+.pi-cite { font-family: var(--font-num); font-size: .86rem; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 10px 14px; overflow-wrap: anywhere; }
+@media (max-width: 720px) {
+  .guide .pi-bars li { grid-template-columns: minmax(0, 7.5rem) minmax(0, 1fr) 3.6rem; gap: 8px; font-size: .84rem; }
+  .guide .pi-ranges li { grid-template-columns: minmax(0, 1fr) 7.5rem; grid-template-areas: "l v" "t t"; gap: 4px 8px; }
+  .pi-ranges .pi-bl { grid-area: l; } .pi-ranges .pi-bv { grid-area: v; } .pi-ranges .pi-bt { grid-area: t; }
+  .pi-card .pi-fig { font-size: 1.45rem; }
+  /* the four-city table: each figure a card, its row name as the card's title and the cities two to a row */
+  .guide-table.pi-four tr { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .guide-table.pi-four th[scope="row"] { display: block; grid-column: 1 / -1; padding: 10px 14px 2px; border: 0; font-size: .98rem; }
+  .guide-table.pi-four td:first-of-type { font-size: inherit; padding-top: 6px; }
+}
 /* Ranked lists (Top Michelin star restaurants in the world): a gold rank number before each name, and the top ten as write-ups. */
 .rank { display: inline-block; min-width: 1.6em; color: var(--gold); font-family: var(--font-num); font-weight: 700; }
 .rank-cards { list-style: none; padding: 0; margin: 18px 0; display: grid; gap: 14px; }

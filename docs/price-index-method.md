@@ -62,6 +62,23 @@ Every published figure says: the two quarters, the cohort size (observed and rec
 restaurants' own websites, and that prices are before service. Converted figures (for example "London vs Paris in US
 dollars") say which day's exchange rates they use and are kept apart from the like-for-like change.
 
+## Publishing an edition (v1, 27 October 2026)
+
+The first edition (2026-Q4) compares places, not quarters: medians of set menus by star level, country and city, the
+cheapest set menus at each star level and lunch against dinner, at `/guides/michelin-price-index/`. Its rules:
+
+- **Set menus only**: `type: menu`, `basis: published`, with a source. Typical spends and à la carte mains are left out
+  and counted on the page.
+- **Medians, at least 10 menus** (`PI_MIN`) for any star level, country or city; smaller groups show their count or range.
+- **Local currency first**; rankings across currencies use US dollars at the snapshot's `rateDate`, frozen in the
+  edition file, so the monthly rate refresh never moves a published figure.
+- **Service**: prices as quoted; "with service, tax or tip" adds each country's usual rule (frozen in the edition file),
+  labelled as an estimate.
+- **Odd lunches**: a set lunch under a quarter of the same restaurant's dinner is left out of rankings and lunch figures
+  until confirmed (the edition's `confirmed` list).
+- **Disclosure**: the page gives the share of prices genuinely re-checked (`verifiedAt`) and the mix of source kinds.
+- **No change over time** until a second snapshot exists; then the comparison above applies.
+
 ## Changing the method
 
 Change this method only by raising `SNAPSHOT_METHOD` in build.py and describing the change here with its date. Older

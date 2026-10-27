@@ -1,0 +1,53 @@
+{
+  "id": "michelin-price-index",
+  "priceIndex": "2026-Q4",
+  "title": "Michelin Star Restaurant Prices: The Price Index, {{piEdition}}",
+  "description": "What Michelin-starred set menus cost in {{piEdition}}: by star level, {{piCitiesN}} cities ranked, the cheapest menus and lunch vs dinner.",
+  "h1": "The Starred Bill Michelin Price Index",
+  "summary": "Our quarterly measure of what Michelin-starred set menus cost: by star level, city and country, the cheapest menus at each level and lunch against dinner.",
+  "section": "data",
+  "figure": "Typical one-star dinner menu: {{piMedian1}}",
+  "published": "2026-10-27",
+  "updated": "2026-10-27",
+  "lang": "en-GB",
+  "faqFromHeadings": true,
+  "keywords": [
+    "michelin price index",
+    "michelin star restaurant prices",
+    "michelin star prices by city",
+    "michelin star lunch vs dinner"
+  ],
+  "body": "<p class=\"lede\">A one-star Michelin dinner set menu typically costs {{piMedian1}} per person, a two-star {{piMedian2}} and a three-star {{piMedian3}}, before drinks and service. Those are the medians of {{piDinnerN}} published menu prices in {{piCountriesN}} countries, recorded on {{piTaken}} for the {{piEdition}} edition of The Starred Bill Michelin Price Index.</p>\n{{table:pi-headlines}}\n{{table:pi-strip}}\n<p>The index is our quarterly measure of Michelin star restaurant prices around the world. Each edition is worked out from one frozen snapshot of the prices on The Starred Bill, so every figure here can be worked out again from the same data. This is the first edition: it compares star levels, cities and countries, not quarters, so it says nothing yet about prices rising or falling.</p>\n<nav class=\"jump-links\" aria-label=\"In this index\"><a href=\"#stars\">By star level</a><a href=\"#cities\">Cities ranked</a><a href=\"#four-cities\">London, Paris, New York, Tokyo</a><a href=\"#countries\">Countries</a><a href=\"#cheapest\">Cheapest menus</a><a href=\"#lunch\">Lunch vs dinner</a><a href=\"#data\">About the data</a></nav>\n<h2 id=\"stars\">What one, two and three Michelin stars cost</h2>\n{{table:pi-stars}}\n<h2 id=\"cities\">Michelin star prices by city</h2>\n<p>The {{piCitiesN}} cities with {{piMin}} or more priced set menus, from the lowest median dinner menu to the highest, in US dollars before drinks and service.</p>\n{{table:pi-city-chart}}\n<h3>Which city has the cheapest Michelin star restaurants?</h3>\n{{table:pi-cheap-city}}\n<h3>Which city has the most expensive Michelin star restaurants?</h3>\n{{table:pi-dear-city}}\n{{table:pi-cities}}\n<h2 id=\"four-cities\">London vs Paris vs New York vs Tokyo</h2>\n{{table:pi-four}}\n<h2 id=\"countries\">Michelin star prices by country</h2>\n<p>Country medians mix big cities and country inns, so they say more about a country’s whole selection than about any one city. Where a country’s menu prices already include service and tax, as across most of Europe and in Japan, its listed median is closer to what you pay than a median quoted before them.</p>\n{{table:pi-countries}}\n<h2 id=\"cheapest\">The cheapest set menus at one, two and three stars</h2>\n<p>Each restaurant’s cheapest set menu, whichever meal it is. For the cheapest starred food of any kind, hawker stalls and taco stands included, see <a data-guide=\"cheapest-michelin-star-restaurants\">the cheapest Michelin star restaurants in the world</a>.</p>\n<h3 id=\"cheapest-three\">Three stars</h3>\n{{table:pi-cheap-3-line}}\n{{table:pi-cheap-3}}\n<h3 id=\"cheapest-two\">Two stars</h3>\n{{table:pi-cheap-2}}\n<h3 id=\"cheapest-one\">One star</h3>\n{{table:pi-cheap-1}}\n<h2 id=\"lunch\">Michelin star lunch vs dinner</h2>\n{{table:pi-lunch-line}}\n{{table:pi-lunch}}\n<h3 id=\"lunch-savings\">The biggest lunch savings</h3>\n{{table:pi-savings}}\n<div class=\"pi-cta\"><p><strong>Put the figures to use.</strong> Tell Budget search what you want to spend for the table and where, and it picks three starred restaurants with the whole bill worked out, service and wine included.</p><div class=\"pi-cta-links\"><a class=\"rp-cta\" href=\"/pick/\">Open Budget search</a> <a href=\"/near-me/\">Or see what’s near you</a></div></div>\n<h2 id=\"data\">About the data</h2>\n<p>Every price in the index was recorded from a source we name on the restaurant’s page, but only {{piVerifiedShare}} of the dinner menu prices have since been re-checked at that source; the rest are as first recorded, between {{piFirstRecorded}} and the snapshot on {{piTaken}}. {{piOwnSiteShare}} come from restaurants’ own websites, the strongest source. Treat single-restaurant figures, such as the cheapest menus, as a starting point and check the restaurant’s own page before booking; the medians rest on hundreds of prices and move little if a few are out of date.</p>\n{{table:pi-data}}\n<h2 id=\"method\">How the index is made</h2>\n{{table:pi-method}}\n<h2 id=\"cite\">Using these figures</h2>\n<p>Journalists and researchers are welcome to quote the index, with a credit and a link to this page:</p>\n{{table:pi-cite}}\n<p>Each figure has its own link (the # beside it). We don’t publish the restaurant-by-restaurant data behind the index yet. Seen a price that has changed? Use “Report a price or change” on the restaurant’s page and we’ll check it for the next edition.</p>",
+  "faq": [],
+  "imageAlt": "The Starred Bill Michelin Price Index: what starred set menus cost by star level, city and country.",
+  "sources": [
+    {
+      "title": "All starred restaurants in the MICHELIN Guide",
+      "publisher": "MICHELIN Guide",
+      "url": "https://guide.michelin.com/en/restaurants/all-starred",
+      "checked": "2026-10",
+      "note": "Linked as the source of the stars, which come from each guide’s latest edition."
+    },
+    {
+      "title": "Publication 718: New York State Sales and Use Tax Rates by Jurisdiction",
+      "publisher": "New York State Department of Taxation and Finance",
+      "url": "https://www.tax.ny.gov/pdf/publications/sales/pub718.pdf",
+      "checked": "2026-10",
+      "note": "US sales tax, added in the “with service, tax or tip” estimates."
+    },
+    {
+      "title": "Current GST rates",
+      "publisher": "Inland Revenue Authority of Singapore",
+      "url": "https://www.iras.gov.sg/taxes/goods-services-tax-(gst)/basics-of-gst/current-gst-rates",
+      "checked": "2026-10",
+      "note": "Singapore’s 9% GST on “++” prices."
+    },
+    {
+      "title": "VAT",
+      "publisher": "Danish Tax Agency (Skattestyrelsen)",
+      "url": "https://skat.dk/en-us/businesses/vat",
+      "checked": "2026-10",
+      "note": "Danish menu prices include 25% VAT."
+    }
+  ]
+}

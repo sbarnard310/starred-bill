@@ -9,7 +9,9 @@ places = {json.loads(p.read_text())["id"]: json.loads(p.read_text()) for p in (R
 def in_sentence(p):
     return p.get("inSentence") or p["name"]
 items = [{"id": "default", "title": "What a Michelin star costs, city by city", "sub": "Dinner, lunch and wine pairing prices, side by side"},
-         {"id": "pick", "title": "Find a Michelin star restaurant for your budget", "sub": "Three picks with the whole bill: best match, best value, stretch"}]
+         {"id": "pick", "title": "Find a Michelin star restaurant for your budget", "sub": "Three picks with the whole bill: best match, best value, stretch"},
+         # The Price Index guide's picture (build_guides() uses src/og/<guide id>.png for a guide without an illustration).
+         {"id": "michelin-price-index", "title": "The Michelin Price Index, Q4 2026", "sub": "What starred set menus cost, by star level, city and country"}]
 for pid, p in sorted(places.items()):
     if p["type"] in ("group", "cuisine"):  # cuisine pages use their city's picture
         continue

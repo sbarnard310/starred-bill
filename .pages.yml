@@ -2028,6 +2028,10 @@ content:
           - name: a
             label: Answer
             type: text
+      - name: priceIndex
+        label: Price Index edition
+        description: "Only for the Price Index guide: the quarter whose frozen snapshot its figures come from, e.g. 2026-Q4. Needs content/price-snapshots/ and content/price-index/ files for that quarter."
+        type: string
       - name: faqFromHeadings
         label: Questions from headings
         description: "Tick to give Google the article's question headings (ending in ?) and the paragraph under each as its FAQ, instead of a separate FAQ section."

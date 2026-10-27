@@ -602,6 +602,7 @@ GUIDE_SECTIONS = {
     "stars": ("Understanding the stars", "What the stars mean, how restaurants win and lose them, and the MICHELIN Guide’s other awards."),
     "where": ("Where to find them", "Every starred restaurant by country, the world’s three-star tables and the best of London."),
     "results": ("Latest results", "What each MICHELIN Guide’s latest edition changed: every new, promoted and lost star, with prices."),
+    "data": ("Price data", "The Starred Bill Price Index: what starred set menus cost by star level, city and country, from a frozen quarterly snapshot."),
     "less": ("Starred for less", "The cheapest Michelin-starred meals, from hawker stalls and taquerías to set lunches."),
     "no-stars": ("No stars yet", "Big food countries the MICHELIN Guide hasn’t starred, and when that might change."),
 }
@@ -7164,8 +7165,8 @@ def guide_bodies():
     """Each guide's article as published, with its figures and tables filled in (worked out once, as related_guides()
     counts the links in them, tables included)."""
     if not _guide_bodies and guides:
-        stats = dict(guide_stats(), **ceremony_stats())
-        blocks = guide_blocks(stats)
+        stats = dict(guide_stats(), **ceremony_stats(), **price_index_stats())
+        blocks = dict(guide_blocks(stats), **price_index_blocks())
         _guide_bodies.update({g["id"]: guide_text(g["body"], stats, blocks) for g in guides.values()})
         # Titles, headings, descriptions and summaries can quote figures too ("All {{n3}} Three-Michelin-Star Restaurants"),
         # as plain text: every page that shows them escapes them itself.
@@ -7217,7 +7218,15 @@ def guide_sources_html(g, stats):
         items.append(f'<li><a href="{e(s["url"])}" target="_blank" rel="noopener">{e(s["title"])}</a>, {e(s["publisher"])}{e(when)}.'
                      + (f' {e(s["note"])}' if s.get("note") else "") + "</li>")
     own = f'<p class="guide-sources-own">{e(g["sourcesNote"])}</p>' if g.get("sourcesNote") else ""
-    if g.get("_ownData") or "{{" in g.get("body", "") or g.get("picks"):
+    if g.get("priceIndex"):
+        pi = price_index()
+        name, url = EXCHANGE_RATES
+        own += (f'<p class="guide-sources-own">Every figure is worked out from The Starred Bill’s {e(pi_label(pi["label"]))} price snapshot, '
+                f'taken on {e(uk_date(pi["about"]["taken"]))}: the recorded prices of {len(pi["rows"]):,} starred restaurants, from each restaurant’s '
+                f'own website or, where it publishes none, a booking site, a review or the MICHELIN Guide, with stars from each country’s latest '
+                f'MICHELIN Guide. US dollar figures use exchange rates from <a href="{url}" target="_blank" rel="noopener">{name}</a> of '
+                f'{e(uk_date(pi["edition"]["rateDate"]))}, fixed for the edition.</p>')
+    elif g.get("_ownData") or "{{" in g.get("body", "") or g.get("picks"):
         name, url = EXCHANGE_RATES
         own += (f'<p class="guide-sources-own">Prices and counts are The Starred Bill’s own data on {stats["total"]} starred restaurants: '
                f'stars from each country’s latest MICHELIN Guide, menu prices from each restaurant’s own website or, where it publishes none, '
@@ -7295,8 +7304,10 @@ def build_guides():
         img = guide_image(g)
         hero = (f'<figure class="guide-hero"><img src="{img}.jpg" alt="{e(g.get("imageAlt", ""))}" width="1600" height="900" '
                 f'fetchpriority="high" decoding="async"></figure>\n') if img else ""
+        dated = (f'Updated {(uk_date if g.get("lang") == "en-GB" else us_date)(g["updated"])} · Star counts and prices as of {stats["checked"]}'
+                 if not g.get("priceIndex") else price_index_dateline(g))
         main = (f'<article lang="{e(g.get("lang", "en-US"))}">\n<h1>{e(g["h1"])}</h1>\n'
-                f'<p class="prose-date">Updated {(uk_date if g.get("lang") == "en-GB" else us_date)(g["updated"])} · Star counts and prices as of {stats["checked"]}</p>\n'
+                f'<p class="prose-date">{dated}</p>\n'
                 f'{hero}{body}\n{guide_tours_html(g)}{faq_html}\n{guide_sources_html(g, stats)}\n</article>')
         if not g.get("sources"):
             print(f"  Guide {g['id']}: lists no sources; add the outside sources its facts come from (see README)")
@@ -7309,7 +7320,8 @@ def build_guides():
             {"@type": "Article", "headline": g["h1"], "description": g["description"], "inLanguage": g.get("lang", "en-US"),
              "datePublished": g["published"], "dateModified": g["updated"], "mainEntityOfPage": SITE_URL + path,
              **({"keywords": ", ".join(g["keywords"])} if g["keywords"] else {}),
-             "image": [SITE_URL + img + ".jpg", SITE_URL + img + "-og.jpg"] if img else SITE_URL + "/og/default.png",
+             "image": ([SITE_URL + img + ".jpg", SITE_URL + img + "-og.jpg"] if img else SITE_URL + f"/og/{g['id']}.png"
+                       if (SRC / "og" / f"{g['id']}.png").exists() else SITE_URL + "/og/default.png"),
              "author": {"@type": "Organization", "@id": ORGANIZATION["@id"], "name": "The Starred Bill", "url": SITE_URL + "/"},
              "publisher": ORGANIZATION, "isPartOf": {"@id": WEBSITE["@id"]},
              **({"citation": guide_citations(g)} if g.get("sources") else {}),
@@ -7320,6 +7332,8 @@ def build_guides():
         # any guide with `faqFromHeadings` (owner's rule: a search question is a heading with its answer under it).
         # A guide can have both: its question headings first, then the FAQ (the chefs guide, 19 Oct 2026).
         questions = ((heading_questions(body) + faqs)[:FAQ_MAX] if g.get("faqFromHeadings") else faqs or g.get("ldFaq"))
+        if g.get("priceIndex"):
+            graph.append(price_index_dataset(g))
         if questions:
             graph.append({"@type": "FAQPage", "mainEntity": [
                 {"@type": "Question", "name": strip(f["q"]), "acceptedAnswer": {"@type": "Answer", "text": strip(f["a"])}} for f in questions]})
@@ -7328,6 +7342,7 @@ def build_guides():
             "title": e(g["title"]), "description": e(g["description"]), "canonical": SITE_URL + path, "htmlLang": e(g.get("lang", "en-US")),
             "ogType": "article", "ogAlt": e(g.get("imageAlt") or g["h1"]),
             **({"ogImage": SITE_URL + img + "-og.jpg"} if img else {}),
+            **({"ogImage": SITE_URL + f"/og/{g['id']}.png"} if not img and (SRC / "og" / f"{g['id']}.png").exists() else {}),
             "keywordsMeta": f'<meta name="keywords" content="{e(", ".join(g["keywords"]))}">\n' if g["keywords"] else "",
             "jsonld": '<script type="application/ld+json">' + as_json({"@context": "https://schema.org", "@graph": graph}) + "</script>",
             "crumbs": home_crumb + '<a href="/guides/">Guides</a>' + f'<span aria-current="page">{e(g["h1"])}</span>',
@@ -9753,8 +9768,665 @@ def price_snapshot(label):
     print(f"Saved {len(rows)} restaurants' prices to {out.relative_to(ROOT)} (commit {head['commit']}).")
 
 
+# ---------- The Starred Bill Price Index (v1, 27 Oct 2026, owner's brief) ----------
+# A data publication at /guides/michelin-price-index/, worked out from one frozen quarterly snapshot (above), never from
+# the live restaurant files, so every figure it publishes can be worked out again. An edition is two frozen files: the
+# snapshot (content/price-snapshots/2026-Q4.json) and what the snapshot doesn't hold, saved the same day by
+# `python3 build.py --index-edition 2026-Q4` into content/price-index/2026-Q4.json: the exchange rates of the snapshot's
+# rate day (read from currencies.json at the snapshot's commit), each country's usual service rule (SERVICE) and which city
+# each restaurant counts under (most_city()). The guide's `priceIndex` names the edition it shows; a new quarter is a new
+# snapshot, a new edition file and that one field changed. No change between editions is worked out yet (v1 compares
+# places, not quarters; docs/price-index-method.md says how quarters will be compared).
+PI_MIN = 10             # set menus a group (star level, country, city) needs before its median is published
+PI_TOP = 10             # rows in the cheapest-menu and lunch-saving tables
+PI_ODD_LUNCH = 0.25     # a set lunch under a quarter of the same restaurant's dinner menu is listed for checking, not ranked
+PI_CITIES = ("london", "paris", "new-york", "tokyo")   # the four-city comparison
+PI_KINDS = {"restaurant": "Restaurant’s own website", "booking": "Booking site", "press": "Review or press",
+            "guide": "MICHELIN Guide (taken before 13 Oct 2026)", "member": "Member’s report", "none": "No source"}
+PI_KIND_SHORT = {"restaurant": "Own site", "booking": "Booking site", "press": "Press", "guide": "MICHELIN Guide", "member": "Member", "none": "–"}
+
+
+def price_index_edition(label):
+    """Freeze what an edition needs beyond its snapshot (see above). Never overwrites an edition already made."""
+    snap_file = CONTENT / "price-snapshots" / f"{label}.json"
+    if not snap_file.exists():
+        sys.exit(f"No snapshot {label}: take it first with python3 build.py --snapshot {label}")
+    out = CONTENT / "price-index" / f"{label}.json"
+    if out.exists():
+        sys.exit(f"{out.relative_to(ROOT)} is already made; editions are never rewritten.")
+    snap = json.loads(snap_file.read_text(encoding="utf-8"))
+    commit = snap["about"]["commit"].split("+")[0]
+    then = json.loads(subprocess.run(["git", "show", f"{commit}:content/currencies.json"], cwd=ROOT, capture_output=True, text=True, check=True).stdout)
+    if then.get("rateDate") != snap["about"]["rateDate"]:
+        sys.exit(f"currencies.json at {commit} has rates of {then.get('rateDate')}, not the snapshot's {snap['about']['rateDate']}")
+    by_id = {r["id"]: r for r in restaurants}
+    cities = {}
+    for rid in snap["restaurants"]:
+        if rid in by_id:
+            key, name, path = most_city(by_id[rid])
+            cities.setdefault(key, {"name": name, "country": by_id[rid]["country"], "place": key if path else None, "ids": []})["ids"].append(rid)
+    countries = sorted({x["country"] for x in snap["restaurants"].values()})
+    edition = {"edition": label, "snapshot": label, "made": date.today().isoformat(), "method": SNAPSHOT_METHOD,
+               "rateDate": then["rateDate"], "ratesFrom": f"content/currencies.json at {commit}",
+               "rates": {c["code"]: c["perUSD"] for c in then["currencies"]},
+               "service": {c: list(SERVICE.get(c, ("before", 0))) for c in countries},
+               "cities": {k: v for k, v in sorted(cities.items()) if len(v["ids"]) >= PI_MIN}}
+    out.parent.mkdir(exist_ok=True)
+    out.write_text(json.dumps(edition, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
+    print(f"Saved the {label} Price Index edition to {out.relative_to(ROOT)}: rates of {edition['rateDate']}, "
+          f"{len(edition['cities'])} cities with {PI_MIN}+ starred restaurants.")
+
+
+_PRICE_INDEX = {}
+
+
+def price_index():
+    """The edition the Price Index guide shows, worked out once: its rows (one per starred restaurant in the snapshot, set
+    menus only, with US dollar values at the edition's frozen rates) and the edition's settings. None without the guide."""
+    g = next((g for g in guides.values() if g.get("priceIndex")), None)
+    if not g:
+        return None
+    label = g["priceIndex"]
+    if label in _PRICE_INDEX:
+        return _PRICE_INDEX[label]
+    snap = read_json(CONTENT / "price-snapshots" / f"{label}.json")
+    ed = read_json(CONTENT / "price-index" / f"{label}.json") if (CONTENT / "price-index" / f"{label}.json").exists() else None
+    if not snap or not ed:
+        print(f"  Price Index: {label} needs content/price-snapshots/{label}.json and content/price-index/{label}.json "
+              f"(python3 build.py --index-edition {label})")
+        sys.exit(1)
+    city_of = {rid: k for k, c in ed["cities"].items() for rid in c["ids"]}
+    rows = []
+    for rid, x in snap["restaurants"].items():
+        rate = ed["rates"][x["cur"]]
+        row = {"id": rid, "stars": x["stars"], "country": x["country"], "cur": x["cur"], "city": city_of.get(rid), "place": x["place"]}
+        for meal in ("dinner", "lunch"):
+            m = x.get(meal)
+            # Set menus only, as published, with a source: typical spends and à la carte mains aren't comparable with them.
+            if m and m["type"] == "menu" and m.get("basis") == "published" and m.get("sourceKind", "none") != "none":
+                row[meal] = {"price": m["price"], "usd": m["price"] / rate, "kind": m["sourceKind"], "verified": m.get("verifiedAt"),
+                             "changed": m.get("changedAt"), "wine": m.get("wine"), "wineUsd": m["wine"] / rate if m.get("wine") is not None else None}
+        rows.append(row)
+    _PRICE_INDEX[label] = {"label": label, "about": snap["about"], "edition": ed, "rows": rows, "guide": g,
+                           "all": snap["restaurants"], "by_id": {r["id"]: r for r in restaurants}}
+    return _PRICE_INDEX[label]
+
+
+def pi_the(name):
+    """"the United States", "the Netherlands", "France": a country's name as it reads mid-sentence."""
+    return ("the " if name.startswith("United ") or name in ("Netherlands", "Philippines", "UAE", "UK", "USA", "Czech Republic") else "") + name
+
+
+def pi_round(x):
+    """A median in local money as published: whole units, tens above 1,000 (¥33,250 -> ¥33,300 at hundreds above 100,000)."""
+    step = 1 if x < 1000 else 10 if x < 100000 else 100
+    return int(round(x / step) * step)
+
+
+def pi_money(x, cur, usd=None):
+    """"€185 (≈ $205)": a local figure with US dollars after it, unless it is in dollars already."""
+    return money(pi_round(x), cur) + ("" if cur == "USD" or usd is None else f' <span class="muted">≈ {usd_text(usd)}</span>')
+
+
+def pi_label(label):
+    """2026-Q4 -> Q4 2026."""
+    return f"{label[5:]} {label[:4]}"
+
+
+def pi_city_name(pi, key):
+    c = pi["edition"]["cities"][key]
+    return c["name"]
+
+
+def pi_plain_city(pi, key):
+    return e(pi_city_name(pi, key))
+
+
+def pi_city_link(pi, key):
+    c = pi["edition"]["cities"][key]
+    return f'<a href="{e(places[c["place"]]["path"])}">{e(c["name"])}</a>' if c.get("place") in places else e(c["name"])
+
+
+def pi_name(pi, rid):
+    r = pi["by_id"].get(rid)
+    return f'<a href="{e(restaurant_href(r))}">{e(r["name"])}</a>' if r else e(rid.replace("-", " ").title())
+
+
+def pi_plain_name(pi, rid):
+    r = pi["by_id"].get(rid)
+    return r["name"] if r else rid.replace("-", " ").title()
+
+
+def pi_where(pi, row):
+    """The town a restaurant is in, linked to its page where it has one, with its country."""
+    r = pi["by_id"].get(row["id"])
+    if row["city"]:
+        town = pi_city_link(pi, row["city"])
+    elif r:
+        town = f'<a href="{e(r["cityPath"])}">{e(cost_town(r))}</a>'
+    else:
+        town = ""
+    country = places[row["country"]]["name"]
+    return town + (f'<br><span class="muted">{e(country)}</span>' if r and cost_town(r) != country else "")
+
+
+def pi_source(m):
+    """A small note of where a price came from, and whether it has been genuinely checked."""
+    text = PI_KIND_SHORT[m["kind"]]
+    return f'<span class="pi-src pi-src-{m["kind"]}">{e(text)}</span>' + (' <span class="pi-ok" title="Genuinely rechecked at its source">checked</span>' if m["verified"] else "")
+
+
+def pi_star_rows(pi, s):
+    return [r for r in pi["rows"] if r["stars"] == s]
+
+
+def pi_cheapest(row):
+    """A restaurant's cheapest set menu, lunch or dinner: (meal, its record)."""
+    got = [(row[m]["usd"], m) for m in ("lunch", "dinner") if m in row]
+    if not got:
+        return None
+    meal = min(got)[1]
+    return meal, row[meal]
+
+
+def pi_groups(pi, key):
+    """Restaurants grouped by key(row) with PI_MIN+ dinner set menus: key -> rows with a dinner menu."""
+    out = {}
+    for r in pi["rows"]:
+        k = key(r)
+        if k and "dinner" in r:
+            out.setdefault(k, []).append(r)
+    return {k: v for k, v in out.items() if len(v) >= PI_MIN}
+
+
+def pi_all_in(rows, pi):
+    """The median dinner set menu with its country's usual service, tax or tip added (the edition's SERVICE), in US dollars."""
+    svc = pi["edition"]["service"]
+    return middle(r["dinner"]["usd"] * (1 + svc.get(r["country"], ["before", 0])[1] / 100) for r in rows)
+
+
+def pi_quartiles(v):
+    v = sorted(v)
+    return v[len(v) // 4], v[(3 * len(v)) // 4]
+
+
+def pi_lunch_pairs(pi):
+    """Restaurants with both a set lunch and a dinner set menu: (row, saving share). Odd ones (lunch under PI_ODD_LUNCH of
+    dinner) are kept apart for checking."""
+    pairs = [(r, 1 - r["lunch"]["price"] / r["dinner"]["price"]) for r in pi["rows"] if "lunch" in r and "dinner" in r]
+    ok = [(r, s) for r, s in pairs if r["lunch"]["price"] >= PI_ODD_LUNCH * r["dinner"]["price"]]
+    odd = [(r, s) for r, s in pairs if r["lunch"]["price"] < PI_ODD_LUNCH * r["dinner"]["price"]]
+    return ok, odd
+
+
+def pi_odd(pi, row):
+    """A set lunch under PI_ODD_LUNCH of the same restaurant's dinner menu, not yet confirmed in the edition file: usually a
+    different kind of menu (a bar or one-course lunch), so it's kept out of the rankings and the lunch figures until checked."""
+    return ("lunch" in row and "dinner" in row and row["lunch"]["price"] < PI_ODD_LUNCH * row["dinner"]["price"]
+            and row["id"] not in pi["edition"].get("confirmed", []))
+
+
+def pi_cheapest_rows(pi, s):
+    """Restaurants at a star level by their cheapest set menu (lunch or dinner) in US dollars, odd lunches left out."""
+    out = []
+    for r in pi_star_rows(pi, s):
+        got = [(r[m]["usd"], m) for m in ("lunch", "dinner") if m in r and not (m == "lunch" and pi_odd(pi, r))]
+        if got:
+            usd, meal = min(got)
+            out.append((usd, meal, r))
+    return sorted(out, key=lambda x: (x[0], pi_plain_name(pi, x[2]["id"]).lower()))
+
+
+def pi_city_rows(pi):
+    """Cities with PI_MIN+ dinner set menus, cheapest median first: (key, rows, median $, all-in median $)."""
+    groups = pi_groups(pi, lambda r: r["city"])
+    return sorted(((k, v, middle(r["dinner"]["usd"] for r in v), pi_all_in(v, pi)) for k, v in groups.items()),
+                  key=lambda x: (x[2], x[0]))
+
+
+def pi_country_rows(pi):
+    groups = pi_groups(pi, lambda r: r["country"])
+    return sorted(((k, v, middle(r["dinner"]["usd"] for r in v), pi_all_in(v, pi)) for k, v in groups.items()),
+                  key=lambda x: (x[2], x[0]))
+
+
+def pi_pct(x):
+    return f"{round(100 * x)}%"
+
+
+def pi_premiums(pi):
+    """How much more a second and third star cost: the ratio of the medians worldwide, and the median of the same ratio
+    within each country with PI_MIN+ menus at both levels (so country mix can't make it)."""
+    dinner = lambda s, c=None: [r["dinner"] for r in pi_star_rows(pi, s) if "dinner" in r and (c is None or r["country"] == c)]
+    base = middle(m["usd"] for m in dinner(1))
+    out = {}
+    for s in (2, 3):
+        within = []
+        for c in sorted({r["country"] for r in pi["rows"]}):
+            a, b = dinner(1, c), dinner(s, c)
+            if len(a) >= PI_MIN and len(b) >= PI_MIN:
+                within.append(middle(m["price"] for m in b) / middle(m["price"] for m in a))
+        out[s] = (middle(m["usd"] for m in dinner(s)) / base, middle(within) if within else None, len(within))
+    return out
+
+
+def price_index_stats():
+    """Figures for the Price Index guide ({{piMedian1}}, {{piCheapCity}}…), from its edition (price_index())."""
+    pi = price_index()
+    if not pi:
+        return {}
+    rows, ed = pi["rows"], pi["edition"]
+    dinners = [r for r in rows if "dinner" in r]
+    out = {"piEdition": pi_label(pi["label"]), "piTaken": uk_date(pi["about"]["taken"]), "piRateDate": uk_date(ed["rateDate"]),
+           "piRestaurants": f"{len(rows):,}", "piDinnerN": f"{len(dinners):,}", "piLunchN": f"{sum(1 for r in rows if 'lunch' in r):,}",
+           "piCountriesN": str(len({r['country'] for r in dinners})), "piMin": str(PI_MIN)}
+    for s in (1, 2, 3):
+        v = [r["dinner"]["usd"] for r in dinners if r["stars"] == s]
+        out[f"piMedian{s}"], out[f"piN{s}"] = usd_text(middle(v)), f"{len(v):,}"
+    prem = pi_premiums(pi)
+    for s in (2, 3):
+        out[f"piPremium{s}"] = f"+{round(100 * (prem[s][0] - 1))}%"
+    cities = pi_city_rows(pi)
+    out["piCitiesN"] = str(len(cities))
+    for key, (k, v, usd, _) in (("piCheapCity", cities[0]), ("piDearCity", cities[-1])):
+        out[key], out[key + "Price"] = pi_city_name(pi, k), usd_text(usd)
+    countries = pi_country_rows(pi)
+    out["piCountriesRanked"] = str(len(countries))
+    verified = sum(1 for r in dinners if r["dinner"]["verified"])
+    out["piVerifiedShare"] = pi_pct(verified / max(1, len(dinners)))
+    out["piFirstRecorded"] = uk_date(min(m["changed"] for r in rows for m in (r.get("dinner"), r.get("lunch")) if m and m["changed"]))
+    out["piOwnSiteShare"] = pi_pct(sum(1 for r in dinners if r["dinner"]["kind"] == "restaurant") / max(1, len(dinners)))
+    return out
+
+
+def pi_bars(items, cls=""):
+    """A ranked bar chart drawn in HTML: (label html, value, value text, highlighted?) per row, bars from zero."""
+    top = max(v for _, v, _, _ in items) or 1
+    return (f'<ol class="pi-bars {cls}">' + "".join(
+        (f'<li class="pi-key">' if key else "<li>") + f'<span class="pi-bl">{label}</span>'
+        f'<span class="pi-bt" aria-hidden="true"><span class="pi-b" style="width:{100 * v / top:.1f}%"></span></span>'
+        f'<span class="pi-bv">{text}</span></li>' for label, v, text, key in items) + "</ol>")
+
+
+def price_index_blocks():
+    """The Price Index guide's {{table:pi-…}} blocks: headline figures, charts and tables, all from its edition."""
+    pi = price_index()
+    if not pi:
+        return {}
+    rows, ed, label = pi["rows"], pi["edition"], pi_label(pi["label"])
+    svc = ed["service"]
+    dinners = [r for r in rows if "dinner" in r]
+    stars_cell = lambda n: f'<span class="g-stars" aria-label="{n} star{"s" if n > 1 else ""}">{"★" * n}</span>'
+    star_name = lambda s: ("One star", "Two stars", "Three stars")[s - 1]
+    method = '<a href="#method">how the index is made</a>'
+    note = lambda text: f'<p class="table-note">{text} Price Index {e(label)}; {method}.</p>'
+    wrap = lambda heads, body, cls="guide-table data", extra="": (
+        f'<div class="table-wrap"><table class="{cls}"{extra}><thead><tr>'
+        + "".join(f'<th scope="col">{h}</th>' for h in heads) + f"</tr></thead><tbody>{body}</tbody></table></div>")
+    usd = lambda v: usd_text(v) if v is not None else "–"
+    rule = lambda c: tuple(svc.get(c, ["before", 0]))
+    added = lambda c: COST_SERVICE.get(rule(c), ("–",))[0]
+    pick = lambda path: f'/pick/?w={urllib.parse.quote(path, safe="/")}'
+    blocks = {}
+
+    # Headline figures, each with its own address to share (#stat-…).
+    prem = pi_premiums(pi)
+    cities = pi_city_rows(pi)
+    by_allin = sorted(cities, key=lambda x: (x[3], x[0]))
+    med = {s: middle(r["dinner"]["usd"] for r in dinners if r["stars"] == s) for s in (1, 2, 3)}
+    n = {s: sum(1 for r in dinners if r["stars"] == s) for s in (1, 2, 3)}
+    cheap3 = pi_cheapest_rows(pi, 3)
+    ok_pairs = [(r, s) for r, s in pi_lunch_pairs(pi)[0] if not pi_odd(pi, r)]
+    save = max(ok_pairs, key=lambda p: (p[0]["dinner"]["usd"] - p[0]["lunch"]["usd"], p[0]["id"]))[0]
+    def city_line(k, v, d, a):
+        cur = rows_cur(v)
+        return f'{pi_plain_city(pi, k)}: median dinner set menu {pi_money(middle(r["dinner"]["price"] for r in v), cur, d)}, from {len(v)} menus'
+    def rows_cur(v):
+        return v[0]["cur"]
+    k0, v0, d0, a0 = cities[0]
+    k1, v1, d1, a1 = cities[-1]
+    dear_all = by_allin[-1]
+    dear_kind = rule(ed["cities"][dear_all[0]]["country"])[0]
+    dear_note = (f" With the usual {SERVICE_ADDS.get(dear_kind, 'service')} added, {pi_plain_city(pi, dear_all[0])} costs more "
+                 f"(≈ {usd_text(dear_all[3])})." if dear_all[0] != k1 else "")
+    c3usd, c3meal, c3 = cheap3[0]
+    cards = [
+        ("stat-one-star", usd_text(med[1]), "Typical one-star dinner set menu",
+         f"Median of {n[1]:,} menus, per person before drinks and service. Two stars: {usd_text(med[2])}; three: {usd_text(med[3])}."),
+        ("stat-premium", f"+{round(100 * (prem[2][0] - 1))}%", "What a second star adds",
+         f"The median two-star dinner menu against the median one-star. A third star: +{round(100 * (prem[3][0] - 1))}%."
+         + (f" Comparing within the same country gives much the same (+{round(100 * (prem[2][1] - 1))}% and +{round(100 * (prem[3][1] - 1))}%)." if prem[3][1] else "")),
+        ("stat-cheap-city", pi_city_name(pi, k0), f"Lowest-priced of {len(cities)} cities ranked", city_line(k0, v0, d0, a0) + "."),
+        ("stat-dear-city", pi_city_name(pi, k1), f"Highest-priced of {len(cities)} cities ranked", city_line(k1, v1, d1, a1) + "." + dear_note),
+        ("stat-cheap-three", pi_plain_name(pi, c3["id"]), "Cheapest three-star set menu",
+         f'{pi_money(c3[c3meal]["price"], c3["cur"], c3usd)}, its {c3meal} menu, in {pi_plain_city(pi, c3["city"]) if c3["city"] else e(places[c3["country"]]["name"])}.'),
+        ("stat-lunch", pi_plain_name(pi, save["id"]), "Biggest lunch saving",
+         f'Lunch {pi_money(save["lunch"]["price"], save["cur"])} against dinner {pi_money(save["dinner"]["price"], save["cur"])}: '
+         f'{pi_money(save["dinner"]["price"] - save["lunch"]["price"], save["cur"], save["dinner"]["usd"] - save["lunch"]["usd"])} less.'),
+    ]
+    links = {"stat-cheap-three": e(pi_plain_name(pi, c3["id"])), "stat-lunch": pi_name(pi, save["id"])}
+    blocks["pi-headlines"] = ('<div class="pi-cards">' + "".join(
+        f'<section class="pi-card" id="{i}"><p class="pi-fig">{links.get(i, e(fig))}</p><h3>{e(head)}</h3><p>{text}</p>'
+        f'<a class="pi-anchor" href="#{i}" aria-label="Link to this figure">#</a></section>' for i, fig, head, text in cards) + "</div>")
+
+    # The data in a line, under the headline figures.
+    verified = sum(1 for r in dinners if r["dinner"]["verified"])
+    own = sum(1 for r in dinners if r["dinner"]["kind"] == "restaurant")
+    blocks["pi-strip"] = (
+        f'<p class="pi-strip"><span><strong>{len(dinners):,}</strong> dinner set menus</span>'
+        f'<span><strong>{len({r["country"] for r in dinners})}</strong> countries</span>'
+        f'<span><strong>{pi_pct(own / len(dinners))}</strong> from restaurants’ own websites</span>'
+        f'<span><strong>{pi_pct(verified / len(dinners))}</strong> re-checked at source</span>'
+        f'<span>Prices recorded {e(uk_date(pi["about"]["taken"]))}</span><a href="#data">About the data</a></p>')
+
+    # By star level: the middle half as a bar and the median marked, then the table.
+    top = max(pi_quartiles([r["dinner"]["usd"] for r in dinners if r["stars"] == s])[1] for s in (1, 2, 3)) * 1.12
+    items = ""
+    for s in (1, 2, 3):
+        v = [r["dinner"]["usd"] for r in dinners if r["stars"] == s]
+        q1, q3 = pi_quartiles(v)
+        items += (f'<li><span class="pi-bl">{stars_cell(s)} {star_name(s)}</span><span class="pi-bt" aria-hidden="true">'
+                  f'<span class="pi-range" style="left:{100 * q1 / top:.1f}%;width:{100 * (q3 - q1) / top:.1f}%"></span>'
+                  f'<span class="pi-med" style="left:{100 * med[s] / top:.1f}%"></span></span>'
+                  f'<span class="pi-bv"><strong>{usd_text(med[s])}</strong> <span class="muted">{usd_text(q1)}–{usd_text(q3)}</span></span></li>')
+    chart = (f'<figure class="pi-chart"><ol class="pi-bars pi-ranges">{items}</ol><figcaption>Dinner set menu per person in US dollars: '
+             f'the bar spans the middle half of menus at each star level, the mark is the median.</figcaption></figure>')
+    body = ""
+    for s in (1, 2, 3):
+        at = [r for r in rows if r["stars"] == s]
+        v = [r["dinner"]["usd"] for r in at if "dinner" in r]
+        q1, q3 = pi_quartiles(v)
+        lunches = [r["lunch"]["usd"] for r in at if "lunch" in r and not pi_odd(pi, r)]
+        wines = [r["dinner"]["wineUsd"] for r in at if "dinner" in r and r["dinner"]["wineUsd"] is not None]
+        body += (f'<tr><td data-label="Stars">{stars_cell(s)} {star_name(s)}</td>'
+                 f'<td class="num" data-label="Dinner menus">{len(v):,}</td>'
+                 f'<td class="num" data-label="Median dinner menu"><strong>{usd(med[s])}</strong><br><span class="muted">middle half {usd_text(q1)}–{usd_text(q3)}</span></td>'
+                 f'<td class="num" data-label="Against one star">{"–" if s == 1 else "+" + pi_pct(prem[s][0] - 1)}</td>'
+                 f'<td class="num" data-label="Median set lunch">{usd(middle(lunches)) if len(lunches) >= PI_MIN else "–"}<br><span class="muted">{len(lunches):,} lunches</span></td>'
+                 f'<td class="num" data-label="Median wine pairing">{usd(middle(wines)) if len(wines) >= PI_MIN else "–"}<br><span class="muted">{len(wines):,} listed</span></td></tr>')
+    within = (f" Within the same country, the median two-star menu is {prem[2][1]:.2f} times the one-star median "
+              f"(the median over {prem[2][2]} countries with {PI_MIN} or more menus at both levels) and three stars {prem[3][1]:.2f} times "
+              f"({prem[3][2]} countries), so the gap isn’t just that the dearest countries have the most stars." if prem[3][1] else "")
+    above = lambda s: sum(1 for r in dinners if r["stars"] == s and r["dinner"]["usd"] > med[s + 1]) / n[s]
+    blocks["pi-stars"] = (f'<p>Each extra star raises the typical price, but the levels overlap: {pi_pct(above(1))} of one-star dinner menus cost '
+                          f'more than the typical two-star, and {pi_pct(above(2))} of two-star menus more than the typical three-star.</p>') + chart + wrap(("Stars", "Dinner menus", "Median dinner menu", "Against one star", "Median set lunch", "Median wine pairing"), body, "guide-table data rank-list") + note(
+        "Per person in US dollars at the exchange rates of " + e(uk_date(ed["rateDate"])) + ", before drinks and service. Medians of each "
+        "restaurant’s main dinner set menu; the middle half runs from the lower to the upper quartile. Lunches are set lunch menus, wine "
+        f"the pairing with the dinner menu where listed." + within)
+
+    # Cities, cheapest first: a bar chart of every city, then the full table folded away.
+    items = [(pi_city_link(pi, k), d, usd_text(d), k in PI_CITIES) for k, v, d, a in cities]
+    blocks["pi-city-chart"] = (f'<figure class="pi-chart">{pi_bars(items)}<figcaption>Median dinner set menu per person in US dollars, '
+                               f'before drinks and service, in the {len(cities)} cities with {PI_MIN} or more priced set menus; '
+                               f'London, Paris, New York and Tokyo in gold.</figcaption></figure>')
+    body = ""
+    for i, (k, v, d, a) in enumerate(cities):
+        c = ed["cities"][k]
+        cur = v[0]["cur"]
+        local = middle(r["dinner"]["price"] for r in v)
+        path = places[c["place"]]["path"] if c.get("place") in places else None
+        body += (f'<tr><td data-label="City"><span class="rank">{i + 1}</span> {pi_plain_city(pi, k)}<br><span class="muted">{e(places[c["country"]]["name"])}</span></td>'
+                 f'<td class="num" data-label="Set menus" data-sort="{len(v)}">{len(v)}</td>'
+                 f'<td class="num" data-label="Median dinner menu" data-sort="{d:.0f}"><strong>{pi_money(local, cur)}</strong>'
+                 + ("" if cur == "USD" else f'<br><span class="muted">≈ {usd_text(d)}</span>') + "</td>"
+                 f'<td data-label="On top" data-sort="{rule(c["country"])[1]}">{e(added(c["country"]))}</td>'
+                 f'<td class="num" data-label="With service, tax or tip" data-sort="{a:.0f}">≈ {usd_text(a)}</td>'
+                 f'<td data-label="Find a table">' + (f'<a href="{e(pick(path))}">Budget search</a>' if path else "") + "</td></tr>")
+    heads = "".join(f'<th scope="col">{h}</th>' for h in ("City", "Set menus", "Median dinner menu", "On top", "With service, tax or tip", "Find a table"))
+    blocks["pi-cities"] = (f'<details class="pi-more"><summary>Full city table: local prices, sample sizes and what’s added</summary>'
+                           f'<div class="table-wrap"><table class="guide-table data rank-list" data-sortable><thead><tr>{heads}</tr></thead><tbody>{body}</tbody></table></div>'
+                           + note("The median dinner set menu per person in local currency, before drinks and service, with US dollars at the "
+                                  f"exchange rates of {e(uk_date(ed['rateDate']))} (the ranking’s order). “With service, tax or tip” adds what’s "
+                                  "usually added in each country (see the table under “About the data”), an estimate, as some restaurants charge "
+                                  "differently. A city counts its districts and, for Tokyo, Paris and the like, the city page’s own restaurants; "
+                                  "restaurants in nearby towns count under their own town. Tap a heading to sort.") + "</details>")
+    blocks["pi-cheap-city"] = (f'<p>{pi_plain_city(pi, k0)} has the lowest median dinner set menu of the {len(cities)} cities with {PI_MIN} or more priced menus: '
+                               f'{pi_money(middle(r["dinner"]["price"] for r in v0), v0[0]["cur"], d0)} per person before drinks and service, '
+                               f'from {len(v0)} menus. Next come ' + and_plain([pi_plain_city(pi, k) + f" ({usd_text(d)})" for k, v, d, a in cities[1:3]], {"and": " and "}) + ".</p>")
+    top_share = lambda v: f"{sum(1 for r in v if r['stars'] > 1)} ({pi_pct(sum(1 for r in v if r['stars'] > 1) / len(v))})"
+    blocks["pi-dear-city"] = (f'<p>{pi_plain_city(pi, k1)} has the highest median dinner set menu as listed: '
+                              f'{pi_money(middle(r["dinner"]["price"] for r in v1), v1[0]["cur"], d1)} per person, from {len(v1)} menus, ahead of '
+                              + and_plain([pi_plain_city(pi, k) + f" ({usd_text(d)})" for k, v, d, a in reversed(cities[-3:-1])], {"and": " and "}) + "."
+                              + (f" Menu prices in {e(pi_the(places[ed['cities'][dear_all[0]]['country']]['name']))} are quoted "
+                                 f"{SERVICE_SAYS.get(rule(ed['cities'][dear_all[0]]['country'])[0], 'before service')}, though, so once what’s usually "
+                                 f"added is counted, {pi_plain_city(pi, dear_all[0])} comes out dearest, at about {usd_text(dear_all[3])}."
+                                 if dear_all[0] != k1 else "")
+                              + f" A city’s median mixes star levels: {top_share(v1)} of {e(pi_city_name(pi, k1))}’s {len(v1)} priced menus are at two or three "
+                                f"stars, against {pi_pct(sum(1 for r in dinners if r['stars'] > 1) / len(dinners))} of all those in the index.</p>")
+
+    # London vs Paris vs New York vs Tokyo: one column per city, one row per figure (a card per figure on phones).
+    four = [k for k in PI_CITIES if k in ed["cities"]]
+    sets = {k: [r for r in rows if r["city"] == k] for k in four}
+    def cell(k, fn):
+        return f'<td class="num" data-label="{e(pi_city_name(pi, k))}">{fn(k, sets[k], sets[k][0]["cur"])}</td>'
+    def med_cell(vals, cur, usd_vals=None, what="menus"):
+        if len(vals) >= PI_MIN:
+            return pi_money(middle(vals), cur, middle(usd_vals) if usd_vals else None) + f'<br><span class="muted">{len(vals)} {what}</span>'
+        if vals:
+            lo, hi = min(vals), max(vals)
+            span = money(pi_round(lo), cur) + ("" if lo == hi else f"–{money(pi_round(hi), cur)}")
+            return f'<span class="muted">{len(vals)} {what}, too few for a median: {span}</span>'
+        return '<span class="muted">None listed</span>'
+    def star_med(s):
+        return lambda k, v, cur: med_cell([r["dinner"]["price"] for r in v if r["stars"] == s and "dinner" in r], cur,
+                                          [r["dinner"]["usd"] for r in v if r["stars"] == s and "dinner" in r])
+    lines = [
+        ("Starred restaurants", lambda k, v, cur: f"{len(v)}"),
+        ("Median dinner set menu", lambda k, v, cur: "<strong>" + med_cell([r["dinner"]["price"] for r in v if "dinner" in r], cur, [r["dinner"]["usd"] for r in v if "dinner" in r]) + "</strong>"),
+        ("One star", star_med(1)), ("Two stars", star_med(2)), ("Three stars", star_med(3)),
+        ("Median set lunch", lambda k, v, cur: med_cell([r["lunch"]["price"] for r in v if "lunch" in r and not pi_odd(pi, r)], cur,
+                                                       [r["lunch"]["usd"] for r in v if "lunch" in r and not pi_odd(pi, r)], "lunches")),
+        ("Serve a set lunch", lambda k, v, cur: pi_pct(sum(1 for r in v if "lunch" in r) / len(v))),
+        ("Median wine pairing", lambda k, v, cur: med_cell([r["dinner"]["wine"] for r in v if "dinner" in r and r["dinner"]["wine"] is not None], cur,
+                                                          [r["dinner"]["wineUsd"] for r in v if "dinner" in r and r["dinner"]["wineUsd"] is not None], "listed")),
+        ("On top of the price", lambda k, v, cur: e(added(v[0]["country"]))),
+        ("Median dinner menu with it", lambda k, v, cur: "≈ " + usd_text(pi_all_in([r for r in v if "dinner" in r], pi))),
+        ("Find a table", lambda k, v, cur: f'<a href="{e(places[k]["path"])}">All {len(v)}</a> · <a href="{e(pick(places[k]["path"]))}">Budget search</a>'),
+    ]
+    body = "".join(f'<tr><th scope="row" data-label="">{e(name)}</th>' + "".join(cell(k, fn) for k in four) + "</tr>" for name, fn in lines)
+    meds = {k: middle(r["dinner"]["usd"] for r in sets[k] if "dinner" in r) for k in four}
+    alls = {k: pi_all_in([r for r in sets[k] if "dinner" in r], pi) for k in four}
+    lo, hi = min(four, key=meds.get), max(four, key=meds.get)
+    lo_all, hi_all = min(four, key=alls.get), max(four, key=alls.get)
+    order = sorted(four, key=meds.get)
+    said = (f'<p>Of the four, {pi_plain_city(pi, lo)} has the lowest median dinner set menu (≈ {usd_text(meds[lo])}) and {pi_plain_city(pi, hi)} '
+            f'the highest (≈ {usd_text(meds[hi])}), with ' + and_plain([f"{pi_plain_city(pi, k)} (≈ {usd_text(meds[k])})" for k in order[1:-1]], {"and": " and "})
+            + " between them, in US dollars before drinks and service.")
+    said += (" Adding what’s usually added to the bill keeps the order at both ends" if (lo_all, hi_all) == (lo, hi) else
+             f" Adding what’s usually added changes the ends: {pi_plain_city(pi, lo_all)} lowest, {pi_plain_city(pi, hi_all)} highest")
+    said += ": " + ", ".join(f"{e(pi_city_name(pi, k))} ≈ {usd_text(alls[k])}" for k in sorted(four, key=alls.get)) + ".</p>"
+    blocks["pi-four"] = said + (
+        f'<div class="table-wrap"><table class="guide-table data pi-four"><thead><tr><th scope="col"><span class="sr-only">Figure</span></th>'
+        + "".join(f'<th scope="col">{pi_city_link(pi, k)}</th>' for k in four) + f"</tr></thead><tbody>{body}</tbody></table></div>") + note(
+        "Per person in local currency, with US dollars at the exchange rates of " + e(uk_date(ed["rateDate"])) + ", before drinks and service. "
+        f"A median needs {PI_MIN} or more menus; below that the table gives the range instead. “With it” adds what’s usually added in each "
+        "country, an estimate. Tokyo’s menu prices usually include the 10% consumption tax.")
+
+    # Countries with PI_MIN+ dinner set menus, cheapest median first (sortable).
+    body = ""
+    for k, v, d, a in pi_country_rows(pi):
+        cur = v[0]["cur"]
+        def star(s):
+            at = [r for r in v if r["stars"] == s]
+            sort = f'{middle(r["dinner"]["usd"] for r in at):.0f}' if len(at) >= PI_MIN else "-1"
+            text = (pi_money(middle(r["dinner"]["price"] for r in at), cur) + f'<br><span class="muted">{len(at)} menus</span>'
+                    if len(at) >= PI_MIN else f'<span class="muted">{len(at)} menu{"s" if len(at) != 1 else ""}</span>')
+            return f'<td class="num" data-label="{star_name(s)}" data-sort="{sort}">{text}</td>'
+        body += (f'<tr><td data-label="Country" data-sort="{e(places[k]["name"])}">{e(places[k]["name"])}</td>'
+                 f'<td class="num" data-label="Median dinner menu" data-sort="{d:.0f}"><strong>{pi_money(middle(r["dinner"]["price"] for r in v), cur)}</strong>'
+                 + ("" if cur == "USD" else f' <span class="muted">≈ {usd_text(d)}</span>') + f'<br><span class="muted">{len(v):,} menus</span></td>'
+                 + star(1) + star(2) + star(3) +
+                 f'<td data-label="On top" data-sort="{rule(k)[1]}">{e(added(k))}</td>'
+                 f'<td class="num" data-label="With service, tax or tip" data-sort="{a:.0f}">≈ {usd_text(a)}</td></tr>')
+    asc = ' aria-sort="ascending"'
+    heads = "".join(f'<th scope="col"{asc if h == "Median dinner menu" else ""}>{h}</th>'
+                    for h in ("Country", "Median dinner menu", "One star", "Two stars", "Three stars", "On top", "With service, tax or tip"))
+    small = sorted({r["country"] for r in dinners} - {k for k, *_ in pi_country_rows(pi)}, key=lambda c: places[c]["name"])
+    crows = pi_country_rows(pi)
+    chart = pi_bars([(f'<a href="{e(places[k]["path"])}">{e(places[k]["name"])}</a>', d, usd_text(d), False) for k, v, d, a in crows])
+    blocks["pi-countries"] = (f'<figure class="pi-chart">{chart}<figcaption>Median dinner set menu per person in US dollars, before drinks and '
+                              f'service, in the {len(crows)} countries with {PI_MIN} or more priced set menus.</figcaption></figure>'
+                              f'<details class="pi-more"><summary>Full country table: local prices, star levels and what’s added</summary>'
+                              f'<div class="table-wrap"><table class="guide-table data rank-list" data-sortable><thead><tr>{heads}</tr></thead>'
+                              f'<tbody>{body}</tbody></table></div>') + note(
+        f"Countries with {PI_MIN} or more priced dinner set menus, lowest median first, per person in local currency before drinks and service, "
+        f"with US dollars at the exchange rates of {e(uk_date(ed['rateDate']))}. A star level shows its median where it has {PI_MIN} or more menus, "
+        "otherwise how many there are. “With service, tax or tip” adds what’s usually added there, an estimate. "
+        f"Fewer than {PI_MIN} menus, so not ranked: " + e(", ".join(places[c]["name"] for c in small)) + ". Tap a heading to sort.") + "</details>"
+
+    # The cheapest set menus at each star level (lunch or dinner, whichever is cheaper).
+    for s in (1, 2, 3):
+        got = pi_cheapest_rows(pi, s)
+        body = ""
+        for i, (u, meal, r) in enumerate(got[:PI_TOP]):
+            m = r[meal]
+            body += (f'<tr><td data-label="Restaurant"><span class="rank">{i + 1}</span> {pi_name(pi, r["id"])}</td>'
+                     f'<td data-label="Where">{pi_where(pi, r)}</td>'
+                     f'<td data-label="Menu">{"Set lunch" if meal == "lunch" else "Dinner menu"}</td>'
+                     f'<td class="num" data-label="Per person">{money(m["price"], r["cur"])}' + ("" if r["cur"] == "USD" else f'<br><span class="muted">≈ {usd_text(u)}</span>') + "</td>"
+                     f'<td data-label="Price from">{pi_source(m)}</td></tr>')
+        level = ("one", "two", "three")[s - 1]
+        blocks[f"pi-cheap-{s}"] = wrap(("Restaurant", "Where", "Menu", "Per person", "Price from"), body, "guide-table data rank-list") + note(
+            (f"Each {level}-star restaurant’s cheapest set menu, lunch or dinner, per person in local currency before drinks "
+             f"and service, ranked by its value in US dollars, from {len(got):,} {level}-star restaurants with a priced set menu. "
+             "Set lunches under a quarter of the same restaurant’s dinner menu are left out until checked, as that usually means a different kind of "
+             "menu. “Checked” marks a price re-checked at its source; a booking site, review or the MICHELIN Guide is a weaker source than the "
+             "restaurant’s own website.") if s == 3 else
+            f"From {len(got):,} {level}-star restaurants with a priced set menu, chosen and ranked as the three-star table above.")
+    under = [x for x in cheap3 if x[0] < 150]
+    blocks["pi-cheap-3-line"] = (f'<p>The cheapest way into a three-star restaurant in this edition is {e(pi_plain_name(pi, c3["id"]))}’s {c3meal} menu at '
+                                 f'{pi_money(c3[c3meal]["price"], c3["cur"], c3usd)}. Of the {len(cheap3)} three-star restaurants with a priced set menu, '
+                                 f'{n_word(len(under), "en")} have one under $150 ({n_word(len([x for x in under if x[1] == "lunch"]), "en")} '
+                                 f'of them at lunch), and the median three-star restaurant’s cheapest set menu is ≈ {usd_text(middle(u for u, _, _ in cheap3))}.</p>')
+
+    # Lunch against dinner, by star level, then the biggest savings.
+    pairs, odd = pi_lunch_pairs(pi)
+    pairs = [(r, sv) for r, sv in pairs if not pi_odd(pi, r)]
+    body = ""
+    for s in (1, 2, 3):
+        at_all = pi_star_rows(pi, s)
+        p = [(r, sv) for r, sv in pairs if r["stars"] == s]
+        cheaper = [sv for r, sv in p if sv > 0]
+        same = sum(1 for r, sv in p if sv == 0)
+        body += (f'<tr><td data-label="Stars">{stars_cell(s)} {star_name(s)}</td>'
+                 f'<td class="num" data-label="Serve a set lunch">{pi_pct(sum(1 for r in at_all if "lunch" in r) / len(at_all))}<br><span class="muted">of {len(at_all):,}</span></td>'
+                 f'<td class="num" data-label="List both menus">{len(p):,}</td>'
+                 f'<td class="num" data-label="Lunch cheaper">{pi_pct(len(cheaper) / len(p))}</td>'
+                 f'<td class="num" data-label="Same price">{pi_pct(same / len(p))}</td>'
+                 f'<td class="num" data-label="Typical saving"><strong>{pi_pct(middle(cheaper))}</strong><br><span class="muted">where lunch is cheaper</span></td>'
+                 f'<td class="num" data-label="Median lunch / dinner">{usd_text(middle(r["lunch"]["usd"] for r, _ in p))} / {usd_text(middle(r["dinner"]["usd"] for r, _ in p))}</td></tr>')
+    blocks["pi-lunch"] = wrap(("Stars", "Serve a set lunch", "List both menus", "Lunch cheaper", "Same price", "Typical saving", "Median lunch / dinner"), body, "guide-table data rank-list") + note(
+        "Restaurants listing both a set lunch and a dinner set menu, comparing the two prices in local currency. “Same price” often means the "
+        "same menu is served at both. The typical saving is the median among restaurants whose lunch is cheaper; the last column gives the "
+        f"medians of the same restaurants in US dollars. {len(odd)} set lunch{'es' if len(odd) != 1 else ''} under a quarter of dinner "
+        "are left out until checked.")
+    all_cheaper = [sv for r, sv in pairs if sv > 0]
+    blocks["pi-lunch-line"] = (f'<p>Of the {len(pairs):,} starred restaurants that list both a set lunch and a dinner set menu, lunch is cheaper at '
+                               f'{pi_pct(len(all_cheaper) / len(pairs))} and the same price at {pi_pct(sum(1 for _, sv in pairs if sv == 0) / len(pairs))}, '
+                               f'often because the same menu is served at both. Where lunch is cheaper, it typically costs {pi_pct(middle(all_cheaper))} less.</p>')
+    best = sorted(pairs, key=lambda p: (-(p[0]["dinner"]["usd"] - p[0]["lunch"]["usd"]), p[0]["id"]))[:PI_TOP]
+    body = ""
+    for i, (r, sv) in enumerate(best):
+        gap = r["dinner"]["price"] - r["lunch"]["price"]
+        body += (f'<tr><td data-label="Restaurant"><span class="rank">{i + 1}</span> {pi_name(pi, r["id"])} {stars_cell(r["stars"])}</td>'
+                 f'<td data-label="Where">{pi_where(pi, r)}</td>'
+                 f'<td class="num" data-label="Set lunch">{money(r["lunch"]["price"], r["cur"])}</td>'
+                 f'<td class="num" data-label="Dinner menu">{money(r["dinner"]["price"], r["cur"])}</td>'
+                 f'<td class="num" data-label="Saving"><strong>{money(gap, r["cur"])}</strong> <span class="muted">({pi_pct(sv)})</span>'
+                 + ("" if r["cur"] == "USD" else f'<br><span class="muted">≈ {usd_text(r["dinner"]["usd"] - r["lunch"]["usd"])}</span>') + "</td></tr>")
+    blocks["pi-savings"] = wrap(("Restaurant", "Where", "Set lunch", "Dinner menu", "Saving"), body, "guide-table data rank-list") + note(
+        "The largest gaps between a restaurant’s set lunch and its main dinner set menu, per person in local currency before drinks and service, "
+        "ranked by their value in US dollars. The lunch is often shorter, so it’s a saving on the price, not on the same meal.")
+
+    # About the data: where the prices came from, how many were re-checked, and what's left out.
+    snap_rows = list(pi["all"].values())
+    lunches = [r for r in rows if "lunch" in r]
+    body = ""
+    for kind in ("restaurant", "booking", "press", "guide", "member"):
+        d = sum(1 for r in dinners if r["dinner"]["kind"] == kind)
+        l = sum(1 for r in lunches if r["lunch"]["kind"] == kind)
+        if d or l:
+            body += (f'<tr><td data-label="Price from">{e(PI_KINDS[kind])}</td><td class="num" data-label="Dinner menus">{d:,} <span class="muted">({pi_pct(d / len(dinners))})</span></td>'
+                     f'<td class="num" data-label="Set lunches">{l:,} <span class="muted">({pi_pct(l / len(lunches))})</span></td></tr>')
+    vd = sum(1 for r in dinners if r["dinner"]["verified"])
+    vl = sum(1 for r in lunches if r["lunch"]["verified"])
+    body += (f'<tr class="pi-total"><td data-label="">Re-checked at source</td><td class="num" data-label="Dinner menus">{vd:,} <span class="muted">({pi_pct(vd / len(dinners))})</span></td>'
+             f'<td class="num" data-label="Set lunches">{vl:,} <span class="muted">({pi_pct(vl / len(lunches))})</span></td></tr>')
+    left = lambda meal, t: sum(1 for x in snap_rows if (x.get(meal) or {}).get("type") == t)
+    no_dinner = sum(1 for x in snap_rows if not x.get("dinner"))
+    first = min(m["changed"] for r in rows for m in (r.get("dinner"), r.get("lunch")) if m and m["changed"])
+    blocks["pi-data"] = (wrap(("Price from", "Dinner menus", "Set lunches"), body) + note(
+        f"The set menus in this edition by where their price was recorded from. “Re-checked at source” counts prices someone has gone back to "
+        f"their source to confirm since we started recording checks; the rest are as first recorded, between {e(uk_date(first))} and "
+        f"{e(uk_date(pi['about']['taken']))}. Prices from the MICHELIN Guide were taken from its website before we stopped using it on "
+        "13 October 2026 and are being replaced with restaurants’ own prices.")
+        + f'<p>Left out of every figure: {left("dinner", "spend"):,} restaurants listed with a typical spend rather than a set menu '
+          f'(most of them in mainland China), {left("dinner", "main"):,} priced by an à la carte main course, and {no_dinner:,} with no dinner price. '
+          f'Of the {len(snap_rows):,} starred restaurants in the snapshot, {len(dinners):,} have a dinner set menu in the index.</p>')
+
+    # How the index is made (the method, written out with this edition's settings).
+    blocks["pi-method"] = (
+        '<ol class="pi-method">'
+        f'<li><strong>One frozen snapshot.</strong> Every figure comes from The Starred Bill’s {e(label)} price snapshot, taken on '
+        f'{e(uk_date(pi["about"]["taken"]))}: each starred restaurant’s recorded dinner and lunch price, its currency, its stars and where the price '
+        'came from, saved as it stood and never changed afterwards. The live site keeps updating; this edition doesn’t.</li>'
+        '<li><strong>Set menus only.</strong> A restaurant counts with its main dinner set or tasting menu and, for lunch, its set lunch menu, per '
+        'person, as published by its source. Typical spends and à la carte prices are left out, as they aren’t the same kind of price.</li>'
+        f'<li><strong>Medians, with a minimum sample.</strong> Every typical figure is a median, so a few very expensive menus can’t pull it up. '
+        f'A star level, country or city needs {PI_MIN} or more priced set menus before its median is published; smaller groups show how many '
+        'menus there are, or their range.</li>'
+        '<li><strong>Local currency first.</strong> Prices are given in the currency the restaurant charges. Rankings across countries convert '
+        f'them to US dollars at the exchange rates of {e(uk_date(ed["rateDate"]))} (ExchangeRate-API), fixed for the edition, so exchange rates '
+        'never move a figure after it is published.</li>'
+        '<li><strong>Before service, unless the country includes it.</strong> Menu prices are as restaurants quote them. In most of Europe and '
+        'in South Korea that includes service and tax, and in Japan the 10% consumption tax; in the United States and Canada it is before sales tax and a tip; in Singapore and '
+        'Thailand it is “++”; in the UK a 12.5% service charge is usually added. The “with service, tax or tip” columns add each country’s usual '
+        'charge, an estimate, as some restaurants differ.</li>'
+        f'<li><strong>Odd prices are checked, not dropped.</strong> A set lunch under a quarter of the same restaurant’s dinner menu usually means '
+        'a different kind of menu was recorded. These are left out of the rankings and lunch figures until checked, and counted once confirmed.</li>'
+        '<li><strong>No change over time yet.</strong> This is the first edition. Changes from one quarter to the next will compare the same '
+        'restaurants, the same menu and the same currency, using only prices re-checked or changed between the two snapshots, from the second '
+        'edition on.</li>'
+        f'<li><strong>Cities and stars.</strong> Stars are as in the snapshot. A city is its own page with its districts (London’s neighbourhoods, '
+        'New York’s boroughs), or a city-state; restaurants in smaller towns count under their own town.</li></ol>')
+    blocks["pi-cite"] = (f'<p class="pi-cite">The Starred Bill Michelin Price Index, {e(label)}. https://starredbill.com/guides/{e(pi["guide"]["id"])}/</p>')
+    return blocks
+
+def price_index_dateline(g):
+    """The line under the Price Index's heading: its edition, the snapshot day and the rates' day, not the live data's."""
+    pi = price_index()
+    return (f'<span class="pi-edition">{e(pi_label(pi["label"]))} edition</span> · Prices as recorded on {e(uk_date(pi["about"]["taken"]))} · '
+            f'Exchange rates of {e(uk_date(pi["edition"]["rateDate"]))} · Published {e(uk_date(g["published"]))} · <a href="#method">Method</a>')
+
+
+def price_index_dataset(g):
+    """The Price Index as a schema.org Dataset (its figures, not a download: no restaurant-level data is offered yet)."""
+    pi = price_index()
+    label = pi_label(pi["label"])
+    dinners = sum(1 for r in pi["rows"] if "dinner" in r)
+    return {"@type": "Dataset", "@id": SITE_URL + f"/guides/{g['id']}/#dataset", "name": f"The Starred Bill Michelin Price Index, {label}",
+            "description": (f"Median prices of set menus at Michelin-starred restaurants in {label}, by star level, country and city, with the "
+                            f"cheapest set menus at each star level and lunch against dinner, worked out from {dinners:,} dinner set menu prices "
+                            f"recorded on {uk_date(pi['about']['taken'])}. Prices per person in local currency before drinks and service, "
+                            f"with US dollar equivalents at the exchange rates of {uk_date(pi['edition']['rateDate'])}."),
+            "url": SITE_URL + f"/guides/{g['id']}/", "isAccessibleForFree": True, "inLanguage": "en",
+            "creator": {"@type": "Organization", "@id": ORGANIZATION["@id"], "name": "The Starred Bill", "url": SITE_URL + "/"},
+            "publisher": {"@id": ORGANIZATION["@id"]}, "datePublished": g["published"], "dateModified": g["updated"],
+            "temporalCoverage": pi["about"]["taken"], "spatialCoverage": "Worldwide",
+            "variableMeasured": ["Median dinner set menu price per person", "Median set lunch price per person",
+                                 "Median wine pairing price per person", "Lunch saving against dinner"],
+            "measurementTechnique": (f"Medians of published set-menu prices from a frozen quarterly snapshot; groups need {PI_MIN} or more "
+                                     "menus; local currency, converted at one fixed day's exchange rates for cross-country rankings."),
+            "keywords": g.get("keywords", [])}
+
+
+
 if "--snapshot" in sys.argv:
     price_snapshot(next((a for a in sys.argv[1:] if not a.startswith("--")), ""))
+    sys.exit(0)
+if "--index-edition" in sys.argv:
+    # python3 build.py --index-edition 2026-Q4: freeze a Price Index edition beside its snapshot (see above).
+    price_index_edition(next((a for a in sys.argv[1:] if not a.startswith("--")), ""))
     sys.exit(0)
 if "--freeze" in sys.argv:
     # python3 build.py --freeze [guide id …]: save results pages' editions before a ceremony's changes go in (see above).

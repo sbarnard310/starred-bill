@@ -12,10 +12,9 @@
   "dinnerNoteFr": "Menu dégustation le plus long (autres menus dès 200 €)",
   "sourceType": "site",
   "source": "https://www.aubergesaintremy.com/media/original/menu-2026-fj.pdf",
-  "lunch": 75,
+  "lunch": 140,
   "lunchType": "menu",
-  "lunchNote": "Lunch menu",
-  "lunchNoteFr": "Menu déjeuner",
+  "lunchNote": "Frémissement lunch menu",
   "lunchSourceType": "site",
   "lunchSource": "https://www.aubergesaintremy.com/media/original/menu-2026-fj.pdf",
   "website": "https://www.aubergesaintremy.com",
@@ -60,5 +59,7 @@
   ],
   "rankingsChecked": "2026-10-24",
   "priceChangedAt": "2026-10-05",
-  "lunchChangedAt": "2026-10-05"
+  "lunchChangedAt": "2026-10-27",
+  "lunchVerifiedAt": "2026-10-27",
+  "priceVerifiedAt": "2026-10-27"
 }

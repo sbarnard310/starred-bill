@@ -16,10 +16,9 @@
   "dinnerNoteFr": "Menu dégustation le plus long (autres menus dès 95 €)",
   "sourceType": "site",
   "source": "https://www.auffo-restaurant.com/_files/ugd/15be20_7efedad984354e45998176efb3b4b6e4.pdf",
-  "lunch": 165,
+  "lunch": 95,
   "lunchType": "menu",
-  "lunchNote": "Same menu at lunch",
-  "lunchNoteFr": "Même menu le midi",
+  "lunchNote": "Lunch menu",
   "lunchSourceType": "site",
   "lunchSource": "https://www.auffo-restaurant.com/_files/ugd/15be20_7efedad984354e45998176efb3b4b6e4.pdf",
   "website": "https://www.auffo-restaurant.com/",
@@ -35,5 +34,6 @@
   "chef": "Coline Faulquier",
   "chefSource": "michelin",
   "priceChangedAt": "2026-10-05",
-  "lunchChangedAt": "2026-10-05"
+  "lunchChangedAt": "2026-10-27",
+  "lunchVerifiedAt": "2026-10-27"
 }

@@ -5,10 +5,10 @@
   "stars": 1,
   "cuisine": "Modern European",
   "dinnerType": "menu",
-  "dinner": 250,
-  "dinnerNote": "Tasting menu (other menus from €85)",
-  "sourceType": "press",
-  "source": "https://www.feinschmecker.de/restaurant/de/münchen/restaurant-sparkling-bistro-f3",
+  "dinner": 150,
+  "dinnerNote": "Gustostückerl menu, 5 courses",
+  "sourceType": "site",
+  "source": "https://www.restaurantsparklingbistro.com/kulinarik",
   "website": "https://www.restaurantsparklingbistro.com/",
   "lat": 48.1519723,
   "lng": 11.5779835,
@@ -16,7 +16,6 @@
   "michelinId": "547708",
   "chef": "Jürgen Wolfsgruber",
   "chefSource": "site",
-  "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 85 €)",
   "lunchNote": "Open for lunch · Fri–Sat",
   "lunchNoteDe": "Mittags geöffnet · Fr–Sa",
   "rankings": [
@@ -28,5 +27,7 @@
     }
   ],
   "rankingsChecked": "2026-10-24",
-  "priceChangedAt": "2026-10-06"
+  "priceChangedAt": "2026-10-27",
+  "priceVerifiedAt": "2026-10-27",
+  "sourceKind": "restaurant"
 }

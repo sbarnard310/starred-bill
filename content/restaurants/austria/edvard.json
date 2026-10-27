@@ -18,12 +18,13 @@
   "chef": "Paul Gamauf",
   "chefSource": "site",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 105 €)",
-  "lunch": 54,
+  "lunch": 69,
   "lunchType": "menu",
-  "lunchNote": "Lunch menu · Wed–Fri",
-  "lunchNoteDe": "Mittagsmenü · Mi–Fr",
+  "lunchNote": "Lunch menu, 3 courses, Wed–Fri (2 courses €54)",
   "lunchSourceType": "site",
   "lunchSource": "https://www.edvard-restaurant.com/en/business-lunch/",
   "priceChangedAt": "2026-10-06",
-  "lunchChangedAt": "2026-10-12"
+  "lunchChangedAt": "2026-10-27",
+  "lunchVerifiedAt": "2026-10-27",
+  "priceVerifiedAt": "2026-10-27"
 }

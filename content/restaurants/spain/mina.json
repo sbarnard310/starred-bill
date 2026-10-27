@@ -14,14 +14,14 @@
   "dinnerNoteEs": "Menú degustación completo (menú corto 160 €)",
   "sourceType": "press",
   "source": "https://www.thefork.es/restaurante/mina-r672849/menu",
-  "lunch": 180,
+  "lunch": 190,
   "lunchType": "menu",
   "lunchNote": "Same menu at lunch",
   "lunchWine": 100,
   "lunchNoteZh": "午餐供應相同套餐",
   "lunchNoteEs": "El mismo menú al mediodía",
-  "lunchSourceType": "press",
-  "lunchSource": "https://www.thefork.es/restaurante/mina-r672849/menu",
+  "lunchSourceType": "site",
+  "lunchSource": "https://www.restaurantemina.es/menú-degustación/",
   "website": "https://www.restaurantemina.es/",
   "lat": 43.261271,
   "lng": -2.938556,
@@ -39,5 +39,6 @@
   ],
   "rankingsChecked": "2026-10-24",
   "priceChangedAt": "2026-10-09",
-  "lunchChangedAt": "2026-10-09"
+  "lunchChangedAt": "2026-10-27",
+  "lunchVerifiedAt": "2026-10-27"
 }

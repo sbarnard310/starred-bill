@@ -7,8 +7,8 @@
   "dinnerType": "menu",
   "dinner": 345,
   "dinnerNote": "Tasting menu",
-  "sourceType": "press",
-  "source": "https://www.vivamonaco.de/345-euro-menue-im-zwei-sterne-restaurant-tantris/",
+  "sourceType": "site",
+  "source": "https://tantris.de/wp-content/uploads/2026/10/22.10.26-AD-Online-Version.pdf",
   "website": "https://tantris.de/",
   "lat": 48.1697565,
   "lng": 11.588259,
@@ -55,5 +55,7 @@
     }
   ],
   "rankingsChecked": "2026-10-24",
-  "priceChangedAt": "2026-10-05"
+  "priceChangedAt": "2026-10-05",
+  "priceVerifiedAt": "2026-10-27",
+  "sourceKind": "restaurant"
 }

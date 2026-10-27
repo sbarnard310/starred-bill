@@ -9,8 +9,8 @@
   "dinnerType": "menu",
   "dinnerNote": "Omakase, from",
   "dinnerNoteZh": "廚師發辦起",
-  "sourceType": "press",
-  "source": "https://www.theinfatuation.com/washington-dc/reviews/sushi-nakazawa-dc",
+  "sourceType": "site",
+  "source": "https://www.sushinakazawa.com/api/content",
   "lunchNote": "Open for lunch",
   "website": "https://www.sushinakazawa.com/",
   "lat": 38.894624,
@@ -28,5 +28,7 @@
     }
   ],
   "rankingsChecked": "2026-10-24",
-  "priceChangedAt": "2026-10-03"
+  "priceChangedAt": "2026-10-03",
+  "priceVerifiedAt": "2026-10-27",
+  "sourceKind": "restaurant"
 }

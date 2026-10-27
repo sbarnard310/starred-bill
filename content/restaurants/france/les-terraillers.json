@@ -12,12 +12,11 @@
   "dinnerNoteFr": "Menu dégustation le plus long (autres menus dès 107 €)",
   "sourceType": "press",
   "source": "https://fr.gaultmillau.com/en/restaurants/les-terraillers",
-  "lunch": 175,
+  "lunch": 69,
   "lunchType": "menu",
-  "lunchSourceType": "press",
-  "lunchSource": "https://fr.gaultmillau.com/en/restaurants/les-terraillers",
-  "lunchNote": "Same menu at lunch · Wed–Sun",
-  "lunchNoteFr": "Même menu le midi · mer.–dim.",
+  "lunchSourceType": "site",
+  "lunchSource": "https://www.lesterraillers.fr/wp-content/uploads/2026/10/MENU-ENG-SITE.pdf",
+  "lunchNote": "Lunch menu",
   "website": "https://www.lesterraillers.fr/",
   "lat": 43.6267515,
   "lng": 7.0956199,
@@ -26,5 +25,6 @@
   "chef": "Michaël Fulci",
   "chefSource": "site",
   "priceChangedAt": "2026-10-05",
-  "lunchChangedAt": "2026-10-05"
+  "lunchChangedAt": "2026-10-27",
+  "lunchVerifiedAt": "2026-10-27"
 }

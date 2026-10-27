@@ -13,10 +13,9 @@
   "wine": 90,
   "sourceType": "site",
   "source": "https://trattoriacontemporanea.it/wp-content/uploads/2026/10/MENU-CENA-ITA-10-26.pdf",
-  "lunch": 30,
+  "lunch": 60,
   "lunchType": "menu",
-  "lunchNote": "Business lunch: starter and main, with water and coffee, Tue–Fri (4 courses €60)",
-  "lunchNoteIt": "Business lunch: antipasto e portata principale, con acqua e caffè, mar–ven (4 portate €60)",
+  "lunchNote": "Lunch 'Special', 4 courses (starter and main €30)",
   "lunchSourceType": "site",
   "lunchSource": "https://trattoriacontemporanea.it/wp-content/uploads/2025/06/MENU-LUNCH-ITA.pdf",
   "website": "https://trattoriacontemporanea.it/",
@@ -100,7 +99,7 @@
   ],
   "rankingsChecked": "2026-10-24",
   "priceChangedAt": "2026-10-05",
-  "lunchChangedAt": "2026-10-13",
-  "priceVerifiedAt": "2026-10-13",
-  "lunchVerifiedAt": "2026-10-13"
+  "lunchChangedAt": "2026-10-27",
+  "priceVerifiedAt": "2026-10-27",
+  "lunchVerifiedAt": "2026-10-27"
 }

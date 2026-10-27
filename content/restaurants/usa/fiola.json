@@ -5,10 +5,9 @@
   "address": "601 Pennsylvania Ave. NW, Washington, DC 20004",
   "stars": 1,
   "cuisine": "Italian",
-  "dinner": 255,
+  "dinner": 345,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu",
-  "dinnerNoteZh": "品嚐套餐",
+  "dinnerNote": "Brumidi signature tasting menu, 9 courses (other tasting menus from $245)",
   "wine": 225,
   "sourceType": "site",
   "source": "https://www.fioladc.com/dinner",
@@ -45,5 +44,6 @@
     }
   ],
   "rankingsChecked": "2026-10-24",
-  "priceChangedAt": "2026-10-03"
+  "priceChangedAt": "2026-10-27",
+  "priceVerifiedAt": "2026-10-27"
 }

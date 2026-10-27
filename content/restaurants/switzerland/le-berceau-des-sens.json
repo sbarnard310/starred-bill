@@ -24,16 +24,14 @@
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab CHF 85)",
   "dinnerNoteFr": "Menu dégustation (autres menus dès CHF 85)",
   "dinnerNoteIt": "Menu degustazione (altri menu da CHF 85)",
-  "lunch": 150,
+  "lunch": 85,
   "lunchType": "menu",
-  "lunchNote": "Same menu at lunch · Mon–Fri",
-  "lunchNoteDe": "Gleiches Menü am Mittag · Mo–Fr",
-  "lunchNoteFr": "Même menu le midi · lun.–ven.",
-  "lunchNoteIt": "Stesso menu a pranzo · lun–ven",
+  "lunchNote": "Lunch menu",
   "lunchSourceType": "site",
   "lunchSource": "https://www.berceau-des-sens.ch/menu",
   "areaIt": "Losanna",
   "dietsManual": true,
   "priceChangedAt": "2026-10-05",
-  "lunchChangedAt": "2026-10-06"
+  "lunchChangedAt": "2026-10-27",
+  "lunchVerifiedAt": "2026-10-27"
 }

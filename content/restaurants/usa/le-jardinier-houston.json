@@ -10,9 +10,9 @@
   "sourceType": "site",
   "source": "https://www.lejardinier-houston.com/menus",
   "wine": 140,
-  "lunch": 45,
+  "lunch": 95,
   "lunchType": "menu",
-  "lunchNote": "Art Lovers Lunch, 2 courses, Wed–Fri (four-course seasonal lunch menu $90)",
+  "lunchNote": "Seasonal lunch menu, 4 courses",
   "lunchSourceType": "site",
   "lunchSource": "https://www.lejardinier-houston.com/menus",
   "website": "https://www.lejardinier-houston.com/",
@@ -71,7 +71,7 @@
   "rankingsChecked": "2026-10-24",
   "dietsManual": true,
   "priceChangedAt": "2026-10-05",
-  "lunchChangedAt": "2026-10-13",
-  "priceVerifiedAt": "2026-10-13",
-  "lunchVerifiedAt": "2026-10-13"
+  "lunchChangedAt": "2026-10-27",
+  "priceVerifiedAt": "2026-10-27",
+  "lunchVerifiedAt": "2026-10-27"
 }

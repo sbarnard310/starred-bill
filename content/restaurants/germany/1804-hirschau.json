@@ -5,11 +5,10 @@
   "stars": 1,
   "cuisine": "Modern European",
   "dinnerType": "menu",
-  "dinner": 300,
-  "dinnerNote": "Tasting menu",
+  "dinner": 250,
+  "dinnerNote": "Large menu (small menu €190); water and coffee included",
   "sourceType": "site",
-  "source": "https://www.1804muc.de",
-  "wine": 280,
+  "source": "https://www.1804muc.de/menu",
   "website": "https://www.1804muc.de",
   "lat": 48.161743,
   "lng": 11.602656,
@@ -23,9 +22,9 @@
   ],
   "chef": "Lukas Adebahr",
   "chefSource": "michelin",
-  "dinnerNoteDe": "Degustationsmenü",
   "noLunch": true,
   "lunchNote": "Dinner only",
   "lunchNoteDe": "Nur abends",
-  "priceChangedAt": "2026-10-05"
+  "priceChangedAt": "2026-10-27",
+  "priceVerifiedAt": "2026-10-27"
 }

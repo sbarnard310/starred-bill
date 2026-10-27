@@ -10,8 +10,8 @@
   "dinnerNote": "Tasting menu",
   "dinnerNoteZh": "品嚐套餐",
   "wine": 225,
-  "sourceType": "press",
-  "source": "https://www.opentable.com/r/xiquet-by-danny-lledo-washington",
+  "sourceType": "site",
+  "source": "https://www.xiquetdl.com/s/100626-Xef-Menu.png",
   "noLunch": true,
   "lunchNote": "Dinner only",
   "website": "https://www.xiquetdl.com/",
@@ -30,5 +30,7 @@
     }
   ],
   "rankingsChecked": "2026-10-24",
-  "priceChangedAt": "2026-10-03"
+  "priceChangedAt": "2026-10-03",
+  "priceVerifiedAt": "2026-10-27",
+  "sourceKind": "restaurant"
 }

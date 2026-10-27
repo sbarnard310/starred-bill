@@ -12,12 +12,6 @@
   "wine": 180,
   "sourceType": "site",
   "source": "https://www.sevenreasonsgroup.com/imperfecto/menus",
-  "lunch": 265,
-  "lunchType": "menu",
-  "lunchNote": "Same menu at lunch · Sat–Sun",
-  "lunchWine": 180,
-  "lunchSourceType": "site",
-  "lunchSource": "https://www.sevenreasonsgroup.com/imperfecto/menus",
   "website": "https://www.sevenreasonsgroup.com/imperfecto",
   "lat": 38.903906,
   "lng": -77.050593,
@@ -35,5 +29,5 @@
   ],
   "rankingsChecked": "2026-10-24",
   "priceChangedAt": "2026-10-03",
-  "lunchChangedAt": "2026-10-06"
+  "priceVerifiedAt": "2026-10-27"
 }

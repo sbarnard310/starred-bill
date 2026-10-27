@@ -10,12 +10,6 @@
   "wine": 65,
   "sourceType": "site",
   "source": "https://www.raniadc.com/menu",
-  "lunch": 90,
-  "lunchType": "menu",
-  "lunchNote": "Same menu at lunch · Sundays",
-  "lunchWine": 65,
-  "lunchSourceType": "site",
-  "lunchSource": "https://www.raniadc.com/menu",
   "website": "https://www.raniadc.com/",
   "lat": 38.89561,
   "lng": -77.0268,
@@ -29,5 +23,5 @@
   "dinnerNote": "Prix-fixe menu, 4 courses (Chef's Tasting Menu, 7 courses, $175)",
   "dietsManual": true,
   "priceChangedAt": "2026-10-10",
-  "lunchChangedAt": "2026-10-10"
+  "priceVerifiedAt": "2026-10-27"
 }

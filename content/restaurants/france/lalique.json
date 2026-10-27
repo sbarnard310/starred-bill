@@ -10,8 +10,8 @@
   "dinnerType": "menu",
   "dinnerNote": "Le Grain Noble menu, full (other menus from €205)",
   "dinnerNoteFr": "Menu Le Grain Noble complet (autres menus dès 205 €)",
-  "sourceType": "press",
-  "source": "https://fr.gaultmillau.com/en/restaurants/chateau-lafaurie-peyraguey",
+  "sourceType": "site",
+  "source": "https://www.lafauriepeyragueylalique.com/wp-content/uploads/2026/10/Fall-menu-from-Oct-23th-2026.pdf",
   "lunch": 59,
   "lunchType": "menu",
   "lunchNote": "Promenade Sauternaise lunch menu, 3 courses",
@@ -48,5 +48,8 @@
   ],
   "rankingsChecked": "2026-10-24",
   "priceChangedAt": "2026-10-05",
-  "lunchChangedAt": "2026-10-05"
+  "lunchChangedAt": "2026-10-05",
+  "priceVerifiedAt": "2026-10-27",
+  "sourceKind": "restaurant",
+  "lunchVerifiedAt": "2026-10-27"
 }

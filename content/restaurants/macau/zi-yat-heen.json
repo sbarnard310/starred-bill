@@ -8,17 +8,16 @@
   "addressZh": "澳門路氹望德聖母灣大馬路四季酒店地下",
   "stars": 1,
   "cuisine": "Cantonese",
-  "dinner": 2280,
+  "dinner": 2288,
   "dinnerType": "menu",
   "dinnerNote": "Michelin tasting menu",
   "dinnerNoteZh": "米芝蓮品嚐菜單",
   "wine": 498,
   "sourceType": "site",
-  "source": "https://www.ziyatheen.com/menu/michelin-tasting-menu/",
-  "lunch": 538,
+  "source": "https://www.ziyatheen.com/menus/",
+  "lunch": 688,
   "lunchType": "menu",
-  "lunchNote": "Set menu with dim sum, from",
-  "lunchNoteZh": "點心套餐起",
+  "lunchNote": "Business set lunch A, 5 courses",
   "lunchSourceType": "site",
   "lunchSource": "https://www.ziyatheen.com/menus/",
   "website": "https://www.fourseasons.com/macau/dining/restaurants/zi_yat_heen",
@@ -37,6 +36,16 @@
     }
   ],
   "rankingsChecked": "2026-10-24",
-  "priceChangedAt": "2026-10-03",
-  "lunchChangedAt": "2026-10-03"
+  "priceChangedAt": "2026-10-27",
+  "lunchChangedAt": "2026-10-27",
+  "priceHistory": [
+    {
+      "date": "2026-10",
+      "price": 2280,
+      "wine": 498,
+      "source": "https://www.ziyatheen.com/menu/michelin-tasting-menu/"
+    }
+  ],
+  "priceVerifiedAt": "2026-10-27",
+  "lunchVerifiedAt": "2026-10-27"
 }

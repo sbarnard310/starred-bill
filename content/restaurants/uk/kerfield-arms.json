@@ -14,11 +14,6 @@
   "noPairing": true,
   "sourceType": "site",
   "source": "https://www.thekerfieldarms.co.uk/s/Current-Menu-ynhr.pdf",
-  "lunch": 12,
-  "lunchType": "menu",
-  "lunchNote": "Midweek lunch special (à la carte also served)",
-  "lunchSourceType": "press",
-  "lunchSource": "https://www.artefactmagazine.com/2026/06/17/the-12-michelin-star-meal-hidden-inside-a-london-pub/",
   "website": "https://www.thekerfieldarms.co.uk/",
   "lat": 51.4730004,
   "lng": -0.0898627,
@@ -39,6 +34,11 @@
   "infoChecked": "2026-10-12",
   "dietsManual": true,
   "priceChangedAt": "2026-10-12",
-  "lunchChangedAt": "2026-10-02",
-  "priceVerifiedAt": "2026-10-27"
+  "priceVerifiedAt": "2026-10-27",
+  "lunch": 12,
+  "lunchType": "main",
+  "lunchNote": "Midweek lunch plate: one dish that changes every week (£15 with a glass of beer or wine)",
+  "lunchSourceType": "press",
+  "lunchSource": "https://www.artefactmagazine.com/2026/06/17/the-12-michelin-star-meal-hidden-inside-a-london-pub/",
+  "lunchChangedAt": "2026-10-02"
 }

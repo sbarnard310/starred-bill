@@ -5,11 +5,10 @@
   "stars": 1,
   "cuisine": "French",
   "dinnerType": "menu",
-  "dinner": 155,
-  "dinnerNote": "Tasting menu (other menus from €135)",
+  "dinner": 240,
+  "dinnerNote": "Evening menu, 5 courses (business lunch from €135)",
   "sourceType": "site",
-  "source": "https://werneckhof-schelling.de/wp-content/uploads/2025/05/MenueBusinessLunch-2.pdf",
-  "wine": 215,
+  "source": "https://werneckhof-schelling.de/wp-content/uploads/2025/05/Menue-3.pdf",
   "lunch": 135,
   "lunchType": "menu",
   "lunchNote": "Lunch menu",
@@ -23,7 +22,6 @@
   "diets": [
     "vegetarian"
   ],
-  "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 135 €)",
   "lunchNoteDe": "Mittagsmenü",
   "chef": "Sigi Schelling",
   "chefSource": "press",
@@ -36,6 +34,8 @@
     }
   ],
   "rankingsChecked": "2026-10-24",
-  "priceChangedAt": "2026-10-05",
-  "lunchChangedAt": "2026-10-05"
+  "priceChangedAt": "2026-10-27",
+  "lunchChangedAt": "2026-10-05",
+  "priceVerifiedAt": "2026-10-27",
+  "lunchVerifiedAt": "2026-10-27"
 }

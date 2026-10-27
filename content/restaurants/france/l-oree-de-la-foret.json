@@ -12,12 +12,11 @@
   "dinnerNoteFr": "Menu dégustation le plus long (autres menus dès 57 €)",
   "sourceType": "site",
   "source": "https://www.loreedelaforet.fr/fichiers/degust.pdf",
-  "lunch": 110,
+  "lunch": 70,
   "lunchType": "menu",
-  "lunchNote": "Same menu at lunch · Thu–Sun",
-  "lunchNoteFr": "Même menu le midi · jeu.–dim.",
+  "lunchNote": "Lunch menu",
   "lunchSourceType": "site",
-  "lunchSource": "https://www.loreedelaforet.fr/fichiers/degust.pdf",
+  "lunchSource": "https://www.loreedelaforet.fr/menus.html",
   "website": "https://www.loreedelaforet.fr",
   "lat": 49.41545,
   "lng": 2.36804,
@@ -26,5 +25,6 @@
   "chef": "Nicolas Leclercq",
   "chefSource": "site",
   "priceChangedAt": "2026-10-05",
-  "lunchChangedAt": "2026-10-05"
+  "lunchChangedAt": "2026-10-27",
+  "lunchVerifiedAt": "2026-10-27"
 }

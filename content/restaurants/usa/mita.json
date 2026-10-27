@@ -9,12 +9,11 @@
   "changeNote": "Gained its first star",
   "changeNoteZh": "首度摘星",
   "changeDate": "2024-12",
-  "dinner": 150,
+  "dinner": 165,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu",
-  "dinnerNoteZh": "品嚐套餐",
-  "sourceType": "press",
-  "source": "https://www.theinfatuation.com/washington-dc/reviews/mita",
+  "dinnerNote": "La Herencia tasting menu, 11 courses",
+  "sourceType": "site",
+  "source": "https://www.mitadc.com/menu",
   "noLunch": true,
   "lunchNote": "Dinner only",
   "website": "https://www.mitadc.com/",
@@ -39,5 +38,7 @@
     }
   ],
   "rankingsChecked": "2026-10-24",
-  "priceChangedAt": "2026-10-03"
+  "priceChangedAt": "2026-10-27",
+  "priceVerifiedAt": "2026-10-27",
+  "sourceKind": "restaurant"
 }

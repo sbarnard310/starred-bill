@@ -5,7 +5,7 @@
   "stars": 3,
   "cuisine": "Modern European",
   "dinnerType": "menu",
-  "dinner": 360,
+  "dinner": 380,
   "dinnerNote": "Tasting menu",
   "sourceType": "site",
   "source": "https://www.schreiberei-muc.de/Menu-Tohru-EN.pdf",
@@ -71,6 +71,13 @@
     }
   ],
   "rankingsChecked": "2026-10-24",
-  "priceChangedAt": "2026-10-05",
-  "priceVerifiedAt": "2026-10-13"
+  "priceChangedAt": "2026-10-27",
+  "priceVerifiedAt": "2026-10-27",
+  "priceHistory": [
+    {
+      "date": "2026-10",
+      "price": 360,
+      "source": "https://www.schreiberei-muc.de/Menu-Tohru-EN.pdf"
+    }
+  ]
 }

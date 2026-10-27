@@ -15,8 +15,8 @@
   "dinnerType": "menu",
   "dinnerNote": "Tasting menu, 8 courses (6 courses HK$2,058)",
   "dinnerNoteZh": "品嚐菜單，8道菜（6道菜港幣2,058）",
-  "sourceType": "press",
-  "source": "https://www.hotels.com/go/hong-kong/amber-hong-kong",
+  "sourceType": "site",
+  "source": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/d/zRTEW2iK8qTY4oH2",
   "lunch": 958,
   "lunchType": "menu",
   "lunchNote": "Weekday lunch, from (weekends from HK$1,298)",
@@ -68,5 +68,8 @@
   ],
   "rankingsChecked": "2026-10-24",
   "priceChangedAt": "2026-10-02",
-  "lunchChangedAt": "2026-10-02"
+  "lunchChangedAt": "2026-10-02",
+  "priceVerifiedAt": "2026-10-27",
+  "sourceKind": "restaurant",
+  "lunchVerifiedAt": "2026-10-27"
 }

@@ -19,13 +19,12 @@
   ],
   "chef": "Daniel Bodamer",
   "chefSource": "michelin",
-  "lunch": 220,
+  "lunch": 185,
   "lunchType": "menu",
-  "lunchNote": "Same menu at lunch · Thu–Sat",
-  "lunchNoteDe": "Gleiches Menü am Mittag · Do–Sa",
+  "lunchNote": "Lunch menu",
   "lunchWine": 115,
   "lunchSourceType": "site",
-  "lunchSource": "https://www.brothers-munich.com/menue-weine/",
+  "lunchSource": "https://www.brothers-munich.com/wp-content/uploads/2026/10/menue-lunch-neu.pdf",
   "dinnerNote": "Tasting menu (also à la carte)",
   "dinnerNoteDe": "Degustationsmenü (auch à la carte)",
   "rankings": [
@@ -44,5 +43,7 @@
   ],
   "rankingsChecked": "2026-10-24",
   "priceChangedAt": "2026-10-05",
-  "lunchChangedAt": "2026-10-06"
+  "lunchChangedAt": "2026-10-27",
+  "lunchVerifiedAt": "2026-10-27",
+  "priceVerifiedAt": "2026-10-27"
 }

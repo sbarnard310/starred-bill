@@ -7,8 +7,8 @@
   "stars": 1,
   "cuisine": "Creative",
   "dinnerType": "menu",
-  "dinner": 25000,
-  "dinnerNote": "Tasting menu",
+  "dinner": 27500,
+  "dinnerNote": "Tasting menu; including tax",
   "sourceType": "site",
   "source": "https://sen-tenkawa.com/",
   "lunchNote": "Open for lunch · Tue–Sat",
@@ -25,5 +25,6 @@
   ],
   "chef": "Toshiharu Sunayama",
   "chefSource": "michelin",
-  "priceChangedAt": "2026-10-05"
+  "priceChangedAt": "2026-10-27",
+  "priceVerifiedAt": "2026-10-27"
 }

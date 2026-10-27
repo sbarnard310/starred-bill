@@ -21,10 +21,9 @@
   "chef": "Sofiane Bons",
   "chefSource": "site",
   "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 60)",
-  "lunch": 169,
+  "lunch": 82.5,
   "lunchType": "menu",
-  "lunchNote": "Same menu at lunch · Tue–Fri",
-  "lunchNoteNl": "Zelfde menu bij de lunch · di–vr",
+  "lunchNote": "Lunch menu",
   "lunchWine": 75,
   "lunchSourceType": "site",
   "lunchSource": "https://www.joelia.eu/menu/",
@@ -47,5 +46,6 @@
   },
   "dietsManual": true,
   "priceChangedAt": "2026-10-05",
-  "lunchChangedAt": "2026-10-06"
+  "lunchChangedAt": "2026-10-27",
+  "lunchVerifiedAt": "2026-10-27"
 }

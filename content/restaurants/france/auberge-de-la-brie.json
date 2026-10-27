@@ -12,10 +12,9 @@
   "dinnerNoteFr": "Menu dégustation le plus long (autres menus dès 68 €)",
   "sourceType": "site",
   "source": "https://www.aubergedelabrie.net/la-carte/",
-  "lunch": 125,
+  "lunch": 105,
   "lunchType": "menu",
-  "lunchNote": "Same menu at lunch · Wed–Sat",
-  "lunchNoteFr": "Même menu le midi · mer.–sam.",
+  "lunchNote": "Lunch menu",
   "lunchSourceType": "site",
   "lunchSource": "https://www.aubergedelabrie.net/la-carte/",
   "website": "https://www.aubergedelabrie.net",
@@ -26,5 +25,6 @@
   "chef": "Alain Pavard",
   "chefSource": "site",
   "priceChangedAt": "2026-10-05",
-  "lunchChangedAt": "2026-10-05"
+  "lunchChangedAt": "2026-10-27",
+  "lunchVerifiedAt": "2026-10-27"
 }

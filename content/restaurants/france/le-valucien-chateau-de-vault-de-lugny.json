@@ -6,16 +6,14 @@
   "address": "11 rue du Château, 89200 Vault-de-Lugny",
   "stars": 1,
   "cuisine": "Modern European",
-  "dinner": 238,
+  "dinner": 165,
   "dinnerType": "menu",
-  "dinnerNote": "Longest tasting menu (other menus from €54)",
-  "dinnerNoteFr": "Menu dégustation le plus long (autres menus dès 54 €)",
+  "dinnerNote": "Tasting menu (seasonal game menu €238, 2 Oct–11 Nov)",
   "sourceType": "site",
   "source": "https://lugny.fr/wp-content/uploads/2026/02/MENU-CHASSE-2026-FRGB.pdf",
-  "lunch": 49,
+  "lunch": 98,
   "lunchType": "menu",
-  "lunchNote": "Lunch menu",
-  "lunchNoteFr": "Menu déjeuner",
+  "lunchNote": "Menu des Saveurs, 3 courses; lunch Sat, Sun and holidays",
   "lunchSourceType": "site",
   "lunchSource": "https://lugny.fr/gastronomie/",
   "website": "https://lugny.fr/",
@@ -33,6 +31,8 @@
     "note": "A 5-star château hotel with 16 rooms and suites, near Vézelay.",
     "checked": "2026-10-23"
   },
-  "priceChangedAt": "2026-10-05",
-  "lunchChangedAt": "2026-10-05"
+  "priceChangedAt": "2026-10-27",
+  "lunchChangedAt": "2026-10-27",
+  "priceVerifiedAt": "2026-10-27",
+  "lunchVerifiedAt": "2026-10-27"
 }

@@ -12,7 +12,7 @@
   "wine": 255,
   "sourceType": "site",
   "source": "https://www.gknyc.com/menu",
-  "lunchNote": "2-course lunch prix fixe, Tuesday to Friday (3 courses $95; Chef's Tasting Menu $155)",
+  "lunchNote": "3-course lunch prix fixe, Tue–Fri (2 courses $75)",
   "website": "https://www.gknyc.com/",
   "lat": 40.75397,
   "lng": -73.982025,
@@ -20,7 +20,7 @@
   "michelinId": "474823",
   "chef": "Gabriel Kreuther",
   "chefSource": "site",
-  "lunch": 75,
+  "lunch": 95,
   "lunchType": "menu",
   "lunchSourceType": "site",
   "lunchSource": "https://www.gknyc.com/menu-lunch",
@@ -120,7 +120,7 @@
   "photoHeight": 667,
   "photoChecked": "2026-10-13",
   "priceChangedAt": "2026-10-13",
-  "lunchChangedAt": "2026-10-13",
-  "priceVerifiedAt": "2026-10-13",
-  "lunchVerifiedAt": "2026-10-13"
+  "lunchChangedAt": "2026-10-27",
+  "priceVerifiedAt": "2026-10-27",
+  "lunchVerifiedAt": "2026-10-27"
 }

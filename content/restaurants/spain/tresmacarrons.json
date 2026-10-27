@@ -13,14 +13,12 @@
   "wine": 50,
   "sourceType": "site",
   "source": "https://www.tresmacarrons.com/",
-  "lunch": 130,
+  "lunch": 70,
   "lunchType": "menu",
-  "lunchNote": "Same menu at lunch · Thu–Sun",
-  "lunchNoteZh": "午餐供應相同套餐・週四至週日",
-  "lunchNoteEs": "El mismo menú al mediodía · jue–dom",
+  "lunchNote": "Lunch menu",
   "lunchWine": 50,
   "lunchSourceType": "site",
-  "lunchSource": "https://www.tresmacarrons.com/",
+  "lunchSource": "https://www.tresmacarrons.com/es/menus/",
   "website": "https://www.tresmacarrons.com/",
   "lat": 41.483134,
   "lng": 2.332616,
@@ -29,5 +27,6 @@
   "chef": "Miquel Aldana",
   "chefSource": "michelin",
   "priceChangedAt": "2026-10-04",
-  "lunchChangedAt": "2026-10-04"
+  "lunchChangedAt": "2026-10-27",
+  "lunchVerifiedAt": "2026-10-27"
 }

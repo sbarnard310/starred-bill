@@ -6,15 +6,11 @@
   "address": "Carretera Tecate km 93.5, Valle de Guadalupe",
   "stars": 1,
   "cuisine": "Seafood",
-  "dinner": 1700,
-  "dinnerType": "menu",
-  "dinnerNote": "Tasting menu, 7 courses (also à la carte) · daytime only",
-  "dinnerNoteEs": "Menú degustación de 7 tiempos (también a la carta) · solo de día",
   "sourceType": "site",
   "source": "https://www.conchasdepiedra.com/",
   "lunch": 1700,
   "lunchType": "menu",
-  "lunchNote": "Same menu · daytime only, Thu–Mon",
+  "lunchNote": "Same menu · daytime only, Thu–Mon; open for lunch only",
   "lunchNoteEs": "El mismo menú · solo de día, de jueves a lunes",
   "lunchSourceType": "site",
   "lunchSource": "https://www.conchasdepiedra.com/",
@@ -40,6 +36,5 @@
   "photoWidth": 1000,
   "photoHeight": 750,
   "photoChecked": "2026-10-13",
-  "priceChangedAt": "2026-10-05",
   "lunchChangedAt": "2026-10-05"
 }

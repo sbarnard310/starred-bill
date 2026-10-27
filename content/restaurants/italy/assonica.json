@@ -12,12 +12,11 @@
   "dinnerNoteIt": "Alla carta, 3 portate (2 portate €80)",
   "sourceType": "press",
   "source": "https://guide.michelin.com/it/it/notizia/dining-out/i-ristoranti-stellati-meno-cari-d-italia-guida-michelin-2026",
-  "lunch": 30,
+  "lunch": 35,
   "lunchType": "menu",
-  "lunchNote": "Business lunch, 2 courses",
-  "lunchNoteIt": "Pranzo di lavoro, 2 portate",
-  "lunchSourceType": "press",
-  "lunchSource": "https://guide.michelin.com/it/it/notizia/dining-out/i-ristoranti-stellati-meno-cari-d-italia-guida-michelin-2026",
+  "lunchNote": "A pranzo volo: two courses and dessert (two courses €30, three savoury courses €40)",
+  "lunchSourceType": "site",
+  "lunchSource": "https://assonica.it/it/menu/2/a-pranzo-volo",
   "website": "https://assonica.it/it",
   "lat": 45.743141,
   "lng": 9.652678,
@@ -40,5 +39,7 @@
   ],
   "rankingsChecked": "2026-10-24",
   "priceChangedAt": "2026-10-05",
-  "lunchChangedAt": "2026-10-05"
+  "lunchChangedAt": "2026-10-27",
+  "lunchVerifiedAt": "2026-10-27",
+  "lunchSourceKind": "restaurant"
 }

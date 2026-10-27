@@ -8,7 +8,7 @@
   "cuisine": "French",
   "dinnerType": "menu",
   "dinnerNote": "Set course, from; including tax",
-  "sourceType": "press",
+  "sourceType": "site",
   "lat": 34.462074,
   "lng": 135.736186,
   "placeId": "ChIJs5v3xH_TBmARj4RnnvMkCCc",
@@ -18,12 +18,14 @@
   "dinner": 12000,
   "dinnerNoteJa": "コース料理（最安値）・税込",
   "source": "https://www.tablecheck.com/shops/aplus/reserve",
-  "lunch": 5000,
+  "lunch": 5500,
   "lunchType": "menu",
-  "lunchSourceType": "press",
+  "lunchSourceType": "site",
   "lunchSource": "https://www.tablecheck.com/shops/aplus/reserve",
-  "lunchNote": "Lunch course, from; including tax",
-  "lunchNoteJa": "ランチコース（最安値）・税込",
+  "lunchNote": "Lunch course; including tax (¥6,000 from 1 Nov 2026)",
   "priceChangedAt": "2026-10-06",
-  "lunchChangedAt": "2026-10-06"
+  "lunchChangedAt": "2026-10-27",
+  "priceVerifiedAt": "2026-10-27",
+  "sourceKind": "restaurant",
+  "lunchVerifiedAt": "2026-10-27"
 }

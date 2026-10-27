@@ -22,13 +22,5 @@
   "chef": "Moritz Bilsing and Emilio Löffler",
   "chefSource": "michelin",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 140 €)",
-  "lunch": 165,
-  "lunchType": "menu",
-  "lunchNote": "Same menu at lunch · Fri–Sat",
-  "lunchNoteDe": "Gleiches Menü am Mittag · Fr–Sa",
-  "lunchWine": 120,
-  "lunchSourceType": "site",
-  "lunchSource": "https://www.laesa.de/essen",
-  "priceChangedAt": "2026-10-05",
-  "lunchChangedAt": "2026-10-06"
+  "priceChangedAt": "2026-10-05"
 }

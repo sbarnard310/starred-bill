@@ -10104,7 +10104,7 @@ def price_index_blocks():
          f'Lunch {pi_money(save["lunch"]["price"], save["cur"])} against dinner {pi_money(save["dinner"]["price"], save["cur"])}: '
          f'{pi_money(save["dinner"]["price"] - save["lunch"]["price"], save["cur"], save["dinner"]["usd"] - save["lunch"]["usd"])} less.'),
     ]
-    links = {"stat-cheap-three": e(pi_plain_name(pi, c3["id"])), "stat-lunch": pi_name(pi, save["id"])}
+    links = {"stat-cheap-three": pi_name(pi, c3["id"]), "stat-lunch": pi_name(pi, save["id"])}  # the restaurants open their own pages
     blocks["pi-headlines"] = ('<div class="pi-cards">' + "".join(
         f'<section class="pi-card" id="{i}"><p class="pi-fig">{links.get(i, e(fig))}</p><h3>{e(head)}</h3><p>{text}</p>'
         f'<a class="pi-anchor" href="#{i}" aria-label="Link to this figure">#</a></section>' for i, fig, head, text in cards) + "</div>")

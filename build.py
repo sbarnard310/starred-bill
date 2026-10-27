@@ -10234,23 +10234,21 @@ def price_index_blocks():
         at = [r for r in rows if r["stars"] == s]
         v = [r["dinner"]["usd"] for r in at if "dinner" in r]
         q1, q3 = pi_quartiles(v)
-        lunches = [r["lunch"]["usd"] for r in at if "lunch" in r and not pi_odd(pi, r)]
         wines = [r["dinner"]["wineUsd"] for r in at if "dinner" in r and r["dinner"]["wineUsd"] is not None]
         body += (f'<tr><td data-label="Stars">{stars_cell(s)} {star_name(s)}</td>'
                  f'<td class="num" data-label="Dinner menus">{len(v):,}</td>'
                  f'<td class="num" data-label="Median dinner menu"><strong>{usd(med[s])}</strong><br><span class="muted">middle half {usd_text(q1)}–{usd_text(q3)}</span></td>'
                  f'<td class="num" data-label="Against one star">{"–" if s == 1 else "+" + pi_pct(prem[s][0] - 1)}</td>'
-                 f'<td class="num" data-label="Median set lunch">{usd(middle(lunches)) if len(lunches) >= PI_MIN else "–"}<br><span class="muted">{len(lunches):,} lunches</span></td>'
                  f'<td class="num" data-label="Median wine pairing">{usd(middle(wines)) if len(wines) >= PI_MIN else "–"}<br><span class="muted">{len(wines):,} listed</span></td></tr>')
     within = (f" Within the same country, the median two-star menu is {prem[2][1]:.2f} times the one-star median "
               f"(the median over {prem[2][2]} countries with {PI_MIN} or more menus at both levels) and three stars {prem[3][1]:.2f} times "
               f"({prem[3][2]} countries), so the gap isn’t just that the dearest countries have the most stars." if prem[3][1] else "")
     above = lambda s: sum(1 for r in dinners if r["stars"] == s and r["dinner"]["usd"] > med[s + 1]) / n[s]
     blocks["pi-stars"] = (f'<p>Each extra star raises the typical price, but the levels overlap: {pi_pct(above(1))} of one-star dinner menus cost '
-                          f'more than the typical two-star, and {pi_pct(above(2))} of two-star menus more than the typical three-star.</p>') + chart + wrap(("Stars", "Dinner menus", "Median dinner menu", "Against one star", "Median set lunch", "Median wine pairing"), body, "guide-table data rank-list") + note(
+                          f'more than the typical two-star, and {pi_pct(above(2))} of two-star menus more than the typical three-star.</p>') + chart + wrap(("Stars", "Dinner menus", "Median dinner menu", "Against one star", "Median wine pairing"), body, "guide-table data rank-list") + note(
         "Per person in US dollars at the exchange rates of " + e(uk_date(ed["rateDate"])) + ", before drinks and service. Medians of each "
-        "restaurant’s main dinner set menu; the middle half runs from the lower to the upper quartile. Lunches are set lunch menus, wine "
-        f"the pairing with the dinner menu where listed." + within)
+        "restaurant’s main dinner set menu; the middle half runs from the lower to the upper quartile. Wine is the pairing with the dinner "
+        "menu where listed. Set lunches are compared with dinner under “Lunch vs dinner”." + within)
 
     # Cities, cheapest first: a bar chart of every city, then the full table folded away.
     items = [(pi_city_link(pi, k), d, usd_text(d), k in PI_CITIES) for k, v, d, a in cities]
@@ -10316,8 +10314,6 @@ def price_index_blocks():
         ("Starred restaurants", lambda k, v, cur: f"{len(v)}"),
         ("Median dinner set menu", lambda k, v, cur: "<strong>" + med_cell([r["dinner"]["price"] for r in v if "dinner" in r], cur, [r["dinner"]["usd"] for r in v if "dinner" in r]) + "</strong>"),
         ("One star", star_med(1)), ("Two stars", star_med(2)), ("Three stars", star_med(3)),
-        ("Median set lunch", lambda k, v, cur: med_cell([r["lunch"]["price"] for r in v if "lunch" in r and not pi_odd(pi, r)], cur,
-                                                       [r["lunch"]["usd"] for r in v if "lunch" in r and not pi_odd(pi, r)], "lunches")),
         ("Serve a set lunch", lambda k, v, cur: pi_pct(sum(1 for r in v if "lunch" in r) / len(v))),
         ("Median wine pairing", lambda k, v, cur: med_cell([r["dinner"]["wine"] for r in v if "dinner" in r and r["dinner"]["wine"] is not None], cur,
                                                           [r["dinner"]["wineUsd"] for r in v if "dinner" in r and r["dinner"]["wineUsd"] is not None], "listed")),
@@ -10526,8 +10522,8 @@ def price_index_dataset(g):
             "creator": {"@type": "Organization", "@id": ORGANIZATION["@id"], "name": "The Starred Bill", "url": SITE_URL + "/"},
             "publisher": {"@id": ORGANIZATION["@id"]}, "datePublished": g["published"], "dateModified": g["updated"],
             "temporalCoverage": pi["about"]["taken"], "spatialCoverage": "Worldwide",
-            "variableMeasured": ["Median dinner set menu price per person", "Median set lunch price per person",
-                                 "Median wine pairing price per person", "Lunch saving against dinner"],
+            "variableMeasured": ["Median dinner set menu price per person", "Median wine pairing price per person",
+                                 "Lunch saving against dinner"],
             "measurementTechnique": (f"Medians of published set-menu prices from a frozen quarterly snapshot; groups need {PI_MIN} or more "
                                      "menus; local currency, converted at one fixed day's exchange rates for cross-country rankings."),
             "keywords": g.get("keywords", [])}

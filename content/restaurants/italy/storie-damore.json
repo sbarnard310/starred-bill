@@ -80,5 +80,8 @@
   "bookingPhone": "+39 347 671 9870",
   "infoSource": "https://storiedamorerestaurant.it/degustazioni",
   "infoChecked": "2026-10-13",
-  "dietsManual": true
+  "dietsManual": true,
+  "priceChangedAt": "2026-10-05",
+  "lunchChangedAt": "2026-10-13",
+  "priceVerifiedAt": "2026-10-13"
 }

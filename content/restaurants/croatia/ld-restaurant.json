@@ -31,5 +31,7 @@
   "lunchWine": 125,
   "lunchSourceType": "site",
   "lunchSource": "https://www.ldrestaurant.com/tasting-menu",
-  "areaHr": "Korčula"
+  "areaHr": "Korčula",
+  "priceChangedAt": "2026-10-05",
+  "lunchChangedAt": "2026-10-12"
 }

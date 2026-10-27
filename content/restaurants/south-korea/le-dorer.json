@@ -25,5 +25,7 @@
   "lunchType": "menu",
   "lunchWine": 140000,
   "lunchSourceType": "press",
-  "lunchSource": "https://app.catchtable.co.kr/ct/shop/ledorer"
+  "lunchSource": "https://app.catchtable.co.kr/ct/shop/ledorer",
+  "priceChangedAt": "2026-10-08",
+  "lunchChangedAt": "2026-10-08"
 }

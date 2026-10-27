@@ -55,5 +55,7 @@
     "note": "Four rooms at the restaurant (one in a garden annexe by the pool); the website ties a room booking to dinner, so stays come as the packages.",
     "checked": "2026-10-23"
   },
-  "dietsManual": true
+  "dietsManual": true,
+  "priceChangedAt": "2026-10-10",
+  "lunchChangedAt": "2026-10-10"
 }

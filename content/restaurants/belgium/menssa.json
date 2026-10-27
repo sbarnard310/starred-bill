@@ -31,5 +31,7 @@
   "lunchSourceType": "site",
   "lunchSource": "https://www.menssa.be/",
   "chef": "Christophe Hardiquest",
-  "chefSource": "press"
+  "chefSource": "press",
+  "priceChangedAt": "2026-10-05",
+  "lunchChangedAt": "2026-10-06"
 }

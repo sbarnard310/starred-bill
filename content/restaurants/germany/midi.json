@@ -28,5 +28,7 @@
   "lunchNoteDe": "Mittagsmenü · Sonntag",
   "lunchSourceType": "site",
   "lunchSource": "https://www.midi-restaurant.de/karte",
-  "dietsManual": true
+  "dietsManual": true,
+  "priceChangedAt": "2026-10-12",
+  "lunchChangedAt": "2026-10-12"
 }

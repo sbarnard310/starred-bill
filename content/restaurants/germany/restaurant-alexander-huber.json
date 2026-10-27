@@ -30,5 +30,7 @@
   "lunchWine": 80,
   "dinnerNote": "Genussvoll menu, 5 courses (7 courses €195)",
   "dinnerNoteDe": "Menü Genussvoll, 5 Gänge (7 Gänge 195 €)",
-  "dietsManual": true
+  "dietsManual": true,
+  "priceChangedAt": "2026-10-10",
+  "lunchChangedAt": "2026-10-10"
 }

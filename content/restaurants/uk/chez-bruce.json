@@ -68,5 +68,9 @@
   "photoSourceType": "commons",
   "photoWidth": 750,
   "photoHeight": 1000,
-  "photoChecked": "2026-10-13"
+  "photoChecked": "2026-10-13",
+  "priceChangedAt": "2026-10-02",
+  "lunchChangedAt": "2026-10-02",
+  "priceVerifiedAt": "2026-10-12",
+  "lunchVerifiedAt": "2026-10-12"
 }

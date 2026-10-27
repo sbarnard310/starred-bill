@@ -85,6 +85,10 @@ One file per restaurant in `content/restaurants/<country>/`. The file name is it
 | `sourceDate`, `lunchSourceDate` | for a `member` price, the month the member saw it (`2026-10`); shown as "Member's report, Oct 2026". Never the member's name |
 | `lunch`, `lunchType`, `lunchNote`, `lunchNoteZh`, `lunchWine`, `lunchSource`, `lunchSourceType` | the same for lunch |
 | `noLunch` | `true` when there's no lunch service |
+| `priceVerifiedAt`, `lunchVerifiedAt` | the last day someone genuinely checked the dinner (with its wine) or lunch price at its source (`2026-10-27`), even when it hadn't changed. Set only by a real check: `python3 scripts/prices.py verify <id>` (or `set` when the price changed). Restaurant pages say "Price checked 9 Oct 2026" from it. See "Price dates and provenance" |
+| `priceChangedAt`, `lunchChangedAt` | the last day our record of that price changed (or was first entered), worked out from git by `python3 scripts/price_dates.py --write`. Never shown as a check: pages say "recorded Oct 2026 (not rechecked since)" when there's no `…VerifiedAt` |
+| `sourceKind`, `lunchSourceKind` | optional: what kind of source the price came from (`restaurant`, `booking`, `guide`, `press`, `member` or `none`), where the link's address doesn't say it (`source_kind()` works it out otherwise) |
+| `priceDerived`, `lunchDerived` | optional: how a price was worked out from its source where it isn't as published, in words ("the source gave ¥33,000 including 10% service; 10% taken off"). Without it a price is as the source published it |
 | `change`, `changeNote`, `changeNoteZh`, `changeDate` | recent star change: `new`, `up` or `down`, and when (`2026-02`) |
 | `status`, `formerStars`, `statusNote`, `statusNoteZh` | only for restaurants no longer starred: `lost`, `closed` or `changed` |
 | `statusDate` | the month it closed, changed or lost its stars (`2026-05`), which can come before or after the guide that dropped it (`changeDate`) |
@@ -130,6 +134,30 @@ Restaurant pages have no separate FAQ: the questions people search are the page'
 Nothing is taken from the MICHELIN Guide's website or search index any more (13 Oct 2026; its terms of use forbid copying its pages by robot or by hand). The scripts that did so (`michelin_details.py`, `michelin_world.js`, `receive.py`, and the research pipelines listed in starred-bill-research/RETIRED-MICHELIN.md) are retired, and `content/world-starred.json` is gone: the homepage's country counts and map come from our own files. Data taken from the guide before then (stars, chefs marked `michelin`, dietary options without `dietsManual`, the hours in `content/opening-hours.json`, addresses, positions and cuisine labels) is being re-sourced restaurant by restaurant from Michelin's press releases, the restaurants' own websites and OpenStreetMap; `scripts/site_audit.py` counts what's left. Chefs are added with `python3 scripts/chefs.py add FILE` (`missing` lists the starred restaurants without one), after `scripts/chef_from_sites.py` has gathered candidates from restaurants' own websites.
 
 Opening hours live in `content/opening-hours.json`, taken from the MICHELIN Guide by a script retired on 13 Oct 2026 (so it's no longer refreshed; replace its hours with the restaurants' own as they're rechecked): `checked` (the day they were fetched) and `hours`, one string per restaurant file name, Monday first, days split by `;`, each day's sittings by `,`, e.g. `";1200-1430,1800-2230;…"` (closed on Monday). The guide gives none for all of Japan, most of mainland China and many hotel dining rooms, so `content/opening-hours-sites.json` (same shape, plus `sources`: per restaurant `url`, the page the hours were read on, and `type`: `site` the restaurant's own website, `hotel` its hotel's, `other` anything else such as a booking, tourism or Trip.com page; `daysOnly`, those whose page gave the days and meals but not the times, whose placeholder times are never shown; `seasons`, a sentence saying when a seasonal restaurant opens, shown beside its hours; and `none`, the starred restaurants whose own site, hotel and booking pages give no usable hours, each `{"checked": "2026-10-19", "note": "why"}`, which `scripts/site_audit.py` counts as `no_hours_anywhere` rather than `no_hours` for 120 days after `checked`) holds hours read by hand from those pages (308 on 12 Oct 2026, 482 more on 13 Oct 2026). Restaurant pages credit that page in their Sources line. Google's hours (`content/opening-hours-google.json`, from `scripts/google_hours.py`) filled that gap until 13 Oct 2026, when both were deleted: Google's Maps Platform terms allow keeping only place IDs (and positions for 30 days), not other Places details, so don't store hours or other details fetched from Google (the stored `rating` and `reviews` break the same rule; the owner has put that off, to-do item legal-google-ratings-terms). The MICHELIN Guide's hours win, except for the restaurants listed in that file's `replacesGuide`, whose guide hours are plainly wrong (BingSheng Private Kitchen on Tianhe East Road: 11:00–04:00 in the guide, 11:00–14:00 and 17:00–22:00 on Trip.com; 12 Oct 2026). The guide often records only a day's first sitting, so the site trusts which days a restaurant opens, but shows its times only for days with two sittings or a dinner one; the websites' times (except `daysOnly`) are always shown. Restaurant pages say which source their hours came from. Near me's "Open on" filter reads them (`/data/hours.json`), and restaurant pages show them under "Opening hours" (or "Open", days only). `scripts/chef_from_sites.py` gathers chef mentions from restaurants' own websites for checking by hand.
+
+### Price dates and provenance
+
+Since 27 Oct 2026 every recorded price can say where it came from and how fresh it is, so we can tell later which figures
+are a third party's and which are our own (for a data licence or API) and never claim a check we didn't make:
+
+- **Source** (`source`, `lunchSource`, `menusSource`): the link the price was read on.
+- **Kind of source** (`source_kind()` in build.py): `restaurant` (its own website, `sourceType: site`), `booking` (a booking
+  platform or agent: Resy, Tock, OpenTable, TheFork, TableCheck, OMAKASE…, `BOOKING_HOSTS`), `guide` (another restaurant
+  guide, rating or listing site: Gault&Millau, Tabelog, Ctrip, OpenRice…, `GUIDE_HOSTS`), `press` (reviews, news,
+  blogs), `member` (a member's report, checked) or `none`. Set `sourceKind`/`lunchSourceKind` only where the address misleads.
+- **Checked** (`priceVerifiedAt`, `lunchVerifiedAt`; `menusChecked` for `menus`): the last day someone read the source and
+  confirmed the price. Record every check, even when nothing changed: `python3 scripts/prices.py verify <id> [dinner|lunch|both]`.
+- **Changed** (`priceChangedAt`, `lunchChangedAt`): the last day our record changed, from git (`scripts/price_dates.py`).
+  The first values (27 Oct 2026) were worked out from the history; the 352 dinner and 146 lunch prices that matched menus
+  read on `menusChecked` got that day as their check.
+- **As published or derived** (`priceDerived`, `lunchDerived`): absent means the figure is as the source gave it; a note
+  says how we worked it out otherwise. Our own sums (service, tax and tips, conversions, medians, estimated wine) are never
+  stored as prices.
+
+`python3 scripts/prices.py set <id> dinner 380 --source <url> --type site` records a new price: it sets the changed and
+checked days and keeps the old dinner price in `priceHistory`. `price_records()` in build.py gives a restaurant's prices
+in one shape with all of this, for any later export. Quarterly snapshots (`python3 build.py --snapshot 2027-Q1`, into
+`content/price-snapshots/`) freeze them for like-for-like comparisons: see `docs/price-index-method.md`.
 
 ## Guides
 

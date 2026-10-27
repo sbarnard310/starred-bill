@@ -45,5 +45,7 @@
   "bookingUrl": "https://www.sevenswans.de/reservation.html",
   "waitlist": "Join the waiting list for your preferred day in the online booking form. If neither a table nor the waiting list is offered, that day is full.",
   "infoSource": "https://bookings.zenchef.com/results?rid=364035&fullscreen=1&lang=en",
-  "infoChecked": "2026-10-13"
+  "infoChecked": "2026-10-13",
+  "priceChangedAt": "2026-10-05",
+  "priceVerifiedAt": "2026-10-13"
 }

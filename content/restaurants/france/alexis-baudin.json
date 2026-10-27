@@ -72,5 +72,9 @@
   "walkIns": "Dogs are not allowed in the restaurant.",
   "infoSource": "https://alexisbaudin.fr/reservation-restaurant-alexis-baudin/",
   "infoChecked": "2026-10-13",
-  "dietsManual": true
+  "dietsManual": true,
+  "priceChangedAt": "2026-10-05",
+  "lunchChangedAt": "2026-10-05",
+  "priceVerifiedAt": "2026-10-13",
+  "lunchVerifiedAt": "2026-10-13"
 }

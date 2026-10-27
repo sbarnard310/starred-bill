@@ -71,5 +71,9 @@
   "bookingUrl": "https://www.origines-restaurant.com/",
   "bookingPhone": "+33 9 86 41 63 04",
   "infoSource": "https://www.origines-restaurant.com/",
-  "infoChecked": "2026-10-13"
+  "infoChecked": "2026-10-13",
+  "priceChangedAt": "2026-10-13",
+  "lunchChangedAt": "2026-10-03",
+  "priceVerifiedAt": "2026-10-13",
+  "lunchVerifiedAt": "2026-10-13"
 }

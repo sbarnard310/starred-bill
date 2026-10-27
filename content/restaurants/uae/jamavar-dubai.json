@@ -32,5 +32,7 @@
   "lunchSource": "https://cdn.jamavarrestaurants.com/wp-content/uploads/2026/09/Lunch-Early-Evening-Menu-WEB.pdf",
   "chef": "Purushottam Naidu",
   "chefSource": "press",
-  "dietsManual": true
+  "dietsManual": true,
+  "priceChangedAt": "2026-10-05",
+  "lunchChangedAt": "2026-10-12"
 }

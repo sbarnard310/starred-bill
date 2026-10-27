@@ -444,7 +444,7 @@ function stayHtml(t) {
   Object.assign(extra, { group_adults: t.people || 2, no_rooms: 1 });
   const paid = !!p.affiliate;
   return '<p class="trip-stay"><a class="btn-line" href="' + esc(partnerUrl(p, town, extra)) + '" target="_blank" rel="' + (paid ? "sponsored noopener" : "nofollow noopener") +
-    '" data-partner="booking" data-where="trip-hotels">Find a hotel in ' + esc(town) + " on " + esc(p.name) + "</a> <span>" +
+    '" data-partner="booking" data-out="hotel" data-where="trip-hotels">Find a hotel in ' + esc(town) + " on " + esc(p.name) + "</a> <span>" +
     (t.starts_on ? "For the trip's dates and " + plural(t.people || 2, "person", "people") + "." : "Add the trip's dates to search for them.") +
     (paid ? " We may earn a commission if you book through " + esc(p.name) + ", at no extra cost to you." : "") + "</span></p>";
 }
@@ -495,7 +495,7 @@ function renderShared() {
       (starred && inWish < starred ? '<button type="button" class="btn-line" id="sWish">Save ' + (starred - inWish === 1 ? "it" : "all " + (starred - inWish)) + " to my wishlist</button>" : starred ? '<span class="al-been">On your wishlist</span>' : "") +
       '<button type="button" class="btn-line" id="sCopy">Copy to my trips</button></div>' +
       "<p>Copying makes your own " + (trip ? "trip" : "list") + " to change as you like" + (acctSignedIn() ? "." : " (free with an account).") + "</p></section>" +
-    '<p class="trip-small">Shared from The Starred Bill' + (updated ? ", last changed " + esc(updated) : "") + ". Prices are per person, from each restaurant's menus as we last checked them: please check with the restaurant before you book. " +
+    '<p class="trip-small">Shared from The Starred Bill' + (updated ? ", last changed " + esc(updated) : "") + ". Prices are per person, from each restaurant's menus as we last recorded them: please check with the restaurant before you book. " +
       '<a href="mailto:hello@starredbill.com?subject=' + encodeURIComponent("A shared page: " + location.origin + "/trips/?s=" + TP.code) + '">Report this page</a></p>' + rulesHtml();
   renderItems(); renderBill();
 }

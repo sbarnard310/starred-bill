@@ -108,7 +108,7 @@ function receipt(r, f, best, i) {
   const src = (url, type, label) => type === "member" && !url ? '<span class="src">Member’s report</span>' : url && type && type !== "none" ? '<a class="src" href="' + esc(url) + '" target="_blank" rel="noopener" title="Where this price came from">' + label + "</a>" : "";
   const sources = [src(r.source, r.sourceType, r.lunchSource && r.lunchSource !== r.source ? "Dinner source" : "Price source"),
     r.lunchSource !== r.source ? src(r.lunchSource, r.lunchSourceType, "Lunch source") : ""].filter(Boolean).join(" · ");
-  const checked = PRICES_CHECKED.toLocaleDateString("en-GB", { month: "short", year: "numeric" });
+  const seen = seenText(seenOf(r), { locale: "en-GB" });
   return '<article class="cmp-rc" aria-label="' + esc(r.name) + '">' +
     '<div class="cr-head"><span class="rc-head" aria-hidden="true">' + esc(t("rcptHead")) + "</span>" +
       '<h3 class="cr-name"><a href="' + esc(r.path + "?q=" + encodeURIComponent(r.name)) + '">' + esc(r.name) + "</a></h3>" +
@@ -122,7 +122,7 @@ function receipt(r, f, best, i) {
     line(t("mealLunch"), f.lunch, r.noLunch ? "" : r.lunchNote, mark("lunch", L())) +
     line(t("hWine"), f.wine, "", mark("wine")) +
     line(t(L() ? "rcptLunchWine" : "rcptDinnerWine"), f.total, "", "rc-total " + mark("total")) +
-    '<div class="rc-foot">' + esc(t(serviceLabel(r.country, r))) + "<br>" + esc(t("rcptChecked", { d: checked })) + (sources ? " · " + sources : "") + "</div>" +
+    '<div class="rc-foot">' + esc(t(serviceLabel(r.country, r))) + (seen ? "<br>" + esc(seen) : "") + (sources ? (seen ? " · " : "<br>") + sources : "") + "</div>" +
     "</article>";
 }
 

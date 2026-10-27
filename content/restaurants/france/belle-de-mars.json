@@ -61,5 +61,9 @@
   "bookingUrl": "https://belledemars.fr/pages/reservation",
   "bookingPhone": "+33 4 86 68 13 42",
   "infoSource": "https://belledemars.fr/pages/la-carte",
-  "infoChecked": "2026-10-12"
+  "infoChecked": "2026-10-12",
+  "priceChangedAt": "2026-10-05",
+  "lunchChangedAt": "2026-10-12",
+  "priceVerifiedAt": "2026-10-12",
+  "lunchVerifiedAt": "2026-10-12"
 }

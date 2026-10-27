@@ -336,7 +336,7 @@ function prefsSection() {
   const curs = [["", "Each restaurant's own currency"]].concat(HOME_CURRENCIES.map((c) => [c, DATA.currencies[c].symbol.trim() + " " + c]));
   return '<section class="acct-section" id="preferences"><h2>Your preferences</h2>' +
     "<p>Set these once and every page starts from them, on any device you sign in on: Near me opens on your home city, " +
-    "prices show in your currency, and Help me pick fills in your currency and dietary needs. Leave any of them blank to choose each time.</p>" +
+    "prices show in your currency, and Budget search fills in your currency and dietary needs. Leave any of them blank to choose each time.</p>" +
     '<div class="prefs"><div class="pref-home"><label for="prefHome">Home city</label>' +
     '<input id="prefHome" type="search" autocomplete="off" placeholder="Type a city, region or country" value="' + esc(home ? placeLabel(home) : pr.homeName || "") + '">' +
     '<ul class="pref-list" id="prefHomeList" hidden></ul></div>' +
@@ -345,7 +345,7 @@ function prefsSection() {
     '<p class="pref-note' + (ui.prefNote ? " ok" : "") + '" id="prefNote" aria-live="polite">' + (ui.prefNote ? esc(ui.prefNote) : "") + "</p></div>" +
     // Halal, kosher and gluten-free can reveal religion or health, so saving one is the member's explicit choice (privacy notice).
     '<p class="pref-small">Dietary needs such as halal, kosher or gluten-free can say something about your religion or health. We keep yours only because you choose it, ' +
-    'and use it only to start Help me pick. See our <a href="/privacy/">privacy notice</a>.</p></section>';
+    'and use it only to start Budget search. See our <a href="/privacy/">privacy notice</a>.</p></section>';
 }
 function savePrefs(change, note) {
   setProfile(Object.assign({}, loadProfile(), change));
@@ -475,7 +475,7 @@ document.addEventListener("click", async (e) => {
 });
 document.addEventListener("change", (e) => {
   if (e.target.id === "prefCur") savePrefs({ currency: e.target.value }, e.target.value ? "Saved. Prices will show in " + DATA.currencies[e.target.value].symbol.trim() + " wherever we can." : "Saved. Prices will show in each restaurant's own currency.");
-  if (e.target.id === "prefDiet") savePrefs({ diet: e.target.value }, e.target.value ? "Saved. Help me pick will start with " + PREF_DIETS.find(([k]) => k === e.target.value)[1].toLowerCase() + " selected." : "Saved. Help me pick will start with no dietary filter.");
+  if (e.target.id === "prefDiet") savePrefs({ diet: e.target.value }, e.target.value ? "Saved. Budget search will start with " + PREF_DIETS.find(([k]) => k === e.target.value)[1].toLowerCase() + " selected." : "Saved. Help me pick will start with no dietary filter.");
 });
 document.addEventListener("input", (e) => {
   if (e.target.id !== "prefHome") return;

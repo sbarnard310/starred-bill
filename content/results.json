@@ -1,0 +1,68 @@
+{
+ "_about": "Earlier editions on the MICHELIN Guide results pages (/guides/michelin-guide-…/), saved by `python3 build.py --freeze <guide id>` before a new ceremony's changes go into the restaurant files. Per guide id (as in ceremonies.json), newest first: the ceremony's date and edition, restaurant file names with their stars (new, up and down also give the stars before; gone the stars it held), and the star counts [one, two, three] before and after. Written by the build; edit only to fix a mistake.",
+ "american-south": [
+  {
+   "date": "2025-11-03",
+   "edition": "2025",
+   "new": [
+    [
+     "bastion",
+     1
+    ],
+    [
+     "counter",
+     1
+    ],
+    [
+     "emerils",
+     2
+    ],
+    [
+     "locust",
+     1
+    ],
+    [
+     "malagon-mercado-y-taperia",
+     1
+    ],
+    [
+     "saint-germain",
+     1
+    ],
+    [
+     "scoundrel",
+     1
+    ],
+    [
+     "the-catbird-seat",
+     1
+    ],
+    [
+     "verns",
+     1
+    ],
+    [
+     "wild-common",
+     1
+    ],
+    [
+     "zasu",
+     1
+    ]
+   ],
+   "up": [],
+   "down": [],
+   "gone": [],
+   "before": [
+    8,
+    0,
+    0
+   ],
+   "after": [
+    18,
+    1,
+    0
+   ]
+  }
+ ]
+}

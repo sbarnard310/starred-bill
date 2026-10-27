@@ -28,5 +28,7 @@
   "lunchType": "menu",
   "lunchWine": 1600000,
   "lunchSourceType": "site",
-  "lunchSource": "https://onvithanoi.com"
+  "lunchSource": "https://onvithanoi.com",
+  "priceChangedAt": "2026-10-08",
+  "lunchChangedAt": "2026-10-08"
 }

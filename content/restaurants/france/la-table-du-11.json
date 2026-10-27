@@ -26,5 +26,7 @@
   "dinnerNote": "Tasting menu, 7 courses",
   "dinnerNoteFr": "Menu dégustation, 7 séquences",
   "lunchNote": "Tasting menu, 4 courses, Friday lunch only",
-  "lunchNoteFr": "Menu dégustation, 4 séquences, uniquement le vendredi midi"
+  "lunchNoteFr": "Menu dégustation, 4 séquences, uniquement le vendredi midi",
+  "priceChangedAt": "2026-10-10",
+  "lunchChangedAt": "2026-10-06"
 }

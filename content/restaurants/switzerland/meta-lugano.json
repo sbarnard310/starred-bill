@@ -33,5 +33,7 @@
   "lunchNoteDe": "Degustationsmenü am Mittag",
   "lunchNoteFr": "Menu dégustation du midi",
   "lunchNoteIt": "Menu degustazione a pranzo",
-  "dietsManual": true
+  "dietsManual": true,
+  "priceChangedAt": "2026-10-10",
+  "lunchChangedAt": "2026-10-10"
 }

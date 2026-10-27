@@ -74,5 +74,7 @@
   "bookingPhone": "+49 6326 96870",
   "infoSource": "https://www.deidesheimerhof.de/de/restaurants/schwarzer-hahn",
   "infoChecked": "2026-10-13",
-  "dietsManual": true
+  "dietsManual": true,
+  "priceChangedAt": "2026-10-13",
+  "priceVerifiedAt": "2026-10-13"
 }

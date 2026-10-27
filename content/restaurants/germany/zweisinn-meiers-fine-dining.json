@@ -29,5 +29,7 @@
   "lunchNoteDe": "Gleiches Menü am Mittag · Di–Fr",
   "lunchSourceType": "site",
   "lunchSource": "https://www.meierszweisinn.de/speisekarten-zweisinn/fine-dining-nuernberg/",
-  "dietsManual": true
+  "dietsManual": true,
+  "priceChangedAt": "2026-10-10",
+  "lunchChangedAt": "2026-10-10"
 }

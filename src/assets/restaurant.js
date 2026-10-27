@@ -251,6 +251,7 @@ function showCurrency(c) {
     const b = e.target.closest("button[data-cur]");
     if (!b) return;
     showCurrency(b.dataset.cur);
+    window.dispatchEvent(new CustomEvent("rp:currency", { detail: b.dataset.cur }));
     store.set(CUR_KEY, b.dataset.cur);
     track("currency", { currency: b.dataset.cur, page: "restaurant" });
     prefChosen("currency", b.dataset.cur);
@@ -292,4 +293,107 @@ function showCurrency(c) {
     }
     track("booking-check", { restaurant: R.id, open: on <= today ? "now" : "later" });
   });
+})();
+
+// ---------- The Bill (Phase 1, 27 Oct 2026) ----------
+// The receipt beside the name becomes a calculator: how many diners, which meal and menu, wine pairing or not, and what
+// the table is likely to pay with what's usually added where the restaurant is (billFor() and serviceTerms() in
+// common.js), each assumption said under "How we work this out". No pairing price is ever made up here: where none is
+// listed, wine isn't counted and the receipt says so. It opens as Budget Search left it (?p=2&m=dinner&wine=1). Prices
+// stay in the restaurant's currency, with the total also in the currency chosen above (≈). The first change a visitor
+// makes is counted once (`bill-calc`).
+(function billCalc() {
+  const B = R.bill, box = $("billCalc");
+  if (!B || !box || !B.options.length) return;
+  const q = new URLSearchParams(location.search);
+  const meals = B.options.map((o) => o.meal).filter((m, i, a) => a.indexOf(m) === i);
+  const MEAL_WORD = { dinner: "Dinner", lunch: "Lunch", lounge: "In the lounge" };
+  const optsFor = (m) => B.options.filter((o) => o.meal === m);
+  const st = { people: Math.min(12, Math.max(1, parseInt(q.get("p"), 10) || 2)), meal: meals.includes(q.get("m")) ? q.get("m") : meals.includes("dinner") ? "dinner" : meals[0],
+    wine: q.get("wine") === "1", shown: pageCur };
+  st.menu = optsFor(st.meal).find((o) => o.main) || optsFor(st.meal)[0];
+  const amt = (n, c) => symbolFor(c || pageCur) + Math.round(n).toLocaleString("en-GB");
+  const conv = (n, c) => n * DATA.currencies[c].perUSD / DATA.currencies[pageCur].perUSD;
+  const sep = '<span class="sr-only">, </span>';
+  const line = (k, v, note, cls) => '<span class="rc-line' + (cls ? " " + cls : "") + '"><span class="rc-k">' + esc(k) + '</span><span class="rc-dots" aria-hidden="true"></span>' + sep +
+    '<span class="rc-v' + (v === "–" || v === "not counted" ? " muted" : "") + '">' + esc(v) + "</span>" + (note ? sep + '<span class="rc-note">' + esc(note) + "</span>" : "") + "</span>";
+  let counted = false, timer = null, last = null;
+  function render() {
+    const o = st.menu, meal = o.meal === "lunch" ? "lunch" : "dinner";
+    const c = last = billFor(B, { meal: o.meal, price: o.price, type: o.type, wine: o.wine, withWine: st.wine, estimateWine: false, people: st.people });
+    const menus = optsFor(st.meal);
+    const wineText = o.wine != null ? "Wine pairing (" + amt(o.wine) + " a person)" : B.noPairing ? "No wine pairing offered" : "No wine pairing price listed";
+    const controls = '<div class="bc-controls">' +
+      '<div class="bc-field"><span id="bcPeopleL">Diners</span><div class="stepper" role="group" aria-labelledby="bcPeopleL">' +
+        '<button type="button" data-bc="-1" aria-label="One fewer diner">−</button><output aria-live="polite">' + st.people + "</output>" +
+        '<button type="button" data-bc="1" aria-label="One more diner">+</button></div></div>' +
+      (meals.length > 1 ? '<div class="seg bc-meal" role="group" aria-label="Meal">' + meals.map((m) => '<button type="button" data-bcmeal="' + m + '" aria-pressed="' + (m === st.meal) + '">' +
+        esc(MEAL_WORD[m] || m) + "</button>").join("") + "</div>" : "") +
+      (menus.length > 1 ? '<label class="bc-field bc-menu"><span>Menu</span><select id="bcMenu">' + menus.map((x, i) => '<option value="' + i + '"' + (x === o ? " selected" : "") + ">" +
+        esc(x.name + " · " + amt(x.price)) + "</option>").join("") + "</select></label>" : "") +
+      '<label class="bc-wine"><input type="checkbox" id="bcWine"' + (st.wine && o.wine != null ? " checked" : "") + (o.wine == null ? " disabled" : "") + "> " + esc(wineText) + "</label></div>";
+    let lines;
+    if (!c.ok) lines = '<span class="rc-line rc-msg">' + esc(c.why) + "</span>";
+    else {
+      const spend = o.type === "spend";
+      lines = line((spend ? "Typical spend" : o.name) + " × " + st.people, amt(c.foodTotal), amt(o.price) + " a person" + (o.courses ? " · " + o.courses + " courses" : "")) +
+        (!st.wine ? "" : c.wineState === "listed" ? line("Wine pairing × " + st.people, amt(c.wineTotal), amt(c.wine) + " a person") :
+          line("Wine pairing", "–", c.wineState === "not-offered" ? "not offered" : "no price listed, so not counted")) +
+        line(c.terms.label, c.extra ? amt(c.extra) : c.terms.counted ? "included" : "not counted") +
+        line("Estimated total" + (c.missing.length ? ", without " + c.missing.join(" or ") : ""), (c.approx ? "≈ " : "") + amt(c.total), "", "rc-total") +
+        (st.people > 1 ? line("Per person", (c.approx ? "≈ " : "") + amt(c.perPerson)) : "") +
+        (st.shown !== pageCur && DATA.currencies[st.shown] ? line("In " + st.shown, "≈ " + amt(conv(c.total, st.shown), st.shown), "at " + DATA.rateDate + " rates") : "");
+    }
+    const seen = B.seen[meal] || "", from = B.from[meal] || "";
+    const foot = "Prices per person" + (from ? " from " + from : "") + (seen ? ", " + seen + (seen.startsWith("recorded") ? " (not rechecked since)" : "") : "");
+    const missing = c.ok && c.missing.length ? "<p>Not in this total: " + c.missing.map((x) => x === "wine" ? "wine, as no pairing price is listed" : "service, as explained above").join("; ") + ".</p>" : "";
+    box.innerHTML = controls +
+      '<div class="receipt rp-receipt bill-receipt"><span class="rc-paper"><span class="rc-head" aria-hidden="true">The Starred Bill · Table for ' + st.people + "</span>" +
+        '<span class="sr-only" aria-live="polite">' + (c.ok ? "Estimated total " + (c.approx ? "about " : "") + amt(c.total) + " for " + st.people : "") + "</span>" +
+        lines + '<span class="rc-foot">' + esc(foot) + "</span></span></div>" +
+      '<details class="bc-how"><summary>How we work this out</summary>' +
+        (c.ok ? "<p>" + esc(c.terms.note) + "</p>" : "") +
+        "<p>Food and wine are the restaurant's prices per person, times the diners. " + (o.note ? "About this menu: " + esc(o.note.charAt(0).toLowerCase() + o.note.slice(1).replace(/\.?$/, ".")) + " " : "") +
+        esc(foot.replace(/^Prices per person/, "They come")) + "." + "</p>" + missing +
+        "<p>It leaves out drinks beyond the pairing, supplements, water, coffee and anything ordered on the day, and the restaurant's bill is what counts.</p></details>";
+  }
+  function used() {
+    if (counted) return;
+    clearTimeout(timer);
+    timer = setTimeout(() => {
+      counted = true;
+      track("bill-calc", { restaurant: R.id, people: st.people, meal: st.meal, menu: st.menu.main ? "main" : "other",
+        wine: st.wine ? (last && last.wineState) || "on" : "off", page: "restaurant" });
+    }, 1500);
+  }
+  box.addEventListener("click", (e) => {
+    const b = e.target.closest("button");
+    if (!b) return;
+    if (b.dataset.bc) st.people = Math.min(12, Math.max(1, st.people + Number(b.dataset.bc)));
+    else if (b.dataset.bcmeal) { st.meal = b.dataset.bcmeal; st.menu = optsFor(st.meal).find((o) => o.main) || optsFor(st.meal)[0]; }
+    else return;
+    render(); used();
+    const again = box.querySelector(b.dataset.bc ? '[data-bc="' + b.dataset.bc + '"]' : '[data-bcmeal="' + b.dataset.bcmeal + '"]');
+    if (again) again.focus();
+  });
+  box.addEventListener("change", (e) => {
+    if (e.target.id === "bcMenu") st.menu = optsFor(st.meal)[Number(e.target.value)];
+    else if (e.target.id === "bcWine") st.wine = e.target.checked;
+    else return;
+    const id = e.target.id;
+    render(); used();
+    if ($(id)) $(id).focus();
+  });
+  const chosen = $("rpCur") && $("rpCur").querySelector('[aria-pressed="true"]');
+  st.shown = chosen ? chosen.dataset.cur : pageCur;
+  window.addEventListener("rp:currency", (e) => { st.shown = e.detail; render(); });
+  render();
+})();
+
+// The main booking button's line: when the next tables go on sale, from the restaurant's booking window.
+(function heroRelease() {
+  const el = $("rpBwHero"), nx = el && R.bw ? bwNext(R.bw) : null;
+  if (!nx) return;
+  el.textContent = "Tables for " + nx.month + " go on sale " + bwLong(nx.on) + (R.bw.time ? " at " + bwClock(R.bw.time) + " " + bwZone(R.bw.tz) : "") + ".";
+  el.hidden = false;
 })();

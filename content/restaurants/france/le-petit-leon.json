@@ -26,5 +26,7 @@
   "chef": "Nick Honeyman",
   "chefSource": "press",
   "dinnerNote": "Chef's menu, 5 courses (7 courses €145)",
-  "dinnerNoteFr": "Menu du chef, 5 services (7 services 145 €)"
+  "dinnerNoteFr": "Menu du chef, 5 services (7 services 145 €)",
+  "priceChangedAt": "2026-10-10",
+  "lunchChangedAt": "2026-10-10"
 }

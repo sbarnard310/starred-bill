@@ -28,5 +28,7 @@
   "chefSource": "site",
   "dinnerNoteMs": "Menu rasa",
   "lunchNoteMs": "Menu makan tengah hari",
-  "dietsManual": true
+  "dietsManual": true,
+  "priceChangedAt": "2026-10-06",
+  "lunchChangedAt": "2026-10-06"
 }

@@ -689,9 +689,9 @@
       "results": {"page": "michelin-guide-american-south", "short": "American South", "area": "the American South", "lang": "en-US", "published": "2026-10-09", "keywords": ["michelin guide american south"]},
       "note": "It covers Atlanta, Alabama, Louisiana, Mississippi, Tennessee and the Carolinas, and moves to a different city each year.",
       "checked": "2026-10",
-      "starsUpdated": "2026-10-05",
-      "next": {"date": "2026-10-21", "where": "The Pinnacle, Nashville", "source": "https://www.visitmusiccity.com/media/press-release/2026/michelin-guide-heads-to-nashville-2026-american-south-ceremony"},
+      "starsUpdated": "2026-10-27",
       "ceremonies": [
+        {"date": "2026-10-21", "where": "The Pinnacle, Nashville", "source": "https://michelinmedia.com/pages/blog/detail/article/c0/a1491/"},
         {"date": "2025-11-03", "where": "the Peace Center, Greenville", "source": "https://guide.michelin.com/en/article/news-and-views/michelin-guide-south-carolina-american-host-city-announcement"}
       ]
     },

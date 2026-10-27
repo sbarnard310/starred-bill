@@ -32,5 +32,7 @@
   "lunchNoteIt": "Stessi menu a pranzo · mar–sab",
   "lunchSourceType": "site",
   "lunchSource": "https://www.sternenwangen.ch/de/essen/",
-  "dietsManual": true
+  "dietsManual": true,
+  "priceChangedAt": "2026-10-12",
+  "lunchChangedAt": "2026-10-12"
 }

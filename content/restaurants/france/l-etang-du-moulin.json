@@ -36,5 +36,7 @@
     "note": "A 4-star hotel beside the restaurant, with six room categories and a Junior Suite.",
     "checked": "2026-10-23"
   },
-  "dietsManual": true
+  "dietsManual": true,
+  "priceChangedAt": "2026-10-05",
+  "lunchChangedAt": "2026-10-05"
 }

@@ -83,5 +83,9 @@
   "duration": "Lunch tables are kept until 4pm; dinner until midnight, or 8.30pm for an early dinner booking.",
   "infoSource": "https://restaurantdekas.com/eng/faq",
   "infoChecked": "2026-10-13",
-  "dietsManual": true
+  "dietsManual": true,
+  "priceChangedAt": "2026-10-05",
+  "lunchChangedAt": "2026-10-05",
+  "priceVerifiedAt": "2026-10-13",
+  "lunchVerifiedAt": "2026-10-13"
 }

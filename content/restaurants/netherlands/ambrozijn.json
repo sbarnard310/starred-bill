@@ -34,5 +34,7 @@
   "chefSource": "site",
   "dinnerNoteNl": "Chef's menu, 6 gangen (5 gangen € 109, woensdag en donderdag)",
   "lunchNoteNl": "Chef's menu, 4 gangen; vrijdag en zaterdag",
-  "dietsManual": true
+  "dietsManual": true,
+  "priceChangedAt": "2026-10-06",
+  "lunchChangedAt": "2026-10-06"
 }

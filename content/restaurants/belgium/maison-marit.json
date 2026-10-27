@@ -27,5 +27,7 @@
   "lunchNoteFr": "Même menu le midi · mer.–sam.",
   "lunchWine": 40,
   "lunchSourceType": "site",
-  "lunchSource": "https://www.maisonmarit.be/nl/menu"
+  "lunchSource": "https://www.maisonmarit.be/nl/menu",
+  "priceChangedAt": "2026-10-05",
+  "lunchChangedAt": "2026-10-06"
 }

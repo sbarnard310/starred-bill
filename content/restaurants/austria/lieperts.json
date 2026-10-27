@@ -30,5 +30,7 @@
   "lunchWine": 59,
   "lunchSourceType": "site",
   "lunchSource": "https://www.lieperts.at/fine-dining-suedsteiermark/",
-  "dietsManual": true
+  "dietsManual": true,
+  "priceChangedAt": "2026-10-05",
+  "lunchChangedAt": "2026-10-12"
 }

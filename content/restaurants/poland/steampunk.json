@@ -32,5 +32,7 @@
   "lunchSourceType": "site",
   "lunchSource": "https://wodna-wieza.pl/wp-content/uploads/2026/09/MENU-STEAMPUNK_20.09.2026r.pdf",
   "chef": "Ziemowit Owczarz",
-  "chefSource": "press"
+  "chefSource": "press",
+  "priceChangedAt": "2026-10-05",
+  "lunchChangedAt": "2026-10-06"
 }

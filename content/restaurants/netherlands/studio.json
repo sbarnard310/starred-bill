@@ -27,5 +27,7 @@
   "lunchSource": "https://www.studio.restaurant/menu",
   "chef": "Gilbert von Berg",
   "chefSource": "press",
-  "dietsManual": true
+  "dietsManual": true,
+  "priceChangedAt": "2026-10-12",
+  "lunchChangedAt": "2026-10-12"
 }

@@ -57,5 +57,7 @@
   "children": "Guests must be 12 or older.",
   "byob": "Corkage is $100 per 720ml bottle.",
   "infoSource": "https://www.omakasetableatl.com/reservation",
-  "infoChecked": "2026-10-13"
+  "infoChecked": "2026-10-13",
+  "priceChangedAt": "2026-10-05",
+  "priceVerifiedAt": "2026-10-13"
 }

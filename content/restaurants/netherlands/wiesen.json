@@ -23,5 +23,7 @@
   "lunchSourceType": "site",
   "lunchSource": "https://www.wiesen-restaurant.nl/menu-wiesen",
   "chef": "Yuri Wiesen",
-  "chefSource": "press"
+  "chefSource": "press",
+  "priceChangedAt": "2026-10-12",
+  "lunchChangedAt": "2026-10-12"
 }

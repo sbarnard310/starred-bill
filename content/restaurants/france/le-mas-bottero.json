@@ -29,5 +29,7 @@
   "dinnerNoteFr": "Menu Saison, 5 temps (Inspirations, 7 temps, 130 €)",
   "lunchNote": "Lunch menu, 4 courses, weekdays",
   "lunchNoteFr": "Menu déjeuner, 4 temps, en semaine",
-  "dietsManual": true
+  "dietsManual": true,
+  "priceChangedAt": "2026-10-10",
+  "lunchChangedAt": "2026-10-06"
 }

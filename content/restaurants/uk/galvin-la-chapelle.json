@@ -75,5 +75,9 @@
   "servicePct": 15,
   "infoSource": "https://galvinrestaurants.com/galvin-la-chapelle/faqs/",
   "infoChecked": "2026-10-12",
-  "dietsManual": true
+  "dietsManual": true,
+  "priceChangedAt": "2026-10-09",
+  "lunchChangedAt": "2026-10-06",
+  "priceVerifiedAt": "2026-10-12",
+  "lunchVerifiedAt": "2026-10-12"
 }

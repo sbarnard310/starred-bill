@@ -30,5 +30,7 @@
   "chef": "Diego Ferrari",
   "chefSource": "site",
   "dinner": 125,
-  "dietsManual": true
+  "dietsManual": true,
+  "priceChangedAt": "2026-10-22",
+  "lunchChangedAt": "2026-10-02"
 }

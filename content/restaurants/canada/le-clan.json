@@ -64,5 +64,9 @@
   "bookingUrl": "https://booking.libroreserve.com/3240fc70c192f3/QC016176289060/seat",
   "bookingPhone": "+1 418-692-0333",
   "infoSource": "https://restaurantleclan.com/en/",
-  "infoChecked": "2026-10-12"
+  "infoChecked": "2026-10-12",
+  "priceChangedAt": "2026-10-05",
+  "lunchChangedAt": "2026-10-05",
+  "priceVerifiedAt": "2026-10-12",
+  "lunchVerifiedAt": "2026-10-12"
 }

@@ -28,5 +28,7 @@
   "lunchSourceType": "site",
   "lunchSource": "https://www.restaurant-mota.com/?lang=en",
   "dinnerNote": "Menu, 13 courses",
-  "dinnerNoteDa": "Menu, 13 serveringer"
+  "dinnerNoteDa": "Menu, 13 serveringer",
+  "priceChangedAt": "2026-10-10",
+  "lunchChangedAt": "2026-10-10"
 }

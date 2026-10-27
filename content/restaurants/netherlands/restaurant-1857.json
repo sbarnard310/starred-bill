@@ -28,5 +28,7 @@
   "lunch": 95,
   "lunchType": "menu",
   "lunchSourceType": "site",
-  "lunchSource": "https://restaurant1857.com/menu/"
+  "lunchSource": "https://restaurant1857.com/menu/",
+  "priceChangedAt": "2026-10-08",
+  "lunchChangedAt": "2026-10-08"
 }

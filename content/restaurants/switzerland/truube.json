@@ -33,5 +33,7 @@
   "lunchNoteIt": "Stesso menu a pranzo · ven–lun",
   "lunchWine": 120,
   "lunchSourceType": "site",
-  "lunchSource": "https://www.truube.ch/pdf/truube_menukarte.pdf"
+  "lunchSource": "https://www.truube.ch/pdf/truube_menukarte.pdf",
+  "priceChangedAt": "2026-10-06",
+  "lunchChangedAt": "2026-10-06"
 }

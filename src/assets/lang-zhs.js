@@ -48,7 +48,7 @@
     tripAddBtn: "加入行程", acctWhyTrip: "创建免费账户或登录，即可规划行程：为餐厅排好日期、查看整趟账单并分享。", reportBtn: "报告价格或变动", acctWhyReport: "创建免费账户或登录，即可报告价格或变动。每条报告我们都会先核实再修改。", saveSearch: "保存此搜索", acctWhySearch: "创建免费账户或登录，即可保存此搜索。有餐厅新符合条件时，我们会发电子邮件通知你。", srcMember: "会员报告，{d}",
     perMain: "每道主菜", typicalSpend: "人均消费", notListed: "未公布",
     // The till receipt on destination pages.
-    rcptHead: "The Starred Bill · 1 位", rcptDinnerOnly: "仅供应晚餐", rcptNoPairing: "未列出配酒", rcptNoPairingOffered: "不提供配酒", rcptPlusWine: "+ 配酒 {p}", rcptDinnerWine: "晚餐 + 配酒", rcptLunchWine: "午餐 + 配酒", rcptChecked: "{d} 核实", rcptIncl: "人均价格，含服务费", rcptPlus: "人均价格，另加 ++（服务费及税）", rcptTaxTip: "人均价格，不含税及小费", rcptTip: "人均价格，不含小费", rcptTax: "人均价格，含税",
+    rcptHead: "The Starred Bill · 1 位", rcptDinnerOnly: "仅供应晚餐", rcptNoPairing: "未列出配酒", rcptNoPairingOffered: "不提供配酒", rcptPlusWine: "+ 配酒 {p}", rcptDinnerWine: "晚餐 + 配酒", rcptLunchWine: "午餐 + 配酒", rcptChecked: "{d} 核实", rcptRecorded: "{d} 记录", rcptIncl: "人均价格，含服务费", rcptPlus: "人均价格，另加 ++（服务费及税）", rcptTaxTip: "人均价格，不含税及小费", rcptTip: "人均价格，不含小费", rcptTax: "人均价格，含税",
     findOnMaps: "在 Google 地图查看{name}", findOnMapsTitle: "在 Google 地图查看",
     showOnly: "只显示{cat}",
     chgNew: "新晋", chgTitle: "{date}米其林指南：{note}",

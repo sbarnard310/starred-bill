@@ -31,5 +31,7 @@
   "dinnerNoteFr": "Menu dégustation, 4 épisodes (6 épisodes 98 €)",
   "lunchNote": "Lunch menu, 3 courses, Tue–Fri (2 courses €34)",
   "lunchNoteFr": "Menu déjeuner, 3 épisodes, du mardi au vendredi (2 épisodes 34 €)",
-  "dietsManual": true
+  "dietsManual": true,
+  "priceChangedAt": "2026-10-06",
+  "lunchChangedAt": "2026-10-10"
 }

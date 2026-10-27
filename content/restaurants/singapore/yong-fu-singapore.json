@@ -30,5 +30,7 @@
   "lunch": 150,
   "lunchType": "menu",
   "lunchSourceType": "site",
-  "lunchSource": "https://www.yongfusg.com/menu"
+  "lunchSource": "https://www.yongfusg.com/menu",
+  "priceChangedAt": "2026-10-08",
+  "lunchChangedAt": "2026-10-08"
 }

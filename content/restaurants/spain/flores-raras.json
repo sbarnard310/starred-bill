@@ -64,5 +64,8 @@
   "cancellation": "Free cancellation up to 24 hours before the meal; after that the restaurant charges €100 per guest.",
   "infoSource": "https://floresraras.com/",
   "infoChecked": "2026-10-12",
-  "dietsManual": true
+  "dietsManual": true,
+  "priceChangedAt": "2026-10-06",
+  "lunchChangedAt": "2026-10-12",
+  "priceVerifiedAt": "2026-10-12"
 }

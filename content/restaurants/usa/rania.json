@@ -27,5 +27,7 @@
   "chef": "Peter Boboris",
   "chefSource": "press",
   "dinnerNote": "Prix-fixe menu, 4 courses (Chef's Tasting Menu, 7 courses, $175)",
-  "dietsManual": true
+  "dietsManual": true,
+  "priceChangedAt": "2026-10-10",
+  "lunchChangedAt": "2026-10-10"
 }

@@ -58,5 +58,7 @@
     "note": "Rooms are in Cross House Lodge, the inn’s converted farm buildings.",
     "checked": "2026-10-23"
   },
-  "dietsManual": true
+  "dietsManual": true,
+  "priceChangedAt": "2026-10-03",
+  "lunchChangedAt": "2026-10-03"
 }

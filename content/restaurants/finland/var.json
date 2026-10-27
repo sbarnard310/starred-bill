@@ -29,5 +29,7 @@
   "lunchNoteFi": "Sama menu lounaalla · lauantai",
   "lunchWine": 129,
   "lunchSourceType": "site",
-  "lunchSource": "https://www.restaurantvar.fi/menu/"
+  "lunchSource": "https://www.restaurantvar.fi/menu/",
+  "priceChangedAt": "2026-10-05",
+  "lunchChangedAt": "2026-10-06"
 }

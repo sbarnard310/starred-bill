@@ -31,5 +31,7 @@
   "areaSl": "Laško",
   "wine": 90,
   "lunchWine": 90,
-  "dietsManual": true
+  "dietsManual": true,
+  "priceChangedAt": "2026-10-07",
+  "lunchChangedAt": "2026-10-07"
 }

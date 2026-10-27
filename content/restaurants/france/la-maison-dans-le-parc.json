@@ -85,5 +85,9 @@
   "bookingPhone": "+33 3 83 19 03 57",
   "infoSource": "https://lamaisondansleparc.com/",
   "infoChecked": "2026-10-12",
-  "dietsManual": true
+  "dietsManual": true,
+  "priceChangedAt": "2026-10-12",
+  "lunchChangedAt": "2026-10-12",
+  "priceVerifiedAt": "2026-10-12",
+  "lunchVerifiedAt": "2026-10-12"
 }

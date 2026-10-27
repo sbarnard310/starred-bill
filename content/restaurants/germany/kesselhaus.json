@@ -28,5 +28,7 @@
   "lunchNoteDe": "Gleiches Menü am Mittag · Samstag",
   "lunchWine": 120,
   "lunchSourceType": "site",
-  "lunchSource": "https://www.kesselhaus-os.de/menue/"
+  "lunchSource": "https://www.kesselhaus-os.de/menue/",
+  "priceChangedAt": "2026-10-05",
+  "lunchChangedAt": "2026-10-06"
 }

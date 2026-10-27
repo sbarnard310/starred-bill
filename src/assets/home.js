@@ -184,6 +184,7 @@ function renderCurrency() {
   document.querySelectorAll("[data-amt]").forEach((el) => { el.textContent = homeMoney(Number(el.dataset.amt), el.dataset.cur); });
   // "Starred for less" shows the menu's own price under a converted one.
   document.querySelectorAll(".less-usd").forEach((el) => { el.hidden = el.dataset.cur === pageCur; });
+  if ($("bfBudget")) bfBudgets();
 }
 function setHomeCur(c) {
   if (!DATA.currencies[c] || c === pageCur) return;
@@ -513,6 +514,50 @@ function renderMapStars() {
 function renderMapLegend() {
   renderLegend(pinStars());
   if (LOST.length) $("mapLegend").insertAdjacentHTML("beforeend", legendLost());
+}
+
+// ---------- The budget form (Phase 1, 27 Oct 2026) ----------
+// A plain form to /pick/ (Budget Search; home_budget_form() in build.py), so it works before this script runs. Here it
+// gets place suggestions (/data/spots.json, the same places /pick/ searches, loaded on first use) with "Near me", and its
+// budgets follow the people and the page's currency (pick.js takes pounds, euros or dollars, so others ask in dollars).
+const bf = { spots: null, loading: null };
+const bfCur = () => (DATA.switchable || []).includes(pageCur) ? pageCur : "USD";
+function bfBudgets() {
+  const sel = $("bfBudget"), people = Number($("bfPeople").value) || 2, at = sel.selectedIndex, cur = bfCur();
+  sel.innerHTML = DATA.budgetSteps.map((v) => '<option value="' + v * people + '">' + esc(symbolOf(cur) + (v * people).toLocaleString("en-GB")) + "</option>").join("") +
+    '<option value="0">No limit</option>';
+  sel.selectedIndex = at > -1 ? at : DATA.budgetSteps.indexOf(200);
+  $("bfCur").value = cur;
+}
+function bfLoad() {
+  if (!bf.loading) bf.loading = getData(DATA.spotsUrl).then((d) => { bf.spots = d; }).catch(() => { bf.spots = []; });
+  return bf.loading;
+}
+function bfSuggest() {
+  const input = $("bfWhere"), list = $("bfList"), q = input.value.trim().toLowerCase();
+  if (!bf.spots) { bfLoad().then(() => { if (document.activeElement === input) bfSuggest(); }); return; }
+  const near = '<li><button type="button" data-bfw="near"><strong>Near me</strong> <span class="ps-ctx">uses your location in this browser only</span></button></li>';
+  const words = (text) => (" " + text.toLowerCase().replace(/[^\p{L}\p{N}]+/gu, " ")).includes(" " + q.replace(/[^\p{L}\p{N}]+/gu, " "));
+  const hits = q.length < 2 ? [] : bf.spots.filter((x) => words(x[0]) || words(x[0] + " " + x[3]))
+    .sort((a, b) => (b[0].toLowerCase().startsWith(q) - a[0].toLowerCase().startsWith(q)) || b[2] - a[2]).slice(0, 7);
+  list.innerHTML = near + hits.map((x) => '<li><button type="button" data-bfw="' + esc(x[1]) + '" data-bfname="' + esc(x[0]) + '"><strong>' + esc(x[0]) + "</strong>" +
+    (x[3] ? ' <span class="ps-ctx">' + esc(x[3]) + "</span>" : "") + ' <span class="ps-n">' + x[2].toLocaleString("en-GB") + "</span></button></li>").join("");
+  list.hidden = false;
+}
+if ($("budgetForm")) {
+  $("bfWhere").addEventListener("focus", bfSuggest);
+  $("bfWhere").addEventListener("input", () => { $("bfW").disabled = true; bfSuggest(); });
+  $("bfWhere").addEventListener("keydown", (e) => { if (e.key === "Escape") $("bfList").hidden = true; });
+  $("bfPeople").addEventListener("change", bfBudgets);
+  $("bfList").addEventListener("click", (e) => {
+    const b = e.target.closest("[data-bfw]");
+    if (!b) return;
+    $("bfWhere").value = b.dataset.bfw === "near" ? "Near me" : b.dataset.bfname;
+    $("bfW").value = b.dataset.bfw; $("bfW").disabled = false;
+    $("bfList").hidden = true;
+  });
+  document.addEventListener("click", (e) => { if (!e.target.closest(".bf-where")) $("bfList").hidden = true; });
+  bfBudgets();
 }
 
 // ---------- Render and events ----------

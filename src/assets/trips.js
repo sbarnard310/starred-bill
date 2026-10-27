@@ -444,7 +444,7 @@ function stayHtml(t) {
   Object.assign(extra, { group_adults: t.people || 2, no_rooms: 1 });
   const paid = !!p.affiliate;
   return '<p class="trip-stay"><a class="btn-line" href="' + esc(partnerUrl(p, town, extra)) + '" target="_blank" rel="' + (paid ? "sponsored noopener" : "nofollow noopener") +
-    '" data-partner="booking" data-where="trip-hotels">Find a hotel in ' + esc(town) + " on " + esc(p.name) + "</a> <span>" +
+    '" data-partner="booking" data-out="hotel" data-where="trip-hotels">Find a hotel in ' + esc(town) + " on " + esc(p.name) + "</a> <span>" +
     (t.starts_on ? "For the trip's dates and " + plural(t.people || 2, "person", "people") + "." : "Add the trip's dates to search for them.") +
     (paid ? " We may earn a commission if you book through " + esc(p.name) + ", at no extra cost to you." : "") + "</span></p>";
 }

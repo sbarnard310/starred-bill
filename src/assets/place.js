@@ -383,6 +383,9 @@ function closeSheet() {
 // (Checked before the click re-draws the buttons, which takes them out of the page.)
 let choseInDrop = false;
 document.addEventListener("click", (e) => { choseInDrop = !!e.target.closest(".fdrop-panel button"); }, true);
+// The `filter` event: which filter a visitor used on a destination list and the value chosen (a star level, cuisine,
+// dietary need, sort order; never what they typed in the search box).
+const trackFilter = (filter, value) => track("filter", { filter, value: String(value).slice(0, 60), page: location.pathname, link: filter + " · " + value });
 function choseFilter() { if (choseInDrop && !document.body.classList.contains("sheet-open")) closeDrops(); }
 $("filtersBtn").addEventListener("click", openSheet);
 $("sheetClose").addEventListener("click", closeSheet);
@@ -543,7 +546,7 @@ const folded = () => foldable() && !ledger.expanded;
 const ledgerTarget = () => folded() ? LIST_FOLD : ledger.rows.length;
 function ledgerRow(r) {
   const on = onWishlist(r);
-  return '<div class="row rc-row' + (L() && r.noLunch ? " nolunch" : "") + (state.openRow === r.id ? " open" : "") + '" role="row">' + summaryCell(r) + nameCell(r) +
+  return '<div class="row rc-row' + (L() && r.noLunch ? " nolunch" : "") + (state.openRow === r.id ? " open" : "") + '" role="row" data-r="' + esc(r.id) + '">' + summaryCell(r) + nameCell(r) +
     '<span class="cat" role="cell"><button type="button" class="tag" data-cat="' + esc(r.cuisine) + '" title="' + esc(t("showOnly", { cat: cuisineOf(r) })) + '">' + esc(cuisineOf(r)) + "</button></span>" +
     '<span class="stars-cell" role="cell">' + starIcons(r.stars) + changeBadge(r) + "</span>" +
     '<span class="rating-cell" role="cell"><span class="mlabel">' + t("hGoogle") + "</span>" + criticsMark(r) + memberNote(r) + reviewsLink(r) + "</span>" +
@@ -566,7 +569,7 @@ function formerHtml(former) {
   const label = { lost: t("stLost"), closed: t("stClosed"), changed: t("stChanged") };
   return '<div class="row divider" role="row"><span role="cell"><strong>' + t("formerTitle") + '</strong><span class="note">' + t("formerNote") + "</span></span></div>" +
     former.sort((a, b) => nameOf(a).localeCompare(nameOf(b))).map((r) =>
-      '<div class="row former' + (state.openRow === r.id ? " open" : "") + '" role="row">' + summaryCell(r) + nameCell(r) +
+      '<div class="row former' + (state.openRow === r.id ? " open" : "") + '" role="row" data-r="' + esc(r.id) + '">' + summaryCell(r) + nameCell(r) +
       '<span class="cat" role="cell"><span class="tag">' + esc(cuisineOf(r)) + "</span></span>" +
       '<span class="stars-cell" role="cell">' + starIcons(r.formerStars) + '<span class="note">' + t("formerly") + "</span></span>" +
       '<span class="rating-cell" role="cell"><span class="num muted">–</span></span>' +
@@ -953,10 +956,11 @@ document.addEventListener("click", (e) => {
     toggleBeen(el.dataset.been);
   } else if (el.dataset.show) {
     state.wishOnly = el.dataset.show === "wishlist"; state.changesOnly = el.dataset.show === "changes"; state.beenOnly = el.dataset.show === "been"; state.roomsOnly = el.dataset.show === "rooms"; render(); choseFilter();
+    trackFilter("show", el.dataset.show);
   } else if (el.dataset.stars) {
-    state.activeStars = Number(el.dataset.stars); render(); choseFilter();
+    state.activeStars = Number(el.dataset.stars); render(); choseFilter(); trackFilter("stars", el.dataset.stars);
   } else if (el.dataset.diet != null) {
-    state.diet = el.dataset.diet; render(); choseFilter();
+    state.diet = el.dataset.diet; render(); choseFilter(); trackFilter("diet", el.dataset.diet || "none");
   } else if (el.dataset.unfilter) {
     const k = el.dataset.unfilter;
     if (k === "show" || k === "all") { state.wishOnly = false; state.changesOnly = false; state.beenOnly = false; state.roomsOnly = false; }
@@ -965,11 +969,11 @@ document.addEventListener("click", (e) => {
     if (k === "diet" || k === "all") state.diet = "";
     if (k === "area" || k === "all") state.area = "";
     if (k === "max" || k === "all") state.max = null;
-    render();
+    render(); trackFilter("clear", k);
   } else if (el.id === "clearFilters") {
-    state.activeStars = 0; state.activeCat = "All"; state.diet = ""; state.wishOnly = false; state.changesOnly = false; state.beenOnly = false; state.roomsOnly = false; state.area = ""; state.max = null; state.query = ""; $("q").value = ""; render();
+    state.activeStars = 0; state.activeCat = "All"; state.diet = ""; state.wishOnly = false; state.changesOnly = false; state.beenOnly = false; state.roomsOnly = false; state.area = ""; state.max = null; state.query = ""; $("q").value = ""; render(); trackFilter("clear", "all");
   } else if (el.dataset.cat) {
-    state.activeCat = el.dataset.cat; $("cuisineQ").value = ""; render(); choseFilter();
+    state.activeCat = el.dataset.cat; $("cuisineQ").value = ""; render(); choseFilter(); trackFilter("cuisine", el.dataset.cat);
     if (el.classList.contains("tag")) $("compare").scrollIntoView();
   } else if (el.id === "toastAct") {
     const run = state.toastAct;
@@ -996,7 +1000,7 @@ document.addEventListener("click", (e) => {
 });
 $("q").addEventListener("input", (e) => { state.query = e.target.value; renderLedger(); });
 wireSearchClear($("q"), () => { state.query = ""; renderLedger(); });
-$("sort").addEventListener("change", (e) => { state.sort = e.target.value; save(); renderLedger(); });
+$("sort").addEventListener("change", (e) => { state.sort = e.target.value; save(); renderLedger(); trackFilter("sort", state.sort); });
 $("currencyPick").addEventListener("change", (e) => { state.currency = e.target.value; save(); renderAll(); track("currency", { currency: state.currency }); prefChosen("currency", state.currency); });
 $("contactForm").addEventListener("submit", (e) => {
   e.preventDefault();

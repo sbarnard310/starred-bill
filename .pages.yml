@@ -599,6 +599,26 @@ content:
         label: Dinner price link
         description: Where the dinner price came from.
         type: string
+      - name: priceVerifiedAt
+        label: Day the dinner price was last checked
+        description: The day someone read the source and confirmed the dinner price, even if it hadn't changed, e.g. 2026-10-27. Only for a real check. Pages then say "Price checked". Leave the "last changed" day to scripts/price_dates.py.
+        type: string
+      - name: sourceKind
+        label: Kind of dinner price source
+        description: Only if the link's address doesn't make it clear. Otherwise the build works it out.
+        type: select
+        options:
+          values:
+            - { value: restaurant, label: "The restaurant itself" }
+            - { value: booking, label: "A booking platform or agent" }
+            - { value: guide, label: "Another restaurant guide or listing site" }
+            - { value: press, label: "A review, news story or blog" }
+            - { value: member, label: "A member's report (checked)" }
+            - { value: none, label: "No source" }
+      - name: priceDerived
+        label: How the dinner price was worked out (only if not as published)
+        description: Leave empty when the price is exactly as the source shows it. Otherwise say how you got it, e.g. "The source gave ¥33,000 including 10% service; 10% taken off".
+        type: string
       - name: noLunch
         label: No lunch service
         description: Tick if the restaurant doesn't serve lunch. It then shows at the bottom of the Lunch view.
@@ -738,6 +758,26 @@ content:
         type: string
       - name: lunchSource
         label: Lunch price link
+        type: string
+      - name: lunchVerifiedAt
+        label: Day the lunch price was last checked
+        description: The day someone read the source and confirmed the lunch price, even if it hadn't changed, e.g. 2026-10-27. Only for a real check. Pages then say "Price checked". Leave the "last changed" day to scripts/price_dates.py.
+        type: string
+      - name: lunchSourceKind
+        label: Kind of lunch price source
+        description: Only if the link's address doesn't make it clear. Otherwise the build works it out.
+        type: select
+        options:
+          values:
+            - { value: restaurant, label: "The restaurant itself" }
+            - { value: booking, label: "A booking platform or agent" }
+            - { value: guide, label: "Another restaurant guide or listing site" }
+            - { value: press, label: "A review, news story or blog" }
+            - { value: member, label: "A member's report (checked)" }
+            - { value: none, label: "No source" }
+      - name: lunchDerived
+        label: How the lunch price was worked out (only if not as published)
+        description: Leave empty when the price is exactly as the source shows it. Otherwise say how you got it, e.g. "The source gave ¥33,000 including 10% service; 10% taken off".
         type: string
       - name: notice
         label: Notice

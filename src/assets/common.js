@@ -49,7 +49,7 @@ const I18N = {
     notrackOn: "This browser is no longer counted in the visit statistics.", notrackOff: "This browser is counted in the visit statistics again.",
     destAreas: "Regions and cities", destRegions: "Regions", destCityList: "Cities",
     cookieText: "Can we use Google Analytics cookies to see how people use the site? Visits are counted without cookies either way.", cookieAccept: "Accept", cookieReject: "Reject", cookieSettings: "Change cookie choice",
-    navCompare: "Compare", navMap: "Map", navStars: "By stars", navMethod: "Method", navContact: "Contact", navDestinations: "Destinations", navGuides: "Guides", navNear: "Near me", navPick: "Help me pick", wishlist: "Wishlist",
+    navCompare: "Compare", navMap: "Map", navStars: "By stars", navMethod: "Method", navContact: "Contact", navDestinations: "Destinations", navGuides: "Guides", navNear: "Near me", navPick: "Budget search", wishlist: "Wishlist",
     pageTitle: "The Starred Bill · {place}",
     heroEyebrow: "{place} · Michelin Guide restaurants",
     heroTitle: "Michelin star restaurants in {placeIn}: what they <em>cost</em>.",
@@ -169,8 +169,8 @@ const I18N = {
     rateLineMixed: "Prices are converted to {sym} using the exchange rate on {date}, so they're approximate.",
     currencyAria: "Show prices in", crumbsAria: "Where you are", menuOpen: "Menu",
     // Homepage
-    homeTitle: "Michelin Star Restaurants, With Prices · The Starred Bill",
-    homeEyebrow: "Michelin star restaurants, priced",
+    homeTitle: "Michelin Star Restaurants by Budget, With Prices · The Starred Bill",
+    homeEyebrow: "Michelin-starred restaurants, priced",
     homeH1: "Michelin star restaurants: what they <em>cost</em>, city by city.",
     homeText: "Dinner, lunch and wine pairing prices per person at Michelin-starred restaurants, side by side and linked to where each price came from. Pick a destination, or explore the map.",
     figRestaurants: "Restaurants priced", figDestinations: "Countries", figUpdated: "Prices checked", figUpdatedSub: "Dinner, lunch and wine pairings",
@@ -2045,6 +2045,8 @@ function nearRows(d) {
     r.where = r.where === 0 ? p[2] : Array.isArray(r.where) ? r.where[0] : r.where + ", " + p[2];
     if (r.id === 0) r.id = slug(r.name);
     if (r.chef === null) r.chef = "";
+    r.country = p[3];
+    if (r.svc) { r.serviceIncluded = r.svc[0] || 0; r.taxIncluded = r.svc[1] || 0; if (r.svc[2] != null) r.servicePct = r.svc[2]; }
     r.diets = r.diets.split("").map((i) => d.diets[Number(i)]);
     return r;
   });
@@ -2128,6 +2130,55 @@ const serviceOf = (country, r) => {
 };
 const SERVICE_LABEL = { before: "m1Title", included: "rcptIncl", plusplus: "rcptPlus", taxtip: "rcptTaxTip", tip: "rcptTip", tax: "rcptTax", plustax: "rcptTipIncl" };
 const serviceLabel = (country, r) => SERVICE_LABEL[serviceOf(country, r)[0]];
+// ---------- The Bill (Phase 1, 27 Oct 2026) ----------
+// What a meal costs a whole table, worked out one way for Budget Search (/pick/) and the restaurant pages' calculator
+// (restaurant.js): the menu (and wine pairing) per person times the diners, plus what's usually added on top where the
+// restaurant is (SERVICE through serviceOf(), or the restaurant's own servicePct), each assumption named so the page can
+// say it. It's never more exact than what it's built from: an added percentage or an estimated pairing makes the total
+// approximate (`approx`), and where no honest total exists (an à la carte main course, no price) it says why (`why`)
+// instead. build.py's bill table follows the same rules (service_of()). Directory Engine candidate: a priced listing's
+// "what will it cost". r needs: country, and serviceIncluded/taxIncluded/servicePct where set.
+const WINE_ESTIMATE = 0.6;  // a typical pairing as a share of the menu, for an estimate only (listed pairings' median is about 56%)
+function serviceTerms(r) {
+  const base = serviceOf(r.country, r);
+  let [kind, pct] = base;
+  const own = r.servicePct != null;
+  if (own) { kind = ["before", "plusplus", "taxtip", "tip", "plustax"].includes(kind) ? kind : "before"; pct = r.servicePct; }
+  const p = (n) => String(Math.round(n * 10) / 10);
+  const tax = SERVICE_TAX[r.country] || 0;
+  const out = { kind, pct, own, label: "", note: "", counted: true };
+  if (own) Object.assign(out, { label: "Service charge (" + p(pct) + "%)", note: "This restaurant's own service charge, from its website." });
+  else if (kind === "before" && pct) Object.assign(out, { label: "Typical service (" + p(pct) + "%)", note: "A service charge of about " + p(pct) + "% is usually added to the bill here. The restaurant's own rate may differ." });
+  else if (kind === "before") Object.assign(out, { label: "Service", note: "We don't know what's usually added here, so the total leaves service out.", counted: false });
+  else if (kind === "plusplus") Object.assign(out, { label: "Service and tax (about " + p(pct) + "%)", note: "Menus here are priced “++”: a service charge is added, then tax on top of both, about " + p(pct) + "% in all." });
+  else if (kind === "taxtip") Object.assign(out, { label: "Tax and tip (about " + p(pct) + "%)", note: "About " + p(tax) + "% sales tax (it varies by " + (r.country === "canada" ? "province" : "state and city") + ") plus a tip of about " + p(pct - tax) + "%, which you choose." });
+  else if (kind === "tip") Object.assign(out, { label: "Typical tip (" + p(pct) + "%)", note: "A tip of about " + p(pct) + "% is usual here. It isn't added to the bill: you leave it." });
+  else if (kind === "plustax") Object.assign(out, { label: "Sales tax (about " + p(pct) + "%)", note: "This restaurant's prices already include the tip; sales tax (about " + p(pct) + "%, varying by state and city) is added." });
+  else if (kind === "tax") Object.assign(out, { label: "Service", note: "Prices here include tax. Some restaurants also add a service charge, which this total leaves out.", counted: false });
+  else Object.assign(out, { label: "Service and tax", note: "Menu prices here include service and tax, so nothing is added." });
+  return out;
+}
+// o: { meal, price (per person, the restaurant's currency), type ("menu", "spend" or "main"), wine (the listed pairing or
+// null), withWine, estimateWine (allow an estimated pairing where none is listed), people }.
+function billFor(r, o) {
+  const people = Math.max(1, o.people || 1), out = { people, meal: o.meal, ok: true, why: "", approx: false };
+  if (o.price == null) return Object.assign(out, { ok: false, why: "No " + (o.meal || "menu") + " price is listed yet." });
+  if (o.type === "main") return Object.assign(out, { ok: false, why: "This is an à la carte restaurant: the price we have is a typical main course, so a whole bill can't be estimated honestly." });
+  const spend = o.type === "spend";
+  out.food = o.price; out.foodTotal = o.price * people;
+  out.wineState = !o.withWine ? "off" : spend ? "spend" : o.wine != null ? "listed" : r.noPairing ? "not-offered" : o.estimateWine ? "estimate" : "not-listed";
+  out.wine = out.wineState === "listed" ? o.wine : out.wineState === "estimate" ? Math.round(o.price * WINE_ESTIMATE) : null;
+  out.wineTotal = out.wine != null ? out.wine * people : 0;
+  out.subtotal = out.foodTotal + out.wineTotal;
+  // A typical spend is what diners report paying all in, so nothing is added to it.
+  out.terms = spend ? { kind: "spend", pct: 0, label: "Service", note: "A typical spend per person, from what diners report paying, not a set menu price; nothing is added to it.", counted: false } : serviceTerms(r);
+  out.extra = out.terms.counted && out.terms.pct ? Math.round(out.subtotal * out.terms.pct / 100) : 0;
+  out.total = out.subtotal + out.extra;
+  out.perPerson = out.total / people;
+  out.approx = out.extra > 0 || out.wineState === "estimate" || spend;
+  out.missing = [out.wineState === "not-listed" ? "wine" : "", out.terms.counted ? "" : out.terms.kind === "tax" || out.terms.kind === "before" ? "service" : ""].filter(Boolean);
+  return out;
+}
 // When the prices were last checked, for the receipts' footer (destination pages and /compare/).
 const PRICES_CHECKED = new Date("2026-10-15T12:00:00Z");
 
@@ -2587,6 +2638,17 @@ document.addEventListener("click", (e) => {
   else renderCookieBar(true);
 });
 const rowName = (el) => { const row = el.closest(".row"); const th = row && row.querySelector("[data-name]"); return th ? th.dataset.name.slice(0, 80) : ""; };
+// Links out are counted the same way whichever company they go to (Phase 1, 27 Oct 2026): the build says what a link is
+// for (`data-out`: booking, website, hotel, tour…), where it sits (`data-where`) and its restaurant (`data-r`, out_a() in
+// build.py), and the provider is named here from the address, so swapping a booking platform or making a partner paid
+// later changes no event. Directory Engine candidate, with out_a().
+const PROVIDERS = [["resy.com", "resy"], ["exploretock.com", "tock"], ["opentable.", "opentable"], ["sevenrooms.com", "sevenrooms"], ["thefork.", "thefork"],
+  ["tablecheck.com", "tablecheck"], ["covermanager.com", "covermanager"], ["omakase.in", "omakase"], ["quandoo.", "quandoo"], ["ikyu.com", "ikyu"],
+  ["pocket-concierge.jp", "pocket-concierge"], ["booking.com", "booking"], ["viator.com", "viator"], ["getyourguide.", "getyourguide"],
+  ["google.", "google"], ["guide.michelin.com", "michelin"], ["web.archive.org", "internet-archive"]];
+const COMMERCIAL_OUT = ["booking", "hotel", "tour"];
+const providerOf = (host, kind) => (PROVIDERS.find(([k]) => host.includes(k)) || [, kind === "website" || kind === "booking" || kind === "hotel" ? "own-site" : "other"])[1];
+const outRestaurant = (el) => { const r = el.closest("[data-r]"); return r ? r.dataset.r : DATA.restaurant ? DATA.restaurant.id : rowName(el); };
 document.addEventListener("click", (e) => {
   const el = e.target.closest("a, button");
   if (!el) return;
@@ -2596,12 +2658,14 @@ document.addEventListener("click", (e) => {
     // `link` joins the two, and `page` is the page's address, as Umami can't group a click's details together or by page.
     if (el.dataset.partner) {
       const where = el.dataset.where || "";
-      track("partner", { partner: el.dataset.partner, where, link: el.dataset.partner + " · " + where, paid: /sponsored/.test(el.rel) ? "yes" : "no", page: location.pathname });
+      track("partner", { partner: el.dataset.partner, provider: el.dataset.partner, kind: el.dataset.out || "", where, link: el.dataset.partner + " · " + where,
+        paid: /sponsored/.test(el.rel) ? "yes" : "no", restaurant: outRestaurant(el), page: location.pathname });
       return;
     }
     const kind = el.closest("#sharePanel") ? "share" : el.dataset.out || (el.classList.contains("src") ? "price-source" : el.classList.contains("map") || /google\.[a-z.]+\/maps/.test(el.href) ? "google-maps" : "other");
     if (kind === "share") track("share", { via: el.textContent.trim() });
-    else track("outbound", { kind, to: host, restaurant: rowName(el), page: location.pathname, spot: kind + " " + location.pathname });
+    else track("outbound", { kind, provider: providerOf(host, kind), to: host, restaurant: outRestaurant(el), where: el.dataset.where || "", page: location.pathname,
+      spot: kind + " " + location.pathname, commercial: COMMERCIAL_OUT.includes(kind) ? "yes" : "no", paid: /sponsored/.test(el.rel) ? "yes" : "no" });
     return;
   }
   if (el.dataset.lang) track("language", { lang: el.dataset.lang });

@@ -54,7 +54,7 @@ window.homeData = fetch("{{homeUrl}}").then((res) => { if (!res.ok) throw new Er
           <a href="#map" data-i18n="navMap">Map</a>
           <a href="#destinations" data-i18n="navDestinations">Destinations</a>
           <a href="/near-me/" class="nav-near"><svg aria-hidden="true"><use href="#locate"/></svg><span data-i18n="navNear">Near me</span></a>
-          <a href="/pick/" class="nav-pick"><svg aria-hidden="true"><use href="#spark"/></svg><span data-i18n="navPick">Help me pick</span></a>
+          <a href="/pick/" class="nav-pick"><svg aria-hidden="true"><use href="#spark"/></svg><span data-i18n="navPick">Budget search</span></a>
           <a href="/guides/" class="nav-guides" data-i18n="navGuides">Guides</a>
         </nav>
         <button type="button" class="account-btn" id="accountBtn"></button>
@@ -83,6 +83,8 @@ window.homeData = fetch("{{homeUrl}}").then((res) => { if (!res.ok) throw new Er
     <div class="hero-main">
       <h1>{{h1}}</h1>
       <p>{{heroText}}</p>
+      {{budgetForm}}
+      <p class="home-or"><label for="homeQ">Or look up a restaurant, chef or city by name</label></p>
       <div class="home-search" id="search">
         <label class="search" for="homeQ">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>

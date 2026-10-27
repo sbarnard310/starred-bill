@@ -1,15 +1,20 @@
-// /pick/ ("Help me pick"): six quick questions, one per screen, then three picks with a reason each.
-// Everything runs in the browser from /data/near.json (build_near_me() in build.py); a location is never sent anywhere.
-// The answers go in the web address (?w=…&m=…&go=1), so a result can be shared or reopened.
-// Weekend mode (m=weekend): a lunch and a dinner at two restaurants near each other, within one budget for both.
+// /pick/ (Budget Search, until 27 Oct 2026 "Help me pick"): six quick questions, one per screen, then three picks with a
+// reason each: the best match, the best value and a stretch (worth going a little over budget for), each with what the
+// whole table is likely to pay. Everything runs in the browser from /data/near.json (build_near_me() in build.py); a
+// location is never sent anywhere. The answers go in the web address (?w=…&p=2&b=400&m=…&go=1), so a result can be shared
+// or reopened, and the homepage's budget form (home.js) sends them here the same way.
+// The budget is the estimated total for the table (p people), including what's usually added where each restaurant is
+// (billFor() in common.js). Weekend mode (m=weekend): a lunch and a dinner at two restaurants near each other, one budget for both.
 
 const STEPS = ["where", "meal", "budget", "stars", "food", "diet"];
+// The slider's steps per person; the budget shown and searched is the step times the people at the table.
 const BUDGETS_ONE = [50, 75, 100, 125, 150, 200, 250, 300, 400, 500, 750, 1000, 0];  // 0 = no limit
 const BUDGETS_TWO = [100, 150, 200, 250, 300, 400, 500, 600, 750, 1000, 1250, 1500, 2000, 0];  // weekend mode: both meals together
-const budgets = () => ask.meal === "weekend" ? BUDGETS_TWO : BUDGETS_ONE;
+const budgets = () => (ask.meal === "weekend" ? BUDGETS_TWO : BUDGETS_ONE).map((v) => v * ask.people);
+const PEOPLE_MAX = 12;
+const STRETCH = 1.25;  // the stretch pick may cost up to a quarter more than the budget
 const PAIR_KM = 40;  // weekend mode: the lunch and the dinner at most this far apart
 const NEAR_KM = [25, 50, 100, 200, 400], NEAR_MI = [15, 30, 60, 125, 250];  // circles for "Near me", in round numbers either way
-const WINE_ROOM = 1.6;  // with no pairing price listed, the menu must leave about 60% for one (the median pairing is ~56% of the menu)
 const STAR_WORDS = { 1: "one-star", 2: "two-star", 3: "three-star" };
 const DIET_CHOICES = [["", "No dietary needs"], ["vegetarian", "Vegetarian"], ["vegan", "Vegan"], ["gluten-free", "Gluten-free"], ["halal", "Halal"], ["kosher", "Kosher"]];
 // "Food mood": our cuisine categories (CUISINE_CATEGORIES in build.py) in a dozen plain groups; the rest are "Classic & regional".
@@ -37,10 +42,10 @@ const moodName = (k) => MOODS.find(([m]) => m === k)[1];
 const cuisineMid = (c) => c.replace(/^(Modern|Creative|Classic|Regional|Farm|Fusion|International|Seafood|Steak|Barbecue|Vegetarian|Vegan|Street|Sushi|Tempura|Yakitori)\b/, (w) => w.toLowerCase());
 
 const ask = {
-  rows: null, step: 0, where: null, meal: null, budget: null, cur: null, wine: false, stars: null, food: null, diet: null,
-  shown: 0, withVisited: false
+  rows: null, step: 0, where: null, meal: null, budget: null, cur: null, wine: false, knownWine: false, people: 2, stars: null, food: null, diet: null,
+  shown: 0, withVisited: false, stretchBy: 1, src: "pick"
 };
-shareText = () => "Help me pick a Michelin star restaurant: six questions, three picks, or a lunch and a dinner for a weekend away";
+shareText = () => "Find a Michelin star restaurant for your budget: six questions, three picks with the whole bill, or a lunch and a dinner for a weekend away";
 
 // ---------- Data ----------
 const dataReady = getData(DATA.nearUrl).then((d) => {
@@ -53,8 +58,10 @@ const money = (n, cur) => symbolOf(cur) + Math.round(n).toLocaleString("en-GB");
 const budgetValue = () => budgets()[ask.budget];
 const budgetText = () => budgetValue() ? money(budgetValue(), ask.cur) : "No limit";
 
-// What a restaurant costs for the chosen meal: { meal, price (its own currency), wine, total (visitor's currency), est }.
-// "value" (and "weekend", for one restaurant on its own) takes whichever of lunch and dinner is cheaper. null when there's no price for that meal.
+// What a restaurant costs the table for the chosen meal: { meal, price and wine (per person, its own currency), calc (billFor()
+// in common.js: food, wine, what's added and why, in its own currency), total (the table's estimated total in the visitor's
+// currency), est (the pairing is our estimate, as it lists none) }. "value" (and "weekend", for one restaurant on its own)
+// takes whichever of lunch and dinner is cheaper. null when there's no set-menu price for that meal.
 function bill(r, meal) {
   meal = meal || ask.meal || "dinner";
   const opts = [];
@@ -62,8 +69,9 @@ function bill(r, meal) {
   if (meal !== "dinner" && r.lunch > 0) opts.push({ meal: "lunch", price: r.lunch, wine: r.lunchWine });
   if (!opts.length || !DATA.currencies[r.cur]) return null;
   opts.forEach((o) => {
-    o.est = ask.wine && o.wine == null;
-    o.total = toCur(o.price + (ask.wine ? (o.wine != null ? o.wine : o.price * (WINE_ROOM - 1)) : 0), r.cur);
+    o.calc = billFor(r, { meal: o.meal, price: o.price, type: "menu", wine: o.wine, withWine: ask.wine, estimateWine: true, people: ask.people });
+    o.est = o.calc.wineState === "estimate";
+    o.total = toCur(o.calc.total, r.cur);
   });
   return opts.sort((a, b) => a.total - b.total)[0];
 }
@@ -79,7 +87,11 @@ function inWhere(r) {
 const TESTS = {
   where: (r) => inWhere(r) && (ask.withVisited || !visitedIds().includes(r.id)),
   meal: (r) => ask.meal === "weekend" ? r.lunch > 0 || (r.dinnerType === "menu" && r.dinner != null) : !(ask.meal === "lunch" && r.lunch === -1),
-  budget: (r) => { if (!budgetValue()) return true; const b = bill(r); return !!b && b.total <= budgetValue() + 0.5; },
+  budget: (r) => {
+    const b = bill(r);
+    if (ask.wine && ask.knownWine && (!b || b.est)) return false;  // "Only restaurants that list their pairing price"
+    return !budgetValue() || (!!b && b.total <= budgetValue() * ask.stretchBy + 0.5);
+  },
   stars: (r) => !ask.stars || r.stars >= ask.stars,
   food: (r) => !ask.food || !ask.food.length || ask.food.includes(moodOf(r)),
   diet: (r) => hasDiet(r, ask.diet)
@@ -201,14 +213,18 @@ const STEP_HTML = {
   },
   budget() {
     const two = ask.meal === "weekend";
-    return '<h2 tabindex="-1">' + (two ? "What's your budget for both meals?" : "What\'s your budget per person?") + "</h2>" +
-      '<p class="pick-hint">' + (two ? "Per person, for the lunch and the dinner together" : "For the menu") + ", before service" + (ask.meal === "value" ? ", at lunch or dinner" : "") + ". Prices in other currencies are converted.</p>" +
+    return '<h2 tabindex="-1">' + (two ? "What's your budget for both meals?" : "What\'s your budget for the table?") + "</h2>" +
+      '<p class="pick-hint" id="budgetHint">' + budgetHint() + "</p>" +
+      '<div class="pick-people"><span id="peopleLabel">Table for</span><div class="stepper" role="group" aria-labelledby="peopleLabel">' +
+      '<button type="button" data-people="-1" aria-label="One fewer person">−</button><output id="peopleN" aria-live="polite">' + ask.people + "</output>" +
+      '<button type="button" data-people="1" aria-label="One more person">+</button></div></div>' +
       '<div class="pick-budget"><div class="pick-amount" id="budgetShow"></div>' +
       '<div class="seg pick-cur" role="group" aria-label="Currency">' + DATA.switchable.map((c) => '<button type="button" data-cur="' + c + '" aria-pressed="' + (ask.cur === c) + '">' + esc(DATA.currencies[c].symbol) + "</button>").join("") + "</div></div>" +
-      '<input type="range" class="pick-range" id="budgetRange" min="0" max="' + (budgets().length - 1) + '" step="1" value="' + ask.budget + '" aria-label="' + (two ? "Budget per person for both meals" : "Budget per person") + '">' +
-      '<div class="pick-scale"><span>' + money(budgets()[0], ask.cur) + "</span><span>No limit</span></div>" +
+      '<input type="range" class="pick-range" id="budgetRange" min="0" max="' + (budgets().length - 1) + '" step="1" value="' + ask.budget + '" aria-label="' + (two ? "Budget for both meals, for the table" : "Budget for the table") + '">' +
+      '<div class="pick-scale"><span id="budgetLow">' + money(budgets()[0], ask.cur) + "</span><span>No limit</span></div>" +
       '<label class="pick-wine"><input type="checkbox" id="wineBox"' + (ask.wine ? " checked" : "") + "> Include a wine pairing</label>" +
-      '<p class="pick-note" id="wineNote"' + (ask.wine ? "" : " hidden") + ">Where a restaurant doesn't list its pairing price, we leave room for one: about 60% on top of the menu, which is typical.</p>" +
+      '<div id="wineMore"' + (ask.wine ? "" : " hidden") + '><p class="pick-note">' + esc(wineNoteText()) + "</p>" +
+      '<label class="pick-wine pick-known"><input type="checkbox" id="knownBox"' + (ask.knownWine ? " checked" : "") + "> Only restaurants that list their pairing price</label></div>" +
       '<p class="pick-fit" id="budgetFit" aria-live="polite"></p>' +
       '<div class="pick-next"><button type="button" class="cta-btn" data-next="budget">Next</button></div>';
   },
@@ -301,9 +317,16 @@ function locate() {
 }
 
 // ---------- Budget ----------
+const forWhom = () => "for " + (ask.people === 1 ? "one" : ask.people);
+const budgetHint = () => "The estimated total " + forWhom() + (ask.meal === "weekend" ? ", lunch and dinner together" : ask.meal === "value" ? ", at lunch or dinner" : "") +
+  ", including the service, tax or tip usually added where each restaurant is. Prices in other currencies are converted.";
+const wineNoteText = () => "Where a restaurant doesn't list its pairing price, we add an estimate (about 60% of the menu, a typical pairing) and mark the total ≈.";
 function updateBudget() {
   if (!$("budgetShow")) return;
-  $("budgetShow").innerHTML = budgetValue() ? money(budgetValue(), ask.cur) + " <small>per person" + (ask.meal === "weekend" ? " for both" : "") + (ask.wine ? ", with wine" : "") + "</small>" : "No limit";
+  $("budgetShow").innerHTML = budgetValue() ? money(budgetValue(), ask.cur) + " <small>" + forWhom() + (ask.meal === "weekend" ? ", both meals" : "") + (ask.wine ? ", with wine" : "") + "</small>" : "No limit";
+  if ($("budgetLow")) $("budgetLow").textContent = money(budgets()[0], ask.cur);
+  if ($("budgetHint")) $("budgetHint").textContent = budgetHint();
+  if ($("peopleN")) $("peopleN").textContent = ask.people;
   const fit = pool(3).length, all = pool(2).length;
   const priced = pool(2).filter((r) => bill(r)).length;
   $("budgetFit").innerHTML = budgetValue()
@@ -365,7 +388,11 @@ document.addEventListener("click", (e) => {
     prefChosen("currency", ask.cur);
     if ($("budgetRange")) { renderStep(); } else showResult();
   }
-  else if (b.dataset.next === "budget") { track("pick-step", { step: "budget", answer: budgetValue() ? budgetValue() + " " + ask.cur : "no-limit", wine: ask.wine ? "yes" : "no" }); advance(); }
+  else if (b.dataset.people) {
+    ask.people = Math.min(PEOPLE_MAX, Math.max(1, ask.people + Number(b.dataset.people)));
+    updateBudget(); renderLeft();
+  }
+  else if (b.dataset.next === "budget") { track("pick-step", { step: "budget", answer: budgetValue() ? budgetValue() + " " + ask.cur : "no-limit", people: ask.people, wine: ask.wine ? "yes" : "no" }); advance(); }
   else if (b.dataset.stars != null && b.closest("#quiz")) { ask.stars = Number(b.dataset.stars); track("pick-step", { step: "stars", answer: String(ask.stars) }); advance(); }
   else if (b.dataset.food) {
     const k = b.dataset.food, list = ask.food || [];
@@ -400,12 +427,13 @@ document.addEventListener("input", (e) => {
   if (e.target.id === "budgetRange") { ask.budget = Number(e.target.value); updateBudget(); renderLeft(); }
 });
 document.addEventListener("change", (e) => {
-  if (e.target.id === "wineBox") { ask.wine = e.target.checked; $("wineNote").hidden = !ask.wine; updateBudget(); renderLeft(); }
+  if (e.target.id === "wineBox") { ask.wine = e.target.checked; $("wineMore").hidden = !ask.wine; updateBudget(); renderLeft(); }
+  if (e.target.id === "knownBox") { ask.knownWine = e.target.checked; updateBudget(); renderLeft(); }
 });
 window.addEventListener("sb:wishlist", () => { renderWishCount(); document.querySelectorAll("[data-wish]").forEach((b) => { const on = loadWishlist().includes(b.dataset.wish); b.classList.toggle("on", on); b.setAttribute("aria-pressed", String(on)); }); });
 window.addEventListener("sb:visited", () => { if (!$("result").hidden) showResult(); });
 function restart() {
-  Object.assign(ask, { step: 0, where: null, meal: null, budget: BUDGETS_ONE.indexOf(200), wine: false, stars: null, food: null, diet: homeDiet(), withVisited: false, started: true });
+  Object.assign(ask, { step: 0, where: null, meal: null, budget: BUDGETS_ONE.indexOf(200), wine: false, knownWine: false, people: 2, stars: null, food: null, diet: homeDiet(), withVisited: false, started: true, src: "pick" });
   history.replaceState(null, "", location.pathname);
   track("pick-restart");
   renderStep();
@@ -432,7 +460,16 @@ function choose(list) {
   const rising = rest.filter((r) => r.change === "new" || r.change === "up")[0];
   const different = rest.filter((r) => best && moodOf(r) !== moodOf(best))[0];
   const wild = rising || different || rest[0];
-  return { ranked, best, value, wild, wildWhy: wild === rising ? "rising" : wild === different ? "different" : "next" };
+  return { ranked, best, value, wild, wildWhy: wild === rising ? "rising" : wild === different ? "different" : "next", stretch: stretchPick(list, best, [best, value]) };
+}
+// The stretch: a restaurant up to a quarter over the budget (STRETCH) that's worth it, with more stars than the best match
+// or far more critics' acclaim (25 critics' points more, about a top-50 place). Only with a budget, and not for weekends.
+function stretchPick(list, best, taken) {
+  if (!budgetValue() || ask.meal === "weekend") return null;
+  const within = new Set(list);
+  const worth = (r) => !best || r.stars > best.stars || (r.ac || 0) >= (best.ac || 0) + 25;
+  return pool(6, { stretchBy: STRETCH }).filter((r) => !within.has(r) && !taken.includes(r) && bill(r) && worth(r))
+    .sort((a, b) => b.stars - a.stars || (b.ac || 0) - (a.ac || 0) || bill(a).total - bill(b).total)[0] || null;
 }
 function reason(kind, r, ctx) {
   const b = bill(r);
@@ -441,43 +478,63 @@ function reason(kind, r, ctx) {
     return (loadWishlist().includes(r.id) ? "On your wishlist, and the " : "The ") + (r.ac ? "most acclaimed " : "top ") + STAR_WORDS[r.stars] + " " + (ctx.whereShort ? ctx.whereShort + " " : "") +
       "that fits your answers" + (r.critics ? ": " + criticsText(r) + "." : ".");
   }
-  if (kind === "value") return (r.stars === 1 ? "A star" : r.stars === 2 ? "Two stars" : "Three stars") + " for " + (b.est ? "about " : "") + money(b.total, ask.cur) + (ask.wine ? " with wine" : "") + " at " + mealWord(b) +
+  if (kind === "value") return (r.stars === 1 ? "A star" : r.stars === 2 ? "Two stars" : "Three stars") + " for about " + money(b.total, ask.cur) + " " + forWhom() + (ask.wine ? " with wine" : "") + " at " + mealWord(b) +
     ": the least per star of your " + plural(ctx.n, "match", "matches") + ".";
+  if (kind === "stretch") {
+    const over = b.total - budgetValue(), best = ctx.best;
+    return "About " + money(over, ask.cur) + " over your budget, for " + (best && r.stars > best.stars ? (r.stars - best.stars === 1 ? "a star more" : "two stars more") + " than your best match" : "one of the most acclaimed tables around" + (r.critics ? " (" + criticsText(r) + ")" : "")) + ".";
+  }
   if (ctx.wildWhy === "rising") return r.change === "new" ? "A wildcard: newly starred in the latest MICHELIN Guide." : "A wildcard: promoted to " + (r.stars === 3 ? "three stars" : "two stars") + " in the latest MICHELIN Guide.";
   if (ctx.wildWhy === "different") return "A wildcard: something different, " + (r.cuisine ? cuisineMid(r.cuisine) : moodName(moodOf(r)).toLowerCase()) + (r.critics ? ", " + criticsText(r) : "") + ".";
   return "Also a strong fit" + (r.critics ? ": " + criticsText(r) : "") + ".";
 }
+// A pick's price: the table's estimated total first and large, then what it's made of, per person in the restaurant's money.
+const approxMark = (b, r) => b.calc.approx || r.cur !== ask.cur ? "≈ " : "";
+function addedText(c) {
+  if (c.extra) return "+ " + c.terms.label.replace(/^Typical /, "").toLowerCase();
+  return c.terms.counted ? "service included" : c.terms.kind === "tax" ? "service not counted" : "service not known";
+}
 function priceLines(r) {
   const b = bill(r), out = [];
   if (!b) return '<span class="pc-price">' + (ask.meal === "lunch" && r.lunch == null ? "Lunch price not listed yet" : "Price not listed yet") + "</span>";
-  const local = localMoney(b.price, r.cur);
-  const conv = r.cur !== ask.cur ? ' <span class="pc-conv">≈ ' + money(toCur(b.price, r.cur), ask.cur) + "</span>" : "";
-  out.push('<span class="pc-price"><strong>' + local + "</strong>" + conv + " " + mealWord(b) + " menu</span>");
-  if (ask.wine) out.push('<span class="pc-sub">' + (b.wine != null ? "+ " + localMoney(b.wine, r.cur) + " wine pairing" : "Wine pairing price not listed") + "</span>");
-  else if (b.wine != null) out.push('<span class="pc-sub">Wine pairing ' + localMoney(b.wine, r.cur) + "</span>");
-  if (b.meal === "dinner" && r.lunch > 0) out.push('<span class="pc-sub">Lunch ' + localMoney(r.lunch, r.cur) + "</span>");
-  if (b.meal === "lunch" && r.dinnerType === "menu" && r.dinner != null) out.push('<span class="pc-sub">Dinner ' + localMoney(r.dinner, r.cur) + "</span>");
-  if (ask.wine && b.est) out.push('<span class="pc-sub pc-est">Total with a typical pairing ≈ ' + money(b.total, ask.cur) + "</span>");
+  const c = b.calc;
+  out.push('<span class="pc-total"><strong>' + approxMark(b, r) + money(b.total, ask.cur) + "</strong> " + forWhom() + ", " + mealWord(b) + (ask.wine && c.wine != null ? " with wine" : "") + "</span>");
+  out.push('<span class="pc-sub">' + localMoney(b.price, r.cur) + " " + mealWord(b) + " menu" +
+    (c.wineState === "listed" ? " + " + localMoney(c.wine, r.cur) + " wine pairing" : c.wineState === "estimate" ? " + about " + localMoney(c.wine, r.cur) + " wine (our estimate)" : "") +
+    " per person · " + addedText(c) + "</span>");
+  if (c.wineState === "estimate") out.push('<span class="pc-sub pc-est">No pairing price listed, so the wine is our estimate (60% of the menu)</span>');
+  if (c.wineState === "not-offered") out.push('<span class="pc-sub pc-est">No wine pairing offered: wine isn\'t counted</span>');
+  if (!ask.wine && b.wine != null) out.push('<span class="pc-sub">Wine pairing ' + localMoney(b.wine, r.cur) + " a person</span>");
+  if (b.meal === "dinner" && r.lunch > 0) out.push('<span class="pc-sub">Lunch menu ' + localMoney(r.lunch, r.cur) + "</span>");
+  if (b.meal === "lunch" && r.dinnerType === "menu" && r.dinner != null) out.push('<span class="pc-sub">Dinner menu ' + localMoney(r.dinner, r.cur) + "</span>");
   return out.join("");
 }
 const BADGE_DIETS = [["vegetarian-only", "badgeVegOnly", "dietVegOnly"], ["vegetarian-menu", "badgeVegMenu", "dietVegMenu"], ["vegan", "badgeVegan", "dietVegan"]];
 const badges = (r) => BADGE_DIETS.filter(([d]) => r.diets.includes(d) && !(d === "vegetarian-menu" && r.diets.includes("vegetarian-only")))
   .map(([, short, full]) => '<span class="diet-badge" title="' + esc(t(full)) + '"><svg aria-hidden="true"><use href="#leaf"/></svg>' + esc(t(short)) + "</span>").join("");
-const linkOf = (r) => r.path + "?q=" + encodeURIComponent(r.name);
+// A pick opens its restaurant page with the Bill set to the search's table (restaurant.js reads p, m and wine), else its row on the town's page.
+const linkOf = (r) => r.rp ? "/restaurants/" + r.id + "/?p=" + ask.people + "&m=" + (bill(r) ? bill(r).meal : ask.meal === "lunch" ? "lunch" : "dinner") + (ask.wine ? "&wine=1" : "")
+  : r.path + "?q=" + encodeURIComponent(r.name);
 function wishBtn(r) {
   const on = loadWishlist().includes(r.id);
   return '<button type="button" class="wish' + (on ? " on" : "") + '" data-wish="' + esc(r.id) + '" aria-pressed="' + on + '" aria-label="' + esc(t(on ? "wishRemove" : "wishAdd", { name: r.name })) + '">' + heart + "</button>";
 }
 function card(kind, label, r, ctx) {
   if (!r) return "";
-  return '<article class="pick-card pick-' + kind + '"><div class="pc-head"><span class="pc-label">' + label + "</span>" + wishBtn(r) + "</div>" +
+  return '<article class="pick-card pick-' + kind + '" data-slot="' + kind + '" data-r="' + esc(r.id) + '"><div class="pc-head"><span class="pc-label">' + label + "</span>" + wishBtn(r) + "</div>" +
     '<h3><a href="' + esc(linkOf(r)) + '">' + esc(r.name) + "</a></h3>" + starIcons(r.stars) +
     '<p class="pc-where">' + esc(r.cuisine) + " · " + esc(r.where) + "</p>" +
     (r.chef ? '<p class="pc-chef">' + esc(t("chefLabel", { name: r.chef })) + "</p>" : "") +
     '<p class="pc-why">' + esc(reason(kind, r, ctx)) + "</p>" +
     '<div class="pc-prices">' + priceLines(r) + "</div>" +
     (badges(r) ? '<div class="diet-badges">' + badges(r) + "</div>" : "") +
-    '<a class="pc-go" href="' + esc(linkOf(r)) + '">Compare prices →</a></article>';
+    '<a class="pc-go" href="' + esc(linkOf(r)) + '">' + (r.rp ? "See the whole bill →" : "Compare prices →") + "</a></article>";
+}
+// The third card when there's no stretch: why not, so the slot never looks broken.
+function noStretchCard() {
+  return '<article class="pick-card pick-stretch pick-none" data-slot="stretch"><div class="pc-head"><span class="pc-label">Stretch</span></div>' +
+    "<p class=\"pc-why\">" + (budgetValue() ? "Nothing up to a quarter over your budget beats your best match on stars or critics' acclaim, so there's no need to stretch."
+      : "With no budget limit there's nothing to stretch for: your best match is the pick.") + "</p></article>";
 }
 // Weekend mode: one plan is a lunch and a dinner, with the total for both.
 const STARS_IN_WORDS = ["", "One star", "Two stars", "Three stars", "Four stars", "Five stars", "Six stars"];
@@ -502,9 +559,9 @@ function planMeal(r, meal) {
 function planCard(kind, label, p, ctx) {
   if (!p) return "";
   const est = ask.wine && (p.l._l.est || p.d._d.est);
-  return '<article class="pick-card pick-plan pick-' + kind + '"><span class="pc-label">' + label + "</span>" +
+  return '<article class="pick-card pick-plan pick-' + kind + '" data-slot="' + kind + '"><span class="pc-label">' + label + "</span>" +
     '<p class="pc-why">' + esc(planReason(kind, p, ctx)) + "</p>" + planMeal(p.l, "lunch") + planMeal(p.d, "dinner") +
-    '<div class="pc-prices"><span class="pc-price"><strong>' + (est ? "≈ " : "") + money(p.total, ask.cur) + "</strong> per person for both" + (ask.wine ? ", with wine" : "") + "</span>" +
+    '<div class="pc-prices"><span class="pc-total"><strong>≈ ' + money(p.total, ask.cur) + "</strong> " + forWhom() + ", both meals" + (ask.wine ? " with wine" : "") + "</span>" +
     (est ? '<span class="pc-sub pc-est">Includes a typical pairing where the price isn\'t listed</span>' : "") +
     '<span class="pc-sub">' + (p.km < 1 ? "Less than 1 km apart" : useMiles() ? Math.round(p.km / 1.609344) + (Math.round(p.km / 1.609344) === 1 ? " mile" : " miles") + " apart" : Math.round(p.km) + " km apart") + "</span></div></article>";
 }
@@ -528,7 +585,7 @@ function compareTable(picks) {
     row("Dinner menu", cols.map(([, r]) => r.dinnerType === "menu" && r.dinner != null ? price(r.dinner, r) : "Not listed"), true),
     row("Lunch", cols.map(([, r]) => r.lunch > 0 ? price(r.lunch, r) : r.lunch === -1 ? "No lunch" : "Not listed"), true),
     row("Wine pairing", cols.map(([, r], i) => { const b = bills[i], w = b ? b.wine : r.wine; return w != null ? price(w, r) + (b && b.meal === "lunch" ? " <small>with lunch</small>" : "") : "Not listed"; }), true),
-    row("Your " + meal + (ask.wine ? " with wine" : ""), cols.map(([, r], i) => { const b = bills[i]; return b ? "<strong>" + (b.est ? "≈ " : "") + money(b.total, ask.cur) + "</strong>" + (ask.meal === "value" ? " <small>" + b.meal + "</small>" : "") + (Math.round(b.total) === Math.round(low) && totals.length > 1 ? tick : "") : "Not listed"; }), true),
+    row("Estimated total " + forWhom() + (ask.wine ? ", with wine" : ""), cols.map(([, r], i) => { const b = bills[i]; return b ? "<strong>" + approxMark(b, r) + money(b.total, ask.cur) + "</strong>" + (ask.meal === "value" ? " <small>" + b.meal + "</small>" : "") + (Math.round(b.total) === Math.round(low) && totals.length > 1 ? tick : "") : "Not listed"; }), true),
     row("Critics’ lists", cols.map(([, r]) => r.critics ? esc(criticsText(r)) : "–")),
     row("Dietary", cols.map(([, r]) => badges(r) || "–"))
   ];
@@ -537,20 +594,20 @@ function compareTable(picks) {
     '<div id="cmpBox" hidden><div class="pick-cmp-wrap"><table class="pick-cmp" style="--n: ' + cols.length + '"><thead><tr><td></td>' +
     cols.map(([label, r]) => '<th scope="col"><span class="pc-label">' + label + '</span><a href="' + esc(linkOf(r)) + '">' + esc(r.name) + "</a></th>").join("") +
     "</tr></thead><tbody>" + rows.join("") + "</tbody></table></div>" +
-    '<p class="pick-note">Prices per person before service. <a href="/compare/?r=' + esc(ids) + '">See them as till receipts in Compare →</a></p></div></div>';
+    '<p class="pick-note">Menu and wine prices per person, before service; the totals are for your table and add the service, tax or tip usually added there. <a href="/compare/?r=' + esc(ids) + '">See them as till receipts in Compare →</a></p></div></div>';
 }
 function summary() {
   const food = ask.food && ask.food.length ? ask.food.map(moodName).join(", ") : "Any food";
   const parts = [
     ask.where.near ? "Near me" : ask.where.any ? "Anywhere" : ask.where.name,
     ask.meal === "weekend" ? "Lunch and dinner" : ask.meal === "value" ? "Best-value meal" : ask.meal === "lunch" ? "Lunch" : "Dinner",
-    (budgetValue() ? "Up to " + money(budgetValue(), ask.cur) + (ask.meal === "weekend" ? " for both" : "") : "No budget limit") + (ask.wine ? " with wine" : ""),
+    (budgetValue() ? "Up to " + money(budgetValue(), ask.cur) + " " + forWhom() + (ask.meal === "weekend" ? ", both meals" : "") : "No budget limit, " + forWhom()) + (ask.wine ? " with wine" + (ask.knownWine ? " (listed prices only)" : "") : ""),
     ask.stars ? (ask.stars === 3 ? "Three stars" : "Two stars or more") : "Any stars",
     food, ask.diet ? DIET_CHOICES.find(([k]) => k === ask.diet)[1] : "No dietary needs"
   ];
   return '<div class="pick-summary" aria-label="Your answers">' + parts.map((p, i) => '<button type="button" class="pick-chip" data-edit="' + i + '" title="Change this answer">' + esc(p) + ' <span aria-hidden="true">✎</span></button>').join("") + "</div>";
 }
-// "Stretch your budget": at dinner, a lunch within the same budget that gets more stars than the best dinner match.
+// "Cheaper at lunch": at dinner, a lunch within the same budget that gets more stars than the best dinner match.
 function lunchHack(best) {
   if (ask.meal !== "dinner" || !budgetValue()) return "";
   const lunches = pool(2).filter((r) => TESTS.food(r) && TESTS.diet(r) && TESTS.stars(r) && r.lunch > 0)
@@ -559,8 +616,8 @@ function lunchHack(best) {
   const r = lunches[0];
   if (!r) return "";
   const b = bill(r, "lunch");
-  return '<div class="pick-hack"><p><strong>Stretch your budget:</strong> <a href="' + esc(linkOf(r)) + '">' + esc(r.name) + "</a> " + starIcons(r.stars) +
-    " serves lunch for " + (b.est ? "about " : "") + money(b.total, ask.cur) + (ask.wine ? " with wine" : "") + ", " + (best ? (r.stars - best.stars === 1 ? "a star more" : "two stars more") + " than any dinner" : "and no dinner fits") + " within " + budgetText() + ".</p>" +
+  return '<div class="pick-hack" data-slot="lunch-tip" data-r="' + esc(r.id) + '"><p><strong>Cheaper at lunch:</strong> <a href="' + esc(linkOf(r)) + '">' + esc(r.name) + "</a> " + starIcons(r.stars) +
+    " serves lunch for about " + money(b.total, ask.cur) + " " + forWhom() + (ask.wine ? " with wine" : "") + ", " + (best ? (r.stars - best.stars === 1 ? "a star more" : "two stars more") + " than any dinner" : "and no dinner fits") + " within " + budgetText() + ".</p>" +
     '<button type="button" class="linkish" data-relax="lunch">Show me lunch picks</button></div>';
 }
 // Nothing fits: offer the single changes that would bring some back.
@@ -575,11 +632,12 @@ function relaxOptions() {
   if (ask.stars) tryIt("Any number of stars", "stars:0", { stars: 0 });
   if (ask.food && ask.food.length) tryIt("Any food", "food:", { food: [] });
   if (ask.diet) tryIt("Leave out the dietary filter", "diet:", { diet: "" });
+  if (ask.wine && ask.knownWine) tryIt("Include estimated wine prices", "kw:", { knownWine: false });
   if (ask.wine) tryIt("Without wine", "wine:", { wine: false });
   if (ask.where.near && ask.where.km < 400) tryIt("Look further afield", "km", { where: Object.assign({}, ask.where, { km: 402.336 }) });
   // No single change is enough: loosen answers one after another, least important first, until something fits.
   if (!out.length) {
-    const steps = [["food", [], "any food"], ["stars", 0, "any stars"], ["diet", "", "no dietary filter"], ["wine", false, "no wine"], ["meal", "value", "the cheaper meal"], ["budget", budgets().length - 1, "no budget limit"]]
+    const steps = [["food", [], "any food"], ["stars", 0, "any stars"], ["diet", "", "no dietary filter"], ["knownWine", false, "estimated wine prices"], ["wine", false, "no wine"], ["meal", "value", "the cheaper meal"], ["budget", budgets().length - 1, "no budget limit"]]
       .filter(([k]) => !(k === "meal" && ask.meal === "weekend"));
     const o = {}, said = [];
     for (const [k, v, label] of steps) {
@@ -603,6 +661,7 @@ function relax(key) {
     else if (k === "food") ask.food = [];
     else if (k === "diet") ask.diet = "";
     else if (k === "wine") ask.wine = false;
+    else if (k === "kw") ask.knownWine = false;
   }
   showResult();
 }
@@ -614,13 +673,14 @@ function showResult() {
   ctx.n = list.length;
   ctx.one = two && !ctx.value;
   ctx.whereShort = ask.where.near ? "near you" : ask.where.any ? "" : "in " + ask.where.name;
-  ask.list = two ? [] : ctx.ranked.filter((r) => r !== ctx.best && r !== ctx.value && r !== ctx.wild);
-  const plans = [ctx.best, ctx.value, ctx.wild].filter(Boolean).length;
+  ask.list = two ? [] : ctx.ranked.filter((r) => r !== ctx.best && r !== ctx.value && r !== ctx.wild && r !== ctx.stretch);
+  const plans = [ctx.best, ctx.value, two ? ctx.wild : ctx.stretch].filter(Boolean).length;
   ask.shown = 0;
   const left = ask.withVisited ? 0 : pool(1, { withVisited: true }).length - pool(1).length;
   const head = '<div class="pick-rhead"><div><span class="eyebrow">Your picks</span><h2 tabindex="-1" id="resultH">' +
     (!list.length ? "Nothing fits all your answers" : (two ? (plans === 1 ? "One lunch and dinner" : (plans === 2 ? "Two" : "Three") + " lunch and dinner plans from " + plural(list.length, "restaurant"))
-      : list.length === 1 ? "One restaurant fits" : list.length === 2 ? "Two restaurants fit" : "Three picks from " + plural(list.length, "match", "matches")) + " " + esc(ask.where.label)) + "</h2></div>" +
+      : list.length === 1 ? "One restaurant fits" : list.length === 2 && !ctx.stretch ? "Two restaurants fit"
+        : (plans === 3 ? "Three" : "Two") + " picks from " + plural(list.length, "match", "matches")) + " " + esc(ask.where.label)) + "</h2></div>" +
     '<div class="pick-actions">' + (list.length ? '<button type="button" class="cta-btn" id="shareBtnPick"><svg aria-hidden="true"><use href="#share"/></svg> Share picks</button>' : "") +
     (canSave() ? '<button type="button" class="pick-ghost" data-save-search=""><svg aria-hidden="true"><use href="#bell"/></svg> Save search</button>' : "") +
     '<button type="button" class="pick-ghost" id="restartBtn">Start again</button></div></div>' + summary();
@@ -633,8 +693,10 @@ function showResult() {
       '<p class="pick-note">Plans pair two different restaurants no more than ' + (useMiles() ? "25 miles" : PAIR_KM + " km") + " apart. Only restaurants with prices on the site are included.</p>";
   } else {
     bodyHtml = lunchHack(ctx.best) +
-      '<div class="pick-cards">' + card("best", "Best match", ctx.best, ctx) + card("value", "Best value", ctx.value, ctx) + card("wild", "Wildcard", ctx.wild, ctx) + "</div>" +
-      compareTable([["Best match", ctx.best], ["Best value", ctx.value], ["Wildcard", ctx.wild]]) +
+      '<div class="pick-cards">' + card("best", "Best match", ctx.best, ctx) + card("value", "Best value", ctx.value, ctx) +
+        (ctx.stretch ? card("stretch", "Stretch", ctx.stretch, ctx) : ctx.value ? noStretchCard() : "") + "</div>" +
+      (ctx.wild && ctx.wild !== ctx.stretch ? wildLine(ctx.wild, ctx) : "") +
+      compareTable([["Best match", ctx.best], ["Best value", ctx.value], ["Stretch", ctx.stretch]]) +
       (unpriced ? '<p class="pick-note">' + plural(unpriced, "match", "matches") + " don't have a price on the site yet, so they're only picked when nothing priced fits.</p>" : "") +
       (ask.list.length ? '<div class="pick-more"><h3>More that fit</h3><ol class="near-rows" id="moreRows"></ol><button type="button" class="linkish near-more" id="moreBtn"></button></div>' : "");
   }
@@ -646,7 +708,17 @@ function showResult() {
   if (ask.list.length) renderMore();
   history.replaceState(null, "", location.pathname + "?" + toQuery());
   if (ask.started) { $("resultH").focus({ preventScroll: true }); $("result").scrollIntoView({ behavior: "smooth", block: "start" }); }
-  track("pick-result", { where: ask.where.key, matches: list.length });
+  // One event per search shown: what was asked (never a location), how many fit and whether a stretch was found.
+  track("budget-search", { source: ask.src, where: ask.where.near ? "near" : ask.where.any ? "any" : "place", place: ask.where.near ? "" : ask.where.key,
+    people: ask.people, budget: budgetValue() ? Math.round(budgetValue()) + " " + ask.cur : "no-limit", meal: ask.meal, wine: ask.wine ? (ask.knownWine ? "listed-only" : "yes") : "no",
+    stars: String(ask.stars || 0), food: (ask.food || []).join(",") || "any", diet: ask.diet || "none", matches: list.length, stretch: two ? "n/a" : ctx.stretch ? "yes" : "no" });
+  ask.src = "pick";
+}
+// The wildcard, kept below the three main picks: newly starred, promoted or something different.
+function wildLine(r, ctx) {
+  const b = bill(r);
+  return '<p class="pick-wild" data-slot="wild" data-r="' + esc(r.id) + '"><strong>Also worth a look:</strong> <a href="' + esc(linkOf(r)) + '">' + esc(r.name) + "</a> " + starIcons(r.stars) +
+    ": " + esc(reason("wild", r, ctx).replace(/^A wildcard: /, "").replace(/^Also a strong fit/, "a strong fit")) + (b ? " About " + money(b.total, ask.cur) + " " + forWhom() + "." : "") + "</p>";
 }
 function renderMore() {
   if (!$("moreRows")) return;
@@ -654,9 +726,9 @@ function renderMore() {
   const rows = ask.list.slice(0, ask.shown);
   $("moreRows").innerHTML = rows.map((r) => {
     const b = bill(r);
-    return '<li class="near-row"><div class="nr-main"><a class="nr-name" href="' + esc(linkOf(r)) + '">' + esc(r.name) + "</a> " + starIcons(r.stars) +
+    return '<li class="near-row" data-slot="more" data-rank="' + (ask.list.indexOf(r) + 1) + '" data-r="' + esc(r.id) + '"><div class="nr-main"><a class="nr-name" href="' + esc(linkOf(r)) + '">' + esc(r.name) + "</a> " + starIcons(r.stars) +
       '<span class="nr-where">' + esc(r.cuisine) + " · " + esc(r.where) + "</span>" +
-      '<span class="nr-price">' + (b ? esc(localMoney(b.price, r.cur)) + " " + mealWord(b) + (r.cur !== ask.cur ? " ≈ " + esc(money(toCur(b.price, r.cur), ask.cur)) : "") : "Price not listed yet") +
+      '<span class="nr-price">' + (b ? "<strong>" + approxMark(b, r) + esc(money(b.total, ask.cur)) + "</strong> " + forWhom() + " · " + esc(localMoney(b.price, r.cur)) + " " + mealWord(b) + " menu" : "Price not listed yet") +
       (r.ac ? " · Critics’ pick" : "") + "</span></div>" +
       '<div class="nr-side">' + wishBtn(r) + "</div></li>";
   }).join("");
@@ -669,7 +741,8 @@ function renderMore() {
 // Not for "Near me" (the location never leaves the browser) or weekend plans (a pair of restaurants, not one).
 const canSave = () => ask.where && !ask.where.near && ask.meal !== "weekend";
 window.searchToSave = () => {
-  const b = budgetValue() || 0;
+  // Saved searches keep a budget per person (scripts/saved_searches.py), so the table's total is shared out.
+  const b = budgetValue() ? Math.round(budgetValue() / ask.people) : 0;
   const q = { p: ask.where.any ? "" : ask.where.path, s: ask.stars ? [3, 2].filter((n) => n >= ask.stars) : [], f: ask.food || [], d: ask.diet || "",
     m: ask.meal || "dinner", b, c: ask.cur, w: b ? ask.wine : false };
   const food = (ask.food || []).map(moodName);
@@ -686,9 +759,11 @@ function toQuery() {
   const q = new URLSearchParams();
   q.set("w", ask.where.near ? "near" : ask.where.any ? "any" : ask.where.path);
   q.set("m", ask.meal);
+  q.set("p", String(ask.people));
   q.set("b", String(budgetValue() || 0));
   q.set("c", ask.cur);
   if (ask.wine) q.set("wine", "1");
+  if (ask.wine && ask.knownWine) q.set("kw", "1");
   if (ask.stars) q.set("s", String(ask.stars));
   if (ask.food && ask.food.length) q.set("f", ask.food.join(","));
   if (ask.diet) q.set("d", ask.diet);
@@ -698,13 +773,20 @@ function toQuery() {
 function fromQuery() {
   const q = new URLSearchParams(location.search);
   if (q.get("c") && DATA.switchable.includes(q.get("c"))) ask.cur = q.get("c");
+  // Links from before 27 Oct 2026 have no p: their b was per person, which is the total for one.
+  if (q.has("p")) ask.people = Math.min(PEOPLE_MAX, Math.max(1, parseInt(q.get("p"), 10) || 2));
+  else if (q.has("b")) ask.people = 1;
   if (["dinner", "lunch", "value", "weekend"].includes(q.get("m"))) setMeal(q.get("m"));
-  if (q.has("b")) { const i = budgets().indexOf(Number(q.get("b"))); if (i > -1) ask.budget = i; }
+  if (q.has("b")) { const want = Number(q.get("b")) || 0, i = budgets().indexOf(want); ask.budget = !want ? budgets().length - 1 : i > -1 ? i : nearestBudget(want); }
   ask.wine = q.get("wine") === "1";
+  ask.knownWine = ask.wine && q.get("kw") === "1";
+  if (q.get("src") === "home") ask.src = "home";
   if (q.has("s")) ask.stars = [0, 2, 3].includes(Number(q.get("s"))) ? Number(q.get("s")) : 0;
   if (q.has("f")) ask.food = q.get("f").split(",").filter((k) => MOODS.some(([m]) => m === k));
   if (q.has("d")) ask.diet = DIET_CHOICES.some(([k]) => k === q.get("d")) ? q.get("d") : "";
-  const w = q.get("w");
+  // The homepage form without its script sends the place as typed (`where`): the best-known place of that name, else anywhere.
+  let w = q.get("w");
+  if (!w && q.has("where")) w = spotByName(q.get("where")) || "any";
   const whereOk = w && w !== "near" && setWhere(w);
   if (q.get("go") === "1" && whereOk && ask.meal) {
     if (ask.stars == null) ask.stars = 0;
@@ -722,6 +804,19 @@ function fromQuery() {
   if (whereOk) { ask.step = 1; return "step"; }
   return "step";
 }
+function spotByName(text) {
+  const n = (text || "").trim().toLowerCase();
+  if (!n) return "";
+  const hit = DATA.spots.find((x) => x[0].toLowerCase() === n) || DATA.spots.find((x) => x[0].toLowerCase().startsWith(n));
+  return hit ? hit[1] : "";
+}
+// Which result a visitor opened: the slot (best, value, stretch, wild, lunch-tip, more), its place in the list and the restaurant.
+document.addEventListener("click", (e) => {
+  const a = e.target.closest("#result a[href]");
+  const slot = a && a.closest("[data-slot]");
+  if (!slot) return;
+  track("pick-click", { slot: slot.dataset.slot, rank: slot.dataset.rank || "", restaurant: slot.dataset.r || "", where: ask.where ? ask.where.key : "" });
+});
 async function sharePicks(btn) {
   const url = location.origin + location.pathname + "?" + toQuery();
   track("pick-share");

@@ -88,7 +88,7 @@ function loadSearches() {
 }
 function searchesSection() {
   const head = '<section class="acct-section" id="searches"><h2>Saved searches</h2>' +
-    "<p>Save the filters on any destination page (tap <strong>Save this search</strong>), or your answers on Help me pick, and we'll email you when a restaurant newly matches: " +
+    "<p>Save the filters on any destination page (tap <strong>Save this search</strong>), or your answers on Budget search, and we'll email you when a restaurant newly matches: " +
     "a new star, a lower price or a new menu. At most one email a day.</p>";
   if (searches.failed) return head + '<p class="empty-note">Your saved searches couldn\'t load just now. Please reload the page to try again.</p></section>';
   if (!searches.rows) { loadSearches(); return head + '<p class="acct-loading">' + esc(t("accLoading")) + "</p></section>"; }

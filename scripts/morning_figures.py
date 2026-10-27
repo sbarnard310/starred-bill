@@ -364,6 +364,88 @@ def index_status(cfg, prev=None):
             "by_status": counts, "newly_indexed": newly, "dropped_out": dropped, "pages": result}
 
 
+CONTENT = Path(__file__).resolve().parent.parent / "content"
+LANG_NAMES = {"zh": "Chinese", "yue": "Cantonese", "zhs": "Simplified Chinese", "fr": "French", "ja": "Japanese",
+              "es": "Spanish", "it": "Italian", "ko": "Korean", "da": "Danish", "sv": "Swedish", "is": "Icelandic",
+              "ca": "Catalan", "th": "Thai", "de": "German", "nl": "Dutch", "pt": "Portuguese", "nb": "Norwegian",
+              "fi": "Finnish", "pl": "Polish", "cs": "Czech", "hu": "Hungarian", "sl": "Slovenian", "hr": "Croatian",
+              "sr": "Serbian", "el": "Greek", "tr": "Turkish", "lt": "Lithuanian", "lv": "Latvian", "et": "Estonian",
+              "mt": "Maltese", "ms": "Malay", "fil": "Filipino", "vi": "Vietnamese", "ar": "Arabic"}
+HUB_PAGES = {"/", "/near-me/", "/pick/", "/privacy/", "/guides/", "/news/"}
+
+
+def page_kinds():
+    """A function naming each sitemap address's kind of page, for site_index's split: hubs, destination pages in
+    English and in each language, cuisine pages, Bib Gourmand lists, the researched restaurant pages (round 1) and
+    each Friday wave (content/restaurant-pages.json), guides, guide translations and news."""
+    waves = json.loads((CONTENT / "restaurant-pages.json").read_text())["waves"]
+    wave_of = {i: w["from"] for w in waves for i in w["ids"]}
+    cuisines = set()   # (city id, cuisine part): tokyo-french is /japan/tokyo/french/
+    for f in (CONTENT / "places").glob("*.json"):
+        p = json.loads(f.read_text())
+        if p.get("type") == "cuisine" and p["id"].startswith(p.get("parent", "") + "-"):
+            cuisines.add((p["parent"], p["id"][len(p["parent"]) + 1:]))
+
+    def kind(path):
+        if path in HUB_PAGES:
+            return "Homepage and hubs", ""
+        parts = path.strip("/").split("/")
+        lang = parts[0] if parts[0] in LANG_NAMES else ""
+        rest = parts[1:] if lang else parts
+        if rest[0] == "restaurants":
+            day = wave_of.get(rest[1]) if len(rest) > 1 else None
+            if day:
+                return "Restaurant pages: wave of " + dt.date.fromisoformat(day).strftime("%-d %b"), day
+            return "Restaurant pages: researched (round 1)", ""
+        if rest[0] == "guides":
+            return ("Guide translations" if lang else "Guides"), ""
+        if rest[0] == "news":
+            return "News", ""
+        if rest[-1] == "bib-gourmand":
+            return "Bib Gourmand", ""
+        if len(rest) >= 2 and (rest[-2], rest[-1]) in cuisines:
+            return "Cuisine pages", ""
+        return "Destination pages: " + (LANG_NAMES[lang] if lang else "English"), ""
+    return kind
+
+
+def index_by_kind(cache):
+    """site_index's answers split by kind of page: pages, how many Google has indexed, and how many it doesn't
+    know, has only discovered, or crawled without indexing. Ordered hubs, destinations (English first, then the
+    languages, most pages first), cuisine, Bib Gourmand, restaurant pages (round 1, then the waves in order), guides,
+    translations, news. Each row also has its oldest answer's day (`oldest_check`: a kind checked only on the day it
+    went live is out of date) and the indexed count from the figures file a week before, once it has one."""
+    kind, rows = page_kinds(), {}
+    for path, v in cache.items():
+        name, wave = kind(path)
+        r = rows.setdefault(name, {"kind": name, "wave": wave, "pages": 0, "indexed": 0, "unknown": 0,
+                                   "discovered": 0, "crawled": 0, "other": 0, "oldest_check": v.get("checked")})
+        r["pages"] += 1
+        r["oldest_check"] = min(r["oldest_check"] or "", v.get("checked") or "") or None
+        cov = v.get("coverage") or ""
+        key = ("indexed" if v.get("indexed") else "unknown" if "unknown" in cov.lower() else
+               "discovered" if cov.startswith("Discovered") else "crawled" if cov.startswith("Crawled") else "other")
+        r[key] += 1
+    order = ["Homepage and hubs", "Destination pages: English"]
+    langs = sorted((n for n in rows if n.startswith("Destination pages: ") and n not in order), key=lambda n: -rows[n]["pages"])
+    waves = sorted((n for n in rows if rows[n]["wave"]), key=lambda n: rows[n]["wave"])
+    order += langs + ["Cuisine pages", "Bib Gourmand", "Restaurant pages: researched (round 1)"] + waves + \
+        ["Guides", "Guide translations", "News"]
+    week_ago = CONFIG.parent / f"{dt.date.today() - dt.timedelta(days=7)}.json"
+    before = {}
+    if week_ago.exists():
+        old = json.loads(week_ago.read_text()).get("sources", {}).get("site_index", {}).get("by_kind") or []
+        before = {r["kind"]: r["indexed"] for r in old}
+    out = []
+    for n in order:
+        if n in rows:
+            r = rows[n]
+            r["share"] = round(r["indexed"] / r["pages"], 3)
+            r["indexed_week_ago"] = before.get(n)
+            out.append(r)
+    return out
+
+
 def site_index(cfg, key_pages=None):
     """How many of the pages in the live sitemap Google has indexed. Checks the pages never checked or checked
     longest ago, INDEX_BUDGET a day (all of them the first time), and keeps every page's latest answer in
@@ -401,7 +483,8 @@ def site_index(cfg, key_pages=None):
     return {"sitemap_pages": len(paths), "known": len(cache), "indexed": sum(1 for v in cache.values() if v["indexed"]),
             "checked_today": sum(1 for v in cache.values() if v["checked"] == today),
             "oldest_check": min((v["checked"] for v in cache.values()), default=None), "by_status": counts,
-            "checks_failed": len(failed), "failure_reasons": sorted(set(e for e in failed if e))[:5]}
+            "checks_failed": len(failed), "failure_reasons": sorted(set(e for e in failed if e))[:5],
+            "by_kind": index_by_kind(cache)}
 
 
 def seo_targets(cfg):

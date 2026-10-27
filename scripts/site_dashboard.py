@@ -16,6 +16,9 @@ dashboard splits them apart, so a refresh is one file:
   gsc_searches, gsc_pages, gsc_countries      its latest 28 days, most impressions first
   seo              the SEO plan's measures (now and aim), from the newest morning figures file
   index_history    pages in Google and in the sitemap, from each morning's figures file
+  index_kinds      the newest figures file's pages in Google by kind of page (destinations by language, cuisine,
+                   Bib Gourmand, restaurant pages by wave, guides, news): pages, indexed, unknown, discovered,
+                   crawled, share, the week before's indexed count and the oldest answer's day
 """
 import datetime as dt
 import json
@@ -128,6 +131,10 @@ def main(out):
         site = json.loads(f.read_text()).get("sources", {}).get("site_index", {})
         if site.get("status") == "ok":
             add("index_history", day=f.stem, indexed=site.get("indexed"), sitemap_pages=site.get("sitemap_pages"))
+
+    newest = json.loads(files[-1].read_text()).get("sources", {}).get("site_index", {}) if files else {}
+    for n, r in enumerate(newest.get("by_kind") or []):
+        add("index_kinds", order=n, day=files[-1].stem, **r)
 
     Path(out).write_text(json.dumps(rows, ensure_ascii=False))
     print(f"{len(rows)} rows")

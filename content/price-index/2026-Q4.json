@@ -2112,5 +2112,621 @@
     "woschi"
    ]
   }
- }
+ },
+ "corrections": [
+  {
+   "id": "1804-hirschau",
+   "meal": "dinner",
+   "error": "An event price was recorded instead of the regular menu. The recorded pairing was a winemaker dinner's all-in price.",
+   "evidence": "https://www.1804muc.de/menu",
+   "checked": "2026-10-27",
+   "price": 250,
+   "wine": null
+  },
+  {
+   "id": "a-plus",
+   "meal": "lunch",
+   "error": "A lunch course that was no longer offered was recorded.",
+   "evidence": "https://www.tablecheck.com/shops/aplus/reserve",
+   "checked": "2026-10-27",
+   "price": 5500
+  },
+  {
+   "id": "ajikitcho-bumbuan",
+   "meal": "dinner",
+   "error": "A booking site's price including service was recorded; the restaurant's own price is before service.",
+   "evidence": "https://bunbu-an.jp/?page_id=5",
+   "checked": "2026-10-27",
+   "price": 12100,
+   "sourceKind": "restaurant"
+  },
+  {
+   "id": "ajikitcho-bumbuan",
+   "meal": "lunch",
+   "error": "A booking site's price including service was recorded; the restaurant's own price is before service.",
+   "evidence": "https://bunbu-an.jp/?page_id=5",
+   "checked": "2026-10-27",
+   "price": 4400,
+   "sourceKind": "restaurant"
+  },
+  {
+   "id": "arrea",
+   "meal": "dinner",
+   "remove": true,
+   "error": "It serves lunch only; its lunch menu was recorded as dinner.",
+   "evidence": "https://arrea.eus/",
+   "checked": "2026-10-27"
+  },
+  {
+   "id": "assonica",
+   "meal": "lunch",
+   "price": 35,
+   "sourceKind": "restaurant",
+   "error": "A two-course lunch was recorded; the comparable set lunch has three or more courses.",
+   "evidence": "https://assonica.it/it/menu/2/a-pranzo-volo",
+   "checked": "2026-10-27"
+  },
+  {
+   "id": "auberge-de-la-brie",
+   "meal": "lunch",
+   "error": "The dinner menu was copied to lunch; there is a cheaper lunch menu.",
+   "evidence": "https://www.aubergedelabrie.net/la-carte/",
+   "checked": "2026-10-27",
+   "price": 105
+  },
+  {
+   "id": "auffo",
+   "meal": "lunch",
+   "error": "The dinner menu was copied to lunch; there is a cheaper lunch menu.",
+   "evidence": "https://www.auffo-restaurant.com/_files/ugd/15be20_7efedad984354e45998176efb3b4b6e4.pdf",
+   "checked": "2026-10-27",
+   "price": 95
+  },
+  {
+   "id": "brothers",
+   "meal": "lunch",
+   "error": "The dinner price was recorded for lunch; there is a separate lunch menu.",
+   "evidence": "https://www.brothers-munich.com/wp-content/uploads/2026/10/menue-lunch-neu.pdf",
+   "checked": "2026-10-27",
+   "price": 185
+  },
+  {
+   "id": "conchas-de-piedra",
+   "meal": "dinner",
+   "remove": true,
+   "error": "It serves lunch only; its lunch menu was recorded as dinner.",
+   "evidence": "https://qrco.de/bbdQ1r",
+   "checked": "2026-10-27"
+  },
+  {
+   "id": "d-o-m",
+   "meal": "lunch",
+   "error": "A one-plate executive lunch was recorded as a set lunch; the tasting menu is also served at lunch.",
+   "evidence": "https://domrestaurante.com.br/cardapio/",
+   "checked": "2026-10-27",
+   "remove": true
+  },
+  {
+   "id": "edvard",
+   "meal": "lunch",
+   "error": "A two-course lunch was recorded; the comparable set lunch has three or more courses.",
+   "evidence": "https://www.edvard-restaurant.com/en/business-lunch/",
+   "checked": "2026-10-27",
+   "price": 69
+  },
+  {
+   "id": "fiola",
+   "meal": "dinner",
+   "error": "A secondary tasting menu was recorded instead of the signature menu.",
+   "evidence": "https://www.fioladc.com/dinner",
+   "checked": "2026-10-27",
+   "price": 345
+  },
+  {
+   "id": "forum",
+   "meal": "dinner",
+   "error": "An out-of-date third-party price was recorded where the restaurant publishes its own.",
+   "evidence": "https://www.forumrestaurant1977.com/assets/download/Forum_Set_Menu_260807%20(002).pdf",
+   "checked": "2026-10-27",
+   "price": 2760,
+   "sourceKind": "restaurant"
+  },
+  {
+   "id": "forum",
+   "meal": "lunch",
+   "error": "A 2024 blog price was recorded where the restaurant publishes its own.",
+   "evidence": "https://www.forumrestaurant1977.com/assets/download/Forum_Set_Menu_260807%20(002).pdf",
+   "checked": "2026-10-27",
+   "price": 1200,
+   "sourceKind": "restaurant"
+  },
+  {
+   "id": "gabriel-kreuther",
+   "meal": "lunch",
+   "error": "A two-course lunch was recorded; the comparable set lunch has three or more courses.",
+   "evidence": "https://www.gknyc.com/menu-lunch",
+   "checked": "2026-10-27",
+   "price": 95
+  },
+  {
+   "id": "gokan-uogin",
+   "meal": "dinner",
+   "error": "A booking site's price was recorded where the restaurant publishes its own.",
+   "evidence": "https://gokan-uogin.jp/cuisine/",
+   "checked": "2026-10-27",
+   "price": 22000,
+   "sourceKind": "restaurant"
+  },
+  {
+   "id": "gokan-uogin",
+   "meal": "lunch",
+   "error": "A booking site's price was recorded where the restaurant publishes its own.",
+   "evidence": "https://gokan-uogin.jp/cuisine/",
+   "checked": "2026-10-27",
+   "price": 22000,
+   "sourceKind": "restaurant"
+  },
+  {
+   "id": "gokomachi-tagawa",
+   "meal": "lunch",
+   "error": "It doesn't serve lunch.",
+   "evidence": "https://www.gokoumachi-tagawa.com/course",
+   "checked": "2026-10-27",
+   "remove": true
+  },
+  {
+   "id": "imperfecto-the-chefs-table",
+   "meal": "lunch",
+   "error": "A dinner-only menu was recorded as a lunch.",
+   "evidence": "https://www.sevenreasonsgroup.com/imperfecto",
+   "checked": "2026-10-27",
+   "remove": true
+  },
+  {
+   "id": "jagerhof",
+   "meal": "lunch",
+   "error": "The dinner menu was copied to lunch; there is a cheaper lunch menu.",
+   "evidence": "https://www.jaegerhof.ch/wp-content/uploads/karten/tageskarte/jaegerhof_tageskarte.pdf",
+   "checked": "2026-10-27",
+   "price": 81
+  },
+  {
+   "id": "jamavar-dubai",
+   "meal": "dinner",
+   "error": "The recorded price isn't on its source; the restaurant's menu shows another. The recorded pairing belonged to another menu.",
+   "evidence": "https://cdn.jamavarrestaurants.com/wp-content/uploads/2026/09/WEBJMVR-TASTING-MENU.pdf",
+   "checked": "2026-10-27",
+   "price": 595,
+   "sourceKind": "restaurant",
+   "wine": 450
+  },
+  {
+   "id": "jamavar-dubai",
+   "meal": "lunch",
+   "error": "A two-course lunch was recorded; the comparable set lunch has three or more courses.",
+   "evidence": "https://cdn.jamavarrestaurants.com/wp-content/uploads/2026/09/Lunch-Early-Evening-Menu-WEB.pdf",
+   "checked": "2026-10-27",
+   "price": 139
+  },
+  {
+   "id": "jan-munich",
+   "meal": "lunch",
+   "error": "The longer menu was recorded for lunch; the set lunch menu is shorter and cheaper.",
+   "evidence": "https://jan-hartwig.com/menue/",
+   "checked": "2026-10-27",
+   "price": 335
+  },
+  {
+   "id": "joelia",
+   "meal": "lunch",
+   "error": "The dinner menu was copied to lunch; there is a cheaper lunch menu.",
+   "evidence": "https://www.joelia.eu/menu/",
+   "checked": "2026-10-27",
+   "price": 82.5
+  },
+  {
+   "id": "kerfield-arms",
+   "meal": "lunch",
+   "error": "A single dish was recorded as a set lunch.",
+   "evidence": "https://www.artefactmagazine.com/2026/06/17/the-12-michelin-star-meal-hidden-inside-a-london-pub/",
+   "checked": "2026-10-27",
+   "remove": true
+  },
+  {
+   "id": "l-auberge-de-saint-remy-fanny-rey-and-jonathan-wahid",
+   "meal": "lunch",
+   "error": "The wine pairing price was recorded as the lunch menu.",
+   "evidence": "https://www.aubergesaintremy.com/media/original/menu-2026-fj.pdf",
+   "checked": "2026-10-27",
+   "price": 140
+  },
+  {
+   "id": "l-oree-de-la-foret",
+   "meal": "lunch",
+   "error": "The dinner menu was copied to lunch; there is a cheaper lunch menu.",
+   "evidence": "https://www.loreedelaforet.fr/menus.html",
+   "checked": "2026-10-27",
+   "price": 70
+  },
+  {
+   "id": "la-cote-saint-jacques",
+   "meal": "dinner",
+   "wine": 130,
+   "error": "The recorded pairing belonged to another menu.",
+   "evidence": "https://hapi.mmcreation.com/hapidam/6866063d-6c8b-4e5f-b4cb-ec8d6a42aef5/Carte%20d%C3%A9jeuner%20et%20d%C3%AEner%2024%20septembre%202026_FR_Prix.pdf.pdf",
+   "checked": "2026-10-27"
+  },
+  {
+   "id": "la-cote-saint-jacques",
+   "meal": "lunch",
+   "error": "The bistro's menu was recorded instead of the starred dining room's lunch.",
+   "evidence": "https://hapi.mmcreation.com/hapidam/6866063d-6c8b-4e5f-b4cb-ec8d6a42aef5/Carte%20d%C3%A9jeuner%20et%20d%C3%AEner%2024%20septembre%202026_FR_Prix.pdf.pdf",
+   "checked": "2026-10-27",
+   "price": 112
+  },
+  {
+   "id": "laesa",
+   "meal": "lunch",
+   "error": "It doesn't serve lunch.",
+   "evidence": "https://www.laesa.de/essen",
+   "checked": "2026-10-27",
+   "remove": true
+  },
+  {
+   "id": "le-berceau-des-sens",
+   "meal": "lunch",
+   "error": "The dinner menu was copied to lunch; there is a cheaper lunch menu.",
+   "evidence": "https://www.berceau-des-sens.ch/menu",
+   "checked": "2026-10-27",
+   "price": 85
+  },
+  {
+   "id": "le-jardinier-houston",
+   "meal": "lunch",
+   "error": "A two-course lunch was recorded; the comparable set lunch has three or more courses.",
+   "evidence": "https://www.lejardinier-houston.com/menus",
+   "checked": "2026-10-27",
+   "price": 90
+  },
+  {
+   "id": "le-valucien-chateau-de-vault-de-lugny",
+   "meal": "dinner",
+   "error": "A limited-season menu was recorded instead of the regular menu.",
+   "evidence": "https://lugny.fr/wp-content/uploads/2026/02/MENU-CHASSE-2026-FRGB.pdf",
+   "checked": "2026-10-27",
+   "price": 165
+  },
+  {
+   "id": "le-valucien-chateau-de-vault-de-lugny",
+   "meal": "lunch",
+   "error": "A buffet was recorded as a set lunch.",
+   "evidence": "https://lugny.fr/gastronomie/",
+   "checked": "2026-10-27",
+   "price": 98
+  },
+  {
+   "id": "les-terraillers",
+   "meal": "lunch",
+   "error": "The dinner menu was copied to lunch; there is a cheaper lunch menu.",
+   "evidence": "https://www.lesterraillers.fr/wp-content/uploads/2026/10/MENU-ENG-SITE.pdf",
+   "checked": "2026-10-27",
+   "price": 69
+  },
+  {
+   "id": "maison-ronan-kervarrec",
+   "meal": "dinner",
+   "error": "A menu ordered 48 hours ahead was recorded instead of the regular tasting menu. The recorded pairing belonged to a shorter menu.",
+   "evidence": "https://maisonkervarrec.com/fr/carte-menus.html",
+   "checked": "2026-10-27",
+   "price": 245,
+   "wine": 86
+  },
+  {
+   "id": "maison-ronan-kervarrec",
+   "meal": "lunch",
+   "error": "A two-course lunch was recorded; the comparable set lunch has three or more courses.",
+   "evidence": "https://maisonkervarrec.com/fr/carte-menus.html",
+   "checked": "2026-10-27",
+   "price": 88
+  },
+  {
+   "id": "mita",
+   "meal": "dinner",
+   "error": "An old review's price was recorded where the restaurant publishes its own.",
+   "evidence": "https://www.mitadc.com/menu",
+   "checked": "2026-10-27",
+   "price": 165,
+   "sourceKind": "restaurant"
+  },
+  {
+   "id": "ogawa-kyoto",
+   "meal": "dinner",
+   "error": "reseller price where a first-party price existed",
+   "evidence": "https://kyoto-ogawa.com/menu/",
+   "checked": "2026-10-27",
+   "price": 28000,
+   "sourceKind": "restaurant"
+  },
+  {
+   "id": "ogawa-kyoto",
+   "meal": "lunch",
+   "error": "A short course from a reseller was recorded; the comparable lunch course is longer.",
+   "evidence": "https://kyoto-ogawa.com/menu/",
+   "checked": "2026-10-27",
+   "price": 12100,
+   "sourceKind": "restaurant"
+  },
+  {
+   "id": "okada",
+   "meal": "dinner",
+   "error": "A booking site's price was recorded where the restaurant publishes its own.",
+   "evidence": "https://www.okada-nara.com/tastingmenu",
+   "checked": "2026-10-27",
+   "price": 20570,
+   "sourceKind": "restaurant"
+  },
+  {
+   "id": "oryori-hanagaki",
+   "meal": "dinner",
+   "error": "A special course was recorded instead of the regular course.",
+   "evidence": "https://www.hanagaki2611.com/",
+   "checked": "2026-10-27",
+   "price": 33000,
+   "sourceKind": "restaurant"
+  },
+  {
+   "id": "rania",
+   "meal": "lunch",
+   "error": "Lunch service had ended before the snapshot.",
+   "evidence": "https://www.raniadc.com/",
+   "checked": "2026-10-27",
+   "remove": true
+  },
+  {
+   "id": "restaurant-smink",
+   "meal": "lunch",
+   "error": "The dinner menu was copied to lunch; there is a cheaper lunch menu.",
+   "evidence": "https://jansmink.com/",
+   "checked": "2026-10-27",
+   "price": 125
+  },
+  {
+   "id": "sen",
+   "meal": "dinner",
+   "error": "Recorded before tax, unlike the other Japanese prices, which include it.",
+   "evidence": "https://sen-tenkawa.com/",
+   "checked": "2026-10-27",
+   "price": 27500
+  },
+  {
+   "id": "sparkling-bistro",
+   "meal": "dinner",
+   "error": "The top of a guide's price range was recorded; the restaurant lists its own menu price.",
+   "evidence": "https://www.restaurantsparklingbistro.com/kulinarik",
+   "checked": "2026-10-27",
+   "price": 150,
+   "sourceKind": "restaurant"
+  },
+  {
+   "id": "torkel",
+   "meal": "lunch",
+   "error": "The dinner menu was copied to lunch; there is a cheaper lunch menu.",
+   "evidence": "https://www.torkel.li",
+   "checked": "2026-10-27",
+   "price": 103
+  },
+  {
+   "id": "trattoria-contemporanea",
+   "meal": "lunch",
+   "error": "A two-course lunch was recorded; the comparable set lunch has three or more courses.",
+   "evidence": "https://trattoriacontemporanea.it/wp-content/uploads/2025/06/MENU-LUNCH-ITA.pdf",
+   "checked": "2026-10-27",
+   "price": 60
+  },
+  {
+   "id": "tresmacarrons",
+   "meal": "lunch",
+   "error": "The dinner menu was copied to lunch; there is a cheaper lunch menu.",
+   "evidence": "https://www.tresmacarrons.com/es/menus/",
+   "checked": "2026-10-27",
+   "price": 70
+  },
+  {
+   "id": "werneckhof-sigi-schelling",
+   "meal": "dinner",
+   "error": "The business lunch was recorded as the dinner menu. The recorded pairing was the Saturday lunch-with-wine price.",
+   "evidence": "https://werneckhof-schelling.de/wp-content/uploads/2025/05/Menue-3.pdf",
+   "checked": "2026-10-27",
+   "price": 240,
+   "wine": null
+  },
+  {
+   "id": "zi-yat-heen",
+   "meal": "lunch",
+   "error": "A dim sum set was recorded as a set lunch; the business set lunch is comparable.",
+   "evidence": "https://www.ziyatheen.com/menus/",
+   "checked": "2026-10-27",
+   "price": 688
+  },
+  {
+   "id": "zur-wolfshohle",
+   "meal": "dinner",
+   "price": 173,
+   "error": "The lunch price was recorded as dinner.",
+   "evidence": "https://www.wolfshoehle-freiburg.de",
+   "checked": "2026-10-27"
+  }
+ ],
+ "confirmed": [
+  "almo-de-juan-guillamon",
+  "alter",
+  "au-vieux-couvent",
+  "carcasse",
+  "cuines-33",
+  "damini-macelleria-affini",
+  "emilie-and-thomas-moulin-de-cambelong",
+  "equilibrio",
+  "famiglia-rana",
+  "guidoristorante",
+  "hand-and-flowers",
+  "hilda-and-jesse",
+  "iacobucci",
+  "intuition",
+  "irori",
+  "jamavar-dubai",
+  "kamikaze",
+  "koryu",
+  "l-alianca-d-angles",
+  "l-auberge-de-montmin",
+  "l-oustau-de-baumaniere",
+  "la-degustation-boheme-bourgeoise",
+  "la-mare-aux-oiseaux",
+  "lalique",
+  "leffervescence",
+  "lluerna",
+  "lunasia",
+  "michaels-leitenberg",
+  "mina",
+  "miyamaso",
+  "retroscena",
+  "zur-wolfshohle"
+ ],
+ "validation": {
+  "on": "2026-10-27",
+  "checked": 186,
+  "confirmed": 108,
+  "changedSince": 6,
+  "corrected": 53,
+  "uncertain": 19,
+  "sameSample": {
+   "checked": 44,
+   "same": 28,
+   "cheaper": 10,
+   "other": 5,
+   "uncertain": 1
+  },
+  "evidence": "starred-bill-research/price-checks/index-q4 (results files and apply.py)"
+ },
+ "notes": {
+  "jade-dragon:lunch": "9 courses, minimum two guests",
+  "guy-savoy:lunch": "7 courses in about 90 minutes",
+  "masa:lunch": "A shorter lunch omakase",
+  "kikunoi-honten:lunch": "Shorter lunch kaiseki",
+  "le-pre-xavier-beaudiment:lunch": "Thursday and Friday",
+  "am-par-alexandre-mazzia:lunch": "Shorter lunch menu",
+  "la-villa-restaurant:lunch": "3 courses from a weekly card",
+  "hand-and-flowers:lunch": "3 courses, Monday to Friday",
+  "lalique:lunch": "3 courses; Thu, Fri, Sun and Mon",
+  "forum:lunch": "Business set lunch, Monday to Friday",
+  "gabriel-kreuther:lunch": "3 courses, Tuesday to Friday",
+  "edvard:lunch": "3 courses, Wednesday to Friday",
+  "jamavar-dubai:lunch": "3 courses, Monday to Friday"
+ },
+ "validated": [
+  "a-plus:dinner",
+  "ajinotabibito-roman:dinner",
+  "ajinotabibito-roman:lunch",
+  "akordu:dinner",
+  "akordu:lunch",
+  "albi:dinner",
+  "almo-de-juan-guillamon:lunch",
+  "alois-dallmayr-fine-dining:dinner",
+  "alter:lunch",
+  "am-par-alexandre-mazzia:dinner",
+  "am-par-alexandre-mazzia:lunch",
+  "amber:dinner",
+  "amber:lunch",
+  "atelier:dinner",
+  "au-vieux-couvent:lunch",
+  "bresca:dinner",
+  "brothers:dinner",
+  "carcasse:lunch",
+  "causa:dinner",
+  "cuines-33:lunch",
+  "da-terra-nara:dinner",
+  "da-terra-nara:lunch",
+  "damini-macelleria-affini:lunch",
+  "edvard:dinner",
+  "elcielo-washington-dc:dinner",
+  "emilie-and-thomas-moulin-de-cambelong:lunch",
+  "equilibrio:lunch",
+  "famiglia-rana:lunch",
+  "gabelspiel:dinner",
+  "gabriel-kreuther:dinner",
+  "guy-savoy:dinner",
+  "guy-savoy:lunch",
+  "hand-and-flowers:dinner",
+  "hand-and-flowers:lunch",
+  "hilda-and-jesse:lunch",
+  "iacobucci:lunch",
+  "ideal-bistro:lunch",
+  "imperfecto-the-chefs-table:dinner",
+  "intuition:lunch",
+  "irori:lunch",
+  "jade-dragon:dinner",
+  "jade-dragon:lunch",
+  "jan-munich:dinner",
+  "jont:dinner",
+  "kamikaze:lunch",
+  "kerfield-arms:dinner",
+  "kikunoi-honten:dinner",
+  "kikunoi-honten:lunch",
+  "komu:dinner",
+  "komu:lunch",
+  "l-alianca-d-angles:lunch",
+  "l-auberge-de-montmin:lunch",
+  "l-auberge-de-saint-remy-fanny-rey-and-jonathan-wahid:dinner",
+  "l-oustau-de-baumaniere:lunch",
+  "la-cote-saint-jacques:dinner",
+  "la-degustation-boheme-bourgeoise:lunch",
+  "la-mare-aux-oiseaux:lunch",
+  "la-trace:dinner",
+  "la-trace:lunch",
+  "la-villa-restaurant:dinner",
+  "la-villa-restaurant:lunch",
+  "lalique:dinner",
+  "lalique:lunch",
+  "le-jardinier-houston:dinner",
+  "le-pre-xavier-beaudiment:dinner",
+  "le-pre-xavier-beaudiment:lunch",
+  "leffervescence:lunch",
+  "lega:dinner",
+  "lega:lunch",
+  "les-deux:dinner",
+  "little-pearl:dinner",
+  "loiseau-blanc:dinner",
+  "loiseau-blanc:lunch",
+  "lunasia:lunch",
+  "masa:dinner",
+  "masa:lunch",
+  "masseria:dinner",
+  "matsuki:dinner",
+  "matsuki:lunch",
+  "michaels-leitenberg:lunch",
+  "minibar-by-jose-andres:dinner",
+  "miyamaso:lunch",
+  "naramachi-kuko:dinner",
+  "naramachi-kuko:lunch",
+  "oryori-hirooka:dinner",
+  "oryori-hirooka:lunch",
+  "oyster-oyster:dinner",
+  "pineapple-and-pearls:dinner",
+  "rania:dinner",
+  "retroscena:lunch",
+  "rooster-owl:dinner",
+  "shunsaiten-tsuchiya:dinner",
+  "shunsaiten-tsuchiya:lunch",
+  "sushi-nakazawa-washington-dc:dinner",
+  "tantris-dna:dinner",
+  "tantris:dinner",
+  "the-cloud-by-kafer:dinner",
+  "the-coach:lunch",
+  "the-dabney:dinner",
+  "trattoria-contemporanea:dinner",
+  "villa-communico:dinner",
+  "wa-yamamura:dinner",
+  "wa-yamamura:lunch",
+  "werneckhof-sigi-schelling:lunch",
+  "xiquet:dinner"
+ ]
 }

@@ -153,6 +153,66 @@ def norm(s):
     return re.sub(r"[^a-z0-9]+", " ", s.lower()).strip()
 
 
+# ---------- price provenance (as build.py's source_kind() and price_seen(); build.py can't be imported, as it builds) ----------
+def _build_tuple(name):
+    import ast
+    text = (ROOT / "build.py").read_text()
+    m = re.search(rf"^{name} = (\(.*?\))\n(?=\S)", text, re.S | re.M)
+    return ast.literal_eval(m.group(1)) if m else ()
+
+
+BUILD_BOOKING_HOSTS, BUILD_GUIDE_HOSTS = _build_tuple("BOOKING_HOSTS"), _build_tuple("GUIDE_HOSTS")
+SOURCE_WORDS = {"restaurant": "the restaurant's own site", "booking": "a booking site", "guide": "a restaurant guide",
+                "press": "a review or article", "member": "a member's report", "none": "no source"}
+# How much a price from each kind of source needs a genuine check, for "Prices to verify next": another database's
+# figure or no source at all first, the restaurant's own site last.
+SOURCE_NEED = {"none": 1.4, "guide": 1.3, "press": 1.3, "member": 1.2, "booking": 1.1, "restaurant": 1.0}
+
+
+def source_kind(r, meal="dinner"):
+    """Same answer as source_kind() in build.py (change both): restaurant, booking, guide, press, member or none."""
+    pre = "" if meal == "dinner" else "lunch"
+    own = r.get(f"{pre}SourceKind" if pre else "sourceKind")
+    if own:
+        return own
+    typ, url = r.get(f"{pre}SourceType" if pre else "sourceType"), r.get(f"{pre}Source" if pre else "source") or ""
+    if typ == "member":
+        return "member"
+    if typ == "site":
+        return "restaurant"
+    if not url or typ in (None, "none"):
+        return "none"
+    host = urllib.parse.urlsplit(url).netloc.lower()
+    return "booking" if any(k in host for k in BUILD_BOOKING_HOSTS) else "guide" if any(k in host for k in BUILD_GUIDE_HOSTS) else "press"
+
+
+def price_state(r, meal, today):
+    """A meal's price: None when there's no price, else its genuine check (verifiedAt, days since), its last recorded
+    change (changedAt, never a check), source kind and whether we derived it."""
+    if r.get(meal) is None or (meal == "lunch" and r.get("noLunch")):
+        return None
+    pre = "price" if meal == "dinner" else "lunch"
+    v, c = r.get(f"{pre}VerifiedAt"), r.get(f"{pre}ChangedAt")
+
+    def days(d):
+        try:
+            return (today - dt.date.fromisoformat(str(d)[:10])).days
+        except Exception:
+            return None
+    return {"verified": v, "verified_days": days(v), "changed": c, "changed_days": days(c), "kind": source_kind(r, meal),
+            "derived": bool(r.get("priceDerived" if meal == "dinner" else "lunchDerived")),
+            "source": r.get("source" if meal == "dinner" else "lunchSource") or ""}
+
+
+def state_words(st):
+    if not st:
+        return ""
+    month = lambda d: dt.date.fromisoformat(d[:10]).strftime("%b %Y")
+    when = (f"checked {st['verified'][:10]}" if st["verified"] else
+            f"recorded {month(st['changed'])}, never checked" if st["changed"] else "never checked")
+    return f"{when}, from {SOURCE_WORDS.get(st['kind'], st['kind'])}" + (", worked out by us" if st["derived"] else "")
+
+
 # ---------- the site's own data ----------
 class Site:
     """Restaurants and places from content/, for names, cities, prices and checks."""
@@ -278,6 +338,38 @@ def event_details(rows, base, auth):
     CACHE.parent.mkdir(parents=True, exist_ok=True)
     CACHE.write_text(json.dumps(cache, separators=(",", ":")))
     return cache
+
+
+UMAMI_LIMIT = 100000   # Umami Cloud's free (Hobby) plan: events a month, each stored event property counting as one
+UMAMI_WARN = 0.7       # say so when the month is on course for 70% of it
+
+
+def umami_usage(cfg, now=None):
+    """What Umami counts against the plan: every page view, every custom event and every property stored with one
+    (Umami's FAQ). The month so far, the last 7 days and where the month is heading at the faster of the two rates.
+    Umami's own Settings › Usage page is the final word: the share link can't read it."""
+    base, auth, _ = mf.umami_client(cfg)
+    now = now or dt.datetime.now(UTC)
+
+    def count(a, b):
+        q = urllib.parse.urlencode({"startAt": int(a.timestamp() * 1000), "endAt": int(b.timestamp() * 1000) - 1})
+        pv = mf.http(f"{base}/stats?{q}", headers=auth, method="GET").get("pageviews") or 0
+        if isinstance(pv, dict):
+            pv = pv.get("value") or 0
+        ev = sum(x.get("y") or 0 for x in mf.http(f"{base}/metrics?{q}&type=event&limit=500", headers=auth, method="GET") or [])
+        props = (mf.http(f"{base}/event-data/stats?{q}", headers=auth, method="GET") or {}).get("records") or 0
+        return {"pageviews": pv, "custom_events": ev, "properties": props, "total": pv + ev + props}
+
+    month0 = now.replace(day=1, hour=0, minute=0, second=0, microsecond=0)
+    nxt = (month0 + dt.timedelta(days=32)).replace(day=1)
+    mtd, week = count(month0, now), count(now - dt.timedelta(days=7), now)
+    days_in, elapsed = (nxt - month0).days, max(0.5, (now - month0).total_seconds() / 86400)
+    pace = max(mtd["total"] / elapsed, week["total"] / 7)
+    projected = round(mtd["total"] + pace * (days_in - elapsed))
+    return {"limit": UMAMI_LIMIT, "month_to_date": mtd, "last_7_days": week, "projected_month": projected,
+            "full_month_at_weekly_pace": round(week["total"] * 30 / 7),
+            "projected_percent": round(100 * projected / UMAMI_LIMIT), "warn": projected >= UMAMI_WARN * UMAMI_LIMIT,
+            "properties_per_custom_event_7d": round(week["properties"] / week["custom_events"], 1) if week["custom_events"] else None}
 
 
 # ---------- visits ----------
@@ -799,35 +891,42 @@ def gsc_extras(cfg):
 
 # ---------- data health ----------
 def data_health(site, today):
+    """Price checks kept apart from mere records: a price counts as checked only by its own priceVerifiedAt /
+    lunchVerifiedAt (a genuine check of the source); priceChangedAt / lunchChangedAt only say when our record changed."""
     live = site.live()
     yday = str(today - dt.timedelta(days=1))
 
-    def age(d):
-        try:
-            return (today - dt.date.fromisoformat(str(d)[:10])).days
-        except Exception:
-            return None
+    def meal_health(meal):
+        sts = [st for st in (price_state(r, meal, today) for r in live) if st]
+        unchecked = [st for st in sts if not st["verified"]]
+        return {"priced": len(sts),
+                "checked_yesterday": sum(1 for st in sts if str(st["verified"] or "")[:10] == yday),
+                "checked_30_days": sum(1 for st in sts if st["verified_days"] is not None and st["verified_days"] <= 30),
+                "checked_90_days": sum(1 for st in sts if st["verified_days"] is not None and st["verified_days"] <= 90),
+                "never_checked": len(unchecked),
+                "recorded_last_30_days_never_checked": sum(1 for st in unchecked if st["changed_days"] is not None and st["changed_days"] <= 30),
+                "by_source": dict(Counter(st["kind"] for st in sts)),
+                "never_checked_by_source": dict(Counter(st["kind"] for st in unchecked)),
+                "derived": sum(1 for st in sts if st["derived"])}
 
-    ages = [age(r.get("priceVerifiedAt")) for r in live]
-    lunch_ages = [age(r.get("lunchVerifiedAt")) for r in live if r.get("lunch")]
     names = defaultdict(list)
     for r in live:
         names[(norm(r.get("name")), site.city_name(r))].append(r["id"])
-    rate_age = age(site.rate_date)
+    rate_age = None
+    try:
+        rate_age = (today - dt.date.fromisoformat(site.rate_date)).days
+    except Exception:
+        pass
     return {
         "live_starred": len(live),
-        "dinner_verified": {"yesterday": sum(1 for r in live if str(r.get("priceVerifiedAt", ""))[:10] == yday),
-                            "last_30_days": sum(1 for a in ages if a is not None and a <= 30),
-                            "last_90_days": sum(1 for a in ages if a is not None and a <= 90),
-                            "never": sum(1 for a in ages if a is None)},
-        "lunch_verified": {"last_90_days": sum(1 for a in lunch_ages if a is not None and a <= 90),
-                           "with_lunch_price": len(lunch_ages)},
+        "dinner": meal_health("dinner"), "lunch": meal_health("lunch"),
+        "menus_checked": sum(1 for r in live if r.get("menusChecked") and r.get("menus")),
         "missing": {"dinner_price": sum(1 for r in live if r.get("dinner") is None and not r.get("lunch")),
                     "dinner_menu_but_lunch_only": sum(1 for r in live if r.get("dinner") is None and r.get("lunch")),
                     "lunch_unknown": sum(1 for r in live if r.get("lunch") is None and not r.get("noLunch") and not r.get("lunchNote")),
                     "booking_link": sum(1 for r in live if not r.get("bookingUrl") and not r.get("noBookings")),
                     "website": sum(1 for r in live if not r.get("website")),
-                    "price_source": sum(1 for r in live if r.get("dinner") is not None and not r.get("source"))},
+                    "price_source": sum(1 for r in live if r.get("dinner") is not None and source_kind(r) == "none")},
         "exchange_rates": {"date": site.rate_date, "days_old": rate_age, "stale": bool(rate_age is not None and rate_age > 35)},
         "possible_duplicates": [ids for ids in names.values() if len(ids) > 1][:20],
         "price_changes": price_changes(site, today),
@@ -862,26 +961,35 @@ def price_changes(site, today):
 
 
 def verify_queue(site, interest28, gsc28, today, limit=25):
-    """Restaurants whose price most needs a genuine check, ranked by our own evidence: page views, commercial clicks,
-    on-site interest (results opened, bill used), Google impressions and clicks on its page, how long since a genuine
-    check, and its stars."""
+    """Restaurants whose price most needs a genuine check, ranked by our own evidence: page views, clicks out to book
+    or to its site, Budget Search and bill use, Google impressions and clicks on its page; times how much its prices
+    need a check: never genuinely checked (a recent record or change doesn't count) or checked long ago, from a weaker
+    kind of source (another guide, a review, no source; the restaurant's own site least), or worked out by us; times
+    its stars. Dinner leads; an unchecked lunch price adds a little."""
     rows = []
     for r in site.live():
         rid = r["id"]
+        d, l = price_state(r, "dinner", today), price_state(r, "lunch", today)
+        main = d or l
+        if not main:
+            continue
+
+        def need(st):
+            if not st:
+                return 0
+            age = st["verified_days"]
+            stale = 1.0 if age is None else 0.9 if age > 180 else 0.6 if age > 90 else 0.3 if age > 30 else 0
+            return stale * SOURCE_NEED.get(st["kind"], 1.2) * (1.15 if st["derived"] else 1)
+        n = need(main) + (0.25 * need(l) if d and l else 0)
+        if n <= 0:
+            continue
         vv = interest28["views"].get(rid, 0)
         cc = interest28["commercial"].get(rid, 0)
         oo = interest28["onsite"].get(rid, 0)
         g = gsc28.get(rid, {})
         gi, gc = g.get("impressions", 0), g.get("clicks", 0)
-        try:
-            age = (today - dt.date.fromisoformat(r["priceVerifiedAt"][:10])).days
-        except Exception:
-            age = None
-        if age is not None and age <= 30:
-            continue
-        stale = 1.0 if age is None else 0.9 if age > 180 else 0.6 if age > 90 else 0.3
         weight = {3: 1.5, 2: 1.25}.get(r.get("stars"), 1.0)
-        score = (vv + 8 * cc + 3 * oo + 3 * gc + gi / 25) * stale * weight
+        score = (vv + 8 * cc + 3 * oo + 3 * gc + gi / 25) * n * weight
         if score <= 0:
             continue
         why = []
@@ -895,8 +1003,8 @@ def verify_queue(site, interest28, gsc28, today, limit=25):
             why.append(f"{gi} Google impressions, {gc} clicks")
         rows.append({"id": rid, "name": r.get("name"), "stars": r.get("stars"), "city": site.city_name(r),
                      "score": round(score, 1), "evidence": ", ".join(why),
-                     "last_check": r.get("priceVerifiedAt") or "never", "recorded": r.get("priceChangedAt") or "",
-                     "source": r.get("source") or "", "source_type": r.get("sourceType") or "",
+                     "dinner": d, "lunch": l, "status": "; ".join(f"{m} {state_words(st)}" for m, st in (("dinner", d), ("lunch", l)) if st),
+                     "last_check": (d or {}).get("verified") or "never", "source": main["source"], "source_kind": main["kind"],
                      "page": f"https://starredbill.com/restaurants/{rid}/"})
     rows.sort(key=lambda x: -x["score"])
     return rows[:limit]
@@ -1052,6 +1160,10 @@ def daily(figures_path, weekly=False, links=False, keep=True):
         if rep["prev_28_days"]:
             rep["prev_28_days"]["partial"] = t0 - dt.timedelta(days=56) < UMAMI_FROM
     rep["data_health"] = data_health(site, today)
+    try:
+        rep["umami_usage"] = umami_usage(cfg)
+    except Exception as e:
+        rep["umami_usage"] = {"error": str(e)[:200]}
     rep["prices_to_verify"] = verify_queue(site, rep["last_28_days"]["restaurant_interest"], gsc.get("restaurant_pages_28d", {}), today)
     rep["anomalies"] = anomalies(site, visits, y0, t0, figures)
     if links:
@@ -1086,7 +1198,7 @@ def action_candidates(rep):
     pv = rep["prices_to_verify"][:5]
     if pv and any("page views" in x["evidence"] or "commercial" in x["evidence"] for x in pv):
         acts.append({"action": "Verify the prices of the top restaurants in Prices to verify next",
-                     "evidence": "; ".join(f'{x["name"]} ({x["evidence"]})' for x in pv), "strength": "strong" if pv[0]["score"] >= 20 else "moderate"})
+                     "evidence": "; ".join(f'{x["name"]} ({x["evidence"]}; {x["status"]})' for x in pv), "strength": "strong" if pv[0]["score"] >= 20 else "moderate"})
     w = rep["last_7_days"]
     for g in w["budget_search"]["no_result_searches"]:
         if g["count"] >= 3:
@@ -1109,6 +1221,10 @@ def action_candidates(rep):
         if a["kind"] in ("spike", "new") and "page" in a:
             acts.append({"action": f'Check why {a["page"]} got busy', "evidence": f'{a["yesterday"]} yesterday against about {a.get("usual", 0)} a day',
                          "strength": "weak"})
+    u = rep.get("umami_usage") or {}
+    if u.get("warn"):
+        acts.append({"action": "Umami usage is heading past 70% of the free plan: check Settings › Usage and decide between the paid plan and trimming event details",
+                     "evidence": f'about {u["projected_month"]:,} events projected this month', "strength": "strong"})
     if rep["data_health"]["exchange_rates"]["stale"]:
         acts.append({"action": "Refresh exchange rates", "evidence": f'rates are {rep["data_health"]["exchange_rates"]["days_old"]} days old', "strength": "strong"})
     return acts
@@ -1129,8 +1245,11 @@ def row_of(date, w, rep):
             "commercial_clicks": c["commercial_clicks"], "booking_platform_clicks": sum(a["booking_platform_clicks"].values()),
             "restaurant_site_clicks": a["restaurant_site_clicks"], "hotel_clicks": a["hotel_clicks"], "tour_clicks": a["tour_clicks"],
             "paid_clicks": a["paid_clicks"], "gsc_clicks_week": fig_sc.get("clicks", ""), "gsc_impressions_week": fig_sc.get("impressions", ""),
-            "prices_verified_30d": (rep.get("data_health") or {}).get("dinner_verified", {}).get("last_30_days", ""),
-            "prices_never_verified": (rep.get("data_health") or {}).get("dinner_verified", {}).get("never", "")}
+            "dinner_checked_30d": (rep.get("data_health") or {}).get("dinner", {}).get("checked_30_days", ""),
+            "dinner_never_checked": (rep.get("data_health") or {}).get("dinner", {}).get("never_checked", ""),
+            "lunch_checked_30d": (rep.get("data_health") or {}).get("lunch", {}).get("checked_30_days", ""),
+            "lunch_never_checked": (rep.get("data_health") or {}).get("lunch", {}).get("never_checked", ""),
+            "umami_usage_7d": (rep.get("umami_usage") or {}).get("last_7_days", {}).get("total", "")}
 
 
 def upsert_csv(path, row, key="date"):
@@ -1310,11 +1429,19 @@ def render(rep, site, figures, weekly):
     # Data health
     h = rep["data_health"]
     L.append("\n## Data health")
-    dv = h["dinner_verified"]
-    L.append(f"Dinner prices genuinely checked: {dv['yesterday']} yesterday, {dv['last_30_days']} in 30 days, {dv['last_90_days']} in 90 days, "
-             f"{dv['never']} of {h['live_starred']} never. Missing: dinner price {h['missing']['dinner_price']}, lunch unknown {h['missing']['lunch_unknown']}, "
-             f"a separate booking link {h['missing']['booking_link']} (most book through their website), website {h['missing']['website']}. Exchange rates: {h['exchange_rates']['date']}"
-             + (" (stale)" if h["exchange_rates"]["stale"] else "") + ".")
+    for meal in ("dinner", "lunch"):
+        x = h[meal]
+        L.append(f"{meal.capitalize()} prices ({x['priced']}): genuinely checked {x['checked_yesterday']} yesterday, {x['checked_30_days']} in 30 days, "
+                 f"{x['checked_90_days']} in 90 days; never checked {x['never_checked']} ({x['recorded_last_30_days_never_checked']} of them recorded in the "
+                 f"last 30 days, which doesn't count as a check). Sources: {source_words(x['by_source'])}" + (f"; {x['derived']} worked out by us" if x["derived"] else "") + ".")
+    L.append(f"Missing: dinner price {h['missing']['dinner_price']}, lunch unknown {h['missing']['lunch_unknown']}, "
+             f"a separate booking link {h['missing']['booking_link']} (most book through their website), website {h['missing']['website']}. "
+             f"Exchange rates: {h['exchange_rates']['date']}" + (" (stale)" if h["exchange_rates"]["stale"] else "") + ".")
+    u = rep.get("umami_usage") or {}
+    if u.get("month_to_date"):
+        L.append(f"Umami usage (page views + clicks + their stored details): {u['month_to_date']['total']:,} this month so far, "
+                 f"{u['last_7_days']['total']:,} in the last 7 days; on course for about {u['projected_month']:,} this month, "
+                 f"{u['projected_percent']}% of the free plan's {u['limit']:,} (a full month at last week's pace: about {u['full_month_at_weekly_pace']:,})" + (" — **getting close: look at it this week**" if u["warn"] else "") + ".")
     pc = h["price_changes"]
     if pc.get("big_moves"):
         L.append("Price moves of a third or more since yesterday: " + ", ".join(f"{x['name']} {x['field']} {x['was']}→{x['now']}" for x in pc["big_moves"][:5]) + ".")
@@ -1329,8 +1456,8 @@ def render(rep, site, figures, weekly):
             L.append(f"- {x['name']}: {x['field']} {x['verdict']} ({x['url']})")
     L.append("\n**Prices to verify next**")
     for x in rep["prices_to_verify"][:(10 if weekly else 5)]:
-        L.append(f"- {link('/restaurants/' + x['id'] + '/', x['name'])} ({'★' * (x['stars'] or 0)}, {x['city']}): {x['evidence']}; "
-                 f"last genuine check: {x['last_check']}. Source: {x['source'] or 'none'}")
+        L.append(f"- {link('/restaurants/' + x['id'] + '/', x['name'])} ({'★' * (x['stars'] or 0)}, {x['city']}): {x['evidence']}. "
+                 f"Price: {x['status']}. Check at: {x['source'] or 'no source yet'}")
 
     # Affiliate opportunities
     a = m["affiliate"]
@@ -1363,6 +1490,10 @@ def render(rep, site, figures, weekly):
 
 SLOT = {"best": "Best match", "value": "Best value", "stretch": "Stretch", "wild": "Also worth a look", "lunch-tip": "Lunch tip", "more": "More matches"}
 MEALS = {"value": "either", "lunch": "lunch", "dinner": "dinner", "weekend": "lunch + dinner"}
+
+
+def source_words(d):
+    return ", ".join(f"{SOURCE_WORDS.get(k, k)} {v}" for k, v in sorted((d or {}).items(), key=lambda kv: -kv[1]))
 
 
 def dict_words(d):

@@ -22,6 +22,10 @@ report can say what changed. A source that isn't set up yet is reported as "not 
     page's live title, description and heading and the search words they lack, so they can be tuned.
   - Sites linking to us, from Bing Webmaster Tools (Search Console's Links report has no API). Needs the Bing
     Webmaster API key in the Keychain as "starredbill-bing".
+  - Bing volumes: for searches the Ahrefs snapshot doesn't hold, Bing's own monthly searches from the same API's
+    keyword research, worldwide (bing-volumes.json beside config.json keeps each answer BING_KEEP days), and
+    where Bing counts too few, the restaurant's name alone (from Ahrefs, else Bing). Bing's numbers are much
+    smaller than Google's, so they're reported as Bing's.
   - Cloudflare (every request, robots included, so never a visitor count): pages Googlebot, Bingbot and the
     other search crawlers fetched, which AI crawlers (OAI-SearchBot, ChatGPT-User, Applebot, GPTBot, ClaudeBot…)
     read the site and its most-read pages, all as verified by Cloudflare, whether robots.txt or Cloudflare turns
@@ -141,14 +145,94 @@ def volumes():
     return _VOLUMES
 
 
+_UNKNOWN = []   # (volume, search, country) for each volume the snapshot lacks, for bing_volumes() to fill in
+
+
 def volume_of(search, country=None):
     """Monthly searches for a search: in the given country (Search Console's 3-letter code) where the snapshot
-    has it, and worldwide."""
+    has it, and worldwide. Where it has neither, bing_volumes() adds Bing's figure later as "bing"."""
     e = volumes().get(search.strip().lower())
-    if not e:
-        return {"in_country": None, "worldwide": None}
     market = COUNTRIES.get((country or "").lower(), (None,))[0]
-    return {"in_country": e["markets"].get(market) if market else None, "worldwide": e["global"] or None}
+    v = {"in_country": e["markets"].get(market) if e and market else None, "worldwide": (e or {}).get("global") or None}
+    if not v["in_country"] and not v["worldwide"]:
+        _UNKNOWN.append((v, search.strip().lower(), (country or "").lower()))
+    return v
+
+
+# Bing Webmaster Tools' keyword research (GetKeywordStats: a search's weekly Bing searches over about six months,
+# every language). Worldwide, as most searches without an Ahrefs volume are long ones Bing counts too few of in any
+# one country. Microsoft publishes no limit for it, so answers are cached, lookups kept to BING_BUDGET a run, half
+# a second apart, stopping at the first refusal (or three failures); the rest wait for the next day.
+BING_KEEP = 28       # days an answer is kept
+BING_BUDGET = 150    # new lookups a run (a day's report holds about 120 searches without an Ahrefs volume)
+BING_WEEKS = 4       # latest weeks averaged
+# Words around a restaurant's name in the searches people make about its prices ("the fat duck menu price"). Where
+# Bing counts too few of the whole search, the name alone gives a sense of its demand: from Ahrefs, else from Bing.
+NAME_WORDS = re.compile(r"^(how much (is|does|are) )|\b(tasting menu|menus?|prices?|costs?|per person|20\d\d)\b|\?")
+
+
+def bing_volumes():
+    """Fills in "bing" on each volume the Ahrefs snapshot lacks: {"monthly": about N Bing searches a month
+    worldwide (0 where Bing reports none: too few to count), "checked": day}, and where Bing counts too few, "name":
+    the restaurant's name without the price words, {"search", "monthly", "source": "Google (Ahrefs)" or "Bing"}.
+    Returns what it did."""
+    if not _UNKNOWN:
+        return {"looked_up": 0, "from_cache": 0, "left": 0}
+    key = keychain("starredbill-bing")
+    if not key:
+        return {"status": "not set up", "missing": ["Bing API key"]}
+    path = CONFIG.parent / "bing-volumes.json"
+    cache = json.loads(path.read_text()) if path.exists() else {}
+    today = dt.date.today()
+    base = "https://ssl.bing.com/webmaster/api.svc/json/GetKeywordStats?"
+    looked, cached, failed, stopped = 0, 0, 0, None
+
+    def bing(search):
+        """Bing's monthly searches worldwide, from the cache or a lookup (None when it can't be had today)."""
+        nonlocal looked, cached, failed, stopped
+        hit = cache.get(search)
+        if hit and (today - dt.date.fromisoformat(hit["checked"])).days < BING_KEEP:
+            cached += 1
+            return hit
+        if stopped or looked >= BING_BUDGET:
+            return None
+        looked += 1
+        time.sleep(0.5)
+        req = urllib.request.Request(base + urllib.parse.urlencode({"q": search, "country": "", "language": "",
+                                     "apikey": key}), headers={"User-Agent": "starredbill-figures"})
+        try:
+            with urllib.request.urlopen(req, timeout=20) as r:
+                weeks = json.loads(r.read().decode()).get("d") or []
+        except urllib.error.HTTPError as e:
+            stopped = f"HTTP {e.code}: {e.read().decode()[:200]}"
+            return None
+        except Exception as e:
+            failed += 1
+            stopped = str(e)[:200] if failed >= 3 else None
+            return None
+        weeks.sort(key=lambda e: int(re.sub(r"\D", "", e.get("Date") or "") or 0))
+        last = [e.get("Impressions") or 0 for e in weeks[-BING_WEEKS:]]
+        cache[search] = {"monthly": round(sum(last) / len(last) * 52 / 12) if last else 0, "checked": str(today)}
+        return cache[search]
+
+    for v, search, _ in _UNKNOWN:
+        hit = bing(search)
+        if hit is None:
+            continue
+        v["bing"] = hit
+        name = re.sub(r"( and)+$", "", re.sub(r"\s+", " ", NAME_WORDS.sub(" ", search)).strip(" -,"))
+        if hit["monthly"] or not name or name == search:
+            continue
+        google = (volumes().get(name) or {}).get("global")
+        if google:
+            v["name"] = {"search": name, "monthly": google, "source": "Google (Ahrefs)"}
+        else:
+            alone = bing(name)
+            if alone and alone["monthly"]:
+                v["name"] = {"search": name, "monthly": alone["monthly"], "source": "Bing"}
+    path.write_text(json.dumps(dict(sorted(cache.items())), indent=0, ensure_ascii=False))
+    return {"looked_up": looked, "from_cache": cached, "failed": failed, "stopped": stopped,
+            "left": sum(1 for v, _, _ in _UNKNOWN if "bing" not in v)}
 
 
 def http(url, data=None, headers=None, method=None):
@@ -1193,6 +1277,11 @@ def main(out, prev=None):
             result["sources"][name] = {"status": "error", "error": f"HTTP {e.code}: {e.read().decode()[:300]}"}
         except Exception as e:
             result["sources"][name] = {"status": "error", "error": str(e)[:300]}
+    try:
+        b = bing_volumes()
+        result["sources"]["bing_volumes"] = b if "status" in b else dict(status="ok", **b)
+    except Exception as e:
+        result["sources"]["bing_volumes"] = {"status": "error", "error": str(e)[:300]}
     result["seo_measures"] = seo_measures(result["sources"])
     if prev and Path(prev).exists():
         result["previous_file"] = prev

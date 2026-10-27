@@ -1,5 +1,5 @@
 {
-  "rateDate": "2026-10-02",
+  "rateDate": "2026-10-27",
   "switchable": [
     "GBP",
     "EUR",
@@ -14,57 +14,57 @@
     {
       "code": "GBP",
       "symbol": "£",
-      "perUSD": 0.757127
+      "perUSD": 0.749228
     },
     {
       "code": "EUR",
       "symbol": "€",
-      "perUSD": 0.887893
+      "perUSD": 0.893935
     },
     {
       "code": "TWD",
       "symbol": "NT$",
-      "perUSD": 31.995
+      "perUSD": 32.5924
     },
     {
       "code": "HKD",
       "symbol": "HK$",
-      "perUSD": 7.84685
+      "perUSD": 7.84491
     },
     {
       "code": "MOP",
       "symbol": "MOP$",
-      "perUSD": 8.082411
+      "perUSD": 8.08026
     },
     {
       "code": "JPY",
       "symbol": "¥",
-      "perUSD": 157.81511
+      "perUSD": 157.437
     },
     {
       "code": "SGD",
       "symbol": "S$",
-      "perUSD": 1.279427
+      "perUSD": 1.28073
     },
     {
       "code": "DKK",
       "symbol": "DKK ",
-      "perUSD": 6.647039
+      "perUSD": 6.68061
     },
     {
       "code": "NZD",
       "symbol": "NZ$",
-      "perUSD": 1.781468
+      "perUSD": 1.75868
     },
     {
       "code": "AUD",
       "symbol": "A$",
-      "perUSD": 1.433021
+      "perUSD": 1.42457
     },
     {
       "code": "KRW",
       "symbol": "₩",
-      "perUSD": 1348.606131
+      "perUSD": 1325.19
     },
     {
       "code": "QAR",
@@ -74,52 +74,52 @@
     {
       "code": "ARS",
       "symbol": "ARS",
-      "perUSD": 1523.0868
+      "perUSD": 1540.48
     },
     {
       "code": "MXN",
       "symbol": "MX$",
-      "perUSD": 18.214153
+      "perUSD": 18.5913
     },
     {
       "code": "ISK",
       "symbol": "ISK",
-      "perUSD": 121.721894
+      "perUSD": 121.89
     },
     {
       "code": "THB",
       "symbol": "฿",
-      "perUSD": 33.566256
+      "perUSD": 33.7871
     },
     {
       "code": "CAD",
       "symbol": "CA$",
-      "perUSD": 1.42482
+      "perUSD": 1.40159
     },
     {
       "code": "CNY",
       "symbol": "CN¥",
-      "perUSD": 6.710363
+      "perUSD": 6.68375
     },
     {
       "code": "CHF",
       "symbol": "CHF",
-      "perUSD": 0.828414
+      "perUSD": 0.827067
     },
     {
       "code": "BRL",
       "symbol": "R$",
-      "perUSD": 5.222532
+      "perUSD": 5.43187
     },
     {
       "code": "SEK",
       "symbol": "SEK",
-      "perUSD": 10.041831
+      "perUSD": 9.95282
     },
     {
       "code": "NOK",
       "symbol": "NOK",
-      "perUSD": 9.619945
+      "perUSD": 9.323
     },
     {
       "code": "AED",
@@ -129,42 +129,42 @@
     {
       "code": "TRY",
       "symbol": "TRY",
-      "perUSD": 49.161928
+      "perUSD": 49.7898
     },
     {
       "code": "PLN",
       "symbol": "PLN",
-      "perUSD": 3.895505
+      "perUSD": 3.93798
     },
     {
       "code": "VND",
       "symbol": "₫",
-      "perUSD": 25949.123093
+      "perUSD": 25831.5
     },
     {
       "code": "CZK",
       "symbol": "CZK",
-      "perUSD": 21.732999
+      "perUSD": 21.7805
     },
     {
       "code": "HUF",
       "symbol": "HUF",
-      "perUSD": 327.670229
+      "perUSD": 328.428
     },
     {
       "code": "MYR",
       "symbol": "RM",
-      "perUSD": 4.084534
+      "perUSD": 4.08732
     },
     {
       "code": "PHP",
       "symbol": "₱",
-      "perUSD": 62.63269
+      "perUSD": 63.9602
     },
     {
       "code": "RSD",
       "symbol": "RSD",
-      "perUSD": 104.576659
+      "perUSD": 105.033
     }
   ]
 }

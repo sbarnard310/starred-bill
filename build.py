@@ -8082,11 +8082,14 @@ def bill_options(r):
         if out:
             return out
     out = []
+    # A short name for the receipt's line, with the price note ("Set lunch, 2 or 3 courses, daily") under it as `desc`.
     if r.get("dinner") is not None:
-        out.append({"meal": "dinner", "name": r.get("dinnerNote") or ("Dinner menu" if r.get("dinnerType", "menu") == "menu" else "Dinner"),
-                    "price": r["dinner"], "wine": r.get("wine"), "type": r.get("dinnerType", "menu"), "main": 1})
+        out.append({"meal": "dinner", "name": "Dinner menu" if r.get("dinnerType", "menu") == "menu" else "Dinner",
+                    "price": r["dinner"], "wine": r.get("wine"), "type": r.get("dinnerType", "menu"), "main": 1,
+                    **({"desc": r["dinnerNote"]} if r.get("dinnerNote") else {})})
     if r.get("lunch") is not None and not r.get("noLunch"):
-        out.append({"meal": "lunch", "name": r.get("lunchNote") or "Lunch menu", "price": r["lunch"], "wine": r.get("lunchWine"), "type": r.get("lunchType", "menu")})
+        out.append({"meal": "lunch", "name": "Lunch menu", "price": r["lunch"], "wine": r.get("lunchWine"), "type": r.get("lunchType", "menu"),
+                    **({"desc": r["lunchNote"]} if r.get("lunchNote") else {})})
     return out
 
 

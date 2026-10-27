@@ -1998,6 +1998,9 @@ button.near-card:hover { border-color: var(--green); }
 .bc-wine input { width: 17px; height: 17px; accent-color: var(--gold); }
 .bc-wine input:disabled + * , .bc-wine:has(input:disabled) { color: var(--band-muted); cursor: default; }
 .bill-receipt .rc-total .rc-v { font-size: 1.05rem; }
+/* Long menu names wrap instead of pushing the amounts off the paper. */
+.bill-receipt .rc-line { grid-template-columns: minmax(0, max-content) minmax(12px, 1fr) auto; }
+.bill-receipt .rc-k { white-space: normal; overflow-wrap: anywhere; }
 .rc-msg { display: block; font-size: .85rem; line-height: 1.45; color: var(--rc-ink); }
 .bc-how { font-size: .82rem; color: var(--band-muted); }
 .bc-how summary { cursor: pointer; color: var(--band-ink); font-weight: 600; width: max-content; }

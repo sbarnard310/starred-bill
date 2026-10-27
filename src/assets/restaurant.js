@@ -336,7 +336,7 @@ function showCurrency(c) {
     if (!c.ok) lines = '<span class="rc-line rc-msg">' + esc(c.why) + "</span>";
     else {
       const spend = o.type === "spend";
-      lines = line((spend ? "Typical spend" : o.name) + " × " + st.people, amt(c.foodTotal), amt(o.price) + " a person" + (o.courses ? " · " + o.courses + " courses" : "")) +
+      lines = line((spend ? "Typical spend" : o.name) + " × " + st.people, amt(c.foodTotal), amt(o.price) + " a person" + (o.courses ? " · " + o.courses + " courses" : "") + (o.desc ? " · " + o.desc : "")) +
         (!st.wine ? "" : c.wineState === "listed" ? line("Wine pairing × " + st.people, amt(c.wineTotal), amt(c.wine) + " a person") :
           line("Wine pairing", "–", c.wineState === "not-offered" ? "not offered" : "no price listed, so not counted")) +
         line(c.terms.label, c.extra ? amt(c.extra) : c.terms.counted ? "included" : "not counted") +

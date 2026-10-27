@@ -3930,11 +3930,13 @@ def build_home(spots_url=""):
     # "Michelin Star Restaurants, With Prices" for the searches it already ranks for.
     write("/", render("home.html", {
         "title": "Michelin Star Restaurants: Prices by Budget · The Starred Bill",
-        "description": e(f"Find a Michelin-starred restaurant for your budget. Compare lunch, dinner and wine prices at {len(starred):,} restaurants and see what the whole bill is likely to be."),
+        # The description and opening sentence carry the plain search "michelin star restaurants" (27 Oct 2026, to-do item
+        # seo-homepage-own-michelin-star-restaurants: Google showed 21 other pages of ours for it, never this one).
+        "description": e(f"Michelin star restaurants worldwide, with prices: compare lunch, dinner and wine at all {len(starred):,} and find one for your budget, with the whole bill worked out."),
         "canonical": SITE_URL + "/",
         "eyebrow": "Michelin-starred restaurants, priced",
         "h1": "Find a Michelin-starred restaurant for your <em>budget</em>.",
-        "heroText": e("Compare lunch, dinner and wine prices and know what your meal is likely to cost before you book."),
+        "heroText": e(f"Lunch, dinner and wine prices at all {len(starred):,} Michelin star restaurants in {len(countries)} countries, so you know what your meal is likely to cost before you book."),
         "budgetForm": home_budget_form(),
         # English only; Chinese names stay for searching.
         "destinations": home_countries_html(countries), "ways": home_ways_html(len(countries)), "less": home_less_html(starred),
@@ -6993,12 +6995,17 @@ def guide_text_in(text, stats, lang, blocks=None):
     return re.sub(r'(<a href=")(/[\w/-]*/)(")', place_link, text)
 
 
+HOME_FOOT_LINK = '<a href="/" class="foot-guide" lang="en">All Michelin star restaurants</a>'
+
+
 def foot_guide(lang="en"):
     """The footer's link to "What is a Michelin star?", in the page's language where the guide has that translation."""
     g = guide_translations.get(GUIDE_PILLAR, {}).get(lang)
     if g:
         return f'<a href="{guide_path(GUIDE_PILLAR, lang)}" class="foot-guide">{e(g["h1"])}</a>'
-    return (f'<a href="{guide_path(GUIDE_PILLAR)}" class="foot-guide" lang="en">What is a Michelin star?</a>'
+    # English pages also link the homepage by the search it answers, "michelin star restaurants" (the logo only says the name).
+    return ((HOME_FOOT_LINK if lang == "en" else "")
+            + f'<a href="{guide_path(GUIDE_PILLAR)}" class="foot-guide" lang="en">What is a Michelin star?</a>'
             + ('<a href="/news/" class="foot-guide" lang="en">Michelin star news</a>' if news and lang == "en" else ""))
 
 

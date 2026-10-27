@@ -9,7 +9,7 @@ places = {json.loads(p.read_text())["id"]: json.loads(p.read_text()) for p in (R
 def in_sentence(p):
     return p.get("inSentence") or p["name"]
 items = [{"id": "default", "title": "What a Michelin star costs, city by city", "sub": "Dinner, lunch and wine pairing prices, side by side"},
-         {"id": "pick", "title": "Help me pick a Michelin star restaurant", "sub": "Six quick questions, three picks to fit your budget"}]
+         {"id": "pick", "title": "Find a Michelin star restaurant for your budget", "sub": "Three picks with the whole bill: best match, best value, stretch"}]
 for pid, p in sorted(places.items()):
     if p["type"] in ("group", "cuisine"):  # cuisine pages use their city's picture
         continue

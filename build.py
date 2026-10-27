@@ -1118,6 +1118,10 @@ def public(r):
         out["bw"] = bw_public(r["bookingWindow"])
     if r.get("stay") and not r.get("status"):
         out["rooms"] = r["stay"]["kind"][0]
+    # When each price was genuinely checked (1) or only recorded (0), by month, for the receipts' footers (place.js).
+    for key, meal in (("seen", "dinner"), ("seenL", "lunch")):
+        if seen_pair(r, meal):
+            out[key] = seen_pair(r, meal)
     if acclaim(r) and not r.get("status"):
         out["ac"] = acclaim(r)  # critics' points: the Critics' pick mark and the "Most acclaimed" sort (place.js)  # "h" inside a hotel, "r" rooms of its own: the Rooms badge and Show filter (place.js)
     return out
@@ -3826,7 +3830,7 @@ def home_trust_html():
              if "how-much-does-a-michelin-star-restaurant-cost" in guides else "")
     return (f'<ul class="trust">'
             f'<li><strong>Prices from the restaurants themselves.</strong> Their own websites first, then reviews and booking sites; each one links to where it came from.</li>'
-            f'<li><strong>Checked {e(checked)}.</strong> Per person, before service, with each country’s usual service, tax or tip shown on the bill.</li>'
+            f'<li><strong>Dated, price by price.</strong> Each restaurant’s page says when its price was last checked at the source, or when we recorded it if it hasn’t been rechecked since. Prices are per person, before service, with each country’s usual service, tax or tip shown on the bill.</li>'
             f'<li><strong>Stars from the MICHELIN Guide.</strong> The Starred Bill is independent: not affiliated with Michelin, and no restaurant pays to appear.</li>'
             f'{quote}</ul>')
 
@@ -3906,8 +3910,8 @@ def build_home(spots_url=""):
     # Positioning (Phase 1, 27 Oct 2026, owner's wording): the heading sells the budget; the title stays close to the old
     # "Michelin Star Restaurants, With Prices" for the searches it already ranks for.
     write("/", render("home.html", {
-        "title": "Michelin Star Restaurants by Budget, With Prices · The Starred Bill",
-        "description": e(f"Find a Michelin-starred restaurant for your budget. Compare lunch, dinner and wine pairing prices at {len(starred):,} restaurants in {len(countries)} countries and see what the whole bill is likely to be before you book."),
+        "title": "Michelin Star Restaurants: Prices by Budget · The Starred Bill",
+        "description": e(f"Find a Michelin-starred restaurant for your budget. Compare lunch, dinner and wine prices at {len(starred):,} restaurants and see what the whole bill is likely to be."),
         "canonical": SITE_URL + "/",
         "eyebrow": "Michelin-starred restaurants, priced",
         "h1": "Find a Michelin-starred restaurant for your <em>budget</em>.",
@@ -4122,11 +4126,12 @@ def build_pick(near_url):
          "60% of the menu, and say so; or tick “Only restaurants that list their pairing price” to leave those out."),
         ("Can it plan a lunch and a dinner for a weekend away?",
          "Yes. Choose “A lunch and a dinner” and set one budget for both meals. We'll pair a starred lunch with a starred dinner at "
-         "another restaurant no more than 40 km (25 miles) away, and show the best match, the best value and a wildcard, with the total per person."),
+         "another restaurant no more than 40 km (25 miles) away, and show the best match, the best value and a wildcard (the weekend plans have no stretch), with the estimated total for your table."),
         ("Where do the stars and prices come from?",
          "Stars come only from the MICHELIN Guide. Menu prices are recorded per person before service, taken from each restaurant's own "
-         "website where possible, or recent reviews and booking sites, and each one links to its source on the restaurant's page, with "
-         "the day it was last checked."),
+         "website where possible, or recent reviews and booking sites. Each restaurant's page links to the source and gives a date: "
+         "“checked” with the day we last confirmed the price at the source, or “recorded” with the month we took it down, where it "
+         "hasn't been rechecked since. Most prices are still at “recorded”."),
     ]
     faq_html = '<section class="guide-faq" id="faq"><h2>Frequently asked questions</h2>' + "".join(f"<h3>{e(q)}</h3><p>{e(a)}</p>" for q, a in faq) + "</section>"
     static = (
@@ -4182,13 +4187,13 @@ def build_compare(starred):
     holding the visitor's wishlist. The page is personal (it reads the wishlist in the browser), so it stays out of search engines and the sitemap."""
     cols = ["id", "name", "stars", "cuisine", "where", "path", "country", "cur", "dinner", "dinnerType", "dinnerNote", "lunch", "lunchType",
             "lunchNote", "noLunch", "wine", "lunchWine", "source", "sourceType", "lunchSource", "lunchSourceType", "notice", "noPairing", "href",
-            "serviceIncluded", "closes"]
+            "serviceIncluded", "closes", "seen", "seenL"]
     rows = [[r["id"], r["name"], r["stars"], r.get("cuisine", ""), near_where(r), r["cityPath"], r["country"], r["cur"],
              r.get("dinner"), r.get("dinnerType", "menu"), r.get("dinnerNote", ""), r.get("lunch"), r.get("lunchType", "menu"),
              r.get("lunchNote", ""), 1 if r.get("noLunch") else 0, r.get("wine"), r.get("lunchWine"),
              r.get("source", ""), r.get("sourceType", ""), r.get("lunchSource", ""), r.get("lunchSourceType", ""), 1 if r.get("notice") else 0,
              1 if r.get("noPairing") else 0, restaurant_href(r), (2 if r.get("taxIncluded") else 1) if r.get("serviceIncluded") else 0,
-             r.get("closes")]
+             r.get("closes"), seen_pair(r, "dinner"), seen_pair(r, "lunch")]
             for r in starred]
     parts = [[] for _ in range(COMPARE_PARTS)]
     for row in rows:
@@ -5936,7 +5941,7 @@ def results_sections(g, ed, cfg, latest):
                    f'<p>{count_phrase(len(ones), "restaurant", "restaurants").capitalize()} won {"its" if len(ones) == 1 else "their"} first MICHELIN star in the {e(g["name"])} {year}.</p>'
                    + table(("Restaurant", "Where", "Cuisine", "Dinner menu"), rows)
                    + f'<p class="table-note">Dinner is the tasting menu per person before service, in local currency with US dollars beside it. '
-                     f'Prices checked {e(guide_stats_checked())}.</p>')
+                     f'Prices as recorded in {e(guide_stats_checked())}.</p>')
 
     lost = sorted([(r, b, s) for r, s, b in ed["down"]] + [(r, b, 0) for r, b in ed["gone"]], key=lambda x: (-x[1], x[0]["name"].lower()))
     if lost:
@@ -6038,7 +6043,7 @@ def results_guide(g):
         dest = "Our destination pages list every one, " + and_list([f'<a href="{e(p["path"])}">{e(p["name"])}</a>' for p in shown]) + ","
     body += (f'<h2 id="prices">Prices at every starred restaurant in {e(area)}</h2>'
              f'<p>{dest} with its dinner, lunch and wine pairing prices and a map. Stars come from the MICHELIN Guide; '
-             f'prices are what the restaurants charge, checked {e(guide_stats_checked())}.</p>')
+             f'prices are what the restaurants charge, as recorded in {e(guide_stats_checked())}.</p>')
 
     strip = lambda t: re.sub(r"\s+", " ", re.sub(r"<[^>]+>", "", t)).strip()
     n_new = len(latest["new"])
@@ -6125,7 +6130,7 @@ def guide_blocks(stats):
     links = michelin_links()
     year, checked = stats["guideYear"], stats["checked"]
     stars_cell = lambda n: f'<span class="g-stars" aria-label="{n} star{"s" if n > 1 else ""}">{"★" * n}</span>'
-    note = lambda text: f'<p class="table-note">{text} Last checked {e(checked)}.</p>'
+    note = lambda text: f'<p class="table-note">{text} Figures as of {e(checked)}.</p>'
     name_html = lambda r: restaurant_link(r, links)
 
     def counts_table(groups, first):
@@ -6349,7 +6354,7 @@ def cheap_blocks(live, name_html, stars_cell, checked, year):
     note = (f'<p class="table-note">Stars from the current MICHELIN Guide editions ({e(year)} or the latest before it). Each price is the cheapest meal we list '
             f'for the restaurant, lunch or dinner, per person in local currency before service and drinks, ranked by its value in US dollars at recent '
             f'exchange rates. “À la carte” is the price of a main course or a typical dish, “typical spend” what a meal usually comes to. '
-            f'Mainland China’s typical spends are left out. Last checked {e(checked)}.</p>')
+            f'Mainland China’s typical spends are left out. Figures as of {e(checked)}.</p>')
 
     def what_cell(r, f):
         label, text = cheap_what(r, f)
@@ -6402,7 +6407,7 @@ def cheap_blocks(live, name_html, stars_cell, checked, year):
     heads = "".join(f'<th scope="col">{h}</th>' for h in ("Stars", "List both", "Lunch cheaper", "Typical set lunch", "Typical dinner menu", "Typical saving at lunch"))
     blocks["cheapest-lunch"] = (f'<div class="table-wrap"><table class="guide-table data"><thead><tr>{heads}</tr></thead><tbody>{rows}</tbody></table></div>'
                                 f'<p class="table-note">Starred restaurants that list both a set lunch and a set dinner menu on The Starred Bill. Typical means the '
-                                f'median; the saving is the median among those where lunch costs less. Prices in US dollars at recent exchange rates, per person before service and drinks. Last checked {e(checked)}.</p>')
+                                f'median; the saving is the median among those where lunch costs less. Prices in US dollars at recent exchange rates, per person before service and drinks. Figures as of {e(checked)}.</p>')
     return blocks
 
 
@@ -6527,7 +6532,7 @@ def cost_blocks(live, name_html, stars_cell, checked, year):
     wrap = lambda heads, body, cls="guide-table data", extra="": (
         f'<div class="table-wrap"><table class="{cls}"{extra}><thead><tr>'
         + "".join(f'<th scope="col">{h}</th>' for h in heads) + f"</tr></thead><tbody>{body}</tbody></table></div>")
-    note = lambda text: f'<p class="table-note">{text} Last checked {e(checked)}.</p>'
+    note = lambda text: f'<p class="table-note">{text} Figures as of {e(checked)}.</p>'
 
     rows = ""
     for s in (1, 2, 3):
@@ -6724,7 +6729,7 @@ def acclaim_blocks(stars_cell, price_cell, links, checked):
     note = (f'<p class="table-note">Stars from the current MICHELIN Guide editions. Critics’ lists: the latest edition of The World’s 50 Best '
             f'Restaurants (with 51–100) and its regional lists, OAD’s Top Restaurants and La Liste’s Top 1000, each taken from the list’s own '
             f'website. Prices are per person in local currency, before service and drinks, with US dollars at recent exchange rates. '
-            f'Star counts and prices last checked {e(checked)}.</p>')
+            f'Star counts and prices as of {e(checked)}.</p>')
 
     def name_cell(r, rank):
         return f'<td data-label="Restaurant"><span class="rank">{rank}</span> {restaurant_link(r, links)}</td>'
@@ -7177,7 +7182,7 @@ def guide_sources_html(g, stats):
         name, url = EXCHANGE_RATES
         own += (f'<p class="guide-sources-own">Prices and counts are The Starred Bill’s own data on {stats["total"]} starred restaurants: '
                f'stars from each country’s latest MICHELIN Guide, menu prices from each restaurant’s own website or, where it publishes none, '
-               f'a recent review, checked {e(stats["checked"])}. US dollar figures use exchange rates from '
+               f'a recent review, recorded {e(stats["checked"])}. US dollar figures use exchange rates from '
                f'<a href="{url}" target="_blank" rel="noopener">{name}</a>' + rates_day(lang) + '.</p>')
     if not items and not own:
         return ""
@@ -7252,7 +7257,7 @@ def build_guides():
         hero = (f'<figure class="guide-hero"><img src="{img}.jpg" alt="{e(g.get("imageAlt", ""))}" width="1600" height="900" '
                 f'fetchpriority="high" decoding="async"></figure>\n') if img else ""
         main = (f'<article lang="{e(g.get("lang", "en-US"))}">\n<h1>{e(g["h1"])}</h1>\n'
-                f'<p class="prose-date">Updated {(uk_date if g.get("lang") == "en-GB" else us_date)(g["updated"])} · Star counts and prices checked {stats["checked"]}</p>\n'
+                f'<p class="prose-date">Updated {(uk_date if g.get("lang") == "en-GB" else us_date)(g["updated"])} · Star counts and prices as of {stats["checked"]}</p>\n'
                 f'{hero}{body}\n{guide_tours_html(g)}{faq_html}\n{guide_sources_html(g, stats)}\n</article>')
         if not g.get("sources"):
             print(f"  Guide {g['id']}: lists no sources; add the outside sources its facts come from (see README)")
@@ -7337,7 +7342,7 @@ def build_guides():
             f'and what a starred meal really costs. Every figure comes from the {stats["total"]} starred restaurants on The Starred Bill, '
             f'so the guides stay up to date as the prices do.')
     intro = (f'<h1>Michelin Star Guides</h1>\n<p class="lede">{lede}</p>\n'
-             f'<p class="prose-date">{len(guides)} guides · Stars from the MICHELIN Guide · Figures and prices checked {stats["checked"]}</p>\n')
+             f'<p class="prose-date">{len(guides)} guides · Stars from the MICHELIN Guide · Figures and prices as of {stats["checked"]}</p>\n')
     description = "Plain-English guides to Michelin stars: what they mean, how restaurants earn them, where to find them and what a starred meal costs."
     graph = [
         {"@type": "BreadcrumbList", "itemListElement": [
@@ -7890,6 +7895,12 @@ def price_seen(r, meal="dinner"):
     if r.get(f"{pre}VerifiedAt"):
         return r[f"{pre}VerifiedAt"], True
     return r.get(f"{pre}ChangedAt") or "", False
+
+
+def seen_pair(r, meal="dinner"):
+    """[month, 1 checked / 0 only recorded] for the browser's receipts (place.js, compare.js), or None."""
+    day, checked = price_seen(r, meal)
+    return [day[:7], 1 if checked else 0] if day else None
 
 
 def seen_words(r, meal="dinner", short=False):

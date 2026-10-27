@@ -78,5 +78,9 @@
   "bookingPhone": "+33 1 45 55 15 05",
   "cancellation": "Cancellation and change terms are given when booking; late cancellations and no-shows may be charged.",
   "infoSource": "https://leviolondingres.paris/reservation-2/",
-  "infoChecked": "2026-10-12"
+  "infoChecked": "2026-10-12",
+  "priceChangedAt": "2026-10-12",
+  "lunchChangedAt": "2026-10-12",
+  "priceVerifiedAt": "2026-10-12",
+  "lunchVerifiedAt": "2026-10-12"
 }

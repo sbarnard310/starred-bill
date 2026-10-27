@@ -32,5 +32,7 @@
   "lunchSource": "https://www.jer.be/menu/",
   "chef": "Jeroen Schildermans",
   "chefSource": "press",
-  "dietsManual": true
+  "dietsManual": true,
+  "priceChangedAt": "2026-10-05",
+  "lunchChangedAt": "2026-10-06"
 }

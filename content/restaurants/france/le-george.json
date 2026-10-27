@@ -73,5 +73,9 @@
     "name": "Four Seasons Hotel George V",
     "url": "https://www.fourseasons.com/paris/",
     "checked": "2026-10-23"
-  }
+  },
+  "priceChangedAt": "2026-10-03",
+  "lunchChangedAt": "2026-10-03",
+  "priceVerifiedAt": "2026-10-13",
+  "lunchVerifiedAt": "2026-10-13"
 }

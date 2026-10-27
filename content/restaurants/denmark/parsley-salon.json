@@ -45,5 +45,7 @@
   "bookingPhone": "+45 24 21 21 62, Wednesday to Saturday, 12pm to 6pm",
   "cancellation": "Cancel at least 72 hours ahead, or the DKK 500 per person booking fee is kept; a DKK 50 transaction fee applies to cancellations. Tables more than 15 minutes late without calling are cancelled and the fee kept.",
   "infoSource": "https://www.parsleysalon.dk/en/home-1-1-1-1-1",
-  "infoChecked": "2026-10-13"
+  "infoChecked": "2026-10-13",
+  "priceChangedAt": "2026-10-03",
+  "priceVerifiedAt": "2026-10-13"
 }

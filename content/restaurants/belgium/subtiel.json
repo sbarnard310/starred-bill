@@ -34,5 +34,7 @@
   "chef": "Stéphane Buyens",
   "chefSource": "press",
   "dinner": 45,
-  "source": "https://www.subtiel-dining.be/nl/a-la-carte"
+  "source": "https://www.subtiel-dining.be/nl/a-la-carte",
+  "priceChangedAt": "2026-10-22",
+  "lunchChangedAt": "2026-10-05"
 }

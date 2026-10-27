@@ -31,5 +31,7 @@
   "lunchNote": "Ontdekken market menu, 3 courses, lunch only",
   "lunchNoteNl": "Marktmenu Ontdekken, 3 gangen, enkel 's middags",
   "lunchNoteFr": "Menu du marché Ontdekken, 3 services, uniquement le midi",
-  "dietsManual": true
+  "dietsManual": true,
+  "priceChangedAt": "2026-10-10",
+  "lunchChangedAt": "2026-10-10"
 }

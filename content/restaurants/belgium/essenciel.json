@@ -25,5 +25,7 @@
   "lunchSourceType": "site",
   "lunchSource": "https://www.essenciel.be/nl/menu",
   "chef": "Niels Brants",
-  "chefSource": "press"
+  "chefSource": "press",
+  "priceChangedAt": "2026-10-05",
+  "lunchChangedAt": "2026-10-06"
 }

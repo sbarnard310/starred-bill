@@ -30,5 +30,7 @@
   "lunchNoteFr": "Menu déjeuner en 3 services, change chaque jour",
   "dinner": 44,
   "source": "https://tinelle.be/home/",
-  "dietsManual": true
+  "dietsManual": true,
+  "priceChangedAt": "2026-10-22",
+  "lunchChangedAt": "2026-10-22"
 }

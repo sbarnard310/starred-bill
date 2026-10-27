@@ -31,5 +31,7 @@
   "chefSource": "press",
   "dinnerNote": "Plaisir menu (Découverte €90, Gourmand €120)",
   "dinnerNoteFr": "Menu Plaisir (Découverte 90 €, Gourmand 120 €)",
-  "dietsManual": true
+  "dietsManual": true,
+  "priceChangedAt": "2026-10-10",
+  "lunchChangedAt": "2026-10-10"
 }

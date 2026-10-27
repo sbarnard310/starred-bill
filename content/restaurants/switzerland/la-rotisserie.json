@@ -31,5 +31,7 @@
   "lunchNoteIt": "Stesso menu a pranzo",
   "lunchSourceType": "site",
   "lunchSource": "https://storchen.ch/en/restaurants/la-rotisserie/",
-  "dietsManual": true
+  "dietsManual": true,
+  "priceChangedAt": "2026-10-10",
+  "lunchChangedAt": "2026-10-06"
 }

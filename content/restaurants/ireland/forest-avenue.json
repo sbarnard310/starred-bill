@@ -30,5 +30,7 @@
   ],
   "chef": "John Wyer",
   "chefSource": "press",
-  "dietsManual": true
+  "dietsManual": true,
+  "priceChangedAt": "2026-10-03",
+  "lunchChangedAt": "2026-10-03"
 }

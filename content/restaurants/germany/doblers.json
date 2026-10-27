@@ -27,5 +27,7 @@
   "lunchNoteDe": "Mittagsmenü",
   "dinner": 138,
   "source": "https://doblers-restaurant.de/wp-content/uploads/2026/06/A-Menue-zur-Jahreszeit-Abend-24.pdf",
-  "dietsManual": true
+  "dietsManual": true,
+  "priceChangedAt": "2026-10-22",
+  "lunchChangedAt": "2026-10-05"
 }

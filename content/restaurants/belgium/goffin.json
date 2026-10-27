@@ -30,5 +30,7 @@
   "lunchNoteFr": "Même menu le midi · lun.–mar., jeu.–ven.",
   "lunchWine": 48,
   "lunchSourceType": "site",
-  "lunchSource": "https://www.timothygoffin.be/menu"
+  "lunchSource": "https://www.timothygoffin.be/menu",
+  "priceChangedAt": "2026-10-05",
+  "lunchChangedAt": "2026-10-06"
 }

@@ -43,5 +43,8 @@
   "bookingUrl": "https://bistrotblaise.reservation.barestho.com/",
   "bookingPhone": "+32 470 89 57 12",
   "infoSource": "https://bistrotblaise.be/",
-  "infoChecked": "2026-10-13"
+  "infoChecked": "2026-10-13",
+  "priceChangedAt": "2026-10-09",
+  "lunchChangedAt": "2026-10-06",
+  "lunchVerifiedAt": "2026-10-13"
 }

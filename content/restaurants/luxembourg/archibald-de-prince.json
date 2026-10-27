@@ -56,5 +56,8 @@
   "dressCode": "Smart dress is required.",
   "infoSource": "https://www.archibalddeprince.lu/la-table/",
   "infoChecked": "2026-10-13",
-  "dietsManual": true
+  "dietsManual": true,
+  "priceChangedAt": "2026-10-05",
+  "lunchChangedAt": "2026-10-06",
+  "priceVerifiedAt": "2026-10-13"
 }

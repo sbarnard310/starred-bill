@@ -27,5 +27,7 @@
   "lunchWine": 51,
   "dinnerNote": "Découverte menu, 5 courses (Prestige, 6 courses, €110)",
   "dinnerNoteNl": "Menu Découverte, 5 gangen (Prestige, 6 gangen, € 110)",
-  "dinnerNoteFr": "Menu Découverte, 5 services (Prestige, 6 services, 110 €)"
+  "dinnerNoteFr": "Menu Découverte, 5 services (Prestige, 6 services, 110 €)",
+  "priceChangedAt": "2026-10-10",
+  "lunchChangedAt": "2026-10-10"
 }

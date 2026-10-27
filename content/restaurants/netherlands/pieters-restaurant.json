@@ -27,5 +27,7 @@
   "lunchSourceType": "site",
   "lunchSource": "https://www.pietersrestaurant.nl/",
   "chef": "Pieter de Ronde",
-  "chefSource": "press"
+  "chefSource": "press",
+  "priceChangedAt": "2026-10-05",
+  "lunchChangedAt": "2026-10-06"
 }

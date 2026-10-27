@@ -47,5 +47,7 @@
   "groups": "The largest party is 6, with a €220 deposit.",
   "children": "The restaurant says it is not suitable for children.",
   "infoSource": "https://www.varietyjones.ie/info",
-  "infoChecked": "2026-10-12"
+  "infoChecked": "2026-10-12",
+  "priceChangedAt": "2026-10-03",
+  "priceVerifiedAt": "2026-10-12"
 }

@@ -27,5 +27,7 @@
   "lunchSourceType": "site",
   "lunchSource": "https://christians-restaurant.de/",
   "chef": "Christian Grainer",
-  "chefSource": "press"
+  "chefSource": "press",
+  "priceChangedAt": "2026-10-05",
+  "lunchChangedAt": "2026-10-06"
 }

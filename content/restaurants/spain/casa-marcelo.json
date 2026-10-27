@@ -39,5 +39,8 @@
   "bookingUrl": "https://www.covermanager.com/reserve/module_restaurant/restaurante-casa-marcelo/english",
   "bookingPhone": "+34 981 558 580",
   "infoSource": "https://www.casamarcelo.net/en",
-  "infoChecked": "2026-10-13"
+  "infoChecked": "2026-10-13",
+  "priceChangedAt": "2026-10-05",
+  "lunchChangedAt": "2026-10-06",
+  "priceVerifiedAt": "2026-10-13"
 }

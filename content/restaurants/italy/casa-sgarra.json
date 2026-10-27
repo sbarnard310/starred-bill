@@ -78,5 +78,8 @@
   "bookingPhone": "+39 0883 895968",
   "infoSource": "https://www.casasgarra.it/",
   "infoChecked": "2026-10-13",
-  "dietsManual": true
+  "dietsManual": true,
+  "priceChangedAt": "2026-10-13",
+  "lunchChangedAt": "2026-10-13",
+  "priceVerifiedAt": "2026-10-13"
 }

@@ -31,5 +31,7 @@
   "lunchWine": 399,
   "lunchNotePl": "To samo menu w porze lunchu · śr.–niedz.",
   "lunchSourceType": "site",
-  "lunchSource": "https://restaurantgiewont.com/menu-pl.html"
+  "lunchSource": "https://restaurantgiewont.com/menu-pl.html",
+  "priceChangedAt": "2026-10-10",
+  "lunchChangedAt": "2026-10-10"
 }

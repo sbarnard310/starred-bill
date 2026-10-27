@@ -39,5 +39,7 @@
   "noBookings": true,
   "queue": "No reservations: tables go to whoever turns up, and waits of up to an hour are reported since the star. Open every day, from 12pm (11am at weekends) to 11.30pm.",
   "infoSource": "https://guide.michelin.com/en/ciudad-de-mexico-region/mexico-city/restaurant/la-once-mil",
-  "infoChecked": "2026-10-13"
+  "infoChecked": "2026-10-13",
+  "priceChangedAt": "2026-10-05",
+  "lunchChangedAt": "2026-10-05"
 }

@@ -31,5 +31,7 @@
   "dinnerNote": "Experience menu, 4 courses (5 courses €150; Saturday evenings 5 courses only)",
   "dinnerNoteNl": "Experience-menu, 4 gangen (5 gangen € 150; zaterdagavond enkel 5 gangen)",
   "dinnerNoteFr": "Menu Experience, 4 services (5 services 150 € ; le samedi soir, 5 services uniquement)",
-  "dietsManual": true
+  "dietsManual": true,
+  "priceChangedAt": "2026-10-10",
+  "lunchChangedAt": "2026-10-10"
 }

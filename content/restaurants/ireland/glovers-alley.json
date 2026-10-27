@@ -68,5 +68,9 @@
   "servicePct": 10,
   "infoSource": "https://www.sevenrooms.com/reservations/gloversalley",
   "infoChecked": "2026-10-13",
-  "dietsManual": true
+  "dietsManual": true,
+  "priceChangedAt": "2026-10-13",
+  "lunchChangedAt": "2026-10-13",
+  "priceVerifiedAt": "2026-10-13",
+  "lunchVerifiedAt": "2026-10-13"
 }

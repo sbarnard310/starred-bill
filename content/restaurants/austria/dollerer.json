@@ -30,5 +30,7 @@
   "lunchNoteDe": "Mittagsmenü · Samstag",
   "lunchSourceType": "site",
   "lunchSource": "https://www.doellerer.at/restaurant/menues-karte/",
-  "dietsManual": true
+  "dietsManual": true,
+  "priceChangedAt": "2026-10-06",
+  "lunchChangedAt": "2026-10-12"
 }

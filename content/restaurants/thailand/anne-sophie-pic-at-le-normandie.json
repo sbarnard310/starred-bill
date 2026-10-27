@@ -30,5 +30,7 @@
   "dinner": 9000,
   "source": "https://www.mandarinoriental.com/en/bangkok/chao-phraya-river/dine/anne-sophie-pic-at-le-normandie",
   "wine": 6500,
-  "lunchWine": 3200
+  "lunchWine": 3200,
+  "priceChangedAt": "2026-10-22",
+  "lunchChangedAt": "2026-10-22"
 }

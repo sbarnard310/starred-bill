@@ -56,5 +56,7 @@
   "children": "Guests must be 15 or older.",
   "infoSource": "https://www.urlavinolocale.com/",
   "infoChecked": "2026-10-13",
-  "dietsManual": true
+  "dietsManual": true,
+  "priceChangedAt": "2026-10-13",
+  "priceVerifiedAt": "2026-10-13"
 }

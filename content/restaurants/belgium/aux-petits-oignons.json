@@ -27,5 +27,7 @@
   "lunchNoteFr": "Même menu le midi · jeu.–ven., dim.–lun.",
   "lunchWine": 60,
   "lunchSourceType": "site",
-  "lunchSource": "https://www.auxpetitsoignons.be/menu-nl"
+  "lunchSource": "https://www.auxpetitsoignons.be/menu-nl",
+  "priceChangedAt": "2026-10-05",
+  "lunchChangedAt": "2026-10-06"
 }

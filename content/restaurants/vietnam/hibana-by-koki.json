@@ -23,5 +23,7 @@
   "lunch": 3500000,
   "lunchType": "menu",
   "lunchSourceType": "site",
-  "lunchSource": "https://capellahotels.com/en/hanoi-menu"
+  "lunchSource": "https://capellahotels.com/en/hanoi-menu",
+  "priceChangedAt": "2026-10-08",
+  "lunchChangedAt": "2026-10-08"
 }

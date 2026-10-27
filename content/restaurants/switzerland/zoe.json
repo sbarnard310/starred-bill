@@ -33,5 +33,7 @@
   "lunchNoteIt": "Stesso menu a pranzo · mar–ven",
   "lunchSourceType": "site",
   "lunchSource": "https://www.restaurant-zoe.com/menu",
-  "dietsManual": true
+  "dietsManual": true,
+  "priceChangedAt": "2026-10-05",
+  "lunchChangedAt": "2026-10-06"
 }

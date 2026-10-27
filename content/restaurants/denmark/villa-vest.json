@@ -66,5 +66,9 @@
   "groups": "Tables of 8 or more must order their food in advance.",
   "children": "Children's menu of two courses, DKK 300, up to age 12; children under 12 need not join the table's Den Store Aftenmenu.",
   "infoSource": "https://villavest.dk/restaurant/",
-  "infoChecked": "2026-10-13"
+  "infoChecked": "2026-10-13",
+  "priceChangedAt": "2026-10-13",
+  "lunchChangedAt": "2026-10-13",
+  "priceVerifiedAt": "2026-10-13",
+  "lunchVerifiedAt": "2026-10-13"
 }

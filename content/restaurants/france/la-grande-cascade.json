@@ -79,5 +79,8 @@
   "photoWidth": 1000,
   "photoHeight": 667,
   "photoChecked": "2026-10-13",
-  "dietsManual": true
+  "dietsManual": true,
+  "priceChangedAt": "2026-10-13",
+  "lunchChangedAt": "2026-10-03",
+  "priceVerifiedAt": "2026-10-13"
 }

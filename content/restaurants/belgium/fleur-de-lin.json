@@ -27,5 +27,7 @@
   "lunchType": "menu",
   "lunchWine": 35,
   "lunchSourceType": "site",
-  "lunchSource": "https://fleurdelin.be/page/menu"
+  "lunchSource": "https://fleurdelin.be/page/menu",
+  "priceChangedAt": "2026-10-08",
+  "lunchChangedAt": "2026-10-08"
 }

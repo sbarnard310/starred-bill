@@ -39,5 +39,7 @@
   "lunchNoteDe": "Mittagsmenü",
   "lunchNoteFr": "Menu déjeuner",
   "lunchNoteIt": "Menu pranzo",
-  "dietsManual": true
+  "dietsManual": true,
+  "priceChangedAt": "2026-10-22",
+  "lunchChangedAt": "2026-10-05"
 }

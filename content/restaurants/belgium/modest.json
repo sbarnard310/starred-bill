@@ -28,5 +28,7 @@
   "lunchNoteNl": "Lunchmenu, 3 gangen, niet op zaterdag (4 gangen €95)",
   "lunchNoteFr": "Menu déjeuner en 3 services, sauf le samedi (4 services 95 €)",
   "dinner": 95,
-  "source": "https://www.restaurantmodest.be/"
+  "source": "https://www.restaurantmodest.be/",
+  "priceChangedAt": "2026-10-22",
+  "lunchChangedAt": "2026-10-22"
 }

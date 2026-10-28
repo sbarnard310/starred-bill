@@ -1462,6 +1462,7 @@ footer .foot-legal { flex-basis: 100%; font-size: .78rem; }
 .pi-src-restaurant { border-color: color-mix(in srgb, var(--green) 45%, transparent); }
 .pi-ok { font-size: .78rem; color: var(--green); font-weight: 600; white-space: nowrap; }
 .pi-ok::before { content: "✓ "; }
+.pi-unconf { font-size: .78rem; color: var(--muted); white-space: nowrap; }
 .guide-table.pi-four th[scope="row"] { text-transform: none; letter-spacing: 0; font-size: .88rem; color: var(--ink); font-weight: 600; min-width: 12ch; }
 .guide-table.pi-four td.num { white-space: normal; }
 .guide-table.pi-four td:first-child, .guide-table.pi-four thead th a { font-weight: 600; }

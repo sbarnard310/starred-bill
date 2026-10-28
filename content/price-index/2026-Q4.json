@@ -2603,9 +2603,12 @@
    "same": 28,
    "cheaper": 10,
    "other": 5,
-   "uncertain": 1
+   "uncertain": 1,
+   "chosen": "chosen across France, Spain, Italy, Germany, Japan, Belgium, Switzerland, the Netherlands and four other countries, not as a random sample of the whole list",
+   "pattern": "The copied lunches cluster where a restaurant publishes a separate lunch menu, as many do in France, Switzerland and the Netherlands (8 of the 15 restaurants checked there had a cheaper lunch menu that hadn’t been recorded), while every one checked in Italy and Belgium was right, so this looks like a systematic recording problem rather than stray typos."
   },
-  "evidence": "starred-bill-research/price-checks/index-q4 (results files and apply.py)"
+  "evidence": "starred-bill-research/price-checks/index-q4 (results files and apply.py)",
+  "note": "The Eight’s MOP$498 set lunch, whose official menu couldn’t be opened to reconfirm it and which looks low for two stars, is left out of the rankings until it’s verified."
  },
  "notes": {
   "jade-dragon:lunch": "9 courses, minimum two guests",
@@ -2728,5 +2731,29 @@
   "wa-yamamura:lunch",
   "werneckhof-sigi-schelling:lunch",
   "xiquet:dinner"
- ]
+ ],
+ "unconfirmed": [
+  "8-1-2-otto-e-mezzo-bombana:dinner",
+  "8-1-2-otto-e-mezzo-bombana:lunch",
+  "ajinokaze-nishimura:dinner",
+  "ajinokaze-nishimura:lunch",
+  "alois-dallmayr-fine-dining:lunch",
+  "hoseki:dinner",
+  "hoseki:lunch",
+  "i-m-teppanyaki-and-wine:dinner",
+  "i-m-teppanyaki-and-wine:lunch",
+  "ideal-bistro:dinner",
+  "latelier-de-joel-robuchon:dinner",
+  "latelier-de-joel-robuchon:lunch",
+  "omakase-at-barracks-row:dinner",
+  "robuchon-au-dome:dinner",
+  "robuchon-au-dome:lunch",
+  "roses-luxury:dinner",
+  "talvo:lunch",
+  "the-eight:dinner",
+  "the-eight:lunch"
+ ],
+ "excluded": {
+  "the-eight:lunch": "Its official lunch menu couldn't be opened to reconfirm MOP$498 before publication, and the figure looks low for two stars."
+ }
 }

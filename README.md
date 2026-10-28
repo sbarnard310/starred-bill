@@ -169,8 +169,18 @@ quarterly snapshot, never from the live restaurant files. An edition is two file
   `python3 build.py --index-edition 2027-Q1`: `rates` (each currency's `perUSD` on the snapshot's `rateDate`, read from
   `currencies.json` at the snapshot's commit), `service` (each country's usual service rule then) and `cities` (which
   restaurants count under each city with 10 or more, as the most-stars guide groups them). Neither is ever rewritten,
-  except `confirmed`: ids of set lunches under a quarter of dinner that have been checked and may be ranked, added before
-  the edition is published.
+  except for what the check before publication adds to the edition file (never to the snapshot):
+  - `corrections`: snapshot records found to have been wrong when taken (`id`, `meal`, and `price`, `sourceKind`, `wine`
+    or `remove`, with `error` in plain words, `evidence` and `checked`), listed on the page; a price that has simply
+    changed since is not corrected, as the edition describes the quarter;
+  - `confirmed`: ids whose set lunch was checked and may be compared (lunches under a quarter of dinner, or equal to it,
+    are otherwise held back);
+  - `validated` / `unconfirmed`: "<id>:<meal>" confirmed at source in that check, or not settled either way (shown as
+    "checked" / "not rechecked" in the tables); `excluded`: "<id>:<meal>" kept out of the rankings until verified, with why;
+  - `notes`: "<id>:<meal>" → a few words on a ranked menu (courses, days, minimum guests);
+  - `validation`: the check's day and counts, and `sameSample` (the same-price lunch sample: counts, how it was chosen,
+    the pattern found), quoted on the page without scaling the sample up to the whole list.
+  The evidence for 2026-Q4 is in starred-bill-research/price-checks/index-q4 (results files and apply.py).
 
 The guide's `priceIndex` field names the edition it shows (`"2026-Q4"`). Its body is ordinary guide text with figures
 (`{{piMedian1}}`, `{{piCitiesN}}`, `{{piCheapCity}}`, `{{piVerifiedShare}}`…) and blocks (`{{table:pi-headlines}}`,

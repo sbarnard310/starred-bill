@@ -9842,6 +9842,7 @@ def price_index():
     # price that has simply changed since stays as it was: the edition shows the quarter as it stood.
     fixes = {(c["id"], c["meal"]): c for c in ed.get("corrections", [])}
     validated = set(ed.get("validated", []))   # "<id>:<meal>" confirmed at its source in the check before publication
+    unconfirmed = set(ed.get("unconfirmed", []))   # checked before publication but couldn't be confirmed either way
     for (rid, meal), c in fixes.items():
         if rid not in snap["restaurants"]:
             print(f"  Price Index {label}: correction for {rid}, which isn't in the snapshot")
@@ -9860,7 +9861,8 @@ def price_index():
             if m and m["type"] == "menu" and m.get("basis") == "published" and m.get("sourceKind", "none") != "none":
                 row[meal] = {"price": m["price"], "usd": m["price"] / rate, "kind": m["sourceKind"], "verified": m.get("verifiedAt"),
                              "changed": m.get("changedAt"), "wine": m.get("wine"), "wineUsd": m["wine"] / rate if m.get("wine") is not None else None,
-                             "corrected": bool(fix), "validated": f"{rid}:{meal}" in validated}
+                             "corrected": bool(fix), "validated": f"{rid}:{meal}" in validated,
+                             "unconfirmed": f"{rid}:{meal}" in unconfirmed, "excluded": f"{rid}:{meal}" in ed.get("excluded", {})}
         rows.append(row)
     _PRICE_INDEX[label] = {"label": label, "about": snap["about"], "edition": ed, "rows": rows, "guide": g,
                            "all": snap["restaurants"], "by_id": {r["id"]: r for r in restaurants}}
@@ -9988,8 +9990,10 @@ def pi_where(pi, row):
 def pi_source(m):
     """A small note of where a price came from, and whether it has been genuinely checked."""
     text = PI_KIND_SHORT[m["kind"]]
-    checked = m["verified"] or m.get("validated") or m.get("corrected")
-    return f'<span class="pi-src pi-src-{m["kind"]}">{e(text)}</span>' + (' <span class="pi-ok" title="Rechecked at its source">checked</span>' if checked else "")
+    checked = (m["verified"] or m.get("validated") or m.get("corrected")) and not m.get("unconfirmed")
+    flag = (' <span class="pi-ok" title="Rechecked at its source">checked</span>' if checked else
+            ' <span class="pi-unconf" title="Its source couldn’t be opened to recheck it before publication">not rechecked</span>' if m.get("unconfirmed") else "")
+    return f'<span class="pi-src pi-src-{m["kind"]}">{e(text)}</span>' + flag
 
 
 def pi_star_rows(pi, s):
@@ -10041,6 +10045,8 @@ def pi_held(pi, row):
     same restaurant's dinner menu (usually a bar or two-course lunch), "same" when it equals the dinner menu's price (the
     Q4 2026 check found many were the dinner menu copied over where a cheaper lunch menu exists), else None. Lunches checked
     (the edition's `confirmed`) or corrected are never held."""
+    if "lunch" in row and row["lunch"].get("excluded"):
+        return "excluded"   # the edition's `excluded`: couldn't be reconfirmed and looks out of line, kept out until verified
     if "lunch" not in row or "dinner" not in row or row["id"] in pi["edition"].get("confirmed", []) or row["lunch"].get("corrected"):
         return None
     if row["lunch"]["price"] < PI_ODD_LUNCH * row["dinner"]["price"]:
@@ -10417,16 +10423,13 @@ def price_index_blocks():
     v = pi["edition"].get("validation", {}).get("sameSample")
     sample = ""
     if v:
-        share = v["same"] / v["checked"]
-        spread = 1.96 * (share * (1 - share) / v["checked"]) ** 0.5   # a 95% interval for the sample's share
-        raw = [x for x in pi["all"].values() if (x.get("lunch") or {}).get("type") == "menu" and (x.get("dinner") or {}).get("type") == "menu"]
-        raw_same = sum(1 for x in raw if x["lunch"]["price"] == x["dinner"]["price"])
-        lo, hi = raw_same * max(0, share - spread) / len(raw), raw_same * min(1, share + spread) / len(raw)
-        sample = (f' We checked a sample of {v["checked"]} of the restaurants recorded at the same price for both: {v["same"]} genuinely serve the same '
-                  f'menu at lunch and dinner, but {v["cheaper"]} have a cheaper lunch menu we hadn’t recorded and {v["other"]} don’t serve one of the two '
-                  f'meals or were recorded wrongly' + (f', and {v["uncertain"]} we couldn’t tell' if v.get("uncertain") else "") + f'. So the {len(same):,} same-price records not yet checked are left out of the lunch figures, and the '
-                  f'share of starred restaurants charging the same for lunch and dinner is probably between {round(100 * lo)}% and {round(100 * hi)}%, '
-                  f'not the {round(100 * raw_same / len(raw))}% our records first suggested.')
+        # What the check found, and no more: the sample was chosen by country, not at random, so it isn't scaled up to the whole list.
+        sample = (f' A further {len(same) + v["checked"]:,} were recorded at the same price for lunch and dinner. We checked {v["checked"]} of them, '
+                  f'{e(v["chosen"])}: {v["same"]} genuinely serve the same menu at both, {v["cheaper"]} have a cheaper lunch menu that hadn’t been '
+                  f'recorded (the dinner price had been copied over), {v["other"]} don’t serve one of the two meals or had one recorded wrongly'
+                  + (f', and {v["uncertain"]} couldn’t be settled' if v.get("uncertain") else "") + f'. {e(v["pattern"])} The other {len(same):,} '
+                  'same-price records are unverified, so they are left out of the lunch figures until each is checked, and this edition doesn’t '
+                  'estimate how many starred restaurants charge the same for both.')
     blocks["pi-lunch-line"] = (f'<p>Where we can compare a starred restaurant’s set lunch with its dinner menu ({len(pairs):,} restaurants), lunch is '
                                f'cheaper at {len(all_cheaper):,} and typically costs {pi_pct(middle(all_cheaper))} less, often for a shorter menu.' + sample + "</p>")
     best = sorted(pairs, key=lambda p: (-(p[0]["dinner"]["usd"] - p[0]["lunch"]["usd"]), p[0]["id"]))[:PI_TOP]

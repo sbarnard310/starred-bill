@@ -9,7 +9,7 @@
   "dinnerType": "menu",
   "dinnerNote": "Tasting menu",
   "dinnerNoteZh": "品嚐套餐",
-  "wine": 115,
+  "wine": 95,
   "sourceType": "site",
   "source": "https://www.roosterowl.com/menu",
   "noLunch": true,
@@ -26,6 +26,6 @@
   "chef": "Yuan Tang",
   "chefSource": "site",
   "dietsManual": true,
-  "priceChangedAt": "2026-10-03",
-  "priceVerifiedAt": "2026-10-27"
+  "priceChangedAt": "2026-10-28",
+  "priceVerifiedAt": "2026-10-28"
 }

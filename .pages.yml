@@ -574,6 +574,28 @@ content:
         label: No wine pairing offered
         description: Tick if the restaurant doesn't offer a wine pairing (checked on its website). Receipts then say "no pairing offered" instead of "no pairing listed". Leave the wine prices empty.
         type: boolean
+      - name: noLunch
+        label: No lunch service
+        description: Tick only when the restaurant's own site shows it doesn't serve lunch at all. Leave the lunch price empty.
+        type: boolean
+      - name: noDinner
+        label: No dinner service
+        description: Tick only when the restaurant's own site shows it serves lunch only. Leave the dinner price empty.
+        type: boolean
+      - name: lunchKind
+        label: Lunch kind
+        description: "Leave empty to let the build read the lunch note. Choose short for a two-course, business or bistro lunch, full for a set lunch of three or more courses."
+        type: select
+        options:
+          values: [short, full]
+      - name: lunchDoubt
+        label: Lunch price doubt
+        description: Why the lunch price couldn't be confirmed when checked. While this is filled in, the lunch is left out of rankings, savings and bills. Empty it once a check settles it.
+        type: string
+      - name: priceDoubt
+        label: Dinner price doubt
+        description: Why the dinner price couldn't be confirmed when checked. While this is filled in, the dinner is left out of rankings and comparisons. Empty it once a check settles it.
+        type: string
       - name: serviceIncluded
         label: Prices include the tip or service
         description: Tick only when the restaurant's own site says its prices already include the tip or service charge (Lazy Betty, Dirt Candy). In the US and Canada the bills then add only sales tax; elsewhere nothing.

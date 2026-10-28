@@ -2357,8 +2357,54 @@ def priced(r, f, usd=True):
     return text
 
 
+# How far a lunch price can be relied on (28 Oct 2026, owner's brief after the Price Index check, which found lunches copied
+# from dinner, two-course and business lunches recorded as set lunches, and prices nobody could confirm). lunch_state()
+# sorts every restaurant's lunch so no page presents a single dish, a short lunch or an unconfirmed price as a full set
+# lunch, or a saving it can't stand behind:
+# - `avail`: "yes", "none" (`noLunch`: its own site shows no lunch service) or "unknown" (no lunch recorded);
+# - `kind`: "full" (a set lunch of three or more courses, or one whose note doesn't say otherwise), "short" (a two-course,
+#   business, bistro, bar, bento or formule lunch, from its note before any bracket, or `lunchKind: "short"`), "dish"
+#   (`lunchType: "main"`) or "spend";
+# - `checked`: genuinely rechecked at its source (`lunchVerifiedAt`);
+# - `doubt`: why it can't be relied on: `lunchDoubt` (a check couldn't confirm it), "low" (unchecked and under PI's quarter
+#   of the dinner menu, usually a short or bar lunch), or "same" (unchecked and the dinner menu's price, which the Q4 2026
+#   check found was often copied over where a cheaper lunch menu exists). "same" only softens the wording; the others keep
+#   the lunch out of every ranking, saving and bill.
+LUNCH_SHORT_RE = re.compile(r"\b(?:2|two)[- ]?(?:course|act)|\bbusiness\b|\bexpress\b|\bbar menu\b|\bbistro|\bbento\b|\bformule\b|"
+                            r"plat du jour|dish of the day|\bone dish|lunch plate|weekly dish|\bbuffet\b|\bdim sum\b|\bmenu du jour\b|"
+                            r"\bmittagstisch\b|\bmenu del giorno\b|\bdagmenu\b|\bsnack and main|\bplatter\b|\blight lunch\b", re.I)
+LUNCH_FULL_RE = re.compile(r"\b(?:[3-9]|1\d|three|four|five|six|seven|eight|nine)[- ]?(?:course|item|plat|service|act|dish)", re.I)
+
+
+def lunch_state(r):
+    if r.get("lunch") is None:
+        return {"avail": "none" if r.get("noLunch") else "unknown", "kind": None, "checked": False, "doubt": None}
+    t = r.get("lunchType", "menu")
+    note = (r.get("lunchNote") or "").split("(")[0]
+    kind = ("dish" if t == "main" else "spend" if t == "spend" else r["lunchKind"] if r.get("lunchKind") in ("full", "short")
+            else "full" if LUNCH_FULL_RE.search(note) else "short" if LUNCH_SHORT_RE.search(note) else "full")
+    checked = bool(r.get("lunchVerifiedAt"))
+    d = r.get("dinner") if r.get("dinnerType", "menu") == "menu" else None
+    doubt = (r.get("lunchDoubt") or ("low" if not checked and d and t == "menu" and r["lunch"] < 0.25 * d else None)
+             or ("same" if not checked and d and t == "menu" and r["lunch"] == d else None))
+    return {"avail": "none" if r.get("noLunch") else "yes", "kind": kind, "checked": checked, "doubt": doubt}
+
+
+def lunch_unsure(r):
+    """A lunch that mustn't be ranked, compared or billed: a check couldn't confirm it, or it's unchecked and implausibly low."""
+    st = lunch_state(r)
+    return st["avail"] == "yes" and st["doubt"] not in (None, "same")
+
+
 def is_menu(r, f):
-    return r.get(f) is not None and r.get(f + "Type", "menu") == "menu"
+    """A set-menu price for the meal; for lunch, only a full set lunch that can be relied on (lunch_state()), so the
+    cheapest-lunch answers, lunch deals, savings and medians never use a short lunch, a single dish or a doubtful price."""
+    if r.get(f) is None or r.get(f + "Type", "menu") != "menu":
+        return False
+    if f == "lunch":
+        st = lunch_state(r)
+        return st["avail"] == "yes" and st["kind"] == "full" and st["doubt"] in (None, "same")
+    return not r.get("priceDoubt")
 
 
 def to_usd(r, f):
@@ -3761,9 +3807,10 @@ def home_countries_html(countries):
 
 def home_less_html(starred):
     """"Starred for less": the cheapest set menu (lunch or dinner) at each star level, and the three-star restaurant where
-    lunch saves the most on dinner, each linked to its row on our page for its town."""
+    lunch saves the most on dinner, each linked to its row on our page for its town. Headline claims on the homepage, so
+    only prices genuinely rechecked at their source count, and only full set menus (is_menu(), lunch_state())."""
     usd = lambda r, f: r[f] / CURRENCIES[r["cur"]]["perUSD"]
-    menu = lambda r, f: r.get(f) is not None and r.get(f + "Type", "menu") == "menu"
+    menu = lambda r, f: is_menu(r, f) and bool(r.get("priceVerifiedAt" if f == "dinner" else "lunchVerifiedAt"))
     # Under the big price: what the menu says, shown by home.js when the page is in another currency.
     about = lambda r, f: f'<span class="less-usd" data-cur="{r["cur"]}" hidden>{e(money(r[f], r["cur"]))} on the menu</span>'
     named = lambda r: (f'<a href="{e(r["cityPath"])}#r={e(r["id"])}" data-home="less">{e(r["name"])}</a> '
@@ -3980,7 +4027,7 @@ def build_bill_data(starred):
     cols = ["lunch", "lunchType", "noLunch", "wine", "lunchWine", "noPairing", "serviceIncluded"]
     rows = {}
     for r in starred:
-        row = [r.get("lunch"), r.get("lunchType", "menu"), 1 if r.get("noLunch") else 0, r.get("wine"), r.get("lunchWine"), 1 if r.get("noPairing") else 0]
+        row = [None if lunch_unsure(r) else r.get("lunch"), r.get("lunchType", "menu"), 1 if r.get("noLunch") else 0, r.get("wine"), r.get("lunchWine"), 1 if r.get("noPairing") else 0]
         if r.get("serviceIncluded"):  # its prices include the tip (serviceOf() in common.js), 2 when the tax too
             row.append(2 if r.get("taxIncluded") else 1)
         if row[0] is not None or row[2] or row[3] is not None or row[4] is not None or row[5] or len(row) > 6:
@@ -4002,7 +4049,7 @@ def pack_near(rows):
     - Columns in `lists` hold a number pointing into that list, or null for "".
     - Trailing nulls are dropped from each row."""
     cols = ["id", "name", "stars", "lat", "lng", "place", "where", "cuisine", "dinnerType", "dinner", "lunch", "diets", "ac", "critics",
-            "chef", "wine", "lunchWine", "changed", "change", "memberScore", "svc", "rp"]
+            "chef", "wine", "lunchWine", "changed", "change", "memberScore", "svc", "rp", "lq"]
     listed = ("cuisine", "dinnerType", "diets", "changed", "change")
     lists = {c: sorted({r[c] for r in rows if r[c]}, key=lambda v: (-sum(1 for r in rows if r[c] == v), v)) for c in listed}
     index = {c: {v: i for i, v in enumerate(lists[c])} for c in listed}
@@ -4032,10 +4079,13 @@ def build_near_me(starred):
     for r in starred:
         if r.get("lat") is None:
             continue
-        lunch = -1 if r.get("noLunch") else (r["lunch"] if r.get("lunch") is not None and r.get("lunchType", "menu") == "menu" else None)
+        # An unsure lunch (lunch_unsure()) is left out, so Budget Search never builds a bill on it; `lq` tells pick.js when a
+        # lunch is a shorter one (2) or recorded at the dinner price without being confirmed (1), so its cards can say so.
+        ls = lunch_state(r)
+        lunch = -1 if r.get("noLunch") else (r["lunch"] if r.get("lunch") is not None and r.get("lunchType", "menu") == "menu" and not lunch_unsure(r) else None)
         rows.append({"id": r["id"], "name": r["name"], "stars": r["stars"], "lat": r["lat"], "lng": r["lng"], "cuisine": r.get("cuisine", ""),
                      "where": near_where(r), "town": r["cityName"], "path": r["cityPath"], "cur": r["cur"],
-                     "dinner": r.get("dinner"), "dinnerType": r.get("dinnerType", "menu"), "lunch": lunch,
+                     "dinner": None if r.get("priceDoubt") else r.get("dinner"), "dinnerType": r.get("dinnerType", "menu"), "lunch": lunch,
                      "diets": "".join(str(NEAR_DIETS[d]) for d in r.get("diets", [])), "chef": r.get("chef") or None,
                      "ac": acclaim(r) or None, "critics": critics_line(r), "memberScore": r.get("memberScore"),
                      "wine": r.get("wine") if r.get("dinnerType", "menu") == "menu" else None,
@@ -4044,7 +4094,8 @@ def build_near_me(starred):
                      # Bills (billFor() in common.js): prices that include the tip or tax, or the restaurant's own service charge.
                      "svc": [1 if r.get("serviceIncluded") else 0, 1 if r.get("taxIncluded") else 0] + ([r["servicePct"]] if r.get("servicePct") is not None else [])
                      if r.get("serviceIncluded") or r.get("taxIncluded") or r.get("servicePct") is not None else None,
-                     "rp": 1 if r.get("page") else None})  # has a restaurant page at /restaurants/<id>/
+                     "rp": 1 if r.get("page") else None,  # has a restaurant page at /restaurants/<id>/
+                     "lq": (2 if ls["kind"] == "short" else 1 if ls["doubt"] == "same" else None) if lunch and lunch > 0 else None})
     near_url = write_data("near.json", pack_near(rows))
     # Opening hours for the "Open on" filter, in their own file so Help me pick (which shares near.json) doesn't load them.
     # "g" lists those from a restaurant's own page (or its hotel's, or a listing), whose times near.js always trusts; "d"
@@ -6296,7 +6347,8 @@ CHEAP_KIND = {"main": "À la carte", "spend": "Typical spend"}
 def cheap_meal(r):
     """A restaurant's cheapest listed meal: (US dollars, "lunch" or "dinner"), or (None, None) when it has none we can rank."""
     got = [(r[f] / CURRENCIES[r["cur"]]["perUSD"], f) for f in ("dinner", "lunch")
-           if r.get(f) is not None and not (r["country"] == "china" and r.get(f + "Type") == "spend")]
+           if r.get(f) is not None and not (r["country"] == "china" and r.get(f + "Type") == "spend")
+           and not (f == "lunch" and (lunch_unsure(r) or r.get("noLunch"))) and not (f == "dinner" and r.get("priceDoubt"))]
     return min(got) if got else (None, None)
 
 
@@ -6311,7 +6363,7 @@ def cheap_ranked(rows):
 def cheap_what(r, f):
     """What the price buys, e.g. "Set lunch", "À la carte", with the restaurant's own note on it."""
     kind = r.get(f + "Type", "menu")
-    label = CHEAP_KIND.get(kind) or ("Set lunch" if f == "lunch" else "Set menu")
+    label = CHEAP_KIND.get(kind) or ("Short lunch" if f == "lunch" and lunch_state(r)["kind"] == "short" else "Set lunch" if f == "lunch" else "Set menu")
     note = (r.get(f + "Note") or "").strip()
     return label, note
 
@@ -8091,13 +8143,17 @@ def cheaper_html(r, peers_place, peers, live):
     cur, name = r["cur"], r["name"]
     d = r.get("dinner")
     items = []
-    menus = [m for m in r.get("menus", []) if d is not None and m["price"] < d and not m.get("plus")]
+    menus = [m for m in r.get("menus", []) if d is not None and m["price"] < d and not m.get("plus")
+             and not (m.get("meal") == "lunch" and lunch_unsure(r))]
+    is_short = lambda m: m.get("meal") == "lunch" and ((m.get("courses") or 9) < 3 or bool(LUNCH_SHORT_RE.search(m["name"] + " " + (m.get("note") or "").split("(")[0])))
     if not menus and r.get("lunch") is not None and d is not None and r["lunch"] < d and not r.get("noLunch") \
-            and r.get("dinnerType", "menu") == "menu" and r.get("lunchType", "menu") == "menu":
-        menus = [{"name": "Lunch", "meal": "lunch", "price": r["lunch"], "note": r.get("lunchNote", "")}]
+            and r.get("dinnerType", "menu") == "menu" and r.get("lunchType", "menu") == "menu" and not lunch_unsure(r):
+        short = lunch_state(r)["kind"] == "short"
+        menus = [{"name": "Shorter lunch" if short else "Lunch", "meal": "lunch", "price": r["lunch"], "note": r.get("lunchNote", "")}]
     main = the_menu(main_menu(r)) if main_menu(r) else "the dinner menu"
     for m in sorted(menus, key=lambda m: m["price"]):
-        bits = [str(m["courses"]) + " courses" if m.get("courses") and "course" not in m["name"].lower() else "", m.get("note", ""), money(d - m["price"], cur) + " less than " + main]
+        bits = [str(m["courses"]) + " courses" if m.get("courses") and "course" not in m["name"].lower() else "", m.get("note", ""),
+                "a shorter menu, not the full dinner" if is_short(m) or m.get("name") == "Shorter lunch" else money(d - m["price"], cur) + " less than " + main]
         items.append(f'<li><strong>{e(m["name"])}</strong> <span class="num">{money(m["price"], cur)}</span>'
                      f'<span>{e(" · ".join(x for x in bits if x))}</span></li>')
     # Sister venues: the same kitchen's cheaper offshoots (Francescana at Maria Luigia), from `alsoTry`.
@@ -8133,10 +8189,12 @@ def bill_options(r):
     """The menus the restaurant page's Bill calculator offers (restaurant.js, billFor() in common.js): the researched
     `menus` where it has them, else its dinner and lunch, each with its wine pairing and type. Supplements (`plus`) are left out."""
     if r.get("menus"):
+        unsure = lunch_unsure(r)
+        short = lambda m: m.get("meal") == "lunch" and ((m.get("courses") or 9) < 3 or bool(LUNCH_SHORT_RE.search(m["name"] + " " + (m.get("note") or "").split("(")[0])))
         out = [{"meal": m.get("meal", "dinner"), "name": m["name"], "price": m["price"], "wine": m.get("wine"), "type": "menu",
                 **({"courses": m["courses"]} if m.get("courses") else {}), **({"note": m["note"]} if m.get("note") else {}),
-                **({"main": 1} if m is main_menu(r) else {})}
-               for m in r["menus"] if not m.get("plus")]
+                **({"main": 1} if m is main_menu(r) else {}), **({"short": 1} if short(m) else {})}
+               for m in r["menus"] if not m.get("plus") and not (unsure and m.get("meal") == "lunch")]
         if out:
             return out
     out = []
@@ -8145,9 +8203,11 @@ def bill_options(r):
         out.append({"meal": "dinner", "name": "Dinner menu" if r.get("dinnerType", "menu") == "menu" else "Dinner",
                     "price": r["dinner"], "wine": r.get("wine"), "type": r.get("dinnerType", "menu"), "main": 1,
                     **({"desc": r["dinnerNote"]} if r.get("dinnerNote") else {})})
-    if r.get("lunch") is not None and not r.get("noLunch"):
-        out.append({"meal": "lunch", "name": "Lunch menu", "price": r["lunch"], "wine": r.get("lunchWine"), "type": r.get("lunchType", "menu"),
-                    **({"desc": r["lunchNote"]} if r.get("lunchNote") else {})})
+    if r.get("lunch") is not None and not r.get("noLunch") and not lunch_unsure(r):
+        ls = lunch_state(r)
+        desc = (r.get("lunchNote") or "") + ("; recorded at the dinner price and not yet confirmed" if ls["doubt"] == "same" else "")
+        out.append({"meal": "lunch", "name": "Shorter lunch" if ls["kind"] == "short" else "Lunch menu", "price": r["lunch"], "wine": r.get("lunchWine"),
+                    "type": r.get("lunchType", "menu"), **({"desc": desc.lstrip("; ")} if desc else {}), **({"short": 1} if ls["kind"] == "short" else {})})
     return out
 
 
@@ -8162,7 +8222,7 @@ def value_html(r, peers_place, peers):
         low = min(menus, key=lambda m: (m["price"], m["meal"] != "lunch"))
         dinner_menu = d if r.get("dinnerType", "menu") == "menu" else None
         saving = (f", {money(dinner_menu - low['price'], cur)} ({round((1 - low['price'] / dinner_menu) * 100)}%) less than dinner"
-                  if dinner_menu and low["price"] < dinner_menu else "")
+                  if dinner_menu and low["price"] < dinner_menu and not low.get("short") else ", a shorter menu than dinner" if low.get("short") else "")
         if len({m["price"] for m in menus}) > 1 or low["meal"] != "dinner":
             what = "Lunch" if low["meal"] == "lunch" and low["name"].lower().startswith("lunch") else low["name"]
             items.append(("Cheapest way in", f'{e(what)}, {money(low["price"], cur)} a person{e(saving)}' + (' <a href="#cheaper">More ways to spend less</a>' if saving else "")))
@@ -8638,11 +8698,21 @@ def restaurant_answer(r, stay):
         out.append(f"{name} is open for lunch only.")
     else:
         out.append(f"{name} doesn't publish a dinner price.")
+    if d is not None and r.get("priceDoubt"):
+        out.append("We couldn’t confirm the dinner price when we last checked, so check it with the restaurant.")
     if r.get("noLunch"):
         out.append("It’s open for dinner only.")
     elif lunch is not None:
+        ls = lunch_state(r)
+        short_note = (r.get("lunchNote") or "").split("(")[0].strip().rstrip(",;")
         if r.get("lunchType") == "main":
             out.append(f"At lunch, main courses are about {m(lunch)}.")
+        elif ls["doubt"] not in (None, "same"):
+            out.append(f"A lunch price of {m(lunch)} has been listed, but we couldn’t confirm it, so check with the restaurant.")
+        elif ls["kind"] == "short":
+            out.append(f"A shorter lunch menu{' (' + short_note[:1].lower() + short_note[1:] + ')' if short_note else ''} costs {m(lunch)}, not the full tasting menu.")
+        elif ls["doubt"] == "same":
+            out.append("Lunch is recorded at the same price, which we haven’t confirmed yet: a cheaper lunch menu may exist, so check with the restaurant.")
         elif lunch == d and not r.get("lunchWine"):
             out.append("Lunch costs the same.")
         else:
@@ -9845,6 +9915,7 @@ def price_index():
     fixes = {(c["id"], c["meal"]): c for c in ed.get("corrections", [])}
     validated = set(ed.get("validated", []))   # "<id>:<meal>" confirmed at its source in the check before publication
     unconfirmed = set(ed.get("unconfirmed", []))   # checked before publication but couldn't be confirmed either way
+    short_lunches = set(ed.get("short", []))   # shorter lunches, frozen in the edition (lunch_state() on 28 Oct 2026)
     for (rid, meal), c in fixes.items():
         if rid not in snap["restaurants"]:
             print(f"  Price Index {label}: correction for {rid}, which isn't in the snapshot")
@@ -9864,7 +9935,8 @@ def price_index():
                 row[meal] = {"price": m["price"], "usd": m["price"] / rate, "kind": m["sourceKind"], "verified": m.get("verifiedAt"),
                              "changed": m.get("changedAt"), "wine": m.get("wine"), "wineUsd": m["wine"] / rate if m.get("wine") is not None else None,
                              "corrected": bool(fix), "validated": f"{rid}:{meal}" in validated,
-                             "unconfirmed": f"{rid}:{meal}" in unconfirmed, "excluded": f"{rid}:{meal}" in ed.get("excluded", {})}
+                             "unconfirmed": f"{rid}:{meal}" in unconfirmed, "excluded": f"{rid}:{meal}" in ed.get("excluded", {}),
+                             "short": f"{rid}:{meal}" in short_lunches}
         rows.append(row)
     _PRICE_INDEX[label] = {"label": label, "about": snap["about"], "edition": ed, "rows": rows, "guide": g,
                            "all": snap["restaurants"], "by_id": {r["id"]: r for r in restaurants}}
@@ -10047,8 +10119,8 @@ def pi_held(pi, row):
     same restaurant's dinner menu (usually a bar or two-course lunch), "same" when it equals the dinner menu's price (the
     Q4 2026 check found many were the dinner menu copied over where a cheaper lunch menu exists), else None. Lunches checked
     (the edition's `confirmed`) or corrected are never held."""
-    if "lunch" in row and row["lunch"].get("excluded"):
-        return "excluded"   # the edition's `excluded`: couldn't be reconfirmed and looks out of line, kept out until verified
+    if "lunch" in row and (row["lunch"].get("excluded") or row["lunch"].get("unconfirmed") or row["lunch"].get("short")):
+        return "excluded"   # couldn't be confirmed (`excluded`, `unconfirmed`) or a shorter lunch (`short`): kept out of rankings and lunch figures
     if "lunch" not in row or "dinner" not in row or row["id"] in pi["edition"].get("confirmed", []) or row["lunch"].get("corrected"):
         return None
     if row["lunch"]["price"] < PI_ODD_LUNCH * row["dinner"]["price"]:
@@ -10064,7 +10136,8 @@ def pi_cheapest_rows(pi, s):
     """Restaurants at a star level by their cheapest set menu (lunch or dinner) in US dollars, odd lunches left out."""
     out = []
     for r in pi_star_rows(pi, s):
-        got = [(r[m]["usd"], m) for m in ("lunch", "dinner") if m in r and not (m == "lunch" and pi_odd(pi, r))]
+        got = [(r[m]["usd"], m) for m in ("lunch", "dinner") if m in r and not (m == "lunch" and pi_odd(pi, r))
+               and not (m == "dinner" and (r[m].get("unconfirmed") or r[m].get("excluded")))]
         if got:
             usd, meal = min(got)
             out.append((usd, meal, r))
@@ -10420,7 +10493,8 @@ def price_index_blocks():
     blocks["pi-lunch"] = wrap(("Stars", "Serve a set lunch", "Compared", "Typical saving", "Median lunch / dinner", "Same price, not yet checked"), body, "guide-table data rank-list") + note(
         "Restaurants listing both a set lunch and a dinner set menu, comparing the two prices in local currency. The typical saving is the "
         "median among restaurants whose lunch is cheaper; the median lunch and dinner are of the same restaurants, in US dollars. Left out "
-        f"until checked: {len(same):,} lunches recorded at the same price as dinner and {len(odd)} under a quarter of dinner.")
+        f"until checked: {len(same):,} lunches recorded at the same price as dinner and {len(odd)} under a quarter of dinner; and "
+        f"{sum(1 for r in pi['rows'] if pi_held(pi, r) == 'excluded'):,} shorter or unconfirmed lunches, which aren’t comparable with a full set menu.")
     all_cheaper = [sv for r, sv in pairs if sv > 0]
     v = pi["edition"].get("validation", {}).get("sameSample")
     sample = ""
@@ -10497,6 +10571,8 @@ def price_index_blocks():
         'charge, an estimate, as some restaurants differ.</li>'
         f'<li><strong>Odd prices are checked, not dropped.</strong> A set lunch under a quarter of the same restaurant’s dinner menu usually means '
         'a different kind of menu was recorded. These are left out of the rankings and lunch figures until checked, and counted once confirmed. '
+        'So are shorter lunches (two-course, business, bistro and the like, by their own description) and any price the check before '
+        'publication couldn’t confirm, as neither can stand for a full set menu. '
         'Before publication, the prices behind the headline figures are checked at their source: a record that was wrong when taken (a lunch '
         'filed as dinner, a shorter menu filed as the main one) is corrected in the edition and listed under “About the data”; a price that '
         'has simply changed since is kept as it stood, as the edition describes the quarter.</li>'

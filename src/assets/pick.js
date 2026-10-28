@@ -504,8 +504,11 @@ function priceLines(r) {
     " per person · " + addedText(c) + "</span>");
   if (c.wineState === "estimate") out.push('<span class="pc-sub pc-est">No pairing price listed, so the wine is our estimate (60% of the menu)</span>');
   if (c.wineState === "not-offered") out.push('<span class="pc-sub pc-est">No wine pairing offered: wine isn\'t counted</span>');
+  // `lq` from near.json (build_near_me()): a shorter lunch, or one recorded at the dinner price that nobody has confirmed.
+  if (b.meal === "lunch" && r.lq === 2) out.push('<span class="pc-sub pc-est">A shorter lunch menu, not the full tasting menu</span>');
+  if (b.meal === "lunch" && r.lq === 1) out.push('<span class="pc-sub pc-est">Lunch is recorded at the dinner price and not yet confirmed: a cheaper lunch menu may exist</span>');
   if (!ask.wine && b.wine != null) out.push('<span class="pc-sub">Wine pairing ' + localMoney(b.wine, r.cur) + " a person</span>");
-  if (b.meal === "dinner" && r.lunch > 0) out.push('<span class="pc-sub">Lunch menu ' + localMoney(r.lunch, r.cur) + "</span>");
+  if (b.meal === "dinner" && r.lunch > 0) out.push('<span class="pc-sub">' + (r.lq === 2 ? "Shorter lunch " : "Lunch menu ") + localMoney(r.lunch, r.cur) + (r.lq === 1 ? " (unconfirmed)" : "") + "</span>");
   if (b.meal === "lunch" && r.dinnerType === "menu" && r.dinner != null) out.push('<span class="pc-sub">Dinner menu ' + localMoney(r.dinner, r.cur) + "</span>");
   return out.join("");
 }
@@ -583,7 +586,7 @@ function compareTable(picks) {
     row("Where", cols.map(([, r]) => esc(r.where || "–"))),
     row("Head chef", cols.map(([, r]) => esc(r.chef || "–"))),
     row("Dinner menu", cols.map(([, r]) => r.dinnerType === "menu" && r.dinner != null ? price(r.dinner, r) : "Not listed"), true),
-    row("Lunch", cols.map(([, r]) => r.lunch > 0 ? price(r.lunch, r) : r.lunch === -1 ? "No lunch" : "Not listed"), true),
+    row("Lunch", cols.map(([, r]) => r.lunch > 0 ? price(r.lunch, r) + (r.lq === 2 ? " <small>shorter menu</small>" : r.lq === 1 ? " <small>unconfirmed</small>" : "") : r.lunch === -1 ? "No lunch" : "Not listed"), true),
     row("Wine pairing", cols.map(([, r], i) => { const b = bills[i], w = b ? b.wine : r.wine; return w != null ? price(w, r) + (b && b.meal === "lunch" ? " <small>with lunch</small>" : "") : "Not listed"; }), true),
     row("Estimated total " + forWhom() + (ask.wine ? ", with wine" : ""), cols.map(([, r], i) => { const b = bills[i]; return b ? "<strong>" + approxMark(b, r) + money(b.total, ask.cur) + "</strong>" + (ask.meal === "value" ? " <small>" + b.meal + "</small>" : "") + (Math.round(b.total) === Math.round(low) && totals.length > 1 ? tick : "") : "Not listed"; }), true),
     row("Critics’ lists", cols.map(([, r]) => r.critics ? esc(criticsText(r)) : "–")),
@@ -610,7 +613,8 @@ function summary() {
 // "Cheaper at lunch": at dinner, a lunch within the same budget that gets more stars than the best dinner match.
 function lunchHack(best) {
   if (ask.meal !== "dinner" || !budgetValue()) return "";
-  const lunches = pool(2).filter((r) => TESTS.food(r) && TESTS.diet(r) && TESTS.stars(r) && r.lunch > 0)
+  // Only a full set lunch can stand as "more stars for the money" (a shorter lunch isn't the same meal).
+  const lunches = pool(2).filter((r) => TESTS.food(r) && TESTS.diet(r) && TESTS.stars(r) && r.lunch > 0 && r.lq !== 2)
     .filter((r) => { const b = bill(r, "lunch"); return b && b.total <= budgetValue() + 0.5 && (!best || r.stars > best.stars); })
     .sort((a, b) => b.stars - a.stars || scoreOf(b) - scoreOf(a));
   const r = lunches[0];

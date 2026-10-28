@@ -8,13 +8,13 @@
   "cuisine": "French",
   "dinnerType": "menu",
   "dinnerNote": "Cheapest dinner course (others up to ¥20,100); usually including tax and service",
-  "sourceType": "press",
+  "sourceType": "site",
   "website": "https://idealfoodflower.com",
   "lat": 34.688864,
   "lng": 135.517088,
   "placeId": "ChIJKek-8yjnAGARHJZE6D2BCsk",
-  "dinner": 12200,
-  "source": "https://omakaseje.com/restaurants/of863818",
+  "dinner": 13100,
+  "source": "https://www.tablecheck.com/ja/shops/idealbistro/reserve",
   "lunch": 3800,
   "lunchType": "menu",
   "lunchNote": "Lunch course",
@@ -23,7 +23,9 @@
   "michelinId": "1193097",
   "chef": "Hiroki Yamazaki",
   "chefSource": "press",
-  "priceChangedAt": "2026-10-05",
+  "priceChangedAt": "2026-10-27",
   "lunchChangedAt": "2026-10-05",
-  "lunchVerifiedAt": "2026-10-27"
+  "lunchVerifiedAt": "2026-10-27",
+  "priceVerifiedAt": "2026-10-27",
+  "sourceKind": "restaurant"
 }

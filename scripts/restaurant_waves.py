@@ -108,7 +108,8 @@ def show(data, rs):
     today = date.today().isoformat()
     for w in data["waves"]:
         stars = [rs[i]["stars"] for i in w["ids"] if i in rs]
-        print(f"{w['from']}  {'live   ' if w['from'] <= today else 'waiting'}  {len(w['ids']):4}  {w['label']}"
+        state = "paused " if paused(data, w) else "live   " if w["from"] <= today else "waiting"
+        print(f"{w['from']}  {state}  {len(w['ids']):4}  {w['label']}"
               f"  ({stars.count(3)} three-star, {stars.count(2)} two-star, {stars.count(1)} one-star)")
     left = waiting(rs, data)
     print(f"Not in any wave yet: {len(left)}" + (" (run: python3 scripts/restaurant_waves.py add)" if left else ""))
@@ -118,10 +119,15 @@ def show(data, rs):
         print(f"Held back for their notice (closed for now, closing): {', '.join(held)}")
 
 
+def paused(data, w):
+    """True for a wave held back by `pausedAfter` (28 Oct 2026), which build.py also respects."""
+    return bool(data.get("pausedAfter")) and w["from"] > data["pausedAfter"]
+
+
 def due(day):
-    """The restaurants whose wave goes live on `day` ("2026-10-23")."""
+    """The restaurants whose wave goes live on `day` ("2026-10-23"); none while their wave is paused."""
     data = json.loads(WAVES.read_text("utf-8"))
-    return [i for w in data["waves"] if w["from"] == day for i in w["ids"]]
+    return [i for w in data["waves"] if w["from"] == day and not paused(data, w) for i in w["ids"]]
 
 
 def ping(day):

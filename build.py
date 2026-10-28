@@ -7862,17 +7862,22 @@ SERVICE_ADDS = {"before": "service", "plusplus": "service and tax", "taxtip": "t
 # that day publishes it. Two- and three-stars first, then one-stars by Google review count, 300 a week until 25 Dec 2026.
 # scripts/restaurant_waves.py lists them and adds restaurants that qualify later (new stars, new prices) to a wave. Their
 # Google photo waits for a tap (`photoTap`, restaurant.js) and they have no link-preview picture of their own (og_image()).
-WAVES = json.loads((CONTENT / "restaurant-pages.json").read_text(encoding="utf-8"))["waves"]
+# `pausedAfter` (28 Oct 2026, after Google marked the whole site down on 26 Oct) holds back every wave after that day, whatever
+# its `from`, until it's taken out.
+_wave_file = json.loads((CONTENT / "restaurant-pages.json").read_text(encoding="utf-8"))
+WAVES_PAUSED = _wave_file.get("pausedAfter")
+WAVES = [w for w in _wave_file["waves"] if not (WAVES_PAUSED and w["from"] > WAVES_PAUSED)]
+WAVES_HELD = [w for w in _wave_file["waves"] if WAVES_PAUSED and w["from"] > WAVES_PAUSED]
 WAVE_DAY = {}  # restaurant id -> the day its wave went live, for wave pages already live, in wave order
 _ids, _in_wave = {r["id"] for r in restaurants}, set()
-for _w in sorted(WAVES, key=lambda w: w["from"]):
+for _w in sorted(WAVES + WAVES_HELD, key=lambda w: w["from"]):
     for _i in _w["ids"]:
         if _i not in _ids or _i in RESTAURANT_PAGES or _i in _in_wave:
             print(f"content/restaurant-pages.json: {_i} (wave of {_w['from']}) is " + ("not a restaurant file" if _i not in _ids
                   else "already in RESTAURANT_PAGES" if _i in RESTAURANT_PAGES else "in more than one wave") + "; take it out")
             sys.exit(1)
         _in_wave.add(_i)
-        if _w["from"] <= date.today().isoformat():
+        if _w["from"] <= date.today().isoformat() and _w not in WAVES_HELD:
             WAVE_DAY[_i] = _w["from"]
 PAGE_ORDER = {i: n for n, i in enumerate(RESTAURANT_PAGES + tuple(WAVE_DAY))}  # researched pages first, then waves in order
 _waiting = [r["id"] for r in restaurants if r.get("stars") and not r.get("status") and not r.get("notice") and r["id"] not in RESTAURANT_PAGES
@@ -10660,7 +10665,8 @@ for g in guides:
 # failed, 46 KB passed), and the waves add thousands of pages.
 _next = min((w for w in WAVES if w["from"] > date.today().isoformat()), key=lambda w: w["from"], default=None)
 print(f"  /restaurants/…  {sum(1 for r in restaurants if r.get('page'))} restaurant pages ({sum(1 for r in restaurants if r.get('page') and r['id'] in RESTAURANT_PAGES)} researched, "
-      f"{sum(1 for r in restaurants if r.get('page') and r['id'] in WAVE_DAY)} from waves" + (f"; next wave of {len(_next['ids'])} on {_next['from']}" if _next else "") + ")")
+      f"{sum(1 for r in restaurants if r.get('page') and r['id'] in WAVE_DAY)} from waves" + (f"; next wave of {len(_next['ids'])} on {_next['from']}" if _next else "")
+      + (f"; waves after {WAVES_PAUSED} paused ({sum(len(w['ids']) for w in WAVES_HELD)} pages)" if WAVES_HELD else "") + ")")
 for p in sorted(pages, key=lambda p: p["path"]):
     print(f"  {p['path']}  {p['name']}, {starred_n[p['id']]} starred")
 for old, pid in sorted(redirects.items()):

@@ -5,8 +5,8 @@
   "address": "1017 N Highland Ave. NE, Atlanta, GA 30306",
   "stars": 1,
   "cuisine": "Modern American",
-  "dinnerNote": "À la carte; no prices published",
-  "sourceType": "none",
+  "dinnerNote": "À la carte; grilled beef $46, the whole roast chicken for up to four $68",
+  "sourceType": "press",
   "noLunch": true,
   "lunchNote": "Dinner only",
   "website": "https://www.sofoxatl.com/",
@@ -19,5 +19,13 @@
   "changeDate": "2026-10",
   "starSource": "https://michelinmedia.com/pages/blog/detail/article/c0/a1491/",
   "starSourceType": "michelin-press",
-  "starSourceDate": "2026-10-22"
+  "starSourceDate": "2026-10-22",
+  "dinner": 46,
+  "priceChangedAt": "2026-10-28",
+  "priceVerifiedAt": "2026-10-28",
+  "source": "https://roughdraftatlanta.com/2026/10/27/best-shared-family-style-meals-atlanta-restaurants/",
+  "sourceKind": "press",
+  "placeId": "ChIJBc5GwugH9YgReAlF6J_hddQ",
+  "dinnerType": "main",
+  "noPairing": true
 }

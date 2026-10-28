@@ -556,6 +556,7 @@
 "da-vittorio-st-moritz": ";;1900-2200;1900-2200;1900-2200;1900-2200;1900-2200",
 "dai-yuet-heen": "1130-1430,1730-2130;1130-1430,1730-2130;1130-1430,1730-2130;1130-1430,1730-2130;1130-1430,1730-2130;1130-1430,1730-2130;1130-1430,1730-2130",
 "daigo": "1130-1500,1700-2200;1130-1500,1700-2200;1130-1500,1700-2200;1130-1500,1700-2200;1130-1500,1700-2200;1130-1500,1700-2200;1130-1500,1700-2200",
+"dakar-nola": ";1700-2145;1700-2145;1700-2145;1700-2145;1700-2145;",
 "dal-pescatore-santini": ";;1900-2200;1900-2200;1200-1400,1900-2200;1200-1400,1900-2200;1200-1400,1900-2200",
 "dalla-gioconda": ";1930-2200;1930-2200;1930-2200;1930-2200;1230-1400,1930-2200;1230-1400,1930-2200",
 "dam": ";;1900-2230;1900-2230;1900-2230;1900-2230;",
@@ -2433,6 +2434,7 @@
 "slow-and-low": ";1900-2200;1900-2200;1900-2200;1900-2200;1900-2200;",
 "smoked-room": ";;1330-1600,2030-0000;1330-1600,2030-0000;1330-1600,2030-0000;1330-1600,2030-0000;",
 "smyth": ";1700-2100;1700-2100;1700-2100;1700-2100;1700-2100;",
+"so-fox": "1700-2200;;;1700-2200;1700-2200;1700-2200;1700-2200",
 "soichi": ";;1630-2130;1630-2130;1630-2130;1630-2130;1630-2130",
 "soil": "1830-0100;1830-0100;1830-0100;1830-0100;1830-0100;1830-0100;",
 "sojiki-nakahigashi": ";1200-1530,1800-2130;1200-1530,1800-2130;1200-1530,1800-2130;1200-1530,1800-2130;1200-1530,1800-2130;1200-1530,1800-2130",
@@ -2712,6 +2714,7 @@
 "tulus-lotrek": "1830-2330;;;1830-2330;1830-2330;1830-2330;1830-2330",
 "tuome": ";1800-2100;1800-2100;1800-2100;1700-2130;1700-2130;",
 "tussock-hill": ";;1000-1600;1000-1600;1000-1700;1000-1700;1000-1700",
+"uberto-restaurant": ";;;;1700-2230;1700-2230;",
 "ubuka": "1730-2300;1730-2300;1730-2300;1730-2300;1730-2300;1730-2300;",
 "udtryk": ";1800-0000;1800-0000;1800-0000;1800-0000;1800-0000;",
 "ugly-butterfly-by-adam-handling": ";;1200-1330,1700-2200;1200-1330,1700-2200;1200-1330,1700-2200;1200-1330,1700-2200;",
@@ -5121,6 +5124,10 @@
 },
 "daigo": {
 "url": "https://www.atago-daigo.jp/",
+"type": "site"
+},
+"dakar-nola": {
+"url": "https://www.dakarnola.com/faqs",
 "type": "site"
 },
 "dal-pescatore-santini": {
@@ -12631,6 +12638,10 @@
 "url": "https://www.exploretock.com/smyth",
 "type": "other"
 },
+"so-fox": {
+"url": "https://www.sofoxatl.com/",
+"type": "site"
+},
 "soichi": {
 "url": "https://www.soichisushi.com/",
 "type": "site"
@@ -13746,6 +13757,10 @@
 "tussock-hill": {
 "url": "https://tussockhill.co.nz/tussock-hill-cellar-door/",
 "type": "site"
+},
+"uberto-restaurant": {
+"url": "https://www.worldofquercus.com/uberto-restaurant",
+"type": "hotel"
 },
 "ubuka": {
 "url": "https://ubuka.jp/",
@@ -15013,7 +15028,8 @@
 "osmosi": "Closed for its annual break in February (1-28 February per Identità Golose).",
 "osteria-di-passignano": "Closed for holidays from 9 to 16 August.",
 "singlethread": "Closed on 1 January, Thanksgiving and 25 December",
-"tancredi": "Seasonal: closes for the winter after the New Year's Eve dinner and reopens in February (8 February in 2025)."
+"tancredi": "Seasonal: closes for the winter after the New Year's Eve dinner and reopens in February (8 February in 2025).",
+"uberto-restaurant": "Closed in summer: from 15 June to 16 September 2027"
 },
 "none": {
 "alchemist": {

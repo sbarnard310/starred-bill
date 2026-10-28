@@ -22,5 +22,6 @@
   "chef": "Moritz Bilsing and Emilio Löffler",
   "chefSource": "michelin",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 140 €)",
-  "priceChangedAt": "2026-10-05"
+  "priceChangedAt": "2026-10-05",
+  "noLunch": true
 }

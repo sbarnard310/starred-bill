@@ -8634,6 +8634,8 @@ def restaurant_answer(r, stay):
             out.append(f"Main courses at {name} cost about {m(d)}{usd_after(d, cur)}" + (f" ({r['dinnerNote'][:1].lower() + r['dinnerNote'][1:]})." if r.get("dinnerNote") else "."))
         else:
             out.append(f"A typical dinner at {name} costs about {m(d)}{usd_after(d, cur)} per person.")
+    elif r.get("noDinner"):
+        out.append(f"{name} is open for lunch only.")
     else:
         out.append(f"{name} doesn't publish a dinner price.")
     if r.get("noLunch"):
@@ -10424,11 +10426,13 @@ def price_index_blocks():
     sample = ""
     if v:
         # What the check found, and no more: the sample was chosen by country, not at random, so it isn't scaled up to the whole list.
-        sample = (f' A further {len(same) + v["checked"]:,} were recorded at the same price for lunch and dinner. We checked {v["checked"]} of them, '
+        raw = [x for x in pi["all"].values() if (x.get("lunch") or {}).get("type") == "menu" and (x.get("dinner") or {}).get("type") == "menu"]
+        raw_same = sum(1 for x in raw if x["lunch"]["price"] == x["dinner"]["price"])
+        sample = (f' Our records showed {raw_same:,} restaurants charging the same for lunch and dinner. We checked {v["checked"]} of them, '
                   f'{e(v["chosen"])}: {v["same"]} genuinely serve the same menu at both, {v["cheaper"]} have a cheaper lunch menu that hadn’t been '
                   f'recorded (the dinner price had been copied over), {v["other"]} don’t serve one of the two meals or had one recorded wrongly'
-                  + (f', and {v["uncertain"]} couldn’t be settled' if v.get("uncertain") else "") + f'. {e(v["pattern"])} The other {len(same):,} '
-                  'same-price records are unverified, so they are left out of the lunch figures until each is checked, and this edition doesn’t '
+                  + (f', and {v["uncertain"]} couldn’t be settled' if v.get("uncertain") else "") + f'. {e(v["pattern"])} Of the remaining same-price records, '
+                  f'{len(same):,} are unverified, so they are left out of the lunch figures until each is checked, and this edition doesn’t '
                   'estimate how many starred restaurants charge the same for both.')
     blocks["pi-lunch-line"] = (f'<p>Where we can compare a starred restaurant’s set lunch with its dinner menu ({len(pairs):,} restaurants), lunch is '
                                f'cheaper at {len(all_cheaper):,} and typically costs {pi_pct(middle(all_cheaper))} less, often for a shorter menu.' + sample + "</p>")

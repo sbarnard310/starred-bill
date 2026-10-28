@@ -23,5 +23,6 @@
   "dinnerNote": "Prix-fixe menu, 4 courses (Chef's Tasting Menu, 7 courses, $175)",
   "dietsManual": true,
   "priceChangedAt": "2026-10-10",
-  "priceVerifiedAt": "2026-10-27"
+  "priceVerifiedAt": "2026-10-27",
+  "noLunch": true
 }

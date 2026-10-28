@@ -7868,6 +7868,9 @@ _wave_file = json.loads((CONTENT / "restaurant-pages.json").read_text(encoding="
 WAVES_PAUSED = _wave_file.get("pausedAfter")
 WAVES = [w for w in _wave_file["waves"] if not (WAVES_PAUSED and w["from"] > WAVES_PAUSED)]
 WAVES_HELD = [w for w in _wave_file["waves"] if WAVES_PAUSED and w["from"] > WAVES_PAUSED]
+# `noindex` (28 Oct 2026): thin wave pages kept out of Google's results, and the sitemap, while the site recovers from that
+# drop; they stay on the site and in every list that links them.
+PAGE_NOINDEX = set(_wave_file.get("noindex", []))
 WAVE_DAY = {}  # restaurant id -> the day its wave went live, for wave pages already live, in wave order
 _ids, _in_wave = {r["id"] for r in restaurants}, set()
 for _w in sorted(WAVES + WAVES_HELD, key=lambda w: w["from"]):
@@ -7879,6 +7882,10 @@ for _w in sorted(WAVES + WAVES_HELD, key=lambda w: w["from"]):
         _in_wave.add(_i)
         if _w["from"] <= date.today().isoformat() and _w not in WAVES_HELD:
             WAVE_DAY[_i] = _w["from"]
+if PAGE_NOINDEX - set(WAVE_DAY):
+    print("content/restaurant-pages.json: noindex lists restaurants without a live wave page: "
+          + ", ".join(sorted(PAGE_NOINDEX - set(WAVE_DAY))) + "; take them out")
+    sys.exit(1)
 PAGE_ORDER = {i: n for n, i in enumerate(RESTAURANT_PAGES + tuple(WAVE_DAY))}  # researched pages first, then waves in order
 _waiting = [r["id"] for r in restaurants if r.get("stars") and not r.get("status") and not r.get("notice") and r["id"] not in RESTAURANT_PAGES
             and r["id"] not in _in_wave and (r.get("dinner") is not None or r.get("lunch") is not None)]
@@ -9173,6 +9180,7 @@ def build_restaurant_pages():
         del data["knownIds"]
         page_html = render("restaurant.html", {
             "title": e(title), "description": e(description), "canonical": SITE_URL + path, "ogImage": restaurant_og(r) or og_image(city),
+            "robots": '\n<meta name="robots" content="noindex, follow">' if r["id"] in PAGE_NOINDEX else "",
             "ogAlt": e(f"What a meal at {r['name']} costs"),
             "jsonld": '<script type="application/ld+json">' + as_json({"@context": "https://schema.org", "@graph": graph}) + "</script>",
             "crumbs": '<a href="/">All destinations</a>' + "".join(f'<a href="{c["path"]}">{e(c["name"])}</a>' for c in crumbs) + f'<span aria-current="page">{e(r["name"])}</span>',
@@ -9397,7 +9405,7 @@ def build_extras():
     if (SRC / "img").exists():
         # Featured pictures; the full-size originals (<id>-src.*) stay out of the site.
         shutil.copytree(SRC / "img", OUT / "img", ignore=shutil.ignore_patterns("*-src.*"))
-    urls = ["/", "/near-me/", "/pick/"] + [lang_path(p["path"], lang) for p in by_size(pages) if p["id"] not in canonical_to for lang in place_langs(p)] + (["/guides/"] + [guide_path(g, lang) for g in guides for lang in guide_langs(g)] if guides else []) + [r["page"] for r in restaurants if r.get("page")] + [u for u, _ in BIB_BUILT] + (["/news/"] + [f"/news/{s['id']}/" for s in news_order()] if news else []) + ["/privacy/"]
+    urls = ["/", "/near-me/", "/pick/"] + [lang_path(p["path"], lang) for p in by_size(pages) if p["id"] not in canonical_to for lang in place_langs(p)] + (["/guides/"] + [guide_path(g, lang) for g in guides for lang in guide_langs(g)] if guides else []) + [r["page"] for r in restaurants if r.get("page") and r["id"] not in PAGE_NOINDEX] + [u for u, _ in BIB_BUILT] + (["/news/"] + [f"/news/{s['id']}/" for s in news_order()] if news else []) + ["/privacy/"]
     dates = dict(sitemap_dates(), **{u: d for u, d in BIB_BUILT})
     (OUT / "sitemap.xml").write_text(
         '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'

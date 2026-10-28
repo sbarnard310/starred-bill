@@ -77,5 +77,6 @@
   "rankingsChecked": "2026-10-24",
   "priceChangedAt": "2026-10-09",
   "lunchChangedAt": "2026-10-09",
-  "priceVerifiedAt": "2026-10-09"
+  "priceVerifiedAt": "2026-10-28",
+  "lunchDoubt": "Couldn't confirm that the dining room serves lunch: its own site gives no dining-room hours and its booking page couldn't be read (28 Oct 2026)."
 }

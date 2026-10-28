@@ -2183,6 +2183,23 @@
    "price": 95
   },
   {
+   "id": "belcanto",
+   "meal": "dinner",
+   "price": 295,
+   "wine": 165,
+   "error": "The tasting menu was recorded at €300 and the à la carte’s non-alcoholic pairing as its wine pairing; the restaurant’s menu gives €295 and €165.",
+   "evidence": "https://www.belcanto.pt/carta/Belcanto_Menu_QRCode.pdf?v=102026",
+   "checked": "2026-10-28"
+  },
+  {
+   "id": "belcanto",
+   "meal": "lunch",
+   "price": 295,
+   "error": "The same menu at lunch, at €295.",
+   "evidence": "https://www.belcanto.pt/carta/Belcanto_Menu_QRCode.pdf?v=102026",
+   "checked": "2026-10-28"
+  },
+  {
    "id": "brothers",
    "meal": "lunch",
    "error": "The dinner price was recorded for lunch; there is a separate lunch menu.",
@@ -2205,6 +2222,22 @@
    "evidence": "https://domrestaurante.com.br/cardapio/",
    "checked": "2026-10-27",
    "remove": true
+  },
+  {
+   "id": "den",
+   "meal": "dinner",
+   "remove": true,
+   "error": "A review site’s spend range was recorded as a set-menu price; the restaurant publishes none.",
+   "evidence": "https://www.jimbochoden.com/",
+   "checked": "2026-10-28"
+  },
+  {
+   "id": "den",
+   "meal": "lunch",
+   "remove": true,
+   "error": "A review site’s spend range was recorded as a set lunch; it serves dinner only.",
+   "evidence": "https://www.jimbochoden.com/",
+   "checked": "2026-10-28"
   },
   {
    "id": "edvard",
@@ -2247,6 +2280,23 @@
    "evidence": "https://www.gknyc.com/menu-lunch",
    "checked": "2026-10-27",
    "price": 95
+  },
+  {
+   "id": "geranium",
+   "meal": "dinner",
+   "price": 4500,
+   "wine": 2500,
+   "error": "The tasting menu was recorded at DKK 4,400 and its non-alcoholic pairing as the wine pairing; the restaurant’s site gives DKK 4,500 and DKK 2,500.",
+   "evidence": "https://www.geranium.dk/",
+   "checked": "2026-10-28"
+  },
+  {
+   "id": "geranium",
+   "meal": "lunch",
+   "price": 4500,
+   "error": "The same menu at lunch, at DKK 4,500.",
+   "evidence": "https://www.geranium.dk/",
+   "checked": "2026-10-28"
   },
   {
    "id": "gokan-uogin",
@@ -2389,6 +2439,22 @@
    "price": 90
   },
   {
+   "id": "le-petit-nice",
+   "meal": "dinner",
+   "wine": 305,
+   "error": "The lunch menu’s pairing was recorded as the dinner menu’s; that is €305.",
+   "evidence": "https://www.passedat.fr/en/le-petit-nice/gastronomic-michelin-star-restaurants-marseille",
+   "checked": "2026-10-28"
+  },
+  {
+   "id": "le-petit-nice",
+   "meal": "lunch",
+   "price": 230,
+   "error": "The dinner-only €490 menu was recorded for lunch; the lunch-only set menu is €230.",
+   "evidence": "https://www.passedat.fr/en/le-petit-nice/gastronomic-michelin-star-restaurants-marseille",
+   "checked": "2026-10-28"
+  },
+  {
    "id": "le-valucien-chateau-de-vault-de-lugny",
    "meal": "dinner",
    "error": "A limited-season menu was recorded instead of the regular menu.",
@@ -2411,6 +2477,14 @@
    "evidence": "https://www.lesterraillers.fr/wp-content/uploads/2026/10/MENU-ENG-SITE.pdf",
    "checked": "2026-10-27",
    "price": 69
+  },
+  {
+   "id": "luca",
+   "meal": "lunch",
+   "price": 42,
+   "error": "The two-course price of the bar’s lunch was recorded; its three-course set lunch is £42, and the dining room has no set lunch.",
+   "evidence": "https://a.storyblok.com/f/285210/x/4e6da6e570/barlunch191026.pdf",
+   "checked": "2026-10-28"
   },
   {
    "id": "maison-ronan-kervarrec",
@@ -2489,6 +2563,22 @@
    "evidence": "https://jansmink.com/",
    "checked": "2026-10-27",
    "price": 125
+  },
+  {
+   "id": "ryo-sho",
+   "meal": "dinner",
+   "price": 44000,
+   "error": "Recorded including the 10% service charge, unlike our other Japanese prices, which include tax only.",
+   "evidence": "https://ryo-sho.jp/menu/",
+   "checked": "2026-10-28"
+  },
+  {
+   "id": "ryo-sho",
+   "meal": "lunch",
+   "price": 44000,
+   "error": "The same course at lunch, recorded including service.",
+   "evidence": "https://ryo-sho.jp/menu/",
+   "checked": "2026-10-28"
   },
   {
    "id": "sen",

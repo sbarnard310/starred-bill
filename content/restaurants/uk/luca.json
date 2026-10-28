@@ -10,11 +10,11 @@
   "dinnerNote": "Chef's menu (or à la carte)",
   "sourceType": "press",
   "source": "https://www.charlottecohencooks.co.uk/food-travel/luca-london-lunch-review",
-  "lunch": 34,
+  "lunch": 42,
   "lunchType": "menu",
-  "lunchNote": "Bar lunch, 2 courses (3 courses £42)",
-  "lunchSourceType": "press",
-  "lunchSource": "https://www.charlottecohencooks.co.uk/food-travel/luca-london-lunch-review",
+  "lunchNote": "Bar lunch menu, 3 courses (2 courses £34); the dining room has no set lunch",
+  "lunchSourceType": "site",
+  "lunchSource": "https://a.storyblok.com/f/285210/x/4e6da6e570/barlunch191026.pdf",
   "website": "https://luca.restaurant/",
   "lat": 51.5223158,
   "lng": -0.1018292,
@@ -27,5 +27,8 @@
   "chefSource": "press",
   "dietsManual": true,
   "priceChangedAt": "2026-10-02",
-  "lunchChangedAt": "2026-10-02"
+  "lunchChangedAt": "2026-10-28",
+  "priceVerifiedAt": "2026-10-28",
+  "lunchVerifiedAt": "2026-10-28",
+  "lunchKind": "short"
 }

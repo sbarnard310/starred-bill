@@ -10,8 +10,8 @@
   "dinnerType": "menu",
   "dinnerNote": "Univers Mirazur tasting menu, 9 courses, lunch and dinner",
   "dinnerNoteFr": "Menu Univers Mirazur, 9 services, midi et soir",
-  "sourceType": "press",
-  "source": "https://fr.gaultmillau.com/en/restaurants/mirazur",
+  "sourceType": "site",
+  "source": "https://mirazur.bonkdo.com/cadeau-gastronomie-table-etoilee-5924",
   "lunch": 450,
   "lunchType": "menu",
   "lunchSourceType": "press",
@@ -41,5 +41,8 @@
   ],
   "rankingsChecked": "2026-10-24",
   "priceChangedAt": "2026-10-05",
-  "lunchChangedAt": "2026-10-05"
+  "lunchChangedAt": "2026-10-05",
+  "priceVerifiedAt": "2026-10-28",
+  "sourceKind": "restaurant",
+  "lunchVerifiedAt": "2026-10-28"
 }

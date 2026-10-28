@@ -10,7 +10,6 @@
   "addressJa": "〒150-0001 東京都渋谷区神宮前 2-3-18",
   "stars": 2,
   "cuisine": "Japanese",
-  "dinnerType": "spend",
   "website": "https://www.jimbochoden.com/",
   "lat": 35.67321,
   "lng": 139.712697,
@@ -18,17 +17,6 @@
   "michelinId": "1194066",
   "chef": "Zaiyu Hasegawa",
   "chefSource": "site",
-  "dinner": 30000,
-  "dinnerNote": "Tabelog range ¥30,000–39,999",
-  "dinnerNoteJa": "食べログの価格帯 30,000～39,999円",
-  "sourceType": "press",
-  "source": "https://tabelog.com/en/tokyo/A1306/A130603/13046855/",
-  "lunch": 20000,
-  "lunchType": "spend",
-  "lunchSourceType": "press",
-  "lunchSource": "https://tabelog.com/en/tokyo/A1306/A130603/13046855/",
-  "lunchNote": "Tabelog range ¥20,000–29,999",
-  "lunchNoteJa": "食べログの価格帯 20,000～29,999円",
   "bookingWindow": {
     "type": "rolling",
     "months": 2,
@@ -58,6 +46,6 @@
     }
   ],
   "rankingsChecked": "2026-10-24",
-  "priceChangedAt": "2026-10-06",
-  "lunchChangedAt": "2026-10-06"
+  "noLunch": true,
+  "dinnerNote": "Omakase course; the restaurant publishes no price (booking by phone)"
 }

@@ -9976,6 +9976,11 @@ def pi_validation_html(pi):
                 f'{v["changedSince"]:,} have changed since the snapshot (the edition keeps the price as it stood; the restaurant’s own page has the '
                 f'new one), {v["corrected"]:,} were wrong when recorded and are corrected below, and {v["uncertain"]:,} could not be confirmed either way.'
                 + (f' {e(v["note"])}' if v.get("note") else "") + "</p>")
+        later = [c for c in ed.get("corrections", []) if (c.get("checked") or "") > v["on"]]
+        if later:
+            out += (f'<p>Checks since publication have found {len({c["id"] for c in later}):,} more restaurant'
+                    f'{"s" if len({c["id"] for c in later}) != 1 else ""} whose snapshot record was wrong when taken; they are corrected below too, '
+                    f'with the day each was found, and the figures above include them.</p>')
     fixes = ed.get("corrections", [])
     if fixes:
         snap = pi["all"]
@@ -9988,7 +9993,8 @@ def pi_validation_html(pi):
             return money(c.get("price", (snap[c["id"]].get(c["meal"]) or {}).get("price")), snap[c["id"]]["cur"])
         body = "".join(f'<tr><td data-label="Restaurant">{pi_name(pi, c["id"])}</td><td data-label="Meal">{"Set lunch" if c["meal"] == "lunch" else "Dinner menu"}</td>'
                        f'<td class="num" data-label="Recorded">{was(c)}</td><td class="num" data-label="Used">{now(c)}</td>'
-                       f'<td data-label="Why">{e(c["error"])} <a href="{e(c["evidence"])}" target="_blank" rel="noopener">Source</a></td></tr>'
+                       f'<td data-label="Why">{e(c["error"])}' + (f' <a href="{e(c["evidence"])}" target="_blank" rel="noopener">Source</a>' if c.get("evidence") else "")
+                       + (f' <span class="muted">Found {e(uk_date(c["checked"]))}.</span>' if (c.get("checked") or "") > (v or {}).get("on", "9") else "") + '</td></tr>'
                        for c in sorted(fixes, key=lambda c: pi_plain_name(pi, c["id"]).lower()))
         out += ('<div class="table-wrap"><table class="guide-table data rank-list"><thead><tr>' + "".join(f'<th scope="col">{h}</th>' for h in
                 ("Restaurant", "Meal", "Recorded", "Used", "Why")) + f'</tr></thead><tbody>{body}</tbody></table></div>'

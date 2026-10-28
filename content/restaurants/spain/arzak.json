@@ -13,7 +13,7 @@
   "dinnerNoteEs": "Menú degustación (con maridaje: menú 365 € más 220 € de vinos)",
   "wine": 270,
   "sourceType": "site",
-  "source": "https://www.arzak.es/",
+  "source": "https://www.arzak.es/reserva/",
   "lunch": 315,
   "lunchType": "menu",
   "lunchNote": "Same menu at lunch",
@@ -55,5 +55,8 @@
   ],
   "rankingsChecked": "2026-10-24",
   "priceChangedAt": "2026-10-04",
-  "lunchChangedAt": "2026-10-04"
+  "lunchChangedAt": "2026-10-04",
+  "priceVerifiedAt": "2026-10-28",
+  "sourceKind": "restaurant",
+  "lunchVerifiedAt": "2026-10-28"
 }

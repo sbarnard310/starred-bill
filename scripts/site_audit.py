@@ -291,7 +291,8 @@ def data_checks(site):
         g["hours_from_guide"] += r["_id"] in guide_hours
         g["starred"] += 1
         g["no_price"] += r.get("dinner") is None and r.get("lunch") is None  # no price at all, as page titles count it
-        g["no_dinner_price"] += r.get("dinner") is None and r.get("lunch") is not None and not LUNCH_ONLY_RE.match(r.get("dinnerNote") or "")
+        g["no_dinner_price"] += (r.get("dinner") is None and r.get("lunch") is not None and not r.get("noDinner")
+                                 and not LUNCH_ONLY_RE.match(r.get("dinnerNote") or ""))
         g["no_place_id"] += not r.get("placeId") and r["_id"] not in no_place_known  # no Google place ID, so no Google card or Reviews link to the right place
         g["no_place_id_anywhere"] += not r.get("placeId") and r["_id"] in no_place_known  # looked up recently, Google has no listing of its own
         g["stored_google_rating"] += r.get("rating") is not None or r.get("reviews") is not None  # Google's terms don't allow keeping them (24 Oct 2026)
@@ -307,6 +308,16 @@ def data_checks(site):
         g["no_hours"] += r["_id"] not in hours and r["_id"] not in no_hours_known  # opening days for Near me's "Open on" filter (content/opening-hours*.json)
         g["no_hours_anywhere"] += r["_id"] in no_hours_known and r["_id"] not in hours  # looked for recently, none to be had
         g["price_without_source"] += r.get("dinner") is not None and not r.get("source")
+        # Lunch quality (28 Oct 2026, the lunch clean-up): checked lunches, unchecked ones at the dinner price (often the dinner
+        # price copied over), doubtful ones (lunchDoubt), and lunches whose note says they're shorter (build.py's lunch_state()).
+        menu_lunch = r.get("lunch") is not None and r.get("lunchType", "menu") == "menu" and not r.get("noLunch")
+        g["lunch_checked"] += menu_lunch and bool(r.get("lunchVerifiedAt"))
+        g["lunch_same_unchecked"] += (menu_lunch and not r.get("lunchVerifiedAt") and r.get("dinnerType", "menu") == "menu"
+                                      and r.get("lunch") == r.get("dinner"))
+        g["lunch_doubt"] += bool(r.get("lunchDoubt"))
+        g["price_doubt"] += bool(r.get("priceDoubt"))
+        g["lunch_short"] += menu_lunch and (r.get("lunchKind") == "short" or (r.get("lunchKind") != "full" and not LUNCH_FULL_RE.search(
+            (r.get("lunchNote") or "").split("(")[0]) and bool(LUNCH_SHORT_RE.search((r.get("lunchNote") or "").split("(")[0]))))
     total = collections.Counter()
     for g in gaps.values():
         total.update(g)
@@ -330,6 +341,15 @@ def data_checks(site):
             "english_only_countries": sorted(p for p, v in places.items() if v["type"] == "country" and not v.get("languages")),
             "site_updated": json.loads((C / "site.json").read_text("utf-8")).get("updated")}
 
+
+
+def _build_regex(name):
+    """build.py's LUNCH_SHORT_RE / LUNCH_FULL_RE, read from its source so the audit and the build never drift apart."""
+    src = (Path(__file__).resolve().parent.parent / "build.py").read_text("utf-8")
+    return re.compile(eval(re.search(name + r' = re\.compile\((r".*?)\s*, re\.I\)', src, re.S).group(1).replace("\n", "")), re.I)
+
+
+LUNCH_SHORT_RE, LUNCH_FULL_RE = _build_regex("LUNCH_SHORT_RE"), _build_regex("LUNCH_FULL_RE")
 
 def ceremony_checks(site):
     """From content/ceremonies.json: guides whose stars came out after our files last caught up (`starsUpdated`), the

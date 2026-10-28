@@ -10,13 +10,12 @@
   "dinnerType": "menu",
   "dinnerNote": "Longest tasting menu (other menus from €230)",
   "dinnerNoteFr": "Menu dégustation le plus long (autres menus dès 230 €)",
-  "wine": 105,
+  "wine": 305,
   "sourceType": "site",
   "source": "https://www.passedat.fr/en/le-petit-nice/gastronomic-michelin-star-restaurants-marseille",
-  "lunch": 490,
+  "lunch": 230,
   "lunchType": "menu",
-  "lunchNote": "Same menu at lunch · Tue, Thu–Sat",
-  "lunchNoteFr": "Même menu le midi · mar., jeu.–sam.",
+  "lunchNote": "Maldormé lunch menu: amuse-bouche, 4 savoury courses, 2 desserts (the €310–€390 menus also at lunch Thu–Sat; the €490 menu is dinner only)",
   "lunchWine": 105,
   "lunchSourceType": "site",
   "lunchSource": "https://www.passedat.fr/en/le-petit-nice/gastronomic-michelin-star-restaurants-marseille",
@@ -63,6 +62,8 @@
     }
   ],
   "rankingsChecked": "2026-10-24",
-  "priceChangedAt": "2026-10-05",
-  "lunchChangedAt": "2026-10-06"
+  "priceChangedAt": "2026-10-28",
+  "lunchChangedAt": "2026-10-28",
+  "lunchVerifiedAt": "2026-10-28",
+  "priceVerifiedAt": "2026-10-28"
 }
